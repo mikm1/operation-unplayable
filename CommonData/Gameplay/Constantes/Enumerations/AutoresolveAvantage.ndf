@@ -1,0 +1,7 @@
+// Enum EAutoResolveAvantage (à maintenir synchro avec )
+EAutoResolveAvantage is TBaseClass
+(
+    NoRecoVersusReco         is 0
+    NoAntiAairVersusAir      is 1
+    NoAntiTankVersusTank     is 2
+)

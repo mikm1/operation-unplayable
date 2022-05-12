@@ -1,0 +1,189 @@
+
+template Template_CircleDescriptor
+         [
+             Radius,
+             Color = [220, 222, 221, 127],
+             Thickness = 700,
+             ShowDistanceText = false,
+             TextColor = [230, 230, 230, 255],
+             TextSize = 3500
+         ] is TFeedbackLineOfSightCircleDescriptor
+(
+    Radius = <Radius>
+    Color = <Color>
+    Thickness = <Thickness>
+    ShowText = <ShowDistanceText>
+    TextLayout = '%1m'
+    TextColor = <TextColor>
+    TextSize = <TextSize>
+)
+
+FeedbackLineOfSightDescriptor is TFeedbackLineOfSightDescriptor
+(
+    DistanceVisionMax = 10000 * Metre// distance d'affichache
+    TheoreticalMaxVision = 10000 * Metre // utilisé pour les calculs
+    AnimationDuration = 0.35*5 //0.35*5 why would you even want that
+
+    VisionOffset = DecalageParDefautDuPointDeVision
+
+    BorderColor = [255, 255, 255, 255]
+    BorderThickness = 2500
+    BorderRadiusStartFade = 12000 * Metre //4000
+    BorderRadiusEndFade = 13000 * Metre //5750
+
+    FillColor = [255, 0, 0, 170] //[178, 153, 163, 255]
+    FillRadiusStartFade = 9000 * Metre //4000
+    FillRadiusEndFade = 10000 * Metre //5500
+
+    CircleDotDescriptor = TFeedbackLineOfSightCircleDescriptor(
+                                Radius = 250
+                                Color = [216, 201, 181, 127]
+                                Thickness = 650
+                                ShowText = false
+                                TextLayout = 'Nop %1'
+                                TextColor = [0, 0, 0, 0]
+                                TextSize = 0
+                            )
+
+    CirclesDescriptors =
+    [
+        {Template_CircleDescriptor(
+                    Radius = 600 * Metre //1000
+                    Thickness = 650
+					TextSize = 2000
+                    ShowDistanceText = true
+                 ),}
+        Template_CircleDescriptor(
+            Radius = 1000 * Metre //100
+            Thickness = 1000		
+            ShowDistanceText = true
+            Color = [216, 201, 181, 80]
+         ),
+        Template_CircleDescriptor(
+            Radius = 3000 * Metre //300
+            Thickness = 1000		
+            ShowDistanceText = true
+            Color = [216, 201, 181, 80]
+         ),
+        Template_CircleDescriptor(
+            Radius = 5000 * Metre //500
+            Thickness = 2000	
+            ShowDistanceText = true
+         ),
+		 Template_CircleDescriptor(
+            Radius = 7000 * Metre //700
+            Thickness = 1000
+			ShowDistanceText = true			
+         ),
+        Template_CircleDescriptor(
+            Radius = 10000 * Metre //1000
+            Thickness = 3000
+            ShowDistanceText = true
+            TextSize = 5000
+            Color = [216, 201, 181, 80]
+         ),
+		 Template_CircleDescriptor(
+            Radius = 12500 * Metre //1250
+            Thickness = 1000	
+         ),
+        Template_CircleDescriptor(
+            Radius = 15000 * Metre //1500
+            Thickness = 2000
+            ShowDistanceText = true
+			TextSize = 5000
+         ),
+		 Template_CircleDescriptor(
+            Radius = 17500 * Metre //1750
+            Thickness = 1000	
+         ),
+        Template_CircleDescriptor(
+            Radius = 20000 * Metre //2000
+            Thickness = 3000
+            ShowDistanceText = true
+			TextSize = 6000
+            //Color = [216, 201, 181, 80]
+         ),
+		 Template_CircleDescriptor(
+            Radius = 22500 * Metre //2250
+            Thickness = 1000	
+         ),
+		 Template_CircleDescriptor(
+            Radius = 25000 * Metre //2500
+            Thickness = 2000
+            ShowDistanceText = true
+			TextSize = 6000
+            //Color = [216, 201, 181, 80]
+         ),
+		 Template_CircleDescriptor(
+            Radius = 27500 * Metre //2750
+            Thickness = 1000	
+         ),
+		 Template_CircleDescriptor(
+            Radius = 30000 * Metre //3000
+            Thickness = 3000
+            ShowDistanceText = true
+			TextSize = 6000
+            //Color = [216, 201, 181, 80]
+         ),
+    ]
+
+    CircleOverrideDescriptor = TFeedbackLineOfSightCircleDescriptor(
+                                    Radius = 3330 * Metre
+                                    Color = [236, 221, 201, 200]
+                                    Thickness = 2000
+                                    ShowText = true
+                                    TextLayout = "Error %1: Si vous lisez ce message en jeu, c'est que quelqu'un à fait de la merde, et c'est surement moi ! (Frédéric M. 15/03/17)"
+                                    TextColor = [230, 230, 230, 255]
+                                    TextSize = 5000
+                                )
+
+    DeactivatedCircleOverrideDescriptor = TFeedbackLineOfSightCircleDescriptor(
+                                    Radius = 3330 * Metre
+                                    Color = [150, 150, 150, 100]
+                                    Thickness = 1500
+                                    ShowText = true
+                                    TextLayout = "Error %1: Si vous lisez ce message en jeu, c'est que quelqu'un à fait de la merde, et c'est surement moi ! (Frédéric M. 15/03/17)"
+                                    TextColor = [150, 150, 150, 255]
+                                    TextSize = 5000
+                                )
+
+    RaysAngle = 70 * Degre
+    RayColor = [216, 201, 181, 127]
+    RayThickness = 400*4
+    RayStartDistanceStartFade = 500 * Metre //500
+    RayStartDistanceEndFade = 800 * Metre //1000
+    RayEndDistanceStartFade = 25000 * Metre //5000
+    RayEndDistanceEndFade = 30000 * Metre //6500
+)
+
+FeedbackLineOfSightResource is TFeedbackLineOfSightResource
+(
+    UserInputLayer = $/M3D/Input/UserInputLayerHandler/InputLayer_LineOfSight
+    DisplayLineOfSightMapping = $/KeyboardOption/Mapping_LineOfSight
+    Descriptor = FeedbackLineOfSightDescriptor
+    Camera = $/M3D/Camera/CameraPrincipale
+    World3D = $/M3D/Scene/DefaultWorld
+    RenderLayer = TRenderLayerSelector(RenderLayerName = "Calque_3DLineOfSight")
+    MaterialGrid = $/M3D/Shader/Material3DLineOfSightGrid
+
+    ShowAllWeaponsRanges = $/GUIOption/LoSShowAllWeapons
+
+    TerrainsGroups =
+    [
+        TFeedbackLineOfSightTerrainsGroup
+        (
+            TerrainTypes = [ ~/ETerrainType/ForetDense]
+            BlockOnEnterInsteadOfExit = true //false
+        ),
+        TFeedbackLineOfSightTerrainsGroup
+        (
+            TerrainTypes = [ ~/ETerrainType/Batiment]
+            BlockOnEnterInsteadOfExit = true
+        ),
+        TFeedbackLineOfSightTerrainsGroup
+        (
+            TerrainTypes = [ ~/ETerrainType/Ruin]
+            BlockOnEnterInsteadOfExit = true
+        ),
+    ]
+)
