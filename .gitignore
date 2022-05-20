@@ -43,3 +43,6 @@ APFiller.py
 
 # bat files
 *.bat
+
+#changelog
+changelog.txt

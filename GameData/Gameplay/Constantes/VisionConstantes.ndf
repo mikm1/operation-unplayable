@@ -1,4 +1,4 @@
 VisionConstantes is TVisionConstantesDescriptor
 (
-    PorteeDeVisionGlobale = 6000.0 * Metre
+    PorteeDeVisionGlobale = 21000.0 * Metre//6000.0 * Metre
 )

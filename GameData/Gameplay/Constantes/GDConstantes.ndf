@@ -12,6 +12,8 @@ CountingRule_Average is 2
 CountingRule_Min is 3
 CountingRule_Max is 4
 
+optics_multiplier is 2.0 //MM
+
 // GhostModule.h
 EShowGhostOverSpecificTerrainConditionFilterType is TBaseClass
 (
@@ -334,7 +336,8 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
     DistanceToAddToEnnemiDectectionForAntiProjectileWeapon = 0.0 * Metre // grosso merdo la porté max d'une arme anti-missile
     DistanceToAddToEnnemiDectectionForOtherWeapon = 1000.0 * Metre * 3.5
     DureeDeRevelationApresAttaque = 5.0
-    FacteurMinTempsViseeReel = 0.75 // Le temps de visée réel est un random entre cette valeur et la valeur de temps de visee théorique située dans l'ODS
+    FacteurMinTempsViseeReel = 0.35 // Le temps de visée réel est un random entre cette valeur et la valeur de temps de visee théorique située dans l'ODS
+    // used to be 0.75, should increase randomization of aim time -MM. 
 
     // Portee Min pour considerer qu'une arme est une artillerie. Les unités ne cherche pas a fuire les armes considéré comme des artilleries
     PorteeMinArmeEstConsidereCommeArtillerie = 6500.0 * Metre
@@ -466,7 +469,7 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
     FrontSideAngleInDeg = 60
     RearSideAngleInDeg = 120
 
-    IgnoreTirPenetrantSiAucunBlindage = true
+    IgnoreTirPenetrantSiAucunBlindage = false //true - MM
 
     // Attention, le parametre OneSalveDesignatedShot n'est plus specifique a l'artillerie
     NbSalveDesignatedShot = -1 // -1 -> tir jusqu'a epuisement des munitions. 0 est indéfini, prévenir si il y en a besoin
@@ -715,15 +718,21 @@ WargameConstantes is TWargameTunableConstante
         (450, 'Value_6'),
 
     ]
-
+ 
     PaliersDOptique = MAP
     [
-        (40, 'Value_1'),
+        {(40, 'Value_1'),
         (60, 'Value_2'),
         (80, 'Value_3'),
         (120, 'Value_4'),
         (170, 'Value_5'),
-        (220, 'Value_6'),
+        (220, 'Value_6'),}
+        (optics_multiplier * 40, 'Value_1'),
+        (optics_multiplier * 60, 'Value_2'),
+        (optics_multiplier * 80, 'Value_3'),
+        (optics_multiplier * 120, 'Value_4'),
+        (optics_multiplier * 170, 'Value_5'),
+        (optics_multiplier * 220, 'Value_6'),
     ]
 
     PaliersDeResilience = MAP

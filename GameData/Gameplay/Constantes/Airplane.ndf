@@ -2,7 +2,7 @@ export AirplaneConstantesWargame is TAirplaneConstantesModernWarfareDescriptor
 (
     // Valeurs en metres
     EvacuationAngle     = (10 * Degre) //2
-    EvacuationAltitude  = (10000 * Metre) //15000
+    EvacuationAltitude  = (15000 * Metre) //15000
 
     TargetLostTimeInSeconds = (-1.0 * Seconde) // PAUL(10/09/2012 14:56:24) Quand on perd la cible de vu soit: -1.0f on ne sort jamais de l'ordre d'attaque, sinon entre 0 et x secondes pour arreter l'ordre d'attaque.
 

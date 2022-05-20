@@ -69,5 +69,5 @@ export WeaponConstantes is TWeaponConstantsDescriptor
     //-----------------------------------------
     // Valeurs de SmartHoldFire par défaut
     SmartHoldFireMinAccuracy = 0.0
-    SmartHoldFireMinPenetration = 0.4
+    SmartHoldFireMinPenetration = 0.001 //0.4
 )

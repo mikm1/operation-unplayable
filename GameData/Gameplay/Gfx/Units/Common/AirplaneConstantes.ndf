@@ -29,7 +29,7 @@ AirGroundMissileRangeRatioForCruiseAltitude is 2.0
 
 // Autres paramètres avions : DEMANDER AUX DEVS AVANT DE MODIFIER //
 MaxPitchSpeed is 30 // degrés/seconde // 30
-MaxAltitude is (10000 * Metre)
+MaxAltitude is (15000 * Metre)
 MinAltitudeForRoll is (2000 * Metre) // 2000
 MinRollSpeedForRoll is 65 // degrés/seconde
 

@@ -25,7 +25,7 @@ CriticalEffect_AmmoExplosion_Desc is TCriticalEffectDescriptor
 (
     Token = 'CRITIC1'
     HappeningKey = 'critical_ammo'
-    EffectsPack = ~/UnitEffect_Critic_Pert_2_PV
+    EffectsPack = ~/UnitEffect_Effet_Meurt //UnitEffect_Critic_Pert_2_PV
     TimeOut = 0
     RepairCost = -1
     Unique = False
@@ -45,7 +45,7 @@ CriticalEffect_FuelExplosion_Desc is TCriticalEffectDescriptor
 (
     Token = 'CRITIC2'
     HappeningKey = 'critical_fuel_explosion'
-    EffectsPack = ~/UnitEffect_Critic_Pert_4_PV
+    EffectsPack = ~/UnitEffect_Effet_Meurt //UnitEffect_Critic_Pert_4_PV
     TimeOut = 5
     RepairCost = -1
     Unique = False
@@ -1263,6 +1263,7 @@ PackEffetCritique_VehiculeStandard is
     CriticalEffect_TracksBroken(Roll = (10,10)),
     CriticalEffect_TurretStuck(Roll = (11,11)),
 ]
+
 
 PackEffetCritique_VehiculeNonArme is
 [

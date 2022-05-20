@@ -156,7 +156,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                // PhysicalDamages x use_model_ (Number of weapons)
                PhysicalDamages = TMinMaxValue (
                        Min = 0.876 // Canon HE 73 mm SPG9
-                       Max = 3.6 // Canon HE 165mm AVRE
+                       Max = 8.0 // Canon HE 165mm AVRE
                )
                // SuppressDamages x use_model_ (Number of weapons)
                SuppressDamages = TMinMaxValue (
@@ -200,8 +200,8 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 10.0 // Canon AP 2A18 122mm
                )
                Penetration = TMinMaxValue (
-                       Min = 9 // Canon AP 2A18 122mm
-                       Max = 34 // Canon AP 120 mm L52 M68 HA
+                       Min = 8 // Canon AP 2A18 122mm
+                       Max = 22 // Canon AP 120 mm L52 M68 HA
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 1.0 // Canon AP 2A18 122mm
@@ -240,12 +240,12 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 14.0 * Metre // MMG PKT 7 62mm
                )
                MaxRange = TMinMaxValue (
-                       Min = 2505.0 // MMG PKT 7 62mm
-                       Max = 2505.0 // MMG PKT 7 62mm
+                       Min = 2000.0 // MMG PKT 7 62mm
+                       Max = 8000.0 // MMG PKT 7 62mm
                )
                MaxRangeTBA = TMinMaxValue (
-                       Min = 1500.0 // MMG PKT 7 62mm
-                       Max = 1500.0 // MMG PKT 7 62mm
+                       Min = 2000.0 // MMG PKT 7 62mm
+                       Max = 8000.0 // MMG PKT 7 62mm
                )
                MaxRangeHA = TMinMaxValue (
                        Min = 0.0 // MMG PKT 7 62mm
@@ -313,11 +313,11 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                MaxRange = TMinMaxValue (
                        Min = 3000.0 // AutoCanon AP 23mm Bitube Gsh23L
-                       Max = 4995.0 // AutoCanon AP 30mm 2A72 BMP3
+                       Max = 17500.0 // AutoCanon AP 30mm 2A72 BMP3
                )
                MaxRangeTBA = TMinMaxValue (
                        Min = 0.0 // AutoCanon AP 30mm 24A2 BMP2
-                       Max = 4995.0 // HMG 14 5 mm KPVT
+                       Max = 15000.0 // HMG 14 5 mm KPVT
                )
                MaxRangeHA = TMinMaxValue (
                        Min = 0.0 // HMG 14 5 mm KPVT
@@ -372,7 +372,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                // PhysicalDamages x use_model_ (Number of weapons)
                PhysicalDamages = TMinMaxValue (
                        Min = 1.0 // ATGM 9K111 Fagot
-                       Max = 1.0 // ATGM 9K111 Fagot
+                       Max = 10.0 // ATGM 9K111 Fagot
                )
                // SuppressDamages x use_model_ (Number of weapons)
                SuppressDamages = TMinMaxValue (
@@ -384,8 +384,8 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 1.0 * Metre // ATGM 9K111 Fagot
                )
                MaxRange = TMinMaxValue (
-                       Min = 4500.0 // M47_DRAGON_II
-                       Max = 8000.0 // ATGM 9M117 Bastion
+                       Min = 10000.0 // M47_DRAGON_II
+                       Max = 35000.0 // ATGM 9M117 Bastion
                )
                MaxRangeTBA = TMinMaxValue (
                        Min = 0.0 // ATGM 9K111 Fagot
@@ -420,8 +420,8 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 48.0 // AGM 9M114M KokonM x16
                )
                Penetration = TMinMaxValue (
-                       Min = 16 // ATGM 9K111 Fagot
-                       Max = 25 // ATGM BGM71D TOW 2
+                       Min = 7 // ATGM 9K111 Fagot
+                       Max = 20 // ATGM BGM71D TOW 2
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 1.0 // ATGM 9K111 Fagot
@@ -456,12 +456,12 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 0.0 * Metre // FM M16
                )
                MaxRange = TMinMaxValue (
-                       Min = 1302.0 // PM uzi
-                       Max = 2505.0 // FM M16
+                       Min = 1000.0 // PM uzi
+                       Max = 3000.0 // FM M16
                )
                MaxRangeTBA = TMinMaxValue (
-                       Min = 1302.0 // PM uzi
-                       Max = 1500.0 // FM M16
+                       Min = 1000.0 // PM uzi
+                       Max = 2000.0 // FM M16
                )
                MaxRangeHA = TMinMaxValue (
                        Min = 0.0 // FM M16
@@ -516,7 +516,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                // PhysicalDamages x use_model_ (Number of weapons)
                PhysicalDamages = TMinMaxValue (
                        Min = 1.0 // RocketInf M72 LAW 66mm
-                       Max = 1.68 // RocketInf Handflammpatrone
+                       Max = 8.0 // RocketInf Handflammpatrone
                )
                // SuppressDamages x use_model_ (Number of weapons)
                SuppressDamages = TMinMaxValue (
@@ -528,8 +528,8 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 70.0 * Metre // RocketInf Handflammpatrone
                )
                MaxRange = TMinMaxValue (
-                       Min = 1500.0 // RocketInf Handflammpatrone
-                       Max = 4004.0 // RocketInf M67 RCL 90mm
+                       Min = 1000.0 // RocketInf Handflammpatrone
+                       Max = 5000.0 // RocketInf M67 RCL 90mm
                )
                MaxRangeTBA = TMinMaxValue (
                        Min = 0.0 // RocketInf M72 LAW 66mm
@@ -564,8 +564,8 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 20.0 // RocketInf M72 LAW 66mm
                )
                Penetration = TMinMaxValue (
-                       Min = 13 // RocketInf M72 LAW 66mm
-                       Max = 21 // RocketInf PzF 3
+                       Min = 7 // RocketInf M72 LAW 66mm
+                       Max = 16 // RocketInf PzF 3
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 1.0 // RocketInf M72 LAW 66mm
@@ -1011,8 +1011,8 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
           (
                // PhysicalDamages x use_model_ (Number of weapons)
                PhysicalDamages = TMinMaxValue (
-                       Min = 1.0 // AGM AGM114A x8
-                       Max = 1.0 // AGM AGM114A x8
+                       Min = 4.0 // AGM AGM114A x8
+                       Max = 10.0 // AGM AGM114A x8
                )
                // SuppressDamages x use_model_ (Number of weapons)
                SuppressDamages = TMinMaxValue (
@@ -1024,8 +1024,8 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 1.0 * Metre // AGM AGM114A x8
                )
                MaxRange = TMinMaxValue (
-                       Min = 8000.0 // AGM AGM114A x8
-                       Max = 12000.0 // AGM AS30
+                       Min = 20000.0 // AGM AGM114A x8
+                       Max = 35000.0 // AGM AS30
                )
                MaxRangeTBA = TMinMaxValue (
                        Min = 0.0 // AGM AGM114A x8
@@ -1060,7 +1060,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 60.0 // AGM AS30
                )
                Penetration = TMinMaxValue (
-                       Min = 24 // AGM AGM114A x8
+                       Min = 10 // AGM AGM114A x8
                        Max = 30 // AGM AS30
                )
                TimeBetweenTwoShots = TMinMaxValue (
@@ -1415,7 +1415,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
     UnitMinMaxValues = TUnitMinMaxValues (
            Armor = TMinMaxValue (
                    Min = 2 // M109A2
-                   Max = 40 // M3 Bradley CFV
+                   Max = 21 // M3 Bradley CFV
           )
     )
 )

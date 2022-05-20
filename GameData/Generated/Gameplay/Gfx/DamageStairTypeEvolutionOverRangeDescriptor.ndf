@@ -3,7 +3,7 @@
 
 export DamageTypeEvolutionOverRangeDescriptor_AP1_1Km is TStairsDamageTypeEvolutionOverRangeDescriptor
 (
-   Distance= 400.0
+   Distance= 700.0
    AP= 1.0
 )
 

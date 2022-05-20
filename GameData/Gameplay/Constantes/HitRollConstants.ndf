@@ -10,7 +10,7 @@ export HitRollParams is TRollParameters
     // Cette valeur permet de régler à partir de quel niveau d'armure un canon commence à avoir une
     // chance de pénétrer. Avec 0 il faut un niveau d'armure inférieur ou égal.
     // Appliqué uniquement sur le Pierce
-    ModificateurArmeArmure = 10//1
+    ModificateurArmeArmure = 12//1
 
     ///////////////////////
     // Début dice params //

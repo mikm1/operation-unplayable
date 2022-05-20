@@ -48,8 +48,8 @@ export CriticalEffectModule_Chenille_Canon is TCriticalEffectModuleDescriptor
 
     PierceEffectsOnFront =
     [
-        CriticalEffect_ArmourCracked(Roll = (1,2)), // Armour cracked -> mort
-        CriticalEffect_BailedOut(Roll = (3,4)), // Bailed out
+        CriticalEffect_ArmourCracked(Roll = (1,100)), // Armour cracked -> mort
+        {CriticalEffect_BailedOut(Roll = (3,4)), // Bailed out
         CriticalEffect_GunJammed(Roll = (5,6)), // Gun Jammed -> plus de tir
         CriticalEffect_SightDamaged(Roll = (7,8)), // Sight damaged -> Précision 0.5
         CriticalEffect_LoaderWounded(Roll = (9,10)), // Loader wounded -> reload *0.5
@@ -57,7 +57,7 @@ export CriticalEffectModule_Chenille_Canon is TCriticalEffectModuleDescriptor
         CriticalEffect_CrewPanicked(Roll = (15,16)), // Crew panicked -> Deroute
         CriticalEffect_Spalling(Roll = (17,18)), // Spalling -> perd 2PV
         CriticalEffect_ShooterKilled(Roll = (19,19)), // Shooter killed -> Armes stop 30sec
-        CriticalEffect_DriverKilled(Roll = (20,20)), // Driver killed -> Full stop 30sec
+        CriticalEffect_DriverKilled(Roll = (20,20)), // Driver killed -> Full stop 30sec}
     ]
 
     PierceEffectsOnSides =
