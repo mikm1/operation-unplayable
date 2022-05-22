@@ -2240,6 +2240,11 @@ TagWrapper_UNITE_T80BV_SOV is TTagWrapper
     DescriptorId = GUID:{9b61e952-f907-4e28-b90e-ba8b9663f34c}
     Tag = "UNITE_T80BV_SOV"
 )
+TagWrapper_UNITE_T80BV_TEST_SOV is TTagWrapper
+(
+    DescriptorId = GUID:{137f97ec-a1bd-4ab9-bb8e-44406e81a9f2}
+    Tag = "UNITE_T80BV_TEST_SOV"
+)
 TagWrapper_UNITE_T80B_SOV is TTagWrapper
 (
     DescriptorId = GUID:{97348b74-2341-4a02-8476-a673f13377c5}

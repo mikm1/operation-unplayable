@@ -1,6 +1,6 @@
 private largeurPanelInfo is 440
 private UnitInfoPanelGameScale is 0.86
-private UnitInfoPanelShowRoomScale is 1.0
+private UnitInfoPanelShowRoomScale is 0.9//1.0
 
 //-------------------------------------------------------------------------------------
 
@@ -82,8 +82,8 @@ is BUCKContainerDescriptor
             )
 
             Axis = ~/ListAxis/Horizontal
-            FirstMargin =TRTTILength( Magnifiable = 1.0 )
-            InterItemMargin = TRTTILength( Magnifiable = 3.0 )
+            FirstMargin =TRTTILength( Magnifiable = -190.0 )
+            InterItemMargin = TRTTILength( Magnifiable = 10.0 )
 
             Elements =
             [
@@ -95,9 +95,9 @@ is BUCKContainerDescriptor
                         ElementName = "UnitCountryFlag"
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            MagnifiableWidthHeight = [45.0, 23.0]
+                            MagnifiableWidthHeight = [68.0, 35.0]
                             AlignementToAnchor = [0.0, 0.5]
-                            AlignementToFather = [0.0, 0.5]
+                            AlignementToFather = [0.0, 0.25]
                         )
                     )
                 ),
@@ -109,8 +109,8 @@ is BUCKContainerDescriptor
                         ElementName = 'UnitPrice'
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            MagnifiableWidthHeight = [100.0, 20.0]
-                            AlignementToFather = [0.0, 0.5]
+                            MagnifiableWidthHeight = [250.0, 40.0]
+                            AlignementToFather = [0.0, 0.25]
                             AlignementToAnchor = [0.0, 0.5]
                         )
 
@@ -141,7 +141,7 @@ is BUCKContainerDescriptor
                         TextDico = ~/LocalisationConstantes/dico_interface_ingame
                         TextToken  = "UIP_VAL"
                         TextColor = "Gold"
-                        TextSize = "20"
+                        TextSize = "32"
                     )
                 ),
 
@@ -494,7 +494,7 @@ is BUCKListDescriptor
             (
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    RelativeWidthHeight = [1.0, 0.0]
+                    RelativeWidthHeight = [1.0, 0.0] //1.0 0.0
                 )
 
                 Axis = ~/ListAxis/Vertical
@@ -506,7 +506,7 @@ is BUCKListDescriptor
                         (
                             ComponentFrame = TUIFramePropertyRTTI
                             (
-                                RelativeWidthHeight = [1.0, 0.0]
+                                RelativeWidthHeight = [1.0, 0.0] //1.0 0.0
                                 MagnifiableWidthHeight = [0.0, 128.0]
                             )
                         )
@@ -1072,8 +1072,8 @@ private AffichageDuBlindage is BUCKListDescriptor
         (
             ComponentDescriptor = WeaponDamageTypeAttribute
             (
-                MagnifiableWidth = 110.0
-                Magnifiable_barre = 60.0
+                MagnifiableWidth = 182.0
+                Magnifiable_barre = 120.0
                 AlignementToFather = [0.0 ,0.0]
                 AlignementToAnchor = [0.0, 0.0]
                 Plating = true
@@ -1094,8 +1094,8 @@ private AffichageDuBlindage is BUCKListDescriptor
         (
             ComponentDescriptor = WeaponDamageTypeAttribute
             (
-                MagnifiableWidth = 110.0
-                Magnifiable_barre = 60.0
+                MagnifiableWidth = 182.0
+                Magnifiable_barre = 120.0
                 AlignementToFather = [0.0, 0.0]
                 AlignementToAnchor = [0.0, 0.0]
                 Plating = true
@@ -1116,8 +1116,8 @@ private AffichageDuBlindage is BUCKListDescriptor
         (
             ComponentDescriptor = WeaponDamageTypeAttribute
             (
-                MagnifiableWidth = 110.0
-                Magnifiable_barre = 60.0
+                MagnifiableWidth = 182.0
+                Magnifiable_barre = 120.0
                 AlignementToFather = [0.0, 0.0]
                 AlignementToAnchor = [0.0, 0.0]
                 Plating = true
@@ -1138,8 +1138,8 @@ private AffichageDuBlindage is BUCKListDescriptor
         (
             ComponentDescriptor = WeaponDamageTypeAttribute
             (
-                MagnifiableWidth = 110.0
-                Magnifiable_barre = 60.0
+                MagnifiableWidth = 182.0
+                Magnifiable_barre = 120.0
                 AlignementToFather = [0.0, 0.0]
                 AlignementToAnchor = [0.0, 0.0]
                 Plating = true
@@ -1175,7 +1175,7 @@ is BUCKContainerDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [147.0, 20.0]
+        MagnifiableWidthHeight = [240.0, 20.0]
     )
 
     MagnifierMultiplication = <Scale>
@@ -1396,7 +1396,7 @@ is PanelRoundedCorner
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [500.0, <IsShowRoom> ? 875.0 : 820]
+        MagnifiableWidthHeight = [800.0, <IsShowRoom> ? 875.0 : 820] //[500.0, <IsShowRoom> ? 875.0 : 820]
     )
 
     MagnifierMultiplication = <Scale>
@@ -1405,8 +1405,8 @@ is PanelRoundedCorner
     Radius = 30
     NbOfPoints = 7
     BackgroundBlockColorToken = 'Transparent'
-    BorderLineColorToken = 'MarronPanel_noir'
-    BorderThicknessToken = '2'
+    BorderLineColorToken = 'Transparent'
+    BorderThicknessToken = '0'
     RoundedVertexes = [false,false,true,true]
 
 
@@ -1417,8 +1417,8 @@ is PanelRoundedCorner
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableWidthHeight = [530.0, <IsShowRoom> ? 907.0 : 849.0]
-                MagnifiableOffset = [-15.0, -5.0]
+                MagnifiableWidthHeight = [860.0, <IsShowRoom> ? 907.0 : 849.0]//[530.0, <IsShowRoom> ? 907.0 : 849.0]
+                MagnifiableOffset = [-20.0,-5.0]//[-15.0, -5.0]
             )
             TextureToken = 'UseInGame_UnitInfoPanel_fond_panel2'
         ),
@@ -1429,10 +1429,10 @@ is PanelRoundedCorner
 
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableWidthHeight = [440.0, 0.0]
+                MagnifiableWidthHeight = [730.0, 0.0]//[440.0, 0.0]
                 AlignementToAnchor = [0.5, 0.0]
                 AlignementToFather = [0.5, 0.0]
-                MagnifiableOffset = [15.0, 25.0]
+                MagnifiableOffset = [20.0, 25.0]
             )
 
             Axis = ~/ListAxis/Vertical
@@ -1511,7 +1511,7 @@ is PanelRoundedCorner
             ] : [])
         ),
         // fake text 1
-        BUCKTextDescriptor
+        {BUCKTextDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
@@ -1533,7 +1533,7 @@ is PanelRoundedCorner
             TextSize = "8"
             Rotation = -90
             IsClippable = false
-        ),
+        ),}
         BUCKTextDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
@@ -1775,7 +1775,7 @@ is TUISpecificUnitInfoPanelViewDescriptor
     MainComponentDescriptor = BUCKSpecificUnitInfoPanelMainComponentDescriptor( MainComponentFrame = <MainComponentFrame> UseForStrategic = <UseForStrategic> IsShowRoom = <IsShowRoom> Scale = Scale)
     MainComponentContainerUniqueName = <MainComponentContainerUniqueName>
 
-    NbWeaponsToShow = 3
+    NbWeaponsToShow = 5
     FirstWeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale IsFirstElement = true)
     WeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale IsFirstElement = false)
 

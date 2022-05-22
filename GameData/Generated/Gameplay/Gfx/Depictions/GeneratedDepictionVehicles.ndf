@@ -8710,6 +8710,91 @@ Gfx_T80BV_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_Heat_1
 )
+// Dépiction de l'unité T80BV_TEST_SOV
+DepictionOperator_T80BV_TEST_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+    NbProj = 1
+)
+DepictionOperator_T80BV_TEST_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+    NbProj = 1
+)
+DepictionOperator_T80BV_TEST_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag3"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_T80BV_TEST_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Connoisseur = MissileCarriage_T80BV_SOV
+    WeaponIndex = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+    NbProj = 1
+)
+DepictionOperator_T80BV_TEST_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+    NbFX = 1
+)
+DepictionOperator_T80BV_TEST_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag6"
+    Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
+    NbProj = 1
+)
+Gfx_T80BV_TEST_SOV_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'T80BV_TEST_SOV'
+    Selector = Selector_T80BV_TEST_SOV
+    Alternatives = Alternatives_T80BV_TEST_SOV
+
+    Operators = 
+    [
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_TurretSound_ST_T64_T72_T80,
+        DepictionOperator_Turret_1_HydraulicRecoil,
+        DepictionOperator_Turret_2_Aim,
+        DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
+        DepictionOperator_T80BV_TEST_SOV_Weapon1,
+        DepictionOperator_T80BV_TEST_SOV_Weapon2,
+        DepictionOperator_T80BV_TEST_SOV_Weapon3,
+        DepictionOperator_T80BV_TEST_SOV_Weapon4,
+        DepictionOperator_T80BV_TEST_SOV_Weapon6,
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_T80,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_HeavyTank,
+        DepictionOperator_Propulsion_ContinuousTrack,
+        DepictionOperator_MovementFX_Standard,
+        DepictionOperator_Heat_1,
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_T80BV_TEST_SOV_weapon1 ),
+                ( [ "weapon_effet_tag2" ], Weapon_T80BV_TEST_SOV_weapon2 ),
+                ( [ "weapon_effet_tag3" ], Weapon_T80BV_TEST_SOV_weapon3 ),
+                ( [ "weapon_effet_tag4" ], Weapon_T80BV_TEST_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T80BV_TEST_SOV_weapon5 ),
+                ( [ "weapon_effet_tag6" ], Weapon_T80BV_TEST_SOV_weapon6 ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Tracked
+            + DepictionAction_CriticalFX_Tank
+            + DepictionAction_Heat_1
+)
 // Dépiction de l'unité T80B_SOV
 DepictionOperator_T80B_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
 (

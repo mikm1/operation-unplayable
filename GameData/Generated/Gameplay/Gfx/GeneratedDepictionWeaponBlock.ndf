@@ -3475,6 +3475,56 @@ private Weapon_T80BV_SOV_weapon6 is TCompositeHappening
         SFXWeapon_SMOKE_Vehicle_Grenadex8
     ]
 )
+// --------------------- T80BV_TEST_SOV ---------------------- //
+private Weapon_T80BV_TEST_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_125_mm_2A46M_T80B,
+        SFXWeapon_Canon_AP_125_mm_2A46M_T80B
+    ]
+)
+private Weapon_T80BV_TEST_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_125_mm_2A46M_T80B,
+        SFXWeapon_Canon_HE_125_mm_2A46M_T80B
+    ]
+)
+private Weapon_T80BV_TEST_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_125_mm_2A46M_T80B,
+        SFXWeapon_Canon_HE_125_mm_2A46M_T80B
+    ]
+)
+private Weapon_T80BV_TEST_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_9M112_1_Kobra,
+        SFXWeapon_ATGM_9M112_1_Kobra
+    ]
+)
+private Weapon_T80BV_TEST_SOV_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_HMG_12_7_mm_NSVT,
+        SFXWeapon_HMG_12_7_mm_NSVT
+    ]
+)
+private Weapon_T80BV_TEST_SOV_weapon6 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
+
 
 // ---------------------- T80B_SOV ---------------------- //
 private Weapon_T80B_SOV_weapon1 is TCompositeHappening

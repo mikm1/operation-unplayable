@@ -599,6 +599,7 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Deck_Pack_TOE_US_82nd_Airborne_multi_UH60A_Supply_US, 1223),
 		(Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_MotRifles_VR_SOV, 5000),
 		(Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_VR_SOV, 50001),
+        (Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_TEST_SOV, 5002),
     ]
     UnitIds = MAP
     [
@@ -1006,5 +1007,6 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Unit_T62M_CMD_SOV, 813),
         (Descriptor_Unit_T62M_SOV, 814),
 		(Descriptor_Unit_MotRifles_VR_SOV, 4000),
+        (Descriptor_Unit_T80BV_TEST_SOV, 4001),
     ]
 )

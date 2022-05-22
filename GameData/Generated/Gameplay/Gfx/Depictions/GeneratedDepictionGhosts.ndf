@@ -771,6 +771,11 @@ GhostDepiction_T80BV_SOV is GhostVehicleDepictionTemplate
     Selector = Selector_T80BV_SOV
     Alternatives = Alternatives_T80BV_SOV
 )
+GhostDepiction_T80BV_TEST_SOV is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_T80BV_TEST_SOV
+    Alternatives = Alternatives_T80BV_TEST_SOV
+)
 GhostDepiction_T80B_SOV is GhostVehicleDepictionTemplate
 (
     Selector = Selector_T80B_SOV

@@ -410,5 +410,6 @@ private UnitToUnitTag is TUnitToUnitTagForIAStrat
         ( ~/Descriptor_Unit_Tornado_IDS_RFA, "UNITE_Tornado_IDS_RFA" ),
         ( ~/Descriptor_Unit_Tornado_IDS_SEAD_RFA, "UNITE_Tornado_IDS_SEAD_RFA" ),
         ( ~/Descriptor_Unit_MotRifles_VR_SOV, "UNITE_MotRifles_VR_SOV" ),
+        ( ~/Descriptor_Unit_T80BV_TEST_SOV, "UNITE_T80BV_TEST_SOV" ),
     ]
 )

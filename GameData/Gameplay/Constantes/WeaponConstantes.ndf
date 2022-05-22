@@ -38,10 +38,10 @@ export WeaponConstantes is TWeaponConstantsDescriptor
 
     PierceBonusForDamageFamilies = MAP
     [
-        (
+        {(
             "ap_missile",
             59
-        ),
+        ),}
     ]
 
     ResistanceToMimeticImpact = MAP

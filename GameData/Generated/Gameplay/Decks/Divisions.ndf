@@ -574,6 +574,7 @@ export Descriptor_Deck_Division_SOV_79_Gds_Tank_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Tunguska_2K22_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_UAZ_469_AGL_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Ural_4320_SOV, 2),
+        (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_TEST_SOV, 2),
     ]
     MaxActivationPoints = 50
     CostMatrix = MatrixCostName_SOV_79_Gds_Tank_multi

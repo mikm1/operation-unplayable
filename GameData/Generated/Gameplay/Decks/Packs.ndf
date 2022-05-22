@@ -5645,6 +5645,22 @@ export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_SOV is TDeckPackDesc
         ),
     ]
 )
+
+export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_TEST_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{30c95e8c-5895-4e06-9558-28077b58eea3}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T80BV_TEST_SOV,
+            ]
+        ),
+    ]
+)
+
 export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_SOV is TDeckPackDescriptor
 (
     DescriptorId = GUID:{626f91b6-1d4f-4824-b3c7-23f50d6d78b0}
