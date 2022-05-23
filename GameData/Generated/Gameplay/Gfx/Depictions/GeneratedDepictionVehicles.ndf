@@ -561,6 +561,13 @@ DepictionOperator_ATteam_RCL_SPG9_FJ_DDR_Weapon1 is DepictionOperator_WeaponInst
     WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
     NbProj = 1
 )
+DepictionOperator_ATteam_RCL_SPG9_FJ_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+    NbProj = 1
+)
 Gfx_ATteam_RCL_SPG9_FJ_DDR_Autogen is TacticVehicleDepictionTemplate
 (
     CoatingName = 'ATteam_RCL_SPG9_FJ_DDR'
@@ -572,6 +579,7 @@ Gfx_ATteam_RCL_SPG9_FJ_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_1_Aim,
         DepictionOperator_Turret_1_HydraulicRecoil,
         DepictionOperator_ATteam_RCL_SPG9_FJ_DDR_Weapon1,
+        DepictionOperator_ATteam_RCL_SPG9_FJ_DDR_Weapon2,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_Infanterie_GER,
         DepictionOperator_CriticalEffects,
@@ -580,6 +588,7 @@ Gfx_ATteam_RCL_SPG9_FJ_DDR_Autogen is TacticVehicleDepictionTemplate
 
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_ATteam_RCL_SPG9_FJ_DDR_weapon1 ),
+                ( [ "weapon_effet_tag2" ], Weapon_ATteam_RCL_SPG9_FJ_DDR_weapon2 ),
             ]
             + DepictionAction_CriticalFX_ATGM
 
@@ -3298,20 +3307,27 @@ DepictionOperator_Leopard_1A1_CMD_RFA_Weapon2 is DepictionOperator_WeaponInstant
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_Leopard_1A1_CMD_RFA_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_Leopard_1A1_CMD_RFA_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_Leopard_1A1_CMD_RFA_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_Leopard_1A1_CMD_RFA_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_Leopard_1A1_CMD_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -3335,6 +3351,7 @@ Gfx_Leopard_1A1_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_Leopard_1A1_CMD_RFA_Weapon1,
         DepictionOperator_Leopard_1A1_CMD_RFA_Weapon2,
+        DepictionOperator_Leopard_1A1_CMD_RFA_Weapon3,
         DepictionOperator_Leopard_1A1_CMD_RFA_Weapon4,
         DepictionOperator_Leopard_1A1_CMD_RFA_Weapon6,
         DepictionOperator_CropFlattening,
@@ -3349,6 +3366,7 @@ Gfx_Leopard_1A1_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Leopard_1A1_CMD_RFA_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_Leopard_1A1_CMD_RFA_weapon2 ),
+                ( [ "weapon_effet_tag3" ], Weapon_Leopard_1A1_CMD_RFA_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_Leopard_1A1_CMD_RFA_weapon4 ),
                 ( [ "weapon_effet_tag6" ], Weapon_Leopard_1A1_CMD_RFA_weapon6 ),
             ]
@@ -3372,10 +3390,10 @@ Gfx_Leopard_1A1_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-                    DepictionOperator_Leopard_1A1_CMD_RFA_Weapon3,
+                    DepictionOperator_Leopard_1A1_CMD_RFA_Weapon5,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_Leopard_1A1_CMD_RFA_weapon3 ),
+                    ( [ "weapon_effet_tag5" ], Weapon_Leopard_1A1_CMD_RFA_weapon5 ),
                 ]
             )
         ),
@@ -3396,20 +3414,27 @@ DepictionOperator_Leopard_1A1_RFA_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_Leopard_1A1_RFA_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_Leopard_1A1_RFA_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_Leopard_1A1_RFA_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_Leopard_1A1_RFA_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_Leopard_1A1_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -3433,6 +3458,7 @@ Gfx_Leopard_1A1_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_Leopard_1A1_RFA_Weapon1,
         DepictionOperator_Leopard_1A1_RFA_Weapon2,
+        DepictionOperator_Leopard_1A1_RFA_Weapon3,
         DepictionOperator_Leopard_1A1_RFA_Weapon4,
         DepictionOperator_Leopard_1A1_RFA_Weapon6,
         DepictionOperator_CropFlattening,
@@ -3447,6 +3473,7 @@ Gfx_Leopard_1A1_RFA_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Leopard_1A1_RFA_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_Leopard_1A1_RFA_weapon2 ),
+                ( [ "weapon_effet_tag3" ], Weapon_Leopard_1A1_RFA_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_Leopard_1A1_RFA_weapon4 ),
                 ( [ "weapon_effet_tag6" ], Weapon_Leopard_1A1_RFA_weapon6 ),
             ]
@@ -3470,10 +3497,10 @@ Gfx_Leopard_1A1_RFA_Autogen is TacticVehicleDepictionTemplate
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-                    DepictionOperator_Leopard_1A1_RFA_Weapon3,
+                    DepictionOperator_Leopard_1A1_RFA_Weapon5,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_Leopard_1A1_RFA_weapon3 ),
+                    ( [ "weapon_effet_tag5" ], Weapon_Leopard_1A1_RFA_weapon5 ),
                 ]
             )
         ),
@@ -3494,20 +3521,27 @@ DepictionOperator_Leopard_1A5_CMD_RFA_Weapon2 is DepictionOperator_WeaponInstant
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_Leopard_1A5_CMD_RFA_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_Leopard_1A5_CMD_RFA_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_Leopard_1A5_CMD_RFA_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_Leopard_1A5_CMD_RFA_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_Leopard_1A5_CMD_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -3531,6 +3565,7 @@ Gfx_Leopard_1A5_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_Leopard_1A5_CMD_RFA_Weapon1,
         DepictionOperator_Leopard_1A5_CMD_RFA_Weapon2,
+        DepictionOperator_Leopard_1A5_CMD_RFA_Weapon3,
         DepictionOperator_Leopard_1A5_CMD_RFA_Weapon4,
         DepictionOperator_Leopard_1A5_CMD_RFA_Weapon6,
         DepictionOperator_CropFlattening,
@@ -3545,6 +3580,7 @@ Gfx_Leopard_1A5_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Leopard_1A5_CMD_RFA_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_Leopard_1A5_CMD_RFA_weapon2 ),
+                ( [ "weapon_effet_tag3" ], Weapon_Leopard_1A5_CMD_RFA_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_Leopard_1A5_CMD_RFA_weapon4 ),
                 ( [ "weapon_effet_tag6" ], Weapon_Leopard_1A5_CMD_RFA_weapon6 ),
             ]
@@ -3568,10 +3604,10 @@ Gfx_Leopard_1A5_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-                    DepictionOperator_Leopard_1A5_CMD_RFA_Weapon3,
+                    DepictionOperator_Leopard_1A5_CMD_RFA_Weapon5,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_Leopard_1A5_CMD_RFA_weapon3 ),
+                    ( [ "weapon_effet_tag5" ], Weapon_Leopard_1A5_CMD_RFA_weapon5 ),
                 ]
             )
         ),
@@ -3592,20 +3628,27 @@ DepictionOperator_Leopard_1A5_RFA_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_Leopard_1A5_RFA_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_Leopard_1A5_RFA_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_Leopard_1A5_RFA_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_Leopard_1A5_RFA_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_Leopard_1A5_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -3629,6 +3672,7 @@ Gfx_Leopard_1A5_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_Leopard_1A5_RFA_Weapon1,
         DepictionOperator_Leopard_1A5_RFA_Weapon2,
+        DepictionOperator_Leopard_1A5_RFA_Weapon3,
         DepictionOperator_Leopard_1A5_RFA_Weapon4,
         DepictionOperator_Leopard_1A5_RFA_Weapon6,
         DepictionOperator_CropFlattening,
@@ -3643,6 +3687,7 @@ Gfx_Leopard_1A5_RFA_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Leopard_1A5_RFA_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_Leopard_1A5_RFA_weapon2 ),
+                ( [ "weapon_effet_tag3" ], Weapon_Leopard_1A5_RFA_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_Leopard_1A5_RFA_weapon4 ),
                 ( [ "weapon_effet_tag6" ], Weapon_Leopard_1A5_RFA_weapon6 ),
             ]
@@ -3666,10 +3711,10 @@ Gfx_Leopard_1A5_RFA_Autogen is TacticVehicleDepictionTemplate
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-                    DepictionOperator_Leopard_1A5_RFA_Weapon3,
+                    DepictionOperator_Leopard_1A5_RFA_Weapon5,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_Leopard_1A5_RFA_weapon3 ),
+                    ( [ "weapon_effet_tag5" ], Weapon_Leopard_1A5_RFA_weapon5 ),
                 ]
             )
         ),
@@ -3690,20 +3735,27 @@ DepictionOperator_Leopard_2A3_CMD_RFA_Weapon2 is DepictionOperator_WeaponInstant
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_Leopard_2A3_CMD_RFA_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_Leopard_2A3_CMD_RFA_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_Leopard_2A3_CMD_RFA_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_Leopard_2A3_CMD_RFA_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_Leopard_2A3_CMD_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -3731,6 +3783,7 @@ Gfx_Leopard_2A3_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Leopard_2A3_CMD_RFA_Weapon2,
         DepictionOperator_Leopard_2A3_CMD_RFA_Weapon3,
         DepictionOperator_Leopard_2A3_CMD_RFA_Weapon4,
+        DepictionOperator_Leopard_2A3_CMD_RFA_Weapon5,
         DepictionOperator_Leopard_2A3_CMD_RFA_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_Leopard_2,
@@ -3746,6 +3799,7 @@ Gfx_Leopard_2A3_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_Leopard_2A3_CMD_RFA_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_Leopard_2A3_CMD_RFA_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_Leopard_2A3_CMD_RFA_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_Leopard_2A3_CMD_RFA_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_Leopard_2A3_CMD_RFA_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -3768,20 +3822,27 @@ DepictionOperator_Leopard_2A3_RFA_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_Leopard_2A3_RFA_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_Leopard_2A3_RFA_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_Leopard_2A3_RFA_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_Leopard_2A3_RFA_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_Leopard_2A3_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -3809,6 +3870,7 @@ Gfx_Leopard_2A3_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Leopard_2A3_RFA_Weapon2,
         DepictionOperator_Leopard_2A3_RFA_Weapon3,
         DepictionOperator_Leopard_2A3_RFA_Weapon4,
+        DepictionOperator_Leopard_2A3_RFA_Weapon5,
         DepictionOperator_Leopard_2A3_RFA_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_Leopard_2,
@@ -3824,6 +3886,7 @@ Gfx_Leopard_2A3_RFA_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_Leopard_2A3_RFA_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_Leopard_2A3_RFA_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_Leopard_2A3_RFA_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_Leopard_2A3_RFA_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_Leopard_2A3_RFA_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -5016,18 +5079,17 @@ DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon2 is DepictionOperator_WeaponInstan
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle3_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
@@ -5035,16 +5097,24 @@ DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon4 is DepictionOperator_WeaponContin
 DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle3_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
-DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponInstantFire
+DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag6"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_6"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_6"
+    NbFX = 1
+)
+DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon7 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag7"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_7", ]
     NbProj = 1
 )
 Gfx_M1A1HA_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
@@ -5068,6 +5138,7 @@ Gfx_M1A1HA_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon4,
         DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon5,
         DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon6,
+        DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon7,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_M1_Abrams,
         DepictionOperator_CriticalEffects,
@@ -5084,6 +5155,7 @@ Gfx_M1A1HA_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag4" ], Weapon_M1A1HA_Abrams_CMD_US_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_M1A1HA_Abrams_CMD_US_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_M1A1HA_Abrams_CMD_US_weapon6 ),
+                ( [ "weapon_effet_tag7" ], Weapon_M1A1HA_Abrams_CMD_US_weapon7 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -5105,18 +5177,17 @@ DepictionOperator_M1A1HA_Abrams_US_Weapon2 is DepictionOperator_WeaponInstantFir
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_M1A1HA_Abrams_US_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_M1A1HA_Abrams_US_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_M1A1HA_Abrams_US_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle3_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
@@ -5124,16 +5195,24 @@ DepictionOperator_M1A1HA_Abrams_US_Weapon4 is DepictionOperator_WeaponContinuous
 DepictionOperator_M1A1HA_Abrams_US_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle3_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
-DepictionOperator_M1A1HA_Abrams_US_Weapon6 is DepictionOperator_WeaponInstantFire
+DepictionOperator_M1A1HA_Abrams_US_Weapon6 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag6"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_6"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_6"
+    NbFX = 1
+)
+DepictionOperator_M1A1HA_Abrams_US_Weapon7 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag7"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_7", ]
     NbProj = 1
 )
 Gfx_M1A1HA_Abrams_US_Autogen is TacticVehicleDepictionTemplate
@@ -5157,6 +5236,7 @@ Gfx_M1A1HA_Abrams_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M1A1HA_Abrams_US_Weapon4,
         DepictionOperator_M1A1HA_Abrams_US_Weapon5,
         DepictionOperator_M1A1HA_Abrams_US_Weapon6,
+        DepictionOperator_M1A1HA_Abrams_US_Weapon7,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_M1_Abrams,
         DepictionOperator_CriticalEffects,
@@ -5173,6 +5253,7 @@ Gfx_M1A1HA_Abrams_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag4" ], Weapon_M1A1HA_Abrams_US_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_M1A1HA_Abrams_US_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_M1A1HA_Abrams_US_weapon6 ),
+                ( [ "weapon_effet_tag7" ], Weapon_M1A1HA_Abrams_US_weapon7 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -5194,18 +5275,17 @@ DepictionOperator_M1A1_Abrams_CMD_US_Weapon2 is DepictionOperator_WeaponInstantF
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_M1A1_Abrams_CMD_US_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_M1A1_Abrams_CMD_US_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_M1A1_Abrams_CMD_US_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle3_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
@@ -5213,16 +5293,24 @@ DepictionOperator_M1A1_Abrams_CMD_US_Weapon4 is DepictionOperator_WeaponContinuo
 DepictionOperator_M1A1_Abrams_CMD_US_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle3_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
-DepictionOperator_M1A1_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponInstantFire
+DepictionOperator_M1A1_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag6"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_6"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_6"
+    NbFX = 1
+)
+DepictionOperator_M1A1_Abrams_CMD_US_Weapon7 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag7"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_7", ]
     NbProj = 1
 )
 Gfx_M1A1_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
@@ -5246,6 +5334,7 @@ Gfx_M1A1_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M1A1_Abrams_CMD_US_Weapon4,
         DepictionOperator_M1A1_Abrams_CMD_US_Weapon5,
         DepictionOperator_M1A1_Abrams_CMD_US_Weapon6,
+        DepictionOperator_M1A1_Abrams_CMD_US_Weapon7,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_M1_Abrams,
         DepictionOperator_CriticalEffects,
@@ -5274,6 +5363,7 @@ Gfx_M1A1_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag4" ], Weapon_M1A1_Abrams_CMD_US_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_M1A1_Abrams_CMD_US_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_M1A1_Abrams_CMD_US_weapon6 ),
+                ( [ "weapon_effet_tag7" ], Weapon_M1A1_Abrams_CMD_US_weapon7 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -5296,18 +5386,17 @@ DepictionOperator_M1A1_Abrams_US_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_M1A1_Abrams_US_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_M1A1_Abrams_US_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_M1A1_Abrams_US_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle3_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
@@ -5315,16 +5404,24 @@ DepictionOperator_M1A1_Abrams_US_Weapon4 is DepictionOperator_WeaponContinuousFi
 DepictionOperator_M1A1_Abrams_US_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle3_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
-DepictionOperator_M1A1_Abrams_US_Weapon6 is DepictionOperator_WeaponInstantFire
+DepictionOperator_M1A1_Abrams_US_Weapon6 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag6"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_6"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_6"
+    NbFX = 1
+)
+DepictionOperator_M1A1_Abrams_US_Weapon7 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag7"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_7", ]
     NbProj = 1
 )
 Gfx_M1A1_Abrams_US_Autogen is TacticVehicleDepictionTemplate
@@ -5348,6 +5445,7 @@ Gfx_M1A1_Abrams_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M1A1_Abrams_US_Weapon4,
         DepictionOperator_M1A1_Abrams_US_Weapon5,
         DepictionOperator_M1A1_Abrams_US_Weapon6,
+        DepictionOperator_M1A1_Abrams_US_Weapon7,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_M1_Abrams,
         DepictionOperator_CriticalEffects,
@@ -5375,6 +5473,7 @@ Gfx_M1A1_Abrams_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag4" ], Weapon_M1A1_Abrams_US_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_M1A1_Abrams_US_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_M1A1_Abrams_US_weapon6 ),
+                ( [ "weapon_effet_tag7" ], Weapon_M1A1_Abrams_US_weapon7 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -5397,18 +5496,17 @@ DepictionOperator_M1_Abrams_CMD_US_Weapon2 is DepictionOperator_WeaponInstantFir
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_M1_Abrams_CMD_US_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_M1_Abrams_CMD_US_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_M1_Abrams_CMD_US_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle3_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
@@ -5416,16 +5514,24 @@ DepictionOperator_M1_Abrams_CMD_US_Weapon4 is DepictionOperator_WeaponContinuous
 DepictionOperator_M1_Abrams_CMD_US_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle3_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
-DepictionOperator_M1_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponInstantFire
+DepictionOperator_M1_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag6"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_6"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_6"
+    NbFX = 1
+)
+DepictionOperator_M1_Abrams_CMD_US_Weapon7 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag7"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_7", ]
     NbProj = 1
 )
 Gfx_M1_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
@@ -5449,6 +5555,7 @@ Gfx_M1_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M1_Abrams_CMD_US_Weapon4,
         DepictionOperator_M1_Abrams_CMD_US_Weapon5,
         DepictionOperator_M1_Abrams_CMD_US_Weapon6,
+        DepictionOperator_M1_Abrams_CMD_US_Weapon7,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_M1_Abrams,
         DepictionOperator_CriticalEffects,
@@ -5477,6 +5584,7 @@ Gfx_M1_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag4" ], Weapon_M1_Abrams_CMD_US_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_M1_Abrams_CMD_US_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_M1_Abrams_CMD_US_weapon6 ),
+                ( [ "weapon_effet_tag7" ], Weapon_M1_Abrams_CMD_US_weapon7 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -5499,18 +5607,17 @@ DepictionOperator_M1_Abrams_US_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_M1_Abrams_US_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_M1_Abrams_US_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_M1_Abrams_US_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle3_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
@@ -5518,16 +5625,24 @@ DepictionOperator_M1_Abrams_US_Weapon4 is DepictionOperator_WeaponContinuousFire
 DepictionOperator_M1_Abrams_US_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle3_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
-DepictionOperator_M1_Abrams_US_Weapon6 is DepictionOperator_WeaponInstantFire
+DepictionOperator_M1_Abrams_US_Weapon6 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag6"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_6"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_6"
+    NbFX = 1
+)
+DepictionOperator_M1_Abrams_US_Weapon7 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag7"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_7", ]
     NbProj = 1
 )
 Gfx_M1_Abrams_US_Autogen is TacticVehicleDepictionTemplate
@@ -5551,6 +5666,7 @@ Gfx_M1_Abrams_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M1_Abrams_US_Weapon4,
         DepictionOperator_M1_Abrams_US_Weapon5,
         DepictionOperator_M1_Abrams_US_Weapon6,
+        DepictionOperator_M1_Abrams_US_Weapon7,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_M1_Abrams,
         DepictionOperator_CriticalEffects,
@@ -5579,6 +5695,7 @@ Gfx_M1_Abrams_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag4" ], Weapon_M1_Abrams_US_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_M1_Abrams_US_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_M1_Abrams_US_weapon6 ),
+                ( [ "weapon_effet_tag7" ], Weapon_M1_Abrams_US_weapon7 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -5923,20 +6040,27 @@ DepictionOperator_M48A2C_RFA_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_M48A2C_RFA_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_M48A2C_RFA_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_M48A2C_RFA_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_M48A2C_RFA_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 Gfx_M48A2C_RFA_Autogen is TacticVehicleDepictionTemplate
@@ -5956,6 +6080,7 @@ Gfx_M48A2C_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M48A2C_RFA_Weapon2,
         DepictionOperator_M48A2C_RFA_Weapon3,
         DepictionOperator_M48A2C_RFA_Weapon4,
+        DepictionOperator_M48A2C_RFA_Weapon5,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_M60_Patton,
         DepictionOperator_CriticalEffects,
@@ -5970,6 +6095,7 @@ Gfx_M48A2C_RFA_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_M48A2C_RFA_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_M48A2C_RFA_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_M48A2C_RFA_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_M48A2C_RFA_weapon5 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -6155,12 +6281,19 @@ DepictionOperator_M60A3_CMD_US_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_M60A3_CMD_US_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_M60A3_CMD_US_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_M60A3_CMD_US_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
 )
 DepictionOperator_M60A3_CMD_US_Weapon5 is DepictionOperator_WeaponContinuousFire
@@ -6194,6 +6327,7 @@ Gfx_M60A3_CMD_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M60A3_CMD_US_Weapon1,
         DepictionOperator_M60A3_CMD_US_Weapon2,
         DepictionOperator_M60A3_CMD_US_Weapon3,
+        DepictionOperator_M60A3_CMD_US_Weapon4,
         DepictionOperator_M60A3_CMD_US_Weapon5,
         DepictionOperator_M60A3_CMD_US_Weapon6,
         DepictionOperator_CropFlattening,
@@ -6220,6 +6354,7 @@ Gfx_M60A3_CMD_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag1" ], Weapon_M60A3_CMD_US_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_M60A3_CMD_US_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_M60A3_CMD_US_weapon3 ),
+                ( [ "weapon_effet_tag4" ], Weapon_M60A3_CMD_US_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_M60A3_CMD_US_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_M60A3_CMD_US_weapon6 ),
             ]
@@ -6244,12 +6379,19 @@ DepictionOperator_M60A3_Patton_US_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_M60A3_Patton_US_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_M60A3_Patton_US_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_M60A3_Patton_US_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
 )
 DepictionOperator_M60A3_Patton_US_Weapon5 is DepictionOperator_WeaponContinuousFire
@@ -6283,6 +6425,7 @@ Gfx_M60A3_Patton_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M60A3_Patton_US_Weapon1,
         DepictionOperator_M60A3_Patton_US_Weapon2,
         DepictionOperator_M60A3_Patton_US_Weapon3,
+        DepictionOperator_M60A3_Patton_US_Weapon4,
         DepictionOperator_M60A3_Patton_US_Weapon5,
         DepictionOperator_M60A3_Patton_US_Weapon6,
         DepictionOperator_CropFlattening,
@@ -6309,6 +6452,7 @@ Gfx_M60A3_Patton_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag1" ], Weapon_M60A3_Patton_US_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_M60A3_Patton_US_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_M60A3_Patton_US_weapon3 ),
+                ( [ "weapon_effet_tag4" ], Weapon_M60A3_Patton_US_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_M60A3_Patton_US_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_M60A3_Patton_US_weapon6 ),
             ]
@@ -7308,27 +7452,35 @@ DepictionOperator_T55AM2B_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T55AM2B_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T55AM2B_DDR_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
-)
-DepictionOperator_T55AM2B_DDR_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
-(
-    FireEffectTag = "weapon_effet_tag4"
-    Connoisseur = MissileCarriage_T55AM2B_DDR
-    WeaponIndex = 1
-    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T55AM2B_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
+
+DepictionOperator_T55AM2B_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_T55AM2B_DDR_Weapon5 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
+    Connoisseur = MissileCarriage_T55AM2B_DDR
+    WeaponIndex = 1
     WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
+    NbProj = 1
+)
+DepictionOperator_T55AM2B_DDR_Weapon6 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag6"
+    Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
     NbProj = 1
 )
 Gfx_T55AM2B_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -7348,6 +7500,7 @@ Gfx_T55AM2B_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T55AM2B_DDR_Weapon3,
         DepictionOperator_T55AM2B_DDR_Weapon4,
         DepictionOperator_T55AM2B_DDR_Weapon5,
+        DepictionOperator_T55AM2B_DDR_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T55,
         DepictionOperator_CriticalEffects,
@@ -7362,6 +7515,7 @@ Gfx_T55AM2B_DDR_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag3" ], Weapon_T55AM2B_DDR_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T55AM2B_DDR_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_T55AM2B_DDR_weapon5 ),
+                ( [ "weapon_effet_tag6" ], Weapon_T55AM2B_DDR_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -7382,27 +7536,34 @@ DepictionOperator_T55AM2_CMD_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T55AM2_CMD_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T55AM2_CMD_DDR_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_T55AM2_CMD_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
 )
-DepictionOperator_T55AM2_CMD_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T55AM2_CMD_DDR_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+    NbFX = 1
+)
+DepictionOperator_T55AM2_CMD_DDR_Weapon6 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
     NbProj = 1
 )
 Gfx_T55AM2_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -7423,6 +7584,7 @@ Gfx_T55AM2_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T55AM2_CMD_DDR_Weapon3,
         DepictionOperator_T55AM2_CMD_DDR_Weapon4,
         DepictionOperator_T55AM2_CMD_DDR_Weapon5,
+        DepictionOperator_T55AM2_CMD_DDR_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T55,
         DepictionOperator_CriticalEffects,
@@ -7437,6 +7599,7 @@ Gfx_T55AM2_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag3" ], Weapon_T55AM2_CMD_DDR_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T55AM2_CMD_DDR_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_T55AM2_CMD_DDR_weapon5 ),
+                ( [ "weapon_effet_tag6" ], Weapon_T55AM2_CMD_DDR_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -7457,27 +7620,34 @@ DepictionOperator_T55AM2_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T55AM2_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T55AM2_DDR_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_T55AM2_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
 )
-DepictionOperator_T55AM2_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T55AM2_DDR_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+    NbFX = 1
+)
+DepictionOperator_T55AM2_DDR_Weapon6 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
     NbProj = 1
 )
 Gfx_T55AM2_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -7498,6 +7668,7 @@ Gfx_T55AM2_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T55AM2_DDR_Weapon3,
         DepictionOperator_T55AM2_DDR_Weapon4,
         DepictionOperator_T55AM2_DDR_Weapon5,
+        DepictionOperator_T55AM2_DDR_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T55,
         DepictionOperator_CriticalEffects,
@@ -7512,6 +7683,7 @@ Gfx_T55AM2_DDR_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag3" ], Weapon_T55AM2_DDR_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T55AM2_DDR_weapon4 ),
                 ( [ "weapon_effet_tag5" ], Weapon_T55AM2_DDR_weapon5 ),
+                ( [ "weapon_effet_tag6" ], Weapon_T55AM2_DDR_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -7532,20 +7704,27 @@ DepictionOperator_T55A_CMD_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T55A_CMD_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T55A_CMD_DDR_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_T55A_CMD_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_T55A_CMD_DDR_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 Gfx_T55A_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -7562,7 +7741,8 @@ Gfx_T55A_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_T55A_CMD_DDR_Weapon1,
         DepictionOperator_T55A_CMD_DDR_Weapon2,
-        DepictionOperator_T55A_CMD_DDR_Weapon4,
+        DepictionOperator_T55A_CMD_DDR_Weapon3,
+        DepictionOperator_T55A_CMD_DDR_Weapon5,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T55,
         DepictionOperator_CriticalEffects,
@@ -7574,7 +7754,8 @@ Gfx_T55A_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_T55A_CMD_DDR_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_T55A_CMD_DDR_weapon2 ),
-                ( [ "weapon_effet_tag4" ], Weapon_T55A_CMD_DDR_weapon4 ),
+                ( [ "weapon_effet_tag3" ], Weapon_T55A_CMD_DDR_weapon3 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T55A_CMD_DDR_weapon5 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -7594,10 +7775,10 @@ Gfx_T55A_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
                 Operators = [
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
-                    DepictionOperator_T55A_CMD_DDR_Weapon3,
+                    DepictionOperator_T55A_CMD_DDR_Weapon4,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_T55A_CMD_DDR_weapon3 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_T55A_CMD_DDR_weapon4 ),
                 ]
             )
         ),
@@ -7618,20 +7799,27 @@ DepictionOperator_T55A_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T55A_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T55A_DDR_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_T55A_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_T55A_DDR_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 Gfx_T55A_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -7648,7 +7836,8 @@ Gfx_T55A_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_T55A_DDR_Weapon1,
         DepictionOperator_T55A_DDR_Weapon2,
-        DepictionOperator_T55A_DDR_Weapon4,
+        DepictionOperator_T55A_DDR_Weapon3,
+        DepictionOperator_T55A_DDR_Weapon5,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T55,
         DepictionOperator_CriticalEffects,
@@ -7660,7 +7849,8 @@ Gfx_T55A_DDR_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_T55A_DDR_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_T55A_DDR_weapon2 ),
-                ( [ "weapon_effet_tag4" ], Weapon_T55A_DDR_weapon4 ),
+                ( [ "weapon_effet_tag3" ], Weapon_T55A_DDR_weapon3 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T55A_DDR_weapon5 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -7681,10 +7871,10 @@ Gfx_T55A_DDR_Autogen is TacticVehicleDepictionTemplate
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-                    DepictionOperator_T55A_DDR_Weapon3,
+                    DepictionOperator_T55A_DDR_Weapon4,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_T55A_DDR_weapon3 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_T55A_DDR_weapon4 ),
                 ]
             )
         ),
@@ -7705,20 +7895,27 @@ DepictionOperator_T62M1_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T62M1_SOV_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T62M1_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_T62M1_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_T62M1_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_T62M1_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -7745,6 +7942,7 @@ Gfx_T62M1_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T62M1_SOV_Weapon2,
         DepictionOperator_T62M1_SOV_Weapon3,
         DepictionOperator_T62M1_SOV_Weapon4,
+        DepictionOperator_T62M1_SOV_Weapon5,
         DepictionOperator_T62M1_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T55,
@@ -7759,6 +7957,7 @@ Gfx_T62M1_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_T62M1_SOV_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_T62M1_SOV_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T62M1_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T62M1_SOV_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_T62M1_SOV_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -7780,12 +7979,19 @@ DepictionOperator_T62MV_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T62MV_SOV_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T62MV_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_T62MV_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_T62MV_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
@@ -7819,6 +8025,7 @@ Gfx_T62MV_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T62MV_SOV_Weapon2,
         DepictionOperator_T62MV_SOV_Weapon3,
         DepictionOperator_T62MV_SOV_Weapon4,
+        DepictionOperator_T62MV_SOV_Weapon5,
         DepictionOperator_T62MV_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T55,
@@ -7833,6 +8040,7 @@ Gfx_T62MV_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_T62MV_SOV_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_T62MV_SOV_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T62MV_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T62MV_SOV_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_T62MV_SOV_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -7854,12 +8062,19 @@ DepictionOperator_T62M_CMD_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T62M_CMD_SOV_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T62M_CMD_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_T62M_CMD_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_T62M_CMD_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
@@ -7893,6 +8108,7 @@ Gfx_T62M_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T62M_CMD_SOV_Weapon2,
         DepictionOperator_T62M_CMD_SOV_Weapon3,
         DepictionOperator_T62M_CMD_SOV_Weapon4,
+        DepictionOperator_T62M_CMD_SOV_Weapon5,
         DepictionOperator_T62M_CMD_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T55,
@@ -7907,6 +8123,7 @@ Gfx_T62M_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_T62M_CMD_SOV_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_T62M_CMD_SOV_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T62M_CMD_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T62M_CMD_SOV_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_T62M_CMD_SOV_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -7928,12 +8145,19 @@ DepictionOperator_T62M_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T62M_SOV_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T62M_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_T62M_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_T62M_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
@@ -7967,6 +8191,7 @@ Gfx_T62M_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T62M_SOV_Weapon2,
         DepictionOperator_T62M_SOV_Weapon3,
         DepictionOperator_T62M_SOV_Weapon4,
+        DepictionOperator_T62M_SOV_Weapon5,
         DepictionOperator_T62M_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T55,
@@ -7981,6 +8206,7 @@ Gfx_T62M_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_T62M_SOV_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_T62M_SOV_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T62M_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T62M_SOV_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_T62M_SOV_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -8187,27 +8413,34 @@ DepictionOperator_T72M1_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T72M1_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T72M1_DDR_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_T72M1_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
 )
-DepictionOperator_T72M1_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T72M1_DDR_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+    NbFX = 1
+)
+DepictionOperator_T72M1_DDR_Weapon6 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
     NbProj = 1
 )
 Gfx_T72M1_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -8224,8 +8457,9 @@ Gfx_T72M1_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_T72M1_DDR_Weapon1,
         DepictionOperator_T72M1_DDR_Weapon2,
-        DepictionOperator_T72M1_DDR_Weapon4,
+        DepictionOperator_T72M1_DDR_Weapon3,
         DepictionOperator_T72M1_DDR_Weapon5,
+        DepictionOperator_T72M1_DDR_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T72,
         DepictionOperator_CriticalEffects,
@@ -8237,8 +8471,9 @@ Gfx_T72M1_DDR_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_T72M1_DDR_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_T72M1_DDR_weapon2 ),
-                ( [ "weapon_effet_tag4" ], Weapon_T72M1_DDR_weapon4 ),
+                ( [ "weapon_effet_tag3" ], Weapon_T72M1_DDR_weapon3 ),
                 ( [ "weapon_effet_tag5" ], Weapon_T72M1_DDR_weapon5 ),
+                ( [ "weapon_effet_tag6" ], Weapon_T72M1_DDR_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -8259,10 +8494,10 @@ Gfx_T72M1_DDR_Autogen is TacticVehicleDepictionTemplate
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-                    DepictionOperator_T72M1_DDR_Weapon3,
+                    DepictionOperator_T72M1_DDR_Weapon4,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_T72M1_DDR_weapon3 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_T72M1_DDR_weapon4 ),
                 ]
             )
         ),
@@ -8283,27 +8518,34 @@ DepictionOperator_T72M_CMD_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T72M_CMD_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T72M_CMD_DDR_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_T72M_CMD_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
 )
-DepictionOperator_T72M_CMD_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T72M_CMD_DDR_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+    NbFX = 1
+)
+DepictionOperator_T72M_CMD_DDR_Weapon6 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
     NbProj = 1
 )
 Gfx_T72M_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -8320,8 +8562,9 @@ Gfx_T72M_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_T72M_CMD_DDR_Weapon1,
         DepictionOperator_T72M_CMD_DDR_Weapon2,
-        DepictionOperator_T72M_CMD_DDR_Weapon4,
+        DepictionOperator_T72M_CMD_DDR_Weapon3,
         DepictionOperator_T72M_CMD_DDR_Weapon5,
+        DepictionOperator_T72M_CMD_DDR_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T72,
         DepictionOperator_CriticalEffects,
@@ -8333,8 +8576,9 @@ Gfx_T72M_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_T72M_CMD_DDR_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_T72M_CMD_DDR_weapon2 ),
-                ( [ "weapon_effet_tag4" ], Weapon_T72M_CMD_DDR_weapon4 ),
+                ( [ "weapon_effet_tag3" ], Weapon_T72M_CMD_DDR_weapon3 ),
                 ( [ "weapon_effet_tag5" ], Weapon_T72M_CMD_DDR_weapon5 ),
+                ( [ "weapon_effet_tag6" ], Weapon_T72M_CMD_DDR_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -8355,10 +8599,10 @@ Gfx_T72M_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-                    DepictionOperator_T72M_CMD_DDR_Weapon3,
+                    DepictionOperator_T72M_CMD_DDR_Weapon4,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_T72M_CMD_DDR_weapon3 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_T72M_CMD_DDR_weapon4 ),
                 ]
             )
         ),
@@ -8379,27 +8623,34 @@ DepictionOperator_T72M_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T72M_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T72M_DDR_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_T72M_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
 )
-DepictionOperator_T72M_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T72M_DDR_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+    NbFX = 1
+)
+DepictionOperator_T72M_DDR_Weapon6 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
     NbProj = 1
 )
 Gfx_T72M_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -8416,8 +8667,9 @@ Gfx_T72M_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_T72M_DDR_Weapon1,
         DepictionOperator_T72M_DDR_Weapon2,
-        DepictionOperator_T72M_DDR_Weapon4,
+        DepictionOperator_T72M_DDR_Weapon3,
         DepictionOperator_T72M_DDR_Weapon5,
+        DepictionOperator_T72M_DDR_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T72,
         DepictionOperator_CriticalEffects,
@@ -8429,8 +8681,9 @@ Gfx_T72M_DDR_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_T72M_DDR_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_T72M_DDR_weapon2 ),
-                ( [ "weapon_effet_tag4" ], Weapon_T72M_DDR_weapon4 ),
+                ( [ "weapon_effet_tag3" ], Weapon_T72M_DDR_weapon3 ),
                 ( [ "weapon_effet_tag5" ], Weapon_T72M_DDR_weapon5 ),
+                ( [ "weapon_effet_tag6" ], Weapon_T72M_DDR_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -8451,10 +8704,10 @@ Gfx_T72M_DDR_Autogen is TacticVehicleDepictionTemplate
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-                    DepictionOperator_T72M_DDR_Weapon3,
+                    DepictionOperator_T72M_DDR_Weapon4,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_T72M_DDR_weapon3 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_T72M_DDR_weapon4 ),
                 ]
             )
         ),
@@ -8475,27 +8728,34 @@ DepictionOperator_T72_DDR_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T72_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T72_DDR_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_T72_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle2_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
 )
-DepictionOperator_T72_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T72_DDR_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+    NbFX = 1
+)
+DepictionOperator_T72_DDR_Weapon6 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
     NbProj = 1
 )
 Gfx_T72_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -8512,8 +8772,9 @@ Gfx_T72_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_T72_DDR_Weapon1,
         DepictionOperator_T72_DDR_Weapon2,
-        DepictionOperator_T72_DDR_Weapon4,
+        DepictionOperator_T72_DDR_Weapon3,
         DepictionOperator_T72_DDR_Weapon5,
+        DepictionOperator_T72_DDR_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T72,
         DepictionOperator_CriticalEffects,
@@ -8525,8 +8786,9 @@ Gfx_T72_DDR_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_T72_DDR_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_T72_DDR_weapon2 ),
-                ( [ "weapon_effet_tag4" ], Weapon_T72_DDR_weapon4 ),
+                ( [ "weapon_effet_tag3" ], Weapon_T72_DDR_weapon3 ),
                 ( [ "weapon_effet_tag5" ], Weapon_T72_DDR_weapon5 ),
+                ( [ "weapon_effet_tag6" ], Weapon_T72_DDR_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -8547,10 +8809,10 @@ Gfx_T72_DDR_Autogen is TacticVehicleDepictionTemplate
                     DepictionOperator_Reset_Generic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-                    DepictionOperator_T72_DDR_Weapon3,
+                    DepictionOperator_T72_DDR_Weapon4,
                 ]
                 Actions = MAP[
-                    ( [ "weapon_effet_tag3" ], Weapon_T72_DDR_weapon3 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_T72_DDR_weapon4 ),
                 ]
             )
         ),
@@ -8571,20 +8833,27 @@ DepictionOperator_T80BV_CMD_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_CMD_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80BV_CMD_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Connoisseur = MissileCarriage_T80BV_CMD_SOV
-    WeaponIndex = 1
+    Anchors = ["fx_tourelle1_tir_01"]
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_CMD_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T80BV_CMD_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag4"
+    Connoisseur = MissileCarriage_T80BV_CMD_SOV
+    WeaponIndex = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+    NbProj = 1
+)
+DepictionOperator_T80BV_CMD_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_4"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_T80BV_CMD_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -8611,6 +8880,7 @@ Gfx_T80BV_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T80BV_CMD_SOV_Weapon2,
         DepictionOperator_T80BV_CMD_SOV_Weapon3,
         DepictionOperator_T80BV_CMD_SOV_Weapon4,
+        DepictionOperator_T80BV_CMD_SOV_Weapon5,
         DepictionOperator_T80BV_CMD_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T80,
@@ -8626,6 +8896,7 @@ Gfx_T80BV_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_T80BV_CMD_SOV_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_T80BV_CMD_SOV_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T80BV_CMD_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T80BV_CMD_SOV_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_T80BV_CMD_SOV_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -8648,20 +8919,27 @@ DepictionOperator_T80BV_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80BV_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Connoisseur = MissileCarriage_T80BV_SOV
-    WeaponIndex = 1
+    Anchors = ["fx_tourelle1_tir_01"]
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T80BV_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag4"
+    Connoisseur = MissileCarriage_T80BV_SOV
+    WeaponIndex = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+    NbProj = 1
+)
+DepictionOperator_T80BV_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_4"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_T80BV_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -8688,6 +8966,7 @@ Gfx_T80BV_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T80BV_SOV_Weapon2,
         DepictionOperator_T80BV_SOV_Weapon3,
         DepictionOperator_T80BV_SOV_Weapon4,
+        DepictionOperator_T80BV_SOV_Weapon5,
         DepictionOperator_T80BV_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T80,
@@ -8703,6 +8982,7 @@ Gfx_T80BV_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_T80BV_SOV_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_T80BV_SOV_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T80BV_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T80BV_SOV_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_T80BV_SOV_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -8810,20 +9090,27 @@ DepictionOperator_T80B_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80B_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80B_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Connoisseur = MissileCarriage_T80B_SOV
-    WeaponIndex = 1
+    Anchors = ["fx_tourelle1_tir_01"]
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80B_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T80B_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag4"
+    Connoisseur = MissileCarriage_T80B_SOV
+    WeaponIndex = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+    NbProj = 1
+)
+DepictionOperator_T80B_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_4"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_T80B_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -8850,6 +9137,7 @@ Gfx_T80B_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T80B_SOV_Weapon2,
         DepictionOperator_T80B_SOV_Weapon3,
         DepictionOperator_T80B_SOV_Weapon4,
+        DepictionOperator_T80B_SOV_Weapon5,
         DepictionOperator_T80B_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T80,
@@ -8876,6 +9164,7 @@ Gfx_T80B_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_T80B_SOV_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_T80B_SOV_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T80B_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T80B_SOV_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_T80B_SOV_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -8899,20 +9188,27 @@ DepictionOperator_T80U_CMD_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80U_CMD_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80U_CMD_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Connoisseur = MissileCarriage_T80U_CMD_SOV
-    WeaponIndex = 1
+    Anchors = ["fx_tourelle1_tir_01"]
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80U_CMD_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T80U_CMD_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag4"
+    Connoisseur = MissileCarriage_T80U_CMD_SOV
+    WeaponIndex = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+    NbProj = 1
+)
+DepictionOperator_T80U_CMD_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_4"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_T80U_CMD_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -8939,6 +9235,7 @@ Gfx_T80U_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T80U_CMD_SOV_Weapon2,
         DepictionOperator_T80U_CMD_SOV_Weapon3,
         DepictionOperator_T80U_CMD_SOV_Weapon4,
+        DepictionOperator_T80U_CMD_SOV_Weapon5,
         DepictionOperator_T80U_CMD_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T80,
@@ -8954,6 +9251,7 @@ Gfx_T80U_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_T80U_CMD_SOV_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_T80U_CMD_SOV_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T80U_CMD_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T80U_CMD_SOV_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_T80U_CMD_SOV_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -8976,20 +9274,27 @@ DepictionOperator_T80U_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80U_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80U_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Connoisseur = MissileCarriage_T80U_SOV
-    WeaponIndex = 1
+    Anchors = ["fx_tourelle1_tir_01"]
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80U_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T80U_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag4"
+    Connoisseur = MissileCarriage_T80U_SOV
+    WeaponIndex = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+    NbProj = 1
+)
+DepictionOperator_T80U_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_4"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
 DepictionOperator_T80U_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
@@ -9016,6 +9321,7 @@ Gfx_T80U_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_T80U_SOV_Weapon2,
         DepictionOperator_T80U_SOV_Weapon3,
         DepictionOperator_T80U_SOV_Weapon4,
+        DepictionOperator_T80U_SOV_Weapon5,
         DepictionOperator_T80U_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T80,
@@ -9031,6 +9337,7 @@ Gfx_T80U_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_T80U_SOV_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_T80U_SOV_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_T80U_SOV_weapon4 ),
+                ( [ "weapon_effet_tag5" ], Weapon_T80U_SOV_weapon5 ),
                 ( [ "weapon_effet_tag6" ], Weapon_T80U_SOV_weapon6 ),
             ]
             + DepictionAction_Stress_And_Wrecked

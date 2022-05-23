@@ -296,7 +296,14 @@ private Weapon_ATteam_RCL_SPG9_FJ_DDR_weapon1 is TCompositeHappening
         SFXWeapon_Canon_HEAT_73_mm_SPG9
     ]
 )
-
+private Weapon_ATteam_RCL_SPG9_FJ_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_73_mm_SPG9,
+        SFXWeapon_Canon_HE_73_mm_SPG9
+    ]
+)
 // -------------- ATteam_RCL_SPG9_VDV_SOV --------------- //
 private Weapon_ATteam_RCL_SPG9_VDV_SOV_weapon1 is TCompositeHappening
 (
@@ -1291,11 +1298,19 @@ private Weapon_Leopard_1A1_CMD_RFA_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_105mm_L7A3,
+        SFXWeapon_Canon_HE_105mm_L7A3
+    ]
+)
+private Weapon_Leopard_1A1_CMD_RFA_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_MMG_MG3_7_62mm,
         SFXWeapon_MMG_MG3_7_62mm
     ]
 )
-private Weapon_Leopard_1A1_CMD_RFA_weapon4 is TCompositeHappening
+private Weapon_Leopard_1A1_CMD_RFA_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1333,11 +1348,19 @@ private Weapon_Leopard_1A1_RFA_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_105mm_L7A3,
+        SFXWeapon_Canon_HE_105mm_L7A3
+    ]
+)
+private Weapon_Leopard_1A1_RFA_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_MMG_MG3_7_62mm,
         SFXWeapon_MMG_MG3_7_62mm
     ]
 )
-private Weapon_Leopard_1A1_RFA_weapon4 is TCompositeHappening
+private Weapon_Leopard_1A1_RFA_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1375,11 +1398,19 @@ private Weapon_Leopard_1A5_CMD_RFA_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_105mm_L7A3_Leo1A5,
+        SFXWeapon_Canon_HE_105mm_L7A3_Leo1A5
+    ]
+)
+private Weapon_Leopard_1A5_CMD_RFA_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_MMG_MG3_7_62mm,
         SFXWeapon_MMG_MG3_7_62mm
     ]
 )
-private Weapon_Leopard_1A5_CMD_RFA_weapon4 is TCompositeHappening
+private Weapon_Leopard_1A5_CMD_RFA_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1417,11 +1448,19 @@ private Weapon_Leopard_1A5_RFA_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_105mm_L7A3_Leo1A5,
+        SFXWeapon_Canon_HE_105mm_L7A3_Leo1A5
+    ]
+)
+private Weapon_Leopard_1A5_RFA_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_MMG_MG3_7_62mm,
         SFXWeapon_MMG_MG3_7_62mm
     ]
 )
-private Weapon_Leopard_1A5_RFA_weapon4 is TCompositeHappening
+private Weapon_Leopard_1A5_RFA_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1459,11 +1498,19 @@ private Weapon_Leopard_2A3_CMD_RFA_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_120mm_L44_late,
+        SFXWeapon_Canon_HE_120mm_L44_late
+    ]
+)
+private Weapon_Leopard_2A3_CMD_RFA_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_MMG_MG3_7_62mm,
         SFXWeapon_MMG_MG3_7_62mm
     ]
 )
-private Weapon_Leopard_2A3_CMD_RFA_weapon4 is TCompositeHappening
+private Weapon_Leopard_2A3_CMD_RFA_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1501,11 +1548,19 @@ private Weapon_Leopard_2A3_RFA_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_120mm_L44_late,
+        SFXWeapon_Canon_HE_120mm_L44_late
+    ]
+)
+private Weapon_Leopard_2A3_RFA_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_MMG_MG3_7_62mm,
         SFXWeapon_MMG_MG3_7_62mm
     ]
 )
-private Weapon_Leopard_2A3_RFA_weapon4 is TCompositeHappening
+private Weapon_Leopard_2A3_RFA_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1891,11 +1946,19 @@ private Weapon_M1A1HA_Abrams_CMD_US_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_120_mm_L52_M68,
+        SFXWeapon_Canon_HE_120_mm_L52_M68
+    ]
+)
+private Weapon_M1A1HA_Abrams_CMD_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_M2HB,
         SFXWeapon_HMG_12_7_mm_M2HB
     ]
 )
-private Weapon_M1A1HA_Abrams_CMD_US_weapon4 is TCompositeHappening
+private Weapon_M1A1HA_Abrams_CMD_US_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1903,7 +1966,7 @@ private Weapon_M1A1HA_Abrams_CMD_US_weapon4 is TCompositeHappening
         SFXWeapon_MMG_M240_abrams_7_62mm
     ]
 )
-private Weapon_M1A1HA_Abrams_CMD_US_weapon5 is TCompositeHappening
+private Weapon_M1A1HA_Abrams_CMD_US_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1911,7 +1974,7 @@ private Weapon_M1A1HA_Abrams_CMD_US_weapon5 is TCompositeHappening
         SFXWeapon_MMG_M240_7_62mm
     ]
 )
-private Weapon_M1A1HA_Abrams_CMD_US_weapon6 is TCompositeHappening
+private Weapon_M1A1HA_Abrams_CMD_US_weapon7 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1941,11 +2004,19 @@ private Weapon_M1A1HA_Abrams_US_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_120_mm_L52_M68,
+        SFXWeapon_Canon_HE_120_mm_L52_M68
+    ]
+)
+private Weapon_M1A1HA_Abrams_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_M2HB,
         SFXWeapon_HMG_12_7_mm_M2HB
     ]
 )
-private Weapon_M1A1HA_Abrams_US_weapon4 is TCompositeHappening
+private Weapon_M1A1HA_Abrams_US_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1953,7 +2024,7 @@ private Weapon_M1A1HA_Abrams_US_weapon4 is TCompositeHappening
         SFXWeapon_MMG_M240_abrams_7_62mm
     ]
 )
-private Weapon_M1A1HA_Abrams_US_weapon5 is TCompositeHappening
+private Weapon_M1A1HA_Abrams_US_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1961,7 +2032,7 @@ private Weapon_M1A1HA_Abrams_US_weapon5 is TCompositeHappening
         SFXWeapon_MMG_M240_7_62mm
     ]
 )
-private Weapon_M1A1HA_Abrams_US_weapon6 is TCompositeHappening
+private Weapon_M1A1HA_Abrams_US_weapon7 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1991,11 +2062,19 @@ private Weapon_M1A1_Abrams_CMD_US_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_120_mm_L52_M68,
+        SFXWeapon_Canon_HE_120_mm_L52_M68
+    ]
+)
+private Weapon_M1A1_Abrams_CMD_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_M2HB,
         SFXWeapon_HMG_12_7_mm_M2HB
     ]
 )
-private Weapon_M1A1_Abrams_CMD_US_weapon4 is TCompositeHappening
+private Weapon_M1A1_Abrams_CMD_US_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2003,7 +2082,7 @@ private Weapon_M1A1_Abrams_CMD_US_weapon4 is TCompositeHappening
         SFXWeapon_MMG_M240_abrams_7_62mm
     ]
 )
-private Weapon_M1A1_Abrams_CMD_US_weapon5 is TCompositeHappening
+private Weapon_M1A1_Abrams_CMD_US_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2011,7 +2090,7 @@ private Weapon_M1A1_Abrams_CMD_US_weapon5 is TCompositeHappening
         SFXWeapon_MMG_M240_7_62mm
     ]
 )
-private Weapon_M1A1_Abrams_CMD_US_weapon6 is TCompositeHappening
+private Weapon_M1A1_Abrams_CMD_US_weapon7 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2041,11 +2120,19 @@ private Weapon_M1A1_Abrams_US_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_120_mm_L52_M68,
+        SFXWeapon_Canon_HE_120_mm_L52_M68
+    ]
+)
+private Weapon_M1A1_Abrams_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_M2HB,
         SFXWeapon_HMG_12_7_mm_M2HB
     ]
 )
-private Weapon_M1A1_Abrams_US_weapon4 is TCompositeHappening
+private Weapon_M1A1_Abrams_US_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2053,7 +2140,7 @@ private Weapon_M1A1_Abrams_US_weapon4 is TCompositeHappening
         SFXWeapon_MMG_M240_abrams_7_62mm
     ]
 )
-private Weapon_M1A1_Abrams_US_weapon5 is TCompositeHappening
+private Weapon_M1A1_Abrams_US_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2061,7 +2148,7 @@ private Weapon_M1A1_Abrams_US_weapon5 is TCompositeHappening
         SFXWeapon_MMG_M240_7_62mm
     ]
 )
-private Weapon_M1A1_Abrams_US_weapon6 is TCompositeHappening
+private Weapon_M1A1_Abrams_US_weapon7 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2091,11 +2178,19 @@ private Weapon_M1_Abrams_CMD_US_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_105mm_M68_M1,
+        SFXWeapon_Canon_HE_105mm_M68_M1
+    ]
+)
+private Weapon_M1_Abrams_CMD_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_M2HB,
         SFXWeapon_HMG_12_7_mm_M2HB
     ]
 )
-private Weapon_M1_Abrams_CMD_US_weapon4 is TCompositeHappening
+private Weapon_M1_Abrams_CMD_US_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2103,7 +2198,7 @@ private Weapon_M1_Abrams_CMD_US_weapon4 is TCompositeHappening
         SFXWeapon_MMG_M240_abrams_7_62mm
     ]
 )
-private Weapon_M1_Abrams_CMD_US_weapon5 is TCompositeHappening
+private Weapon_M1_Abrams_CMD_US_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2111,7 +2206,7 @@ private Weapon_M1_Abrams_CMD_US_weapon5 is TCompositeHappening
         SFXWeapon_MMG_M240_7_62mm
     ]
 )
-private Weapon_M1_Abrams_CMD_US_weapon6 is TCompositeHappening
+private Weapon_M1_Abrams_CMD_US_weapon7 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2141,11 +2236,19 @@ private Weapon_M1_Abrams_US_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_105mm_M68_M1,
+        SFXWeapon_Canon_HE_105mm_M68_M1
+    ]
+)
+private Weapon_M1_Abrams_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_M2HB,
         SFXWeapon_HMG_12_7_mm_M2HB
     ]
 )
-private Weapon_M1_Abrams_US_weapon4 is TCompositeHappening
+private Weapon_M1_Abrams_US_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2153,7 +2256,7 @@ private Weapon_M1_Abrams_US_weapon4 is TCompositeHappening
         SFXWeapon_MMG_M240_abrams_7_62mm
     ]
 )
-private Weapon_M1_Abrams_US_weapon5 is TCompositeHappening
+private Weapon_M1_Abrams_US_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2161,7 +2264,7 @@ private Weapon_M1_Abrams_US_weapon5 is TCompositeHappening
         SFXWeapon_MMG_M240_7_62mm
     ]
 )
-private Weapon_M1_Abrams_US_weapon6 is TCompositeHappening
+private Weapon_M1_Abrams_US_weapon7 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2309,11 +2412,19 @@ private Weapon_M48A2C_RFA_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_90mm_M48,
+        SFXWeapon_Canon_HE_90mm_M48
+    ]
+)
+private Weapon_M48A2C_RFA_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_M2HB,
         SFXWeapon_HMG_12_7_mm_M2HB
     ]
 )
-private Weapon_M48A2C_RFA_weapon4 is TCompositeHappening
+private Weapon_M48A2C_RFA_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2391,6 +2502,14 @@ private Weapon_M60A3_CMD_US_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_105mm_M68_late,
+        SFXWeapon_Canon_HE_105mm_M68_late
+    ]
+)
+private Weapon_M60A3_CMD_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_M85,
         SFXWeapon_HMG_12_7_mm_M85
     ]
@@ -2430,6 +2549,14 @@ private Weapon_M60A3_Patton_US_weapon2 is TCompositeHappening
     ]
 )
 private Weapon_M60A3_Patton_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_105mm_M68_late,
+        SFXWeapon_Canon_HE_105mm_M68_late
+    ]
+)
+private Weapon_M60A3_Patton_US_weapon4 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2799,11 +2926,19 @@ private Weapon_T55AM2B_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_100mm_D10T_late,
+        SFXWeapon_Canon_HE_100mm_D10T_late
+    ]
+)
+private Weapon_T55AM2B_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_NSVT,
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_T55AM2B_DDR_weapon4 is TCompositeHappening
+private Weapon_T55AM2B_DDR_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2811,7 +2946,7 @@ private Weapon_T55AM2B_DDR_weapon4 is TCompositeHappening
         SFXWeapon_ATGM_9M117_Bastion
     ]
 )
-private Weapon_T55AM2B_DDR_weapon5 is TCompositeHappening
+private Weapon_T55AM2B_DDR_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2841,11 +2976,19 @@ private Weapon_T55AM2_CMD_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_100mm_D10T_late,
+        SFXWeapon_Canon_HE_100mm_D10T_late
+    ]
+)
+private Weapon_T55AM2_CMD_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_NSVT,
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_T55AM2_CMD_DDR_weapon4 is TCompositeHappening
+private Weapon_T55AM2_CMD_DDR_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2853,7 +2996,7 @@ private Weapon_T55AM2_CMD_DDR_weapon4 is TCompositeHappening
         SFXWeapon_MMG_PKT_7_62mm
     ]
 )
-private Weapon_T55AM2_CMD_DDR_weapon5 is TCompositeHappening
+private Weapon_T55AM2_CMD_DDR_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2883,11 +3026,19 @@ private Weapon_T55AM2_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_100mm_D10T_late,
+        SFXWeapon_Canon_HE_100mm_D10T_late
+    ]
+)
+private Weapon_T55AM2_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_NSVT,
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_T55AM2_DDR_weapon4 is TCompositeHappening
+private Weapon_T55AM2_DDR_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2895,7 +3046,7 @@ private Weapon_T55AM2_DDR_weapon4 is TCompositeHappening
         SFXWeapon_MMG_PKT_7_62mm
     ]
 )
-private Weapon_T55AM2_DDR_weapon5 is TCompositeHappening
+private Weapon_T55AM2_DDR_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2925,11 +3076,19 @@ private Weapon_T55A_CMD_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_100mm_D10T_early,
+        SFXWeapon_Canon_HE_100mm_D10T_early
+    ]
+)
+private Weapon_T55A_CMD_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_NSVT,
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_T55A_CMD_DDR_weapon4 is TCompositeHappening
+private Weapon_T55A_CMD_DDR_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2959,11 +3118,19 @@ private Weapon_T55A_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_100mm_D10T_early,
+        SFXWeapon_Canon_HE_100mm_D10T_early
+    ]
+)
+private Weapon_T55A_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_NSVT,
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_T55A_DDR_weapon4 is TCompositeHappening
+private Weapon_T55A_DDR_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2993,11 +3160,19 @@ private Weapon_T62M1_SOV_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_115mm_U5TS_T62M,
+        SFXWeapon_Canon_HE_115mm_U5TS_T62M
+    ]
+)
+private Weapon_T62M1_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_14_5_mm_KPVT,
         SFXWeapon_HMG_14_5_mm_KPVT
     ]
 )
-private Weapon_T62M1_SOV_weapon4 is TCompositeHappening
+private Weapon_T62M1_SOV_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3032,6 +3207,14 @@ private Weapon_T62MV_SOV_weapon2 is TCompositeHappening
     ]
 )
 private Weapon_T62MV_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_115mm_U5TS_T62M,
+        SFXWeapon_Canon_HE_115mm_U5TS_T62M
+    ]
+)
+private Weapon_T62MV_SOV_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3077,6 +3260,14 @@ private Weapon_T62M_CMD_SOV_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_115mm_U5TS_T62M,
+        SFXWeapon_Canon_HE_115mm_U5TS_T62M
+    ]
+)
+private Weapon_T62M_CMD_SOV_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_14_5_mm_KPVT,
         SFXWeapon_HMG_14_5_mm_KPVT
     ]
@@ -3116,6 +3307,14 @@ private Weapon_T62M_SOV_weapon2 is TCompositeHappening
     ]
 )
 private Weapon_T62M_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_115mm_U5TS_T62M,
+        SFXWeapon_Canon_HE_115mm_U5TS_T62M
+    ]
+)
+private Weapon_T62M_SOV_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3245,11 +3444,19 @@ private Weapon_T72M1_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_125_mm_2A26_T72M,
+        SFXWeapon_Canon_HE_125_mm_2A26_T72M
+    ]
+)
+private Weapon_T72M1_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_NSVT,
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_T72M1_DDR_weapon4 is TCompositeHappening
+private Weapon_T72M1_DDR_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3257,7 +3464,7 @@ private Weapon_T72M1_DDR_weapon4 is TCompositeHappening
         SFXWeapon_MMG_PKT_7_62mm
     ]
 )
-private Weapon_T72M1_DDR_weapon5 is TCompositeHappening
+private Weapon_T72M1_DDR_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3287,11 +3494,19 @@ private Weapon_T72M_CMD_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_125_mm_2A26_T72M,
+        SFXWeapon_Canon_HE_125_mm_2A26_T72M
+    ]
+)
+private Weapon_T72M_CMD_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_NSVT,
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_T72M_CMD_DDR_weapon4 is TCompositeHappening
+private Weapon_T72M_CMD_DDR_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3299,7 +3514,7 @@ private Weapon_T72M_CMD_DDR_weapon4 is TCompositeHappening
         SFXWeapon_MMG_PKT_7_62mm
     ]
 )
-private Weapon_T72M_CMD_DDR_weapon5 is TCompositeHappening
+private Weapon_T72M_CMD_DDR_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3329,11 +3544,19 @@ private Weapon_T72M_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_125_mm_2A26_T72M,
+        SFXWeapon_Canon_HE_125_mm_2A26_T72M
+    ]
+)
+private Weapon_T72M_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_NSVT,
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_T72M_DDR_weapon4 is TCompositeHappening
+private Weapon_T72M_DDR_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3341,7 +3564,7 @@ private Weapon_T72M_DDR_weapon4 is TCompositeHappening
         SFXWeapon_MMG_PKT_7_62mm
     ]
 )
-private Weapon_T72M_DDR_weapon5 is TCompositeHappening
+private Weapon_T72M_DDR_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3371,11 +3594,19 @@ private Weapon_T72_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_125_mm_2A26,
+        SFXWeapon_Canon_HE_125_mm_2A26
+    ]
+)
+private Weapon_T72_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_HMG_12_7_mm_NSVT,
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_T72_DDR_weapon4 is TCompositeHappening
+private Weapon_T72_DDR_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3383,7 +3614,7 @@ private Weapon_T72_DDR_weapon4 is TCompositeHappening
         SFXWeapon_MMG_PKT_7_62mm
     ]
 )
-private Weapon_T72_DDR_weapon5 is TCompositeHappening
+private Weapon_T72_DDR_weapon6 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3413,11 +3644,19 @@ private Weapon_T80BV_CMD_SOV_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_125_mm_2A46M_T80B,
+        SFXWeapon_Canon_HE_125_mm_2A46M_T80B
+    ]
+)
+private Weapon_T80BV_CMD_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_ATGM_9M112_1_Kobra,
         SFXWeapon_ATGM_9M112_1_Kobra
     ]
 )
-private Weapon_T80BV_CMD_SOV_weapon4 is TCompositeHappening
+private Weapon_T80BV_CMD_SOV_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3455,11 +3694,19 @@ private Weapon_T80BV_SOV_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_125_mm_2A46M_T80B,
+        SFXWeapon_Canon_HE_125_mm_2A46M_T80B
+    ]
+)
+private Weapon_T80BV_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_ATGM_9M112_1_Kobra,
         SFXWeapon_ATGM_9M112_1_Kobra
     ]
 )
-private Weapon_T80BV_SOV_weapon4 is TCompositeHappening
+private Weapon_T80BV_SOV_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3547,11 +3794,19 @@ private Weapon_T80B_SOV_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_125_mm_2A46M_T80B,
+        SFXWeapon_Canon_HE_125_mm_2A46M_T80B
+    ]
+)
+private Weapon_T80B_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_ATGM_9M112_1_Kobra,
         SFXWeapon_ATGM_9M112_1_Kobra
     ]
 )
-private Weapon_T80B_SOV_weapon4 is TCompositeHappening
+private Weapon_T80B_SOV_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3589,11 +3844,19 @@ private Weapon_T80U_CMD_SOV_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_125_mm_2A46M_late,
+        SFXWeapon_Canon_HE_125_mm_2A46M_late
+    ]
+)
+private Weapon_T80U_CMD_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_ATGM_9M119M_Refleks,
         SFXWeapon_ATGM_9M119M_Refleks
     ]
 )
-private Weapon_T80U_CMD_SOV_weapon4 is TCompositeHappening
+private Weapon_T80U_CMD_SOV_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -3631,11 +3894,19 @@ private Weapon_T80U_SOV_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
+        FXWeapon_Canon_HE_125_mm_2A46M_late,
+        SFXWeapon_Canon_HE_125_mm_2A46M_late
+    ]
+)
+private Weapon_T80U_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
         FXWeapon_ATGM_9M119M_Refleks,
         SFXWeapon_ATGM_9M119M_Refleks
     ]
 )
-private Weapon_T80U_SOV_weapon4 is TCompositeHappening
+private Weapon_T80U_SOV_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [

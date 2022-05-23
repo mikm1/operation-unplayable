@@ -955,6 +955,11 @@ export UnitEffect_Critic_Chenille_Detruite is TEffectsPackDescriptor
         (
             UpdateEachTick  = True
         ),
+        TUnitEffectIncreaseChassisRotationSpeedDescriptor
+        (
+            ModifierType       = ~/ModifierType_Multiplicatif
+            BonusChassisRotationSpeed  = 0
+        ),
 
     ]
 )
