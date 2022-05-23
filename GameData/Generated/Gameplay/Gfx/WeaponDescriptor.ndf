@@ -1,5 +1,4 @@
 // Ne pas éditer, ce fichier est auto-généré !
-
 export WeaponDescriptor_MotRifles_VR_SOV is TWeaponManagerModuleDescriptor   //ADDED RPG-7VR MOTOS
 (
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
@@ -159,6 +158,7 @@ export WeaponDescriptor_MotRifles_VR_SOV is TWeaponManagerModuleDescriptor   //A
         )
     ]
 )
+
 export WeaponDescriptor_2K12_KUB_DDR is TWeaponManagerModuleDescriptor
 (
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
@@ -241,6 +241,7 @@ export WeaponDescriptor_2K12_KUB_DDR is TWeaponManagerModuleDescriptor
         )
     ]
 )
+
 export WeaponDescriptor_2K12_KUB_SOV is TWeaponManagerModuleDescriptor
 (
     DelayIdleAmmoSorting = DelayIdleAmmoSorting

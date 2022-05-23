@@ -22,7 +22,7 @@ is TCriticalEffectModuleDescriptor
     EffectsOnRear = <PackEffetCritique>
     EffectsOnTop = <PackEffetCritique>
 
-    PierceEffectsOnFront = //<EffectsFromTerrain>
+    PierceEffectsOnFront = //<PackEffetCritique>
     [
         {CriticalEffect_AmmoExplosion(Roll = (1,10)), //2 HP -> ded
         CriticalEffect_BailedOut(Roll = (11,20)), //bail out
@@ -57,7 +57,9 @@ is TCriticalEffectModuleDescriptor
         CriticalEffect_BailedOut(Roll = (16,25)), //bail out
         CriticalEffect_Incendiary(Roll = (26,30)), //engine incendiary 3HP
         CriticalEffect_Spalling (Roll = (31,40)), // 2HP
-        CriticalEffect_CrewPanicked(Roll = (41,50)), //Deroute
+        CriticalEffect_SightDamaged(Roll = (41,46)), // placeholder till panic is fixed
+        CriticalEffect_EngineDestroyed(Roll = (47,50)), // placeholder till panic is fixed
+        //CriticalEffect_CrewPanicked(Roll = {(41,50)}(1,100)), //Deroute CREW PANIC CRASHES THE GAME ON THE END OF THE TIMER
         CriticalEffect_CompReset(Roll = (51,60)),// Computer reset -> Précision 0.5
         CriticalEffect_TurretStuck(Roll = (61,70)), //no rotation tourelle
         CriticalEffect_GunJammed(Roll = (71,80)),
@@ -74,12 +76,12 @@ is TCriticalEffectModuleDescriptor
         CriticalEffect_BailedOut(Roll = (41,50)), //bail out
         CriticalEffect_Incendiary(Roll = (51,55)), //engine incendiary 3HP
         CriticalEffect_Spalling (Roll = (56,65)), // 2HP
-        CriticalEffect_CrewPanicked(Roll = (66,75)), //Deroute
-        CriticalEffect_EngineDestroyed(Roll = (76,80)),  //Full stop
-        CriticalEffect_TransmissionDestroyed(Roll = (81,85)), //Full stop
-        CriticalEffect_CompReset(Roll = (86,86)),// Computer reset -> Précision 0.5
-        CriticalEffect_TurretStuck(Roll = (87,88)), //no rotation tourelle
-        CriticalEffect_GunJammed(Roll = (89,89)),
+        //CriticalEffect_CrewPanicked(Roll = (66,75)), //Deroute
+        CriticalEffect_EngineDestroyed(Roll = (66,70)),  //Full stop
+        CriticalEffect_TransmissionDestroyed(Roll = (71,75)), //Full stop
+        CriticalEffect_CompReset(Roll = (76,80)),// Computer reset -> Précision 0.5
+        CriticalEffect_TurretStuck(Roll = (81,85)), //no rotation tourelle
+        CriticalEffect_GunJammed(Roll = (86,89)),
         CriticalEffect_CrewKO(Roll = (90,95)), //Bailout 10sec}
         CriticalEffect_ShooterKilled(Roll = (96,97)), //Armes stop 30sec
         CriticalEffect_LoaderKilled(Roll = (98,99)), //no reload 30sec
@@ -92,9 +94,9 @@ is TCriticalEffectModuleDescriptor
         CriticalEffect_CrewKilled(Roll = (31,40)), //bail out
         CriticalEffect_BailedOut(Roll = (41,50)), //bail out
         CriticalEffect_Incendiary(Roll = (51,65)), //engine incendiary 3HP
-        CriticalEffect_CrewPanicked(Roll = (66,75)), //Deroute
-        CriticalEffect_EngineDestroyed(Roll = (76,85)),  //Full stop
-        CriticalEffect_TransmissionDestroyed(Roll = (86,95)), //Full stop
+       // CriticalEffect_CrewPanicked(Roll = (66,75)), //Deroute
+        CriticalEffect_EngineDestroyed(Roll = (66,80)),  //Full stop
+        CriticalEffect_TransmissionDestroyed(Roll = (81,95)), //Full stop
         CriticalEffect_TurretStuck(Roll = (96,97)), //no rotation tourelle
         CriticalEffect_CrewKO(Roll = (98,98)), //Bailout 10sec}
         CriticalEffect_ShooterKilled(Roll = (99,99)), //Armes stop 30sec
@@ -117,8 +119,8 @@ is TCriticalEffectModuleDescriptor
     ]
     RicochetEffectsOnSides = 
     [
-        CriticalEffect_CrewPanicked(Roll = (1,5)), //Deroute
-        CriticalEffect_TracksBroken(Roll = (6,15)), //no rotation
+        //CriticalEffect_CrewPanicked(Roll = (1,5)), //Deroute
+        CriticalEffect_TracksBroken(Roll = (1,15)), //no rotation
         CriticalEffect_TurretStuck(Roll = (16,20)),
         CriticalEffect_EngineDamaged(Roll = (21,23)), //50% vitesse
         CriticalEffect_TransmissionDamaged(Roll = (24,25)), //50% vitesse
@@ -131,11 +133,11 @@ is TCriticalEffectModuleDescriptor
     ]
     RicochetEffectsOnRear = 
     [
-        CriticalEffect_CrewPanicked(Roll = (1,10)), //Deroute
-        CriticalEffect_TracksBroken(Roll = (11,12)), //no rotation
-        CriticalEffect_TurretStuck(Roll = (13,17)),
-        CriticalEffect_EngineDamaged(Roll = (18,22)), //50% vitesse
-        CriticalEffect_TransmissionDamaged(Roll = (23,27)), //50% vitesse
+        //CriticalEffect_CrewPanicked(Roll = (1,10)), //Deroute
+        CriticalEffect_TracksBroken(Roll = (1,4)), //no rotation
+        CriticalEffect_TurretStuck(Roll = (5,10)),
+        CriticalEffect_EngineDamaged(Roll = (11,17)), //50% vitesse
+        CriticalEffect_TransmissionDamaged(Roll = (18,27)), //50% vitesse
         CriticalEffect_CompReset(Roll = (28,28)),// Computer reset -> Précision 0.5
         CriticalEffect_LoaderKO(Roll = (29,30)),//no reload 10sec
         CriticalEffect_Bounce(Roll = (31,100)),
