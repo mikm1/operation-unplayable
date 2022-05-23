@@ -452,7 +452,7 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
 //----------------------------- Constantes Weapons ----------------------------------------//
 
-    MergeAllWeaponOnSameTurretInUI = true // permet d'indiquer dans l'interface si on merge les armes sur une même tourelle
+    MergeAllWeaponOnSameTurretInUI = false // permet d'indiquer dans l'interface si on merge les armes sur une même tourelle
                                            // même si elles ont des munitions différentes (boites de munitions différentes).
 
     MaxWeaponsOnUI = 6 // Nombre d'armes affichées sur les panneaux d'interface qui affiche les armes
