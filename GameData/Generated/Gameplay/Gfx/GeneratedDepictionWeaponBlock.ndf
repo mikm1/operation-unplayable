@@ -2412,19 +2412,11 @@ private Weapon_M48A2C_RFA_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
-        FXWeapon_Canon_HE_90mm_M48,
-        SFXWeapon_Canon_HE_90mm_M48
-    ]
-)
-private Weapon_M48A2C_RFA_weapon4 is TCompositeHappening
-(
-    SubHappenings =
-    [
         FXWeapon_HMG_12_7_mm_M2HB,
         SFXWeapon_HMG_12_7_mm_M2HB
     ]
 )
-private Weapon_M48A2C_RFA_weapon5 is TCompositeHappening
+private Weapon_M48A2C_RFA_weapon4 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2952,6 +2944,14 @@ private Weapon_T55AM2B_DDR_weapon6 is TCompositeHappening
     [
         FXWeapon_SMOKE_Vehicle_Grenadex8,
         SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
+private Weapon_T55AM2B_DDR_weapon7 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
     ]
 )
 
@@ -3735,8 +3735,8 @@ private Weapon_T80BV_TEST_SOV_weapon2 is TCompositeHappening
 (
     SubHappenings =
     [
-        FXWeapon_Canon_HE_125_mm_2A46M_T80B,
-        SFXWeapon_Canon_HE_125_mm_2A46M_T80B
+        FXWeapon_Canon_HE_76mm_D56T,
+        SFXWeapon_Canon_HE_76mm_D56T
     ]
 )
 private Weapon_T80BV_TEST_SOV_weapon3 is TCompositeHappening

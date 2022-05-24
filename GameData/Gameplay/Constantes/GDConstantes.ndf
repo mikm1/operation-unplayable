@@ -12,7 +12,7 @@ CountingRule_Average is 2
 CountingRule_Min is 3
 CountingRule_Max is 4
 
-optics_multiplier is 2.0 //MM
+optics_multiplier is 1.5 //MM
 
 // GhostModule.h
 EShowGhostOverSpecificTerrainConditionFilterType is TBaseClass

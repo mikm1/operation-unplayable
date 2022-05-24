@@ -205,7 +205,7 @@ SideBySideButtonDescriptor is BUCKButtonDescriptor
         MagnifiableWidthHeight = [25.0, 25.0]
         AlignementToAnchor = [1.0, 0.0]
         AlignementToFather = [1.0, 0.0]
-        MagnifiableOffset = [-18.0, 20.0]
+        MagnifiableOffset = [-10.0, 0.0]
     )
 
     IsTogglable = true
@@ -237,7 +237,7 @@ AnimationButtonDescriptor is BUCKButtonDescriptor
         MagnifiableWidthHeight = [25.0, 25.0]
         AlignementToAnchor = [0.0, 0.0]
         AlignementToFather = [0.0, 0.0]
-        MagnifiableOffset = [14.0, 25.0]
+        MagnifiableOffset = [14.0, 765.0]
     )
 
     IsTogglable = true

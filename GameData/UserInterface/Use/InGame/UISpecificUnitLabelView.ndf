@@ -1151,7 +1151,7 @@ UnitLabelUnitCriticalMessageBUCKComponent is BUCKContainerDescriptor
     ElementName = 'CriticTitle'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [120.0, 15.0]
+        MagnifiableWidthHeight = [150.0, 15.0]
         MagnifiableOffset = [0.0, 0.0]
         AlignementToFather = [0.0, 0.0]
         AlignementToAnchor = [0.0, 0.0]
