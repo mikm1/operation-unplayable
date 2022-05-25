@@ -1,5 +1,5 @@
 private largeurPanelInfo is 440
-private UnitInfoPanelGameScale is 0.86
+private UnitInfoPanelGameScale is 0.9
 private UnitInfoPanelShowRoomScale is 1.0
 
 //-------------------------------------------------------------------------------------
@@ -1873,7 +1873,7 @@ is TUISpecificUnitInfoPanelViewDescriptor
     MainComponentDescriptor = BUCKSpecificUnitInfoPanelMainComponentDescriptor( MainComponentFrame = <MainComponentFrame> UseForStrategic = <UseForStrategic> IsShowRoom = <IsShowRoom> Scale = Scale)
     MainComponentContainerUniqueName = <MainComponentContainerUniqueName>
 
-    NbWeaponsToShow = 7
+    NbWeaponsToShow = 8
     FirstWeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale IsFirstElement = true)
     WeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale IsFirstElement = false)
 

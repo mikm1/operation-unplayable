@@ -3963,6 +3963,13 @@ DepictionOperator_M106A2_HOWZ_US_Weapon3 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
+{DepictionOperator_M106A2_HOWZ_US_Weapon4 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+    NbProj = 1
+)}
 Gfx_M106A2_HOWZ_US_Autogen is TacticVehicleDepictionTemplate
 (
     CoatingName = 'M106A2_HOWZ_US'
@@ -3976,6 +3983,7 @@ Gfx_M106A2_HOWZ_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M106A2_HOWZ_US_Weapon1,
         DepictionOperator_M106A2_HOWZ_US_Weapon2,
         DepictionOperator_M106A2_HOWZ_US_Weapon3,
+        //DepictionOperator_M106A2_HOWZ_US_Weapon4,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_M113,
         DepictionOperator_CriticalEffects,
@@ -3989,6 +3997,7 @@ Gfx_M106A2_HOWZ_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag1" ], Weapon_M106A2_HOWZ_US_weapon1 ),
                 ( [ "weapon_effet_tag2" ], Weapon_M106A2_HOWZ_US_weapon2 ),
                 ( [ "weapon_effet_tag3" ], Weapon_M106A2_HOWZ_US_weapon3 ),
+                //( [ "weapon_effet_tag4" ], Weapon_M106A2_HOWZ_US_weapon4 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked

@@ -1264,8 +1264,8 @@ private Weapon_Lars_2_RFA_weapon1 is TCompositeHappening
 (
     SubHappenings =
     [
-        FXWeapon_RocketArt_LARS_110mm_cluster,
-        SFXWeapon_RocketArt_LARS_110mm_cluster
+        FXWeapon_RocketArt_LARS_110mm,
+        SFXWeapon_RocketArt_LARS_110mm
     ]
 )
 private Weapon_Lars_2_RFA_weapon2 is TCompositeHappening
@@ -1620,7 +1620,14 @@ private Weapon_M106A2_HOWZ_US_weapon3 is TCompositeHappening
         SFXWeapon_Mortier_M40_107mm_SMOKE
     ]
 )
-
+{private Weapon_M106A2_HOWZ_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_M40_107mm,
+        SFXWeapon_Mortier_M40_107mm
+    ]
+)}
 // ------------------- M109A2_HOWZ_US ------------------- //
 private Weapon_M109A2_HOWZ_US_weapon1 is TCompositeHappening
 (
