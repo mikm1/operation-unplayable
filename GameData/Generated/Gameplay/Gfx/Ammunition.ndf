@@ -32788,7 +32788,7 @@ export Ammo_MMG_M240_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((14) * Metre)
-    PhysicalDamages                   = 0.28
+    PhysicalDamages                   = 0.1
     RadiusSplashSuppressDamages       = ((14) * Metre)
     SuppressDamages                   = 6.0
     RayonPinned                       = ((400) * Metre)
@@ -32891,7 +32891,7 @@ export Ammo_MMG_M240_abrams_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((14) * Metre)
-    PhysicalDamages                   = 0.28
+    PhysicalDamages                   = 0.1
     RadiusSplashSuppressDamages       = ((14) * Metre)
     SuppressDamages                   = 6.0
     RayonPinned                       = ((400) * Metre)
@@ -33200,7 +33200,7 @@ export Ammo_MMG_MG3_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((14) * Metre)
-    PhysicalDamages                   = 0.28
+    PhysicalDamages                   = 0.1
     RadiusSplashSuppressDamages       = ((14) * Metre)
     SuppressDamages                   = 6.0
     RayonPinned                       = ((400) * Metre)
@@ -33406,7 +33406,7 @@ export Ammo_MMG_PKT_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((14) * Metre)
-    PhysicalDamages                   = 0.28
+    PhysicalDamages                   = 0.1
     RadiusSplashSuppressDamages       = ((14) * Metre)
     SuppressDamages                   = 6.0
     RayonPinned                       = ((80) * Metre)
@@ -33509,7 +33509,7 @@ export Ammo_MMG_SGMB_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((14) * Metre)
-    PhysicalDamages                   = 0.28
+    PhysicalDamages                   = 0.1
     RadiusSplashSuppressDamages       = ((14) * Metre)
     SuppressDamages                   = 6.0
     RayonPinned                       = ((80) * Metre)
