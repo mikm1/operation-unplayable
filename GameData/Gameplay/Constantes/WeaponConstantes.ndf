@@ -61,7 +61,7 @@ export WeaponConstantes is TWeaponConstantsDescriptor
     BlindagesToIgnoreForDamageFamilies = MAP
     [
         //("he", ["blindage",]),
-        //("he_autocanon", ["blindage",]),
+        ("he_autocanon", ["blindage",]),
         ("balle", ["blindage",]),
         ("balledca", ["blindage",]),
     ]

@@ -969,7 +969,7 @@ export UnitEffect_Critic_Deroute is TEffectsPackDescriptor
     NameForDebug       = 'Critic_Deroute'
     EffectsDescriptors = [
         // BonusWeaponPorteeMax
-        {TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
         (
             ModifierType         = ~/ModifierType_Pourcentage
             BonusWeaponPorteeMax = -100
@@ -1000,7 +1000,7 @@ export UnitEffect_Critic_Deroute is TEffectsPackDescriptor
         TUnitEffectFleeFromAttackersDescriptor
         (
             FleeOnlyOnIdle = False
-        ),}
+        ),
 
         // RaiseTag
         TUnitEffectRaiseTagDescriptor
