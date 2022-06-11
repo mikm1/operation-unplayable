@@ -1121,7 +1121,6 @@ private UnitButtonUnitAloneCostText is BUCKTextDescriptor
         VerticalAlignment = UIText_VerticalCenter
         InterLine = 0
     )
-
     TextStyle = "Default"
 
     HorizontalFitStyle = ~/FitStyle/FitToContent
@@ -1269,6 +1268,9 @@ PrixUnit is BUCKTextDescriptor
         VerticalAlignment = UIText_Bottom
         InterLine = 0
     )
+    HasBackground = true
+    BackgroundBlockColorToken = "Noir50"
+    TextPadding = TRTTILength4( Magnifiable = [3.0, 1.0, 3.0, 1.0] )
 
     TextStyle = "NbUnitsInPackText"
 
