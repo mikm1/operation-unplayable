@@ -1024,7 +1024,22 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
         // Weapon Reload Time
 
         // Weapon Traverse Speed
-        ("WeaponTraverseSpeed",    WeaponDamageTypeAttribute(ElementName = "WeaponTraverseSpeed" Token = "UIPA_TRSPD" ValueToken = "UIP_DPS" HintToken = "HIP_WTRSP" Scale = <Scale>)),
+        ("WeaponTraverseSpeed",    
+            WeaponDamageTypeAttribute
+            (
+                ElementName = "WeaponTraverseSpeed" Token = "UIPA_TRSPD" ValueToken = "UIP_DPS" HintToken = "HIP_WTRSP"
+                HasBorder = true
+                BordersToDraw = <IsFirstElement> ?
+                     ~/TBorderSide/Left | ~/TBorderSide/Right
+                     :  ~/TBorderSide/Right
+                TextSize = '16'
+                MagnifiableOffset = [0.0, -4.0]
+                Scale = <Scale>
+                FirstMargin = 2
+                LastMargin = 5
+            )
+        ),
+        //WeaponDamageTypeAttribute(ElementName = "WeaponTraverseSpeed" Token = "UIPA_TRSPD" ValueToken = "UIP_DPS" HintToken = "HIP_WTRSP" Scale = <Scale>)),
         // Weapon Aiming Time
 
         // Weapon Time between Two Shots
@@ -1123,7 +1138,7 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
 
     ValueTextColors = ~/InfoPanelValuesColors
     DamageTypeComponents = ~/DamageTypeComponentConfigurations
-    MergeDamageTypes = true
+    MergeDamageTypes = false
 )
 
 // -------------------------------------------------------------------------------------------------
@@ -1146,6 +1161,6 @@ listeAffichage is
     "WeaponNbShotsBySalvo",
     //"WeaponTimeBetweenTwoShots",
 
-    "",
+    "",//"WeaponTraverseSpeed", //""
     "WeaponSupplyCost",
 ]

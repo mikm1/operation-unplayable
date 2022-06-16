@@ -800,6 +800,14 @@ private Weapon_BRDM_2_DDR_weapon1 is TCompositeHappening
         SFXWeapon_HMG_14_5_mm_KPVT
     ]
 )
+private Weapon_BRDM_2_DDR_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_HMG_14_5_mm_KPVT,
+        SFXWeapon_HMG_14_5_mm_KPVT
+    ]
+)
 private Weapon_BRDM_2_DDR_weapon4 is TCompositeHappening
 (
     SubHappenings =

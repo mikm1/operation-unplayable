@@ -474,7 +474,7 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
     // Attention, le parametre OneSalveDesignatedShot n'est plus specifique a l'artillerie
     NbSalveDesignatedShot = -1 // -1 -> tir jusqu'a epuisement des munitions. 0 est indéfini, prévenir si il y en a besoin
 
-    NombreMaxWeaponTraits = 5
+    NombreMaxWeaponTraits = 10
 
     ShootingAdjustmentAngleMax = 0.4 //20°
     SplashSurTirRate = true // Est-ce que les tirs ratés font des dégâts de splash ?

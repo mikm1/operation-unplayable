@@ -1790,6 +1790,14 @@ DepictionOperator_BRDM_2_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
     NbFX = 1
 )
+DepictionOperator_BRDM_2_DDR_Weapon3 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag3"
+    Anchors = ["fx_tourelle1_tir_03"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_3"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
+    NbFX = 1
+)
 DepictionOperator_BRDM_2_DDR_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
@@ -1810,6 +1818,7 @@ Gfx_BRDM_2_DDR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_TurretSound_ST_SAM_SOVIET,
         DepictionOperator_Turret_4_Aim,
         DepictionOperator_BRDM_2_DDR_Weapon1,
+        DepictionOperator_BRDM_2_DDR_Weapon3,
         DepictionOperator_BRDM_2_DDR_Weapon4,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_BRDM,
@@ -1821,6 +1830,7 @@ Gfx_BRDM_2_DDR_Autogen is TacticVehicleDepictionTemplate
 
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_BRDM_2_DDR_weapon1 ),
+                ( [ "weapon_effet_tag3" ], Weapon_BRDM_2_DDR_weapon3 ),
                 ( [ "weapon_effet_tag4" ], Weapon_BRDM_2_DDR_weapon4 ),
             ]
             + DepictionAction_Stress_And_Wrecked

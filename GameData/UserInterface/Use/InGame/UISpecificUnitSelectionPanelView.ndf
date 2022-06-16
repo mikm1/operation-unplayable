@@ -1,10 +1,11 @@
 private largeurPanelRoE is 100.0
+private panel_height is 140.0 // heaight of the weapons panel on the bottom of the screen in battle ~MM
 PanelDeSelectionUnique is BUCKListDescriptor
 (
     ElementName = 'SelectionPanelAndWeaponButtons'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, 120.0]
+        MagnifiableWidthHeight = [0.0, panel_height]
         AlignementToFather = [0.5, 0.0]
         AlignementToAnchor = [0.5, 0.0]
     )
@@ -35,7 +36,7 @@ PanelDeSelectionUnique is BUCKListDescriptor
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    MagnifiableWidthHeight  = [largeurPanelRoE + 10.0, 120.0]
+                    MagnifiableWidthHeight  = [largeurPanelRoE + 10.0, panel_height]
                 )
 
             )
@@ -60,7 +61,7 @@ PanelSelectionUnique_Nom is BUCKButtonDescriptor
     ElementName = "SelectionPanelButton"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight  = [largeurPaneldetailUnit, 120.0]
+        MagnifiableWidthHeight  = [largeurPaneldetailUnit, panel_height]
         AlignementToAnchor = [0.0, 0.5]
         AlignementToFather = [0.0, 0.5]
     )
@@ -942,7 +943,7 @@ private PanelSelectionUnique_RoeShortcuts is PanelRoundedCorner
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 0.0]
-        MagnifiableWidthHeight = [0.0, 120.0]
+        MagnifiableWidthHeight = [0.0, panel_height]
         AlignementToAnchor = [0.5, 0.5]
         AlignementToFather = [0.5, 0.5]
     )
