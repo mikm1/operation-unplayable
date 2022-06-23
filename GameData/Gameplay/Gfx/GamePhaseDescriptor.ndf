@@ -139,6 +139,5 @@ private deploiementGamePhaseDescriptor is TDeploiementGamePhaseDescriptor
 private strategicGamePhase is TStrategicGamePhaseDescriptor
 (
     GamePhaseType = ~/StrategicGame
-    ZoneManagerDescriptor = ~/strategicZoneManagerDescriptor
     ZoneManagerForIAStratDescriptor = ~/strategicZoneManagerForIAStratDescriptor
 )

@@ -3,10 +3,7 @@ WorldInterfaceStrategic is TWorldInterfaceDescriptor
 (
     World3D = $/M3D/Scene/DefaultWorld
     HelperVisibility = ~/World_Constante.HelperVisibility
-    Damage = (nil, $/GFX/GameFx/FX_FeedbackSS_Degats_OffScreen_Call)
-    DeadUnit = (nil, $/GFX/GameFx/FX_FeedbackSS_Dead_OffScreen_Call)
-
-    PlayEventMessageSounds = True
+    GamePhaseManagerDescriptor = ~/gamePhaseManagerDescriptor
 
     VisibilityRangeZooms = TVisibilityRangeContainer
     (

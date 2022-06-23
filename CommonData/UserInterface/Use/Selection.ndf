@@ -109,7 +109,7 @@ export SelectionRenderToolBox is TDynamicRenderToolBox
 (
     MainCamera = $/M3D/Camera/CameraPrincipale
     Scene2D   = $/M3D/Scene/Scene_2D_Interface
-    Floors   = $/M3D/Scene/FloorRegistry
+    WorldFloorProxy = $/M3D/Scene/WorldFloorForIAProxy
     CalqueText   = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Line
     CalqueText3D   = $/M3D/Scene/Scene3D_AfterPostProcess/debugInfo/Render/Calque_DebugInfo_Text3D
     FreeTypeGenerator = $/M3D/Fonts/HandPenFont

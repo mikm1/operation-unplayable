@@ -291,8 +291,8 @@ export Constantes is TTunableConstante
 VictoryConstantes  is TVictoryLevelConstantes
 (
     // Les paliers de victoire ne représentent pas forcément la même chose selon que l'on a une victoire au temps et au score!! (cf les commentaires)
-    PalierVictoireMineure = 0.15   // Ratio entre le score du vainqueur et le deuxieme meilleur score
-    PalierVictoireMajeure = 0.55  // Ratio entre le score du vainqueur et le deuxieme meilleur score
+    PalierVictoireMineure = 0.05   // Ratio entre le score du vainqueur et le deuxieme meilleur score
+    PalierVictoireMajeure = 0.55  // Ratio e²ntre le score du vainqueur et le deuxieme meilleur score
     PalierVictoireTotale = 0.75   // Ratio entre le score du vainqueur et le deuxieme meilleur score
 
     BonusModeDestruction = 0.4  // Pour permettre d'avoir un meilleur lissage des types de victoire en mode destruction
@@ -469,7 +469,7 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
     FrontSideAngleInDeg = 60
     RearSideAngleInDeg = 120
 
-    IgnoreTirPenetrantSiAucunBlindage = true //true - MM
+    IgnoreTirPenetrantSiAucunBlindage = true
 
     // Attention, le parametre OneSalveDesignatedShot n'est plus specifique a l'artillerie
     NbSalveDesignatedShot = -1 // -1 -> tir jusqu'a epuisement des munitions. 0 est indéfini, prévenir si il y en a besoin

@@ -1,3 +1,5 @@
+//A maintenir synchro avec PathfindType.h
+
 export PathfindTypes is EPathfindType
 (
     Values = [

@@ -1,6 +1,6 @@
 // Paramètrage de piqué des Stukas //
-StukaDistanceNosedive is (1750 * Metre)
-StukaDistanceContournementCible is (500 * Metre)
+StukaDistanceNosedive is (1350 * Metre)
+StukaDistanceContournementCible is (800 * Metre)
 StukaAgilityMultiplicator is 2.5
 
 // Paramètrage du Dive //

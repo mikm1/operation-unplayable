@@ -249,61 +249,6 @@ is BUCKTextDescriptor
         )
     ]
 )
-
-//----------------------------------------------------------------------
-// Icône de parachutiste
-template UnitLabelParachutistIcon
-[
-    LocalRenderLayer : int
-]
-is BUCKContainerDescriptor
-(
-    ElementName = 'ParachutistIcon'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [95.0, 31.0]
-        MagnifiableOffset = [0.0, -21.0]
-        AlignementToFather = [0.0, 1.0]
-        AlignementToAnchor = [0.0, 1.0]
-    )
-
-    Components =
-    [
-        BUCKTextureDescriptor
-        (
-            ElementName = 'ParachutistIconL'
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                MagnifiableWidthHeight = [45.0, 27.0]
-                AlignementToFather = [0.0, 0.5]
-                AlignementToAnchor = [0.0, 0.5]
-            )
-
-            UseLocalRenderLayer = true
-            LocalRenderLayer = <LocalRenderLayer>
-
-            TextureToken = "CommonTexture_Parachutiste_Left"
-            TextureFrame   = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
-        ),
-
-        BUCKTextureDescriptor
-        (
-            ElementName = 'ParachutistIconR'
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                MagnifiableWidthHeight = [45.0, 27.0]
-                AlignementToFather = [1.0, 0.5]
-                AlignementToAnchor = [1.0, 0.5]
-            )
-
-            UseLocalRenderLayer = true
-            LocalRenderLayer = <LocalRenderLayer>
-
-            TextureToken = "CommonTexture_Parachutiste_Right"
-            TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
-        ),
-    ]
-)
 //----------------------------------------------------------------------
 // Icône d'AP
 template UnitLabelApIcon
@@ -1383,7 +1328,6 @@ private template UnitLabelUnitBUCKComponentDescriptor
 
             ForegroundComponents =
             [
-                UnitLabelParachutistIcon(LocalRenderLayer = 1),
                 UnitLabelSmartHoldFireIcon(LocalRenderLayer = 4),
                 ~/SurrenderIcon,
                 ~/SurrenderAnimation,

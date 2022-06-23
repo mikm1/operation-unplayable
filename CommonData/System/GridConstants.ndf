@@ -28,8 +28,8 @@
 //------------------------------------------------------------------------------
 template templateRectGridHelper
 [
-    RefSize             : float2,
-    RefSubdivisionCount : int2,
+    RefSize             : float,
+    RefSubdivisionCount : int,
 ] is TBaseClass
 (
     // Paramètres
@@ -37,10 +37,10 @@ template templateRectGridHelper
     RefSubdivisionCount is <RefSubdivisionCount>
 
     // Valeurs dépendantes
-    Size is float2[RefSize[0] div RefSubdivisionCount[0], RefSize[1] div RefSubdivisionCount[1]]
+    Size is RefSize div RefSubdivisionCount
 
-    Width is Size[0]
-    Height is Size[1]
+    Width is Size
+    Height is Size
 )
 //------------------------------------------------------------------------------
 template templateSquareGridHelper
@@ -49,8 +49,8 @@ template templateSquareGridHelper
     RefSubdivisionCount : int,
 ] is templateRectGridHelper
 (
-    RefSize = float2[<RefSize>, <RefSize>]
-    RefSubdivisionCount = int2[<RefSubdivisionCount>, <RefSubdivisionCount>]
+    RefSize = <RefSize>
+    RefSubdivisionCount = <RefSubdivisionCount>
 )
 //------------------------------------------------------------------------------
 //******************************************************************************

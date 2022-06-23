@@ -642,6 +642,12 @@ BattlegroupsBriefMultiList is BUCKMultiListDescriptor
         "DivisionPowerTextMultiList"
     ]
 
+    SortingCriteriaListByPriority =
+    [
+        "AllianceTextMultiList",
+        "BattlegroupNameMultiList",
+    ]
+
     RackName = "BattlegroupsBriefRack"
 
     TitleDescriptor = ~/BattlegroupsBriefMultiListTitle
@@ -1080,7 +1086,6 @@ EcranDeckAnimated is WindowFrame
                 (
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-
                         RelativeWidthHeight = [1.0, 0.0]
                         AlignementToFather = [0.5, 0.0]
                         AlignementToAnchor = [0.5, 0.0]
@@ -1103,7 +1108,7 @@ EcranDeckAnimated is WindowFrame
                     ElementName = "FiltersList"
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        MagnifiableOffset = [DeckListHorizontalOffset + 60, 19.0]
+                        MagnifiableOffset = [DeckListHorizontalOffset + 60, 15.0]
                     )
                     BoxMagnifiableWidthHeight = [25.0, 25.0]
                     MagnifiableOffsetRack = [-210.0, 0.0]
@@ -1118,6 +1123,24 @@ EcranDeckAnimated is WindowFrame
                     ArrowBoxMagnifiableWidthHeight = [20.0, 25.0]
 
                     ItemListBackgroundBlockColorToken = 'H2_bleu_2_hint'
+                ),
+                BUCKTextDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        MagnifiableOffset = [DeckListHorizontalOffset + 50, 42.0]
+                        MagnifiableWidthHeight = [64.0, 0.0]
+                    )
+                    ElementName = "NbFilteredDecksText"
+                    ParagraphStyle = paragraphStyleTextCenter
+                    TextStyle = "Default"
+                    HorizontalFitStyle = ~/FitStyle/UserDefined
+                    VerticalFitStyle = ~/FitStyle/FitToContent
+                    TypefaceToken = "Liberator"
+                    BigLineAction = ~/BigLineAction/MultiLine
+                    TextDico = ~/LocalisationConstantes/dico_interface_ingame
+                    TextColor = "gris_load"
+                    TextSize = "10"
                 ),
                 BUCKContainerDescriptor
                 (

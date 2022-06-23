@@ -61,11 +61,11 @@ export SpecificHelicoDepictionSelector is TLodSelector
     OptionalLimit = $/GraphicOption/ModelQuality
 )
 
-template Template_ServantDepictionSelector
+template HumanSelectorTemplate
 [
     DisplayCondition,
 ]
-is TServantLodSelector
+is THumanWithConditionSelector
 (
     HighLowLimitInMeter = LodHighLowLimit_Infantry
     LowNoneLimitInMeter = LodLowNoneLimit_Infantry
@@ -74,19 +74,19 @@ is TServantLodSelector
     DisplayCondition = <DisplayCondition>
 )
 
-export SpecificAlwaysOnFootServantDepictionSelector is Template_ServantDepictionSelector
+export HumanAlwaysVisibleSelector is HumanSelectorTemplate
 (
     DisplayCondition = nil
 )
 
-export SpecificSittingServantDepictionSelector is Template_ServantDepictionSelector
+export HumanVisibleWhenDeployedSelector is HumanSelectorTemplate
 (
-    DisplayCondition = TDepictionSittingServantDisplayCondition()
+    DisplayCondition = TVisibleWhenAliveAndDeployedCondition()
 )
 
-export SpecificOnFootWhenMovingServantDepictionSelector is Template_ServantDepictionSelector
+export HumanVisibleWhenUndeployedSelector is HumanSelectorTemplate
 (
-    DisplayCondition = TDepictionServantOnFootDisplayCondition()
+    DisplayCondition = TVisibleWhenDeadOrUndeployedCondition()
 )
 
 export TowedUnitSubDepictionSelector is TTowedUnitSelector

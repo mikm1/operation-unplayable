@@ -481,6 +481,12 @@ export CubeAction_Menu_Ordres_infs_simplifie is TCubeActionMenuDescriptor
             ]
         ),
         (
+            8,
+            [
+                ~/CubeAction_Order_Move,
+            ]
+        ),
+        (
             12,
             [
                 ~/CubeAction_Order_AIAttack,
@@ -822,6 +828,12 @@ export CubeAction_Menu_Ordres_transports_Arme is TCubeActionMenuDescriptor
             ]
         ),
         (
+            8,
+            [
+                ~/CubeAction_Order_Move,
+            ]
+        ),
+        (
             9,
             [
                 ~/CubeAction_Order_UnloadAtPosition,
@@ -1091,6 +1103,12 @@ export CubeAction_Menu_Ordres_transports_NonArme is TCubeActionMenuDescriptor
             5,
             [
                 ~/CubeAction_Order_Reverse,
+            ]
+        ),
+        (
+            8,
+            [
+                ~/CubeAction_Order_Move,
             ]
         ),
         (
@@ -1368,6 +1386,12 @@ export CubeAction_Menu_Ordres_vehiculeSol_supply is TCubeActionMenuDescriptor
             5,
             [
                 ~/CubeAction_Order_Reverse,
+            ]
+        ),
+        (
+            8,
+            [
+                ~/CubeAction_Order_Move,
             ]
         ),
     ]

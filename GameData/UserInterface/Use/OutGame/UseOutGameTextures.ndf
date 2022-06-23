@@ -242,6 +242,11 @@ fleche_deck is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Inter
 lobby_closed is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/lobby_place_vide.png" )
 lobby_ouvert is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/lobby_ouvert.png" )
 show_hide_arrow is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/show_hide_arrow.png" )
+close_slot is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/close_slot.png" )
+kick_player is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/kick_player.png" )
+lobby_dropdown_arrow is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/dropdown_arrow.png" )
+switch_to_left_team is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/switch_to_left_team.png" )
+switch_to_right_team is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/switch_to_right_team.png" )
 
 //-------------------------------------------------------------------------------------
 // profile
@@ -457,6 +462,8 @@ unnamed TBUCKToolAdditionalTextureBank
         ("texture_switch_icon", MAP [( ~/ComponentState/Normal, ~/texture_switch_icon), ]),
         ("dossier_vide_lobby", MAP [( ~/ComponentState/Normal, ~/dossier_vide_lobby), ]),
         ("Texture_dossier_triple_lobby", MAP [( ~/ComponentState/Normal, ~/Texture_dossier_triple_lobby), ]),
+        ("switch_to_left_team", MAP [( ~/ComponentState/Normal, ~/switch_to_left_team), ]),
+        ("switch_to_right_team", MAP [( ~/ComponentState/Normal, ~/switch_to_right_team), ]),
         ("bouton_ajout_ia", MAP [
                             ( ~/ComponentState/Normal, ~/bouton_ajout_ia),
                             ( ~/ComponentState/Highlighted, ~/bouton_ajout_ia_toggled),
@@ -485,6 +492,9 @@ unnamed TBUCKToolAdditionalTextureBank
                             ( ~/ComponentState/Normal, ~/transparent),
                             ]),
         ("show_hide_arrow", MAP [( ~/ComponentState/Normal, ~/show_hide_arrow),]),
+        ("close_slot", MAP [( ~/ComponentState/Normal, ~/close_slot),]),
+        ("kick_player", MAP [( ~/ComponentState/Normal, ~/kick_player),]),
+        ("lobby_dropdown_arrow", MAP [( ~/ComponentState/Normal, ~/lobby_dropdown_arrow),]),
         //-------------------------------------------------------------------------------------
         // profile
         ("fond_stats", MAP [( ~/ComponentState/Normal, ~/fond_stats), ]),

@@ -119,6 +119,7 @@ is TMacroActionDescriptor_CorridorAttack_Specific
         TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 1.2 RatioPourAttaquerPerduAChaqueTick = 0.00084 CompterLesUnitesEnZoneExtendedDansLaMenace = true), // Perte de 0.1 de ratio toutes les 2 minutes
         TMacroActionLifetimeSettingHolder(MinimumResourceForLaunch = <MinimumResourceForLaunch>),
         TCorridorPlacementSettingHolder(StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1 ActiveComportementEnBoutDeCouloir = true),
+        TCorridorPlacementSettingHolder(GameModeList = [EDeploymentMode/Breakthrough] StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1),
     ]
 )
 //-------------------------------------------------------------------------
@@ -143,6 +144,7 @@ export Attack_Filler is TMacroActionDescriptor_CorridorAttack_Specific
         TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [~/Pool_Attack_Filler] LaunchASAP_RatioMin = 0.01),
         TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 2.0 CompterLesUnitesEnZoneExtendedDansLaMenace = true),
         TCorridorPlacementSettingHolder(StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1 ActiveComportementEnBoutDeCouloir = true),
+        TCorridorPlacementSettingHolder(GameModeList = [EDeploymentMode/Breakthrough] StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1),
     ]
 )
 //-------------------------------------------------------------------------
@@ -234,6 +236,7 @@ is TMacroActionDescriptor_CorridorAttack_Specific
         TMacroActionLifetimeSettingHolder(MinimumResourceForLaunch = <MinimumResourceForLaunch>),
         TAntiStackingSettingHolder(),
         TCorridorPlacementSettingHolder(StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1 ActiveComportementEnBoutDeCouloir = true),
+        TCorridorPlacementSettingHolder(GameModeList = [EDeploymentMode/Breakthrough] StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1),
     ]
 )
 //-------------------------------------------------------------------------
@@ -314,9 +317,6 @@ Vehicule_Fallback_Attack is [
                 "Vehicule_Appui",
                 "Char_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad8343-d931-11e8-b678-2c56dc4c150d}
@@ -328,9 +328,6 @@ Vehicule_Fallback_Attack is [
                 "Char_Standard",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad8344-d931-11e8-8ce6-2c56dc4c150d}
@@ -341,9 +338,6 @@ Vehicule_Fallback_Attack is [
             TagsPriority = [
                 "Char_Standard",
                 "Char_Lourd",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
 ]
@@ -360,9 +354,6 @@ export Pool_Attack_MBT is TPoolModel
             TagsPriority = [
                 "Char_Lourd",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad8346-d931-11e8-9afe-2c56dc4c150d}
@@ -374,9 +365,6 @@ export Pool_Attack_MBT is TPoolModel
                 "Infanterie_Spec_Defense", // Protege ton tank toi
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -398,9 +386,6 @@ export Pool_Attack_Filler is TPoolModel
                 "Vehicule_Appui",
                 "Char_Standard"
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad8348-d931-11e8-ae84-2c56dc4c150d}
@@ -411,9 +396,6 @@ export Pool_Attack_Filler is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Defense",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -434,9 +416,6 @@ export Pool_Objective_Attack is TPoolModel
                 "Char_Standard",
                 "Char"
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad834a-d931-11e8-8367-2c56dc4c150d}
@@ -447,9 +426,6 @@ export Pool_Objective_Attack is TPoolModel
             TagsPriority = [
                 "Char_Reco",
                 "Vehicule_Reco",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -462,9 +438,6 @@ export Pool_Objective_Attack is TPoolModel
                 "Vehicule_Appui",
                 "Char_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad834c-d931-11e8-b641-2c56dc4c150d}
@@ -475,9 +448,6 @@ export Pool_Objective_Attack is TPoolModel
             TagsPriority = [
                 "Char_Standard",
                 "Vehicule_Appui",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -500,9 +470,6 @@ export Pool_Main_Attack is TPoolModel
                 "Char",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad834e-d931-11e8-8949-2c56dc4c150d}
@@ -516,9 +483,6 @@ export Pool_Main_Attack is TPoolModel
                 "Infanterie_Reco",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad834f-d931-11e8-a5fe-2c56dc4c150d}
@@ -531,9 +495,6 @@ export Pool_Main_Attack is TPoolModel
                 "Char_Standard",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad8350-d931-11e8-a5e4-2c56dc4c150d}
@@ -545,9 +506,6 @@ export Pool_Main_Attack is TPoolModel
                 "Char_Standard",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad8351-d931-11e8-988c-2c56dc4c150d}
@@ -558,9 +516,6 @@ export Pool_Main_Attack is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -580,9 +535,6 @@ export Pool_Default_Attack_1 is TPoolModel
             TagsPriority = [
                 "Vehicule_Appui"
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80ad8353-d931-11e8-a966-2c56dc4c150d}
@@ -594,9 +546,6 @@ export Pool_Default_Attack_1 is TPoolModel
                 "Char_Standard",
                 "Char_Lourd",
                 "Vehicule_Appui",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -610,9 +559,6 @@ export Pool_Default_Attack_1 is TPoolModel
                 "Vehicule_Reco",
                 "Infanterie_Reco"
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80adaa50-d931-11e8-a01b-2c56dc4c150d}
@@ -623,9 +569,6 @@ export Pool_Default_Attack_1 is TPoolModel
             TagsPriority = [
                 "Vehicule_Appui",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -639,9 +582,6 @@ export Pool_Default_Attack_1 is TPoolModel
                 "Char_Lourd",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80adaa52-d931-11e8-b667-2c56dc4c150d}
@@ -652,9 +592,6 @@ export Pool_Default_Attack_1 is TPoolModel
             TagsPriority = [
                 "Char_Standard",
                 "Vehicule_Appui",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -674,9 +611,6 @@ export Pool_Default_Attack_2 is TPoolModel
             TagsPriority = [
                 "Char",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80adaa54-d931-11e8-afc7-2c56dc4c150d}
@@ -687,9 +621,6 @@ export Pool_Default_Attack_2 is TPoolModel
             TagsPriority = [
                 "Infanterie_Standard",
                 "Vehicule_Appui",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -702,9 +633,6 @@ export Pool_Default_Attack_2 is TPoolModel
                 "Char_Reco",
                 "Vehicule_Reco",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80adaa56-d931-11e8-b2e8-2c56dc4c150d}
@@ -714,9 +642,6 @@ export Pool_Default_Attack_2 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Cheapest
             TagsPriority = [
                 "Canon_AA_Porte",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -729,9 +654,6 @@ export Pool_Default_Attack_2 is TPoolModel
                 "Char_Standard",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80adaa58-d931-11e8-a47f-2c56dc4c150d}
@@ -742,9 +664,6 @@ export Pool_Default_Attack_2 is TPoolModel
             TagsPriority = [
                 "Char_Standard",
                 "Char_Lourd",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -765,9 +684,6 @@ export Pool_Default_Attack_3 is TPoolModel
                 "Infanterie_Standard",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80adaa5a-d931-11e8-87bc-2c56dc4c150d}
@@ -777,9 +693,6 @@ export Pool_Default_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Canon_AA_Porte",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -792,9 +705,6 @@ export Pool_Default_Attack_3 is TPoolModel
                 "Char_Standard",
                 "Char_Lourd",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80adaa5c-d931-11e8-a5d0-2c56dc4c150d}
@@ -804,9 +714,6 @@ export Pool_Default_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -819,9 +726,6 @@ export Pool_Default_Attack_3 is TPoolModel
                 "Char_Standard",
                 "Char_Lourd",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{80adaa5e-d931-11e8-b280-2c56dc4c150d}
@@ -832,9 +736,6 @@ export Pool_Default_Attack_3 is TPoolModel
             TagsPriority = [
                 "Helo_Gunship",
                 "Helo",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -855,9 +756,6 @@ export Pool_Tank_Attack_1 is TPoolModel
                 "Char_Lourd",
                 "Char_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d998f392-e1b5-11e8-b7c8-2c56dc4c150d}
@@ -869,9 +767,6 @@ export Pool_Tank_Attack_1 is TPoolModel
                 "Canon_AA_Porte",
                 "Char_Standard",
                 "Char_Reco",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -885,9 +780,6 @@ export Pool_Tank_Attack_1 is TPoolModel
                 "Infanterie_Reco",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d998f394-e1b5-11e8-9ab0-2c56dc4c150d}
@@ -897,9 +789,6 @@ export Pool_Tank_Attack_1 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Cheapest
             TagsPriority = [
                 "Char_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -912,9 +801,6 @@ export Pool_Tank_Attack_1 is TPoolModel
                 "Char_Standard",
                 "Char_Lourd",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d998f396-e1b5-11e8-b0b6-2c56dc4c150d}
@@ -925,9 +811,6 @@ export Pool_Tank_Attack_1 is TPoolModel
             TagsPriority = [
                 "Char_Standard",
                 "Char_Lourd",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -947,9 +830,6 @@ export Pool_Tank_Attack_2 is TPoolModel
                 "Char_Standard",
                 "Char_Lourd",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991aa1-e1b5-11e8-8256-2c56dc4c150d}
@@ -963,9 +843,6 @@ export Pool_Tank_Attack_2 is TPoolModel
                 "Infanterie_Reco",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991aa2-e1b5-11e8-b46e-2c56dc4c150d}
@@ -976,9 +853,6 @@ export Pool_Tank_Attack_2 is TPoolModel
             TagsPriority = [
                 "Char_Standard",
                 "Vehicule_Appui",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -991,9 +865,6 @@ export Pool_Tank_Attack_2 is TPoolModel
                 "Char_Lourd",
                 "Char_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991aa4-e1b5-11e8-93c4-2c56dc4c150d}
@@ -1003,9 +874,6 @@ export Pool_Tank_Attack_2 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Cheapest
             TagsPriority = [
                 "Char_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1018,9 +886,6 @@ export Pool_Tank_Attack_2 is TPoolModel
                 "Char_Standard",
                 "Char_Lourd",
                 "Canon_AA_Porte",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -1039,9 +904,6 @@ export Pool_Tank_Attack_3 is TPoolModel
             TagsPriority = [
                 "Char_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991aa7-e1b5-11e8-85c9-2c56dc4c150d}
@@ -1054,9 +916,6 @@ export Pool_Tank_Attack_3 is TPoolModel
                 "Char_Reco",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991aa8-e1b5-11e8-a391-2c56dc4c150d}
@@ -1067,9 +926,6 @@ export Pool_Tank_Attack_3 is TPoolModel
             TagsPriority = [
                 "Char_Lourd",
                 "Char_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1083,9 +939,6 @@ export Pool_Tank_Attack_3 is TPoolModel
                 "Vehicule_Reco",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991aaa-e1b5-11e8-a57e-2c56dc4c150d}
@@ -1097,9 +950,6 @@ export Pool_Tank_Attack_3 is TPoolModel
                 "Char_Standard",
                 "Char_Lourd",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991aab-e1b5-11e8-9a7a-2c56dc4c150d}
@@ -1110,9 +960,6 @@ export Pool_Tank_Attack_3 is TPoolModel
             TagsPriority = [
                 "Char_Standard",
                 "Char_Lourd",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -1131,9 +978,6 @@ export Pool_Infantry_Attack_1 is TPoolModel
             TagsPriority = [
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991aad-e1b5-11e8-8999-2c56dc4c150d}
@@ -1145,9 +989,6 @@ export Pool_Infantry_Attack_1 is TPoolModel
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991aae-e1b5-11e8-bdce-2c56dc4c150d}
@@ -1158,9 +999,6 @@ export Pool_Infantry_Attack_1 is TPoolModel
             TagsPriority = [
                 "Infanterie_Reco",
                 "Vehicule_Reco",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1174,9 +1012,6 @@ export Pool_Infantry_Attack_1 is TPoolModel
                 "Char_Standard",
                 "ChasseurDeChar_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991ab0-e1b5-11e8-9d6c-2c56dc4c150d}
@@ -1188,9 +1023,6 @@ export Pool_Infantry_Attack_1 is TPoolModel
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991ab1-e1b5-11e8-a5f3-2c56dc4c150d}
@@ -1201,9 +1033,6 @@ export Pool_Infantry_Attack_1 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -1224,9 +1053,6 @@ export Pool_Infantry_Attack_2 is TPoolModel
                 "Infanterie_Reco",
                 "Vehicule_Reco",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991ab3-e1b5-11e8-8f16-2c56dc4c150d}
@@ -1237,9 +1063,6 @@ export Pool_Infantry_Attack_2 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1252,9 +1075,6 @@ export Pool_Infantry_Attack_2 is TPoolModel
                 "Infanterie_Standard",
                 "Infanterie_Spec_Attaque",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d9991ab5-e1b5-11e8-9b81-2c56dc4c150d}
@@ -1264,9 +1084,6 @@ export Pool_Infantry_Attack_2 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1280,9 +1097,6 @@ export Pool_Infantry_Attack_2 is TPoolModel
                 "Char_Standard",
                 "ChasseurDeChar_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941b0-e1b5-11e8-a6e1-2c56dc4c150d}
@@ -1294,9 +1108,6 @@ export Pool_Infantry_Attack_2 is TPoolModel
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941b1-e1b5-11e8-a41e-2c56dc4c150d}
@@ -1307,9 +1118,6 @@ export Pool_Infantry_Attack_2 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -1329,9 +1137,6 @@ export Pool_Infantry_Attack_3 is TPoolModel
             TagsPriority = [
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941b3-e1b5-11e8-97c2-2c56dc4c150d}
@@ -1342,9 +1147,6 @@ export Pool_Infantry_Attack_3 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
 
@@ -1359,9 +1161,6 @@ export Pool_Infantry_Attack_3 is TPoolModel
                 "Char_Standard",
                 "ChasseurDeChar_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941b5-e1b5-11e8-b083-2c56dc4c150d}
@@ -1372,9 +1171,6 @@ export Pool_Infantry_Attack_3 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1387,9 +1183,6 @@ export Pool_Infantry_Attack_3 is TPoolModel
                 "Infanterie_Reco",
                 "Vehicule_Reco",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941b7-e1b5-11e8-9c55-2c56dc4c150d}
@@ -1400,9 +1193,6 @@ export Pool_Infantry_Attack_3 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -1422,9 +1212,6 @@ export Pool_Combined_Attack_1 is TPoolModel
             TagsPriority = [
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941b9-e1b5-11e8-a485-2c56dc4c150d}
@@ -1437,9 +1224,6 @@ export Pool_Combined_Attack_1 is TPoolModel
                 "Char_Standard",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941ba-e1b5-11e8-a5a6-2c56dc4c150d}
@@ -1451,9 +1235,6 @@ export Pool_Combined_Attack_1 is TPoolModel
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941bb-e1b5-11e8-b737-2c56dc4c150d}
@@ -1464,9 +1245,6 @@ export Pool_Combined_Attack_1 is TPoolModel
             TagsPriority = [
                 "Infanterie_Reco",
                 "Vehicule_Reco",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1481,9 +1259,6 @@ export Pool_Combined_Attack_1 is TPoolModel
                 "Vehicule_Appui",
                 "ChasseurDeChar_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941bd-e1b5-11e8-891d-2c56dc4c150d}
@@ -1494,9 +1269,6 @@ export Pool_Combined_Attack_1 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1509,9 +1281,6 @@ export Pool_Combined_Attack_1 is TPoolModel
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{9c8cb79e-41e7-11ea-ae61-704d7b2c87d4}
@@ -1522,9 +1291,6 @@ export Pool_Combined_Attack_1 is TPoolModel
             TagsPriority = [
                 "Helo_Gunship",
                 "Helo",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
 
@@ -1546,9 +1312,6 @@ export Pool_Combined_Attack_2 is TPoolModel
                 "Char_Standard",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941c0-e1b5-11e8-82fc-2c56dc4c150d}
@@ -1560,9 +1323,6 @@ export Pool_Combined_Attack_2 is TPoolModel
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941c1-e1b5-11e8-9990-2c56dc4c150d}
@@ -1573,9 +1333,6 @@ export Pool_Combined_Attack_2 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1589,9 +1346,6 @@ export Pool_Combined_Attack_2 is TPoolModel
                 "Infanterie_Reco",
                 "Char_Reco",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941c3-e1b5-11e8-b7e8-2c56dc4c150d}
@@ -1602,9 +1356,6 @@ export Pool_Combined_Attack_2 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1619,9 +1370,6 @@ export Pool_Combined_Attack_2 is TPoolModel
                 "Canon_AA_Porte",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{9c95df61-41e7-11ea-9d84-704d7b2c87d4}
@@ -1632,9 +1380,6 @@ export Pool_Combined_Attack_2 is TPoolModel
             TagsPriority = [
                 "Helo_Gunship",
                 "Helo",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -1654,9 +1399,6 @@ export Pool_Combined_Attack_3 is TPoolModel
             TagsPriority = [
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941c6-e1b5-11e8-8bb1-2c56dc4c150d}
@@ -1668,9 +1410,6 @@ export Pool_Combined_Attack_3 is TPoolModel
                 "Char_Standard",
                 "Canon_AA_Porte",
                 "Vehicule_Appui",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1684,9 +1423,6 @@ export Pool_Combined_Attack_3 is TPoolModel
                 "Vehicule_Reco",
                 "Infanterie_Reco",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99941c8-e1b5-11e8-bb0f-2c56dc4c150d}
@@ -1697,9 +1433,6 @@ export Pool_Combined_Attack_3 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
 
@@ -1715,9 +1448,6 @@ export Pool_Combined_Attack_3 is TPoolModel
                 "Canon_AA_Porte",
                 "Vehicule_Appui",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99968c1-e1b5-11e8-8f55-2c56dc4c150d}
@@ -1728,9 +1458,6 @@ export Pool_Combined_Attack_3 is TPoolModel
             TagsPriority = [
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -1743,9 +1470,6 @@ export Pool_Combined_Attack_3 is TPoolModel
                 "Infanterie_Spec_Attaque",
                 "Infanterie_Standard",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{a6355580-41e9-11ea-a400-704d7b2c87d4}
@@ -1756,9 +1480,6 @@ export Pool_Combined_Attack_3 is TPoolModel
             TagsPriority = [
                 "Helo_Gunship",
                 "Helo",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]

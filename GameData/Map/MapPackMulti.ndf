@@ -32,6 +32,33 @@ export _2x3_Two_lakes is TMultiMapInfo
     ArgentInitialTable = ArgentInitialSetting
 )
 
+//zigzag vertigo
+//Nom exact in-game :
+//VERTIGO
+export _2x3_zigzag is TMultiMapInfo
+(
+    Description = "zigzag"
+    DefaultNbSlotsOpened = 4
+    RankedAvailability = [true, true, true, true]
+    DefaultArgentInitial = 750*2
+    DefaultDestructionScoreToReach = DestructionScoreToReachSetting
+    DefaultArgentInitialForIASkirmish = 750*2
+    DefaultDestructionScoreToReachForIASkirmish = DestructionScoreToReachForAISetting
+    ConquestPointsDefaultIndex = 1 //Indice dans ConquestPossibleScores de GDConstantes
+    GameModeAvailability = [EDeploymentMode/ConquestGameMode]
+    CombatRuleAvailability = [CombatRule/CaptureTheFlag]
+    MapAssociationByMode = MAP
+    [
+        (EDeploymentMode/ConquestGameMode, "_2x3_zigzag"),
+        (EDeploymentMode/Breakthrough, "_2x3_zigzag"),
+    ]
+
+    AlternativeMapNames = [
+        "_2x3_zigzag",
+    ]
+    ArgentInitialTable = ArgentInitialSetting
+)
+
 // --------------------------------------------------------------------
 //Nom exact in-game :
 //DEATH ROW
@@ -220,6 +247,33 @@ export _3x3_IronWaters is TMultiMapInfo
 
    AlternativeMapNames = [
        "_3x3_IronWaters",
+   ]
+   ArgentInitialTable = ArgentInitialSetting
+)
+
+//Volcano triple strike attaque attack attck atck atk
+//Nom exact in-game :
+//TRIPLE STRIKE
+export _3x3_TripleAttaque is TMultiMapInfo
+(
+   Description = "tripleatk"
+   DefaultNbSlotsOpened = 6
+   RankedAvailability = [true, true, true, true]
+   DefaultArgentInitial = 750*2
+   DefaultDestructionScoreToReach = DestructionScoreToReachSetting
+   DefaultArgentInitialForIASkirmish = 750*2
+   DefaultDestructionScoreToReachForIASkirmish = DestructionScoreToReachForAISetting
+   ConquestPointsDefaultIndex = 1 //Indice dans ConquestPossibleScores de GDConstantes
+   GameModeAvailability = [EDeploymentMode/ConquestGameMode]
+   CombatRuleAvailability = [CombatRule/CaptureTheFlag]
+   MapAssociationByMode = MAP
+   [
+       (EDeploymentMode/ConquestGameMode, "_3x3_TripleAttaque"),
+       (EDeploymentMode/Breakthrough, "_3x3_TripleAttaque"),
+   ]
+
+   AlternativeMapNames = [
+       "_3x3_TripleAttaque",
    ]
    ArgentInitialTable = ArgentInitialSetting
 )

@@ -18,7 +18,7 @@ export OrderDisplayDrawer is TOrderDisplayDrawer
                                 OrderDisplayAirplaneEvacuate,
                                 //HUNT
                                 OrderDisplayMoveAndAttack,
-                                OrderDisplayMoveAndAttackDistrict,
+                                OrderDisplayEnterDistrict,
                                 OrderDisplayFastMoveAndAttack,
                                 //ATTACK
                                 OrderDisplayAttack,
@@ -214,22 +214,18 @@ export OrderDisplayMoveAndAttack is TOrderDisplayDrawInfo //Hunt
     AerialDashLineBaseCircleRadius     = CerclePositionAir
 )
 
-export OrderDisplayMoveAndAttackDistrict is TOrderDisplayDrawInfo //Hunt on a district
+export OrderDisplayEnterDistrict is TOrderDisplayDrawInfo //Move on a district
 (
-    OrderToken                  = "MoveAndAttackDistrict"
-    ColorLineStart              = [255, 153, 51, 50]
-    ColorLineEnd                = [255, 153, 51, alpha] //Orange
+    OrderToken                  = "EnterDistrict"
+    ColorLineStart              = [128, 187, 255, 50]
+    ColorLineEnd                = [128, 187, 255, alpha] //Light blue
     MaxMetersBetweenColors      = MaxMeter
     LineThickness               = 2000.0
-    ColorCircleDestination      = [0, 0, 0, 0]
-    CircleDestinationThickness  = 0
-    CircleDestinationRadius     = 0
-    DashLengthInMeters          = 100
     DisplayWaypoints            = true
     HideNextOrders              = false
     MustDrawCircle              = false
     MustDrawArrow               = true
-    EffectMode                  = ~/FeedbackEffectMode/Hatched
+    EffectMode                  = ~/FeedbackEffectMode/Solid
 )
 
 export OrderDisplayFastMoveAndAttack is TOrderDisplayDrawInfo //Quick Hunt

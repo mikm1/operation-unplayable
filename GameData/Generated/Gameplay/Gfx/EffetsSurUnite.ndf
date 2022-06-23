@@ -553,6 +553,35 @@ export UnitEffect_Autoprotection_chars is TEffectsPackDescriptor
 
     ]
 )
+export UnitEffect_Baisse_Dangerosite is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{e4068e74-978a-4b40-952b-7db784bac4da}
+    NameForDebug       = 'Baisse_Dangerosite'
+    EffectsDescriptors = [
+        // BonusDangerousness
+        TUnitEffectIncreaseDangerousnessDescriptor
+        (
+            ModifierType       = ~/ModifierType_Pourcentage
+            BonusDangerousness    = -90
+        ),
+
+        // BonusUnitDisableObserver
+        TUnitEffectDisableObserverDescriptor
+        (
+            BonusDisableObserver = True
+        ),
+
+        // RaiseTag
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "Camion_autodestruction",
+                 "Panique",
+            ]
+        ),
+
+    ]
+)
 export UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet is TEffectsPackDescriptor
 (
     DescriptorId       = GUID:{f528c787-2af7-4f88-a80d-2443399029f9}
@@ -955,11 +984,6 @@ export UnitEffect_Critic_Chenille_Detruite is TEffectsPackDescriptor
         (
             UpdateEachTick  = True
         ),
-        TUnitEffectIncreaseChassisRotationSpeedDescriptor
-        (
-            ModifierType       = ~/ModifierType_Multiplicatif
-            BonusChassisRotationSpeed  = 0
-        ),
 
     ]
 )
@@ -1010,11 +1034,11 @@ export UnitEffect_Critic_Deroute is TEffectsPackDescriptor
             ]
         ),
 
-        {// SetSelectable
+        // SetSelectable
         TUnitEffectSetSelectableDescriptor
         (
             Selectable = False
-        ),}
+        ),
 
     ]
 )
@@ -1747,25 +1771,25 @@ export UnitEffect_GroundUnit_Cohesion_High is TEffectsPackDescriptor
     NameForDebug       = 'GroundUnit_Cohesion_High'
     EffectsDescriptors = [
         // BonusVitesseRotationChassis
-//        TUnitEffectIncreaseChassisRotationSpeedDescriptor
-//        (
-//            ModifierType       = ~/ModifierType_Pourcentage
-//            BonusChassisRotationSpeed  = 10
-//        ),
+        TUnitEffectIncreaseChassisRotationSpeedDescriptor
+        (
+            ModifierType       = ~/ModifierType_Pourcentage
+            BonusChassisRotationSpeed  = 10
+        ),
 
         // BonusVitesseRotationTurret
-//        TUnitEffectIncreaseTurretRotationSpeedDescriptor
-//        (
-//            ModifierType       = ~/ModifierType_Pourcentage
-//            BonusTurretRotationSpeed  = 10
-//        ),
+        TUnitEffectIncreaseTurretRotationSpeedDescriptor
+        (
+            ModifierType       = ~/ModifierType_Pourcentage
+            BonusTurretRotationSpeed  = 10
+        ),
 
         // BonusVitesse
-//        TUnitEffectIncreaseSpeedDescriptor
-//        (
-//            ModifierType             = ~/ModifierType_Pourcentage
-//            BonusSpeedBaseInPercent  = 10
-//        ),
+        TUnitEffectIncreaseSpeedDescriptor
+        (
+            ModifierType             = ~/ModifierType_Pourcentage
+            BonusSpeedBaseInPercent  = 10
+        ),
 
         // RaiseTag
         TUnitEffectRaiseTagDescriptor

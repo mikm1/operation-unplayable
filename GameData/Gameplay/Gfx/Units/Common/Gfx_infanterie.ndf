@@ -567,18 +567,54 @@ export ModelFile_Airborne_HMG_US_LOW is US_AB_1
 
 //Airborne_MP_RCL_US
 export ModelFile_Airborne_MP_RCL_US is US_AB_1
+export ModelFile_Airborne_MP_RCL_US_02 is US_AB_1
+export ModelFile_Airborne_MP_RCL_US_03 is US_AB_2
+export ModelFile_Airborne_MP_RCL_US_04 is US_AB_2
+export ModelFile_Airborne_MP_RCL_US_05 is US_AB_NCO
+export ModelFile_Airborne_MP_RCL_US_06 is US_AB_NCO
+export ModelFile_Airborne_MP_RCL_US_07 is US_AB_spe
+export ModelFile_Airborne_MP_RCL_US_08 is US_AB_spe
+export ModelFile_Airborne_MP_RCL_US_09 is US_AB_Sniper
+export ModelFile_Airborne_MP_RCL_US_10 is US_AB_Officer
 export ModelFile_Airborne_MP_RCL_US_LOW is US_AB_1
 
 //Airborne_MP_US
 export ModelFile_Airborne_MP_US is US_AB_1
+export ModelFile_Airborne_MP_US_02 is US_AB_1
+export ModelFile_Airborne_MP_US_03 is US_AB_2
+export ModelFile_Airborne_MP_US_04 is US_AB_2
+export ModelFile_Airborne_MP_US_05 is US_AB_NCO
+export ModelFile_Airborne_MP_US_06 is US_AB_NCO
+export ModelFile_Airborne_MP_US_07 is US_AB_spe
+export ModelFile_Airborne_MP_US_08 is US_AB_spe
+export ModelFile_Airborne_MP_US_09 is US_AB_Sniper
+export ModelFile_Airborne_MP_US_10 is US_AB_Officer
 export ModelFile_Airborne_MP_US_LOW is US_AB_1
 
 //Airborne_Engineer_CMD_US
 export ModelFile_Airborne_Engineer_CMD_US is US_AB_1
+export ModelFile_Airborne_Engineer_CMD_US_02 is US_AB_1
+export ModelFile_Airborne_Engineer_CMD_US_03 is US_AB_2
+export ModelFile_Airborne_Engineer_CMD_US_04 is US_AB_2
+export ModelFile_Airborne_Engineer_CMD_US_05 is US_AB_NCO
+export ModelFile_Airborne_Engineer_CMD_US_06 is US_AB_NCO
+export ModelFile_Airborne_Engineer_CMD_US_07 is US_AB_spe
+export ModelFile_Airborne_Engineer_CMD_US_08 is US_AB_spe
+export ModelFile_Airborne_Engineer_CMD_US_09 is US_AB_Sniper
+export ModelFile_Airborne_Engineer_CMD_US_10 is US_AB_Officer
 export ModelFile_Airborne_Engineer_CMD_US_LOW is US_AB_1
 
 //Airborne_Engineers_US
 export ModelFile_Airborne_Engineers_US is US_AB_1
+export ModelFile_Airborne_Engineers_US_02 is US_AB_1
+export ModelFile_Airborne_Engineers_US_03 is US_AB_2
+export ModelFile_Airborne_Engineers_US_04 is US_AB_2
+export ModelFile_Airborne_Engineers_US_05 is US_AB_NCO
+export ModelFile_Airborne_Engineers_US_06 is US_AB_NCO
+export ModelFile_Airborne_Engineers_US_07 is US_AB_spe
+export ModelFile_Airborne_Engineers_US_08 is US_AB_spe
+export ModelFile_Airborne_Engineers_US_09 is US_AB_Sniper
+export ModelFile_Airborne_Engineers_US_10 is US_AB_Officer
 export ModelFile_Airborne_Engineers_US_LOW is US_AB_1
 
 //Airborne_US
@@ -1055,8 +1091,8 @@ export ModelFile_Engineers_Flash_US_LOW is US_GI_1
 
 
 //MANPAD_Stinger_C_para_US
-export ModelFile_MANPAD_Stinger_C_para_US is US_GI_1
-export ModelFile_MANPAD_Stinger_C_para_US_LOW is US_GI_2
+export ModelFile_MANPAD_Stinger_C_para_US is US_AB_1
+export ModelFile_MANPAD_Stinger_C_para_US_LOW is US_AB_2
 
 //MANPAD_Stinger_C_US
 export ModelFile_MANPAD_Stinger_C_US is US_GI_1  //'GameData:/Assets/3D/Units/US/Infanterie/Airborne/Airborne_spe.Ase2NdfBin'
@@ -1074,8 +1110,6 @@ export ModelFile_MANPAD_Stinger_US_08 is US_GI_2
 export ModelFile_MANPAD_Stinger_US_09 is US_GI_1
 export ModelFile_MANPAD_Stinger_US_10 is US_GI_1
 export ModelFile_MANPAD_Stinger_US_LOW is US_GI_1
-
-
 
 
 //Scout_Mech_US
@@ -1466,6 +1500,15 @@ export ModelFile_BGS_RFA_06 is RFA_BGS_2
 export ModelFile_BGS_RFA_LOW is RFA_BGS_1
 
 //------------------------------------------------------------------------------
+//Fallschirm_B1_RFA
+export ModelFile_Fallschirm_B1_RFA is RFA_Fallschirm_1
+export ModelFile_Fallschirm_B1_RFA_02 is RFA_Fallschirm_1
+export ModelFile_Fallschirm_B1_RFA_03 is RFA_Fallschirm_2
+export ModelFile_Fallschirm_B1_RFA_04 is RFA_Fallschirm_2
+export ModelFile_Fallschirm_B1_RFA_05 is RFA_Fallschirm_NCO
+export ModelFile_Fallschirm_B1_RFA_06 is RFA_Fallschirm_spe
+export ModelFile_Fallschirm_B1_RFA_LOW is RFA_Fallschirm_LOW
+
 //Fallschirm_RFA
 export ModelFile_Fallschirm_RFA is RFA_Fallschirm_1
 export ModelFile_Fallschirm_RFA_02 is RFA_Fallschirm_1

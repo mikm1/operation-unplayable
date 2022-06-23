@@ -1852,6 +1852,48 @@ is TSoundHappening
     Volume = 2
 )
 
+template SoundHappening_FULDA_152mm_Sheridan
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/152mm_canon_tir_M81_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/152mm_canon_tir_M81_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/152mm_canon_tir_M81_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
 template SoundHappening_FULDA_155mm
 [
 ]
@@ -2512,6 +2554,57 @@ is TSoundHappening
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Mortier/L16_81mm_06.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
+template SoundHappening_FULDA_82mm_Mortar_Vasilek
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Mortier/Vasilek_81mm_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Mortier/Vasilek_81mm_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Mortier/Vasilek_81mm_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Mortier/Vasilek_81mm_4.wav"
                 )
                 UseSpecialLoop = False
             ),
@@ -3367,6 +3460,57 @@ is TSoundHappening
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_11.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+
+template SoundHappening_FULDA_CalM3P
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_M3P_Firing_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_M3P_Firing_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_M3P_Firing_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_M3P_Firing_4.wav"
                 )
                 UseSpecialLoop = False
             ),
@@ -6679,6 +6823,57 @@ is TSoundHappening
     Volume = 1
 )
 
+template SoundHappening_FULDA_Nona_120mm
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/120mm_canon_tir_Nona_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/120mm_canon_tir_Nona_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/120mm_canon_tir_Nona_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/120mm_canon_tir_Nona_4.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
 template SoundHappening_FULDA_Oerlikon_chain_gun
 [
 ]
@@ -7288,6 +7483,48 @@ is TSoundHappening
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Canon/106mm_canon_sans_recul_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
+template SoundHappening_FULDA_SHILLELAGH_Firing
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Shillelagh_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Shillelagh_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Shillelagh_3.wav"
                 )
                 UseSpecialLoop = False
             ),
@@ -8113,6 +8350,57 @@ is TSoundHappening
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Gatling/YakB_Gatling_3.wav"
+                )
+                UseSpecialLoop = True
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
+template SoundHappening_FULDA_ZU23_Dual_chain_gun_Continuous
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Zu23_Double_Salve_1.wav"
+                )
+                UseSpecialLoop = True
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Zu23_Double_Salve_2.wav"
+                )
+                UseSpecialLoop = True
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Zu23_Double_Salve_3.wav"
+                )
+                UseSpecialLoop = True
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Zu23_Double_Salve_4.wav"
                 )
                 UseSpecialLoop = True
             ),

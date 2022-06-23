@@ -576,18 +576,18 @@ UseInGame_Transport_COMMAND        is TUIResourceTexture_InGame( FileName = 'Gam
 UseInGame_Transport_RECO           is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/reco.png')
 UseInGame_Transport_REGINF         is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/Infantry.png')
 UseInGame_Transport_LAAD           is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/manpad.png')
+UseInGame_Transport_flak           is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/AA.png')
+UseInGame_Transport_howitzer       is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/howitzer.png')
+UseInGame_Transport_ATGun          is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/ATGun.png')
+UseInGame_Transport_Mortar         is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/mortar.png')
 
 // old icones
-UseInGame_Transport_ATGun          is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/ATGun.png')
 UseInGame_Transport_SUPPORT        is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/SUPPORT.png')
-UseInGame_Transport_flak           is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/flak.png')
 UseInGame_Transport_FLAME          is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/FLAME.png')
-UseInGame_Transport_Mortar         is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/Mortar.png')
 UseInGame_Transport_APC            is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/APC.png')
 UseInGame_Transport_ARMORED        is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/armored.png')
 UseInGame_Transport_CMD            is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/CMD.png')
 UseInGame_Transport_ELIINF         is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/ELIINF.png')
-UseInGame_Transport_howitzer       is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/howitzer.png')
 UseInGame_Transport_HOWZ           is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/HOWZ.png')
 
 UseInGame_Transport_supply         is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/supply.png')

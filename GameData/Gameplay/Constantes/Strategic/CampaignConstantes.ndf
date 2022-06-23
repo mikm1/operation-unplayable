@@ -41,7 +41,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
 
     //Regles du Tactique
     TacticalTimeLimit = 30
-    TacticalScoreLimit = 2000
+    TacticalScoreLimit = 3000
 
     //----------
     // Consequences de combat
@@ -88,7 +88,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
         (EVictoryType/TotalDefeat,      4),
     ]
 
-    ActionPointsPenaltyForAllAttackersIntercepted = 5 // embuscade
+    ActionPointsPenaltyForAllAttackersIntercepted = 0 // embuscade
 
     NbTurnToRepairDisabledUnit = 2
 
@@ -112,11 +112,6 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     BattleArrowDuration = 1 //ticks
     TextFeedbackDurationMin = 4
     TextFeedbackDurationMax = 4
-
-    ForbidTacticalFightOnStrategicSectors =
-    [
-        "Urban_Area",
-    ]
 
     UnitsToKilometersMultiplier = 0.000006 * Metre //000008
 
@@ -143,7 +138,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     MultipleTurnOrdersActivated = false
 
     DeployDisplayFactor = 0.1
-    PowerValuesBattleFactor = 0.01 //0.0045*1.2  // valeur du point de force dans l'affichage des pions et de la barre
+    PowerValuesBattleFactor = 0.003 //0.0045*1.2  // valeur du point de force dans l'affichage des pions et de la barre
     DigitToDisplayForAutoresolveUnitPower = 0
     DigitToDisplayForAutoresolveArmyRatio = 1
     DigitToDisplayForAutoresolveCombatAdvantage = 0
@@ -155,6 +150,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     BattleNbSlotsAllowedPerBattleGroup = 1
     BattleNbMaxSupportPawn = 1 // Nombre maximal de pions support (hors avions) qui peuvent rejoindre le combat pour une équipe
     BattleNbMaxPlanePawn = 1 // Nombre maximal de pions avions qui peuvent rejoindre le combat pour une équipe
+    BattleDeploymentMode = EDeploymentMode/Breakthrough
 
     SteelmanMaxUnitSelection = MAP[
         (ENationalite/Allied, 1),
@@ -163,8 +159,8 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
 
     DefaultStartingTicketsPoints = MAP
     [
-        (ENationalite/Allied, 20),
-        (ENationalite/Axis, 20),
+        (ENationalite/Allied, 30),
+        (ENationalite/Axis, 30),
     ]
 
     DefaultTicketsPointsIncome = MAP // points par minute
@@ -295,6 +291,6 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
 
     HideManual = true
 
-    BataillonMoralValue = 50
+    BataillonMoralValue = 40
     DefeatMoralPercentage = 0.2
 )

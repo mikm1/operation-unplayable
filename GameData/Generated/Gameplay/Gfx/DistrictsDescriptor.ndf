@@ -126,7 +126,6 @@ export Descriptor_District_Quartier_Gros is TEntityDescriptor(
                 IsTargetableAsBoat = False
                 IsTargetableOutsideCenter = False
                 SkipCadavreCreation  = True
-                FxDoImpactOnUnit = True
                 UseDamageMultiplierForFirePower = False
                 UseTopArmorAgainstFire = True
                 PhysicalDamageLevelsPack = nil
@@ -320,7 +319,6 @@ export Descriptor_District_Quartier_Moyen is TEntityDescriptor(
                 IsTargetableAsBoat = False
                 IsTargetableOutsideCenter = False
                 SkipCadavreCreation  = True
-                FxDoImpactOnUnit = True
                 UseDamageMultiplierForFirePower = False
                 UseTopArmorAgainstFire = True
                 PhysicalDamageLevelsPack = nil
@@ -514,7 +512,6 @@ export Descriptor_District_Quartier_Petit is TEntityDescriptor(
                 IsTargetableAsBoat = False
                 IsTargetableOutsideCenter = False
                 SkipCadavreCreation  = True
-                FxDoImpactOnUnit = True
                 UseDamageMultiplierForFirePower = False
                 UseTopArmorAgainstFire = True
                 PhysicalDamageLevelsPack = nil

@@ -22,17 +22,9 @@ export GenericBreakthroughStrategy is TIAGeneralStrategy
         GenBTDef_Transition_FrontLineDefenseToBackLineDefense,
         GenBTDef_Transition_BackLineDefenseToStrikeBack,
 
-        GenBTAtk_Transition_StartToPhaseC,
-        GenBTAtk_Transition_StartToPhaseB,
-        GenBTAtk_Transition_StartToPhaseA,
-        GenBTAtk_Transition_StartToLowCost,
+        GenBTAtk_Transition_StartToPhaseCommand,
         GenBTAtk_Transition_StartToGeneric,
-        GenBTAtk_Transition_DeployToPhaseA,
-        GenBTAtk_Transition_Phase_B,
-        GenBTAtk_Transition_Phase_C,
-        GenBTAtk_Transition_DeployToPhaseA_LowCost,
-        GenBTAtk_Transition_PhaseB_LowCost,
-        GenBTAtk_Transition_PhaseC_LowCost,
+        GenBTAtk_Transition_DeployToPhaseCommand,
     ]
 )
 

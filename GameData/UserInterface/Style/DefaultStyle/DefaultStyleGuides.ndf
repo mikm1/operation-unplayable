@@ -573,6 +573,11 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
         ("GrisSteelman",           MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisSteelman ) ), ]),
         ("Noir50",                 MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = NoirPur50 ) ), ]),
         ("Noir30",                 MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = NoirPur30 ) ), ]),
+        ("Noir30Button",           MAP [
+                                            ( ~/ComponentState/Normal,                 TColorRTTI( Color = NoirPur30 ) ),
+                                            ( ~/ComponentState/Highlighted,            TColorRTTI( Color = Blanc20 ) ),
+                                            ( ~/ComponentState/Clicked,                TColorRTTI( Color = Blanc50 ) ),
+                                        ]),
         ("Gris123",                MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Gris123 ) ), ]),
         ("SD2_Blanc184",           MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc184 ) ), ]),
         ("SD2_Blanc184_70",        MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [184,184,184,170] ) ), ]),

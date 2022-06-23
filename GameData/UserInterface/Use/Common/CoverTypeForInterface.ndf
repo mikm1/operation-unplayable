@@ -12,7 +12,7 @@ public coverTypeForInterface is TCoverTypeForInterface(
         (ETerrainType/Batiment               , ECoverTypeForInterface/Batiment),
         (ETerrainType/Ruin                   , ECoverTypeForInterface/Batiment),
         (ETerrainType/ForetLegere            , ECoverTypeForInterface/Light),
-        (ETerrainType/ForetDense             , ECoverTypeForInterface/Heavy),
+        (ETerrainType/ForetDense             , ECoverTypeForInterface/Light),
 
         (ETerrainType/Rocher                 , ECoverTypeForInterface/Rocher),
 
@@ -30,8 +30,8 @@ public coverTypeForInterface is TCoverTypeForInterface(
 
 
         (ETerrainType/Urbain                 , ECoverTypeForInterface/Batiment),
-        (ETerrainType/StrategicRalentisseur  , ECoverTypeForInterface/Light),
-        (ETerrainType/StrategicAccelerateur  , ECoverTypeForInterface/BarbedWire),
+        (ETerrainType/StrategicRalentisseur  , ECoverTypeForInterface/Heavy),
+        (ETerrainType/StrategicAccelerateur  , ECoverTypeForInterface/Heavy),
     ]
 
     CoverTypeForDistricts = ECoverTypeForInterface/Heavy

@@ -97,7 +97,6 @@ export GenBTDef_Choose_Strategy is TSequenceGeneratorDescriptor
     NbMacroActionAllowedToProduceSimultaneous = 9001
     GeneratorList =
     [
-        //~/GenBTDef_Support_AntiTank,
         ~/Support_Transports,
         ~/Supply_Skirmish,
     ]
@@ -114,6 +113,8 @@ export GenBTDef_PhaseDeploiement is TSequenceGeneratorDescriptor
         ~/Support_Transports,
 
         ~/Supply_Skirmish,
+
+        ~/Reco,
 
         ~/GenBTDef_Defense_Static_Adaptive_FrontLane, // Canon AT - Chasseur de char - ATInf - HMG - Flamer // 85
         ~/GenBTDef_Defense_Static_Adaptive_FrontLane,
@@ -156,6 +157,8 @@ export GenBTDef_Phase_FrontLineDefense is TSequenceGeneratorDescriptor
 
         ~/Supply_Skirmish,
 
+        ~/Reco,
+
         //------------------------------
         // Maitain
         //------------------------------
@@ -163,6 +166,8 @@ export GenBTDef_Phase_FrontLineDefense is TSequenceGeneratorDescriptor
         ~/Maintain_CorridorDynamicDefenses,
         ~/Maintain_AirStrike,
         ~/Maintain_Artillery,
+
+        ~/Attack_Objectives,
 
         //------------------------------
         // Priority Productions
@@ -224,7 +229,6 @@ export GenBTDef_Phase_BackLineDefense is TSequenceGeneratorDescriptor
         ~/GenBTDef_Defense_Dynamic_Adaptive,  // Faire du code pour adapater le budget en fonction de l'income
         ~/GenBTDef_Defense_Dynamic_Adaptive,
 
-        ~/Attack_Objectives,
     ] + GenBTDef_Defenses_Airstrike_Arti_Shuffle_BackLane
 
     //------------------------------
@@ -253,7 +257,6 @@ export GenBTDef_Phase_StrikeBack is TSequenceGeneratorDescriptor
         //------------------------------
         // Support & Supply
         //------------------------------
-        //~/Support_AntiTank,
         ~/Support_Transports,
         ~/Supply_Skirmish,
         ~/Attack_Filler,
@@ -336,6 +339,7 @@ GenBTDef_Defenses_Airstrike_Arti_Shuffle is
 
 GenBTDef_Scaling_Defense_FrontLane is
 [
+    ~/Reco,
     ~/GenBTDef_Defense_Static_Adaptive_Autogen_FrontLane,
     ~/GenBTDef_Defense_Static_Adaptive_Autogen_FrontLane,
     ~/Airstrike_Defense_Autogen,
@@ -348,6 +352,7 @@ GenBTDef_Scaling_Defense_FrontLane is
 
 GenBTDef_Scaling_Defense is
 [
+    ~/Reco,
     ~/GenBTDef_Defense_Dynamic_Adaptive_Autogen,
     ~/GenBTDef_Defense_Dynamic_Adaptive_Autogen,
     ~/Airstrike_Defense_Autogen,
@@ -360,6 +365,7 @@ GenBTDef_Scaling_Defense is
 
 GenBTDef_Scaling_Defense_Economic is
 [
+    ~/Reco,
     ~/GenBTDef_Defense_Dynamic_Adaptive_Autogen_Economic,
     ~/GenBTDef_Defense_Dynamic_Adaptive_Autogen_Economic,
     ~/Airstrike_Defense_Autogen_Economic,
@@ -372,6 +378,7 @@ GenBTDef_Scaling_Defense_Economic is
 
 GenBTDef_Scaling is
 [
+    ~/Reco,
     ~/Attack_Main_Autogen,
     ~/Attack_Adaptive_Autogen,
     ~/Attack_Adaptive_Autogen,

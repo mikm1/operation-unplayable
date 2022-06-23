@@ -12,40 +12,22 @@ export GenericStrategy is TIAGeneralStrategy
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [
-        Gen_Transition_StartToPhaseCommand_LowCost,
         Gen_Transition_StartToPhaseCommand,
-        Gen_Transition_StartToLowCost,
         Gen_Transition_StartToGeneric,
         Gen_Transition_DeployToCommandPhase,
-        Gen_Transition_DeployToCommandPhase_LowCost,
     ]
 )
 
 //-------------------------------------------------------------------------
 //---------------------------- CONDITIONS ---------------------------------
 //-------------------------------------------------------------------------
-export Gen_Condition_GotoLowCost is TSequenceCondition_Compare
+export Gen_Condition_GotoGeneric is TSequenceCondition_True
 (
-    Value1 = [TSequenceConditionValues_RessourcesPointsSharedInTeam]
-    Operator = Less
-    AddToValue2 = 1001
-    ResourceType = ~/Resource_CommandPoints
-)
-//-------------------------------------------------------------------------
-export Gen_Condition_GotoGeneric is TSequenceCondition_Not
-(
-    Condition = ~/Gen_Condition_GotoLowCost
 )
 //-------------------------------------------------------------------------
 export Gen_Condition_CommandPhase is TSequenceCondition_Phase
 (
     PhaseType = CommandPhase
-)
-//-------------------------------------------------------------------------
-export Gen_Condition_CommandPhase_LowCost is TSequenceCondition_And
-(
-    Condition1 = Gen_Condition_GotoLowCost
-    Condition2 = Gen_Condition_CommandPhase
 )
 //-------------------------------------------------------------------------
 //--------------------------- TRANSITIONS ---------------------------------
@@ -68,27 +50,6 @@ export Gen_Transition_DeployToCommandPhase is TIAGeneralStrategyTransition
     Origine = Gen_Phase_Deploiement
     Condition = Gen_Condition_CommandPhase
     Destination = Gen_Phase_Command
-)
-//-------------------------------------------------------------------------
-export Gen_Transition_StartToLowCost is TIAGeneralStrategyTransition
-(
-    Origine = Gen_Choose_Strategy
-    Condition = Gen_Condition_GotoLowCost
-    Destination = Gen_Phase_Deploiement_LowCost
-)
-//-------------------------------------------------------------------------
-export Gen_Transition_StartToPhaseCommand_LowCost is TIAGeneralStrategyTransition
-(
-    Origine = Gen_Choose_Strategy
-    Condition = Gen_Condition_CommandPhase_LowCost
-    Destination = Gen_Phase_Command_LowCost
-)
-//-------------------------------------------------------------------------
-export Gen_Transition_DeployToCommandPhase_LowCost is TIAGeneralStrategyTransition
-(
-    Origine = Gen_Phase_Deploiement_LowCost
-    Condition = Gen_Condition_CommandPhase
-    Destination = Gen_Phase_Command_LowCost
 )
 
 //-------------------------------------------------------------------------
@@ -120,6 +81,8 @@ export Gen_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/Supply_Skirmish,
 
+        ~/Reco,            // 40 par reco
+
         ~/CaptureHalfZoneObjectif_Floor,
         ~/Defense_Objectif,
 
@@ -137,7 +100,6 @@ export Gen_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/Attack_Adaptive,          // ~100
         ~/Attack_Filler,            // budget 40
-        ~/Reco,            // 40 par reco
 
         //------------------------------
         // Défenses Avions Arti
@@ -169,10 +131,11 @@ export Gen_Phase_Command is TSequenceGeneratorDescriptor
         //------------------------------
         // Support & Supply
         //------------------------------
-        //~/Support_AntiTank,
         ~/Support_Transports,
 
         ~/Supply_Skirmish,
+
+        ~/Reco,
 
         //------------------------------
         // Défenses prioritaires
@@ -205,7 +168,6 @@ export Gen_Phase_Command is TSequenceGeneratorDescriptor
 
         ~/SuperCommander,
 
-        ~/Reco,
         ~/Attack_MBT,
 
         //Low prio mais peut servir si on n'a pas de zone dans nos couloirs
@@ -274,6 +236,7 @@ Airstrike_Arti_Shuffle is
 
 Medium_Scaling is
 [
+    ~/Reco,
     ~/Attack_Main_Autogen,
     ~/Attack_Adaptive_Autogen,
     ~/Attack_Adaptive_Autogen,
@@ -289,4 +252,3 @@ Medium_Scaling is
     ~/Artillery_Expensive_Autogen,
     ~/Airstrike_Assault_Autogen,
 ]
-

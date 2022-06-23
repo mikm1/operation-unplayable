@@ -566,7 +566,7 @@ is BUCKListDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [147.0, 0.0]//[147.0, 0.0]
+        MagnifiableWidthHeight = [147.0, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical

@@ -722,6 +722,42 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
+        (   TFxWeaponType_Artillerie2A60120Mm , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolHE122Mm__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHeTresgros2_Connector ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , FxImpactSolHE122Mm__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolHE122Mm__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolHE122Mm__Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , FxRebondObusGros_Connector ),
+            ]
+        ),
+        (   TFxWeaponType_Artillerie2A60120MmHEAT , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolHEGros__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHEMoyen_Connector ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , FxImpactSolHEGros__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactObusVehiculeMoyen__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactObusVehiculeMoyen__Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , FxRebondObusGros_Connector ),
+            ]
+        ),
+        (   TFxWeaponType_Artillerie2A60120MmSmoke , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolSmokeShell__Connector ),
+                ( EImpactSurface/Water         , FxImpactSolSmokeShell__Connector ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , FxImpactSolSmokeShell__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolSmokeShell__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolHEMoyen_Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
         (   TFxWeaponType_ArtillerieM185155Mm , MAP
             [
                 ( EImpactSurface/Ground        , FxImpactSolHEM185155Mm__Connector ),
@@ -1066,6 +1102,18 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Wall          , FxImpactBatHeGros_Connector ),
                 ( EImpactSurface/Vehicle       , FxImpactSolHEGros__Connector ),
                 ( EImpactSurface/FlyingVehicle , FxImpactApVehiculeAirGros_Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , FxRebondObusGros_Connector ),
+            ]
+        ),
+        (   TFxWeaponType_CanonGrosHESHERIDAN , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolHEMortierM30107Mm__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHeTresgros2_Connector ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , FxImpactSolHEMortierM30107Mm__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolHEMortierM30107Mm__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolHEMortierM30107Mm__Connector ),
                 ( EImpactSurface/Missile       , nil ),
                 ( EImpactSurface/Ricochet      , FxRebondObusGros_Connector ),
             ]
@@ -1886,6 +1934,18 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
+        (   TFxWeaponType_MortierVasilek , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolHEMortierM30107Mm__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHeTresgros2_Connector ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , FxImpactSolHEMortierM30107Mm__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolHEMortierM30107Mm__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolHEMortierM30107Mm__Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , FxRebondObusPetit_Connector ),
+            ]
+        ),
         (   TFxWeaponType_MortierM30107Mm , MAP
             [
                 ( EImpactSurface/Ground        , FxImpactSolHEMortierM30107Mm__Connector ),
@@ -1924,7 +1984,7 @@ AllImpactHappenings is TImpactHappening
         ),
         (   TFxWeaponType_RoquetteBM30300Mm , MAP
             [
-                ( EImpactSurface/Ground        , FxImpactSolHEM270227Mm__Connector ),
+                ( EImpactSurface/Ground        , FxImpactSolHEM270227MmCluster__Connector ),
                 ( EImpactSurface/Water         , FxImpactEauHeTresgros2_Connector ),
                 ( EImpactSurface/Air           , nil ),
                 ( EImpactSurface/Wall          , FxImpactSolHEM270227Mm__Connector ),

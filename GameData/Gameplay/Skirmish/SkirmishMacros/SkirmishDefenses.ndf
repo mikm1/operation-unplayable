@@ -171,9 +171,6 @@ export Pool_Defense_Filler is TPoolModel
                 "Infanterie_Spec_Defense",
                 "Char"
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{f1e4eb61-f2b6-11e6-bd03-4ccc6a0550f6}
@@ -184,9 +181,6 @@ export Pool_Defense_Filler is TPoolModel
                 "Infanterie_CMD",
                 "Infanterie_Spec_Defense",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
     ]
@@ -208,9 +202,6 @@ export Pool_HMG_Defense is TPoolModel
                 "Vehicule_Appui",
             ]
             +~/ProductionFallback
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
     ]
 )
@@ -231,9 +222,6 @@ export Pool_AT_Defense is TPoolModel
                 "ChasseurDeChar_Standard",
             ]
             +~/ProductionFallback
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{d99aef62-e1b5-11e8-9f25-2c56dc4c150d}
@@ -245,9 +233,6 @@ export Pool_AT_Defense is TPoolModel
                 "Infanterie_Spec_Defense",
             ]
             +~/ProductionFallback
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
     ]
 )
@@ -266,9 +251,6 @@ export Pool_AA_Defense is TPoolModel
                 "Canon_AA_Porte",
             ]
             +~/ProductionFallback
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
     ]
 )
@@ -390,9 +372,6 @@ export Pool_Defense_Objectif is TPoolModel
                 "Infanterie_Spec_Defense",
                 "Char"
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
         TPoolElement(
             DescriptorId = GUID:{88fc254d-5acb-4e49-8636-3a6b308dc142}
@@ -403,9 +382,6 @@ export Pool_Defense_Objectif is TPoolModel
                 "Infanterie_CMD",
                 "Infanterie_Spec_Defense",
                 "Infanterie_Standard",
-            ]
-            ForbiddenTags = [
-                "InfmapCommander"
             ]
         ),
         TPoolElement(
@@ -418,10 +394,6 @@ export Pool_Defense_Objectif is TPoolModel
                 "Canon_AA_Standard",
                 "Canon_AA_Porte",
             ]
-            ForbiddenTags = [
-                "InfmapCommander"
-            ]
         ),
     ]
 )
-//-------------------------------------------------------------------------

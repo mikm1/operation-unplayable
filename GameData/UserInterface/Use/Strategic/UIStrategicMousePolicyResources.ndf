@@ -67,37 +67,40 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
     TerrainTypeToHintContent = MAP
     [
         (
-            ~/ETerrainType/None, // ville
+            ~/ETerrainType/None, //
             THintContentHolder
             (
-                TitleToken = "TERR_06T"
-                BodyToken = "TERR_06B"
-                ExtendedToken = "TERR_06E"
+                TitleToken = ""
+                BodyToken = ""
+                ExtendedToken = ""
+            )
+        ),
+
+
+
+        (
+            ~/ETerrainType/Urbain, // semi urbain pour l'instant
+            THintContentHolder
+            (
+                TitleToken = "smTer_s"
+                BodyToken = ""
+                ExtendedToken = ""
             )
         ),
         (
-            ~/ETerrainType/Urbain, // ville
+            ~/ETerrainType/StrategicRalentisseur, // foret
             THintContentHolder
             (
-                TitleToken = "TERR_06T"
-                BodyToken = "TERR_06B"
-                ExtendedToken = "TERR_06E"
-            )
-        ),
-        (
-            ~/ETerrainType/StrategicRalentisseur, // terrain dégagé
-            THintContentHolder
-            (
-                TitleToken = "terr_rout"
+                TitleToken = "smTer_f" // foret
                 //BodyToken = "terr_roub"
                 //ExtendedToken = "terr_roue"
             )
         ),
         (
-            ~/ETerrainType/StrategicAccelerateur, // autoroute
+            ~/ETerrainType/ForetLegere, // plaine
             THintContentHolder
             (
-                TitleToken = "terr_autt"
+                TitleToken = "smTer_p"
                 //BodyToken = "terr_autb"
                 //ExtendedToken = "terr_aute" //TERR_02E"
             )
@@ -107,7 +110,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
             ~/ETerrainType/BloqueConstruction, // route
             THintContentHolder
             (
-                TitleToken = "terr_rout"
+                TitleToken = ""
                 //BodyToken = "terr_roub"
                 //ExtendedToken = "terr_roue"
             )
@@ -116,7 +119,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
             ~/ETerrainType/EauPeuProfonde, // impassable
             THintContentHolder
             (
-                TitleToken = "TERR_05T"
+                TitleToken = ""
                 //BodyToken = "TERR_05B"
                 //ExtendedToken = "TERR_05E"
             )
@@ -126,12 +129,9 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
 
     CursorMap = MAP
     [
-        (ECoverTypeForInterface/None, ~/MouseCurseur_defaut),
-        (ECoverTypeForInterface/Light, ~/MouseCurseur_couvert_leger),
-        (ECoverTypeForInterface/Heavy, ~/MouseCurseur_couvert_lourd),
-        (ECoverTypeForInterface/BarbedWire,  ~/MouseCurseur_barbed_wire),
-        (ECoverTypeForInterface/Rocher,   ~/MouseCurseur_couvert_rocher),
-        (ECoverTypeForInterface/Batiment,   ~/MouseCurseur_couvert_lourd),
+        (ECoverTypeForInterface/Light, ~/MouseCurseur_couvert_lourd),
+        (ECoverTypeForInterface/Heavy, ~/MouseCurseur_couvert_leger),
+        (ECoverTypeForInterface/Batiment,   ~/MouseCurseur_barbed_wire),
     ]
 )
 
@@ -232,12 +232,9 @@ MouseWidget_StrategicOrderNeutralLand is Template_HardwareMouseWidgetResource_Wi
 (
     CursorMap = MAP
     [
-        (ECoverTypeForInterface/None, ~/MouseCurseur_defaut),
-        (ECoverTypeForInterface/Light, ~/MouseCurseur_couvert_leger),
-        (ECoverTypeForInterface/Heavy, ~/MouseCurseur_couvert_lourd),
-        (ECoverTypeForInterface/BarbedWire,  ~/MouseCurseur_barbed_wire),
-        (ECoverTypeForInterface/Rocher,   ~/MouseCurseur_couvert_rocher),
-        (ECoverTypeForInterface/Batiment,   ~/MouseCurseur_couvert_lourd),
+        (ECoverTypeForInterface/Light, ~/MouseCurseur_couvert_lourd),
+        (ECoverTypeForInterface/Heavy, ~/MouseCurseur_couvert_leger),
+        (ECoverTypeForInterface/Batiment,   ~/MouseCurseur_barbed_wire),
     ]
 
     BUCKDescriptor = BUCKContainerDescriptor

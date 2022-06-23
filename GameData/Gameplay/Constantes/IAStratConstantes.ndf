@@ -33,11 +33,19 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     RayonDOccupationDansLaGeoDbProdution_ValeurMax = 100 * Metre
     ForbiddenTagsByMission = MAP
     [
-        (EIAstratMissionType/CorridorArtillery, ['Avion']),
-        (EIAstratMissionType/CorridorAttack, ['Avion']),
-        (EIAstratMissionType/CorridorDefense, ['Avion']),
-        (EIAstratMissionType/CorridorDynamicDefense, ['Avion']),
-        (EIAstratMissionType/ObjectiveAttack, ['Avion'])
+        (EMacroActionMissionType/Attack, ['Avion', 'InfmapCommander']),
+        (EMacroActionMissionType/Defense, ['Avion', 'InfmapCommander']),
+        (EMacroActionMissionType/Reco, ['InfmapCommander']),
+        (EMacroActionMissionType/Support, ['InfmapCommander']),
+        (EMacroActionMissionType/Supply, ['InfmapCommander']),
+        (EMacroActionMissionType/AirStrike, ['InfmapCommander']),
+        (EMacroActionMissionType/AirReco, ['InfmapCommander']),
+
+        (EMacroActionMissionType/CorridorArtillery, ['Avion','InfmapCommander']),
+        (EMacroActionMissionType/CorridorAttack, ['Avion','InfmapCommander']),
+        (EMacroActionMissionType/CorridorDefense, ['Avion','InfmapCommander']),
+        (EMacroActionMissionType/CorridorDynamicDefense, ['Avion','InfmapCommander']),
+        (EMacroActionMissionType/ObjectiveAttack, ['Avion','InfmapCommander'])
     ]
 
     //--------------- Connaissance des zones ----------------------------------------//
@@ -66,8 +74,9 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     TacticObjectiveZoneWeight = ~/CommandZoneCustomWeighForIAStrat // Numero donné aux zones générées automatiquement autours des zones objectif.
 
     //--------------- Transport ----------------------------------------//
-    MinDistanceToRequireTransport = 0 * Metre
-    ForbidToLoadNewUnits = true // Ce paramètre empêche de charger une unité qu'on ne transporte pas à la base (applicable aux transports qui spawnent préchargés)
+    MinDistanceToRequireTransport = 10000 * Metre //un peu plus de 3.5KM in game (conversion MetreRTS)
+    MaxDistanceToAcceptTransportRequest = 30000 * Metre //un peu plus de 10KM in game (conversion MetreRTS)
+    ForbidToLoadNewUnits = false // Ce paramètre a true empêche de charger une unité qu'on ne transporte pas à la base (applicable aux transports qui spawnent préchargés)
     UnloadWhenNoTransportRequest = false
 
     //--------------- Defense Macro ----------------------------------------//
@@ -457,9 +466,9 @@ VisionConstantes is TIAStratVisionConstantes
     //--------------- Test de vision ----------------------------------------------//
     // valeurs par défaut, les valeurs spécialisées sont dans  les config par difficulté
     VisionTestRayNumber = 64
-    VisionTestRayLength = 35000 * Metre //10000 * Metre
+    VisionTestRayLength = 30000 * Metre //10000 * Metre
     VisionTestHeightOffset = 300
-    VisionTestTheoreticalMaxVision = 35000 * Metre //10000 * Metre
+    VisionTestTheoreticalMaxVision = 30000 * Metre //10000 * Metre
     VisionTestDefenseRatio = 0.6    // Plusieurs tests avec un ratio dégressif (à 100%, 75% et 50%)
     VisionTestHideUnitRatio = 0.6
 )
@@ -511,26 +520,26 @@ FakeGunThreatDescriptor is TFakeGunThreatDescriptor
     DistanceFromStart = 2000.0 * Metre
     StepSize = 1000.0
     DecalageAltitude = 300.0
-    VisionRange = 35000.0 * Metre
+    VisionRange = 30000.0 * Metre
     OwnerRatioForFakeGunThreat = 0.9
     GunList = [
         TFakeGunDescriptor(
 
-            CurrentRange = 35000.0 * Metre
+            CurrentRange = 30000.0 * Metre
             TirIndirect = false
             TypeArme = TDamageTypeRTTI(Family="balle" Index=1)
             ColPlan = ~/ECollisionPlane/Ground
             ),
         TFakeGunDescriptor(
 
-            CurrentRange = 35000.0 * Metre
+            CurrentRange = 30000.0 * Metre
             TirIndirect = false
             TypeArme = TDamageTypeRTTI(Family="he" Index=1)
             ColPlan = ~/ECollisionPlane/Ground
             ),
         TFakeGunDescriptor(
 
-            CurrentRange = 35000.0 * Metre
+            CurrentRange = 30000.0 * Metre
             TirIndirect = false
             TypeArme = TDamageTypeRTTI(Family="ap" Index=10)
             ColPlan = ~/ECollisionPlane/Ground

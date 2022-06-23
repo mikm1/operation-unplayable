@@ -103,6 +103,108 @@ Gfx_A10_Thunderbolt_II_ATGM_US_Autogen is TTimelyReceiverFactoryCarrier
         SubDepictionGenerators = SubGenerators_A10_Thunderbolt_II_ATGM_US
     )
 )
+// Dépiction de l'unité A10_Thunderbolt_II_Rkt_US
+Alternatives_A10_Thunderbolt_II_Rkt_US is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_A10_Thunderbolt_II_Rkt_US ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_A10_Thunderbolt_II_Rkt_US_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_A10_Thunderbolt_II_Rkt_US_LOW ),
+]
+GhostDepiction_A10_Thunderbolt_II_Rkt_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_A10_Thunderbolt_II_Rkt_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_A10_Thunderbolt_II_Rkt_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'A10_Thunderbolt_II_Rkt_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_A10_Thunderbolt_II_Rkt_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_A10,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 1
+            ),
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_2"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+               NbFX = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag3"
+               Connoisseur = MissileCarriage_A10_Thunderbolt_II_Rkt_US
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag4"
+               Connoisseur = MissileCarriage_A10_Thunderbolt_II_Rkt_US
+               WeaponIndex = 3
+               WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_Heat_2,
+            DepictionOperator_TurretCannonGatling_SlowRotation(XAxisRotationNode = "canon_01" XAxisHasTargetPhysicalPropertyName = "tourelle1target"),
+            DepictionOperator_EjectableProps_Plane
+            (
+                AdditionalEjectableNodes = [
+                    "aile_droite",
+                    "aileron_g",
+                    "elevator_g",
+                    "reacteur_gauche",
+                    "rudder_1",
+                    "queue",
+                ]
+            ),
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_A10_Thunderbolt_II_Rkt_US
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+                + DepictionAction_Heat_2
+                + Eject_Actions_A10_Thunderbolt_II_Rkt_US
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_US MeshDescriptorLow = MeshDescriptor_Pilote_US_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_A10_Thunderbolt_II_Rkt_US
+    )
+)
 // Dépiction de l'unité A10_Thunderbolt_II_US
 Alternatives_A10_Thunderbolt_II_US is [
             DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_A10_Thunderbolt_II_US ),
@@ -1017,6 +1119,99 @@ Gfx_AH64_Apache_emp2_US_Autogen is TTimelyReceiverFactoryCarrier
         SubDepictionGenerators = SubGenerators_AH64_Apache_emp2_US
     )
 )
+// Dépiction de l'unité AH6C_Little_Bird_US
+Alternatives_AH6C_Little_Bird_US is [
+            DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_AH6C_Little_Bird_US ),
+            DepictionDescriptor_LOD_HelicoMid ( MeshDescriptor = Modele_AH6C_Little_Bird_US_MID ),
+            DepictionDescriptor_LOD_HelicoLow ( MeshDescriptor = Modele_AH6C_Little_Bird_US_LOW ),
+]
+GhostDepiction_AH6C_Little_Bird_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_AH6C_Little_Bird_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_AH6C_Little_Bird_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'AH6C_Little_Bird_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_AH6C_Little_Bird_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_Helico_LittleBird,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01", "fx_tourelle1_tir_02"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 2
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_AH6C_Little_Bird_US
+               WeaponIndex = 1
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            TCosmeticHelicopterLandingOperatorDesc(),
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = [
+                    TRotor
+                    (
+                        NbBlade        = 4
+                        BladesBoneName = "helice_ls_1"
+                        RotorBoneName  = "bloc_moteur_1"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_1"]
+                    ),
+                    TRotor
+                    (
+                        NbBlade        = 2
+                        BladesBoneName = "helice_ls_2"
+                        RotorBoneName  = "bloc_moteur_2"
+                        RotationAxis   = VECTOR[0, 1, 0]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_2"]
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+        ]
+
+        Actions = Weapons_AH6C_Little_Bird_US
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 900 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 170 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_Heat_1
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = MeshDescriptor_Pilote_Helico_US_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = MeshDescriptor_Pilote_Helico_US_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_AH6C_Little_Bird_US
+    )
+)
 // Dépiction de l'unité Alouette_II_CMD_RFA
 Alternatives_Alouette_II_CMD_RFA is [
             DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Alouette_II_CMD_RFA ),
@@ -1863,6 +2058,160 @@ Gfx_Bo_105_trans_RFA_Autogen is TTimelyReceiverFactoryCarrier
         ]
     )
 )
+// Dépiction de l'unité CH47_Chinook_US
+Alternatives_CH47_Chinook_US is [
+            DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_CH47_Chinook_US ),
+            DepictionDescriptor_LOD_HelicoMid ( MeshDescriptor = Modele_CH47_Chinook_US_MID ),
+            DepictionDescriptor_LOD_HelicoLow ( MeshDescriptor = Modele_CH47_Chinook_US_LOW ),
+]
+GhostDepiction_CH47_Chinook_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_CH47_Chinook_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_CH47_Chinook_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'CH47_Chinook_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_CH47_Chinook_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_Helico_Chinook,
+            DepictionOperator_CriticalEffects,
+            TCosmeticHelicopterLandingOperatorDesc(),
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = [
+                    TRotor
+                    (
+                        NbBlade        = 3
+                        BladesBoneName = "helice_ls_1"
+                        RotorBoneName  = "bloc_moteur_1"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_1"]
+                    ),
+                    TRotor
+                    (
+                        NbBlade        = 3
+                        BladesBoneName = "helice_ls_2"
+                        RotorBoneName  = "bloc_moteur_2"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = True
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_2"]
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_Heat_2,
+        ]
+
+        Actions = Weapons_CH47_Chinook_US
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+                + DepictionAction_Heat_2
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = MeshDescriptor_Pilote_Helico_US_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = MeshDescriptor_Pilote_Helico_US_LOW),
+        ]
+    )
+)
+// Dépiction de l'unité CH47_Super_Chinook_US
+Alternatives_CH47_Super_Chinook_US is [
+            DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_CH47_Super_Chinook_US ),
+            DepictionDescriptor_LOD_HelicoMid ( MeshDescriptor = Modele_CH47_Super_Chinook_US_MID ),
+            DepictionDescriptor_LOD_HelicoLow ( MeshDescriptor = Modele_CH47_Super_Chinook_US_LOW ),
+]
+GhostDepiction_CH47_Super_Chinook_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_CH47_Super_Chinook_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_CH47_Super_Chinook_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'CH47_Super_Chinook_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_CH47_Super_Chinook_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_Helico_Chinook,
+            DepictionOperator_CriticalEffects,
+            TCosmeticHelicopterLandingOperatorDesc(),
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = [
+                    TRotor
+                    (
+                        NbBlade        = 3
+                        BladesBoneName = "helice_ls_1"
+                        RotorBoneName  = "bloc_moteur_1"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_1"]
+                    ),
+                    TRotor
+                    (
+                        NbBlade        = 3
+                        BladesBoneName = "helice_ls_2"
+                        RotorBoneName  = "bloc_moteur_2"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = True
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_2"]
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_Heat_2,
+        ]
+
+        Actions = Weapons_CH47_Super_Chinook_US
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+                + DepictionAction_Heat_2
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = MeshDescriptor_Pilote_Helico_US_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = MeshDescriptor_Pilote_Helico_US_LOW),
+        ]
+    )
+)
 // Dépiction de l'unité CH53G_RFA
 Alternatives_CH53G_RFA is [
             DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_CH53G_RFA ),
@@ -2491,6 +2840,71 @@ Gfx_F111E_Aardvark_napalm_US_Autogen is TTimelyReceiverFactoryCarrier
         SubDepictionGenerators = SubGenerators_F111E_Aardvark_napalm_US
     )
 )
+// Dépiction de l'unité F111F_Aardvark_CBU_US
+Alternatives_F111F_Aardvark_CBU_US is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F111F_Aardvark_CBU_US ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_F111F_Aardvark_CBU_US_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_F111F_Aardvark_CBU_US_LOW ),
+]
+GhostDepiction_F111F_Aardvark_CBU_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F111F_Aardvark_CBU_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_F111F_Aardvark_CBU_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'F111F_Aardvark_CBU_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F111F_Aardvark_CBU_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_bombardier_F111,
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_F111F_Aardvark_CBU_US
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_Heat_2,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_F111F_Aardvark_CBU_US
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_DoubleReactorAirplane
+                + DepictionAction_Flare_Simple
+                + DepictionAction_Heat_2
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_US MeshDescriptorLow = MeshDescriptor_Pilote_US_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_US MeshDescriptorLow = MeshDescriptor_Pilote_US_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_F111F_Aardvark_CBU_US
+    )
+)
 // Dépiction de l'unité F111F_Aardvark_US
 Alternatives_F111F_Aardvark_US is [
             DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F111F_Aardvark_US ),
@@ -2554,6 +2968,71 @@ Gfx_F111F_Aardvark_US_Autogen is TTimelyReceiverFactoryCarrier
         ]
 
         SubDepictionGenerators = SubGenerators_F111F_Aardvark_US
+    )
+)
+// Dépiction de l'unité F111F_Aardvark_napalm_US
+Alternatives_F111F_Aardvark_napalm_US is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F111F_Aardvark_napalm_US ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_F111F_Aardvark_napalm_US_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_F111F_Aardvark_napalm_US_LOW ),
+]
+GhostDepiction_F111F_Aardvark_napalm_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F111F_Aardvark_napalm_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_F111F_Aardvark_napalm_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'F111F_Aardvark_napalm_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F111F_Aardvark_napalm_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_bombardier_F111,
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_F111F_Aardvark_napalm_US
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_Heat_2,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_F111F_Aardvark_napalm_US
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_DoubleReactorAirplane
+                + DepictionAction_Flare_Simple
+                + DepictionAction_Heat_2
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_US MeshDescriptorLow = MeshDescriptor_Pilote_US_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_US MeshDescriptorLow = MeshDescriptor_Pilote_US_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_F111F_Aardvark_napalm_US
     )
 )
 // Dépiction de l'unité F15C_Eagle_AA_US
@@ -2715,6 +3194,84 @@ Gfx_F16E_AA_US_Autogen is TTimelyReceiverFactoryCarrier
         SubDepictionGenerators = SubGenerators_F16E_AA_US
     )
 )
+// Dépiction de l'unité F16E_AGM_US
+Alternatives_F16E_AGM_US is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F16E_AGM_US ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_F16E_AGM_US_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_F16E_AGM_US_LOW ),
+]
+GhostDepiction_F16E_AGM_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F16E_AGM_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_F16E_AGM_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'F16E_AGM_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F16E_AGM_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_multirole_F16,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_F16E_AGM_US
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag3"
+               Connoisseur = MissileCarriage_F16E_AGM_US
+               WeaponIndex = 3
+               WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_F16E_AGM_US
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_SingleReactorAirplane
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_US MeshDescriptorLow = MeshDescriptor_Pilote_US_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_F16E_AGM_US
+    )
+)
 // Dépiction de l'unité F16E_CBU_US
 Alternatives_F16E_CBU_US is [
             DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F16E_CBU_US ),
@@ -2793,6 +3350,84 @@ Gfx_F16E_CBU_US_Autogen is TTimelyReceiverFactoryCarrier
         SubDepictionGenerators = SubGenerators_F16E_CBU_US
     )
 )
+// Dépiction de l'unité F16E_HE_US
+Alternatives_F16E_HE_US is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F16E_HE_US ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_F16E_HE_US_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_F16E_HE_US_LOW ),
+]
+GhostDepiction_F16E_HE_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F16E_HE_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_F16E_HE_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'F16E_HE_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F16E_HE_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_multirole_F16,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_F16E_HE_US
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag3"
+               Connoisseur = MissileCarriage_F16E_HE_US
+               WeaponIndex = 3
+               WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_F16E_HE_US
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_SingleReactorAirplane
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_US MeshDescriptorLow = MeshDescriptor_Pilote_US_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_F16E_HE_US
+    )
+)
 // Dépiction de l'unité F16E_SEAD_US
 Alternatives_F16E_SEAD_US is [
             DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F16E_SEAD_US ),
@@ -2869,6 +3504,84 @@ Gfx_F16E_SEAD_US_Autogen is TTimelyReceiverFactoryCarrier
         ]
 
         SubDepictionGenerators = SubGenerators_F16E_SEAD_US
+    )
+)
+// Dépiction de l'unité F16E_napalm_US
+Alternatives_F16E_napalm_US is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F16E_napalm_US ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_F16E_napalm_US_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_F16E_napalm_US_LOW ),
+]
+GhostDepiction_F16E_napalm_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F16E_napalm_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_F16E_napalm_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'F16E_napalm_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_F16E_napalm_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_multirole_F16,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_F16E_napalm_US
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag3"
+               Connoisseur = MissileCarriage_F16E_napalm_US
+               WeaponIndex = 3
+               WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_F16E_napalm_US
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_SingleReactorAirplane
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_US MeshDescriptorLow = MeshDescriptor_Pilote_US_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_F16E_napalm_US
     )
 )
 // Dépiction de l'unité F4E_Phantom_II_AA_US
@@ -3699,6 +4412,79 @@ Gfx_F4_Wild_Weasel_US_Autogen is TTimelyReceiverFactoryCarrier
         SubDepictionGenerators = SubGenerators_F4_Wild_Weasel_US
     )
 )
+// Dépiction de l'unité G91_R3_Gina_AA_RFA
+Alternatives_G91_R3_Gina_AA_RFA is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_G91_R3_Gina_AA_RFA ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_G91_R3_Gina_AA_RFA_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_G91_R3_Gina_AA_RFA_LOW ),
+]
+GhostDepiction_G91_R3_Gina_AA_RFA is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_G91_R3_Gina_AA_RFA
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_G91_R3_Gina_AA_RFA_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'G91_R3_Gina_AA_RFA'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_G91_R3_Gina_AA_RFA
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_bombardier_G91,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01", "fx_tourelle1_tir_02"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 2
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_G91_R3_Gina_AA_RFA
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_G91_R3_Gina_AA_RFA
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+                + DepictionAction_Heat_1
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_US MeshDescriptorLow = MeshDescriptor_Pilote_US_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_G91_R3_Gina_AA_RFA
+    )
+)
 // Dépiction de l'unité G91_R3_Gina_HE_RFA
 Alternatives_G91_R3_Gina_HE_RFA is [
             DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_G91_R3_Gina_HE_RFA ),
@@ -4000,6 +4786,114 @@ Gfx_Harrier_UK_Autogen is TTimelyReceiverFactoryCarrier
         SubDepictionGenerators = SubGenerators_Harrier_UK
     )
 )
+// Dépiction de l'unité Ka_50_SOV
+Alternatives_Ka_50_SOV is [
+            DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Ka_50_SOV ),
+            DepictionDescriptor_LOD_HelicoMid ( MeshDescriptor = Modele_Ka_50_SOV_MID ),
+            DepictionDescriptor_LOD_HelicoLow ( MeshDescriptor = Modele_Ka_50_SOV_LOW ),
+]
+GhostDepiction_Ka_50_SOV is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Ka_50_SOV
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_Ka_50_SOV_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'Ka_50_SOV'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Ka_50_SOV
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_Helico_KA50,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponInstantFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponInstantFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag3"
+               Connoisseur = MissileCarriage_Ka_50_SOV
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag4"
+               Connoisseur = MissileCarriage_Ka_50_SOV
+               WeaponIndex = 3
+               WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            TCosmeticHelicopterLandingOperatorDesc(),
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = [
+                    TRotor
+                    (
+                        NbBlade        = 3
+                        BladesBoneName = "helice_ls_1"
+                        RotorBoneName  = "bloc_moteur_1"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_1"]
+                    ),
+                    TRotor
+                    (
+                        NbBlade        = 3
+                        BladesBoneName = "helice_ls_2"
+                        RotorBoneName  = "bloc_moteur_2"
+                        RotationAxis   = VECTOR[0, 1, 0]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_2"]
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_Heat_2,
+        ]
+
+        Actions = Weapons_Ka_50_SOV
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_Heat_2
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_SOV MeshDescriptorLow = MeshDescriptor_Pilote_Helico_SOV_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_Ka_50_SOV
+    )
+)
 // Dépiction de l'unité MiG_21PFM_AA_DDR
 Alternatives_MiG_21PFM_AA_DDR is [
             DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_MiG_21PFM_AA_DDR ),
@@ -4294,6 +5188,76 @@ Gfx_MiG_21bis_HE_DDR_Autogen is TTimelyReceiverFactoryCarrier
         ]
 
         SubDepictionGenerators = SubGenerators_MiG_21bis_HE_DDR
+    )
+)
+// Dépiction de l'unité MiG_21bis_RKT2_DDR
+Alternatives_MiG_21bis_RKT2_DDR is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_MiG_21bis_RKT2_DDR ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_MiG_21bis_RKT2_DDR_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_MiG_21bis_RKT2_DDR_LOW ),
+]
+GhostDepiction_MiG_21bis_RKT2_DDR is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_MiG_21bis_RKT2_DDR
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_MiG_21bis_RKT2_DDR_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'MiG_21bis_RKT2_DDR'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_MiG_21bis_RKT2_DDR
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_multirole_MiG21,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_MiG_21bis_RKT2_DDR
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_MiG_21bis_RKT2_DDR
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_DDR MeshDescriptorLow = MeshDescriptor_Pilote_DDR_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_MiG_21bis_RKT2_DDR
     )
 )
 // Dépiction de l'unité MiG_23BN_AT_DDR
@@ -4750,6 +5714,128 @@ Gfx_MiG_23P_SOV_Autogen is TTimelyReceiverFactoryCarrier
         ]
 
         SubDepictionGenerators = SubGenerators_MiG_23P_SOV
+    )
+)
+// Dépiction de l'unité MiG_25BM_SOV
+Alternatives_MiG_25BM_SOV is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_MiG_25BM_SOV ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_MiG_25BM_SOV_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_MiG_25BM_SOV_LOW ),
+]
+GhostDepiction_MiG_25BM_SOV is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_MiG_25BM_SOV
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_MiG_25BM_SOV_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'MiG_25BM_SOV'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_MiG_25BM_SOV
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_intercepteur_MiG31,
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Connoisseur = MissileCarriage_MiG_25BM_SOV
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_MiG_25BM_SOV
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_DoubleReactorAirplane
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_SOV MeshDescriptorLow = MeshDescriptor_Pilote_SOV_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_MiG_25BM_SOV
+    )
+)
+// Dépiction de l'unité MiG_25RBF_SOV
+Alternatives_MiG_25RBF_SOV is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_MiG_25RBF_SOV ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_MiG_25RBF_SOV_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_MiG_25RBF_SOV_LOW ),
+]
+GhostDepiction_MiG_25RBF_SOV is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_MiG_25RBF_SOV
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_MiG_25RBF_SOV_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'MiG_25RBF_SOV'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_MiG_25RBF_SOV
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_intercepteur_MiG31,
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Connoisseur = MissileCarriage_MiG_25RBF_SOV
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_MiG_25RBF_SOV
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_DoubleReactorAirplane
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_SOV MeshDescriptorLow = MeshDescriptor_Pilote_SOV_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_MiG_25RBF_SOV
     )
 )
 // Dépiction de l'unité MiG_27M_bombe_SOV
@@ -5575,6 +6661,217 @@ Gfx_Mi_24D_s8_AT_DDR_Autogen is TTimelyReceiverFactoryCarrier
         SubDepictionGenerators = SubGenerators_Mi_24D_s8_AT_DDR
     )
 )
+// Dépiction de l'unité Mi_24K_reco_SOV
+Alternatives_Mi_24K_reco_SOV is [
+            DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_24K_reco_SOV ),
+            DepictionDescriptor_LOD_HelicoMid ( MeshDescriptor = Modele_Mi_24K_reco_SOV_MID ),
+            DepictionDescriptor_LOD_HelicoLow ( MeshDescriptor = Modele_Mi_24K_reco_SOV_LOW ),
+]
+GhostDepiction_Mi_24K_reco_SOV is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Mi_24K_reco_SOV
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_Mi_24K_reco_SOV_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'Mi_24K_reco_SOV'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Mi_24K_reco_SOV
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_Helico_Hind,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_Mi_24K_reco_SOV
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag3"
+               Connoisseur = MissileCarriage_Mi_24K_reco_SOV
+               WeaponIndex = 3
+               WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            TCosmeticHelicopterLandingOperatorDesc(),
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = [
+                    TRotor
+                    (
+                        NbBlade        = 5
+                        BladesBoneName = "helice_ls_1"
+                        RotorBoneName  = "bloc_moteur_1"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_1"]
+                    ),
+                    TRotor
+                    (
+                        NbBlade        = 3
+                        BladesBoneName = "helice_ls_2"
+                        RotorBoneName  = "bloc_moteur_2"
+                        RotationAxis   = VECTOR[0, 1, 0]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_2"]
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_TurretCannonGatling_SlowRotation(XAxisRotationNode = "canon_01" XAxisHasTargetPhysicalPropertyName = "tourelle1target"),
+        ]
+
+        Actions = Weapons_Mi_24K_reco_SOV
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_Heat_1
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_SOV MeshDescriptorLow = MeshDescriptor_Pilote_Helico_SOV_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_SOV MeshDescriptorLow = MeshDescriptor_Pilote_Helico_SOV_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_Mi_24K_reco_SOV
+    )
+)
+// Dépiction de l'unité Mi_24P_SOV
+Alternatives_Mi_24P_SOV is [
+            DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_24P_SOV ),
+            DepictionDescriptor_LOD_HelicoMid ( MeshDescriptor = Modele_Mi_24P_SOV_MID ),
+            DepictionDescriptor_LOD_HelicoLow ( MeshDescriptor = Modele_Mi_24P_SOV_LOW ),
+]
+GhostDepiction_Mi_24P_SOV is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Mi_24P_SOV
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_Mi_24P_SOV_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'Mi_24P_SOV'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Mi_24P_SOV
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_Helico_Hind,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponInstantFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01", "fx_tourelle1_tir_02"]
+               WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponInstantFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Anchors = ["fx_tourelle1_tir_01", "fx_tourelle1_tir_02"]
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag3"
+               Connoisseur = MissileCarriage_Mi_24P_SOV
+               WeaponIndex = 3
+               WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag4"
+               Connoisseur = MissileCarriage_Mi_24P_SOV
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            TCosmeticHelicopterLandingOperatorDesc(),
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = [
+                    TRotor
+                    (
+                        NbBlade        = 5
+                        BladesBoneName = "helice_ls_1"
+                        RotorBoneName  = "bloc_moteur_1"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_1"]
+                    ),
+                    TRotor
+                    (
+                        NbBlade        = 3
+                        BladesBoneName = "helice_ls_2"
+                        RotorBoneName  = "bloc_moteur_2"
+                        RotationAxis   = VECTOR[0, 1, 0]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_2"]
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+        ]
+
+        Actions = Weapons_Mi_24P_SOV
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_Heat_1
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_SOV MeshDescriptorLow = MeshDescriptor_Pilote_Helico_SOV_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_SOV MeshDescriptorLow = MeshDescriptor_Pilote_Helico_SOV_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_Mi_24P_SOV
+    )
+)
 // Dépiction de l'unité Mi_24P_s8_AT2_DDR
 Alternatives_Mi_24P_s8_AT2_DDR is [
             DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_24P_s8_AT2_DDR ),
@@ -5828,13 +7125,12 @@ Gfx_Mi_24VP_SOV_Autogen is TTimelyReceiverFactoryCarrier
                WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
                NbProj = 1
             ),
-            DepictionOperator_WeaponContinuousFire
+            DepictionOperator_WeaponInstantFire
             (
                FireEffectTag = "weapon_effet_tag2"
                Anchors = ["fx_tourelle1_tir_01", "fx_tourelle1_tir_02"]
-               WeaponShootDataPropertyName = "WeaponShootData_0_2"
-               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
-               NbFX = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
             ),
             DepictionOperator_WeaponMissileCarriageFire
             (
@@ -6207,6 +7503,185 @@ Gfx_Mi_24V_RKT_SOV_Autogen is TTimelyReceiverFactoryCarrier
         ]
 
         SubDepictionGenerators = SubGenerators_Mi_24V_RKT_SOV
+    )
+)
+// Dépiction de l'unité Mi_24V_SOV
+Alternatives_Mi_24V_SOV is [
+            DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_24V_SOV ),
+            DepictionDescriptor_LOD_HelicoMid ( MeshDescriptor = Modele_Mi_24V_SOV_MID ),
+            DepictionDescriptor_LOD_HelicoLow ( MeshDescriptor = Modele_Mi_24V_SOV_LOW ),
+]
+GhostDepiction_Mi_24V_SOV is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Mi_24V_SOV
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_Mi_24V_SOV_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'Mi_24V_SOV'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Mi_24V_SOV
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_Helico_Hind,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_Mi_24V_SOV
+               WeaponIndex = 3
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag3"
+               Connoisseur = MissileCarriage_Mi_24V_SOV
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            TCosmeticHelicopterLandingOperatorDesc(),
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = [
+                    TRotor
+                    (
+                        NbBlade        = 5
+                        BladesBoneName = "helice_ls_1"
+                        RotorBoneName  = "bloc_moteur_1"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_1"]
+                    ),
+                    TRotor
+                    (
+                        NbBlade        = 3
+                        BladesBoneName = "helice_ls_2"
+                        RotorBoneName  = "bloc_moteur_2"
+                        RotationAxis   = VECTOR[0, 1, 0]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_2"]
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_TurretCannonGatling_SlowRotation(XAxisRotationNode = "canon_01" XAxisHasTargetPhysicalPropertyName = "tourelle1target"),
+        ]
+
+        Actions = Weapons_Mi_24V_SOV
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_Heat_1
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_SOV MeshDescriptorLow = MeshDescriptor_Pilote_Helico_SOV_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_SOV MeshDescriptorLow = MeshDescriptor_Pilote_Helico_SOV_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_Mi_24V_SOV
+    )
+)
+// Dépiction de l'unité Mi_26_SOV
+Alternatives_Mi_26_SOV is [
+            DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_26_SOV ),
+            DepictionDescriptor_LOD_HelicoMid ( MeshDescriptor = Modele_Mi_26_SOV_MID ),
+            DepictionDescriptor_LOD_HelicoLow ( MeshDescriptor = Modele_Mi_26_SOV_LOW ),
+]
+GhostDepiction_Mi_26_SOV is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Mi_26_SOV
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_Mi_26_SOV_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'Mi_26_SOV'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_Mi_26_SOV
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_Helico_Mi26,
+            DepictionOperator_CriticalEffects,
+            TCosmeticHelicopterLandingOperatorDesc(),
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = [
+                    TRotor
+                    (
+                        NbBlade        = 8
+                        BladesBoneName = "helice_ls_1"
+                        RotorBoneName  = "bloc_moteur_1"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_1"]
+                    ),
+                    TRotor
+                    (
+                        NbBlade        = 5
+                        BladesBoneName = "helice_ls_2"
+                        RotorBoneName  = "bloc_moteur_2"
+                        RotationAxis   = VECTOR[0, 1, 0]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_2"]
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_Heat_2,
+        ]
+
+        Actions = Weapons_Mi_26_SOV
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 3500 PaleCount = 8 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 800 PaleCount = 5 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_Heat_2
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_SOV MeshDescriptorLow = MeshDescriptor_Pilote_Helico_SOV_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_SOV MeshDescriptorLow = MeshDescriptor_Pilote_Helico_SOV_LOW),
+        ]
     )
 )
 // Dépiction de l'unité Mi_2_reco_DDR
@@ -7893,6 +9368,83 @@ Gfx_Mi_9_DDR_Autogen is TTimelyReceiverFactoryCarrier
         ]
     )
 )
+// Dépiction de l'unité OH58C_CMD_US
+Alternatives_OH58C_CMD_US is [
+            DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_OH58C_CMD_US ),
+            DepictionDescriptor_LOD_HelicoMid ( MeshDescriptor = Modele_OH58C_CMD_US_MID ),
+            DepictionDescriptor_LOD_HelicoLow ( MeshDescriptor = Modele_OH58C_CMD_US_LOW ),
+]
+GhostDepiction_OH58C_CMD_US is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_OH58C_CMD_US
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_OH58C_CMD_US_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'OH58C_CMD_US'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificHelicoDepictionSelector
+        DepictionAlternatives = Alternatives_OH58C_CMD_US
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_Helico_Kiowa,
+            DepictionOperator_CriticalEffects,
+            TCosmeticHelicopterLandingOperatorDesc(),
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = [
+                    TRotor
+                    (
+                        NbBlade        = 2
+                        BladesBoneName = "helice_ls_1"
+                        RotorBoneName  = "bloc_moteur_1"
+                        RotationAxis   = VECTOR[0, 0, 1]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_1"]
+                    ),
+                    TRotor
+                    (
+                        NbBlade        = 2
+                        BladesBoneName = "helice_ls_2"
+                        RotorBoneName  = "bloc_moteur_2"
+                        RotationAxis   = VECTOR[0, 1, 0]
+                        Clockwise      = False
+                        RotationSpeed  = 242 // en RPM (Rotations par minute)
+                        BlurActionId   = ["FX_Helice_2"]
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat_1,
+            DepictionOperator_Heat_2,
+        ]
+
+        Actions = Weapons_OH58C_CMD_US
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+                + DepictionAction_Heat_2
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = MeshDescriptor_Pilote_Helico_US_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = MeshDescriptor_Pilote_Helico_US_LOW),
+        ]
+    )
+)
 // Dépiction de l'unité OH58C_Scout_US
 Alternatives_OH58C_Scout_US is [
             DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_OH58C_Scout_US ),
@@ -8807,6 +10359,84 @@ Gfx_Su_24M_nplm_SOV_Autogen is TTimelyReceiverFactoryCarrier
         ]
 
         SubDepictionGenerators = SubGenerators_Su_24M_nplm_SOV
+    )
+)
+// Dépiction de l'unité Su_25T_SOV
+Alternatives_Su_25T_SOV is [
+            DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Su_25T_SOV ),
+            DepictionDescriptor_LOD_AirplaneMid ( MeshDescriptor = Modele_Su_25T_SOV_MID ),
+            DepictionDescriptor_LOD_AirplaneLow ( MeshDescriptor = Modele_Su_25T_SOV_LOW ),
+]
+GhostDepiction_Su_25T_SOV is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        ResidentMaterialTags = [ MaterialTagGhost ]
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_Su_25T_SOV
+        Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
+    )
+)
+Gfx_Su_25T_SOV_Autogen is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = 'Su_25T_SOV'
+        Scaler = SpecificFlyingScaler
+        Selector = SpecificAirplaneDepictionSelector
+        DepictionAlternatives = Alternatives_Su_25T_SOV
+
+        Operators = CommonOperators + [
+            DepictionOperator_CadaverCrashing,
+            DepictionOperator_MovementSound_SM_SD_avion_SU25,
+            DepictionOperator_Turret_1_Aim,
+            DepictionOperator_WeaponContinuousFire
+            (
+               FireEffectTag = "weapon_effet_tag1"
+               Anchors = ["fx_tourelle1_tir_01"]
+               WeaponShootDataPropertyName = "WeaponShootData_0_1"
+               WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+               NbFX = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag2"
+               Connoisseur = MissileCarriage_Su_25T_SOV
+               WeaponIndex = 2
+               WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+               NbProj = 1
+            ),
+            DepictionOperator_WeaponMissileCarriageFire
+            (
+               FireEffectTag = "weapon_effet_tag3"
+               Connoisseur = MissileCarriage_Su_25T_SOV
+               WeaponIndex = 3
+               WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+               NbProj = 1
+            ),
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares
+            (
+                SweepAngle = ~/AngleDispersionFlare_Avion * Degre
+            )
+        ]
+
+        Actions = Weapons_Su_25T_SOV
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = MeshDescriptor_Pilote_SOV MeshDescriptorLow = MeshDescriptor_Pilote_SOV_LOW),
+        ]
+
+        SubDepictionGenerators = SubGenerators_Su_25T_SOV
     )
 )
 // Dépiction de l'unité Su_25_SOV

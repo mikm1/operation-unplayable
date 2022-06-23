@@ -71,6 +71,7 @@ template BUCKSpecificDropdownDescriptor
     ArrowBackgroundBlockColorToken : string = "Vert_boutonDeck",
 
     OpenUpward : bool = false,
+    AlignFloatingPanelRight : bool = true,
 
     OpenSound : TSoundDescriptor = nil,
     SelectItemSound : TSoundDescriptor = nil,
@@ -108,6 +109,8 @@ is BUCKDropdownDescriptor
     MainTextElementName = BaseElementName + "DropDownMainText"
     ItemTextElementName = BaseElementName + "DropDownItemText"
 
+    HorizontalAlignmentRef is <AlignFloatingPanelRight> ? 1.0 : 0.0
+
     FloatingContainerDescriptor = TScrollingDescriptor
     (
         ScrollingElementName = <ElementName> + "FloatingContainerScrolling"
@@ -115,8 +118,8 @@ is BUCKDropdownDescriptor
         (
             RelativeWidthHeight = [<FloatingListRelativeWidth> , <FloatingListRelativeHeight>]
             MagnifiableWidthHeight = [<FloatingListMagnifiableWidth> , <FloatingListMagnifiableHeight>]
-            AlignementToFather = (<OpenUpward> ? [1,0]: [1, 1.0])
-            AlignementToAnchor = (<OpenUpward> ? [1,1]: [1, 0.0])
+            AlignementToFather = (<OpenUpward> ? [HorizontalAlignmentRef, 0.0]: [HorizontalAlignmentRef, 1.0])
+            AlignementToAnchor = (<OpenUpward> ? [HorizontalAlignmentRef, 1.0]: [HorizontalAlignmentRef, 0.0])
         )
 
         Component = BUCKListDescriptor

@@ -104,9 +104,6 @@ export Pool_Airstrike_Defense is TPoolModel
             "Avion_Chasseur",
             "Avion_Chasseur_Bombardier",
         ]
-        ForbiddenTags = [
-            "InfmapCommander"
-        ]
     ),
     ]
 )
@@ -124,9 +121,6 @@ export Pool_Airstrike_Offense is TPoolModel
             "Avion_Chasseur_Bombardier",
             "Avion_Assaut",
         ]
-        ForbiddenTags = [
-            "InfmapCommander"
-        ]
     ),
     ]
 )
@@ -143,9 +137,6 @@ export Pool_Airstrike_Assault is TPoolModel
             "Avion_AT",
             "Avion_Assaut",
         ]
-        ForbiddenTags = [
-            "InfmapCommander"
-        ]
     ),
     ]
 )
@@ -156,4 +147,3 @@ export VEasy_BasicAirstrikeSupport is
     (["Avion_Chasseur_Bombardier", "Avion_Bombardier", "Avion_Assaut", "Avion_AT"], 2),
 ]
 //-------------------------------------------------------------------------
-

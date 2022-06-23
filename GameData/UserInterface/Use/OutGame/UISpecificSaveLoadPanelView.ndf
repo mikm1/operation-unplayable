@@ -667,28 +667,28 @@ private template SaveLoadMultiListTitle
     ]
 
     ForegroundComponents =
-                [
-                    BUCKTextureDescriptor
-                    (
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            MagnifiableWidthHeight = [887,45]
-                            MagnifiableOffset = [0,-4]
-                        )
-                        TextureToken = 'Outgame_foreground_panelPawn'
-                        TextureDrawer = 'ColorMultiply_Additive'
-                    ),
-                    BUCKTextureDescriptor
-                    (
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            MagnifiableWidthHeight = [887,45]
-                            MagnifiableOffset = [0,-4]
-                        )
-                        TextureToken = 'Outgame_foreground_panelPawn'
-                        TextureDrawer = 'ColorMultiply_Additive'
-                    )
-                ]
+    [
+        BUCKTextureDescriptor
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = [887,45]
+                MagnifiableOffset = [0,-4]
+            )
+            TextureToken = 'Outgame_foreground_panelPawn'
+            TextureDrawer = 'ColorMultiply_Additive'
+        ),
+        BUCKTextureDescriptor
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = [887,45]
+                MagnifiableOffset = [0,-4]
+            )
+            TextureToken = 'Outgame_foreground_panelPawn'
+            TextureDrawer = 'ColorMultiply_Additive'
+        )
+    ]
 )
 
 //-------------------------------------------------------------------------------------
@@ -760,12 +760,13 @@ private SaveLoadPanelHeader is BUCKContainerDescriptor
     BackgroundBlockColorToken = 'Orange'
     Components =
     [
-        BUCKTextDescriptor
+        BUCKSpecificTextWithHint
         (
             ElementName = "ReplayInstructions"
 
             ComponentFrame = TUIFramePropertyRTTI
             (
+                RelativeWidthHeight = [1.0, 0.0]
                 MagnifiableOffset = [0.0, 75.0]
                 AlignementToFather = [0.0, 0.5]
                 AlignementToAnchor = [0.0, 0.5]
@@ -773,12 +774,11 @@ private SaveLoadPanelHeader is BUCKContainerDescriptor
 
             ParagraphStyle = TParagraphStyleRTTI
             (
-                Alignment = ~/UIText_Center
+                Alignment = ~/UIText_Left
                 VerticalAlignment = ~/UIText_VerticalCenter
                 BigWordAction = ~/BigWordAction/BigWordNewLine
             )
 
-            HorizontalFitStyle = ~/FitStyle/FitToContent
             VerticalFitStyle = ~/FitStyle/FitToContent
 
             TextStyle = 'Default'

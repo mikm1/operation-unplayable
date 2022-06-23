@@ -294,6 +294,294 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
          )
        ),
 
+        ( MinMax_ATGM
+        , TWeaponMinMaxValues
+          (
+               // PhysicalDamages x use_model_ (Number of weapons)
+               PhysicalDamages = TMinMaxValue (
+                       Min = 1.0 // ATGM 9M117 Bastion
+                       Max = 1.0 // ATGM 9M117 Bastion
+               )
+               // SuppressDamages x use_model_ (Number of weapons)
+               SuppressDamages = TMinMaxValue (
+                       Min = 1.0 // ATGM 9M117 Bastion
+                       Max = 1.0 // ATGM 9M117 Bastion
+               )
+               SplashDamageRadius = TMinMaxValue (
+                       Min = 1.0 * Metre // ATGM 9M117 Bastion
+                       Max = 1.0 * Metre // ATGM 9M117 Bastion
+               )
+               MaxRange = TMinMaxValue (
+                       Min = 4500.0 // M47_DRAGON_II
+                       Max = 8000.0 // ATGM 9M117 Bastion
+               )
+               MaxRangeTBA = TMinMaxValue (
+                       Min = 0.0 // ATGM 9M117 Bastion
+                       Max = 0.0 // ATGM 9M117 Bastion
+               )
+               MaxRangeHA = TMinMaxValue (
+                       Min = 0.0 // ATGM 9M117 Bastion
+                       Max = 0.0 // ATGM 9M117 Bastion
+               )
+               AimTime = TMinMaxValue (
+                       Min = 1.0 // ATGM 9M117 Bastion
+                       Max = 1.0 // ATGM 9M117 Bastion
+               )
+               ReloadTime = TMinMaxValue (
+                       Min = 5.0 // ATGM 9M117 Bastion
+                       Max = 5.0 // ATGM 9M117 Bastion
+               )
+               Accuracy = TMinMaxValue (
+                       Min = 40.0 // ATGM 9M117 Bastion
+                       Max = 70.0 // ATGM BGM71D TOW 2
+               )
+               AccuracyMovement = TMinMaxValue (
+                       Min = 0.0 // ATGM 9M117 Bastion
+                       Max = 0.0 // ATGM 9M117 Bastion
+               )
+               RateOfFire = TMinMaxValue (
+                       Min = 12.0 // ATGM 9M117 Bastion
+                       Max = 48.0 // AGM 9M114M KokonM x16
+               )
+               Penetration = TMinMaxValue (
+                       Min = 16 // ATGM 9K111 Fagot
+                       Max = 26 // AGM 9K121 Vikhr x12
+               )
+               TimeBetweenTwoShots = TMinMaxValue (
+                       Min = 1.0 // ATGM 9M117 Bastion
+                       Max = 1.0 // ATGM 9M117 Bastion
+               )
+               NbShotsBySalvo = TMinMaxValue (
+                       Min = 1.0 // ATGM 9M117 Bastion
+                       Max = 16.0 // AGM 9M114M KokonM x16
+               )
+               SupplyCost = TMinMaxValue (
+                       Min = 160.0 // ATGM 9K111 Fagot
+                       Max = 3120.0 // AGM 9K121 Vikhr x12
+               )
+               TurretSpeed = TMinMaxValue (
+                       Min = 60.0 // ATGM 9K111 Fagot
+                       Max = 360.0 // M47_DRAGON_II
+              )
+         )
+       ),
+
+        ( MinMax_Fusil_assaut
+        , TWeaponMinMaxValues
+          (
+               // PhysicalDamages x use_model_ (Number of weapons)
+               PhysicalDamages = TMinMaxValue (
+                       Min = 0.1 // FM AK_74
+                       Max = 1.43 // FM KMS_72
+               )
+               // SuppressDamages x use_model_ (Number of weapons)
+               SuppressDamages = TMinMaxValue (
+                       Min = 4.0 // FM AK_74
+                       Max = 52.0 // FM KMS_72
+               )
+               SplashDamageRadius = TMinMaxValue (
+                       Min = 0.0 * Metre // FM M16
+                       Max = 0.0 * Metre // FM M16
+               )
+               MaxRange = TMinMaxValue (
+                       Min = 1302.0 // PM AKSU_74
+                       Max = 2505.0 // FM M16
+               )
+               MaxRangeTBA = TMinMaxValue (
+                       Min = 1302.0 // PM AKSU_74
+                       Max = 1500.0 // FM M16
+               )
+               MaxRangeHA = TMinMaxValue (
+                       Min = 0.0 // FM M16
+                       Max = 0.0 // FM M16
+               )
+               AimTime = TMinMaxValue (
+                       Min = 1.0 // FM M16
+                       Max = 1.0 // FM M16
+               )
+               ReloadTime = TMinMaxValue (
+                       Min = 1.0 // PM AKSU_74
+                       Max = 3.75 // FM M16
+               )
+               TurretSpeed = TMinMaxValue (
+                       Min = 360.0 // FM M16
+                       Max = 360.0 // FM M16
+               )
+               Accuracy = TMinMaxValue (
+                       Min = 25.0 // FM KMS_72
+                       Max = 80.0 // PM VSS Vintorez
+               )
+               AccuracyMovement = TMinMaxValue (
+                       Min = 10.0 // FM M16
+                       Max = 40.0 // PM AKSU_74
+               )
+               RateOfFire = TMinMaxValue (
+                       Min = 160.0 // FM M16
+                       Max = 600.0 // PM AKSU_74
+               )
+               Penetration = TMinMaxValue (
+                       Min = 3 // FM M16
+                       Max = 3 // FM M16
+               )
+               TimeBetweenTwoShots = TMinMaxValue (
+                       Min = 1.0 // PM AKSU_74
+                       Max = 3.75 // FM M16
+               )
+               NbShotsBySalvo = TMinMaxValue (
+                       Min = 1.0 // FM M16
+                       Max = 1.0 // FM M16
+               )
+               SupplyCost = TMinMaxValue (
+                       Min = 10.0 // FM M16
+                       Max = 10.0 // FM M16
+              )
+         )
+       ),
+
+        ( MinMax_LAW
+        , TWeaponMinMaxValues
+          (
+               // PhysicalDamages x use_model_ (Number of weapons)
+               PhysicalDamages = TMinMaxValue (
+                       Min = 1.0 // RocketInf M72 LAW 66mm
+                       Max = 1.68 // RocketInf Handflammpatrone
+               )
+               // SuppressDamages x use_model_ (Number of weapons)
+               SuppressDamages = TMinMaxValue (
+                       Min = 1.0 // RocketInf M72 LAW 66mm
+                       Max = 92.0 // RocketInf Handflammpatrone
+               )
+               SplashDamageRadius = TMinMaxValue (
+                       Min = 1.0 * Metre // RocketInf M72 LAW 66mm
+                       Max = 70.0 * Metre // RocketInf Handflammpatrone
+               )
+               MaxRange = TMinMaxValue (
+                       Min = 1500.0 // RocketInf RPG22 72_5mm
+                       Max = 4004.0 // RocketInf M67 RCL 90mm
+               )
+               MaxRangeTBA = TMinMaxValue (
+                       Min = 0.0 // RocketInf M72 LAW 66mm
+                       Max = 0.0 // RocketInf M72 LAW 66mm
+               )
+               MaxRangeHA = TMinMaxValue (
+                       Min = 0.0 // RocketInf M72 LAW 66mm
+                       Max = 0.0 // RocketInf M72 LAW 66mm
+               )
+               AimTime = TMinMaxValue (
+                       Min = 1.0 // RocketInf M72 LAW 66mm
+                       Max = 1.0 // RocketInf M72 LAW 66mm
+               )
+               ReloadTime = TMinMaxValue (
+                       Min = 3.0 // RocketInf M72 LAW 66mm
+                       Max = 6.0 // RocketInf M67 RCL 90mm
+               )
+               TurretSpeed = TMinMaxValue (
+                       Min = 360.0 // RocketInf M72 LAW 66mm
+                       Max = 360.0 // RocketInf M72 LAW 66mm
+               )
+               Accuracy = TMinMaxValue (
+                       Min = 35.0 // RocketInf M67 RCL 90mm
+                       Max = 70.0 // RocketInf RPG29 105mm
+               )
+               AccuracyMovement = TMinMaxValue (
+                       Min = 0.0 // RocketInf M72 LAW 66mm
+                       Max = 0.0 // RocketInf M72 LAW 66mm
+               )
+               RateOfFire = TMinMaxValue (
+                       Min = 10.0 // RocketInf M67 RCL 90mm
+                       Max = 20.0 // RocketInf M72 LAW 66mm
+               )
+               Penetration = TMinMaxValue (
+                       Min = 13 // RocketInf M72 LAW 66mm
+                       Max = 21 // RocketInf PzF 3
+               )
+               TimeBetweenTwoShots = TMinMaxValue (
+                       Min = 1.0 // RocketInf M72 LAW 66mm
+                       Max = 1.0 // RocketInf M72 LAW 66mm
+               )
+               NbShotsBySalvo = TMinMaxValue (
+                       Min = 1.0 // RocketInf M72 LAW 66mm
+                       Max = 1.0 // RocketInf M72 LAW 66mm
+               )
+               SupplyCost = TMinMaxValue (
+                       Min = 90.0 // RocketInf M67 RCL 90mm HE
+                       Max = 210.0 // RocketInf PzF 3
+              )
+         )
+       ),
+
+        ( MinMax_Grenade
+        , TWeaponMinMaxValues
+          (
+               // PhysicalDamages x use_model_ (Number of weapons)
+               PhysicalDamages = TMinMaxValue (
+                       Min = 4.0 // Grenade Satchel Charge
+                       Max = 4.0 // Grenade Satchel Charge
+               )
+               // SuppressDamages x use_model_ (Number of weapons)
+               SuppressDamages = TMinMaxValue (
+                       Min = 200.0 // Grenade Satchel Charge
+                       Max = 200.0 // Grenade Satchel Charge
+               )
+               SplashDamageRadius = TMinMaxValue (
+                       Min = 200.0 * Metre // Grenade Satchel Charge
+                       Max = 200.0 * Metre // Grenade Satchel Charge
+               )
+               MaxRange = TMinMaxValue (
+                       Min = 495.0 // Grenade Satchel Charge
+                       Max = 495.0 // Grenade Satchel Charge
+               )
+               MaxRangeTBA = TMinMaxValue (
+                       Min = 0.0 // Grenade Satchel Charge
+                       Max = 0.0 // Grenade Satchel Charge
+               )
+               MaxRangeHA = TMinMaxValue (
+                       Min = 0.0 // Grenade Satchel Charge
+                       Max = 0.0 // Grenade Satchel Charge
+               )
+               AimTime = TMinMaxValue (
+                       Min = 0.0 // Grenade Satchel Charge
+                       Max = 0.0 // Grenade Satchel Charge
+               )
+               ReloadTime = TMinMaxValue (
+                       Min = 4.0 // Grenade Satchel Charge
+                       Max = 4.0 // Grenade Satchel Charge
+               )
+               TurretSpeed = TMinMaxValue (
+                       Min = 360.0 // Grenade Satchel Charge
+                       Max = 360.0 // Grenade Satchel Charge
+               )
+               Accuracy = TMinMaxValue (
+                       Min = 40.0 // Grenade Satchel Charge
+                       Max = 40.0 // Grenade Satchel Charge
+               )
+               AccuracyMovement = TMinMaxValue (
+                       Min = 20.0 // Grenade Satchel Charge
+                       Max = 20.0 // Grenade Satchel Charge
+               )
+               RateOfFire = TMinMaxValue (
+                       Min = 15.0 // Grenade Satchel Charge
+                       Max = 15.0 // Grenade Satchel Charge
+               )
+               Penetration = TMinMaxValue (
+                       Min = 4 // Grenade Satchel Charge
+                       Max = 4 // Grenade Satchel Charge
+               )
+               TimeBetweenTwoShots = TMinMaxValue (
+                       Min = 2.0 // Grenade Satchel Charge
+                       Max = 2.0 // Grenade Satchel Charge
+               )
+               NbShotsBySalvo = TMinMaxValue (
+                       Min = 1.0 // Grenade Satchel Charge
+                       Max = 1.0 // Grenade Satchel Charge
+               )
+               SupplyCost = TMinMaxValue (
+                       Min = 10.0 // Grenade Satchel Charge
+                       Max = 10.0 // Grenade Satchel Charge
+              )
+         )
+       ),
+
         ( MinMax_AutocanonHE
         , TWeaponMinMaxValues
           (
@@ -366,294 +654,6 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
          )
        ),
 
-        ( MinMax_ATGM
-        , TWeaponMinMaxValues
-          (
-               // PhysicalDamages x use_model_ (Number of weapons)
-               PhysicalDamages = TMinMaxValue (
-                       Min = 1.0 // ATGM 9K111 Fagot
-                       Max = 10.0 // ATGM 9K111 Fagot
-               )
-               // SuppressDamages x use_model_ (Number of weapons)
-               SuppressDamages = TMinMaxValue (
-                       Min = 1.0 // ATGM 9K111 Fagot
-                       Max = 1.0 // ATGM 9K111 Fagot
-               )
-               SplashDamageRadius = TMinMaxValue (
-                       Min = 1.0 * Metre // ATGM 9K111 Fagot
-                       Max = 1.0 * Metre // ATGM 9K111 Fagot
-               )
-               MaxRange = TMinMaxValue (
-                       Min = 10000.0 // M47_DRAGON_II
-                       Max = 35000.0 // ATGM 9M117 Bastion
-               )
-               MaxRangeTBA = TMinMaxValue (
-                       Min = 0.0 // ATGM 9K111 Fagot
-                       Max = 0.0 // ATGM 9K111 Fagot
-               )
-               MaxRangeHA = TMinMaxValue (
-                       Min = 0.0 // ATGM 9K111 Fagot
-                       Max = 0.0 // ATGM 9K111 Fagot
-               )
-               AimTime = TMinMaxValue (
-                       Min = 1.0 // ATGM 9K111 Fagot
-                       Max = 2.0 // ATGM HOT1 x6
-               )
-               ReloadTime = TMinMaxValue (
-                       Min = 5.0 // ATGM 9K111 Fagot
-                       Max = 15.0 // ATGM HOT1 x6
-               )
-               TurretSpeed = TMinMaxValue (
-                       Min = 60.0 // ATGM 9K111 Fagot
-                       Max = 360.0 // ATGM 9M14 MalyutkaP
-               )
-               Accuracy = TMinMaxValue (
-                       Min = 40.0 // ATGM 9M117 Bastion
-                       Max = 70.0 // ATGM BGM71D TOW 2
-               )
-               AccuracyMovement = TMinMaxValue (
-                       Min = 0.0 // ATGM 9K111 Fagot
-                       Max = 0.0 // ATGM 9K111 Fagot
-               )
-               RateOfFire = TMinMaxValue (
-                       Min = 12.0 // ATGM 9K111 Fagot
-                       Max = 48.0 // AGM 9M114M KokonM x16
-               )
-               Penetration = TMinMaxValue (
-                       Min = 7 // ATGM 9K111 Fagot
-                       Max = 20 // ATGM BGM71D TOW 2
-               )
-               TimeBetweenTwoShots = TMinMaxValue (
-                       Min = 1.0 // ATGM 9K111 Fagot
-                       Max = 1.0 // ATGM 9K111 Fagot
-               )
-               NbShotsBySalvo = TMinMaxValue (
-                       Min = 1.0 // ATGM 9K111 Fagot
-                       Max = 16.0 // AGM 9M114M KokonM x16
-               )
-               SupplyCost = TMinMaxValue (
-                       Min = 160.0 // ATGM 9K111 Fagot
-                       Max = 3040.0 // AGM 9M114M KokonM x16
-              )
-         )
-       ),
-
-        ( MinMax_Fusil_assaut
-        , TWeaponMinMaxValues
-          (
-               // PhysicalDamages x use_model_ (Number of weapons)
-               PhysicalDamages = TMinMaxValue (
-                       Min = 0.1 // FM AK_74
-                       Max = 1.76 // FM KMS_72
-               )
-               // SuppressDamages x use_model_ (Number of weapons)
-               SuppressDamages = TMinMaxValue (
-                       Min = 4.0 // FM AK_74
-                       Max = 64.0 // FM KMS_72
-               )
-               SplashDamageRadius = TMinMaxValue (
-                       Min = 0.0 * Metre // FM M16
-                       Max = 0.0 * Metre // FM M16
-               )
-               MaxRange = TMinMaxValue (
-                       Min = 1000.0 // PM uzi
-                       Max = 3000.0 // FM M16
-               )
-               MaxRangeTBA = TMinMaxValue (
-                       Min = 1000.0 // PM uzi
-                       Max = 2000.0 // FM M16
-               )
-               MaxRangeHA = TMinMaxValue (
-                       Min = 0.0 // FM M16
-                       Max = 0.0 // FM M16
-               )
-               AimTime = TMinMaxValue (
-                       Min = 1.0 // FM M16
-                       Max = 1.3 // FM G3KA4
-               )
-               ReloadTime = TMinMaxValue (
-                       Min = 1.0 // PM uzi
-                       Max = 4.875 // FM G3KA4
-               )
-               TurretSpeed = TMinMaxValue (
-                       Min = 360.0 // FM M16
-                       Max = 360.0 // FM M16
-               )
-               Accuracy = TMinMaxValue (
-                       Min = 25.0 // FM KMS_72
-                       Max = 80.0 // PM VSS Vintorez
-               )
-               AccuracyMovement = TMinMaxValue (
-                       Min = 10.0 // FM G3KA4
-                       Max = 40.0 // PM MP_5A3
-               )
-               RateOfFire = TMinMaxValue (
-                       Min = 123.07692307692308 // FM G3KA4
-                       Max = 600.0 // PM uzi
-               )
-               Penetration = TMinMaxValue (
-                       Min = 3 // FM M16
-                       Max = 3 // FM M16
-               )
-               TimeBetweenTwoShots = TMinMaxValue (
-                       Min = 1.0 // PM uzi
-                       Max = 3.75 // FM M16
-               )
-               NbShotsBySalvo = TMinMaxValue (
-                       Min = 1.0 // FM M16
-                       Max = 1.0 // FM M16
-               )
-               SupplyCost = TMinMaxValue (
-                       Min = 10.0 // FM M16
-                       Max = 10.0 // FM M16
-              )
-         )
-       ),
-
-        ( MinMax_LAW
-        , TWeaponMinMaxValues
-          (
-               // PhysicalDamages x use_model_ (Number of weapons)
-               PhysicalDamages = TMinMaxValue (
-                       Min = 1.0 // RocketInf M72 LAW 66mm
-                       Max = 8.0 // RocketInf Handflammpatrone
-               )
-               // SuppressDamages x use_model_ (Number of weapons)
-               SuppressDamages = TMinMaxValue (
-                       Min = 1.0 // RocketInf M72 LAW 66mm
-                       Max = 92.0 // RocketInf Handflammpatrone
-               )
-               SplashDamageRadius = TMinMaxValue (
-                       Min = 1.0 * Metre // RocketInf M72 LAW 66mm
-                       Max = 70.0 * Metre // RocketInf Handflammpatrone
-               )
-               MaxRange = TMinMaxValue (
-                       Min = 1000.0 // RocketInf Handflammpatrone
-                       Max = 5000.0 // RocketInf M67 RCL 90mm
-               )
-               MaxRangeTBA = TMinMaxValue (
-                       Min = 0.0 // RocketInf M72 LAW 66mm
-                       Max = 0.0 // RocketInf M72 LAW 66mm
-               )
-               MaxRangeHA = TMinMaxValue (
-                       Min = 0.0 // RocketInf M72 LAW 66mm
-                       Max = 0.0 // RocketInf M72 LAW 66mm
-               )
-               AimTime = TMinMaxValue (
-                       Min = 1.0 // RocketInf M72 LAW 66mm
-                       Max = 2.5 // RocketInf M202 Flash 66mm
-               )
-               ReloadTime = TMinMaxValue (
-                       Min = 3.0 // RocketInf M72 LAW 66mm
-                       Max = 9.0 // RocketInf M67 RCL 90mm
-               )
-               TurretSpeed = TMinMaxValue (
-                       Min = 360.0 // RocketInf M72 LAW 66mm
-                       Max = 360.0 // RocketInf M72 LAW 66mm
-               )
-               Accuracy = TMinMaxValue (
-                       Min = 35.0 // RocketInf M67 RCL 90mm
-                       Max = 70.0 // RocketInf RPG29 105mm
-               )
-               AccuracyMovement = TMinMaxValue (
-                       Min = 0.0 // RocketInf M72 LAW 66mm
-                       Max = 0.0 // RocketInf M72 LAW 66mm
-               )
-               RateOfFire = TMinMaxValue (
-                       Min = 6.666666666666667 // RocketInf M67 RCL 90mm
-                       Max = 20.0 // RocketInf M72 LAW 66mm
-               )
-               Penetration = TMinMaxValue (
-                       Min = 7 // RocketInf M72 LAW 66mm
-                       Max = 16 // RocketInf PzF 3
-               )
-               TimeBetweenTwoShots = TMinMaxValue (
-                       Min = 1.0 // RocketInf M72 LAW 66mm
-                       Max = 1.0 // RocketInf M72 LAW 66mm
-               )
-               NbShotsBySalvo = TMinMaxValue (
-                       Min = 1.0 // RocketInf M72 LAW 66mm
-                       Max = 1.0 // RocketInf M72 LAW 66mm
-               )
-               SupplyCost = TMinMaxValue (
-                       Min = 90.0 // RocketInf M67 RCL 90mm HE
-                       Max = 210.0 // RocketInf PzF 3
-              )
-         )
-       ),
-
-        ( MinMax_Grenade
-        , TWeaponMinMaxValues
-          (
-               // PhysicalDamages x use_model_ (Number of weapons)
-               PhysicalDamages = TMinMaxValue (
-                       Min = 4.0 // Grenade Satchel Charge
-                       Max = 4.0 // Grenade Satchel Charge
-               )
-               // SuppressDamages x use_model_ (Number of weapons)
-               SuppressDamages = TMinMaxValue (
-                       Min = 200.0 // Grenade Satchel Charge
-                       Max = 200.0 // Grenade Satchel Charge
-               )
-               SplashDamageRadius = TMinMaxValue (
-                       Min = 100.0 * Metre // Grenade Satchel Charge
-                       Max = 100.0 * Metre // Grenade Satchel Charge
-               )
-               MaxRange = TMinMaxValue (
-                       Min = 495.0 // Grenade Satchel Charge
-                       Max = 495.0 // Grenade Satchel Charge
-               )
-               MaxRangeTBA = TMinMaxValue (
-                       Min = 0.0 // Grenade Satchel Charge
-                       Max = 0.0 // Grenade Satchel Charge
-               )
-               MaxRangeHA = TMinMaxValue (
-                       Min = 0.0 // Grenade Satchel Charge
-                       Max = 0.0 // Grenade Satchel Charge
-               )
-               AimTime = TMinMaxValue (
-                       Min = 0.0 // Grenade Satchel Charge
-                       Max = 0.0 // Grenade Satchel Charge
-               )
-               ReloadTime = TMinMaxValue (
-                       Min = 4.0 // Grenade Satchel Charge
-                       Max = 4.0 // Grenade Satchel Charge
-               )
-               TurretSpeed = TMinMaxValue (
-                       Min = 360.0 // Grenade Satchel Charge
-                       Max = 360.0 // Grenade Satchel Charge
-               )
-               Accuracy = TMinMaxValue (
-                       Min = 40.0 // Grenade Satchel Charge
-                       Max = 40.0 // Grenade Satchel Charge
-               )
-               AccuracyMovement = TMinMaxValue (
-                       Min = 20.0 // Grenade Satchel Charge
-                       Max = 20.0 // Grenade Satchel Charge
-               )
-               RateOfFire = TMinMaxValue (
-                       Min = 15.0 // Grenade Satchel Charge
-                       Max = 15.0 // Grenade Satchel Charge
-               )
-               Penetration = TMinMaxValue (
-                       Min = 4 // Grenade Satchel Charge
-                       Max = 4 // Grenade Satchel Charge
-               )
-               TimeBetweenTwoShots = TMinMaxValue (
-                       Min = 2.0 // Grenade Satchel Charge
-                       Max = 2.0 // Grenade Satchel Charge
-               )
-               NbShotsBySalvo = TMinMaxValue (
-                       Min = 1.0 // Grenade Satchel Charge
-                       Max = 1.0 // Grenade Satchel Charge
-               )
-               SupplyCost = TMinMaxValue (
-                       Min = 10.0 // Grenade Satchel Charge
-                       Max = 10.0 // Grenade Satchel Charge
-              )
-         )
-       ),
-
         ( MinMax_Mortier
         , TWeaponMinMaxValues
           (
@@ -695,6 +695,14 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Min = 60.0 // Mortier M40 107mm
                        Max = 360.0 // SMOKE_Vehicle_Grenadex8
                )
+               Accuracy = TMinMaxValue (
+                       Min = 0.0 // Mortier M40 107mm
+                       Max = 30.0 // Lance grenade AGS17
+               )
+               AccuracyMovement = TMinMaxValue (
+                       Min = 0.0 // Mortier M40 107mm
+                       Max = 10.0 // Lance grenade AGS17
+               )
                RateOfFire = TMinMaxValue (
                        Min = 16.363636363636363 // Mortier Tampella 120mm
                        Max = 272.72727272727275 // Pod GUV AGS17 2x
@@ -711,14 +719,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Min = 30.0 // Mortier Tampella 120mm SMOKE
                        Max = 428.0 // Mortier M40 107mm
                )
-               Accuracy = TMinMaxValue (
-                       Min = 0.0 // Mortier M40 107mm
-                       Max = 3.0 // Lance grenade AGS17
-               )
-               AccuracyMovement = TMinMaxValue (
-                       Min = 0.0 // Mortier M40 107mm
-                       Max = 1.0 // Lance grenade AGS17
-              )
+
          )
        ),
 
@@ -786,78 +787,6 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                SupplyCost = TMinMaxValue (
                        Min = 140.0 // flamethrower LPO
                        Max = 140.0 // flamethrower LPO
-              )
-         )
-       ),
-
-        ( MinMax_DCA
-        , TWeaponMinMaxValues
-          (
-               // PhysicalDamages x use_model_ (Number of weapons)
-               PhysicalDamages = TMinMaxValue (
-                       Min = 0.5 // Gatling M61 Vulcan 20mm late
-                       Max = 1.0 // DCA 4 canons APZ23 23mm
-               )
-               // SuppressDamages x use_model_ (Number of weapons)
-               SuppressDamages = TMinMaxValue (
-                       Min = 25.0 // Gatling M61 Vulcan 20mm late
-                       Max = 50.0 // DCA 4 canons APZ23 23mm
-               )
-               SplashDamageRadius = TMinMaxValue (
-                       Min = 13.0 * Metre // Gatling M61 Vulcan 20mm late
-                       Max = 25.0 * Metre // DCA 4 canons APZ23 23mm
-               )
-               MaxRange = TMinMaxValue (
-                       Min = 3000.0 // DCA 2 canons Oerlikon GDF 35mm
-                       Max = 3000.0 // DCA 2 canons Oerlikon GDF 35mm
-               )
-               MaxRangeTBA = TMinMaxValue (
-                       Min = 7004.0 // Gatling M61 Vulcan 20mm late
-                       Max = 7995.0 // DCA 2 canons Oerlikon GDF 35mm
-               )
-               MaxRangeHA = TMinMaxValue (
-                       Min = 7500.0 // Gatling M61 Vulcan 20mm late
-                       Max = 8504.0 // DCA 2 canons Oerlikon GDF 35mm
-               )
-               AimTime = TMinMaxValue (
-                       Min = 0.5 // DCA 2 canons Oerlikon GDF 35mm
-                       Max = 0.5 // DCA 2 canons Oerlikon GDF 35mm
-               )
-               ReloadTime = TMinMaxValue (
-                       Min = 0.4 // DCA 4 canons APZ23 23mm
-                       Max = 2.0 // Gatling M61 Vulcan 20mm late
-               )
-               TurretSpeed = TMinMaxValue (
-                       Min = 120.0 // DCA 2 canons Oerlikon GDF 35mm
-                       Max = 120.0 // DCA 2 canons Oerlikon GDF 35mm
-               )
-               Accuracy = TMinMaxValue (
-                       Min = 30.0 // DCA 4 canons APZ23 23mm
-                       Max = 50.0 // DCA 2 canons 2A38M 30mm
-               )
-               AccuracyMovement = TMinMaxValue (
-                       Min = 5.0 // Gatling M61 Vulcan 20mm late
-                       Max = 35.0 // DCA 2 canons 2A38M 30mm
-               )
-               RateOfFire = TMinMaxValue (
-                       Min = 1043.4782608695652 // DCA 2 canons Oerlikon GDF 35mm
-                       Max = 1263.157894736842 // Gatling M61 Vulcan 20mm late
-               )
-               Penetration = TMinMaxValue (
-                       Min = 1 // DCA 2 canons Oerlikon GDF 35mm
-                       Max = 1 // DCA 2 canons Oerlikon GDF 35mm
-               )
-               TimeBetweenTwoShots = TMinMaxValue (
-                       Min = 0.2 // Gatling M61 Vulcan 20mm late
-                       Max = 0.4 // DCA 2 canons Oerlikon GDF 35mm
-               )
-               NbShotsBySalvo = TMinMaxValue (
-                       Min = 5.0 // DCA 4 canons APZ23 23mm
-                       Max = 10.0 // DCA 2 canons Oerlikon GDF 35mm
-               )
-               SupplyCost = TMinMaxValue (
-                       Min = 100.0 // DCA 4 canons APZ23 23mm
-                       Max = 200.0 // DCA 2 canons Oerlikon GDF 35mm
               )
          )
        ),
@@ -1273,7 +1202,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                Penetration = TMinMaxValue (
                        Min = 20 // AGM AGM88 HARM
-                       Max = 28 // AGM Kh28 X28
+                       Max = 28 // AGM Kh31P
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 2.0 // AGM AGM88 HARM
@@ -1384,10 +1313,6 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 0.0 // Arty Off Map Zone Rapide
                )
                MaxRangeHA = TMinMaxValue (
-                       Min = 0.0 // Arty Off Map Zone Rapide
-                       Max = 0.0 // Arty Off Map Zone Rapide
-               )
-               AimTime = TMinMaxValue (
                        Min = 0.0 // Arty Off Map Zone Rapide
                        Max = 0.0 // Arty Off Map Zone Rapide
                )

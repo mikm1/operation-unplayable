@@ -13,15 +13,18 @@ export ActionPointConsumptionGridConstants is TActionPointConsumptionGridConstan
         ~/ETerrainType/EauPeuProfonde,         //Rivers/Lake
     ]
      TerrainsRalentisseurs = [
-         ~/ETerrainType/ForetLegere,
+         ~/ETerrainType/ForetDense, // foret sans route
          //~/ETerrainType/ForetDense,
          //~/ETerrainType/Urbain,
-         ~/ETerrainType/StrategicRalentisseur, //Off-Road
+         //~/ETerrainType/StrategicRalentisseur, //deprec
          //~/ETerrainType/EauPeuProfonde,
      ]
      TerrainsAccelerateurs = [
        //~/ETerrainType/BloqueConstruction,
-         ~/ETerrainType/StrategicAccelerateur,  //Autoroute
+         ~/ETerrainType/StrategicAccelerateur,  //deprec
+         ~/ETerrainType/PetitBatiment,  //semi urbain avec route
+         ~/ETerrainType/ForetLegere,  //foret avec route
+         ~/ETerrainType/NidMitrailleuse,  //plaine avec route
      ]
 
     // Precision de la grille : Attention à l'impact sur les perfs

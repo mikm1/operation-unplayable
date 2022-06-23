@@ -44,9 +44,6 @@ export Pool_Supply_Skirmish is TPoolModel
         TagsPriority = [
             "Vehicule_Logistique",
         ]
-        ForbiddenTags = [
-            "InfmapCommander"
-        ]
     ),
     ]
 )
@@ -94,9 +91,6 @@ export Pool_Reco_Skirmish is TPoolModel
             "Infanterie_Reco",
             "Vehicule_Reco",
         ]
-        ForbiddenTags = [
-            "InfmapCommander"
-        ]
     ),
     ]
 )
@@ -111,9 +105,6 @@ export Pool_AirReco_Skirmish is TPoolModel
         PriceComparisonMethod = EPriceComparatorType/Random
         TagsPriority = [
             "Avion_Reco",
-        ]
-        ForbiddenTags = [
-            "InfmapCommander"
         ]
     ),
     ]
@@ -201,9 +192,6 @@ export Pool_SuperCommander is TPoolModel
             "Char_SuperCMD",
             "Vehicule_SuperCMD",
             "Infanterie_SuperCMD",
-        ]
-        ForbiddenTags = [
-            "InfmapCommander"
         ]
     ),
     ]

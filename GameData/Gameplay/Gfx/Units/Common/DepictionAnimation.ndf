@@ -157,13 +157,33 @@ template DepictionOperator_SkeletalAnimation2_Default [ConditionalTags = [] ] is
     ConditionalTags = <ConditionalTags>
     Animations = [
         TAnimationWithTags(
-            Animation = TBlendSpace2DBipedAnimation(
-                IsLegCycle = true
-                Front = FusilierRun
-                Back = FusilierArriere
-                Left = FusilierGauche
-                Right = FusilierDroite
-            InTransition = 1.0 OutTransition = 1.0
+            Animation = TCompositeBipedAnimation(
+                SubAnimations = [
+                    TBlendSpace2DBipedAnimation(
+                    IsLegCycle = true
+                    Front = FusilierRun
+                    Back = FusilierArriere
+                    Left = FusilierGauche
+                    Right = FusilierDroite
+                    InTransition = 1.0 OutTransition = 1.0
+                    ),
+                    TBlendSpace2DBipedAnimation(
+                        IsLegCycle = true
+                        Front = FusilierRun2
+                        Back = FusilierArriere
+                        Left = FusilierGauche
+                        Right = FusilierDroite
+                    InTransition = 1.0 OutTransition = 1.0
+                    ),
+                    TBlendSpace2DBipedAnimation(
+                        IsLegCycle = true
+                        Front = FusilierRun3
+                        Back = FusilierArriere
+                        Left = FusilierGauche
+                        Right = FusilierDroite
+                    InTransition = 1.0 OutTransition = 1.0
+                    ),
+                ]
             )
             Tags = ['run']
         ),
@@ -213,8 +233,11 @@ DepictionOperator_FreezeAnimation_Ghost is TCosmeticFreezeSkeletalAnimationOpera
 
 template DepictionOperator_AnimationDeployable
 [
-    DeployAnimation,
-    FoldAnimation,
+    DeployAnimation = nil,
+    FoldAnimation = nil,
+    MoveFrontAnimation = nil,
+    MoveBackAnimation = nil,
+    IdleAnimation = nil,
 
     DeployFromMoveTime : float,
     DeployFromTurnTime : float,
@@ -226,6 +249,9 @@ is TCosmeticSkeletalAnimationDeployableOperatorDesc
     OperatorId = 'AnimationDeployable'
     DeployAnimation = <DeployAnimation>
     FoldAnimation = <FoldAnimation>
+    MoveFrontAnimation = <MoveFrontAnimation>
+    MoveBackAnimation = <MoveBackAnimation>
+    IdleAnimation = <IdleAnimation>
 
     DeployFromMoveTime = <DeployFromMoveTime>
     DeployFromTurnTime = <DeployFromTurnTime>

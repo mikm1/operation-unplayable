@@ -42,8 +42,9 @@ UseStrategic_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("UseStrategic_SelectionPawnPanel_HQ",                       MAP [(~/ComponentState/Normal, ~/UseStrategic_SelectionPawnPanel_HQ)] ),
         ("UseStrategic_SelectionPawnPanel_Motorised",                MAP [(~/ComponentState/Normal, ~/UseStrategic_SelectionPawnPanel_Motor)] ),
 
-        ("UseStrategic_Labels_Terrain_TerrainUrbain",                MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_Terrain_TerrainUrbain)] ),
+        ("UseStrategic_Labels_Terrain_TerrainUrbain",                MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/terrain_urbain.png"))] ),
         ("UseStrategic_Labels_Terrain_TerrainForet",                 MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_Terrain_TerrainForet)] ),
+        ("UseStrategic_Labels_Terrain_TerrainPlaine",                       MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/terrain_plaine.png"))] ),
 
         ("UseStrategic_SelectionPanel_Deploy",                       MAP [(~/ComponentState/Normal, ~/UseStrategic_SelectionPanel_Deploy)] ),
         ("UseStrategic_SelectionPanel_Command",                      MAP [(~/ComponentState/Normal, ~/UseStrategic_SelectionPanel_Command)] ),
@@ -144,7 +145,6 @@ UseStrategic_Labels_FortificationAntiAirEnCours          is TUIResourceTexture_I
 UseStrategic_Labels_FortificationAntiAir                 is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/DCA.png")
 UseStrategic_Labels_CanLaunchAttack                      is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/attaque.png")
 
-UseStrategic_Labels_Terrain_TerrainUrbain                is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/TerrainUrbain.png")
 UseStrategic_Labels_Terrain_TerrainForet                 is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/TerrainForet.png")
 //UseStrategic_Labels_HQ                                   is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/mobilisation_HQ.png")
 

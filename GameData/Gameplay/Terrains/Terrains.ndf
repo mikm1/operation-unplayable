@@ -54,9 +54,9 @@ export ForetDense is TGameplayTerrain
     InflammabilityProbability = 0.8
     LocalizationToken = 'TER_FOR_H'
     Name = 'ForetDense'
-    ObstructInsideAirSight = false//false
-    ObstructInsideInfantrySight =false//false
-    ObstructInsideVehicleSight = false //false 
+    ObstructInsideAirSight = false
+    ObstructInsideInfantrySight = false
+    ObstructInsideVehicleSight = false
     SpeedModifierAllTerrainWheel = 0
     SpeedModifierHalfTrack = 0
     SpeedModifierInfantry = 1
@@ -132,6 +132,7 @@ export PetitBatiment is TGameplayTerrain
             ("balledca", MAP [("infanterie",0.75)]),
             ("howz", MAP [("infanterie",0.75)]),
             ("fmballe", MAP [("infanterie",0.75)]),
+            ("cac", MAP [("infanterie",1)]),
         ]
     DebugColor = rgba[0, 0, 0, 255]
     DissimulationModifierGroundAir = 10.5
@@ -175,6 +176,7 @@ export Batiment is TGameplayTerrain
             ("howz", MAP [("infanterie",0.75)]),
             ("howz_bombe", MAP [("infanterie",0.75)]),
             ("fmballe", MAP [("infanterie",0.75)]),
+            ("cac", MAP [("infanterie",1)]),
         ]
     DebugColor = rgba[0, 0, 0, 255]
     DissimulationModifierGroundAir = 10.5

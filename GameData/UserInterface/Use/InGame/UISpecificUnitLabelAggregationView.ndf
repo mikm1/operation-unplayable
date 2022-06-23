@@ -35,7 +35,6 @@ private UnitLabelAggregationViewDescriptor is BUCKSensibleAreaDescriptor
             Components =
             [
                 ~/LabelDuHaut,
-                UnitLabelParachutistIcon(LocalRenderLayer = 1),
                 UnitLabelBackground
                 (
                     LocalRenderLayer = 2

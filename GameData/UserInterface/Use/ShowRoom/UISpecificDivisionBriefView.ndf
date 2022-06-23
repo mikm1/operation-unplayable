@@ -165,16 +165,6 @@ is BUCKListDescriptor
     [
         BUCKContainerDescriptor
         (
-            ElementName = "BackgroundOverlay"
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                RelativeWidthHeight = [1.0, 1.0]
-            )
-            HasBackground = false
-            BackgroundBlockColorToken = "DivisionBrief/OddOverlay"
-        ),
-        BUCKContainerDescriptor
-        (
             ElementName = "ButtonOverlay"
             ComponentFrame = TUIFramePropertyRTTI
             (
@@ -185,16 +175,6 @@ is BUCKListDescriptor
         )
     ] :
     [
-         BUCKContainerDescriptor
-        (
-            ElementName = "BackgroundOverlay"
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                RelativeWidthHeight = [1.0, 1.0]
-            )
-            HasBackground = false
-            BackgroundBlockColorToken = "loginBoutonBackground_vert"
-        ),
         BUCKContainerDescriptor
         (
             ElementName = "ButtonOverlay"

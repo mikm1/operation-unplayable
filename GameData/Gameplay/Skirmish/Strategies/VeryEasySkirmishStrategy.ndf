@@ -85,6 +85,8 @@ export VEasy_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/Supply_Skirmish,
 
+        ~/Reco,            // 40 par reco
+
         ~/CaptureHalfZoneObjectif_Floor,
         ~/Defense_Objectif,
 
@@ -92,7 +94,6 @@ export VEasy_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/Defense_Static_Adaptive,          // ~100
         ~/Defense_Filler,            // budget 40
-        ~/Reco,            // 40 par reco
 
         //------------------------------
         // Défenses Avions Arti
@@ -119,6 +120,8 @@ export VEasy_Phase_Command is TSequenceGeneratorDescriptor
 
         ~/Supply_Skirmish,
 
+        ~/Reco,
+
         //------------------------------
         // Défenses prioritaires
         //------------------------------
@@ -144,7 +147,6 @@ export VEasy_Phase_Command is TSequenceGeneratorDescriptor
 
         ~/SuperCommander,
 
-        ~/Reco,
 
         //------------------------------
         // Défenses Avions Arti
@@ -157,4 +159,3 @@ export VEasy_Phase_Command is TSequenceGeneratorDescriptor
     // Pas de Scaling pour la VEasy
     //------------------------------
 )
-

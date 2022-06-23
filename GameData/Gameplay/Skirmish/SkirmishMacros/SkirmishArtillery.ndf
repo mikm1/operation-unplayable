@@ -388,9 +388,6 @@ export Pool_Artillery_TriggerHappy is TPoolModel
             "Artillerie_Longue_Portee",
             "Artillerie_Courte_Portee",
         ]
-        ForbiddenTags = [
-            "InfmapCommander"
-        ]
     ),
     ]
 )
@@ -409,9 +406,6 @@ export Pool_Artillery_Support is TPoolModel
             "Artillerie_Longue_Portee",
             "Artillerie_Observateur",
         ]
-        ForbiddenTags = [
-            "InfmapCommander"
-        ]
     ),
     ]
 )
@@ -429,10 +423,6 @@ export Pool_Artillery_Expensive is TPoolModel
             "Artillerie_MLRS",
             "Artillerie_Observateur",
         ]
-        ForbiddenTags = [
-            "Avion",
-            "InfmapCommander"
-        ]
     ),
     ]
 )
@@ -449,10 +439,6 @@ export Pool_Artillery_Sniper is TPoolModel
             "Artillerie_Longue_Portee",
             "Artillerie",
         ]
-        ForbiddenTags = [
-            "InfmapCommander"
-        ]
     ),
     ]
 )
-

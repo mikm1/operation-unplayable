@@ -40,7 +40,7 @@ MimeticWorld is TMimeticWorldDescriptor
             ))
         ),
         (["impact"], TCompositeHappening( SubHappenings = [ AllImpactHappenings, AllImpactSoundHappenings ] )),
-    ] + InfantryDistrictHappenings
+    ] + InfantryHappenings
 
     CameraMoverProxyForDebug = $/M3D/Scene/IngameCameraMoverHelperProxy
 )

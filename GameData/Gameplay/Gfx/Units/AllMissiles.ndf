@@ -97,6 +97,8 @@ ModelFile_Missile_AIM132_ASRAAM is  'GameData:/Assets/3D/Units/Ammo/Missiles/UK/
 ModelFile_Missile_Skyflash is  'GameData:/Assets/3D/Units/Ammo/Missiles/UK/Skyflash/Skyflash.Ase2NdfBin'
 ModelFile_Missile_AS37_Martel is    'GameData:/Assets/3D/Units/Ammo/Missiles/UK/AS37_Martel/AS37_Martel.Ase2NdfBin'
 ModelFile_Missile_BLU110_Mk83 is    'GameData:/Assets/3D/Units/Ammo/Bombes/UK/BLU_110_Mk83/BLU_110_Mk83.Ase2NdfBin'
+//ModelFile_Missile_KB44 is    'GameData:/Assets/3D/Units/Ammo/Bombes/UK/Bombes/KB44/KB44.fbx'
+ModelFile_Missile_KB44 is    'GameData:/Assets/3D/Units/Ammo/Bombes/UK/Bombes/KB44/KB44.Ase2NdfBin'
 
 //--emports US---------------------------------------------------------------------------------------------------
 ModelFile_Missile_Hellfire is 'GameData:/Assets/3D/Units/Ammo/Missiles/US/AGM_114_Hellfire.Ase2NdfBin'

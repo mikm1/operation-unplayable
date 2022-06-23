@@ -1981,7 +1981,7 @@ is TUISpecificUnitInfoPanelViewDescriptor
 listeAffichageInfoUnit_default is
 [
     "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
-    "AttributeSpeed",  "AttributeRoadSpeed",
+    "AttributeCategory","AttributeSpeed",  "AttributeRoadSpeed",
     "AttributeShowInfluence",
 ]
 
@@ -1995,7 +1995,7 @@ listeAffichageInfoUnit_VehiculeTransport is
 listeAffichageInfoUnit_Infanterie is
 [
     "AttributeStrength","AttributeOptics","AttributeStealth",
-    "AttributeShowInfluence"
+    "AttributeShowInfluence","AttributeSpeed"
 ]
 
 listeAffichageInfoUnit_supply is
@@ -2008,7 +2008,7 @@ listeAffichageInfoUnit_supply is
 listeAffichageInfoUnit_AA is
 [
     "AttributeMaxDamages","AttributeAirOptics", "AttributeStealth",
-    "AttributeSpeed",  "AttributeRoadSpeed",
+    "AttributeCategory","AttributeSpeed",  "AttributeRoadSpeed",
     "AttributeShowInfluence",
 ]
 

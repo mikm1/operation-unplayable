@@ -1264,7 +1264,6 @@ PackEffetCritique_VehiculeStandard is
     CriticalEffect_TurretStuck(Roll = (11,11)),
 ]
 
-
 PackEffetCritique_VehiculeNonArme is
 [
     CriticalEffect_Incendiary(Roll = (1,1)),

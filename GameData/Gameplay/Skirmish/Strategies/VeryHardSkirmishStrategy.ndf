@@ -89,6 +89,8 @@ export VHard_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/Supply_Skirmish,
 
+        ~/Reco,            // 40 par reco
+
         ~/CaptureAllZoneObjectif,
         ~/Defense_Objectif,
 
@@ -106,7 +108,6 @@ export VHard_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/Attack_Adaptive,          // ~100
         ~/Attack_Filler,            // budget 40
-        ~/Reco,            // 40 par reco
 
         //------------------------------
         // Supply
@@ -152,10 +153,11 @@ export VHard_Phase_Command is TSequenceGeneratorDescriptor
         //------------------------------
         // Support & Supply
         //------------------------------
-        //~/Support_AntiTank,
         ~/Support_Transports,
 
         ~/Supply_Skirmish,
+        ~/Reco,
+
         ~/Attack_Filler,
 
         //------------------------------
@@ -185,7 +187,6 @@ export VHard_Phase_Command is TSequenceGeneratorDescriptor
 
         ~/SuperCommander,
 
-        ~/Reco,
 
         //Low prio mais peut servir si on n'a pas de zone dans nos couloirs
         ~/CaptureOneObjectifForAlliance,
@@ -219,6 +220,7 @@ export VHard_Phase_Command is TSequenceGeneratorDescriptor
 
 VeryHardScaling is
 [
+    ~/Reco,
     ~/Attack_Objectives,
 
     ~/Attack_Main_Autogen,

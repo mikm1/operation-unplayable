@@ -92,12 +92,6 @@ DepictionOperator_Propulsion_Double_Rotor_Boat is TCosmeticWaterRotorOperatorDes
     )
 )
 
-DepictionOperator_TowedUnitOperator is TCosmeticTowedUnitPivotOperatorDesc
-(
-    OperatorId = 'TowedUnit'
-    WorldFloorProxy = $/M3D/Scene/WorldFloorForOnlyGround
-)
-
 //array-ization
 DepictionOperator_Propulsion_ContinuousTrack is TCosmeticCaterpillarTrackOperatorDesc
 (
@@ -416,13 +410,11 @@ is TCosmeticWeaponContinuousFireOperatorDesc
 template DepictionOperator_WeaponInstantFireInfantry
 [
     FireEffectTag                                       ,
-    Anchors                                             : LIST<string> = [],
     WeaponShootDataPropertyName                         : string,
 ]
 is TCosmeticWeaponInfantryInstantFireOperatorDesc
 (
     FireEffectTag = <FireEffectTag>
-    Anchors = <Anchors>
     WeaponShootDataPropertyName = <WeaponShootDataPropertyName>
 )
 
@@ -543,19 +535,6 @@ is template_DepictionOperator_Carriable
     ArmsMovementDeltaFrames = [0.5, 0.7]
     ChassisMovementDeltaFrames = [0.75, 1.0]
 )
-// Variation de Carriable_Canon pour les canons types Flak_88
-template template_DepictionOperator_Carriable_Canon_4Wheels
-[
-]
-is template_DepictionOperator_Carriable
-(
-    ArmsSpreadAngleInDegrees = 90
-    ChassisMovingAngleInDegrees = 0
-    StartingAnimationDuration = 1.8
-    StoppingAnimationDuration = 1.8
-    ArmsMovementDeltaFrames = [0.5, 0.7]
-    ChassisMovementDeltaFrames = [0.75, 1.0]
-)
 
 DepictionOperator_Carriable_Canon_NoPitch_FH70 is template_DepictionOperator_Carriable
 (
@@ -580,8 +559,62 @@ DepictionOperator_Carriable_Canon_NoPitch is template_DepictionOperator_Carriabl
 
 DepictionOperator_Carriable_Canon is template_DepictionOperator_Carriable
 (
+    ArmsSpreadAngleInDegrees = 0
+    ChassisMovingAngleInDegrees = 7
+    ChassisAltitudeTranslationInMeters = 0
+    StartingAnimationDuration = 1.4
+    StoppingAnimationDuration = 1.6
+    ChassisMovementDeltaFrames = [0.75, 1.0]
+)
+
+DepictionOperator_Carriable_Canon_Arms20 is template_DepictionOperator_Carriable
+(
+    ArmsSpreadAngleInDegrees = 20
+    ChassisMovingAngleInDegrees = 7
+    ChassisAltitudeTranslationInMeters = 0
+    StartingAnimationDuration = 1.4
+    StoppingAnimationDuration = 1.6
+    ArmsMovementDeltaFrames = [0.5, 0.7]
+    ChassisMovementDeltaFrames = [0.75, 1.0]
+)
+
+DepictionOperator_Carriable_Canon_Arms25 is template_DepictionOperator_Carriable
+(
+    ArmsSpreadAngleInDegrees = 25
+    ChassisMovingAngleInDegrees = 7
+    ChassisAltitudeTranslationInMeters = 0
+    StartingAnimationDuration = 1.4
+    StoppingAnimationDuration = 1.6
+    ArmsMovementDeltaFrames = [0.5, 0.7]
+    ChassisMovementDeltaFrames = [0.75, 1.0]
+)
+
+DepictionOperator_Carriable_Canon_Arms30 is template_DepictionOperator_Carriable
+(
     ArmsSpreadAngleInDegrees = 30
     ChassisMovingAngleInDegrees = 7
+    ChassisAltitudeTranslationInMeters = 0
+    StartingAnimationDuration = 1.4
+    StoppingAnimationDuration = 1.6
+    ArmsMovementDeltaFrames = [0.5, 0.7]
+    ChassisMovementDeltaFrames = [0.75, 1.0]
+)
+
+DepictionOperator_Carriable_Canon_Arms47 is template_DepictionOperator_Carriable
+(
+    ArmsSpreadAngleInDegrees = 47
+    ChassisMovingAngleInDegrees = 7
+    ChassisAltitudeTranslationInMeters = 0
+    StartingAnimationDuration = 1.4
+    StoppingAnimationDuration = 1.6
+    ArmsMovementDeltaFrames = [0.5, 0.7]
+    ChassisMovementDeltaFrames = [0.75, 1.0]
+)
+
+DepictionOperator_Carriable_Canon_NoArms is template_DepictionOperator_Carriable
+(
+    ArmsSpreadAngleInDegrees = 0
+    ChassisMovingAngleInDegrees = 0
     ChassisAltitudeTranslationInMeters = 0
     StartingAnimationDuration = 1.4
     StoppingAnimationDuration = 1.6
@@ -601,9 +634,9 @@ DepictionOperator_Carriable_Mortar is template_DepictionOperator_Carriable
 (
     ChassisMovingAngleInDegrees = 30
     ChassisAltitudeTranslationInMeters = 0.5
-    StartingAnimationDuration = 1.4
-    StoppingAnimationDuration = 1.6
-    ChassisMovementDeltaFrames = [0.75, 1.0]
+    StartingAnimationDuration = 0.5
+    StoppingAnimationDuration = 0.5//1.6
+    ChassisMovementDeltaFrames = [0.1, 0.8]
 )
 
 DepictionOperator_Carriable_ATGM is template_DepictionOperator_Carriable

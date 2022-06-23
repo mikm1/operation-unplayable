@@ -129,9 +129,6 @@ CommonTexture_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("CommonTexture_Couvert_Moyen",         MAP [(~/ComponentState/Normal, ~/CommonTexture_Couvert_Moyen)]),
         ("CommonTexture_Couvert_Lourd",         MAP [(~/ComponentState/Normal, ~/CommonTexture_Couvert_Lourd)]),
 
-        ("CommonTexture_Parachutiste_Left",     MAP [(~/ComponentState/Normal, ~/CommonTexture_Parachutiste_Left)]),
-        ("CommonTexture_Parachutiste_Right",    MAP [(~/ComponentState/Normal, ~/CommonTexture_Parachutiste_Right)]),
-
         // Curseurs
         ("CommonTexture_Cursor_Invalid",        MAP [(~/ComponentState/Normal, ~/CommonTexture_Cursor_Invalid)]),
 
@@ -313,9 +310,6 @@ CommonTexture_Couvert_Tres_Leger is TUIResourceTexture_Common(FileName = "GameDa
 CommonTexture_Couvert_Leger      is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Cover/Couvert_leger.png")
 CommonTexture_Couvert_Moyen      is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Cover/Couvert_moyen.png")
 CommonTexture_Couvert_Lourd      is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Cover/Couvert_lourd.png")
-
-CommonTexture_Parachutiste_Left  is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/para_wingL.png")
-CommonTexture_Parachutiste_Right is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/para_wingR.png")
 
 CommonTexture_SupressIcon        is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Supress_icon.png')
 

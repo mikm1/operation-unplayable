@@ -255,12 +255,12 @@ ModaleWindowResourceForOutdatedMods is SpecificModaleWindowFrame
             ComponentFrame = TUIFramePropertyRTTI
             (
                 RelativeWidthHeight = [1.0, 0.0]
-                MagnifiableWidthHeight = [-20.0, 0.0]
             )
 
             Axis = ~/ListAxis/Vertical
             BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
             InterItemMargin = TRTTILength( Magnifiable = 10.0 )
+            LastMargin = TRTTILength( Magnifiable = 10.0 )
 
             Elements =
             [
@@ -279,7 +279,6 @@ ModaleWindowResourceForOutdatedMods is SpecificModaleWindowFrame
                         (
                             Alignment = UIText_Center
                             VerticalAlignment = UIText_VerticalCenter
-                            InterLine = 0
                         )
 
                         TextStyle = "Default"
@@ -302,59 +301,53 @@ ModaleWindowResourceForOutdatedMods is SpecificModaleWindowFrame
                 BUCKListElementDescriptor
                 (
                     ExtendWeight = 1.0
-                    ComponentDescriptor = TScrollingDescriptor
+                    ComponentDescriptor = BUCKSpecificScrollingContainerDescriptor
                     (
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [1.0, 1.0]
                         )
 
-                        Component = BUCKListDescriptor
-                        (
-                            Axis = ~/ListAxis/Vertical
-                            BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-                            FirstMargin = TRTTILength( Pixel = 5.0 )
-                            LastMargin = TRTTILength( Pixel = 5.0 )
+                        HasVerticalScrollbar = true
 
-                            Elements =
-                            [
-                                BUCKListElementDescriptor
+                        Components =
+                        [
+                            BUCKRackDescriptor
+                            (
+                                ElementName = 'ListOutDatedMods'
+                                ComponentFrame = TUIFramePropertyRTTI
                                 (
-                                    ComponentDescriptor = BUCKTextDescriptor
-                                    (
-                                        ElementName = "OutdatedModsText"
-                                        ComponentFrame = TUIFramePropertyRTTI
-                                        (
-                                            MagnifiableWidthHeight = [700.0 , 0.0]
-                                            AlignementToAnchor = [0.5, 0.0]
-                                            AlignementToFather = [0.5, 0.0]
-                                        )
+                                    AlignementToAnchor = [0.5, 0.0]
+                                    AlignementToFather = [0.5, 0.0]
+                                )
 
-                                        ParagraphStyle = TParagraphStyleRTTI
-                                        (
-                                            Alignment = UIText_Center
-                                            VerticalAlignment = UIText_VerticalCenter
-                                            InterLine = 0
-                                        )
+                                Axis = ~/ListAxis/Vertical
+                                BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
-                                        TextStyle = "Default"
+                                FirstMargin = TRTTILength( Magnifiable = 16.0 )
+                                InterItemMargin = TRTTILength( Magnifiable = 2.0 )
 
-                                        HorizontalFitStyle = ~/FitStyle/UserDefined
-                                        VerticalFitStyle = ~/FitStyle/FitToContent
+                                BladeDescriptor = BUCKTextDescriptor
+                                (
+                                    ElementName = "OutdatedModsText"
 
-                                        BigLineAction = ~/BigLineAction/MultiLine
+                                    TextStyle = "Default"
 
-                                        TextSize = "StandardTextInModal"
-                                        TextColor = "Blanc"
+                                    HorizontalFitStyle = ~/FitStyle/FitToContent
+                                    VerticalFitStyle = ~/FitStyle/FitToContent
 
-                                        TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                                    BigLineAction = ~/BigLineAction/MultiLine
 
-                                        TypefaceToken = "Liberator"
-                                        UniformDrawer = $/UserInterface/UIUniformDrawer
-                                    )
-                                ),
-                            ]
-                        )
+                                    TextSize = "StandardTextInModal"
+                                    TextColor = "Blanc"
+
+                                    TextDico = ~/LocalisationConstantes/dico_interface_outgame
+
+                                    TypefaceToken = "Liberator"
+                                    UniformDrawer = $/UserInterface/UIUniformDrawer
+                                )
+                            )
+                        ]
                     )
                 ),
             ]

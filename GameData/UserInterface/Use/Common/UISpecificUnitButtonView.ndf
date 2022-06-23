@@ -335,8 +335,6 @@ private template MainButtonContent
 
                 // OverBlock
                 ~/OverBlockMainUnitButton,
-                // List Parachutist Wings and XP Stars
-                ~/UnitButtonParachutistAndXPList,
 
                 // Feedback for when the player took charge or placed all units of this type
                 ~/UnitButtonUnitAvailabilityFeedback,
@@ -779,92 +777,6 @@ is BUCKTextureDescriptor
 )
 
 // -------------------------------------------------------------------------------------------------
-// ParachutistAndXPList
-// -------------------------------------------------------------------------------------------------
-
-private ParachutistAndXPListMagnifiableInterItemMargin is 1.0
-private ParachutistAndXPListMagnifiableOffsetY is -10.0
-
-// List for parachutist wings and XP stars
-private UnitButtonParachutistAndXPList is BUCKListDescriptor
-(
-    ElementName = 'ParachutistAndXPList'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [0.0, ParachutistWingMagnifiableHeight]
-        MagnifiableOffset = [0.0, ParachutistAndXPListMagnifiableOffsetY]
-        AlignementToFather = [0.5, 0.0]
-        AlignementToAnchor = [0.5, 0.0]
-    )
-
-    Axis = ~/ListAxis/Horizontal
-    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
-    InterItemMargin = TRTTILength( Magnifiable = ParachutistAndXPListMagnifiableInterItemMargin )
-
-    Elements =
-    [
-        // Left parachutist wing icon
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = ParachutistWing
-            (
-                ElementName = 'ParachutistIconL'
-                TextureToken = "CommonTexture_Parachutiste_Left"
-            )
-        ),
-
-        // Right parachutist wing icon
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = ParachutistWing
-            (
-                ElementName = 'ParachutistIconR'
-                TextureToken = "CommonTexture_Parachutiste_Right"
-            )
-        ),
-    ]
-)
-
-// -------------------------------------------------------------------------------------------------
-// ParachutistWing
-// -------------------------------------------------------------------------------------------------
-
-private ParachutistWingMagnifiableWidth is 28.8
-private ParachutistWingMagnifiableHeight is 19.8
-
-// Parachutist Wing
-private template ParachutistWing
-[
-    ElementName : string = '',
-    TextureToken : string = "",
-]
-is BUCKTextureDescriptor
-(
-    ElementName = <ElementName>
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [ParachutistWingMagnifiableWidth, ParachutistWingMagnifiableHeight]
-        AlignementToFather = [0.0, 0.5]
-        AlignementToAnchor = [0.0, 0.5]
-    )
-
-    TextureToken = <TextureToken>
-    TextureFrame   = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
-
-    // Hint
-    Components =
-    [
-        BUCKSpecificHintableArea
-        (
-            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-            HintTitleToken = "HPD_UPARAT"
-            HintBodyToken = "HPD_UPARAB"
-            HintExtendedToken = "HPD_UPARAE"
-        )
-    ]
-)
-
-// -------------------------------------------------------------------------------------------------
 // XPStar
 // -------------------------------------------------------------------------------------------------
 
@@ -1121,6 +1033,7 @@ private UnitButtonUnitAloneCostText is BUCKTextDescriptor
         VerticalAlignment = UIText_VerticalCenter
         InterLine = 0
     )
+
     TextStyle = "Default"
 
     HorizontalFitStyle = ~/FitStyle/FitToContent

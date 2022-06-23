@@ -141,13 +141,135 @@ private Weapon_2S3_DDR_weapon4 is TCompositeHappening
     ]
 )
 
-// ------------------- 81mm_mortar_UK ------------------- //
-private Weapon_81mm_mortar_UK_weapon1 is TCompositeHappening
+// -------------------- 2S9_Nona_SOV -------------------- //
+private Weapon_2S9_Nona_SOV_weapon1 is TCompositeHappening
 (
     SubHappenings =
     [
-        FXWeapon_HMG_14_5_mm_KPVT,
-        SFXWeapon_HMG_14_5_mm_KPVT
+        FXWeapon_Howz_Canon_2A60_Howitzer_120mm,
+        SFXWeapon_Howz_Canon_2A60_Howitzer_120mm
+    ]
+)
+private Weapon_2S9_Nona_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_2A60_Howitzer_120mm_SMOKE,
+        SFXWeapon_Howz_Canon_2A60_Howitzer_120mm_SMOKE
+    ]
+)
+private Weapon_2S9_Nona_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_2A60_120mm,
+        SFXWeapon_Canon_AP_2A60_120mm
+    ]
+)
+
+// ------------------ AT_D44_85mm_DDR ------------------- //
+private Weapon_AT_D44_85mm_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_85mm_D44,
+        SFXWeapon_Canon_AP_85mm_D44
+    ]
+)
+private Weapon_AT_D44_85mm_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_85mm_D44,
+        SFXWeapon_Canon_HE_85mm_D44
+    ]
+)
+
+// ------------------ AT_D44_85mm_SOV ------------------- //
+private Weapon_AT_D44_85mm_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_85mm_D44,
+        SFXWeapon_Canon_AP_85mm_D44
+    ]
+)
+private Weapon_AT_D44_85mm_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_85mm_D44,
+        SFXWeapon_Canon_HE_85mm_D44
+    ]
+)
+
+// ---------------- AT_D44_85mm_VDV_SOV ----------------- //
+private Weapon_AT_D44_85mm_VDV_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_85mm_D44,
+        SFXWeapon_Canon_AP_85mm_D44
+    ]
+)
+private Weapon_AT_D44_85mm_VDV_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_85mm_D44,
+        SFXWeapon_Canon_HE_85mm_D44
+    ]
+)
+
+// ----------------- AT_T12_Rapira_DDR ------------------ //
+private Weapon_AT_T12_Rapira_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_100mm_2A29_Rapira,
+        SFXWeapon_Canon_AP_100mm_2A29_Rapira
+    ]
+)
+private Weapon_AT_T12_Rapira_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_100mm_2A29_Rapira,
+        SFXWeapon_Canon_HE_100mm_2A29_Rapira
+    ]
+)
+private Weapon_AT_T12_Rapira_DDR_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_9M117_Bastion,
+        SFXWeapon_ATGM_9M117_Bastion
+    ]
+)
+
+// ----------------- AT_T12_Rapira_SOV ------------------ //
+private Weapon_AT_T12_Rapira_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_100mm_2A29_Rapira,
+        SFXWeapon_Canon_AP_100mm_2A29_Rapira
+    ]
+)
+private Weapon_AT_T12_Rapira_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_100mm_2A29_Rapira,
+        SFXWeapon_Canon_HE_100mm_2A29_Rapira
+    ]
+)
+private Weapon_AT_T12_Rapira_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_9M117_Bastion,
+        SFXWeapon_ATGM_9M117_Bastion
     ]
 )
 
@@ -208,16 +330,6 @@ private Weapon_ATteam_Konkurs_SOV_weapon1 is TCompositeHappening
     [
         FXWeapon_ATGM_9M113_KonkursM,
         SFXWeapon_ATGM_9M113_KonkursM
-    ]
-)
-
-// ----------------- ATteam_Milan_1_FR ------------------ //
-private Weapon_ATteam_Milan_1_FR_weapon1 is TCompositeHappening
-(
-    SubHappenings =
-    [
-        FXWeapon_ATGM_MILAN,
-        SFXWeapon_ATGM_MILAN
     ]
 )
 
@@ -332,6 +444,16 @@ private Weapon_ATteam_TOW2_US_weapon1 is TCompositeHappening
     ]
 )
 
+// ---------------- ATteam_TOW2_para_US ----------------- //
+private Weapon_ATteam_TOW2_para_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_BGM71D_TOW_2,
+        SFXWeapon_ATGM_BGM71D_TOW_2
+    ]
+)
+
 // ------------------- ATteam_TOW_US -------------------- //
 private Weapon_ATteam_TOW_US_weapon1 is TCompositeHappening
 (
@@ -363,7 +485,14 @@ private Weapon_Atteam_Konkurs_VDV_SOV_weapon1 is TCompositeHappening
 )
 
 // ------------------ BM21V_GradV_SOV ------------------- //
-private Weapon_BM21V_GradV_SOV_weapon1 is FXWeapon_RocketArt_M21OF_122mm_x12
+private Weapon_BM21V_GradV_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketArt_M21OF_122mm_x12,
+        SFXWeapon_RocketArt_M21OF_122mm_x12
+    ]
+)
 
 // ------------------- BM21_Grad_DDR -------------------- //
 private Weapon_BM21_Grad_DDR_weapon1 is TCompositeHappening
@@ -405,6 +534,108 @@ private Weapon_BM30_Smerch_SOV_weapon1 is TCompositeHappening
     ]
 )
 
+// ------------------- BMD_1_CMD_SOV -------------------- //
+private Weapon_BMD_1_CMD_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+private Weapon_BMD_1_CMD_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+
+// --------------------- BMD_1_SOV ---------------------- //
+private Weapon_BMD_1_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_73_mm_2A28_Grom,
+        SFXWeapon_Canon_AP_73_mm_2A28_Grom
+    ]
+)
+private Weapon_BMD_1_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_73_mm_2A28_Grom,
+        SFXWeapon_Canon_HE_73_mm_2A28_Grom
+    ]
+)
+private Weapon_BMD_1_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+private Weapon_BMD_1_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+private Weapon_BMD_1_SOV_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+
+// --------------------- BMD_2_SOV ---------------------- //
+private Weapon_BMD_2_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AutoCanon_AP_30mm_24A2_BMP2,
+        SFXWeapon_AutoCanon_AP_30mm_24A2_BMP2
+    ]
+)
+private Weapon_BMD_2_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AutoCanon_HE_30mm_24A2_BMP2,
+        SFXWeapon_AutoCanon_HE_30mm_24A2_BMP2
+    ]
+)
+private Weapon_BMD_2_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+private Weapon_BMD_2_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+private Weapon_BMD_2_SOV_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+
 // -------------------- BMP_1PG_SOV --------------------- //
 private Weapon_BMP_1PG_SOV_weapon1 is TCompositeHappening
 (
@@ -426,16 +657,16 @@ private Weapon_BMP_1PG_SOV_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
-        FXWeapon_ATGM_9M14_MalyutkaP,
-        SFXWeapon_ATGM_9M14_MalyutkaP
+        FXWeapon_ATGM_9K111_Fagot,
+        SFXWeapon_ATGM_9K111_Fagot
     ]
 )
 private Weapon_BMP_1PG_SOV_weapon4 is TCompositeHappening
 (
     SubHappenings =
     [
-        FXWeapon_MMG_PKT_7_62mm,
-        SFXWeapon_MMG_PKT_7_62mm
+        FXWeapon_Lance_grenade_AGS17,
+        SFXWeapon_Lance_grenade_AGS17
     ]
 )
 
@@ -460,8 +691,8 @@ private Weapon_BMP_1P_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
-        FXWeapon_ATGM_9M14_MalyutkaP,
-        SFXWeapon_ATGM_9M14_MalyutkaP
+        FXWeapon_ATGM_9K111_Fagot,
+        SFXWeapon_ATGM_9K111_Fagot
     ]
 )
 private Weapon_BMP_1P_DDR_weapon4 is TCompositeHappening
@@ -494,8 +725,8 @@ private Weapon_BMP_1P_SOV_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
-        FXWeapon_ATGM_9M14_MalyutkaP,
-        SFXWeapon_ATGM_9M14_MalyutkaP
+        FXWeapon_ATGM_9K111_Fagot,
+        SFXWeapon_ATGM_9K111_Fagot
     ]
 )
 private Weapon_BMP_1P_SOV_weapon4 is TCompositeHappening
@@ -991,6 +1222,84 @@ private Weapon_BTR_70_DDR_weapon2 is TCompositeHappening
     ]
 )
 
+// ------------------ BTR_D_Robot_SOV ------------------- //
+private Weapon_BTR_D_Robot_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_9M114M_KokonM,
+        SFXWeapon_ATGM_9M114M_KokonM
+    ]
+)
+private Weapon_BTR_D_Robot_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+private Weapon_BTR_D_Robot_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+
+// --------------------- BTR_D_SOV ---------------------- //
+private Weapon_BTR_D_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Lance_grenade_AGS17,
+        SFXWeapon_Lance_grenade_AGS17
+    ]
+)
+private Weapon_BTR_D_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+private Weapon_BTR_D_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+
+// ---------------- BTR_ZD_Skrezhet_SOV ----------------- //
+private Weapon_BTR_ZD_Skrezhet_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_DCA_2_canon_ZU23_2_23mm,
+        SFXWeapon_DCA_2_canon_ZU23_2_23mm
+    ]
+)
+private Weapon_BTR_ZD_Skrezhet_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+private Weapon_BTR_ZD_Skrezhet_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
+    ]
+)
+
 // ------------------- Buk_9K37M_SOV -------------------- //
 private Weapon_Buk_9K37M_SOV_weapon1 is TCompositeHappening
 (
@@ -998,6 +1307,84 @@ private Weapon_Buk_9K37M_SOV_weapon1 is TCompositeHappening
     [
         FXWeapon_SAM_9M38M1_x4,
         SFXWeapon_SAM_9M38M1_x4
+    ]
+)
+
+// ----------- DCA_FK20_2_20mm_Zwillinge_RFA ------------ //
+private Weapon_DCA_FK20_2_20mm_Zwillinge_RFA_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_DCA_2_canon_FK20_20mm,
+        SFXWeapon_DCA_2_canon_FK20_20mm
+    ]
+)
+
+// ------------------- DCA_I_Hawk_RFA ------------------- //
+private Weapon_DCA_I_Hawk_RFA_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SAM_I_Hawk_x3,
+        SFXWeapon_SAM_I_Hawk_x3
+    ]
+)
+
+// ------------------- DCA_I_Hawk_US -------------------- //
+private Weapon_DCA_I_Hawk_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SAM_I_Hawk_x3,
+        SFXWeapon_SAM_I_Hawk_x3
+    ]
+)
+
+// -------------- DCA_M167_Vulcan_20mm_US --------------- //
+private Weapon_DCA_M167_Vulcan_20mm_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Gatling_M61_Vulcan_20mm_late,
+        SFXWeapon_Gatling_M61_Vulcan_20mm_late
+    ]
+)
+
+// ------------------ DCA_ZU_23_2_DDR ------------------- //
+private Weapon_DCA_ZU_23_2_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_DCA_2_canon_ZU23_2_23mm,
+        SFXWeapon_DCA_2_canon_ZU23_2_23mm
+    ]
+)
+
+// ------------------ DCA_ZU_23_2_SOV ------------------- //
+private Weapon_DCA_ZU_23_2_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_DCA_2_canon_ZU23_2_23mm,
+        SFXWeapon_DCA_2_canon_ZU23_2_23mm
+    ]
+)
+
+// ------------------- FH70_155mm_RFA ------------------- //
+private Weapon_FH70_155mm_RFA_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_FH70_Howitzer_155mm,
+        SFXWeapon_Howz_Canon_FH70_Howitzer_155mm
+    ]
+)
+private Weapon_FH70_155mm_RFA_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_FH70_Howitzer_155mm_SMOKE,
+        SFXWeapon_Howz_Canon_FH70_Howitzer_155mm_SMOKE
     ]
 )
 
@@ -1045,24 +1432,6 @@ private Weapon_FV102_Striker_BEL_weapon1 is TCompositeHappening
     ]
 )
 private Weapon_FV102_Striker_BEL_weapon5 is TCompositeHappening
-(
-    SubHappenings =
-    [
-        FXWeapon_SMOKE_Vehicle_Grenadex8,
-        SFXWeapon_SMOKE_Vehicle_Grenadex8
-    ]
-)
-
-// ------------------ FV102_Striker_UK ------------------ //
-private Weapon_FV102_Striker_UK_weapon1 is TCompositeHappening
-(
-    SubHappenings =
-    [
-        FXWeapon_ATGM_Swingfire_x5,
-        SFXWeapon_ATGM_Swingfire_x5
-    ]
-)
-private Weapon_FV102_Striker_UK_weapon5 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -1151,6 +1520,18 @@ private Weapon_FV107_Scimitar_BEL_weapon5 is TCompositeHappening
     ]
 )
 
+// -------------------- GAZ_66B_SOV --------------------- //
+
+// ------------------- GAZ_66B_ZU_SOV ------------------- //
+private Weapon_GAZ_66B_ZU_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_DCA_2_canon_ZU23_2_23mm,
+        SFXWeapon_DCA_2_canon_ZU23_2_23mm
+    ]
+)
+
 // --------------------- GAZ_66_SOV --------------------- //
 
 // ------------------- Gepard_1A2_RFA ------------------- //
@@ -1162,8 +1543,159 @@ private Weapon_Gepard_1A2_RFA_weapon1 is TCompositeHappening
         SFXWeapon_DCA_2_canons_Oerlikon_GDF_35mm
     ]
 )
+private Weapon_Gepard_1A2_RFA_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
 
 // ----------------------- HEMTT ------------------------ //
+
+// ----------------- Howz_D20_152mm_DDR ----------------- //
+private Weapon_Howz_D20_152mm_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D20_Howitzer_152mm,
+        SFXWeapon_Howz_Canon_D20_Howitzer_152mm
+    ]
+)
+private Weapon_Howz_D20_152mm_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D20_Howitzer_152mm_SMOKE,
+        SFXWeapon_Howz_Canon_D20_Howitzer_152mm_SMOKE
+    ]
+)
+
+// ----------------- Howz_D20_152mm_SOV ----------------- //
+private Weapon_Howz_D20_152mm_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D20_Howitzer_152mm,
+        SFXWeapon_Howz_Canon_D20_Howitzer_152mm
+    ]
+)
+private Weapon_Howz_D20_152mm_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D20_Howitzer_152mm_SMOKE,
+        SFXWeapon_Howz_Canon_D20_Howitzer_152mm_SMOKE
+    ]
+)
+
+// ----------------- Howz_D30_122mm_DDR ----------------- //
+private Weapon_Howz_D30_122mm_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D30_Howitzer_122mm,
+        SFXWeapon_Howz_Canon_D30_Howitzer_122mm
+    ]
+)
+private Weapon_Howz_D30_122mm_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D30_Howitzer_122mm_SMOKE,
+        SFXWeapon_Howz_Canon_D30_Howitzer_122mm_SMOKE
+    ]
+)
+private Weapon_Howz_D30_122mm_DDR_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_D30_122mm,
+        SFXWeapon_Canon_AP_D30_122mm
+    ]
+)
+
+// ----------------- Howz_D30_122mm_SOV ----------------- //
+private Weapon_Howz_D30_122mm_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D30_Howitzer_122mm,
+        SFXWeapon_Howz_Canon_D30_Howitzer_122mm
+    ]
+)
+private Weapon_Howz_D30_122mm_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D30_Howitzer_122mm_SMOKE,
+        SFXWeapon_Howz_Canon_D30_Howitzer_122mm_SMOKE
+    ]
+)
+private Weapon_Howz_D30_122mm_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_D30_122mm,
+        SFXWeapon_Canon_AP_D30_122mm
+    ]
+)
+
+// --------------- Howz_D30_122mm_VDV_SOV --------------- //
+private Weapon_Howz_D30_122mm_VDV_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D30_Howitzer_122mm,
+        SFXWeapon_Howz_Canon_D30_Howitzer_122mm
+    ]
+)
+private Weapon_Howz_D30_122mm_VDV_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_D30_Howitzer_122mm_SMOKE,
+        SFXWeapon_Howz_Canon_D30_Howitzer_122mm_SMOKE
+    ]
+)
+private Weapon_Howz_D30_122mm_VDV_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_D30_122mm,
+        SFXWeapon_Canon_AP_D30_122mm
+    ]
+)
+
+// ----------------- Howz_M102_105mm_US ----------------- //
+private Weapon_Howz_M102_105mm_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_M102_Howitzer_105mm,
+        SFXWeapon_Howz_Canon_M102_Howitzer_105mm
+    ]
+)
+private Weapon_Howz_M102_105mm_US_weapon2 is FXWeapon_Howz_Canon_M102_Howitzer_105mm_SMOKE
+
+// ----------------- Howz_M46_130mm_DDR ----------------- //
+private Weapon_Howz_M46_130mm_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_M46_Howitzer_130mm,
+        SFXWeapon_Howz_Canon_M46_Howitzer_130mm
+    ]
+)
+private Weapon_Howz_M46_130mm_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Howz_Canon_M46_Howitzer_130mm_SMOKE,
+        SFXWeapon_Howz_Canon_M46_Howitzer_130mm_SMOKE
+    ]
+)
 
 // ------------------ Iltis_MILAN_RFA ------------------- //
 private Weapon_Iltis_MILAN_RFA_weapon1 is TCompositeHappening
@@ -1594,6 +2126,46 @@ private Weapon_Luchs_A1_RFA_weapon2 is TCompositeHappening
         SFXWeapon_AutoCanon_HE_20mm_MK_20_Rh_202
     ]
 )
+private Weapon_Luchs_A1_RFA_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
+
+// ---------------- M1025_Humvee_AGL_US ----------------- //
+private Weapon_M1025_Humvee_AGL_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Lance_grenade_Mk19_40mm,
+        SFXWeapon_Lance_grenade_Mk19_40mm
+    ]
+)
+
+// -------------- M1025_Humvee_CMD_para_US -------------- //
+
+// -------------- M1025_Humvee_TOW_para_US -------------- //
+private Weapon_M1025_Humvee_TOW_para_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_BGM71D_TOW_2,
+        SFXWeapon_ATGM_BGM71D_TOW_2
+    ]
+)
+
+// --------------- M1025_Humvee_scout_US ---------------- //
+private Weapon_M1025_Humvee_scout_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_HMG_12_7_mm_M2HB,
+        SFXWeapon_HMG_12_7_mm_M2HB
+    ]
+)
 
 // ------------------- M106A2_HOWZ_US ------------------- //
 private Weapon_M106A2_HOWZ_US_weapon1 is TCompositeHappening
@@ -1838,16 +2410,6 @@ private Weapon_M113_Dragon_US_weapon2 is TCompositeHappening
 
 // ---------------- M113_GreenArcher_RFA ---------------- //
 private Weapon_M113_GreenArcher_RFA_weapon1 is TCompositeHappening
-(
-    SubHappenings =
-    [
-        FXWeapon_MMG_MG3_7_62mm,
-        SFXWeapon_MMG_MG3_7_62mm
-    ]
-)
-
-// ---------------- M113_GreenArcher_UK ----------------- //
-private Weapon_M113_GreenArcher_UK_weapon1 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -2156,6 +2718,107 @@ private Weapon_M1A1_Abrams_US_weapon6 is TCompositeHappening
     ]
 )
 private Weapon_M1A1_Abrams_US_weapon7 is TCompositeHappening
+(
+    SubHappenings =
+    [   
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
+
+// ----------------- M1IP_Abrams_CMD_US ----------------- //
+private Weapon_M1IP_Abrams_CMD_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_105mm_M68_M1,
+        SFXWeapon_Canon_AP_105mm_M68_M1
+    ]
+)
+private Weapon_M1IP_Abrams_CMD_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_105mm_M68_M1,
+        SFXWeapon_Canon_HE_105mm_M68_M1
+    ]
+)
+private Weapon_M1IP_Abrams_CMD_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_HMG_12_7_mm_M2HB,
+        SFXWeapon_HMG_12_7_mm_M2HB
+    ]
+)
+private Weapon_M1IP_Abrams_CMD_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_M240_abrams_7_62mm,
+        SFXWeapon_MMG_M240_abrams_7_62mm
+    ]
+)
+private Weapon_M1IP_Abrams_CMD_US_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_M240_7_62mm,
+        SFXWeapon_MMG_M240_7_62mm
+    ]
+)
+private Weapon_M1IP_Abrams_CMD_US_weapon6 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
+
+// ------------------- M1IP_Abrams_US ------------------- //
+private Weapon_M1IP_Abrams_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_105mm_M68_M1,
+        SFXWeapon_Canon_AP_105mm_M68_M1
+    ]
+)
+private Weapon_M1IP_Abrams_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_105mm_M68_M1,
+        SFXWeapon_Canon_HE_105mm_M68_M1
+    ]
+)
+private Weapon_M1IP_Abrams_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_HMG_12_7_mm_M2HB,
+        SFXWeapon_HMG_12_7_mm_M2HB
+    ]
+)
+private Weapon_M1IP_Abrams_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_M240_abrams_7_62mm,
+        SFXWeapon_MMG_M240_abrams_7_62mm
+    ]
+)
+private Weapon_M1IP_Abrams_US_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_M240_7_62mm,
+        SFXWeapon_MMG_M240_7_62mm
+    ]
+)
+private Weapon_M1IP_Abrams_US_weapon6 is TCompositeHappening
+
 (
     SubHappenings =
     [
@@ -2476,6 +3139,90 @@ private Weapon_M48_Chaparral_MIM72F_US_weapon1 is TCompositeHappening
     ]
 )
 
+// ------------- M551A1_TTS_Sheridan_CMD_US ------------- //
+private Weapon_M551A1_TTS_Sheridan_CMD_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HEAT_152mm_Sheridan,
+        SFXWeapon_Canon_HEAT_152mm_Sheridan
+    ]
+)
+private Weapon_M551A1_TTS_Sheridan_CMD_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_152mm_Sheridan,
+        SFXWeapon_Canon_HE_152mm_Sheridan
+    ]
+)
+private Weapon_M551A1_TTS_Sheridan_CMD_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_MGM551C_Shillelagh,
+        SFXWeapon_ATGM_MGM551C_Shillelagh
+    ]
+)
+private Weapon_M551A1_TTS_Sheridan_CMD_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_HMG_12_7_mm_M2HB,
+        SFXWeapon_HMG_12_7_mm_M2HB
+    ]
+)
+private Weapon_M551A1_TTS_Sheridan_CMD_US_weapon6 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
+
+// --------------- M551A1_TTS_Sheridan_US --------------- //
+private Weapon_M551A1_TTS_Sheridan_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HEAT_152mm_Sheridan,
+        SFXWeapon_Canon_HEAT_152mm_Sheridan
+    ]
+)
+private Weapon_M551A1_TTS_Sheridan_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_152mm_Sheridan,
+        SFXWeapon_Canon_HE_152mm_Sheridan
+    ]
+)
+private Weapon_M551A1_TTS_Sheridan_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_MGM551C_Shillelagh,
+        SFXWeapon_ATGM_MGM551C_Shillelagh
+    ]
+)
+private Weapon_M551A1_TTS_Sheridan_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_HMG_12_7_mm_M2HB,
+        SFXWeapon_HMG_12_7_mm_M2HB
+    ]
+)
+private Weapon_M551A1_TTS_Sheridan_US_weapon6 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
+
 // ---------------------- M577_RFA ---------------------- //
 
 // ---------------------- M577_US ----------------------- //
@@ -2626,6 +3373,24 @@ private Weapon_M901_TOW_US_weapon1 is TCompositeHappening
     ]
 )
 
+// ------------------ M998_Avenger_US ------------------- //
+private Weapon_M998_Avenger_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SAM_FIM92_Stinger_CS_x4,
+        SFXWeapon_SAM_FIM92_Stinger_CS_x4
+    ]
+)
+private Weapon_M998_Avenger_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_HMG_12_7_mm_avenger_M3P,
+        SFXWeapon_HMG_12_7_mm_avenger_M3P
+    ]
+)
+
 // ------------------- M998_Humvee_US ------------------- //
 
 // ------------------ MAN_Kat_6x6_RFA ------------------- //
@@ -2669,6 +3434,24 @@ private Weapon_MTLB_Strela10_SOV_weapon1 is TCompositeHappening
     [
         FXWeapon_SAM_Strela10_x4,
         SFXWeapon_SAM_Strela10_x4
+    ]
+)
+
+// ------------------ MTLB_Vasilek_SOV ------------------ //
+private Weapon_MTLB_Vasilek_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_Vasilek_82mm,
+        SFXWeapon_Mortier_Vasilek_82mm
+    ]
+)
+private Weapon_MTLB_Vasilek_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
     ]
 )
 
@@ -2868,6 +3651,124 @@ private Weapon_Marder_Roland_RFA_weapon1 is TCompositeHappening
     ]
 )
 
+// ------------- Mortier_107mm_Airborne_US -------------- //
+private Weapon_Mortier_107mm_Airborne_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_M40_tower_107mm,
+        SFXWeapon_Mortier_M40_tower_107mm
+    ]
+)
+private Weapon_Mortier_107mm_Airborne_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_M40_towed_107mm_SMOKE,
+        SFXWeapon_Mortier_M40_towed_107mm_SMOKE
+    ]
+)
+
+// ------------------ Mortier_107mm_US ------------------ //
+private Weapon_Mortier_107mm_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_M40_tower_107mm,
+        SFXWeapon_Mortier_M40_tower_107mm
+    ]
+)
+private Weapon_Mortier_107mm_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_M40_towed_107mm_SMOKE,
+        SFXWeapon_Mortier_M40_towed_107mm_SMOKE
+    ]
+)
+
+// -------------- Mortier_2B9_Vasilek_SOV --------------- //
+private Weapon_Mortier_2B9_Vasilek_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_Vasilek_82mm_towed,
+        SFXWeapon_Mortier_Vasilek_82mm_towed
+    ]
+)
+
+// --------------- Mortier_2S12_120mm_SOV --------------- //
+private Weapon_Mortier_2S12_120mm_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_2S12_120mm,
+        SFXWeapon_Mortier_2S12_120mm
+    ]
+)
+private Weapon_Mortier_2S12_120mm_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_2S12_120mm_SMOKE,
+        SFXWeapon_Mortier_2S12_120mm_SMOKE
+    ]
+)
+
+// ------------- Mortier_2S12_120mm_VDV_SOV ------------- //
+private Weapon_Mortier_2S12_120mm_VDV_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_2S12_120mm,
+        SFXWeapon_Mortier_2S12_120mm
+    ]
+)
+private Weapon_Mortier_2S12_120mm_VDV_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_2S12_120mm_SMOKE,
+        SFXWeapon_Mortier_2S12_120mm_SMOKE
+    ]
+)
+
+// --------------- Mortier_PM43_120mm_DDR --------------- //
+private Weapon_Mortier_PM43_120mm_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_PM43_120mm,
+        SFXWeapon_Mortier_PM43_120mm
+    ]
+)
+private Weapon_Mortier_PM43_120mm_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_PM43_120mm_SMOKE,
+        SFXWeapon_Mortier_PM43_120mm_SMOKE
+    ]
+)
+
+// ------------- Mortier_Tampella_120mm_RFA ------------- //
+private Weapon_Mortier_Tampella_120mm_RFA_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_Tampella_towed_120mm,
+        SFXWeapon_Mortier_Tampella_towed_120mm
+    ]
+)
+private Weapon_Mortier_Tampella_120mm_RFA_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Mortier_Tampella_towed_120mm_SMOKE,
+        SFXWeapon_Mortier_Tampella_towed_120mm_SMOKE
+    ]
+)
+
 // ------------------- Osa_9K33M3_SOV ------------------- //
 private Weapon_Osa_9K33M3_SOV_weapon1 is TCompositeHappening
 (
@@ -2875,6 +3776,32 @@ private Weapon_Osa_9K33M3_SOV_weapon1 is TCompositeHappening
     [
         FXWeapon_SAM_9M33M2_x6,
         SFXWeapon_SAM_9M33M2_x6
+    ]
+)
+
+// ------------------- PT76B_CMD_DDR -------------------- //
+private Weapon_PT76B_CMD_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_AP_76mm_D56T,
+        SFXWeapon_Canon_AP_76mm_D56T
+    ]
+)
+private Weapon_PT76B_CMD_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_76mm_D56T,
+        SFXWeapon_Canon_HE_76mm_D56T
+    ]
+)
+private Weapon_PT76B_CMD_DDR_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_MMG_PKT_7_62mm,
+        SFXWeapon_MMG_PKT_7_62mm
     ]
 )
 
@@ -3987,6 +4914,14 @@ private Weapon_TPZ_Fuchs_1_RFA_weapon1 is TCompositeHappening
         SFXWeapon_MMG_MG3_7_62mm
     ]
 )
+private Weapon_TPZ_Fuchs_1_RFA_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
 
 // ----------------- TPZ_Fuchs_CMD_RFA ------------------ //
 private Weapon_TPZ_Fuchs_CMD_RFA_weapon1 is TCompositeHappening
@@ -3995,6 +4930,14 @@ private Weapon_TPZ_Fuchs_CMD_RFA_weapon1 is TCompositeHappening
     [
         FXWeapon_MMG_MG3_7_62mm,
         SFXWeapon_MMG_MG3_7_62mm
+    ]
+)
+private Weapon_TPZ_Fuchs_CMD_RFA_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
     ]
 )
 
@@ -4015,8 +4958,24 @@ private Weapon_TPZ_Fuchs_MILAN_RFA_weapon2 is TCompositeHappening
         SFXWeapon_ATGM_MILAN
     ]
 )
+private Weapon_TPZ_Fuchs_MILAN_RFA_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
 
 // ---------------- TPZ_Fuchs_RASIT_RFA ----------------- //
+private Weapon_TPZ_Fuchs_RASIT_RFA_weapon5 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SMOKE_Vehicle_Grenadex8,
+        SFXWeapon_SMOKE_Vehicle_Grenadex8
+    ]
+)
 
 // ----------------- Tunguska_2K22_SOV ------------------ //
 private Weapon_Tunguska_2K22_SOV_weapon1 is TCompositeHappening
@@ -4046,6 +5005,40 @@ private Weapon_UAZ_469_AGL_SOV_weapon1 is TCompositeHappening
     ]
 )
 
+// ---------------- UAZ_469_AGL_VDV_SOV ----------------- //
+private Weapon_UAZ_469_AGL_VDV_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Lance_grenade_AGS17,
+        SFXWeapon_Lance_grenade_AGS17
+    ]
+)
+
+// ------------------ UAZ_469_CMD_SOV ------------------- //
+
+// ---------------- UAZ_469_CMD_VDV_SOV ----------------- //
+
+// ---------------- UAZ_469_Konkurs_SOV ----------------- //
+private Weapon_UAZ_469_Konkurs_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_9M113_Konkurs_BMP2,
+        SFXWeapon_ATGM_9M113_Konkurs_BMP2
+    ]
+)
+
+// -------------- UAZ_469_Konkurs_VDV_SOV --------------- //
+private Weapon_UAZ_469_Konkurs_VDV_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_ATGM_9M113_Konkurs_BMP2,
+        SFXWeapon_ATGM_9M113_Konkurs_BMP2
+    ]
+)
+
 // -------------------- UAZ_469_SOV --------------------- //
 
 // ------------------ UAZ_469_SPG9_DDR ------------------ //
@@ -4066,6 +5059,46 @@ private Weapon_UAZ_469_SPG9_DDR_weapon2 is TCompositeHappening
     ]
 )
 
+// ------------------ UAZ_469_SPG9_SOV ------------------ //
+private Weapon_UAZ_469_SPG9_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HEAT_73_mm_SPG9,
+        SFXWeapon_Canon_HEAT_73_mm_SPG9
+    ]
+)
+private Weapon_UAZ_469_SPG9_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_73_mm_SPG9,
+        SFXWeapon_Canon_HE_73_mm_SPG9
+    ]
+)
+
+// ---------------- UAZ_469_SPG9_VDV_SOV ---------------- //
+private Weapon_UAZ_469_SPG9_VDV_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HEAT_73_mm_SPG9,
+        SFXWeapon_Canon_HEAT_73_mm_SPG9
+    ]
+)
+private Weapon_UAZ_469_SPG9_VDV_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Canon_HE_73_mm_SPG9,
+        SFXWeapon_Canon_HE_73_mm_SPG9
+    ]
+)
+
+// ----------------- UAZ_469_supply_SOV ----------------- //
+
+// --------------- UAZ_469_supply_VDV_SOV --------------- //
+
 // ----------------- UAZ_469_trans_DDR ------------------ //
 
 // ------------------ Unimog_S_404_RFA ------------------ //
@@ -4073,8 +5106,6 @@ private Weapon_UAZ_469_SPG9_DDR_weapon2 is TCompositeHappening
 // ------------------ Unimog_trans_RFA ------------------ //
 
 // ------------------- Ural_4320_SOV -------------------- //
-
-// -------------------- VAB_RASIT_FR -------------------- //
 
 // -------------------- W50_LA_A_DDR -------------------- //
 
@@ -4256,8 +5287,22 @@ private Weapon_AH1S_Cobra_US_weapon2 is TCompositeHappening
         SFXWeapon_Gatling_AP_M197_20mm
     ]
 )
-private Weapon_AH1S_Cobra_US_weapon3 is FXWeapon_RocketAir_Hydra_70mm_x19
-private Weapon_AH1S_Cobra_US_weapon4 is FXWeapon_RocketAir_Hydra_70mm_x19
+private Weapon_AH1S_Cobra_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_Hydra_70mm_x19,
+        SFXWeapon_RocketAir_Hydra_70mm_x19
+    ]
+)
+private Weapon_AH1S_Cobra_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_Hydra_70mm_x19,
+        SFXWeapon_RocketAir_Hydra_70mm_x19
+    ]
+)
 
 // ------------------- AH64_Apache_US ------------------- //
 private Weapon_AH64_Apache_US_weapon1 is TCompositeHappening
@@ -4284,7 +5329,14 @@ private Weapon_AH64_Apache_US_weapon3 is TCompositeHappening
         SFXWeapon_AGM_AGM114A_x8
     ]
 )
-private Weapon_AH64_Apache_US_weapon4 is FXWeapon_RocketAir_Hydra_70mm_x19
+private Weapon_AH64_Apache_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_Hydra_70mm_x19,
+        SFXWeapon_RocketAir_Hydra_70mm_x19
+    ]
+)
 
 // ---------------- AH64_Apache_emp1_US ----------------- //
 private Weapon_AH64_Apache_emp1_US_weapon1 is TCompositeHappening
@@ -4329,8 +5381,40 @@ private Weapon_AH64_Apache_emp2_US_weapon2 is TCompositeHappening
         SFXWeapon_AutoCanon_HE_30mm_M230
     ]
 )
-private Weapon_AH64_Apache_emp2_US_weapon3 is FXWeapon_RocketAir_Hydra_70mm_x19
-private Weapon_AH64_Apache_emp2_US_weapon4 is FXWeapon_RocketAir_Hydra_70mm_x19
+private Weapon_AH64_Apache_emp2_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_Hydra_70mm_x19,
+        SFXWeapon_RocketAir_Hydra_70mm_x19
+    ]
+)
+private Weapon_AH64_Apache_emp2_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_Hydra_70mm_x19,
+        SFXWeapon_RocketAir_Hydra_70mm_x19
+    ]
+)
+
+// ---------------- AH6C_Little_Bird_US ----------------- //
+private Weapon_AH6C_Little_Bird_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Gatling_m134_7_62mm_x2,
+        SFXWeapon_Gatling_m134_7_62mm_x2
+    ]
+)
+private Weapon_AH6C_Little_Bird_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_Hydra_70mm_x14,
+        SFXWeapon_RocketAir_Hydra_70mm_x14
+    ]
+)
 
 // ---------------- Alouette_II_CMD_RFA ----------------- //
 
@@ -4362,9 +5446,47 @@ private Weapon_Bo_105_PAH_1_RFA_weapon1 is TCompositeHappening
 
 // ------------------ Bo_105_trans_RFA ------------------ //
 
+// ------------------ CH47_Chinook_US ------------------- //
+
+// --------------- CH47_Super_Chinook_US ---------------- //
+
 // --------------------- CH53G_RFA ---------------------- //
 
 // ------------------ CH53G_trans_RFA ------------------- //
+
+// --------------------- Ka_50_SOV ---------------------- //
+private Weapon_Ka_50_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AutoCanon_AP_30mm_24A2,
+        SFXWeapon_AutoCanon_AP_30mm_24A2
+    ]
+)
+private Weapon_Ka_50_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AutoCanon_HE_30mm_24A2,
+        SFXWeapon_AutoCanon_HE_30mm_24A2
+    ]
+)
+private Weapon_Ka_50_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AGM_9K121_Vikhr_x12,
+        SFXWeapon_AGM_9K121_Vikhr_x12
+    ]
+)
+private Weapon_Ka_50_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SAM_IglaV_x4,
+        SFXWeapon_SAM_IglaV_x4
+    ]
+)
 
 // ------------------- Mi_24D_AA_DDR -------------------- //
 private Weapon_Mi_24D_AA_DDR_weapon1 is TCompositeHappening
@@ -4375,7 +5497,14 @@ private Weapon_Mi_24D_AA_DDR_weapon1 is TCompositeHappening
         SFXWeapon_Gatling_JakB_12_7mm
     ]
 )
-private Weapon_Mi_24D_AA_DDR_weapon2 is FXWeapon_RocketAir_B8_80mm_x10
+private Weapon_Mi_24D_AA_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
 private Weapon_Mi_24D_AA_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
@@ -4394,7 +5523,14 @@ private Weapon_Mi_24D_s5_AT_DDR_weapon1 is TCompositeHappening
         SFXWeapon_Gatling_JakB_12_7mm
     ]
 )
-private Weapon_Mi_24D_s5_AT_DDR_weapon2 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_24D_s5_AT_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 private Weapon_Mi_24D_s5_AT_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
@@ -4413,13 +5549,80 @@ private Weapon_Mi_24D_s8_AT_DDR_weapon1 is TCompositeHappening
         SFXWeapon_Gatling_JakB_12_7mm
     ]
 )
-private Weapon_Mi_24D_s8_AT_DDR_weapon2 is FXWeapon_RocketAir_B8_80mm_x10
+private Weapon_Mi_24D_s8_AT_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
 private Weapon_Mi_24D_s8_AT_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
         FXWeapon_AGM_9M17P_FalangaP_x4,
         SFXWeapon_AGM_9M17P_FalangaP_x4
+    ]
+)
+
+// ------------------ Mi_24K_reco_SOV ------------------- //
+private Weapon_Mi_24K_reco_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Gatling_JakB_12_7mm,
+        SFXWeapon_Gatling_JakB_12_7mm
+    ]
+)
+private Weapon_Mi_24K_reco_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
+private Weapon_Mi_24K_reco_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
+
+// --------------------- Mi_24P_SOV --------------------- //
+private Weapon_Mi_24P_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AutoCanon_AP_30mm_Bitube_Gsh30k,
+        SFXWeapon_AutoCanon_AP_30mm_Bitube_Gsh30k
+    ]
+)
+private Weapon_Mi_24P_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AutoCanon_HE_30mm_Bitube_Gsh30k,
+        SFXWeapon_AutoCanon_HE_30mm_Bitube_Gsh30k
+    ]
+)
+private Weapon_Mi_24P_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AGM_9M114M_KokonM_x4,
+        SFXWeapon_AGM_9M114M_KokonM_x4
+    ]
+)
+private Weapon_Mi_24P_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
     ]
 )
 
@@ -4448,7 +5651,14 @@ private Weapon_Mi_24P_s8_AT2_DDR_weapon3 is TCompositeHappening
         SFXWeapon_AGM_9M114M_KokonM_x8
     ]
 )
-private Weapon_Mi_24P_s8_AT2_DDR_weapon4 is FXWeapon_RocketAir_B8_80mm_x10
+private Weapon_Mi_24P_s8_AT2_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
 
 // ------------------ Mi_24P_s8_AT_DDR ------------------ //
 private Weapon_Mi_24P_s8_AT_DDR_weapon1 is TCompositeHappening
@@ -4475,7 +5685,14 @@ private Weapon_Mi_24P_s8_AT_DDR_weapon3 is TCompositeHappening
         SFXWeapon_AGM_9M114M_KokonM_x4
     ]
 )
-private Weapon_Mi_24P_s8_AT_DDR_weapon4 is FXWeapon_RocketAir_B8_80mm_x10
+private Weapon_Mi_24P_s8_AT_DDR_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
 
 // -------------------- Mi_24VP_SOV --------------------- //
 private Weapon_Mi_24VP_SOV_weapon1 is TCompositeHappening
@@ -4502,7 +5719,14 @@ private Weapon_Mi_24VP_SOV_weapon3 is TCompositeHappening
         SFXWeapon_AGM_9M114M_KokonM_x16
     ]
 )
-private Weapon_Mi_24VP_SOV_weapon4 is FXWeapon_RocketAir_B8_80mm_x10
+private Weapon_Mi_24VP_SOV_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
 
 // ------------------- Mi_24V_AA_SOV -------------------- //
 private Weapon_Mi_24V_AA_SOV_weapon1 is TCompositeHappening
@@ -4521,7 +5745,14 @@ private Weapon_Mi_24V_AA_SOV_weapon2 is TCompositeHappening
         SFXWeapon_SAM_IglaV_x4
     ]
 )
-private Weapon_Mi_24V_AA_SOV_weapon3 is FXWeapon_RocketAir_B8_80mm_x10
+private Weapon_Mi_24V_AA_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
 
 // ------------------- Mi_24V_AT_SOV -------------------- //
 private Weapon_Mi_24V_AT_SOV_weapon1 is TCompositeHappening
@@ -4540,7 +5771,14 @@ private Weapon_Mi_24V_AT_SOV_weapon2 is TCompositeHappening
         SFXWeapon_AGM_9M114M_KokonM_x8
     ]
 )
-private Weapon_Mi_24V_AT_SOV_weapon3 is FXWeapon_RocketAir_B8_80mm_x10
+private Weapon_Mi_24V_AT_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
 
 // ------------------- Mi_24V_RKT_SOV ------------------- //
 private Weapon_Mi_24V_RKT_SOV_weapon1 is TCompositeHappening
@@ -4568,6 +5806,34 @@ private Weapon_Mi_24V_RKT_SOV_weapon3 is TCompositeHappening
     ]
 )
 
+// --------------------- Mi_24V_SOV --------------------- //
+private Weapon_Mi_24V_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Gatling_JakB_12_7mm,
+        SFXWeapon_Gatling_JakB_12_7mm
+    ]
+)
+private Weapon_Mi_24V_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_SAM_IglaV_x4,
+        SFXWeapon_SAM_IglaV_x4
+    ]
+)
+private Weapon_Mi_24V_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+
+// --------------------- Mi_26_SOV ---------------------- //
+
 // ------------------- Mi_2_reco_DDR -------------------- //
 
 // ------------------- Mi_2_reco_SOV -------------------- //
@@ -4589,7 +5855,14 @@ private Weapon_Mi_8TB_DDR_weapon1 is TCompositeHappening
         SFXWeapon_HMG_12_7_mm_NSVT
     ]
 )
-private Weapon_Mi_8TB_DDR_weapon2 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_8TB_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 private Weapon_Mi_8TB_DDR_weapon3 is TCompositeHappening
 (
     SubHappenings =
@@ -4600,9 +5873,30 @@ private Weapon_Mi_8TB_DDR_weapon3 is TCompositeHappening
 )
 
 // --------------------- Mi_8TV_DDR --------------------- //
-private Weapon_Mi_8TV_DDR_weapon1 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8TV_DDR_weapon2 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8TV_DDR_weapon3 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_8TV_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8TV_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8TV_DDR_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 
 // --------------- Mi_8TV_PodGatling_DDR ---------------- //
 private Weapon_Mi_8TV_PodGatling_DDR_weapon1 is TCompositeHappening
@@ -4621,7 +5915,14 @@ private Weapon_Mi_8TV_PodGatling_DDR_weapon2 is TCompositeHappening
         SFXWeapon_Pod_GUV_Gatling_7_62mm_12_7mm_x2
     ]
 )
-private Weapon_Mi_8TV_PodGatling_DDR_weapon3 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_8TV_PodGatling_DDR_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 
 // ------------ Mi_8TV_PodGatling_PodAGL_SOV ------------ //
 private Weapon_Mi_8TV_PodGatling_PodAGL_SOV_weapon1 is TCompositeHappening
@@ -4640,40 +5941,154 @@ private Weapon_Mi_8TV_PodGatling_PodAGL_SOV_weapon2 is TCompositeHappening
         SFXWeapon_Pod_GUV_AGS17_2x
     ]
 )
-private Weapon_Mi_8TV_PodGatling_PodAGL_SOV_weapon3 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_8TV_PodGatling_PodAGL_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 
 // --------------------- Mi_8TV_SOV --------------------- //
-private Weapon_Mi_8TV_SOV_weapon1 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8TV_SOV_weapon2 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_8TV_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8TV_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 
 // ----------------- Mi_8TV_s57_16_SOV ------------------ //
-private Weapon_Mi_8TV_s57_16_SOV_weapon1 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8TV_s57_16_SOV_weapon2 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8TV_s57_16_SOV_weapon3 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_8TV_s57_16_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8TV_s57_16_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8TV_s57_16_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 
 // ----------------- Mi_8TV_s57_32_DDR ------------------ //
-private Weapon_Mi_8TV_s57_32_DDR_weapon1 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8TV_s57_32_DDR_weapon2 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8TV_s57_32_DDR_weapon3 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_8TV_s57_32_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8TV_s57_32_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8TV_s57_32_DDR_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 
 // ----------------- Mi_8TV_s57_32_SOV ------------------ //
-private Weapon_Mi_8TV_s57_32_SOV_weapon1 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8TV_s57_32_SOV_weapon2 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8TV_s57_32_SOV_weapon3 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_8TV_s57_32_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8TV_s57_32_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8TV_s57_32_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 
 // ------------------- Mi_8TV_s80_SOV ------------------- //
-private Weapon_Mi_8TV_s80_SOV_weapon1 is FXWeapon_RocketAir_B8_80mm_x10
-private Weapon_Mi_8TV_s80_SOV_weapon2 is FXWeapon_RocketAir_B8_80mm_x10
+private Weapon_Mi_8TV_s80_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
+private Weapon_Mi_8TV_s80_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_B8_80mm_x10,
+        SFXWeapon_RocketAir_B8_80mm_x10
+    ]
+)
 
 // --------------------- Mi_8TZ_SOV --------------------- //
 
 // --------------------- Mi_8T_DDR ---------------------- //
-private Weapon_Mi_8T_DDR_weapon1 is FXWeapon_RocketAir_S5_57mm_x8
-private Weapon_Mi_8T_DDR_weapon2 is FXWeapon_RocketAir_S5_57mm_x8
+private Weapon_Mi_8T_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
+private Weapon_Mi_8T_DDR_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_S5_57mm_x8,
+        SFXWeapon_RocketAir_S5_57mm_x8
+    ]
+)
 
 // ------------------ Mi_8_supply_DDR ------------------- //
 
 // ---------------------- Mi_9_DDR ---------------------- //
+
+// -------------------- OH58C_CMD_US -------------------- //
 
 // ------------------- OH58C_Scout_US ------------------- //
 private Weapon_OH58C_Scout_US_weapon1 is TCompositeHappening
@@ -4700,8 +6115,8 @@ private Weapon_OH58_CS_US_weapon1 is TCompositeHappening
 (
     SubHappenings =
     [
-        FXWeapon_SAM_FIM92_Stinger_CS,
-        SFXWeapon_SAM_FIM92_Stinger_CS
+        FXWeapon_SAM_FIM92_Stinger_CS_x4,
+        SFXWeapon_SAM_FIM92_Stinger_CS_x4
     ]
 )
 
@@ -4782,6 +6197,40 @@ private Weapon_A10_Thunderbolt_II_ATGM_US_weapon3 is TCompositeHappening
     ]
 )
 private Weapon_A10_Thunderbolt_II_ATGM_US_weapon4 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AA_AIM9M_Sidewinder,
+        SFXWeapon_AA_AIM9M_Sidewinder
+    ]
+)
+
+// ------------- A10_Thunderbolt_II_Rkt_US -------------- //
+private Weapon_A10_Thunderbolt_II_Rkt_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_GatlingAir_GAU8_30mm,
+        SFXWeapon_GatlingAir_GAU8_30mm
+    ]
+)
+private Weapon_A10_Thunderbolt_II_Rkt_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_GatlingAir_AP_GAU8_30mm,
+        SFXWeapon_GatlingAir_AP_GAU8_30mm
+    ]
+)
+private Weapon_A10_Thunderbolt_II_Rkt_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_RocketAir_Hydra_70mm_x76,
+        SFXWeapon_RocketAir_Hydra_70mm_x76
+    ]
+)
+private Weapon_A10_Thunderbolt_II_Rkt_US_weapon4 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -4990,6 +6439,16 @@ private Weapon_F111E_Aardvark_napalm_US_weapon2 is TCompositeHappening
     ]
 )
 
+// --------------- F111F_Aardvark_CBU_US ---------------- //
+private Weapon_F111F_Aardvark_CBU_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Bomb_CBU_Mk20_Rockeye_II_250kg_x8,
+        SFXWeapon_Bomb_CBU_Mk20_Rockeye_II_250kg_x8
+    ]
+)
+
 // ----------------- F111F_Aardvark_US ------------------ //
 private Weapon_F111F_Aardvark_US_weapon2 is TCompositeHappening
 (
@@ -4997,6 +6456,16 @@ private Weapon_F111F_Aardvark_US_weapon2 is TCompositeHappening
     [
         FXWeapon_Bomb_Mk82_250kg_x12,
         SFXWeapon_Bomb_Mk82_250kg_x12
+    ]
+)
+
+// -------------- F111F_Aardvark_napalm_US -------------- //
+private Weapon_F111F_Aardvark_napalm_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Bomb_Mk77_340kg_Napalm_x4,
+        SFXWeapon_Bomb_Mk77_340kg_Napalm_x4
     ]
 )
 
@@ -5052,6 +6521,32 @@ private Weapon_F16E_AA_US_weapon3 is TCompositeHappening
     ]
 )
 
+// -------------------- F16E_AGM_US --------------------- //
+private Weapon_F16E_AGM_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_GatlingAir_M61_Vulcan_20mm,
+        SFXWeapon_GatlingAir_M61_Vulcan_20mm
+    ]
+)
+private Weapon_F16E_AGM_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AGM_AGM65B_Maverick,
+        SFXWeapon_AGM_AGM65B_Maverick
+    ]
+)
+private Weapon_F16E_AGM_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AA_AIM9M_Sidewinder,
+        SFXWeapon_AA_AIM9M_Sidewinder
+    ]
+)
+
 // -------------------- F16E_CBU_US --------------------- //
 private Weapon_F16E_CBU_US_weapon1 is TCompositeHappening
 (
@@ -5078,6 +6573,32 @@ private Weapon_F16E_CBU_US_weapon3 is TCompositeHappening
     ]
 )
 
+// --------------------- F16E_HE_US --------------------- //
+private Weapon_F16E_HE_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_GatlingAir_M61_Vulcan_20mm,
+        SFXWeapon_GatlingAir_M61_Vulcan_20mm
+    ]
+)
+private Weapon_F16E_HE_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Bomb_Mk82_250kg_x6,
+        SFXWeapon_Bomb_Mk82_250kg_x6
+    ]
+)
+private Weapon_F16E_HE_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AA_AIM9M_Sidewinder,
+        SFXWeapon_AA_AIM9M_Sidewinder
+    ]
+)
+
 // -------------------- F16E_SEAD_US -------------------- //
 private Weapon_F16E_SEAD_US_weapon1 is TCompositeHappening
 (
@@ -5096,6 +6617,32 @@ private Weapon_F16E_SEAD_US_weapon2 is TCompositeHappening
     ]
 )
 private Weapon_F16E_SEAD_US_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AA_AIM9M_Sidewinder,
+        SFXWeapon_AA_AIM9M_Sidewinder
+    ]
+)
+
+// ------------------- F16E_napalm_US ------------------- //
+private Weapon_F16E_napalm_US_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_GatlingAir_M61_Vulcan_20mm,
+        SFXWeapon_GatlingAir_M61_Vulcan_20mm
+    ]
+)
+private Weapon_F16E_napalm_US_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Bomb_Mk77_340kg_Napalm_x2,
+        SFXWeapon_Bomb_Mk77_340kg_Napalm_x2
+    ]
+)
+private Weapon_F16E_napalm_US_weapon3 is TCompositeHappening
 (
     SubHappenings =
     [
@@ -5350,6 +6897,24 @@ private Weapon_F4_Wild_Weasel_US_weapon3 is TCompositeHappening
     ]
 )
 
+// ----------------- G91_R3_Gina_AA_RFA ----------------- //
+private Weapon_G91_R3_Gina_AA_RFA_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_GatlingAir_DEFA_30mm_x2,
+        SFXWeapon_GatlingAir_DEFA_30mm_x2
+    ]
+)
+private Weapon_G91_R3_Gina_AA_RFA_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AA_AIM9L_Sidewinder,
+        SFXWeapon_AA_AIM9L_Sidewinder
+    ]
+)
+
 // ----------------- G91_R3_Gina_HE_RFA ----------------- //
 private Weapon_G91_R3_Gina_HE_RFA_weapon1 is TCompositeHappening
 (
@@ -5518,6 +7083,17 @@ private Weapon_MiG_21bis_HE_DDR_weapon2 is TCompositeHappening
     ]
 )
 
+// ----------------- MiG_21bis_RKT2_DDR ----------------- //
+private Weapon_MiG_21bis_RKT2_DDR_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_GatlingAir_GSh_23_23mm,
+        SFXWeapon_GatlingAir_GSh_23_23mm
+    ]
+)
+private Weapon_MiG_21bis_RKT2_DDR_weapon2 is FXWeapon_FakeRoquette_S_24
+
 // ------------------ MiG_23BN_AT_DDR ------------------- //
 private Weapon_MiG_23BN_AT_DDR_weapon1 is TCompositeHappening
 (
@@ -5655,6 +7231,26 @@ private Weapon_MiG_23P_SOV_weapon3 is TCompositeHappening
     [
         FXWeapon_AA_R60M_Vympel,
         SFXWeapon_AA_R60M_Vympel
+    ]
+)
+
+// -------------------- MiG_25BM_SOV -------------------- //
+private Weapon_MiG_25BM_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AGM_Kh31P,
+        SFXWeapon_AGM_Kh31P
+    ]
+)
+
+// ------------------- MiG_25RBF_SOV -------------------- //
+private Weapon_MiG_25RBF_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_Bomb_FAB_500kg_x8,
+        SFXWeapon_Bomb_FAB_500kg_x8
     ]
 )
 
@@ -5967,6 +7563,32 @@ private Weapon_Su_24M_nplm_SOV_weapon1 is TCompositeHappening
     [
         FXWeapon_Bomb_ZB500_500kg_Napalm_x6,
         SFXWeapon_Bomb_ZB500_500kg_Napalm_x6
+    ]
+)
+
+// --------------------- Su_25T_SOV --------------------- //
+private Weapon_Su_25T_SOV_weapon1 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_GatlingAir_Gsh_30_2_30mm_x2,
+        SFXWeapon_GatlingAir_Gsh_30_2_30mm_x2
+    ]
+)
+private Weapon_Su_25T_SOV_weapon2 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AGM_9K121_Vikhr,
+        SFXWeapon_AGM_9K121_Vikhr
+    ]
+)
+private Weapon_Su_25T_SOV_weapon3 is TCompositeHappening
+(
+    SubHappenings =
+    [
+        FXWeapon_AA_R73_Vympel,
+        SFXWeapon_AA_R73_Vympel
     ]
 )
 

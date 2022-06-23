@@ -50,7 +50,6 @@ FeedbackLineOfSightDescriptor is TFeedbackLineOfSightDescriptor
         {Template_CircleDescriptor(
                     Radius = 600 * Metre //1000
                     Thickness = 650
-					TextSize = 2000
                     ShowDistanceText = true
                  ),}
         Template_CircleDescriptor(

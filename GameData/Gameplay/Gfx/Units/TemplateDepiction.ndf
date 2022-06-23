@@ -202,8 +202,8 @@ template TemplateAllSubWeaponDepiction
     (
         Scaler = CommonInfantryScaler
         Selector = $/GFX/Everything/SoldierDynamicWeaponSubDepictionSelector
-        DepictionAlternatives = <Alternatives>
-        Operators = <Operators>
+        DepictionAlternatives = <Alternatives> + [ AlternativeNone ]
+        Operators = [ DepictionOperator_Shader_Selection ] + <Operators>
     )
 )
 
@@ -217,7 +217,8 @@ template TemplateAllSubBackpackWeaponDepiction
     (
         Scaler = CommonInfantryScaler
         Selector = $/GFX/Everything/SoldierDynamicBackpackWeaponSubDepictionSelector
-        DepictionAlternatives = <Alternatives>
+        DepictionAlternatives = <Alternatives> + [ AlternativeNone ]
+        Operators = [ DepictionOperator_Shader_Selection ]
     )
 )
 
@@ -315,6 +316,17 @@ template TemplateInfantryDepictionSquad
   )
 )
 
+InfantryDepictionSquadShowroom is TTimelyReceiverFactoryCarrier
+(
+  DepictionTemplate = TDepictionTemplate
+  (
+    Scaler = CommonIdentityScaler
+    Selector = OnlyHighDepictionSelector
+    DepictionAlternatives = [
+      DepictionDescriptor_LOD_High(MeshDescriptor = ~/Modele_Rien),
+    ]
+  )
+)
 // mesh d'infanterie compatible avec le nouveau squelette.
 private FuldaSoldier is TResourceMultiMaterialMesh
 (
@@ -341,7 +353,6 @@ template TransportedInfantryDepiction
     DepictionAlternatives = <Alternatives>
         + [ AlternativeNoneNoSkeleton,
         DepictionDescriptor_LOD_High( MeshDescriptor = FuldaSoldier ),
-        AlternativeWithId(SelectorId = ["servant"] ModelFile = 'GameData:/Assets/3D/Units/US/Infanterie/Test_Soldier/Fulda_Soldier.Ase2NdfBin')
          ] //pour avoir un 'high' pour le skeleton
 )
 
@@ -500,29 +511,8 @@ is TTimelyReceiverFactoryCarrier
     )
 )
 
-template TacticTowedUnitDepictionTemplate
-[
-    Alternatives,
-    Operators,
-    Actions,
-    SubDepictions = []
-]
-is TTimelyReceiverFactoryCarrier
-(
-    DepictionTemplate = TDepictionTemplate
-    (
-        Scaler = CommonVehicleScaler
-        Selector = SpecificVehicleDepictionSelector
-        DepictionAlternatives = <Alternatives>
-
-        Operators = CommonOperators + CommonTowedUnitsOperators + <Operators>
-        Actions = <Actions>
-        SubDepictions = <SubDepictions>
-    )
-)
-
 template TacticTowedSubDepictionTemplate
-[ Alternatives ]
+[ Alternatives, InitialPoses ]
 is TSubDepiction
 (
     Anchor = "remorque_1"
@@ -535,8 +525,12 @@ is TSubDepiction
         ]
 
         Operators = [
-            DepictionOperator_Reset_Generic,
-            DepictionOperator_TowedUnitOperator,
+            TCosmeticTowedUnitPivotOperatorDesc
+            (
+                OperatorId = 'TowedUnit'
+                WorldFloorProxy = $/M3D/Scene/WorldFloorForOnlyGround
+                InitialPoses = <InitialPoses>
+            ),
             DepictionOperator_Propulsion_Wheels_TowedCanon,
         ]
     )

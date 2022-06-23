@@ -2,7 +2,7 @@ private AirUnitTagsToCheck is [ 'Helo', 'Avion' ]
 
 private NoRecoAdvantage is TCombatAdvantageDefinition
 (
-    AdvantageValue = 1
+    AdvantageValue = 0
     TextToken = 'CA_Reco'
     TagToCheck = [ 'Reco', 'Vehicule_Reco', 'Infanterie_Reco' ]
     TagToCheckAgainst = [ 'Reco', 'Vehicule_Reco', 'Infanterie_Reco' ]
@@ -18,7 +18,7 @@ private NoAAAdvantage is TCombatAdvantageDefinition
 
 private NoATAdvantage is TCombatAdvantageDefinition
 (
-    AdvantageValue = 3
+    AdvantageValue = 0
     TextToken = 'CA_AT'
     TagToCheck = [ 'Char' ]
     TagToCheckAgainst = [ 'Char', 'ChasseurDeChar', 'Avion_AT']
@@ -53,10 +53,10 @@ StrategicAutoresolveConstantes is TStrategicAutoResolveConstantes
 
     VictoryTypeByBalanceOfPower =
     [
-        ( -4,    EVictoryType/TotalDefeat),
-        ( -3,    EVictoryType/MajorDefeat),
-        ( -2,    EVictoryType/MinorDefeat),
-        ( -1,    EVictoryType/Draw),
+        ( -2,    EVictoryType/TotalDefeat),
+        ( -1,    EVictoryType/MajorDefeat),
+        ( -0.5,    EVictoryType/MinorDefeat),
+        ( 0,    EVictoryType/Draw),
 
         ( 1,    EVictoryType/Draw),
         ( 2,    EVictoryType/MinorVictory),
@@ -129,30 +129,23 @@ StrategicAutoresolveConstantes is TStrategicAutoResolveConstantes
 PerteAttaquantSurTerrainDefault is MAP
 [
 
-    (-2    ,  1),
-    (-1    ,  0.75),
-    (0    ,    0.5),
+    (-2    ,  0.9),  // total defeat
+                     // major defeat
+    (0  ,  0.30), //minor defeat
 
-    (1    ,    0.35),
-    (2    ,    0.2),
-    (3    ,    0.05),
-    (4    ,    0.02),
+    (1    ,   0.20), // minor victory
     (5    ,    0.0),
 
 ]
 PerteDefenseurSurTerrainDefault is MAP
 [
 
+    (-4    ,  0.9),  // total defeat
+                     // major defeat
+    (-1  ,    0.30), //minor defeat
 
-    (-5   ,    1),
-    (-4   ,    0.75),
-    (-3   ,    0.5),
-    (-2   ,    0.2),
-    (-1   ,    0.1),
-
-    (0    ,    0.06),
-    (1    ,    0.02),
-    (2    ,    0.0),
+    (1    ,   0.20), // minor victory
+    (5    ,   0.0),
 
 ]
 PerteAttaquantSurTerrainUrbain is MAP

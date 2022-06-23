@@ -47,17 +47,17 @@ MatrixCostName_US_8th_Inf_multi is MAP
 
 MatrixCostName_US_82nd_Airborne_multi is MAP
 [
-   ( EDefaultFactories/Logistic,    [1, 1, 2, 3] ),//4;7
-   ( EDefaultFactories/reco,        [1, 1, 1, 1, 1, 1, 2, 3] ),//8;11
-   ( EDefaultFactories/infanterie,  [1, 1, 1, 1, 1, 1, 1, 1, 2, 3] ),//10;13
-   ( EDefaultFactories/tank,        [1, 1, 2, 2] ),//8;13
-   ( EDefaultFactories/support,     [1, 1, 2, 3, 4] ),//5;11    =ART
-   ( EDefaultFactories/at,          [1, 2, 3, 4] ),//6;13   =AA
+   ( EDefaultFactories/Logistic,    [1, 1, 2, 3, 3] ),//5;10
+   ( EDefaultFactories/reco,        [1, 1, 1, 1, 1, 2, 3] ),//7;10
+   ( EDefaultFactories/infanterie,  [1, 1, 1, 1, 1, 1, 1, 2, 2, 3] ),//10;14
+   ( EDefaultFactories/tank,        [1, 1, 1, 2, 3] ),//5;8
+   ( EDefaultFactories/support,     [1, 1, 2, 3, 3, 4] ),//6;14    =ART
+   ( EDefaultFactories/at,          [1, 2, 2, 3, 4] ),//5;12   =AA
    ( EDefaultFactories/dca,         [0,] ),//0...DEPREC
    ( EDefaultFactories/art,         [0,] ),//0...DEPREC
-   ( EDefaultFactories/Helis,       [1, 1, 1, 1, 1, 1, 1, 1, 2, 3] ),//10;13
-   ( EDefaultFactories/air,         [1, 1, 1, 1, 1, 1, 1, 1, 2, 3] ),//10;13
-   ( EDefaultFactories/defense,     [0, 0, 0, 0] ),//46cases 77pts
+   ( EDefaultFactories/Helis,       [1, 1, 1, 2, 2, 3, 3] ),//7;13
+   ( EDefaultFactories/air,         [1, 1, 2, 2, 3, 3, 4] ),//7;16
+   ( EDefaultFactories/defense,     [0, 0, 0, 0] ),//52cases 97pts coef 1,86
 ]
 
 MatrixCostName_US_11ACR_multi is MAP
@@ -237,17 +237,17 @@ MatrixCostName_SOV_39_Gds_Rifle_multi is MAP
 
 MatrixCostName_SOV_35_AirAslt_Brig_multi is MAP
 [
-   ( EDefaultFactories/Logistic,    [1, 1, 2, 3] ),//4;7
-   ( EDefaultFactories/reco,        [1, 1, 2, 2, 3, 3] ),//6;12
+   ( EDefaultFactories/Logistic,    [1, 1, 2, 2, 3, 3] ),//6;12
+   ( EDefaultFactories/reco,        [1, 1, 1, 1, 1, 2, 3] ),//7;10
    ( EDefaultFactories/infanterie,  [1, 1, 1, 1, 1, 1, 1, 2, 2, 3] ),//10;14
-   ( EDefaultFactories/tank,        [1, 1, 1, 2, 2, 3] ),//6;10
-   ( EDefaultFactories/support,     [1, 1, 2, 3, 3] ),//5;10    =ART
-   ( EDefaultFactories/at,          [1, 1, 2, 2, 3, 3] ),//6;12   =AA
+   ( EDefaultFactories/tank,        [1, 1, 2, 2] ),//4;6
+   ( EDefaultFactories/support,     [1, 1, 2, 2, 2, 3, 3] ),//7;14    =ART
+   ( EDefaultFactories/at,          [1, 2, 2, 2, 3] ),//5;10   =AA
    ( EDefaultFactories/dca,         [0,] ),//0...DEPREC
    ( EDefaultFactories/art,         [0,] ),//0...DEPREC
-   ( EDefaultFactories/Helis,       [1, 1, 2, 2, 2, 3] ),//6;11
-   ( EDefaultFactories/air,         [1, 1, 2, 3, 4] ),//4;11
-   ( EDefaultFactories/defense,     [0,] ),//48cases 88pts...Coef 1,83
+   ( EDefaultFactories/Helis,       [1, 1, 1, 2, 2, 2, 3, 3] ),//8;15
+   ( EDefaultFactories/air,         [1, 1, 2, 2, 3, 3, 3] ),//7;15
+   ( EDefaultFactories/defense,     [0, 0, 0, 0] ),//50cases 96pts coef 1,92
 ]
 //--------------------- RDA -----------------------------------------
 

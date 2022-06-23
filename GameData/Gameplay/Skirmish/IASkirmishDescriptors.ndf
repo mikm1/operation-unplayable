@@ -33,6 +33,10 @@ private CampaignStrategyList is
 [
 ]
 
+private BKTDefaultStrategyList is
+[
+    ~/GenericBreakthroughStrategy
+]
 
 private DefaultBreakthroughStrategyList is
 [
@@ -98,7 +102,7 @@ private SkirmishList is TIASkirmishList_Specific
     [
         (IADifficulty/AnyDifficulty, MAP
         [
-            (EDeploymentMode/Breakthrough, ~/DefaultBreakthroughStrategyList),
+            (EDeploymentMode/Breakthrough, ~/BKTDefaultStrategyList),
             (EDeploymentMode/NotSpecified, ~/DefaultStrategyList),
         ]),
     ]
