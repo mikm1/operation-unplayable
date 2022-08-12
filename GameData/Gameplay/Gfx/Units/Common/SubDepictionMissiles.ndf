@@ -13,17 +13,29 @@ is TSubDepictionMissileSelector
     ThresholdAsUInt = <Value>
 )
 
+template DepictionTowedMissileSelector
+[
+    TowedUnit,
+    Value
+] is TSubDepictionTowedMissileSelector
+(
+    HighNoneLimitInMeter = LodHighNoneLimit_Missile
+    CameraMoverManagerModernWarfare = $/Camera/CameraMoverManager
+    ThresholdAsUInt = <Value>
+    TowedUnit = <TowedUnit>
+)
+
 template TemplateDepictionMissile
 [
-    PhysicalProperty,
-    MissileNumber,
-    ProjectileModelFile
+    Selector,
+    ProjectileModelFile,
+    ShadowLessInitialValue,
 ]
 is TDepictionTemplate
 (
-    ShadowLessInitialValue = True
+    ShadowLessInitialValue = <ShadowLessInitialValue>
     Scaler = CommonIdentityScaler
-    Selector = DepictionMissileSelector( PhysicalProperty = <PhysicalProperty> Value = <MissileNumber> )
+    Selector = <Selector>
     DepictionAlternatives = [
         TDepictionDescriptor(
             SelectorId = ['high']
@@ -35,6 +47,45 @@ is TDepictionTemplate
             ),
         TDepictionDescriptor( SelectorId = ['none']),
     ]
+)
+
+template TemplateDepictionMissileTowed
+[
+    TowedUnit,
+    MissileNumber,
+    ProjectileModelFile
+]
+is TemplateDepictionMissile
+(
+    ShadowLessInitialValue = False
+    Selector = DepictionTowedMissileSelector( TowedUnit = <TowedUnit> Value = <MissileNumber> )
+    ProjectileModelFile = <ProjectileModelFile>
+)
+
+template TemplateDepictionMissileGroundUnit
+[
+    PhysicalProperty,
+    MissileNumber,
+    ProjectileModelFile
+]
+is TemplateDepictionMissile
+(
+    ShadowLessInitialValue = False
+    Selector = DepictionMissileSelector( PhysicalProperty = <PhysicalProperty> Value = <MissileNumber> )
+    ProjectileModelFile = <ProjectileModelFile>
+)
+
+template TemplateDepictionMissileAirUnit
+[
+    PhysicalProperty,
+    MissileNumber,
+    ProjectileModelFile
+]
+is TemplateDepictionMissile
+(
+    ShadowLessInitialValue = True
+    Selector = DepictionMissileSelector( PhysicalProperty = <PhysicalProperty> Value = <MissileNumber> )
+    ProjectileModelFile = <ProjectileModelFile>
 )
 
 template TemplateDepictionMissileShowroom

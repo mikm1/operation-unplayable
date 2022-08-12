@@ -56,8 +56,6 @@ export OutGameResourceSpecific is TUISpecificOutGameResources
 
     TutorialGuideDescriptor     = ~/TutorialGuideViewDescriptor
 
-    SceneResource               = ~/specificSceneResource
-
     HostPanelResources          = ~/HostPanelResources
 
     AutoMatchGameSearchContent  = ~/OutGameSearchAutoMatchGameDescriptor
@@ -108,12 +106,12 @@ export OutGameResourceSpecific is TUISpecificOutGameResources
         ("ScorePanelDescriptor", UISpecificStrategicScorePanelViewDescriptor(isEndgame = true)),
         ("TacticalEndGameDescriptor", ~/UISpecificTacticalEndGameViewDescriptor),
 
-        ("UISpecificStrategicCampaignViewDescriptor",     UISpecificStrategicCampaignViewDescriptor(IsTuto = false )),
-        ("UISpecificStrategicCampaignSubViewDescriptor",  UISpecificStrategicCampaignViewDescriptor(IsTuto = false IsSubView=true ComponentContainerUniqueName="SoloPanelViewDescriptor")),
-        ("UISpecificHistoricalBattleViewDescriptor",      UISpecificHistoricalBattleViewDescriptor(IsTuto = false)),
-        ("UISpecificHistoricalBattleSubViewDescriptor",   UISpecificHistoricalBattleViewDescriptor(IsTuto = false IsSubView=true ComponentContainerUniqueName="SoloPanelViewDescriptor")),
-        ("UISpecificTacticalTutoViewDescriptor",          UISpecificHistoricalBattleViewDescriptor(IsTuto = true)),
-        ("UISpecificTacticalTutoSubViewDescriptor",       UISpecificHistoricalBattleViewDescriptor(IsTuto = true IsSubView=true ComponentContainerUniqueName="SoloPanelViewDescriptor")),
+        ("UISpecificStrategicCampaignViewDescriptor",     UISpecificScenarioViewDescriptor(GameType = GameStrategic )),
+        ("UISpecificStrategicCampaignSubViewDescriptor",  UISpecificScenarioViewDescriptor(GameType = GameStrategic IsSubView=true ComponentContainerUniqueName="SoloPanelViewDescriptor")),
+        ("UISpecificHistoricalBattleViewDescriptor",      UISpecificScenarioViewDescriptor(GameType = GameChallenge)),
+        ("UISpecificHistoricalBattleSubViewDescriptor",   UISpecificScenarioViewDescriptor(GameType = GameChallenge IsSubView=true ComponentContainerUniqueName="SoloPanelViewDescriptor")),
+        ("UISpecificTacticalTutoViewDescriptor",          UISpecificScenarioViewDescriptor(GameType = GameCampaign)),
+        ("UISpecificTacticalTutoSubViewDescriptor",       UISpecificScenarioViewDescriptor(GameType = GameCampaign IsSubView=true ComponentContainerUniqueName="SoloPanelViewDescriptor")),
         ("UISpecificSaveLoadPanelSubViewDescriptor",      UISpecificSaveLoadPanelViewDescriptor(IsSubView=true ComponentContainerUniqueName="SoloPanelViewDescriptor")),
         ("UISpecificSaveLoadPanelViewDescriptor",         UISpecificSaveLoadPanelViewDescriptor(IsSubView=false)),
         ("UISpecificOutGameMultiViewDescriptor", ~/UISpecificOutGameMultiViewDescriptor),

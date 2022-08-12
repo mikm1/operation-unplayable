@@ -4,7 +4,10 @@
 Gfx_A10_Thunderbolt_II_ATGM_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_A10_Thunderbolt_II_ATGM_US
-    SubDepictionGenerators = SubGenerators_Showroom_A10_Thunderbolt_II_ATGM_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_A10_Thunderbolt_II_ATGM_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -16,7 +19,10 @@ Gfx_A10_Thunderbolt_II_ATGM_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_A10_Thunderbolt_II_Rkt_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_A10_Thunderbolt_II_Rkt_US
-    SubDepictionGenerators = SubGenerators_Showroom_A10_Thunderbolt_II_Rkt_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_A10_Thunderbolt_II_Rkt_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -28,7 +34,10 @@ Gfx_A10_Thunderbolt_II_Rkt_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_A10_Thunderbolt_II_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_A10_Thunderbolt_II_US
-    SubDepictionGenerators = SubGenerators_Showroom_A10_Thunderbolt_II_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_A10_Thunderbolt_II_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -56,7 +65,10 @@ Gfx_AH1F_ATAS_US_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_AH1F_ATAS_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_AH1F_ATAS_US,
+    ]
 )
 Gfx_AH1F_Cobra_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -77,7 +89,10 @@ Gfx_AH1F_Cobra_US_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_AH1F_Cobra_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_AH1F_Cobra_US,
+    ]
 )
 Gfx_AH1F_HeavyHog_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -98,7 +113,10 @@ Gfx_AH1F_HeavyHog_US_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_AH1F_HeavyHog_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_AH1F_HeavyHog_US,
+    ]
 )
 Gfx_AH1S_Cobra_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -119,7 +137,10 @@ Gfx_AH1S_Cobra_US_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_AH1S_Cobra_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_AH1S_Cobra_US,
+    ]
 )
 Gfx_AH64_Apache_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -140,7 +161,10 @@ Gfx_AH64_Apache_US_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_AH64_Apache_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_AH64_Apache_US,
+    ]
 )
 Gfx_AH64_Apache_emp1_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -161,7 +185,10 @@ Gfx_AH64_Apache_emp1_US_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_AH64_Apache_emp1_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_AH64_Apache_emp1_US,
+    ]
 )
 Gfx_AH64_Apache_emp2_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -182,7 +209,10 @@ Gfx_AH64_Apache_emp2_US_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_AH64_Apache_emp2_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_AH64_Apache_emp2_US,
+    ]
 )
 Gfx_AH6C_Little_Bird_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -203,7 +233,10 @@ Gfx_AH6C_Little_Bird_US_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_AH6C_Little_Bird_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_AH6C_Little_Bird_US,
+    ]
 )
 Gfx_Alouette_II_CMD_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -248,7 +281,10 @@ Gfx_Alouette_II_reco_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Alpha_Jet_A_clu_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Alpha_Jet_A_clu_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Alpha_Jet_A_clu_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Alpha_Jet_A_clu_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -260,7 +296,10 @@ Gfx_Alpha_Jet_A_clu_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Alpha_Jet_A_he_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Alpha_Jet_A_he_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Alpha_Jet_A_he_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Alpha_Jet_A_he_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -272,7 +311,10 @@ Gfx_Alpha_Jet_A_he_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Alpha_Jet_A_nplm_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Alpha_Jet_A_nplm_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Alpha_Jet_A_nplm_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Alpha_Jet_A_nplm_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -284,7 +326,10 @@ Gfx_Alpha_Jet_A_nplm_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Alpha_Jet_A_rkt_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Alpha_Jet_A_rkt_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Alpha_Jet_A_rkt_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Alpha_Jet_A_rkt_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -476,7 +521,10 @@ Gfx_CH53G_trans_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_EF111_Raven_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_EF111_Raven
-    SubDepictionGenerators = SubGenerators_Showroom_EF111_Raven
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_EF111_Raven,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -488,7 +536,10 @@ Gfx_EF111_Raven_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F104G_Starfighter_AT_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F104G_Starfighter_AT_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_F104G_Starfighter_AT_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F104G_Starfighter_AT_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -500,7 +551,10 @@ Gfx_F104G_Starfighter_AT_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F104G_Starfighter_HE_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F104G_Starfighter_HE_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_F104G_Starfighter_HE_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F104G_Starfighter_HE_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -512,7 +566,10 @@ Gfx_F104G_Starfighter_HE_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F104G_Starfighter_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F104G_Starfighter_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_F104G_Starfighter_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F104G_Starfighter_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -524,7 +581,10 @@ Gfx_F104G_Starfighter_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F111E_Aardvark_CBU_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F111E_Aardvark_CBU_US
-    SubDepictionGenerators = SubGenerators_Showroom_F111E_Aardvark_CBU_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F111E_Aardvark_CBU_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -536,7 +596,10 @@ Gfx_F111E_Aardvark_CBU_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F111E_Aardvark_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F111E_Aardvark_US
-    SubDepictionGenerators = SubGenerators_Showroom_F111E_Aardvark_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F111E_Aardvark_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -548,7 +611,10 @@ Gfx_F111E_Aardvark_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F111E_Aardvark_napalm_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F111E_Aardvark_napalm_US
-    SubDepictionGenerators = SubGenerators_Showroom_F111E_Aardvark_napalm_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F111E_Aardvark_napalm_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -560,7 +626,10 @@ Gfx_F111E_Aardvark_napalm_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F111F_Aardvark_CBU_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F111F_Aardvark_CBU_US
-    SubDepictionGenerators = SubGenerators_Showroom_F111F_Aardvark_CBU_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F111F_Aardvark_CBU_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -569,10 +638,43 @@ Gfx_F111F_Aardvark_CBU_US_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
+Gfx_F111F_Aardvark_LGB2_US_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_F111F_Aardvark_LGB2_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F111F_Aardvark_LGB2_US,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = Modele_F111F_Aardvark_LGB2_US_train
+        ),
+    ]
+)
+Gfx_F111F_Aardvark_LGB_US_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_F111F_Aardvark_LGB_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F111F_Aardvark_LGB_US,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = Modele_F111F_Aardvark_LGB_US_train
+        ),
+    ]
+)
 Gfx_F111F_Aardvark_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F111F_Aardvark_US
-    SubDepictionGenerators = SubGenerators_Showroom_F111F_Aardvark_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F111F_Aardvark_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -584,7 +686,10 @@ Gfx_F111F_Aardvark_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F111F_Aardvark_napalm_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F111F_Aardvark_napalm_US
-    SubDepictionGenerators = SubGenerators_Showroom_F111F_Aardvark_napalm_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F111F_Aardvark_napalm_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -596,7 +701,10 @@ Gfx_F111F_Aardvark_napalm_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F15C_Eagle_AA_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F15C_Eagle_AA_US
-    SubDepictionGenerators = SubGenerators_Showroom_F15C_Eagle_AA_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F15C_Eagle_AA_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -608,7 +716,10 @@ Gfx_F15C_Eagle_AA_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F16E_AA_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F16E_AA_US
-    SubDepictionGenerators = SubGenerators_Showroom_F16E_AA_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F16E_AA_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -620,7 +731,10 @@ Gfx_F16E_AA_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F16E_AGM_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F16E_AGM_US
-    SubDepictionGenerators = SubGenerators_Showroom_F16E_AGM_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F16E_AGM_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -632,7 +746,10 @@ Gfx_F16E_AGM_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F16E_CBU_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F16E_CBU_US
-    SubDepictionGenerators = SubGenerators_Showroom_F16E_CBU_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F16E_CBU_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -644,7 +761,10 @@ Gfx_F16E_CBU_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F16E_HE_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F16E_HE_US
-    SubDepictionGenerators = SubGenerators_Showroom_F16E_HE_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F16E_HE_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -656,7 +776,10 @@ Gfx_F16E_HE_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F16E_SEAD_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F16E_SEAD_US
-    SubDepictionGenerators = SubGenerators_Showroom_F16E_SEAD_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F16E_SEAD_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -668,7 +791,10 @@ Gfx_F16E_SEAD_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F16E_napalm_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F16E_napalm_US
-    SubDepictionGenerators = SubGenerators_Showroom_F16E_napalm_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F16E_napalm_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -680,7 +806,10 @@ Gfx_F16E_napalm_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4E_Phantom_II_AA_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4E_Phantom_II_AA_US
-    SubDepictionGenerators = SubGenerators_Showroom_F4E_Phantom_II_AA_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4E_Phantom_II_AA_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -692,7 +821,10 @@ Gfx_F4E_Phantom_II_AA_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4E_Phantom_II_CBU_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4E_Phantom_II_CBU_US
-    SubDepictionGenerators = SubGenerators_Showroom_F4E_Phantom_II_CBU_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4E_Phantom_II_CBU_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -704,7 +836,10 @@ Gfx_F4E_Phantom_II_CBU_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4E_Phantom_II_HE_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4E_Phantom_II_HE_US
-    SubDepictionGenerators = SubGenerators_Showroom_F4E_Phantom_II_HE_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4E_Phantom_II_HE_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -716,7 +851,10 @@ Gfx_F4E_Phantom_II_HE_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4E_Phantom_II_napalm_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4E_Phantom_II_napalm_US
-    SubDepictionGenerators = SubGenerators_Showroom_F4E_Phantom_II_napalm_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4E_Phantom_II_napalm_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -728,7 +866,10 @@ Gfx_F4E_Phantom_II_napalm_US_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4F_Phantom_II_AA_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4F_Phantom_II_AA_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_F4F_Phantom_II_AA_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4F_Phantom_II_AA_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -740,7 +881,10 @@ Gfx_F4F_Phantom_II_AA_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4F_Phantom_II_AT_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4F_Phantom_II_AT_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_F4F_Phantom_II_AT_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4F_Phantom_II_AT_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -752,7 +896,10 @@ Gfx_F4F_Phantom_II_AT_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4F_Phantom_II_HE1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4F_Phantom_II_HE1_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_F4F_Phantom_II_HE1_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4F_Phantom_II_HE1_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -764,7 +911,10 @@ Gfx_F4F_Phantom_II_HE1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4F_Phantom_II_HE2_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4F_Phantom_II_HE2_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_F4F_Phantom_II_HE2_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4F_Phantom_II_HE2_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -776,7 +926,10 @@ Gfx_F4F_Phantom_II_HE2_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4F_Phantom_II_RKT1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4F_Phantom_II_RKT1_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_F4F_Phantom_II_RKT1_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4F_Phantom_II_RKT1_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -788,7 +941,10 @@ Gfx_F4F_Phantom_II_RKT1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4F_Phantom_II_RKT2_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4F_Phantom_II_RKT2_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_F4F_Phantom_II_RKT2_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4F_Phantom_II_RKT2_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -800,7 +956,10 @@ Gfx_F4F_Phantom_II_RKT2_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_F4_Wild_Weasel_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_F4_Wild_Weasel_US
-    SubDepictionGenerators = SubGenerators_Showroom_F4_Wild_Weasel_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4_Wild_Weasel_US,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -809,22 +968,13 @@ Gfx_F4_Wild_Weasel_US_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
-Gfx_G91_R3_Gina_AA_RFA_Showroom_Autogen is ShowroomDepictionTemplate
-(
-    MeshDescriptor = Modele_G91_R3_Gina_AA_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_G91_R3_Gina_AA_RFA
-    SubDepictions = 
-    [
-        ShowroomLandingGear
-        (
-            MeshDescriptor = Modele_G91_R3_Gina_AA_RFA_train
-        ),
-    ]
-)
 Gfx_G91_R3_Gina_HE_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_G91_R3_Gina_HE_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_G91_R3_Gina_HE_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_G91_R3_Gina_HE_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -836,7 +986,10 @@ Gfx_G91_R3_Gina_HE_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_G91_R3_Gina_NPL_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_G91_R3_Gina_NPL_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_G91_R3_Gina_NPL_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_G91_R3_Gina_NPL_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -848,7 +1001,10 @@ Gfx_G91_R3_Gina_NPL_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_G91_R3_Gina_RKT_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_G91_R3_Gina_RKT_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_G91_R3_Gina_RKT_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_G91_R3_Gina_RKT_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -857,16 +1013,143 @@ Gfx_G91_R3_Gina_RKT_RFA_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
+Gfx_Gazelle_20mm_FR_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Gazelle_20mm_FR
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = VECTOR[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = VECTOR[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+)
+Gfx_Gazelle_20mm_reco_FR_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Gazelle_20mm_reco_FR
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = VECTOR[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = VECTOR[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+)
+Gfx_Gazelle_HOT_2_FR_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Gazelle_HOT_2_FR
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = VECTOR[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = VECTOR[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+)
+Gfx_Gazelle_HOT_FR_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Gazelle_HOT_FR
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = VECTOR[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = VECTOR[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+)
+Gfx_Gazelle_reco_FR_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Gazelle_reco_FR
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = VECTOR[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = VECTOR[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+)
 Gfx_Harrier_UK_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Harrier_UK
-    SubDepictionGenerators = SubGenerators_Showroom_Harrier_UK
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Harrier_UK,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
         (
             MeshDescriptor = Modele_Harrier_UK_train
         ),
+    ]
+)
+Gfx_Ka_50_AA_SOV_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Ka_50_AA_SOV
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = VECTOR[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = VECTOR[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Ka_50_AA_SOV,
     ]
 )
 Gfx_Ka_50_SOV_Showroom_Autogen is ShowroomDepictionTemplate
@@ -888,12 +1171,18 @@ Gfx_Ka_50_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Ka_50_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Ka_50_SOV,
+    ]
 )
 Gfx_MiG_21PFM_AA_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_21PFM_AA_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_21PFM_AA_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_21PFM_AA_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -905,7 +1194,10 @@ Gfx_MiG_21PFM_AA_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_21PFM_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_21PFM_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_21PFM_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_21PFM_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -917,7 +1209,10 @@ Gfx_MiG_21PFM_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_21bis_AA2_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_21bis_AA2_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_21bis_AA2_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_21bis_AA2_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -929,7 +1224,10 @@ Gfx_MiG_21bis_AA2_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_21bis_HE_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_21bis_HE_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_21bis_HE_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_21bis_HE_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -941,7 +1239,10 @@ Gfx_MiG_21bis_HE_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_21bis_RKT2_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_21bis_RKT2_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_21bis_RKT2_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_21bis_RKT2_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -953,7 +1254,10 @@ Gfx_MiG_21bis_RKT2_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_23BN_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_23BN_AT_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_23BN_AT_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_23BN_AT_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -965,7 +1269,10 @@ Gfx_MiG_23BN_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_23MF_AA_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_23MF_AA_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_23MF_AA_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_23MF_AA_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -977,7 +1284,10 @@ Gfx_MiG_23MF_AA_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_23MF_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_23MF_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_23MF_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_23MF_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -989,7 +1299,10 @@ Gfx_MiG_23MF_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_23ML_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_23ML_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_23ML_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_23ML_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1001,7 +1314,10 @@ Gfx_MiG_23ML_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_23ML_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_23ML_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_23ML_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_23ML_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1013,7 +1329,10 @@ Gfx_MiG_23ML_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_23P_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_23P_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_23P_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_23P_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1025,7 +1344,10 @@ Gfx_MiG_23P_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_25BM_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_25BM_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_25BM_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_25BM_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1037,7 +1359,10 @@ Gfx_MiG_25BM_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_25RBF_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_25RBF_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_25RBF_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_25RBF_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1046,10 +1371,28 @@ Gfx_MiG_25RBF_SOV_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
+Gfx_MiG_27M_SOV_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_MiG_27M_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_27M_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = Modele_MiG_27M_SOV_train
+        ),
+    ]
+)
 Gfx_MiG_27M_bombe_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_27M_bombe_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_27M_bombe_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_27M_bombe_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1061,7 +1404,10 @@ Gfx_MiG_27M_bombe_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_27M_napalm_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_27M_napalm_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_27M_napalm_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_27M_napalm_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1073,7 +1419,10 @@ Gfx_MiG_27M_napalm_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_27M_rkt_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_27M_rkt_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_27M_rkt_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_27M_rkt_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1085,7 +1434,10 @@ Gfx_MiG_27M_rkt_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_27M_sead_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_27M_sead_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_27M_sead_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_27M_sead_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1097,7 +1449,10 @@ Gfx_MiG_27M_sead_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_29_AA_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_29_AA_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_29_AA_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_29_AA_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1109,7 +1464,10 @@ Gfx_MiG_29_AA_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_29_AA_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_29_AA_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_29_AA_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_29_AA_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1121,7 +1479,10 @@ Gfx_MiG_29_AA_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_MiG_31M_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_MiG_31M_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_MiG_31M_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_31M_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1149,7 +1510,10 @@ Gfx_Mi_24D_AA_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24D_AA_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24D_AA_DDR,
+    ]
 )
 Gfx_Mi_24D_s5_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1170,7 +1534,10 @@ Gfx_Mi_24D_s5_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24D_s5_AT_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24D_s5_AT_DDR,
+    ]
 )
 Gfx_Mi_24D_s8_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1191,7 +1558,10 @@ Gfx_Mi_24D_s8_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24D_s8_AT_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24D_s8_AT_DDR,
+    ]
 )
 Gfx_Mi_24K_reco_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1212,7 +1582,10 @@ Gfx_Mi_24K_reco_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24K_reco_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24K_reco_SOV,
+    ]
 )
 Gfx_Mi_24P_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1233,7 +1606,10 @@ Gfx_Mi_24P_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24P_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24P_SOV,
+    ]
 )
 Gfx_Mi_24P_s8_AT2_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1254,7 +1630,10 @@ Gfx_Mi_24P_s8_AT2_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24P_s8_AT2_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24P_s8_AT2_DDR,
+    ]
 )
 Gfx_Mi_24P_s8_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1275,7 +1654,10 @@ Gfx_Mi_24P_s8_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24P_s8_AT_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24P_s8_AT_DDR,
+    ]
 )
 Gfx_Mi_24VP_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1296,7 +1678,10 @@ Gfx_Mi_24VP_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24VP_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24VP_SOV,
+    ]
 )
 Gfx_Mi_24V_AA_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1317,7 +1702,10 @@ Gfx_Mi_24V_AA_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24V_AA_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24V_AA_SOV,
+    ]
 )
 Gfx_Mi_24V_AT_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1338,7 +1726,10 @@ Gfx_Mi_24V_AT_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24V_AT_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24V_AT_SOV,
+    ]
 )
 Gfx_Mi_24V_RKT_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1359,7 +1750,10 @@ Gfx_Mi_24V_RKT_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24V_RKT_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24V_RKT_SOV,
+    ]
 )
 Gfx_Mi_24V_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1380,7 +1774,10 @@ Gfx_Mi_24V_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_24V_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_24V_SOV,
+    ]
 )
 Gfx_Mi_26_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1541,7 +1938,10 @@ Gfx_Mi_8TB_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8TB_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TB_DDR,
+    ]
 )
 Gfx_Mi_8TV_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1562,7 +1962,10 @@ Gfx_Mi_8TV_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8TV_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TV_DDR,
+    ]
 )
 Gfx_Mi_8TV_PodGatling_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1583,7 +1986,10 @@ Gfx_Mi_8TV_PodGatling_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8TV_PodGatling_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TV_PodGatling_DDR,
+    ]
 )
 Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1604,7 +2010,10 @@ Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8TV_PodGatling_PodAGL_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TV_PodGatling_PodAGL_SOV,
+    ]
 )
 Gfx_Mi_8TV_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1625,7 +2034,10 @@ Gfx_Mi_8TV_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8TV_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TV_SOV,
+    ]
 )
 Gfx_Mi_8TV_s57_16_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1646,7 +2058,10 @@ Gfx_Mi_8TV_s57_16_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8TV_s57_16_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TV_s57_16_SOV,
+    ]
 )
 Gfx_Mi_8TV_s57_32_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1667,7 +2082,10 @@ Gfx_Mi_8TV_s57_32_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8TV_s57_32_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TV_s57_32_DDR,
+    ]
 )
 Gfx_Mi_8TV_s57_32_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1688,7 +2106,10 @@ Gfx_Mi_8TV_s57_32_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8TV_s57_32_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TV_s57_32_SOV,
+    ]
 )
 Gfx_Mi_8TV_s80_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1709,7 +2130,10 @@ Gfx_Mi_8TV_s80_SOV_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8TV_s80_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TV_s80_SOV,
+    ]
 )
 Gfx_Mi_8TZ_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1750,7 +2174,10 @@ Gfx_Mi_8T_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_Mi_8T_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8T_DDR,
+    ]
 )
 Gfx_Mi_8_supply_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1789,6 +2216,36 @@ Gfx_Mi_9_DDR_Showroom_Autogen is ShowroomDepictionTemplate
             BoneName = "bloc_moteur_2"
             RotationAxis = VECTOR[0, 1, 0]
             RotationInDegree = -30
+        ),
+    ]
+)
+Gfx_Mirage_2000_C_FR_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Mirage_2000_C_FR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mirage_2000_C_FR,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = Modele_Mirage_2000_C_FR_train
+        ),
+    ]
+)
+Gfx_Mirage_5_F_clu_FR_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Mirage_5_F_clu_FR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mirage_5_F_clu_FR,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = Modele_Mirage_5_F_clu_FR_train
         ),
     ]
 )
@@ -1851,7 +2308,10 @@ Gfx_OH58D_Kiowa_Warrior_US_Showroom_Autogen is ShowroomDepictionTemplate
             RotationInDegree = -30
         ),
     ]
-    SubDepictionGenerators = SubGenerators_Showroom_OH58D_Kiowa_Warrior_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_OH58D_Kiowa_Warrior_US,
+    ]
 )
 Gfx_OH58_CS_US_Showroom_Autogen is ShowroomDepictionTemplate
 (
@@ -1873,10 +2333,28 @@ Gfx_OH58_CS_US_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
+Gfx_Su_17M4_SOV_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Su_17M4_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_17M4_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = Modele_Su_17M4_SOV_train
+        ),
+    ]
+)
 Gfx_Su_22_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_22_AT_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_Su_22_AT_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_AT_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1888,7 +2366,10 @@ Gfx_Su_22_AT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_22_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_22_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_Su_22_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1900,7 +2381,10 @@ Gfx_Su_22_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_22_RKT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_22_RKT_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_Su_22_RKT_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_RKT_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1912,7 +2396,10 @@ Gfx_Su_22_RKT_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_22_SEAD_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_22_SEAD_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_Su_22_SEAD_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_SEAD_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1924,7 +2411,10 @@ Gfx_Su_22_SEAD_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_22_clu_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_22_clu_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_Su_22_clu_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_clu_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1936,7 +2426,10 @@ Gfx_Su_22_clu_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_22_nplm_DDR_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_22_nplm_DDR
-    SubDepictionGenerators = SubGenerators_Showroom_Su_22_nplm_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_nplm_DDR,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1945,10 +2438,28 @@ Gfx_Su_22_nplm_DDR_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
+Gfx_Su_24MP_SOV_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Su_24MP_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_24MP_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = Modele_Su_24MP_SOV_train
+        ),
+    ]
+)
 Gfx_Su_24M_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_24M_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_24M_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_24M_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1960,7 +2471,10 @@ Gfx_Su_24M_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_24M_clu_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_24M_clu_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_24M_clu_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_24M_clu_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1972,7 +2486,10 @@ Gfx_Su_24M_clu_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_24M_nplm_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_24M_nplm_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_24M_nplm_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_24M_nplm_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -1981,22 +2498,13 @@ Gfx_Su_24M_nplm_SOV_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
-Gfx_Su_25T_SOV_Showroom_Autogen is ShowroomDepictionTemplate
-(
-    MeshDescriptor = Modele_Su_25T_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_25T_SOV
-    SubDepictions = 
-    [
-        ShowroomLandingGear
-        (
-            MeshDescriptor = Modele_Su_25T_SOV_train
-        ),
-    ]
-)
 Gfx_Su_25_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_25_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_25_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_25_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2008,7 +2516,10 @@ Gfx_Su_25_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_25_clu_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_25_clu_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_25_clu_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_25_clu_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2020,7 +2531,10 @@ Gfx_Su_25_clu_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_25_he_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_25_he_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_25_he_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_25_he_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2032,7 +2546,10 @@ Gfx_Su_25_he_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_25_nplm_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_25_nplm_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_25_nplm_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_25_nplm_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2044,7 +2561,10 @@ Gfx_Su_25_nplm_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_25_rkt_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_25_rkt_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_25_rkt_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_25_rkt_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2056,7 +2576,10 @@ Gfx_Su_25_rkt_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Su_27S_SOV_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Su_27S_SOV
-    SubDepictionGenerators = SubGenerators_Showroom_Su_27S_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_27S_SOV,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2065,10 +2588,48 @@ Gfx_Su_27S_SOV_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
+Gfx_Super_Puma_FR_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Super_Puma_FR
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = VECTOR[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = VECTOR[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+)
+Gfx_Tornado_ADV_HE_UK_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Tornado_ADV_HE_UK
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Tornado_ADV_HE_UK,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = Modele_Tornado_ADV_HE_UK_train
+        ),
+    ]
+)
 Gfx_Tornado_ADV_SEAD_UK_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Tornado_ADV_SEAD_UK
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_ADV_SEAD_UK
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Tornado_ADV_SEAD_UK,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2080,7 +2641,10 @@ Gfx_Tornado_ADV_SEAD_UK_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Tornado_ADV_UK_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Tornado_ADV_UK
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_ADV_UK
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Tornado_ADV_UK,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2089,10 +2653,28 @@ Gfx_Tornado_ADV_UK_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
+Gfx_Tornado_ADV_clu_UK_Showroom_Autogen is ShowroomDepictionTemplate
+(
+    MeshDescriptor = Modele_Tornado_ADV_clu_UK
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Tornado_ADV_clu_UK,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = Modele_Tornado_ADV_clu_UK_train
+        ),
+    ]
+)
 Gfx_Tornado_IDS_AT1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Tornado_IDS_AT1_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_IDS_AT1_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Tornado_IDS_AT1_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2101,22 +2683,13 @@ Gfx_Tornado_IDS_AT1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
-Gfx_Tornado_IDS_AT2_RFA_Showroom_Autogen is ShowroomDepictionTemplate
-(
-    MeshDescriptor = Modele_Tornado_IDS_AT2_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_IDS_AT2_RFA
-    SubDepictions = 
-    [
-        ShowroomLandingGear
-        (
-            MeshDescriptor = Modele_Tornado_IDS_AT2_RFA_train
-        ),
-    ]
-)
 Gfx_Tornado_IDS_CLUS_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Tornado_IDS_CLUS_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_IDS_CLUS_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Tornado_IDS_CLUS_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2128,7 +2701,10 @@ Gfx_Tornado_IDS_CLUS_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Tornado_IDS_HE1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Tornado_IDS_HE1_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_IDS_HE1_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Tornado_IDS_HE1_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2137,22 +2713,13 @@ Gfx_Tornado_IDS_HE1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
         ),
     ]
 )
-Gfx_Tornado_IDS_HE2_RFA_Showroom_Autogen is ShowroomDepictionTemplate
-(
-    MeshDescriptor = Modele_Tornado_IDS_HE2_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_IDS_HE2_RFA
-    SubDepictions = 
-    [
-        ShowroomLandingGear
-        (
-            MeshDescriptor = Modele_Tornado_IDS_HE2_RFA_train
-        ),
-    ]
-)
 Gfx_Tornado_IDS_MW1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Tornado_IDS_MW1_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_IDS_MW1_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Tornado_IDS_MW1_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
@@ -2164,24 +2731,15 @@ Gfx_Tornado_IDS_MW1_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 Gfx_Tornado_IDS_RFA_Showroom_Autogen is ShowroomDepictionTemplate
 (
     MeshDescriptor = Modele_Tornado_IDS_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_IDS_RFA
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Tornado_IDS_RFA,
+    ]
     SubDepictions = 
     [
         ShowroomLandingGear
         (
             MeshDescriptor = Modele_Tornado_IDS_RFA_train
-        ),
-    ]
-)
-Gfx_Tornado_IDS_SEAD_RFA_Showroom_Autogen is ShowroomDepictionTemplate
-(
-    MeshDescriptor = Modele_Tornado_IDS_SEAD_RFA
-    SubDepictionGenerators = SubGenerators_Showroom_Tornado_IDS_SEAD_RFA
-    SubDepictions = 
-    [
-        ShowroomLandingGear
-        (
-            MeshDescriptor = Modele_Tornado_IDS_SEAD_RFA_train
         ),
     ]
 )

@@ -1784,13 +1784,6 @@ export UnitEffect_GroundUnit_Cohesion_High is TEffectsPackDescriptor
             BonusTurretRotationSpeed  = 10
         ),
 
-        // BonusVitesse
-        TUnitEffectIncreaseSpeedDescriptor
-        (
-            ModifierType             = ~/ModifierType_Pourcentage
-            BonusSpeedBaseInPercent  = 10
-        ),
-
         // RaiseTag
         TUnitEffectRaiseTagDescriptor
         (
@@ -2793,6 +2786,34 @@ export UnitEffect_Tps_entre_salve_115pourcent is TEffectsPackDescriptor
         (
             ModifierType                     = ~/ModifierType_Multiplicatif
             ModificationTempsEntreDeuxSalves = 1.15
+        ),
+
+    ]
+)
+export UnitEffect_Tps_entre_salve_125pourcent is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{6893a72c-42ba-454c-b3b3-c5bc4b315e87}
+    NameForDebug       = 'Tps_entre_salve_125pourcent'
+    EffectsDescriptors = [
+        // BonusWeaponTempsEntreDeuxSalves
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModificationTempsEntreDeuxSalves = 1.25
+        ),
+
+    ]
+)
+export UnitEffect_Tps_entre_salve_150pourcent is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{e02d854c-ceb5-4e67-b33c-3466367f96db}
+    NameForDebug       = 'Tps_entre_salve_150pourcent'
+    EffectsDescriptors = [
+        // BonusWeaponTempsEntreDeuxSalves
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModificationTempsEntreDeuxSalves = 1.50
         ),
 
     ]

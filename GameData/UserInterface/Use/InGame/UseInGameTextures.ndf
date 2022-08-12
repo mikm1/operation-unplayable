@@ -28,6 +28,7 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("UseInGame_Transport_ATGun",                         MAP [(~/ComponentState/Normal, ~/UseInGame_Transport_ATGun)] ),
         ("UseInGame_Transport_Mortar",                        MAP [(~/ComponentState/Normal, ~/UseInGame_Transport_Mortar)] ),
         ("UseInGame_Transport_HOWZ",                          MAP [(~/ComponentState/Normal, ~/UseInGame_Transport_HOWZ)] ),
+        ("UseInGame_Transport_UNKNOW",                        MAP [(~/ComponentState/Normal, ~/UseInGame_Transport_UNKNOW)] ),
 
 //       Curseurs tactiques
         ("Texture_Tactical_Cursor_Forbidden",                 MAP [(~/ComponentState/Normal, ~/Texture_Tactical_Cursor_Forbidden)] ),
@@ -589,8 +590,8 @@ UseInGame_Transport_ARMORED        is TUIResourceTexture_InGame( FileName = 'Gam
 UseInGame_Transport_CMD            is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/CMD.png')
 UseInGame_Transport_ELIINF         is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/ELIINF.png')
 UseInGame_Transport_HOWZ           is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/HOWZ.png')
-
 UseInGame_Transport_supply         is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/supply.png')
+UseInGame_Transport_UNKNOW         is TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Transport/UNKNOW.png')
 
 UseInGame_RadioFeedback                       is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/radio_feedback.png")
 

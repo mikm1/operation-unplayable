@@ -7,7 +7,7 @@ MainOutGameSoloDescriptor is BUCKContainerDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1.0, 1]
+        RelativeWidthHeight = [1.0, 1.0]
     )
 
     Components =
@@ -25,7 +25,8 @@ MainOutGameSoloDescriptor is BUCKContainerDescriptor
             )
             TextureToken = "OutgameTexture_outgame_Solo"
         ),
-        ListeDesActionsSolo,
+
+        ~/ListeDesActionsSolo,
 
         BUCKContainerDescriptor
         (
@@ -43,7 +44,6 @@ MainOutGameSoloDescriptor is BUCKContainerDescriptor
         // effet par dessus
         BUCKTextureDescriptor
         (
-
             ComponentFrame = TUIFramePropertyRTTI
             (
                 RelativeWidthHeight = [ 1.0, 1.0 ]
@@ -54,15 +54,19 @@ MainOutGameSoloDescriptor is BUCKContainerDescriptor
         ),
     ]
 )
+
 //-------------------------------------------------------------------------------------
+
 ListeDesActionsSolo is BUCKListDescriptor
 (
+    ElementName = "ListeDesActionsSolo"
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, 200.0]
-        MagnifiableOffset = [-52,265]
+        MagnifiableWidthHeight = [0.0, 221.0]
+        MagnifiableOffset = [-52.0, 265.0]
     )
+
     Axis = ~/ListAxis/Horizontal
 
     FirstMargin = TRTTILength(Magnifiable = 200.0)
@@ -83,6 +87,7 @@ ListeDesActionsSolo is BUCKListDescriptor
                 LeftClickSound = SoundEvent_EnterSoloTutorial
             )
         ),
+
         BUCKListElementDescriptor
         (
             ExtendWeight = 1.0
@@ -107,6 +112,7 @@ ListeDesActionsSolo is BUCKListDescriptor
                 LeftClickSound = SoundEvent_EnterSoloSkirmish
             )
         ),
+
         BUCKListElementDescriptor
         (
             ExtendWeight = 1.0
@@ -133,6 +139,7 @@ ListeDesActionsSolo is BUCKListDescriptor
         ),
     ]
 )
+
 //-------------------------------------------------------------------------------------
 private SoloRadioButtonManager is TBUCKRadioButtonManager()
 
@@ -145,7 +152,7 @@ template ThumbnailSoloDescriptor
     ForceEvents: boolean = false,
     TextColor : string = "menu_titre_solo",
     TextSize : string = "28",
-    DecalageTextureSurvol : float2 = [-15,40],
+    DecalageTextureSurvol : float2 = [-15.0, 40.0],
     TextureColorToken : string = '',
     Locked: boolean = false,
     LeftClickSound : TSoundDescriptor = nil,
@@ -153,16 +160,18 @@ template ThumbnailSoloDescriptor
  is BUCKButtonDescriptor
 (
     ElementName = <ElementName>
-    IsTogglable = <IsTogglable>
-    DefaultToggleValue = <DefaultToggleValue>
-    RadioButtonManager = <IsTogglable> ? ~/SoloRadioButtonManager : nil
-    CannotDeselect = <IsTogglable>
-    ForceEvents = <ForceEvents>
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [0.0, 1.0]
         MagnifiableWidthHeight = [291.0, 0.0]
     )
+
+    IsTogglable = <IsTogglable>
+    DefaultToggleValue = <DefaultToggleValue>
+    RadioButtonManager = <IsTogglable> ? ~/SoloRadioButtonManager : nil
+    CannotDeselect = <IsTogglable>
+    ForceEvents = <ForceEvents>
 
     LeftClickSound = <LeftClickSound>
 
@@ -172,10 +181,10 @@ template ThumbnailSoloDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableWidthHeight = [293,38]
-                AlignementToFather = [0.5, 0]
-                AlignementToAnchor = [0.5, 0]
-                MagnifiableOffset = [0,-10]
+                MagnifiableWidthHeight = [293.0, 38.0]
+                AlignementToFather = [0.5, 0.0]
+                AlignementToAnchor = [0.5, 0.0]
+                MagnifiableOffset = [0.0, -10.0]
             )
             TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
             TextureToken =  'Outgame_survol_menuSolo'
@@ -191,7 +200,7 @@ template ThumbnailSoloDescriptor
             ComponentFrame = TUIFramePropertyRTTI
             (
                 RelativeWidthHeight = [1.0, 0.0]
-                MagnifiableWidthHeight = [0,25]
+                MagnifiableWidthHeight = [0.0, 25.0]
             )
             HasBackground = false
             BackgroundBlockColorToken = "BlancLight"
@@ -208,8 +217,7 @@ template ThumbnailSoloDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableWidthHeight = [321,211]
-
+                MagnifiableWidthHeight = [321.0, 211.0]
                 MagnifiableOffset = <DecalageTextureSurvol>
             )
             TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
@@ -249,6 +257,7 @@ template ThumbnailSoloDescriptor
         ),
     ]
 )
+
 //------------------------------------------------------------------------------
 
 UISpecificOutGameSoloViewDescriptor is TUISpecificOutGameSoloViewDescriptor

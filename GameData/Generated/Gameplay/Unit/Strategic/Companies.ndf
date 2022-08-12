@@ -51,7 +51,7 @@ export Descriptor_Company_TestPawn is TEntityDescriptor
                 (
                     UseFollowCam               = False
                     StickToGround              = True
-                    InGeoDb                    = False
+                    InGeoDb                    = True
                     PorteurMustBeVisible       = True
                     ClampInWorld               = True
                     ClampOutMap                = False
@@ -156,11 +156,6 @@ export Descriptor_Company_TestPawn is TEntityDescriptor
 
         // StrategicMovementLink
         $/GFX/Everything/StrategicMovementDescriptor_company,
-
-        // PackCarrier
-        TPackCarrierModuleDescriptor
-        (
-        ),
 
     ]
 )

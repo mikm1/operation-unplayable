@@ -118,6 +118,8 @@ private EffectsPacksList is TGameplayEffectsPacksList
         ~/UnitEffect_Supprime_Zone_Dinfluence,
         ~/UnitEffect_Tank_bonus_discretion,
         ~/UnitEffect_Tps_entre_salve_115pourcent,
+        ~/UnitEffect_Tps_entre_salve_125pourcent,
+        ~/UnitEffect_Tps_entre_salve_150pourcent,
         ~/UnitEffect_Tps_entre_salve_50pourcent,
         ~/UnitEffect_Tps_entre_salve_66pourcent,
         ~/UnitEffect_Tps_entre_salve_75pourcent,

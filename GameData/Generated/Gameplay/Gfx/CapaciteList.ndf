@@ -666,7 +666,7 @@ export Capacite_Infanterie_Dissimulee is TCapaciteDescriptor
     Price = MAP[]
     TagsCiblePossible = [
         "Infanterie",
-        "Armes_tractees",
+        "Unite_transportable",
     ]
 
 )

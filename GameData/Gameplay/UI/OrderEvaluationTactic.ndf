@@ -2,6 +2,90 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
     GameplayLogicManagerHandler = $/UI/LogicManagers/InGameLogicManagerHandler
     OrderEvaluatorList = [
 
+        TOrderEvaluatorAny(
+            OrderToken = "UnloadFromTransport"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorAny(
+            OrderToken = "Sell"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorAny(
+            OrderToken = "Land"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorStop(
+            OrderToken = "Stop"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorAny(
+            OrderToken = "AirplaneEvacuate"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorAny(
+            OrderToken = "AirplaneTakeOff"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorChangeAltitude(
+            OrderToken = "ChangeAltitude"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorSpread(
+            OrderToken = "Spread"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorAny(
+            OrderToken = "HoldPosition"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorPlayerMission(
+            OrderToken = "AIDefend"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorPlayerMission(
+            OrderToken = "AIManageArtillery_CounterBattery"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorPlayerMission(
+            OrderToken = "AIManageArtillery_Auto"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorPlayerMission(
+            OrderToken = "AIStop"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
+        TOrderEvaluatorPlayerMission(
+            OrderToken = "AIAirplaneAutoManage"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
         TOrderEvaluatorUseCapacite(
             OrderToken = "UseCapacite"
             IgnoreDefaultOrder = false
@@ -11,6 +95,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             MouseWidgetSelector = "MouseWidgetSelector_Explode"
             PlayFXFeedbackWithPositionOnScreen = true
         ),
+
         TOrderEvaluatorAny(
             OrderToken = "UseCapacite"
             IgnoreDefaultOrder = true
@@ -87,6 +172,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             ClampDestination = true
             OrderInterpretationForOrderDisplayAndAcknows = "FastMoveAndAttack"
         ),
+
         TOrderEvaluatorMoveAndAttack(
             OrderToken = "SmartMoveAndAttack"
             IgnoreDefaultOrder = false
@@ -98,6 +184,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             ClampDestination = true
             OrderInterpretationForOrderDisplayAndAcknows = "MoveAndAttack"
         ),
+
         TOrderEvaluatorMoveAndAttack(
             OrderToken = "MoveAndAttack"
             IgnoreDefaultOrder = false
@@ -118,6 +205,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             PlayFXFeedbackWithoutTargets = true
             PlayFXFeedbackWithPositionOnScreen = false
         ),
+
         TOrderEvaluatorShootOnPosition(
             OrderToken = "ShootOnPositionSmoke"
             IgnoreDefaultOrder = false
@@ -136,6 +224,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             PlayFXFeedbackWithPositionOnScreen = false
             IsTargetAuthorized = false
         ),
+
         TOrderEvaluatorUnloadAtPosition(
             OrderToken = "UnloadAtPosition"
             IgnoreDefaultOrder = true
@@ -153,6 +242,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
             PlayFXFeedbackWithPositionOnScreen = false
         ),
+
         TOrderEvaluatorLoadUnit(
             OrderToken = "LoadUnit"
             IgnoreDefaultOrder = false
@@ -160,7 +250,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
             PlayFXFeedbackWithPositionOnScreen = false
         ),
-
 
         TOrderEvaluatorMove(
             OrderToken = "Reverse"
@@ -171,6 +260,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
         ),
+
         TOrderEvaluatorMove(
             OrderToken = "QuickMove"
             IgnoreDefaultOrder = false
@@ -180,6 +270,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
         ),
+
         TOrderEvaluatorMove(
             OrderToken = "SmartMove"
             IgnoreDefaultOrder = false
@@ -190,6 +281,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             ClampDestination = true
             OrderInterpretationForOrderDisplayAndAcknows = "Move"
         ),
+
         TOrderEvaluatorMove(
             OrderToken = "Move"
             IgnoreDefaultOrder = false

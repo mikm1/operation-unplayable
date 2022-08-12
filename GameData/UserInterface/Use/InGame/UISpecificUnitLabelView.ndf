@@ -173,30 +173,43 @@ template UnitLabelBackground
     MagnifiableWidthHeight : float2 = [47.0, 47.0],
     FrameMagnifiableWidthHeight : float2 = [62.0, 62.0],
 ]
-is BUCKTextureDescriptor
+is BUCKSensibleAreaDescriptor
 (
-    ElementName = 'Background'
+    ElementName = "BackgroundSensibleArea"
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = <MagnifiableWidthHeight>
     )
 
-    UseLocalRenderLayer = true
-    HasBackground = false
-    BackgroundLocalRenderLayer = <LocalRenderLayer> - 1
-    LocalRenderLayer = <LocalRenderLayer>
-    HasBorder = false
-    BorderThicknessToken = '2'
-    BorderLineColorToken = 'Blanc'
+    Components =
+    [
+        BUCKTextureDescriptor
+        (
+            ElementName = 'Background'
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+            )
 
-    TextureFrame   = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = <FrameMagnifiableWidthHeight>
-        AlignementToFather = [0.5, 0.5]
-        AlignementToAnchor = [0.5, 0.5]
-    )
+            UseLocalRenderLayer = true
+            HasBackground = false
+            BackgroundLocalRenderLayer = <LocalRenderLayer> - 1
+            LocalRenderLayer = <LocalRenderLayer>
+            HasBorder = false
+            BorderThicknessToken = '2'
+            BorderLineColorToken = 'Blanc'
 
-    ClipTextureToComponent = false
+            TextureFrame   = TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = <FrameMagnifiableWidthHeight>
+                AlignementToFather = [0.5, 0.5]
+                AlignementToAnchor = [0.5, 0.5]
+            )
+
+            ClipTextureToComponent = false
+        )
+    ]
 )
 
 //----------------------------------------------------------------------
@@ -215,7 +228,7 @@ is BUCKTextDescriptor
     )
 
     UseLocalRenderLayer = true
-    LocalRenderLayer = <LocalRenderLayer> + 1
+    LocalRenderLayer = <LocalRenderLayer>
 
     ParagraphStyle = TParagraphStyleRTTI
     (
@@ -245,7 +258,7 @@ is BUCKTextDescriptor
             BorderLineColorToken = 'Gris_pi'
             Radius = 3
             UseLocalRenderLayer = true
-            LocalRenderLayer = <LocalRenderLayer>
+            LocalRenderLayer = <LocalRenderLayer> - 1
         )
     ]
 )
@@ -1170,10 +1183,8 @@ private SelectionLabelList is
 
     BUCKListElementDescriptor
     (
-        ComponentDescriptor = BUCKSensibleAreaDescriptor
+        ComponentDescriptor = BUCKContainerDescriptor
         (
-            ElementName = "LabelUnitSensibleArea"
-
             ComponentFrame = TUIFramePropertyRTTI
             (
                 MagnifiableWidthHeight = [0.0, 0.0]
@@ -1233,10 +1244,8 @@ private MultiSelectionLabelList is
 [
     BUCKListElementDescriptor
     (
-        ComponentDescriptor = BUCKSensibleAreaDescriptor
+        ComponentDescriptor = BUCKContainerDescriptor
         (
-            ElementName = "LabelUnitSensibleArea"
-
             ComponentFrame = TUIFramePropertyRTTI
             (
                 MagnifiableWidthHeight = [UnitLabelUnitBUCKComponentDescriptorWidth, UnitLabelUnitBUCKComponentDescriptorHeight]
@@ -1265,17 +1274,30 @@ private MultiSelectionLabelList is
 
                     BackgroundComponents =
                     [
-                        PanelRoundedCorner
+                        BUCKSensibleAreaDescriptor
                         (
+                            ElementName = "BackgroundSensibleArea"
+
                             ComponentFrame = TUIFramePropertyRTTI
                             (
                                 RelativeWidthHeight = [1.0, 1.0]
                             )
 
-                            LocalRenderLayer = 2
-                            BackgroundBlockColorToken = 'LightGrayBlue'
-                            BorderLineColorToken = 'H2_bleu_2_40p'
-                        ),
+                            Components =
+                            [
+                                PanelRoundedCorner
+                                (
+                                    ComponentFrame = TUIFramePropertyRTTI
+                                    (
+                                        RelativeWidthHeight = [1.0, 1.0]
+                                    )
+
+                                    LocalRenderLayer = 2
+                                    BackgroundBlockColorToken = 'LightGrayBlue'
+                                    BorderLineColorToken = 'H2_bleu_2_40p'
+                                ),
+                            ]
+                        )
                     ]
 
                     Elements =
@@ -1359,12 +1381,26 @@ private template RightLabel
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = UnitLabelUnitIcon
+            ComponentDescriptor = BUCKSensibleAreaDescriptor
             (
-                AlignementToFather = [0.0, 0.5]
-                AlignementToAnchor = [0.0, 0.5]
-                HasBorder = false
-                LocalRenderLayer = 3
+                ElementName = "UnitIconSensibleArea"
+
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    AlignementToFather = [0.0, 0.5]
+                    AlignementToAnchor = [0.0, 0.5]
+                )
+
+                FitStyle = ~/ContainerFitStyle/FitToContent
+
+                Components =
+                [
+                    UnitLabelUnitIcon
+                    (
+                        HasBorder = false
+                        LocalRenderLayer = 3
+                    )
+                ]
             )
         ),
        BUCKListElementDescriptor(ComponentDescriptor = ~/UnitLabelUnitSupplyGaugeBUCKComponent),
@@ -1504,6 +1540,48 @@ private template UnitNameList
 [
     IsForMultiSelection : bool = false,
     IsForCarriedUnit : bool = false,
+    LocalRenderLayer : int,
+] is BUCKListDescriptor
+(
+    ElementName = <IsForCarriedUnit> ? "CarriedUnitNameList" : "UnitNameList"
+    ComponentFrame = TUIFramePropertyRTTI(MagnifiableWidthHeight = [0.0, 17.0])
+
+    Axis = ~/ListAxis/Horizontal
+    InterItemMargin = TRTTILength(Magnifiable = 0.0)
+    LocalRenderLayer = <LocalRenderLayer>
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = UnitLabelUnitCountIconBUCKComponent
+            (
+                Alignement = [0.0, 0.5]
+                IsForCarriedUnit = <IsForCarriedUnit>
+                LocalRenderLayer = <LocalRenderLayer>
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = UnitLabelUnitNameBUCKComponent
+            (
+                Alignement = [0.0, 0.5]
+                IsForMultiSelection = <IsForMultiSelection>
+                IsForCarriedUnit = <IsForCarriedUnit>
+            )
+        ),
+    ]
+)
+
+
+//-------------------------------------------------------------------------------------
+
+// nom & nb unités d'infanterie
+private template UnitNameListSensibleArea
+[
+    IsForMultiSelection : bool = false,
+    IsForCarriedUnit : bool = false,
+    LocalRenderLayer : int,
 ]
 is BUCKSensibleAreaDescriptor
 (
@@ -1517,40 +1595,16 @@ is BUCKSensibleAreaDescriptor
     FitStyle = ~/ContainerFitStyle/FitToContent
     IsClippable = false
 
-    LocalRenderLayer = 1
+    LocalRenderLayer = <LocalRenderLayer>
 
     Components =
     [
-        BUCKListDescriptor
+        UnitNameList
         (
-            ElementName = <IsForCarriedUnit> ? "CarriedUnitNameList" : "UnitNameList"
-            ComponentFrame = TUIFramePropertyRTTI(MagnifiableWidthHeight = [0.0, 17.0])
-
-            Axis = ~/ListAxis/Horizontal
-            InterItemMargin = TRTTILength(Magnifiable = 0.0)
-
-            Elements =
-            [
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = UnitLabelUnitCountIconBUCKComponent
-                    (
-                        Alignement = [0.0, 0.5]
-                        LocalRenderLayer = 4
-                        IsForCarriedUnit = <IsForCarriedUnit>
-                    )
-                ),
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = UnitLabelUnitNameBUCKComponent
-                    (
-                        Alignement = [0.0, 0.5]
-                        IsForMultiSelection = <IsForMultiSelection>
-                        IsForCarriedUnit = <IsForCarriedUnit>
-                    )
-                ),
-            ]
-        ),
+            IsForMultiSelection = false
+            IsForCarriedUnit = <IsForCarriedUnit>
+            LocalRenderLayer = <LocalRenderLayer> + 1
+        )
     ]
 )
 
@@ -1606,13 +1660,32 @@ is BUCKListDescriptor
         BUCKListElementDescriptor(ComponentDescriptor = UnitLabelUnitReloadIconBUCKComponent(MagnifiableOffset = [11.0, 0.0])),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = UnitNameList
+            ComponentDescriptor = <IsForMultiSelection> ? UnitNameList
             (
-                IsForMultiSelection = <IsForMultiSelection>
+                IsForMultiSelection = true
                 IsForCarriedUnit = true
+                LocalRenderLayer = 1
+            )
+            : UnitNameListSensibleArea
+            (
+                IsForCarriedUnit = true
+                LocalRenderLayer = 1
             )
         ),
-        BUCKListElementDescriptor(ComponentDescriptor = UnitNameList( IsForMultiSelection = <IsForMultiSelection> )),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = <IsForMultiSelection> ? UnitNameList
+            (
+                IsForMultiSelection = true
+                IsForCarriedUnit = false
+                LocalRenderLayer = 1
+            )
+            : UnitNameListSensibleArea
+            (
+                IsForCarriedUnit = false
+                LocalRenderLayer = 1
+            )
+        ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = UnitLabelUnitMoraleGaugeBUCKComponent
@@ -1681,6 +1754,9 @@ is TUISpecificInGameUnitLabelViewDescriptor
     AimingDefaultColor = "Cyan"
     AimingWhileMovingColor = "Cyan50p"
 
+    ReloadingDefaultColor = "Vert"
+    ReloadingWhileMovingColor = "Vert50p"
+
     // Smart Orders
     SmartOrderLabelTokens = MAP
     [
@@ -1714,6 +1790,9 @@ is TUISpecificInGameUnitLabelViewDescriptor
             "ORD_INVLS"
         ),
     ]
+
+    // Resources
+    UnitLabelResources = ~/SpecificInGameUnitLabelResources
 )
 
 //-------------------------------------------------------------------------------------

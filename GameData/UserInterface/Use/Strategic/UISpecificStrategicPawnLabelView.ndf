@@ -422,6 +422,7 @@ private CombatValue is BUCKListDescriptor
     (
         AlignementToFather = [1.0, 1]
         AlignementToAnchor = [1.0, 0.5]
+        MagnifiableOffset = [0,5]
     )
 
     Axis = ~/ListAxis/Horizontal
@@ -461,7 +462,7 @@ private Fatigue is BUCKTextureDescriptor
     ElementName = 'FatigueIcon'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [64, 10]
+        MagnifiableWidthHeight = [64, 16]
         AlignementToFather = [0.5, 0.0]
         AlignementToAnchor = [0.5, 0.0]
     )

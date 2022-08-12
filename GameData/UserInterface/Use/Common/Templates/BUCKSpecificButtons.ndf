@@ -226,6 +226,9 @@ template BUCKSpecificButton
     BorderThicknessToken : string = '1',
     FitStyle : int = ~/ContainerFitStyle/None,
 
+    PanelRoundedCorner_BorderLineColorToken : string = "BoutonTemps",
+    PanelRoundedCorner_BackgroundBlockColorToken : string = "BoutonTemps",
+
     Components : LIST<TBUCKContainerDescriptor> = [],
 
     AllowMultipleInputsPerFrame : bool = false,
@@ -399,8 +402,8 @@ is BUCKButtonDescriptor
                 PanelRoundedCorner
                 (
                     Radius = 3
-                    BackgroundBlockColorToken = "BoutonTemps"
-                    BorderLineColorToken = "BoutonTemps"
+                    BackgroundBlockColorToken = <PanelRoundedCorner_BackgroundBlockColorToken>
+                    BorderLineColorToken = <PanelRoundedCorner_BorderLineColorToken>
                     RoundedVertexes = <RoundedVertexes>
                 )
             ]
@@ -653,6 +656,8 @@ template ConfirmButton
 
     Components : LIST<TBUCKContainerDescriptor> = [],
 
+    RadioButtonManager : TBUCKRadioButtonManager = nil,
+
     AllowMultipleInputsPerFrame : bool = false,
 
     Grayed : bool = false,
@@ -731,6 +736,8 @@ is BUCKSpecificButton
     ExternalBorderLineColorToken = <ExternalBorderLineColorToken>
 
     Components = <Components>
+
+    RadioButtonManager = <RadioButtonManager>
 
     Grayed = <Grayed>
     IsFocusable = <IsFocusable>

@@ -40,7 +40,7 @@ export CubeAction_Menu_Ordres_Arty_OffMap is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (
@@ -115,7 +115,7 @@ export CubeAction_Menu_Ordres_UnitesSuicides is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (
@@ -171,7 +171,7 @@ export CubeAction_Menu_Ordres_avions is TCubeActionMenuDescriptor
         (
             14,
             [
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
     ]
@@ -340,7 +340,7 @@ export CubeAction_Menu_Ordres_infs is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (
@@ -415,7 +415,7 @@ export CubeAction_Menu_Ordres_infs_Arme_AP is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (
@@ -570,7 +570,7 @@ export CubeAction_Menu_Ordres_observers is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (
@@ -669,7 +669,7 @@ export CubeAction_Menu_Ordres_observers_Arme_AP is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (
@@ -744,7 +744,7 @@ export CubeAction_Menu_Ordres_observers_NonArme is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (
@@ -935,7 +935,7 @@ export CubeAction_Menu_Ordres_transports_Arme_AP is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (
@@ -1034,7 +1034,7 @@ export CubeAction_Menu_Ordres_transports_Artillery is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (
@@ -1242,7 +1242,7 @@ export CubeAction_Menu_Ordres_unites is TCubeActionMenuDescriptor
         (
             17,
             [
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
     ]
@@ -1317,7 +1317,7 @@ export CubeAction_Menu_Ordres_unites_Arme_AP is TCubeActionMenuDescriptor
             12,
             [
                 ~/CubeAction_Order_AIAttack,
-                ~/CubeAction_Order_AIAiplaneAutoManage,
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
         (

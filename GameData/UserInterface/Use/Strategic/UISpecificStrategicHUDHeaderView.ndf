@@ -53,6 +53,7 @@ private SpecificStrategicHUDHeaderViewMainComponent is BUCKListDescriptor
                             ComponentFrame = TUIFramePropertyRTTI
                             (
                                 MagnifiableWidthHeight = [0.0, 29.0]
+                                MagnifiableOffset = [-10,0]
                             )
 
                             SpotlightComponent = SpotlightDescriptor()
@@ -349,8 +350,7 @@ UISpecificStrategicHUDHeaderOptionViewDescriptor is TUISpecificStrategicHUDHeade
     GameSpeedInformations =
     [
         ("vitesse03Strat", -1.0),
-        ("vitesse04Strat", -1.0),
-        ("vitesse05Strat", -1.0),
+        ("vitesse04Strat", 0.2),
     ]
 
     DefaultForceShowPowerGauges = true
@@ -363,15 +363,18 @@ private ReinforcementButton is BUCKSpecificButton
     ElementName = 'BtnReinforcement'
 
     RoundedCorner = true
-    BackgroundBlockColorToken  = ""
+    PanelRoundedCorner_BackgroundBlockColorToken  = "SM_RifleGreen_75"
+    PanelRoundedCorner_BorderLineColorToken = 'SM_Grullo'
 
-    TextColorToken = "ButtonHUD/Text2"
+
     ButtonRelativeWidthHeight = [0.0, 0.0]
-    ButtonMagnifiableWidthHeight = [55.0, 30.0]
+    ButtonMagnifiableWidthHeight = [555.0, 30.0]
 
     TextParagraphStyle = ~/paragraphStyleTextCenter //paragraphStyleTextLeftAlign
     HasText = true
-    TextSizeToken = "22"
+    TextTypefaceToken = "Eurostyle_Heavy"
+    TextColorToken = "SM_paleSilver"
+    TextSizeToken = "18"
     TextToken = ""
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
     HidePointerEvents = true

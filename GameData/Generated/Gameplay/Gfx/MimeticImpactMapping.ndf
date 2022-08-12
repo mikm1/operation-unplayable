@@ -231,9 +231,12 @@
         Action3 = $/GFX/GameFx/fx_impact_balle_sol_tres_petit_FM_section_3
         Action4 = $/GFX/GameFx/fx_impact_balle_sol_tres_petit_FM_section_4
     )
-    export FxImpactBalleSolTresPetitMMGSection1_Connector            is ImpactConnector
+    export FxImpactBalleSolTresPetitMG3Section__Connector            is ImpactConnector
     (
-        Action1 = $/GFX/GameFx/fx_impact_balle_sol_tres_petit_MMG_section_1
+        Action1 = $/GFX/GameFx/fx_impact_balle_sol_tres_petit_MG3_section_2
+        Action2 = $/GFX/GameFx/fx_impact_balle_sol_tres_petit_MG3_section_3
+        Action3 = $/GFX/GameFx/fx_impact_balle_sol_tres_petit_MG3_section_4
+        Action4 = $/GFX/GameFx/fx_impact_balle_sol_tres_petit_MG3_section_5
     )
     export FxImpactBalleSolTresPetitMMGSection__Connector            is ImpactConnector
     (
@@ -842,6 +845,18 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
+        (   TFxWeaponType_BombeBLG66 , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolClusterMK20RockeyeIISalve_Connector ),
+                ( EImpactSurface/Water         , FxImpactSolClusterMK20RockeyeIISalve_Connector ),
+                ( EImpactSurface/Air           , FxOuvertureBombeCluster_Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolClusterMK20RockeyeIISalve_Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolClusterMK20RockeyeIISalve_Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolClusterMK20RockeyeIISalve_Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
         (   TFxWeaponType_BombeBLU100Mk83 , MAP
             [
                 ( EImpactSurface/Ground        , FxImpactSolBombM117__Connector ),
@@ -1154,6 +1169,18 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , FxRebondObusGros_Connector ),
             ]
         ),
+        (   TFxWeaponType_CanonMoyenBOFORHEFI , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolHEPetit__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHEGros_Connector ),
+                ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
+                ( EImpactSurface/Wall          , FxImpactBatHeGros_Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactObusVehiculeMoyen__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactHeVehiculeAirGros_Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , FxRebondObusGros_Connector ),
+            ]
+        ),
         (   TFxWeaponType_CanonMoyenHEBMP3 , MAP
             [
                 ( EImpactSurface/Ground        , FxImpactSolHEGros__Connector ),
@@ -1174,6 +1201,18 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Wall          , FxImpactBatHeGros_Connector ),
                 ( EImpactSurface/Vehicle       , FxImpactObusVehiculeMoyen__Connector ),
                 ( EImpactSurface/FlyingVehicle , FxImpactApVehiculeAirGros_Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , FxRebondObusGros_Connector ),
+            ]
+        ),
+        (   TFxWeaponType_CanonMoyenS60HEFI , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolHEPetit__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHEGros_Connector ),
+                ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
+                ( EImpactSurface/Wall          , FxImpactBatHeGros_Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactObusVehiculeMoyen__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactHeVehiculeAirGros_Connector ),
                 ( EImpactSurface/Missile       , nil ),
                 ( EImpactSurface/Ricochet      , FxRebondObusGros_Connector ),
             ]
@@ -1922,13 +1961,25 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
-        (   TFxWeaponType_MitrailleuseM60Externe , MAP
+        (   TFxWeaponType_MitrailleuseMG3Inf , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactBalleSolTresPetitMG3Section__Connector ),
+                ( EImpactSurface/Water         , OrientationWrapperFxImpactBallesCal50Eau_Connector ),
+                ( EImpactSurface/Air           , FxImpactBallesAirTresPetit__Connector ),
+                ( EImpactSurface/Wall          , FxImpactBalleBatimentTresPetitMMGSection__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactBalleSolTresPetitMG3Section__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactBallesVehiculeAirTresPetit__Connector ),
+                ( EImpactSurface/Missile       , FxImpactBalleVehiculeMoyen_Connector ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_MitrailleuseMMGInf , MAP
             [
                 ( EImpactSurface/Ground        , FxImpactBalleSolTresPetitMMGSection__Connector ),
                 ( EImpactSurface/Water         , OrientationWrapperFxImpactBallesCal50Eau_Connector ),
                 ( EImpactSurface/Air           , FxImpactBallesAirTresPetit__Connector ),
                 ( EImpactSurface/Wall          , FxImpactBalleBatimentTresPetitMMGSection__Connector ),
-                ( EImpactSurface/Vehicle       , FxImpactBalleSolTresPetitMMGSection1_Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactBalleSolTresPetitMMGSection__Connector ),
                 ( EImpactSurface/FlyingVehicle , FxImpactBallesVehiculeAirTresPetit__Connector ),
                 ( EImpactSurface/Missile       , FxImpactBalleVehiculeMoyen_Connector ),
                 ( EImpactSurface/Ricochet      , nil ),

@@ -180,81 +180,6 @@ template SmartGroupActionButton
 
 //----------------------------------------------------
 
-SmartGroupActions is BUCKGridDescriptor
-(
-    ElementName = "SmartGroupActions"
-
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        AlignementToFather = [0.0, 1.0]
-        AlignementToAnchor = [0.0, 1.0]
-    )
-
-    MaxElementsPerDimension = [0, 2]
-
-    FirstElementMargin = TRTTILength2(Magnifiable = [10.0, 0.0])
-    InterElementMargin = TRTTILength2(Magnifiable = [1.0, 1.0])
-    LastElementMargin = TRTTILength2(Magnifiable = [10.0, 0.0])
-
-    GridElements = MAP
-    [
-        ( [0, 0], SmartGroupActionButton(ElementName = "ReinforceButton" TextToken = "SGR_REIN" IsTogglable = false HasHintableArea = true) ),
-        ( [0, 1], SmartGroupActionButton(ElementName = "DisolveButton" TextToken = "SGR_DISLV" IsTogglable = false HasHintableArea = false) ),
-        ( [1, 0], SmartGroupActionButton(ElementName = "RemoveUnitButton" TextToken = "SGR_REMOV" IsTogglable = true HasHintableArea = false) ),
-        ( [1, 1], SmartGroupActionButton(ElementName = "AddUnitButton" TextToken = "SGR_ADDU" IsTogglable = true HasHintableArea = false) ),
-    ]
-)
-
-//----------------------------------------------------
-
-SmartGroupDisolveSubActions is BUCKListDescriptor
-(
-    ElementName = "SmartGroupDisolveSubActions"
-
-    ComponentFrame = TUIFramePropertyRTTI()
-
-    Axis = ~/ListAxis/Horizontal
-    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-
-    InterItemMargin = TRTTILength(Magnifiable = 2.0)
-
-    Elements =
-    [
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = SmartGroupActionButton
-            (
-                ElementName = "DisolveOkButton"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [49.0, 32.0]
-                )
-
-                TextToken = "OK_BTN"
-                IsTogglable = false
-                HasHintableArea = false
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = SmartGroupActionButton
-            (
-                ElementName = "DisolveCancelButton"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [49.0, 32.0]
-                )
-
-                TextToken = "BTL_CANCL"
-                IsTogglable = false
-                HasHintableArea = false
-            )
-        ),
-    ]
-)
-
-//----------------------------------------------------
-
 SmartGroupLabelContainer is BUCKContainerDescriptor
 (
     ElementName = "SmartGroupLabelContainerAndButton"
@@ -353,11 +278,7 @@ SmartGroupUnitGrid is BUCKSpecificScrollingContainerDescriptor
 
 //----------------------------------------------------
 
-template SmartGroupSelectionPanelMainPanel
-[
-    HasActionButtons : bool,
-
-] is BUCKListDescriptor
+SmartGroupSelectionPanelMainPanel is BUCKListDescriptor
 (
     ElementName = "SmartGroupSelectionPanelMainPanel"
 
@@ -371,30 +292,35 @@ template SmartGroupSelectionPanelMainPanel
     InterItemMargin = TRTTILength(Magnifiable = 0.0)
 
     Elements =
-    (<HasActionButtons> ?
-        [
-            BUCKListElementDescriptor
-            (
-                ComponentDescriptor = ~/SmartGroupActions
-            ),
-        ] : []
-    ) +
     [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = SmartGroupActionButton
+            (
+                ElementName = "DisolveButton"
+
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [75.0, 25.0]
+                    AlignementToFather = [0.0, 1.0]
+                    AlignementToAnchor = [0.0, 1.0]
+                )
+
+                TextToken = "SGR_DISLV"
+                IsTogglable = false
+                HasHintableArea = false
+            )
+        ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = ~/SmartGroupUnitGrid
         ),
     ]
-
 )
 
 //-------------------------------------------------------------------------------------
 
-template BUCKSpecificSmartGroupSelectionPanelMainComponentDescriptor
-[
-    HasActionButtons : bool,
-]
- is BUCKListDescriptor
+BUCKSpecificSmartGroupSelectionPanelMainComponentDescriptor is BUCKListDescriptor
 (
     ElementName = "SmartGroupSelectionPanelMainComponent"
 
@@ -413,7 +339,7 @@ template BUCKSpecificSmartGroupSelectionPanelMainComponentDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = SmartGroupSelectionPanelMainPanel(HasActionButtons = <HasActionButtons>)
+            ComponentDescriptor = ~/SmartGroupSelectionPanelMainPanel
         )
     ]
 
@@ -433,17 +359,12 @@ template BUCKSpecificSmartGroupSelectionPanelMainComponentDescriptor
 template UISpecificSmartGroupSelectionPanelViewDescriptor
 [
     MainComponentContainerUniqueName : string,
-    HasActionButtons : bool,
 ] is TUISpecificSmartGroupSelectionPanelViewDescriptor
 (
-    MainComponentDescriptor = BUCKSpecificSmartGroupSelectionPanelMainComponentDescriptor
-    (
-        HasActionButtons = <HasActionButtons>
-    )
+    MainComponentDescriptor = ~/BUCKSpecificSmartGroupSelectionPanelMainComponentDescriptor
 
     MainComponentContainerUniqueName = <MainComponentContainerUniqueName> // Permet d'indiquer l'endroit ou le composant doit s'insérer
 
-    SmartGroupDisolveSubActionList = (<HasActionButtons> ? ~/SmartGroupDisolveSubActions : nil)
     SmartGroupLabelContainer = ~/SmartGroupLabelContainer
 
     UnitLabelResources = ~/SpecificInGameUnitLabelResources

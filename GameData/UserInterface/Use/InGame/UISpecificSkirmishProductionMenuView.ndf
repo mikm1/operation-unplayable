@@ -9,7 +9,7 @@ template BUCKSpecificSkirmishProductionMenuMainComponentDescriptor
     IsFromStrategic : bool,
 ] is BUCKContainerDescriptor
 (
-    UniqueName = 'HUDTopElement'
+    UniqueName = "HUDTopElement"
 
     ComponentFrame = TUIFramePropertyRTTI
     (
@@ -75,7 +75,7 @@ template BUCKSpecificSkirmishProductionMenuMainComponentDescriptor
 
 private PanelInfoPartie is BUCKListDescriptor
 (
-    ElementName = 'ListeDesRessources'
+    ElementName = "ListeDesRessources"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 32.0]
@@ -89,17 +89,16 @@ private PanelInfoPartie is BUCKListDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = PointsCommandement
+            ComponentDescriptor = ~/PointsCommandement
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = ChronoPointCommandement
+            ComponentDescriptor = ~/ChronoPointCommandement
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = NombreSecteur
+            ComponentDescriptor = ~/NombreSecteur
         ),
-
     ]
 
     BackgroundComponents =
@@ -149,19 +148,17 @@ private PointsCommandement is BUCKListDescriptor
                  [
                     BUCKSpecificHintableArea
                     (
-                        HintBodyToken = 'LR_cmd'
+                        HintBodyToken = "LR_cmd"
                         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     )
                 ]
-
-
             )
         ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKTextDescriptor
             (
-                UniqueName = 'CommmandPointsText'
+                UniqueName = "CommmandPointsText"
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
@@ -195,8 +192,6 @@ private PointsCommandement is BUCKListDescriptor
                 (
                     DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     HintBodyToken = "LR_cmd"
-                    //HintBodyToken = "HPD_CMDB"
-                    //HintExtendedToken = "HPD_CMDE"
                 )
             )
         ),
@@ -204,7 +199,7 @@ private PointsCommandement is BUCKListDescriptor
         (
             ComponentDescriptor = BUCKTextDescriptor
             (
-                UniqueName = 'CommmandPointsIncomeText'
+                UniqueName = "CommmandPointsIncomeText"
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
@@ -236,11 +231,10 @@ private PointsCommandement is BUCKListDescriptor
 
                 Hint = BUCKSpecificHintableArea
                 (
-                    ForbiddenTags = ['ScenarioBreakthrough']
+                    ForbiddenTags = ["ScenarioBreakthrough"]
                     DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     HintTitleToken = "HPD_INCT"
                     HintBodyToken = "LR_incob"
-                    //HintExtendedToken = "HPD_INCE"
                 )
             )
         ),
@@ -288,7 +282,7 @@ private ChronoPointCommandement is BUCKListDescriptor
                         ChronoDrawer = $/UserInterface/ChronoDrawerCommon
 
                         ChronoTexture = "UseInGame_RequisitionTimer_fond"
-                        TextureToken = "UseInGame_RequisitionTimer" //fond
+                        TextureToken = "UseInGame_RequisitionTimer"
 
                         ChronoTextureColor0 = "Cyan"
                         ChronoTextureColor1 = "Transparent"
@@ -302,12 +296,11 @@ private ChronoPointCommandement is BUCKListDescriptor
                         [
                             BUCKSpecificHintableArea
                             (
-                                ForbiddenTags = ['ScenarioBreakthrough']
+                                ForbiddenTags = ["ScenarioBreakthrough"]
 
                                 DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                                 HintTitleToken = "HPD_CHRONT"
                                 HintBodyToken = "LR_timeB"
-                                //HintExtendedToken = "HPD_CHRONE"
                             ),
                         ]
                     )
@@ -363,7 +356,7 @@ private ChronoPointCommandement is BUCKListDescriptor
 
 private NombreSecteur is BUCKListDescriptor
 (
-    ComponentFrame = TUIFramePropertyRTTI ( RelativeWidthHeight = [0.0,1.0])
+    ComponentFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [0.0, 1.0])
 
     Axis = ~/ListAxis/Horizontal
     FirstMargin = TRTTILength( Magnifiable = 10.0 )
@@ -399,15 +392,13 @@ private NombreSecteur is BUCKListDescriptor
                         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     )
                 ]
-
-
             )
         ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKTextDescriptor
             (
-                UniqueName = 'SectorPointsIncomeText'
+                UniqueName = "SectorPointsIncomeText"
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
@@ -442,22 +433,20 @@ private NombreSecteur is BUCKListDescriptor
                     DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     HintTitleToken = "LR_sect"
                     HintBodyToken = "LR_sectB"
-
                 )
             )
         ),
     ]
 )
 
-
 //-------------------------------------------------------------------------------------
 
 // Container for Requisition points, income and income countdown
 private SkirmishProductionMenuCommandPointsAndIncomeContainer is BUCKSpecificButton
 (
-    ElementName = 'MainButton'
+    ElementName = "MainButton"
 
-    UniqueName = 'ProductionMenuMainButton'
+    UniqueName = "ProductionMenuMainButton"
 
     ButtonMagnifiableOffset = [5.0, 5.0]
     ButtonMagnifiableWidthHeight=[170.0, 40.0]
@@ -473,7 +462,7 @@ private SkirmishProductionMenuCommandPointsAndIncomeContainer is BUCKSpecificBut
 // Categories List
 private SkirmishProductionMenuCategoryList is BUCKListDescriptor
 (
-    ElementName = 'CategoryButtonList'
+    ElementName = "CategoryButtonList"
 
     Axis = ~/ListAxis/Horizontal
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
@@ -488,7 +477,7 @@ private SkirmishProductionMenuCategoryList is BUCKListDescriptor
 // Combat Group List
 private SkirmishProductionMenuCombatGroupList is BUCKListDescriptor
 (
-    ElementName = 'CombatGroupButtonList'
+    ElementName = "CombatGroupButtonList"
 
     Axis = ~/ListAxis/Horizontal
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
@@ -571,10 +560,7 @@ private SmartGroupTypeProductionButton is BUCKSpecificButton
     TextToken = "HUD_PRDGRP"
     UniformDrawer = $/UserInterface/UIUniformDrawer
 
-
-
     HintBodyToken  = "deckSGop"
-
 
     TextComponentFrame = TUIFramePropertyRTTI
     (
@@ -599,7 +585,7 @@ private DeckTypeProductionButton is BUCKSpecificButton
     BackgroundBlockColorToken  = "H2_bleu_5"
 
     TextColorToken = "BlancEquipe"
-    TextSizeToken = '12'
+    TextSizeToken = "12"
     ButtonRelativeWidthHeight = [0.0, 0.0]
     ButtonMagnifiableWidthHeight = [85.0, 14]
 
@@ -624,7 +610,6 @@ private DeckTypeProductionButton is BUCKSpecificButton
     HintTitleToken  = ""
     HintBodyToken  = "deckOp"
     HintExtendedToken  = ""
-
 
     TextComponentFrame = TUIFramePropertyRTTI
     (
@@ -934,27 +919,6 @@ private SmartGroupProductionButtonContainerDescriptor is BUCKContainerDescriptor
                         )
                     ]
                 ),
-                BUCKButtonDescriptor
-                (
-                    ElementName = "SmartGroupProductionButton"
-
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        RelativeWidthHeight = [1.0, 1.0]
-                    )
-
-                    IsTogglable = true
-                    CannotDeselect = true
-                    ForceEvents = true
-
-                    MaskEvents = false
-                    HidePointerEvents = true
-                    PointerEventsToAllow = ~/EAllowablePointerEventType/Move
-
-                    HasBorder = true
-                    BorderLineColorToken = "BoutonVignetteAchat"
-                    BorderThicknessToken = "2"
-                ),
             ]
         )
     ]
@@ -1005,7 +969,6 @@ template UISpecificSkirmishProductionMenuViewDescriptor
 
     NbMaxPlanes = 9
 
-    NbMaxUnitsInAutocreatedSmartGroup = 4
     SquadGroupName = "HPROD_SQD"
     HalfSquadGroupName = "HPROD_HSQD"
 

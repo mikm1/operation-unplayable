@@ -308,8 +308,8 @@ export GenBTDef_Pool_Tank_Defense is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -428,7 +428,6 @@ export GenBTDef_Pool_Tank_Defense_Budget is TPoolModel
             TagsPriority = [
                 "Char_CMD",
                 "Vehicule_CMD",
-                "Char_Lourd",
                 "Char_Standard",
                 "Char",
                 "Vehicule_Appui"
@@ -454,8 +453,8 @@ export GenBTDef_Pool_Tank_Defense_Budget is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
+                "Char",
                 "Vehicule_Appui",
             ]
         ),
@@ -506,7 +505,7 @@ export GenBTDef_Pool_AA_Defense_Budget is TPoolModel
 //-------------------------------------------------------------------------
 export GenBTDef_Pool_Defense_Filler is TPoolModel
 (
-    Budget = 40
+    Budget = 80
     ModelList = [
         TPoolElement(
             DescriptorId = GUID:{b6ab636d-6a89-11e9-9b0a-704d7b2c87d4}

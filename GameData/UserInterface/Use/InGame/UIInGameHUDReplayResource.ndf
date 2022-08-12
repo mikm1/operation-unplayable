@@ -295,65 +295,6 @@ private ReplayPanel is BUCKContainerDescriptor
                 (
                     ComponentDescriptor = ~/BoutonRapide
                 ),
-                {BUCKListElementDescriptor
-                                (
-                                    ComponentDescriptor = BUCKSpecificButton
-                                    (
-                                        ElementName = "PlayButton"
-
-                                        ButtonMagnifiableWidthHeight = [ReplayPanelButtonWidth, 0.0]
-                                        ButtonRelativeWidthHeight = [0.0, 1.0]
-
-                                        IsTogglable = true
-                                        HidePointerEvents = true
-                                        HasBackgroundTexture = true
-                                        BackgroundTexture = "UseInGame_Texture_Replay_Play"
-
-                                         BackgroundTextureFrameProperty = TUIFramePropertyRTTI
-                                         (
-                                             RelativeWidthHeight = [0.8, 0.8]
-                                             MagnifiableWidthHeight = [0.0, 0.0]
-                                             MagnifiableOffset = [0.0, 0.0]
-                                             AlignementToFather = [0.5, 0.5]
-                                             AlignementToAnchor = [0.5, 0.5]
-                                         )
-                                        HintTitleToken = "HRP_PLAYBT"
-                                        HintBodyToken = "HRP_PLAYBB"
-                                        HintExtendedToken = "HRP_PLAYBE"
-                                        HintDico = ~/LocalisationConstantes/dico_interface_ingame
-                                    )
-                                ),}
-
-                //Bouton accélérer
-
-                {BUCKListElementDescriptor
-                                (
-                                    ComponentDescriptor = BUCKSpecificButton
-                                    (
-                                        ElementName = "SpeedUpButton"
-
-                                        ButtonMagnifiableWidthHeight = [ReplayPanelButtonWidth, 0.0]
-                                        ButtonRelativeWidthHeight = [0.0, 1.0]
-
-                                        HidePointerEvents = true
-                                        HasBackgroundTexture = true
-                                        BackgroundTexture = "UseInGame_Texture_Replay_Accelerate"
-
-                                         BackgroundTextureFrameProperty = TUIFramePropertyRTTI
-                                         (
-                                            RelativeWidthHeight = [0.8, 0.8]
-                                             MagnifiableWidthHeight = [0.0, 0.0]
-                                             MagnifiableOffset = [0.0, 0.0]
-                                             AlignementToFather = [0.5, 0.5]
-                                             AlignementToAnchor = [0.5, 0.5]
-                                         )
-                                        HintTitleToken = "HRP_ISPDBT"
-                                        HintBodyToken = "HRP_ISPDBB"
-                                        HintExtendedToken = "HRP_ISPDBE"
-                                        HintDico = ~/LocalisationConstantes/dico_interface_ingame
-                                    )
-                                ),}
-
                 //Dropdown choix du point de vue
                 BUCKListElementDescriptor
                 (
@@ -473,7 +414,7 @@ BoutonPause is HUDButton
     BorderLineColorToken = 'TimePanel/ButtonBorder'
     BorderThickness = "1"
 
-    BackgroundTexture = "vitesse02"
+    BackgroundTexture = "vitesse01"
     BackgroundTextureFrameProperty = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1, 1]

@@ -59,7 +59,7 @@ export colonelArtilleryCounterBatteryDescriptor is TMacroActionDescriptor_Artill
         TMacroActionProductionSettingHolder(PoolModelList = [] DistanceToOptimumStartDuringDeployment = 3000*Metre),
         TMacroActionLifetimeSettingHolder(MaintainForever = true), //IMPORTANT
         TArtilleryPlayerMissionSettingHolder(
-            AuthorizedTargetTags = ["Artillerie_CMD", "Artillerie_MLRS", "Artillerie_Observateur", "Artillerie_Hors_Carte", "Artillerie_Longue_Portee"] TargetFilter = ETargetFilter_HasShot MaxDurationForTargetValidity = 60 MinDurationForTargetValidity = 10),
+            AuthorizedTargetTags = ["Artillerie_MLRS", "Artillerie_Longue_Portee", "Artillerie_Courte_Portee"] TargetFilter = ETargetFilter_HasShot MaxDurationForTargetValidity = 60 MinDurationForTargetValidity = 10),
         TArtilleryStrikeSettingHolder(DelaytBetweenTargetDeathAndNewStrike = 3),
     ]
 )

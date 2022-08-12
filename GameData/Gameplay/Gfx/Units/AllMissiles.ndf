@@ -44,9 +44,10 @@ ModelFile_Missile_PTAB25 is 'GameData:/Assets/3D/Units/Ammo/Bombes_SD2/PTAB_2_5_
 // Bombes et missiles FULDA
 //new
 //--emports SOV---------------------------------------------------------------------------------------------------
-ModelFile_Missile_FAB100 is    'GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_100/FAB_100.Ase2NdfBin'
-ModelFile_Missile_FAB250 is    'GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_250/FAB_250.Ase2NdfBin'
-ModelFile_Missile_FAB500 is    'GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_500/FAB_500.Ase2NdfBin'
+ModelFile_Missile_FAB_100 is    'GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_100/FAB_100.Ase2NdfBin'
+ModelFile_Missile_FAB_250 is    'GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_250/FAB_250.Ase2NdfBin'
+ModelFile_Missile_FAB_500 is    'GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_500/FAB_500.Ase2NdfBin'
+ModelFile_Missile_RBK_500 is    'GameData:/Assets/3D/Units/Ammo/Bombes/RBK_500.Ase2NdfBin'
 ModelFile_Missile_Vympel_R23R is 'GameData:/Assets/3D/Units/Ammo/Missiles/SOV/Vympel_R23R/Vympel_R23R.Ase2NdfBin'
 ModelFile_Missile_Vympel_R27 is 'GameData:/Assets/3D/Units/Ammo/Missiles/SOV/Vympel_R27/Vympel_R27.Ase2NdfBin'
 ModelFile_Missile_Vympel_R33 is 'GameData:/Assets/3D/Units/Ammo/Missiles/SOV/Vympel_R33/Vympel_R33.Ase2NdfBin'
@@ -84,21 +85,24 @@ ModelFile_Missile_Matra_Super_530D is    'GameData:/Assets/3D/Units/Ammo/Missile
 ModelFile_Missile_Matra_R550_Magic is    'GameData:/Assets/3D/Units/Ammo/Missiles/FR/Matra_R550_Magic.Ase2NdfBin'
 ModelFile_Missile_Matra_R550_Magic_II is 'GameData:/Assets/3D/Units/Ammo/Missiles/FR/Matra_R550_Magic_II.Ase2NdfBin'
 ModelFile_Missile_AS_30L is              'GameData:/Assets/3D/Units/Ammo/Missiles/FR/AS_30L.Ase2NdfBin'
+ModelFile_Missile_AS_30 is              'GameData:/Assets/3D/Units/Ammo/Missiles/FR/AS_30.Ase2NdfBin'
 ModelFile_Missile_GBU_49_Paveway is      'GameData:/Assets/3D/Units/Ammo/Bombes/FR/GBU_49_Paveway_II.Ase2NdfBin'
 ModelFile_Missile_GBU_58_Paveway is      'GameData:/Assets/3D/Units/Ammo/Bombes/FR/GBU_58_Paveway.Ase2NdfBin'
 ModelFile_Missile_Milan is               'GameData:/Assets/3D/Units/Ammo/Missiles/FR/Milan.Ase2NdfBin'
 ModelFile_Missile_HOT is                 'GameData:/Assets/3D/Units/Ammo/Missiles/FR/Hot_2.Ase2NdfBin'
 ModelFile_Missile_ROLAND is              'GameData:/Assets/3D/Units/Ammo/Missiles/FR/Roland.Ase2NdfBin'
+ModelFile_Missile_BLG_66_Belouga is      'GameData:/Assets/3D/Units/Ammo/Bombes/BLG_66_Belouga.Ase2NdfBin'
 // ModelFile_Missile_68mm_Rocket is 'GameData:/Assets/3D/Units/Ammo/Roquettes/68mm_Rocket.Ase2NdfBin'
 
 //--emports UK-----------------------------------------------------------------------------------------------
 
 ModelFile_Missile_AIM132_ASRAAM is  'GameData:/Assets/3D/Units/Ammo/Missiles/UK/AIM_132_ASRAAM/AIM-132 ASRAAM.Ase2NdfBin'
 ModelFile_Missile_Skyflash is  'GameData:/Assets/3D/Units/Ammo/Missiles/UK/Skyflash/Skyflash.Ase2NdfBin'
-ModelFile_Missile_AS37_Martel is    'GameData:/Assets/3D/Units/Ammo/Missiles/UK/AS37_Martel/AS37_Martel.Ase2NdfBin'
-ModelFile_Missile_BLU110_Mk83 is    'GameData:/Assets/3D/Units/Ammo/Bombes/UK/BLU_110_Mk83/BLU_110_Mk83.Ase2NdfBin'
-//ModelFile_Missile_KB44 is    'GameData:/Assets/3D/Units/Ammo/Bombes/UK/Bombes/KB44/KB44.fbx'
+ModelFile_Missile_AS37_Martel is    'GameData:/Assets/3D/Units/Ammo/Missiles/FR/AS37_Martel/AS37_Martel.Ase2NdfBin'
+ModelFile_Missile_BLU_110_Mk83 is    'GameData:/Assets/3D/Units/Ammo/Bombes/UK/BLU_110_Mk83/BLU_110_Mk83.Ase2NdfBin'
 ModelFile_Missile_KB44 is    'GameData:/Assets/3D/Units/Ammo/Bombes/UK/Bombes/KB44/KB44.Ase2NdfBin'
+ModelFile_Missile_Rapier is    'GameData:/Assets/3D/Units/UK/DCA/Tracked_Rapier/Rapier.Ase2NdfBin'
+ModelFile_Missile_Mk_18_RET is    'GameData:/Assets/3D/Units/Ammo/Bombes/UK/Mk_18_RET/Mk_18_RET.fbx'
 
 //--emports US---------------------------------------------------------------------------------------------------
 ModelFile_Missile_Hellfire is 'GameData:/Assets/3D/Units/Ammo/Missiles/US/AGM_114_Hellfire.Ase2NdfBin'
@@ -116,12 +120,14 @@ ModelFile_Missile_GBU_12_Paveway_II is 'GameData:/Assets/3D/Units/Ammo/Bombes/US
 ModelFile_Missile_GBU_24_Paveway_III is 'GameData:/Assets/3D/Units/Ammo/Bombes/US/GBU_24_Paveway_III.Ase2NdfBin'
 ModelFile_Missile_Hydra_70mm is 'GameData:/Assets/3D/Units/Ammo/Missiles/Roquette_Hydra_70mm.Ase2NdfBin'
 ModelFile_Missile_MIM23_I_Hawk is 'GameData:/Assets/3D/Units/Ammo/Missiles/US/MIM23_I_Hawk.Ase2NdfBin'
+ModelFile_Missile_BL755_Cluster is 'GameData:/Assets/3D/Units/Ammo/Bombes/BL755_Cluster.Ase2NdfBin'
 
 //--emports OTAN---------------------------------------------------------------------------------------------------
-ModelFile_Missile_Mk81 is 'GameData:/Assets/3D/Units/Ammo/Bombes/OTAN/MK_81.Ase2NdfBin'
-ModelFile_Missile_Mk82 is 'GameData:/Assets/3D/Units/Ammo/Bombes/OTAN/MK_82.Ase2NdfBin'
-ModelFile_Missile_Mk83 is 'GameData:/Assets/3D/Units/Ammo/Bombes/OTAN/MK_83.Ase2NdfBin'
-ModelFile_Missile_Mk84 is 'GameData:/Assets/3D/Units/Ammo/Bombes/OTAN/MK_84.Ase2NdfBin'
-ModelFile_Missile_Mk77 is 'GameData:/Assets/3D/Units/Ammo/Bombes/Mk_77.Ase2NdfBin'
+ModelFile_Missile_Mk_81 is 'GameData:/Assets/3D/Units/Ammo/Bombes/OTAN/MK_81.Ase2NdfBin'
+ModelFile_Missile_Mk_82 is 'GameData:/Assets/3D/Units/Ammo/Bombes/OTAN/MK_82.Ase2NdfBin'
+ModelFile_Missile_Mk_83 is 'GameData:/Assets/3D/Units/Ammo/Bombes/OTAN/MK_83.Ase2NdfBin'
+ModelFile_Missile_Mk_84 is 'GameData:/Assets/3D/Units/Ammo/Bombes/OTAN/MK_84.Ase2NdfBin'
+ModelFile_Missile_Mk_77 is 'GameData:/Assets/3D/Units/Ammo/Bombes/Mk_77.Ase2NdfBin'
 ModelFile_Missile_GBU10 is 'GameData:/Assets/3D/Units/Ammo/Bombes/US/GBU_10_Paveway_II.Ase2NdfBin'
 ModelFile_Missile_GBU12 is 'GameData:/Assets/3D/Units/Ammo/Bombes/US/GBU_10_Paveway_II.Ase2NdfBin'
+

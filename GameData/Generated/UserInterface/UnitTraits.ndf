@@ -112,6 +112,15 @@ UnitTraits is TUnitTraitsContainer
             )
         ),
         (
+            "autoloader",
+            TUnitTraitDescriptor
+            (
+                TraitTextureName       = "Texture_Trait_Icon_autoloader"
+                TraitHintTitleToken    = "WJTUTHRZHE"
+                TraitHintBodyToken     = "FWYEZTDXZK"
+            )
+        ),
+        (
             "cluster",
             TUnitTraitDescriptor
             (

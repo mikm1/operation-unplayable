@@ -1,4 +1,5 @@
-ZonePointElementName is "Score"
+DestructionPointElementName is "DestructionScore"
+ZonePointElementName is "ZoneScore"
 UnitLossElementName is "Morale"
 
 private template AllianceScoreLine
@@ -303,7 +304,7 @@ BUCKSpecificHUDScorePlayerMainComponentDescriptor is BUCKContainerDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [215.0, 20.0]
+        MagnifiableWidthHeight = [230.0, 20.0]
     )
 
 
@@ -401,6 +402,39 @@ BUCKSpecificHUDScorePlayerMainComponentDescriptor is BUCKContainerDescriptor
 
                 BUCKListElementDescriptor
                 (
+                    ComponentDescriptor = BUCKTextDescriptor
+                    (
+                        ElementName = "Points"
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            RelativeWidthHeight = [0.0, 1.0]
+                            MagnifiableWidthHeight = [50.0, 0.0]
+                            AlignementToFather = [0.0, 0.5]
+                            AlignementToAnchor = [0.0, 0.5]
+                        )
+
+                        TextStyle = "Default"
+                        ParagraphStyle = TParagraphStyleRTTI
+                        (
+                            Alignment = UIText_Right
+                            VerticalAlignment = UIText_VerticalCenter
+                            BigWordAction = ~/BigWordAction/BigWordCut
+                        )
+
+                        TextSize = "14"
+                        TextColor = "Cyan"
+                        TextToken = ""
+                        TextDico = ~/LocalisationConstantes/dico_interface_ingame
+                        TypefaceToken = "IBM"
+
+                        BigLineAction = ~/BigLineAction/ResizeFont
+                        HorizontalFitStyle = ~/FitStyle/UserDefined
+                        VerticalFitStyle = ~/FitStyle/UserDefined
+                    )
+                ),
+
+                BUCKListElementDescriptor
+                (
                     ComponentDescriptor = BUCKContainerDescriptor
                     (
                         ElementName = "PingArea"
@@ -461,6 +495,19 @@ BUCKSpecificHUDScoreAllianceMainComponentDescriptor is BUCKContainerDescriptor
 
             Elements =
             [
+                BUCKListElementDescriptor
+                (
+                    ComponentDescriptor = AllianceScoreLine
+                    (
+                        ElementName = DestructionPointElementName
+                        IconTexture = "icone_scorePoints"
+                        IconHint = "LR_score"
+                        GaugeHint = "LR_team"
+                        GaugeMagnifiableHeight = 18
+                        GaugeIconMagnifiableHeight = 26
+                        GaugeTextSize = "20"
+                    )
+                ),
                 BUCKListElementDescriptor
                 (
                     ComponentDescriptor = AllianceScoreLine
@@ -744,6 +791,7 @@ template UISpecificHUDScoreAllianceViewDescriptor
 
     ScorePointTypeToElementName = MAP
     [
+        (~/EScorePointType/UnitDestruction, DestructionPointElementName),
         (~/EScorePointType/ZonePoint, ZonePointElementName),
         (~/EScorePointType/UnitLoss, UnitLossElementName)
     ]
@@ -757,4 +805,10 @@ UISpecificHUDScoreViewDescriptor is TUISpecificHUDScoreViewDescriptor
 (
     MainComponentDescriptor = ~/MainScorePanelComponent
     MainComponentContainerUniqueName = "SpecificInGameHUDScoreViewMainContainer" // Permet d'indiquer l'endroit ou le composant doit s'insérer
+
+    ScoreToReachToDisplay =
+    [
+        ~/EScorePointType/UnitDestruction,
+        ~/EScorePointType/ZonePoint
+    ]
 )

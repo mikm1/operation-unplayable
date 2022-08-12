@@ -269,7 +269,6 @@ TransportSelectionContainer is BUCKListDescriptor
     ElementName = "TransportSelectionContainer"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, 0.0]
         MagnifiableOffset = [0.0, 200.0]
         AlignementToAnchor = [0.5, 0.0]
         AlignementToFather = [0.5, 0.0]
@@ -286,11 +285,11 @@ TransportSelectionContainer is BUCKListDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = TransportsListTitle
+            ComponentDescriptor = ~/TransportsListTitle
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = TransportsListContent
+            ComponentDescriptor = ~/TransportsListContent
         )
     ]
 
@@ -312,7 +311,6 @@ TransportsListTitle is BUCKTextDescriptor
     ElementName = "TransportsListTitle"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, 0.0]
         AlignementToAnchor = [0.5, 0.0]
         AlignementToFather = [0.5, 0.0]
     )
@@ -322,8 +320,7 @@ TransportsListTitle is BUCKTextDescriptor
         Alignment = UIText_Center
         VerticalAlignment = UIText_VerticalCenter
     )
-    //HasBackground = true
-    BackgroundBlockColorToken = 'Orange'
+
     TextStyle = "Default"
 
     TypefaceToken = "Liberator"
@@ -353,8 +350,7 @@ TransportsListContent is BUCKListDescriptor
         AlignementToAnchor = [0.5, 0.0]
         AlignementToFather = [0.5, 0.0]
     )
-    //HasBackground = true
-    BackgroundBlockColorToken = 'VertMilitaire'
+
     Axis = ~/ListAxis/Horizontal
     FirstMargin = TRTTILength( Magnifiable = 20.0 )
     LastMargin = TRTTILength( Magnifiable = 20.0 )
@@ -380,8 +376,6 @@ is BUCKListElementDescriptor
         ComponentFrame = TUIFramePropertyRTTI
         (
             MagnifiableWidthHeight = [UnitButtonXPAreaWidth, UnitButtonXPHeight]
-            AlignementToAnchor = [0.0, 0.0]
-            AlignementToFather = [0.0, 0.0]
         )
 
         IsTogglable = true
@@ -434,7 +428,6 @@ DivisionGrid is BUCKSpecificScrollingContainerDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [0.0, 1.0]
-        MagnifiableOffset = [0.0, 0.0]
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
@@ -453,11 +446,7 @@ DivisionGrid is BUCKSpecificScrollingContainerDescriptor
         BUCKRackDescriptor
         (
             ElementName = 'UnitDivisionGrid'
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                AlignementToFather = [0.0, 0.0]
-                AlignementToAnchor = [0.0, 0.0]
-            )
+            ComponentFrame = TUIFramePropertyRTTI()
 
             BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
             Axis = ~/ListAxis/Vertical
@@ -511,8 +500,6 @@ DivisionGridContainer is BUCKContainerDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 700.0]
-        AlignementToAnchor = [0.0, 0.0]
-        AlignementToFather = [0.0, 0.0]
         MagnifiableOffset = [20.0, 250.0]
     )
 
@@ -707,17 +694,12 @@ ListeDesUnitesDuDeck is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 90.0]
-        AlignementToAnchor = [0.0, 0.0]
-        AlignementToFather = [0.0, 0.0]
         MagnifiableOffset = [50.0, 0.0]
     )
 
     Axis = ~/ListAxis/Horizontal
 
-    FirstMargin = TRTTILength(Magnifiable = 0.0)
-    InterItemMargin = TRTTILength(Magnifiable = 0.0)
-
-    MagnifierMultiplication = 1 //0.84
+    MagnifierMultiplication = 1
 
     UniformDrawer = $/UserInterface/UIUniformDrawer
 
@@ -833,7 +815,7 @@ private DeckEditorSaveAndCoButtons is BUCKListDescriptor
     ElementName = 'DeckEditorSaveAndCoButtons'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, ButtonLineHeight]
+        MagnifiableWidthHeight = [0.0, ~/ButtonLineHeight]
         AlignementToAnchor = [1.0, 0.5]
         AlignementToFather = [1.0, 0.5]
     )
@@ -859,7 +841,7 @@ private DeckEditorSaveAndCoButtons is BUCKListDescriptor
                 LeftClickSound = SoundEvent_AutofillDeck
             )
         ),
-        BUCKListElementDescriptor( ComponentDescriptor = MenuActionButtonSeparator() ),
+        BUCKListElementDescriptor(ComponentDescriptor = MenuActionButtonSeparator()),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = MenuActionButton
@@ -991,9 +973,6 @@ private DeckPanelContentList is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 0.0]
-        MagnifiableWidthHeight = [0.0, 0.0]
-        AlignementToAnchor = [0.0, 0.0]
-        AlignementToFather = [0.0, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
@@ -1011,8 +990,6 @@ private DeckPanelContentList is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [1.0, 1.0]
-                    AlignementToAnchor = [0.0, 0.0]
-                    AlignementToFather = [0.0, 0.0]
                 )
 
                 Components =
@@ -1071,8 +1048,6 @@ private DeckPanelContentList is BUCKListDescriptor
                                             ComponentFrame = TUIFramePropertyRTTI
                                             (
                                                 MagnifiableWidthHeight = [137.0, 0.0]
-                                                AlignementToAnchor = [0.0, 0.0]
-                                                AlignementToFather = [0.0, 0.0]
                                             )
 
                                             ParagraphStyle = TParagraphStyleRTTI
@@ -1296,9 +1271,7 @@ DeckEditorPackXPSelector is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [UnitButtonXPAreaWidth, 0.0]
-        AlignementToAnchor = [0.0, 0.0]
-        AlignementToFather = [0.0, 0.0]
+        MagnifiableWidthHeight = [~/UnitButtonXPAreaWidth, 0.0]
     )
     Axis = ~/ListAxis/Vertical
 
@@ -1350,7 +1323,7 @@ private DeckEditorBattlegroupNameFrame is BUCKContainerDescriptor
 
     Components =
     [
-        AffichageNomDuDeck
+        ~/AffichageNomDuDeck
     ]
 )
 
@@ -1443,8 +1416,6 @@ ShowDeckPanelButton is BUCKButtonDescriptor
             ComponentFrame = TUIFramePropertyRTTI
             (
                 MagnifiableWidthHeight = [20.0, 20.0]
-                AlignementToAnchor = [0.0, 0.0]
-                AlignementToFather = [0.0, 0.0]
             )
             TextureToken = 'showRoomTexture_minimize'
             TextureColorToken = 'MarronPanel_noir_toggled2'
@@ -1461,8 +1432,6 @@ private affichageCategorieDeck is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 36.0]
-        AlignementToAnchor = [0.0, 0.0]
-        AlignementToFather = [0.0, 0.0]
     )
 
     FirstMargin = TRTTILength( Magnifiable = 70.0 )
@@ -1922,20 +1891,21 @@ NoTransportButtonDescriptor is BUCKButtonDescriptor
     (
         MagnifiableWidthHeight = [UnitButtonMagnifiableWidth, UnitButtonMagnifiableHeight]
         PixelWidthHeight = [2*UnitButtonPixelBorderSize, 2*UnitButtonPixelBorderSize]
-        PixelOffset = [0.0, 2*UnitButtonPixelBorderSize]
+        AlignementToAnchor = [0.0, 0.5]
+        AlignementToFather = [0.0, 0.5]
     )
 
     HasBorder = true
     BorderLineColorToken = "BoutonVignetteAchatArmory"
-    BorderThicknessToken = UnitButtonPixelBorderSizeAsString
+    BorderThicknessToken = ~/UnitButtonPixelBorderSizeAsString
     IsTogglable = true
-    RadioButtonManager = DeckCreatorTransportUnitButtonRadioManager
+    RadioButtonManager = ~/DeckCreatorTransportUnitButtonRadioManager
 
     Components =
     [
         BUCKContainerDescriptor
         (
-            ElementName = "NoTransportButton"
+            ElementName = "NoTransportButtonBackground"
             ComponentFrame = TUIFramePropertyRTTI
             (
                 MagnifiableWidthHeight = [UnitButtonMagnifiableWidth, UnitButtonMagnifiableHeight]
@@ -1951,10 +1921,11 @@ NoTransportButtonDescriptor is BUCKButtonDescriptor
                 SmallOmbrePanel(),
                 BUCKTextDescriptor
                 (
+                    ElementName = "NoTransportButtonText"
                     ComponentFrame = TUIFramePropertyRTTI
                     (
                         RelativeWidthHeight = [1.0, 0.0]
-                        MagnifiableWidthHeight = [- 20.0, 0.0]
+                        MagnifiableWidthHeight = [-20.0, 0.0]
                         AlignementToFather = [0.5, 0.5]
                         AlignementToAnchor = [0.5, 0.5]
                     )
@@ -1973,7 +1944,7 @@ NoTransportButtonDescriptor is BUCKButtonDescriptor
                     TextDico = ~/LocalisationConstantes/dico_interface_ingame
                     TextColor = "Blanc"
                     TextSize = "16"
-                )
+                ),
             ]
         )
     ]
@@ -2040,7 +2011,7 @@ DeckCreatorScreenComponentDescriptor is TUISpecificShowRoomDeckCreatorScreenComp
         ForceEvents = true
     )
 
-    NoTransportComponentDescriptor = NoTransportButtonDescriptor
+    NoTransportComponentDescriptor = ~/NoTransportButtonDescriptor
 
     NbUnitsInDeckPerCategory = ~/MaxUnitsInDeckPerCategory
 

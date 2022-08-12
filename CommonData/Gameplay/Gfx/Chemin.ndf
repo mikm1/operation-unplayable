@@ -17,16 +17,13 @@ template TemplateGfxCheminDirectValidationOrdrePathDescriptor
     Color                 = [107, 120, 66, 50]
     PlaqueSurLeSol        = false
     AngularPrecision      = 20
-    VertexCountPerSection = 4
     RenderLayerSelector = TRenderLayerSelector(RenderLayerName=<RenderLayerName>)
     Material              = $/M3D/Shader/MaterialBezierLine_BichromeNoShadow
     Width                 = Standard_DirectPathWidth
     ArrowLength           = Standard_DirectArrowLength
-    ArrowWidth            = Standard_DirectArrowWidth
-    Texture               = ~/TextureToutBlanc
+    ArrowWidth            = Standard_DirectPathWidth
     FadeOffDuration       = 0
     GrowingDuration       = 0
-    EndPathShapeMode      = EndPathShapeMode_NarrowArrow
     SizeMultiplierHelper  = PathAndArrowSizeMultiplierHelper
     GFxInstanceDirectRenderHandler = ~/directRenderHandler_default
 

@@ -28,9 +28,201 @@ BonusStrategicObjectiveLabel is StrategicObjectiveLabelTemplate
     NewObjectiveToken = "OBJ_NEWS"
 )
 
-InfoStrategicObjectiveLabel is StrategicObjectiveLabelTemplate
+InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
 (
+    ScaleFactor = 0.0
+    AltitudeMaxSize = 100.0
+    MinScale = 0.0
+    MaxScale = 1.0
+
     NewObjectiveToken = "OBJ_NEWI"
+
+    ObjectiveLabelTransformation = TLabelTransformationComposition
+    (
+        Transformations = [
+            TLabelTransformFaceCam
+            (
+                Camera = $/M3D/Camera/CameraPrincipale
+            ),
+            TLabelTransformFakePerspective
+            (
+                ScalePerAltitudeConstReso = 0.6
+                Camera = $/M3D/Camera/CameraPrincipale
+                Scene2D = $/M3D/Scene/Scene_2D_Interface
+                ConstnessFactor = 0.6
+            ),
+        ]
+    )
+    //ObjectiveFeedbackMagnifiableVerticalOffset = HistoricalBattlesObjectiveFeedbackMagnifiableVerticalOffset
+
+    ComponentDescriptor = BUCKListDescriptor
+    (
+        Axis = ~/ListAxis/Vertical
+        BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+
+        ComponentFrame = TUIFramePropertyRTTI
+        (
+            MagnifiableWidthHeight = [0, 0]
+            MagnifiableOffset = [0, -50]
+        )
+        Elements =
+        [
+            BUCKListElementDescriptor
+            (
+                ComponentDescriptor = BUCKContainerDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        PixelWidthHeight = [DistanceBetweenExternalAndInternalBorder * 2.0 + 1.0, DistanceBetweenExternalAndInternalBorder + 1.0]
+                        MagnifiableWidthHeight = [50, 0]
+                    )
+                )
+            ),
+
+            BUCKListElementDescriptor
+            (
+                ComponentDescriptor = BUCKContainerDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        MagnifiableWidthHeight = [32.0, 8.0]
+                        AlignementToAnchor = [0.5, 0.0]
+                        AlignementToFather = [0.5, 0.0]
+                    )
+
+                    FitStyle = ~/ContainerFitStyle/FitToContent
+
+                    Components =
+                    [
+                        ObjectiveLabelText
+                        (
+                            ElementName = "Title"
+
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                MagnifiableWidthHeight = [150, 0.0]
+                                AlignementToFather = [0.5, 0.5]
+                                AlignementToAnchor = [0.5, 0.5]
+                            )
+
+                            TypefaceToken = "UIMainFont"
+                            TextSize = "16"
+                            TextColor = "Orange"
+
+                            Alignment = UIText_Center
+
+                            HorizontalFitStyle = ~/FitStyle/MinBetweenUserDefinedAndContent
+                        )
+
+
+                    ]
+                )
+            ),
+
+            BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = BUCKContainerDescriptor
+                        (
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                PixelWidthHeight = [DistanceBetweenExternalAndInternalBorder * 2.0 + 1.0, DistanceBetweenExternalAndInternalBorder + 1.0]
+                                MagnifiableWidthHeight = [50, 0]
+                            )
+                        )
+                    ),
+
+            BUCKListElementDescriptor
+            (
+                ComponentDescriptor = BUCKContainerDescriptor
+                (
+                    ElementName = "ContentContainer"
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        MagnifiableWidthHeight = [32.0, 8.0]
+
+                    )
+
+                    FitStyle = ~/ContainerFitStyle/FitToContent
+
+                    Components =
+                    [
+                        ObjectiveLabelText
+                        (
+                            ElementName = "Content"
+
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                MagnifiableWidthHeight = [100, 0.0]
+                                AlignementToFather = [0.5, 0.0]
+                                AlignementToAnchor = [0.5, 0.0]
+                            )
+                            TextPadding = TRTTILength4( Magnifiable = [5,0,5,5] )
+                            TypefaceToken = "UIMainFont"
+                            TextSize = "12"
+                            TextColor = "VertLogin"
+
+
+
+                            HorizontalFitStyle = ~/FitStyle/MinBetweenUserDefinedAndContent
+                        )
+                    ]
+                )
+            ),
+        ]
+
+        BackgroundComponents =
+        [
+            //<BackgroundComponent>
+            PanelRoundedCorner
+                (
+                    BackgroundBlockColorToken = 'LDHintSolo_fond'
+                            BorderLineColorToken = 'LDHintSolo_texte'
+                            BorderThicknessToken = '2'
+                ),
+                BUCKContainerDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        MagnifiableWidthHeight = [ 2.0, 40.0 ]
+                        AlignementToAnchor = [ 0.0, 0.0 ]
+                        AlignementToFather = [ 0.0, 0.0 ]
+                        MagnifiableOffset = [-4,0]
+                    )
+
+                    ElementName = "Pole"
+
+                    HasBackground = true
+                    BackgroundBlockColorToken = 'Orange' //SD2_Blanc184'
+                ),
+        ]
+
+        ForegroundComponents =
+        [
+            BUCKTextDescriptor
+            (
+                ElementName = "HeadingText"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    //RelativeWidthHeight = [1.0, 0.0]
+                    MagnifiableOffset = [0.0, -5.0]
+                    AlignementToAnchor = [0.5, 1.0]
+                    AlignementToFather = [0.5, 0.0]
+                    )
+                ParagraphStyle = paragraphStyleTextCenter
+                TextStyle = "Default"
+                HorizontalFitStyle = ~/FitStyle/FitToContent
+                VerticalFitStyle = ~/FitStyle/FitToContent
+                TypefaceToken = "Eurostyle"
+                BigLineAction = ~/BigLineAction/MultiLine
+
+                TextDico = ~/LocalisationConstantes/dico_maps
+                TextColor = "BlancTexte"
+                TextSize = "22"
+
+
+            )
+        ]
+    )
 )
 
 CaptureStrategicObjectiveLabel is StrategicObjectiveLabelTemplate

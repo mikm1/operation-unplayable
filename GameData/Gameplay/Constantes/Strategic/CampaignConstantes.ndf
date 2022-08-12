@@ -1,4 +1,4 @@
-ZocRadius is 700 * Metre
+ZocRadius is 353 * Metre
 
 StrategicCampaignConstantes is TStrategicCampaignConstantes
 (
@@ -19,15 +19,13 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     PawnDissolutionFactor = 0.70 //Un pion est dissout après le combat si sa dernière compagnie est en dessous de X% de son effectif initial
     CompanyDissolutionFactor = 0.3 //Une compagnie est dissoute après le combat si elle est en dessous de X% de son effectif initial
     FreeDefenseRadius = 1.75 * ~/ActionPointConsumptionRefs/CaseSize // Le rayon autour de l'unité attaquée dans lequel les unités alliés peuvent attaquer sans reset leur défense et sans bouger
-    NbActionPointsNeededToFight = 3 //Nombre de PA nécessaire pour participer à une bataille une fois sur place
+    NbActionPointsNeededToFight = 4 //Nombre de PA nécessaire pour participer à une bataille une fois sur place
     NbActionPointsNeededToFightForAirplane = 1 //Nombre de PA nécessaire pour participer à une bataille une fois sur place
 
     // Zocs et fuite
     ConflictingUnitRadius = ZocRadius   //Taille de la ZOC des unités.
     EnemiesDisableSpawnRadius = 0 * ~/ActionPointConsumptionRefs/CaseSize    //Taille du rayon qui desactive les point de renfort
     EnemiesCaptureAirportRadius = 2 * ~/ActionPointConsumptionRefs/CaseSize        //Taille du rayon qui capture les aéroports
-    APSlowZocMalus = 1.0
-    APSlowZocMalusFeedbackDuration = 5//ticks
     DisableGroundZocsWhenNoAP = false
     DisableMoveOrderOnDisabledZocs = false
     FleeToAlliesIfPossible = true
@@ -40,8 +38,8 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     AlignAirplaneInAirportOnGrid = true
 
     //Regles du Tactique
-    TacticalTimeLimit = 30
-    TacticalScoreLimit = 3000
+    TacticalTimeLimit = 60
+    TacticalScoreLimit = 1000
 
     //----------
     // Consequences de combat
@@ -129,10 +127,9 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     SteelmanCombatFX = $/GFX/GameFx/FX_Steelman_Combat_Binder
     SteelmanFxDuration = 1
     SteelmanCombatSound = $/VFX_Bank/SFX_Steelman_Combat_Sound
-
     SteelmanAirCombatFX = $/GFX/GameFx/FX_Steelman_Combat_Binder
     SteelmanAirCombatFxDuration = 45
-    SteelmanAirCombatSound = $/VFX_Bank/SFX_Steelman_Combat_Sound
+    SteelmanAirCombatSound = $/VFX_Bank/SFX_Steelman_Combat_Air_Air_Sound
 
     // Possibilite de conserver un ordre sur plusieurs tours
     MultipleTurnOrdersActivated = false
@@ -159,14 +156,14 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
 
     DefaultStartingTicketsPoints = MAP
     [
-        (ENationalite/Allied, 30),
-        (ENationalite/Axis, 30),
+        (ENationalite/Allied, 17),
+        (ENationalite/Axis, 17),
     ]
 
     DefaultTicketsPointsIncome = MAP // points par minute
     [
-        (ENationalite/Allied, 5),
-        (ENationalite/Axis, 5),
+        (ENationalite/Allied, 3),
+        (ENationalite/Axis, 3),
     ]
 
     AerialBattleTicketsPoint = MAP
@@ -291,6 +288,6 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
 
     HideManual = true
 
-    BataillonMoralValue = 40
+    BataillonMoralValue = 30
     DefeatMoralPercentage = 0.2
 )

@@ -259,6 +259,7 @@ Budget_Default_Attack is 200
 Budget_Infantry_Attack is 160
 Budget_Tank_Attack is 200
 Budget_Combined_Attack is 200
+Budget_Attack_Filler is 80
 //-------------------------------------------------------------------------
 // PoolModelList
 //-------------------------------------------------------------------------
@@ -337,7 +338,7 @@ Vehicule_Fallback_Attack is [
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
             ]
         ),
 ]
@@ -352,7 +353,8 @@ export Pool_Attack_MBT is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/MostExpensive
             TagsPriority = [
-                "Char_Lourd",
+                "Char_Standard",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -372,7 +374,7 @@ export Pool_Attack_MBT is TPoolModel
 //-------------------------------------------------------------------------
 export Pool_Attack_Filler is TPoolModel
 (
-    Budget = 40
+    Budget = ~/Budget_Attack_Filler
     ModelList = [
         TPoolElement(
             DescriptorId = GUID:{80ad8347-d931-11e8-891e-2c56dc4c150d}
@@ -412,7 +414,6 @@ export Pool_Objective_Attack is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
                 "Char"
             ]
@@ -465,7 +466,6 @@ export Pool_Main_Attack is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
                 "Char",
                 "Vehicule_Appui",
@@ -491,8 +491,8 @@ export Pool_Main_Attack is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
+                "Char",
                 "Vehicule_Appui",
             ]
         ),
@@ -544,7 +544,7 @@ export Pool_Default_Attack_1 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
                 "Vehicule_Appui",
             ]
         ),
@@ -579,7 +579,7 @@ export Pool_Default_Attack_1 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
                 "Vehicule_Appui",
             ]
         ),
@@ -663,7 +663,7 @@ export Pool_Default_Attack_2 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
             ]
         ),
     ]
@@ -703,7 +703,7 @@ export Pool_Default_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Cheapest
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -724,7 +724,7 @@ export Pool_Default_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -753,8 +753,8 @@ export Pool_Tank_Attack_1 is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -799,7 +799,7 @@ export Pool_Tank_Attack_1 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -810,7 +810,7 @@ export Pool_Tank_Attack_1 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
             ]
         ),
     ]
@@ -828,7 +828,7 @@ export Pool_Tank_Attack_2 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -862,8 +862,8 @@ export Pool_Tank_Attack_2 is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -884,7 +884,7 @@ export Pool_Tank_Attack_2 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
                 "Canon_AA_Porte",
             ]
         ),
@@ -924,8 +924,8 @@ export Pool_Tank_Attack_3 is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Cheapest
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -948,7 +948,7 @@ export Pool_Tank_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -959,7 +959,7 @@ export Pool_Tank_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
             ]
         ),
     ]
@@ -1220,9 +1220,9 @@ export Pool_Combined_Attack_1 is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
                 "Vehicule_Appui",
+                "Char",
             ]
         ),
         TPoolElement(
@@ -1366,7 +1366,7 @@ export Pool_Combined_Attack_2 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
-                "Char_Lourd",
+                "Char",
                 "Canon_AA_Porte",
                 "Vehicule_Appui",
             ]
@@ -1443,10 +1443,10 @@ export Pool_Combined_Attack_3 is TPoolModel
             Nb = 1
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Char_Lourd",
                 "Char_Standard",
                 "Canon_AA_Porte",
                 "Vehicule_Appui",
+                "Char",
             ]
         ),
         TPoolElement(

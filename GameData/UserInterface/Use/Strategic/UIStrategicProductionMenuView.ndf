@@ -89,6 +89,10 @@ private FlecheDeRenfort is BUCKListDescriptor
 
                 HidePointerEvents = true
 
+                HasBorder = true
+                BorderThicknessToken = "1"
+                BorderLineColorToken = "SM_Grullo"
+
                 PolygonShape = PolygonShapeManual
                 (
                     Corners =
@@ -98,12 +102,13 @@ private FlecheDeRenfort is BUCKListDescriptor
                         [0.0, 1.0],
                     ]
                 )
-                Color0 = "H2_bleu_2"
-                Color1 = "H2_bleu_2"
+                Color0 = "SM_RifleGreen_75"
+                Color1 = "SM_RifleGreen_75"
             )
         ),
     ]
 )
+
 
 // -------------------------------------------------------------------------------------------------
 // CategoryList
@@ -124,8 +129,18 @@ private StrategicProductionMenuCategoryList is BUCKListDescriptor
     InterItemMargin = TRTTILength (Magnifiable = 20)
     LastMargin = TRTTILength(Magnifiable = 5.0)
 
+    // le bouton availale = StrategicProductionMenuAvailableCategoryButton
+    // les autres = StrategicProductionMenuCategoryButton
+
     BackgroundComponents =
-    [ PanelRoundedCorner( RoundedVertexes = [true,true,false, false])]
+    [
+        PanelRoundedCorner
+        (
+            RoundedVertexes = [true,true,false, false]
+            BackgroundBlockColorToken = 'SM_RifleGreen_75'
+            BorderLineColorToken = 'SM_Grullo'
+        )
+    ]
 )
 
 // -------------------------------------------------------------------------------------------------
@@ -194,7 +209,7 @@ StrategicProductionMenuAvailableCategoryButton is BUCKButtonDescriptor
 
                         TextSize = "SD2_Moyen"
                         TextDico = ~/LocalisationConstantes/dico_interface_ingame
-                        TextColor = "Glacier"
+                        TextColor = "SM_paleSilver"
                         Hint = BUCKSpecificHintableArea
                         (
                             ElementName = "ButtonHintableArea"
@@ -216,7 +231,7 @@ StrategicProductionMenuAvailableCategoryButton is BUCKButtonDescriptor
                                 )
 
                                 HasBackground = true
-                                BackgroundBlockColorToken = "Underline"
+                                BackgroundBlockColorToken = "SM_paleSilver"
                             )
                         ]
                     )
@@ -287,7 +302,7 @@ StrategicProductionMenuCategoryButton is BUCKButtonDescriptor
 
                         TextSize = "SD2_Moyen"
                         TextDico = ~/LocalisationConstantes/dico_interface_ingame
-                        TextColor = "Glacier"
+                        TextColor = "SM_paleSilver"
 
                         Hint = BUCKSpecificHintableArea
                         (
@@ -310,7 +325,7 @@ StrategicProductionMenuCategoryButton is BUCKButtonDescriptor
                                 )
 
                                 HasBackground = true
-                                BackgroundBlockColorToken = "Underline"
+                                BackgroundBlockColorToken = "SM_paleSilver"
                             )
                         ]
                     )

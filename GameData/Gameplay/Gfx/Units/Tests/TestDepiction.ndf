@@ -32,7 +32,7 @@ export ModelFile_Modele_2S3M_Akatsiya_SOV is 'GameData:/Assets/3D/Units/URSS/Art
 export ModelFile_Modele_AT_T12_Rapira_SOV is 'GameData:/Assets/3D/Units/US/Char/M1_Abrams/M1_Abrams.Ase2NdfBin'
 export ModelFile_Modele_BM21_Grad_SOV is 'GameData:/Assets/3D/Units/URSS/Artillerie/LODS/BM21_Grad_LOW.Ase2NdfBin'
 export ModelFile_Modele_BMP_1_CMD_SOV is 'GameData:/Assets/3D/Units/URSS/CMD/BMP1P_CMD/BMP1P_CMD.Ase2NdfBin'
-export ModelFile_Modele_BMP_1P_SOV is 'GameData:/Assets/3D/Units/URSS/APC/LODS/BMP1P_LOW.Ase2NdfBin'
+export ModelFile_Modele_BMP_1P_SOV is 'GameData:/Assets/3D/Units/URSS/APC/LODS/BMP_1P_LOW.Ase2NdfBin'
 export ModelFile_Modele_BMP_2_SOV is 'GameData:/Assets/3D/Units/URSS/APC/LODS/BMP2_LOW.Ase2NdfBin'
 export ModelFile_Modele_BRDM_2_SOV is 'GameData:/Assets/3D/Units/URSS/Vehicule/LODS/BRDM2_LOW.Ase2NdfBin'
 export ModelFile_Modele_BTR_60_SOV is 'GameData:/Assets/3D/Units/URSS/APC/LODS/BTR70_LOW.Ase2NdfBin'

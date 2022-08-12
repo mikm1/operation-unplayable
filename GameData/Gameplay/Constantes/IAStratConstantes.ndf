@@ -45,7 +45,8 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
         (EMacroActionMissionType/CorridorAttack, ['Avion','InfmapCommander']),
         (EMacroActionMissionType/CorridorDefense, ['Avion','InfmapCommander']),
         (EMacroActionMissionType/CorridorDynamicDefense, ['Avion','InfmapCommander']),
-        (EMacroActionMissionType/ObjectiveAttack, ['Avion','InfmapCommander'])
+        (EMacroActionMissionType/ObjectiveAttack, ['Avion','InfmapCommander']),
+        (EMacroActionMissionType/CaptureCommandZone, ['Avion']), //Ne surtout pas ajouter InfmapCommander
     ]
 
     //--------------- Connaissance des zones ----------------------------------------//
@@ -190,8 +191,8 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
                     (EDefensePointScoringFeature/DistanceDecayLength, 5000.0 * Metre),
                     (EDefensePointScoringFeature/DistanceDecayCoeff, 1.0),
                     (EDefensePointScoringFeature/DistrictCoeff, -1.0),
-                    (EDefensePointScoringFeature/ForetDenseCoeff, -1.0),
-                    (EDefensePointScoringFeature/ForetLightCoeff, 2.0),
+                    (EDefensePointScoringFeature/ForetDenseCoeff, 1.0),
+                    (EDefensePointScoringFeature/ForetLightCoeff, 1.0),
                     (EDefensePointScoringFeature/IsObjectifCoeff, 0.0),
                 ]
                 DefensePointPositioning = EDefensePointPositioningType/Offensive)
@@ -205,7 +206,7 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
                     (EDefensePointScoringFeature/DistanceDecayLength, 5000.0 * Metre),
                     (EDefensePointScoringFeature/DistanceDecayCoeff, 1.0),
                     (EDefensePointScoringFeature/DistrictCoeff, 0.0),
-                    (EDefensePointScoringFeature/ForetDenseCoeff, -1.0),
+                    (EDefensePointScoringFeature/ForetDenseCoeff, 1.0),
                     (EDefensePointScoringFeature/ForetLightCoeff, 1.0),
                 ])
         ),
@@ -218,8 +219,8 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
                     (EDefensePointScoringFeature/DistanceDecayLength, 5000.0 * Metre),
                     (EDefensePointScoringFeature/DistanceDecayCoeff, 1.0),
                     (EDefensePointScoringFeature/DistrictCoeff, -1.0),
-                    (EDefensePointScoringFeature/ForetDenseCoeff, -1.0),
-                    (EDefensePointScoringFeature/ForetLightCoeff, 2.0),
+                    (EDefensePointScoringFeature/ForetDenseCoeff, 1.0),
+                    (EDefensePointScoringFeature/ForetLightCoeff, 1.0),
                     (EDefensePointScoringFeature/IsObjectifCoeff, 0.0),
                 ]
                 DefensePointPositioning = EDefensePointPositioningType/Offensive)
@@ -342,6 +343,8 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
 
     ProductionCapturableRadiusCheckMultiplier = 3.0
     SupplyMinDistanceCheck = 1000 * Metre
+
+    IAStratPathCacheCostPathfindType = ~/IAStratPathCacheCostConstante/IAStratPathCacheCostPathfindType
 )
 
 //--------------------------------------------------------------------------------------//
@@ -400,11 +403,8 @@ AirstrikeConstantes is TIAStratAirstrikeConstantes
     // Les avions avec des limitations sur leurs cibles sont renseignés ici. Ceux qui n'en ont pas non.
     // Ex: les avions AT ne peuvent attaquer que les blindés
     StrikeLimitations = [
-        ("Avion_AT", ["Char", "ChasseurDeChar", "Vehicule_Appui", "Artillerie_MLRS", "Artillerie_Observateur", "Artillerie_Longue_Portee"])
+        ("Avion_AT", ["Char", "ChasseurDeChar", "Vehicule_Appui", "Vehicule_CMD", "Vehicule_Reco", "Artillerie", "Canon_AA"])
     ]
-
-    // Les avions possédant le tag renseigné ci dessous ne peuvent pas choisir de cible que leur team ne voit pas.
-    TagsLimitedToVisibleTargetsOnly = ["Avion_AT"]
 
     AirplaneWaitForDecisionTime = 5
 )

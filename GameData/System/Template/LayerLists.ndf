@@ -30,8 +30,6 @@ InterfaceNonArrayLayersFinal is [
     $/M3D/Scene/Scene3D_AfterPostProcess/feedbackRenderToolbox/Render/Calque_FeedbackRenderToolbox_Line_AlwaysOnTop_BeforeSolid,
     $/M3D/Scene/Scene3D_AfterPostProcess/feedbackRenderToolbox/Render/Calque_FeedbackRenderToolbox_Billboard_AlwaysOnTop,
     $/M3D/Scene/Scene3D_AfterPostProcess/feedbackRenderToolbox/Render/Calque_FeedbackRenderToolbox_Solid_UseStencil,
-
-    $/M3D/Scene/ZoCFeedback/Render/Enable_ZoCFeedBack/ZoCFeedBack,
 ]
 
 InterfaceArrayLayersFinal is [

@@ -284,10 +284,10 @@ export CubeAction_Order_AIManageArtillery_Auto is Template_CubeActionOrderButton
     Mapping                  = $/KeyboardOption/Mapping_AIManageArtillery_Auto
 )
 
-export CubeAction_Order_AIAiplaneAutoManage is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
+export CubeAction_Order_AIAirplaneAutoManage is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
 (
-    CubeActionName           = "CubeAction_Order_AIAiplaneAutoManage"
-    DebugName                = "InGameCubeAction_AIAiplaneAutoManage"
+    CubeActionName           = "CubeAction_Order_AIAirplaneAutoManage"
+    DebugName                = "InGameCubeAction_AIAirplaneAutoManage"
 
     CubeActionFunctionType   = TacticCubeActionFunctionType/SmartOrders
 
@@ -297,9 +297,9 @@ export CubeAction_Order_AIAiplaneAutoManage is Template_CubeActionOrderButtonInf
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "AIAiplaneAutoManage"
+    OrderToken               = "AIAirplaneAutoManage"
     ActionType               = OrderInstant
-    Mapping                  = $/KeyboardOption/Mapping_AIAiplaneAutoManage
+    Mapping                  = $/KeyboardOption/Mapping_AIAirplaneAutoManage
 )
 
 export CubeAction_Order_AIStop is Template_CubeActionOrderButtonInformationsDescriptor_WithSound

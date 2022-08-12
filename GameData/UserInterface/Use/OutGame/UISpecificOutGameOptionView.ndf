@@ -259,7 +259,7 @@ ConfigPanelMultiListLine is BUCKStateUpdaterDescriptor
                                 ElementName = "OptionName"
                                 ComponentFrame = TUIFramePropertyRTTI
                                 (
-                                    //RelativeWidthHeight = [1.0, 1.0]
+                                    RelativeWidthHeight = [1.0, 0.0]
                                     AlignementToFather = [1,0]
                                     AlignementToAnchor = [1,0]
                                     MagnifiableOffset = [0,5]
@@ -273,11 +273,11 @@ ConfigPanelMultiListLine is BUCKStateUpdaterDescriptor
 
                                 TextStyle = "Default"
 
-                                HorizontalFitStyle = ~/FitStyle/FitToContent
+                                HorizontalFitStyle = ~/FitStyle/UserDefined
                                 VerticalFitStyle = ~/FitStyle/FitToContent
 
                                 TypefaceToken = "Liberator"
-                                BigLineAction = ~/BigLineAction/MultiLine
+                                BigLineAction = ~/BigLineAction/CutByDots
 
                                 TextDico = ~/LocalisationConstantes/dico_interface_outgame
 

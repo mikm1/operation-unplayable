@@ -2164,6 +2164,33 @@ is TSoundHappening
                 )
                 UseSpecialLoop = False
             ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/203mm_canon_tir_Malka_5.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/203mm_canon_tir_Malka_6.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/203mm_canon_tir_Malka_7.wav"
+                )
+                UseSpecialLoop = False
+            ),
         ]
         PlayInRandomOrder = True
     )
@@ -2733,7 +2760,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_9M33_OSA_1.wav"
@@ -2742,7 +2769,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_9M33_OSA_2.wav"
@@ -2766,7 +2793,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Gros
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_9M38M1_BUK_1.wav"
@@ -2775,7 +2802,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Gros
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_9M38M1_BUK_2.wav"
@@ -2786,6 +2813,75 @@ is TSoundHappening
         PlayInRandomOrder = True
     )
     Volume = 2
+)
+
+template SoundHappening_FULDA_AA52_Firing
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/AA52_mitrailleuse_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/AA52_mitrailleuse_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/AA52_mitrailleuse_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/AA52_mitrailleuse_4.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/AA52_mitrailleuse_5.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/AA52_mitrailleuse_6.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
 )
 
 template SoundHappening_FULDA_AANF1_Firing
@@ -2868,7 +2964,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Hellfire_1.wav"
@@ -2877,7 +2973,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Hellfire_2.wav"
@@ -2886,7 +2982,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Hellfire_3.wav"
@@ -3079,6 +3175,39 @@ is TSoundHappening
     Volume = 1
 )
 
+template SoundHappening_FULDA_APILAS_Firing
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_APILAS_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_APILAS_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
 template SoundHappening_FULDA_APZ23_chain_gun
 [
 ]
@@ -3168,7 +3297,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_AT4_1.wav"
@@ -3177,7 +3306,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_AT4_2.wav"
@@ -3186,10 +3315,88 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_AT4_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
+template SoundHappening_FULDA_Bofor_autocanon
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_4.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_5.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_6.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_7.wav"
                 )
                 UseSpecialLoop = False
             ),
@@ -4293,7 +4500,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_M47_Dragon.wav"
@@ -4408,6 +4615,102 @@ is TSoundHappening
     Volume = 2
 )
 
+template SoundHappening_FULDA_FAMAS_Burst_3_Rounds
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/FAMAS_firing_3_rounds_01.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/FAMAS_firing_3_rounds_02.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/FAMAS_firing_3_rounds_03.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/FAMAS_firing_3_rounds_04.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/FAMAS_firing_3_rounds_05.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/FAMAS_firing_3_rounds_06.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/FAMAS_firing_3_rounds_07.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/FAMAS_firing_3_rounds_08.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/FAMAS_firing_3_rounds_09.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+
 template SoundHappening_FULDA_FH70_155mm
 [
 ]
@@ -4479,7 +4782,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Flash_1.wav"
@@ -4488,7 +4791,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Flash_2.wav"
@@ -4497,7 +4800,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Flash_3.wav"
@@ -5007,7 +5310,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_HOT_1.wav"
@@ -5031,7 +5334,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Rocket_Hydra_70_1.wav"
@@ -5040,7 +5343,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Rocket_Hydra_70_2.wav"
@@ -5049,7 +5352,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Rocket_Hydra_70_3.wav"
@@ -5058,7 +5361,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Rocket_Hydra_70_4.wav"
@@ -5133,7 +5436,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Konkurs_1.wav"
@@ -5142,7 +5445,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Konkurs_2.wav"
@@ -5151,7 +5454,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Konkurs_3.wav"
@@ -5302,6 +5605,144 @@ is TSoundHappening
     Volume = 1
 )
 
+template SoundHappening_FULDA_L85A1_Burst_3_Rounds
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/L85A1_firing_3_rounds_01.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/L85A1_firing_3_rounds_02.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/L85A1_firing_3_rounds_03.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/L85A1_firing_3_rounds_04.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/L85A1_firing_3_rounds_05.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/L85A1_firing_3_rounds_06.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/L85A1_firing_3_rounds_07.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+
+template SoundHappening_FULDA_L86A1_Firing
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L86A1_mitrailleuse_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L86A1_mitrailleuse_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L86A1_mitrailleuse_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L86A1_mitrailleuse_4.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L86A1_mitrailleuse_5.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+
 template SoundHappening_FULDA_L8A2_Firing
 [
 ]
@@ -5433,7 +5874,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_LAW_1.wav"
@@ -5442,7 +5883,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_LAW_2.wav"
@@ -5451,7 +5892,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_LAW_3.wav"
@@ -6370,6 +6811,180 @@ is TSoundHappening
     Volume = 2
 )
 
+template SoundHappening_FULDA_MAS_56_1_Round
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_01.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_02.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_03.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_04.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_05.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_06.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_07.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_08.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_09.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat56_firing_1_round_10.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+
+template SoundHappening_FULDA_MAT49_Burst
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat49_firing_burst_01.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat49_firing_burst_02.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat49_firing_burst_03.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat49_firing_burst_04.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat49_firing_burst_05.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Mat49_firing_burst_06.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+
 template SoundHappening_FULDA_MG3_Firing
 [
 ]
@@ -6459,7 +7074,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_MILAN_1.wav"
@@ -6468,7 +7083,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_MILAN_2.wav"
@@ -6477,7 +7092,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_MILAN_3.wav"
@@ -6486,7 +7101,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_MILAN_4.wav"
@@ -6723,7 +7338,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_MISTRAL_1.wav"
@@ -6732,7 +7347,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_MISTRAL_2.wav"
@@ -6741,7 +7356,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_MISTRAL_3.wav"
@@ -6750,7 +7365,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_MISTRAL_4.wav"
@@ -7038,7 +7653,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_PZ44_1.wav"
@@ -7047,7 +7662,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_PZ44_2.wav"
@@ -7056,7 +7671,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_PZ44_3.wav"
@@ -7065,7 +7680,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_PZ44_4.wav"
@@ -7089,7 +7704,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_R27_Vympel.wav"
@@ -7275,7 +7890,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_RPG18_1.wav"
@@ -7284,7 +7899,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_RPG18_2.wav"
@@ -7308,7 +7923,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_RPG7_1.wav"
@@ -7317,7 +7932,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_RPG7_2.wav"
@@ -7326,7 +7941,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_RPG7_3.wav"
@@ -7335,7 +7950,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_RPG7_4.wav"
@@ -7461,7 +8076,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Canon/106mm_canon_sans_recul_1.wav"
@@ -7470,7 +8085,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Canon/106mm_canon_sans_recul_2.wav"
@@ -7479,10 +8094,139 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Canon/106mm_canon_sans_recul_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
+template SoundHappening_FULDA_Recoiless_LRAC_Firing
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/106mm_canon_sans_recul_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/106mm_canon_sans_recul_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Canon/106mm_canon_sans_recul_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
+template SoundHappening_FULDA_S60_autocanon
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_4.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_5.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_6.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_7.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_8.wav"
                 )
                 UseSpecialLoop = False
             ),
@@ -7503,7 +8247,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Shillelagh_1.wav"
@@ -7512,7 +8256,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Shillelagh_2.wav"
@@ -7521,7 +8265,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Shillelagh_3.wav"
@@ -7545,7 +8289,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Shturm_1.wav"
@@ -7554,7 +8298,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Shturm_2.wav"
@@ -7607,6 +8351,93 @@ is TSoundHappening
         PlayInRandomOrder = True
     )
     Volume = 2
+)
+
+template SoundHappening_FULDA_SIG_Burst_3_Rounds
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/SIG_firing_3_rounds_01.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/SIG_firing_3_rounds_02.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/SIG_firing_3_rounds_03.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/SIG_firing_3_rounds_04.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/SIG_firing_3_rounds_05.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/SIG_firing_3_rounds_06.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/SIG_firing_3_rounds_07.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/SIG_firing_3_rounds_08.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
 )
 
 template SoundHappening_FULDA_SMOKE_Discharge_Vehicle
@@ -7704,7 +8535,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_SWINGFIRE_1.wav"
@@ -7713,7 +8544,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_SWINGFIRE_2.wav"
@@ -7722,7 +8553,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_SWINGFIRE_3.wav"
@@ -7746,7 +8577,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Rocket_S_Serie_1.wav"
@@ -7755,7 +8586,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Rocket_S_Serie_2.wav"
@@ -7764,7 +8595,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Rocket_S_Serie_3.wav"
@@ -7773,7 +8604,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Rocket_S_Serie_4.wav"
@@ -7879,6 +8710,66 @@ is TSoundHappening
     Volume = 1
 )
 
+template SoundHappening_FULDA_Sterling_Burst
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Sterling_firing_burst_01.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Sterling_firing_burst_02.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Sterling_firing_burst_03.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Sterling_firing_burst_04.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Fusil_Mitrailleur
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Fusils/Sterling_firing_burst_05.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+
 template SoundHappening_FULDA_Stinger_Firing
 [
 ]
@@ -7890,7 +8781,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Stinger_1.wav"
@@ -7899,7 +8790,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Stinger_2.wav"
@@ -7908,7 +8799,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Stinger_3.wav"
@@ -7917,7 +8808,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Stinger_4.wav"
@@ -7926,7 +8817,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Stinger_5.wav"
@@ -7950,7 +8841,7 @@ is TSoundHappening
         [
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOW_1.wav"
@@ -7959,7 +8850,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOW_2.wav"
@@ -7968,7 +8859,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOW_3.wav"
@@ -7977,7 +8868,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOW_4.wav"
@@ -7986,7 +8877,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOW_5.wav"
@@ -7995,7 +8886,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOW_6.wav"
@@ -8004,7 +8895,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOW_7.wav"
@@ -8013,7 +8904,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOW_8.wav"
@@ -8022,7 +8913,7 @@ is TSoundHappening
             ),
             TSoundDescriptor
             (
-                SoundSettings = $/SoundSettings/SFX_SoundSettings
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOW_9.wav"
@@ -10195,6 +11086,84 @@ is TSoundHappening
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBalles_20.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+
+template SoundHappening_ImpactBalles_burstSol_SAW
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_01.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_02.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_03.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_04.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_05.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_06.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_07.wav"
                 )
                 UseSpecialLoop = False
             ),

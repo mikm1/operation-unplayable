@@ -130,7 +130,6 @@ template SmartGroupInfosContainer
                         RoundedVertexes = [false, true, true, false] // le 1er est en bas à gauche
                     )
                 ]
-
             )
         ),
         BUCKListElementDescriptor
@@ -142,14 +141,27 @@ template SmartGroupInfosContainer
     ForegroundComponents = (<IsEditable> ?
         []
         : [
-            TBUCKContainerDescriptor
+            BUCKButtonDescriptor
             (
+                ElementName = "SmartGroupProductionButton"
+
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [1.0, 1.0]
                 )
+
+                IsTogglable = true
+                CannotDeselect = true
+                ForceEvents = true
+
+                MaskEvents = false
                 HidePointerEvents = true
-            )
+                PointerEventsToAllow = ~/EAllowablePointerEventType/Move
+
+                HasBorder = true
+                BorderLineColorToken = "BoutonVignetteAchat"
+                BorderThicknessToken = "2"
+            ),
         ]
     )
 )
@@ -990,7 +1002,6 @@ BoutonAfficherMasquerSmartGroupe is BUCKButtonDescriptor
         AlignementToAnchor = [1.0, 0.0]
         AlignementToFather = [1.0, 0.0]
         MagnifiableOffset = [-10.0, 45.0]
-
     )
 
     IsTogglable = true
@@ -1171,8 +1182,89 @@ UnitListAnimatedContainer is BUCKTranslationAnimatedContainerDescriptor
 
 //-------------------------------------------------------------------------------------
 
+ChallengeDescriptionContainer is BUCKTranslationAnimatedContainerDescriptor
+(
+    ElementName = "ScenarioDescriptionTopContainer"
+    ButtonNameForTrigger = "BoutonAnimationScenarioContainer"
+
+    FramePropertyBeforeAnimation = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [750.0, 0.0]
+        AlignementToAnchor = [1.0, 1.0]
+        AlignementToFather = [1.0, 1.0]
+    )
+
+    UseRewind = true
+    AnimationTotalDuration = 0.15
+
+    FramePropertyAfterAnimation = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [750.0, 0.0]
+        AlignementToAnchor = [0.0, 0.0]
+        AlignementToFather = [1.0, 1.0]
+        MagnifiableOffset = [-75.0, -75.0]
+    )
+
+    FitStyle = ~/ContainerFitStyle/FitToContentVertically
+
+    Components =
+    [
+        BUCKContainerDescriptor
+        (
+            ElementName = "ScenarioDescriptionContainer"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 0.0]
+            )
+
+            FitStyle = ~/ContainerFitStyle/FitToContentVertically
+            ChildFitToContent = true
+
+            HasBackground = true
+            BackgroundBlockColorToken = "White"
+
+            // envoie ResumeCampagneTypeHistorique
+        ),
+        BUCKButtonDescriptor
+        (
+            ElementName = "BoutonAnimationScenarioContainer"
+
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = [25.0, 25.0]
+                MagnifiableOffset = [14.0, 25.0]
+            )
+
+            IsTogglable = true
+            DefaultToggleValue = false
+            RadioButtonManager =  nil
+            CannotDeselect = false
+            ForceEvents = false
+            LeftClickSound = SoundEvent_ShowHideUnitInfoSheet
+
+            Components =
+            [
+                BUCKTextureDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        MagnifiableWidthHeight = [20.0, 20.0]
+                    )
+                    TextureToken = 'showRoomTexture_minimize'
+                    TextureColorToken = 'MarronPanel_noir_toggled2'
+                    Rotation = -90
+                ),
+            ]
+        )
+    ]
+)
+
+//-------------------------------------------------------------------------------------
+
 BUCKSpecificShowRoomGroupsDeckCreatorScreenMainComponentDescriptor is BUCKContainerDescriptor
 (
+    ElementName = "BUCKSpecificShowRoomGroupsDeckCreatorScreenMainComponent"
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
@@ -1184,7 +1276,8 @@ BUCKSpecificShowRoomGroupsDeckCreatorScreenMainComponentDescriptor is BUCKContai
         ~/UnitListAnimatedContainer,
         ~/AnimationPanelSmartGroupe,
         ~/AnimationPanelUnitInfos,
-        ~/DeckEditorCloseButton
+        ~/DeckEditorCloseButton,
+        ~/ChallengeDescriptionContainer,
     ]
 )
 

@@ -288,6 +288,30 @@ HumanSubDepictionsShowroom_ATteam_Milan_1_RFA is
         MeshDescriptor = MeshDescriptor_Servant_D_RFA
     ),
 ]
+HumanSubDepictions_ATteam_Milan_2_FR is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_FR
+        MeshDescriptorLow = MeshDescriptor_Servant_G_FR_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_D_FR
+        MeshDescriptorLow = MeshDescriptor_Servant_D_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_ATteam_Milan_2_FR is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = MeshDescriptor_Servant_G_FR
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = MeshDescriptor_Servant_D_FR
+    ),
+]
 HumanSubDepictions_ATteam_Milan_2_RFA is 
 [
     SubDepiction_ATGMServantLeft
@@ -593,6 +617,69 @@ HumanSubDepictions_BTR_ZD_Skrezhet_SOV is
     ),
 ]
 HumanSubDepictionsShowroom_BTR_ZD_Skrezhet_SOV is []
+HumanSubDepictions_Bofors_40mm_RFA is 
+[
+    SubDepiction_ServantWalkOnlyLeft
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_RFA
+        MeshDescriptorLow = MeshDescriptor_Servant_G_RFA_LOW
+    ),
+    SubDepiction_GunnerIdleOnlyLeft
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_RFA
+        MeshDescriptorLow = MeshDescriptor_Servant_G_RFA_LOW
+    ),
+    SubDepiction_ServantWalkOnlyRight
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_D_RFA
+        MeshDescriptorLow = MeshDescriptor_Servant_D_RFA_LOW
+    ),
+    SubDepiction_GunnerIdleOnlyRight
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_D_RFA
+        MeshDescriptorLow = MeshDescriptor_Servant_D_RFA_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Bofors_40mm_RFA is 
+[
+    ShowroomSubDepiction_GunnerLeft
+    (
+        MeshDescriptor = MeshDescriptor_Servant_G_RFA
+    ),
+    ShowroomSubDepiction_GunnerRight
+    (
+        MeshDescriptor = MeshDescriptor_Servant_D_RFA
+    ),
+]
+HumanSubDepictions_DCA_FK20_2_20mm_RFA is 
+[
+    SubDepiction_ServantWalkOnlyLeft
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_RFA
+        MeshDescriptorLow = MeshDescriptor_Servant_G_RFA_LOW
+    ),
+    SubDepiction_GunnerIdleOnlyLeft
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_RFA
+        MeshDescriptorLow = MeshDescriptor_Servant_G_RFA_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_D_RFA
+        MeshDescriptorLow = MeshDescriptor_Servant_D_RFA_LOW
+    ),
+]
+HumanSubDepictionsShowroom_DCA_FK20_2_20mm_RFA is 
+[
+    ShowroomSubDepiction_GunnerLeft
+    (
+        MeshDescriptor = MeshDescriptor_Servant_G_RFA
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = MeshDescriptor_Servant_D_RFA
+    ),
+]
 HumanSubDepictions_DCA_FK20_2_20mm_Zwillinge_RFA is 
 [
     SubDepiction_ServantWalkOnlyLeft
@@ -703,13 +790,13 @@ HumanSubDepictions_DCA_ZU_23_2_DDR is
 [
     SubDepiction_ServantWalkOnlyLeft
     (
-        MeshDescriptorHigh = MeshDescriptor_Servant_G_SOV
-        MeshDescriptorLow = MeshDescriptor_Servant_G_SOV_LOW
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_DDR
+        MeshDescriptorLow = MeshDescriptor_Servant_G_DDR_LOW
     ),
     SubDepiction_GunnerIdleOnlyLeft
     (
-        MeshDescriptorHigh = MeshDescriptor_Servant_G_SOV
-        MeshDescriptorLow = MeshDescriptor_Servant_G_SOV_LOW
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_DDR
+        MeshDescriptorLow = MeshDescriptor_Servant_G_DDR_LOW
     ),
     SubDepiction_ServantWalkOnlyRight
     (
@@ -726,7 +813,7 @@ HumanSubDepictionsShowroom_DCA_ZU_23_2_DDR is
 [
     ShowroomSubDepiction_GunnerLeft
     (
-        MeshDescriptor = MeshDescriptor_Servant_G_SOV
+        MeshDescriptor = MeshDescriptor_Servant_G_DDR
     ),
     ShowroomSubDepiction_GunnerRight
     (
@@ -796,6 +883,15 @@ HumanSubDepictionsShowroom_FH70_155mm_RFA is
         MeshDescriptor = MeshDescriptor_Servant_PzGrenadier_Officer_D_RFA
     ),
 ]
+HumanSubDepictions_Faun_kraka_RFA is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_RFA
+        MeshDescriptorLow = MeshDescriptor_Driver_RFA_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Faun_kraka_RFA is []
 HumanSubDepictions_GAZ_66B_SOV is 
 [
     SubDepiction_Driver
@@ -962,6 +1058,30 @@ HumanSubDepictionsShowroom_Howz_D30_122mm_VDV_SOV is
         MeshDescriptor = MeshDescriptor_Servant_Officer_D_VDV
     ),
 ]
+HumanSubDepictions_Howz_M101_105mm_RFA is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_RFA
+        MeshDescriptorLow = MeshDescriptor_Servant_G_RFA_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_PzGrenadier_Officer_D_RFA
+        MeshDescriptorLow = MeshDescriptor_Servant_PzGrenadier_Officer_D_RFA_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_M101_105mm_RFA is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = MeshDescriptor_Servant_G_RFA
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = MeshDescriptor_Servant_PzGrenadier_Officer_D_RFA
+    ),
+]
 HumanSubDepictions_Howz_M102_105mm_US is 
 [
     SubDepiction_ServantLeft
@@ -1008,6 +1128,30 @@ HumanSubDepictionsShowroom_Howz_M46_130mm_DDR is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = MeshDescriptor_Servant_D_DDR
+    ),
+]
+HumanSubDepictions_Howz_M46_130mm_SOV is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_SOV
+        MeshDescriptorLow = MeshDescriptor_Servant_G_SOV_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_D_SOV
+        MeshDescriptorLow = MeshDescriptor_Servant_D_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_M46_130mm_SOV is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = MeshDescriptor_Servant_G_SOV
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = MeshDescriptor_Servant_D_SOV
     ),
 ]
 HumanSubDepictions_Iltis_MILAN_RFA is 
@@ -1073,6 +1217,24 @@ HumanSubDepictions_M151_MUTT_CMD_US is
     ),
 ]
 HumanSubDepictionsShowroom_M151_MUTT_CMD_US is []
+HumanSubDepictions_M151_MUTT_RCL_DDR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_SOV
+        MeshDescriptorLow = MeshDescriptor_Driver_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_M151_MUTT_RCL_DDR is []
+HumanSubDepictions_M151_MUTT_Reco_DDR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_US
+        MeshDescriptorLow = MeshDescriptor_Driver_US_LOW
+    ),
+]
+HumanSubDepictionsShowroom_M151_MUTT_Reco_DDR is []
 HumanSubDepictions_M151_MUTT_trans_US is 
 [
     SubDepiction_Driver
@@ -1372,6 +1534,15 @@ HumanSubDepictions_UAZ_469_AGL_VDV_SOV is
     ),
 ]
 HumanSubDepictionsShowroom_UAZ_469_AGL_VDV_SOV is []
+HumanSubDepictions_UAZ_469_CMD_DDR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_SOV
+        MeshDescriptorLow = MeshDescriptor_Driver_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_UAZ_469_CMD_DDR is []
 HumanSubDepictions_UAZ_469_CMD_SOV is 
 [
     SubDepiction_Driver
@@ -1390,6 +1561,15 @@ HumanSubDepictions_UAZ_469_CMD_VDV_SOV is
     ),
 ]
 HumanSubDepictionsShowroom_UAZ_469_CMD_VDV_SOV is []
+HumanSubDepictions_UAZ_469_Fagot_DDR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_SOV
+        MeshDescriptorLow = MeshDescriptor_Driver_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_UAZ_469_Fagot_DDR is []
 HumanSubDepictions_UAZ_469_Konkurs_SOV is 
 [
     SubDepiction_Driver
@@ -1408,6 +1588,24 @@ HumanSubDepictions_UAZ_469_Konkurs_VDV_SOV is
     ),
 ]
 HumanSubDepictionsShowroom_UAZ_469_Konkurs_VDV_SOV is []
+HumanSubDepictions_UAZ_469_Reco_DDR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_SOV
+        MeshDescriptorLow = MeshDescriptor_Driver_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_UAZ_469_Reco_DDR is []
+HumanSubDepictions_UAZ_469_Reco_SOV is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_SOV
+        MeshDescriptorLow = MeshDescriptor_Driver_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_UAZ_469_Reco_SOV is []
 HumanSubDepictions_UAZ_469_SOV is 
 [
     SubDepiction_Driver
@@ -1426,6 +1624,15 @@ HumanSubDepictions_UAZ_469_SPG9_DDR is
     ),
 ]
 HumanSubDepictionsShowroom_UAZ_469_SPG9_DDR is []
+HumanSubDepictions_UAZ_469_SPG9_FJ_DDR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_VdV_SOV
+        MeshDescriptorLow = MeshDescriptor_Driver_VdV_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_UAZ_469_SPG9_FJ_DDR is []
 HumanSubDepictions_UAZ_469_SPG9_SOV is 
 [
     SubDepiction_Driver
@@ -1489,6 +1696,24 @@ HumanSubDepictions_Unimog_trans_RFA is
     ),
 ]
 HumanSubDepictionsShowroom_Unimog_trans_RFA is []
+HumanSubDepictions_VLTT_P4_MILAN_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_FR
+        MeshDescriptorLow = MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_VLTT_P4_MILAN_FR is []
+HumanSubDepictions_VLTT_P4_MILAN_para_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = MeshDescriptor_Driver_FR
+        MeshDescriptorLow = MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_VLTT_P4_MILAN_para_FR is []
 HumanSubDepictions_W50_LA_A_DDR is 
 [
     SubDepiction_Driver
@@ -1498,6 +1723,20 @@ HumanSubDepictions_W50_LA_A_DDR is
     ),
 ]
 HumanSubDepictionsShowroom_W50_LA_A_DDR is []
+HumanSubDepictions_ZSU_57_2_DDR is 
+[
+    SubDepiction_GunnerLeft
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_G_DDR
+        MeshDescriptorLow = MeshDescriptor_Servant_G_DDR_LOW
+    ),
+    SubDepiction_GunnerRight
+    (
+        MeshDescriptorHigh = MeshDescriptor_Servant_D_DDR
+        MeshDescriptorLow = MeshDescriptor_Servant_D_DDR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_ZSU_57_2_DDR is []
 TransportedServantAlternativesCount is 
 MAP[
     ("AT_D44_85mm_DDR", 2),
@@ -1512,6 +1751,7 @@ MAP[
     ("ATteam_Konkurs_DDR", 2),
     ("ATteam_Konkurs_SOV", 2),
     ("ATteam_Milan_1_RFA", 2),
+    ("ATteam_Milan_2_FR", 2),
     ("ATteam_Milan_2_RFA", 2),
     ("ATteam_Milan_2_para_RFA", 2),
     ("ATteam_RCL_M40A1_RFA", 2),
@@ -1527,6 +1767,8 @@ MAP[
     ("BM21_Grad_SOV", 1),
     ("BM27_Uragan_SOV", 1),
     ("BTR_ZD_Skrezhet_SOV", 2),
+    ("Bofors_40mm_RFA", 2),
+    ("DCA_FK20_2_20mm_RFA", 2),
     ("DCA_FK20_2_20mm_Zwillinge_RFA", 2),
     ("DCA_I_Hawk_RFA", 2),
     ("DCA_I_Hawk_US", 2),
@@ -1534,6 +1776,7 @@ MAP[
     ("DCA_ZU_23_2_DDR", 2),
     ("DCA_ZU_23_2_SOV", 2),
     ("FH70_155mm_RFA", 2),
+    ("Faun_kraka_RFA", 1),
     ("GAZ_66B_SOV", 1),
     ("GAZ_66B_ZU_SOV", 3),
     ("GAZ_66_SOV", 1),
@@ -1543,8 +1786,10 @@ MAP[
     ("Howz_D30_122mm_DDR", 2),
     ("Howz_D30_122mm_SOV", 2),
     ("Howz_D30_122mm_VDV_SOV", 2),
+    ("Howz_M101_105mm_RFA", 2),
     ("Howz_M102_105mm_US", 2),
     ("Howz_M46_130mm_DDR", 2),
+    ("Howz_M46_130mm_SOV", 2),
     ("Iltis_MILAN_RFA", 1),
     ("Iltis_RFA", 1),
     ("Iltis_reco_RFA", 1),
@@ -1552,6 +1797,8 @@ MAP[
     ("Lars_2_RFA", 1),
     ("M151A2_scout_US", 1),
     ("M151_MUTT_CMD_US", 1),
+    ("M151_MUTT_RCL_DDR", 1),
+    ("M151_MUTT_Reco_DDR", 1),
     ("M151_MUTT_trans_US", 1),
     ("M35_supply_US", 1),
     ("M35_trans_US", 1),
@@ -1573,12 +1820,17 @@ MAP[
     ("TPZ_Fuchs_RASIT_RFA", 1),
     ("UAZ_469_AGL_SOV", 1),
     ("UAZ_469_AGL_VDV_SOV", 1),
+    ("UAZ_469_CMD_DDR", 1),
     ("UAZ_469_CMD_SOV", 1),
     ("UAZ_469_CMD_VDV_SOV", 1),
+    ("UAZ_469_Fagot_DDR", 1),
     ("UAZ_469_Konkurs_SOV", 1),
     ("UAZ_469_Konkurs_VDV_SOV", 1),
+    ("UAZ_469_Reco_DDR", 1),
+    ("UAZ_469_Reco_SOV", 1),
     ("UAZ_469_SOV", 1),
     ("UAZ_469_SPG9_DDR", 1),
+    ("UAZ_469_SPG9_FJ_DDR", 1),
     ("UAZ_469_SPG9_SOV", 1),
     ("UAZ_469_SPG9_VDV_SOV", 1),
     ("UAZ_469_supply_SOV", 1),
@@ -1586,7 +1838,10 @@ MAP[
     ("UAZ_469_trans_DDR", 1),
     ("Unimog_S_404_RFA", 1),
     ("Unimog_trans_RFA", 1),
+    ("VLTT_P4_MILAN_FR", 1),
+    ("VLTT_P4_MILAN_para_FR", 1),
     ("W50_LA_A_DDR", 1),
+    ("ZSU_57_2_DDR", 2),
 ]
 TransportedServantAlternatives is 
 [
@@ -1614,6 +1869,8 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_SOV SelectorId = [ "ATteam_Konkurs_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_RFA SelectorId = [ "ATteam_Milan_1_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_RFA SelectorId = [ "ATteam_Milan_1_RFA", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_FR SelectorId = [ "ATteam_Milan_2_FR", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_FR SelectorId = [ "ATteam_Milan_2_FR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_RFA SelectorId = [ "ATteam_Milan_2_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_RFA SelectorId = [ "ATteam_Milan_2_RFA", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_Fallschirm_G_RFA SelectorId = [ "ATteam_Milan_2_para_RFA", "01" ] ),
@@ -1641,6 +1898,10 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "BM27_Uragan_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_VDV SelectorId = [ "BTR_ZD_Skrezhet_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_Spe_D_VDV SelectorId = [ "BTR_ZD_Skrezhet_SOV", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_RFA SelectorId = [ "Bofors_40mm_RFA", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_RFA SelectorId = [ "Bofors_40mm_RFA", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_RFA SelectorId = [ "DCA_FK20_2_20mm_RFA", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_RFA SelectorId = [ "DCA_FK20_2_20mm_RFA", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_RFA SelectorId = [ "DCA_FK20_2_20mm_Zwillinge_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_PzGrenadier_spe_D_RFA SelectorId = [ "DCA_FK20_2_20mm_Zwillinge_RFA", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_PzGrenadier_spe_G_RFA SelectorId = [ "DCA_I_Hawk_RFA", "01" ] ),
@@ -1649,12 +1910,13 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_GI_Officer_D_US SelectorId = [ "DCA_I_Hawk_US", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_GI_spe_G_US SelectorId = [ "DCA_M167_Vulcan_20mm_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_GI_Officer_D_US SelectorId = [ "DCA_M167_Vulcan_20mm_US", "02" ] ),
-    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_SOV SelectorId = [ "DCA_ZU_23_2_DDR", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_DDR SelectorId = [ "DCA_ZU_23_2_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_DDR SelectorId = [ "DCA_ZU_23_2_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_VDV SelectorId = [ "DCA_ZU_23_2_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_Spe_D_VDV SelectorId = [ "DCA_ZU_23_2_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_RFA SelectorId = [ "FH70_155mm_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_PzGrenadier_Officer_D_RFA SelectorId = [ "FH70_155mm_RFA", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Faun_kraka_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "GAZ_66B_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_VdV_SOV SelectorId = [ "GAZ_66B_ZU_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_Spe_D_VDV SelectorId = [ "GAZ_66B_ZU_SOV", "02" ] ),
@@ -1671,10 +1933,14 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_MotoStrelki_Officer_D_SOV SelectorId = [ "Howz_D30_122mm_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_Spe_G_VDV SelectorId = [ "Howz_D30_122mm_VDV_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_Officer_D_VDV SelectorId = [ "Howz_D30_122mm_VDV_SOV", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_RFA SelectorId = [ "Howz_M101_105mm_RFA", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_PzGrenadier_Officer_D_RFA SelectorId = [ "Howz_M101_105mm_RFA", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_Airborne_G_US SelectorId = [ "Howz_M102_105mm_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_Airborne_D_US SelectorId = [ "Howz_M102_105mm_US", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_DDR SelectorId = [ "Howz_M46_130mm_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_DDR SelectorId = [ "Howz_M46_130mm_DDR", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_SOV SelectorId = [ "Howz_M46_130mm_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_SOV SelectorId = [ "Howz_M46_130mm_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_MILAN_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_reco_RFA", "01" ] ),
@@ -1682,6 +1948,8 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Lars_2_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M151A2_scout_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M151_MUTT_CMD_US", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "M151_MUTT_RCL_DDR", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M151_MUTT_Reco_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M151_MUTT_trans_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M35_supply_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M35_trans_US", "01" ] ),
@@ -1711,12 +1979,17 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "TPZ_Fuchs_RASIT_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_AGL_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_VdV_SOV SelectorId = [ "UAZ_469_AGL_VDV_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_CMD_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_CMD_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_VdV_SOV SelectorId = [ "UAZ_469_CMD_VDV_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_Fagot_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_Konkurs_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_VdV_SOV SelectorId = [ "UAZ_469_Konkurs_VDV_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_Reco_DDR", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_Reco_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_SPG9_DDR", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_VdV_SOV SelectorId = [ "UAZ_469_SPG9_FJ_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_SPG9_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_VdV_SOV SelectorId = [ "UAZ_469_SPG9_VDV_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_supply_SOV", "01" ] ),
@@ -1724,5 +1997,9 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "UAZ_469_trans_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Unimog_S_404_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Unimog_trans_RFA", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_FR SelectorId = [ "VLTT_P4_MILAN_FR", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_FR SelectorId = [ "VLTT_P4_MILAN_para_FR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "W50_LA_A_DDR", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_DDR SelectorId = [ "ZSU_57_2_DDR", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_DDR SelectorId = [ "ZSU_57_2_DDR", "02" ] ),
 ]

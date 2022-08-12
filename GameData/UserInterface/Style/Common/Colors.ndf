@@ -240,6 +240,7 @@ Rouille             is [100,45,5,255]           // Line color - rouille
 Rouille2            is [102,43,27,255]          // Line color - rouille 2
 Transparent         is [0,0,0,0]                // Block color - transparent | Font color - transparent | Line color - transparent
 Vert                is [127,255,117,255]        // Font color - vert
+Vert50p             is [127,255,117,128]        // Font color - vert
 Vert2               is [53,152,34,255]          // Block color - vert
 Vert3               is [20,218,20,255]          // Block color - vert 3
 Vert4               is [98,175,8,255]           // Font color - vert 4

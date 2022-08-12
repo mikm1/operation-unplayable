@@ -210,6 +210,8 @@ template ModalButtonCyan
     ElementName : string = '',
     TextToken : string = '',
     Mapping : TEugBMutablePBaseClass = nil,
+    ButtonAlignementToAnchor : float2 = [0,0],
+    ButtonAlignementToFather : float2 = [0,0],
 
     IsFilled : bool
 ] is ConfirmButton
@@ -217,6 +219,8 @@ template ModalButtonCyan
     ElementName = <ElementName>
     TextToken = <TextToken>
     Mapping = <Mapping>
+    ButtonAlignementToAnchor = <ButtonAlignementToAnchor>
+    ButtonAlignementToFather = <ButtonAlignementToFather>
 
     ButtonMagnifiableWidthHeight = [175.0, 35.0]
     TextTypefaceToken = "UISecondFont"
@@ -632,7 +636,6 @@ BattlegroupsBriefMultiList is BUCKMultiListDescriptor
 
     SortableColumnNames =
     [
-
         "AllianceTextMultiList",
         "BattlegroupNameMultiList",
 
@@ -1010,6 +1013,7 @@ private BoutonsAction is BUCKListDescriptor
 
 private BoutonsDeck is BUCKListDescriptor
 (
+    ElementName = "DeckButtonsList"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 27.0]
@@ -1338,17 +1342,7 @@ DeckOverview is BUCKTranslationAnimatedContainerDescriptor
     Components =
     [
         OmbrePanel(),
-        DeckOverviewContent,
-
-        // This BUCKContainer acts like a screen to block mouse events to units
-        BUCKContainerDescriptor
-        (
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                RelativeWidthHeight = [1.0, 1.0]
-            )
-            HidePointerEvents = true
-        )
+        DeckOverviewContent
     ]
 )
 
@@ -1726,28 +1720,56 @@ DeckOverviewActivationPointsFrame is BUCKContainerDescriptor
     ]
 )
 
-DeckOverviewUnitsFrame is BUCKContainerDescriptor
+DeckOverviewUnitsFrame is BUCKSpecificScrollingContainerDescriptor
 (
     ElementName = "DeckOverviewUnitsFrame"
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
-        MagnifiableWidthHeight = [20.0, 0.0]
+        MagnifiableWidthHeight = [20.0, -40.0]
         MagnifiableOffset = [-20.0, 0.0]
     )
 
+    ExternalScrollbar = true
+    ScrollStepSize = [0.0, 10.0]
+    HasVerticalScrollbar = true
+
     Components =
     [
-        BUCKListDescriptor
+        BUCKContainerDescriptor
         (
-            ElementName = "DeckOverviewUnitsList"
             ComponentFrame = TUIFramePropertyRTTI
             (
                 RelativeWidthHeight = [1.0, 0.0]
             )
-            Axis = ~/ListAxis/Vertical
+            FitStyle = ~/ContainerFitStyle/FitToContentVertically
 
-            // List filled with DeckOverviewCategoryLine
+            Components =
+            [
+                BUCKListDescriptor
+                (
+                    ElementName = "DeckOverviewUnitsList"
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        RelativeWidthHeight = [1.0, 0.0]
+                        MagnifiableWidthHeight = [-30.0, 0.0]
+                    )
+                    Axis = ~/ListAxis/Vertical
+                    ChildFitToContent = true
+
+                    // List filled with DeckOverviewCategoryLine
+                ),
+
+                // This BUCKContainer acts like a screen to block mouse events to units
+                BUCKContainerDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        RelativeWidthHeight = [1.0, 1.0]
+                    )
+                    HidePointerEvents = true
+                ),
+            ]
         )
     ]
 )

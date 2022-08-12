@@ -27,12 +27,6 @@ template TemplateUnitCriticalModule
     Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
 )
 
-TemplateUnitCapturable is TModuleSelector
-(
-    Default        = ~/CapturableModule
-    Selection      = [~/NilDescriptorIfGhostOrCadavre]
-)
-
 template TemplateUnitMissileCarriage
 [
     Connoisseur

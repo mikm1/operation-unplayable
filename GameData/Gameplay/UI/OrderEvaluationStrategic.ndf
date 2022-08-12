@@ -1,13 +1,6 @@
 public orderEvaluatorCollectionStrategic is TOrderEvaluatorCollectionDescriptor(
     GameplayLogicManagerHandler = $/UI/LogicManagers/StrategicLogicManagerHandler
     OrderEvaluatorList = [
-        TOrderEvaluatorDenyArea(
-            OrderToken = "Shoot"
-            IgnoreDefaultOrder = true
-            FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
-            MouseWidgetSelector = "MouseWidgetSelector_DenyOrder"
-            PlayFXFeedbackWithPositionOnScreen = true
-        ),
         TOrderEvaluatorAny(
             OrderToken = "Shoot"
             IgnoreDefaultOrder = true
@@ -45,13 +38,6 @@ public orderEvaluatorCollectionStrategic is TOrderEvaluatorCollectionDescriptor(
             IgnoreDefaultOrder = true
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_RecoOrder"
-            PlayFXFeedbackWithPositionOnScreen = true
-        ),
-        TOrderEvaluatorTransfertPack(
-            OrderToken = "TransfertPack"
-            IgnoreDefaultOrder = true
-            FXFeedback = $/GFX/GameFx/FX_Feedback_Move
-            MouseWidgetSelector = "MouseWidgetSelector_TransferOrder"
             PlayFXFeedbackWithPositionOnScreen = true
         ),
         TOrderEvaluatorAny(

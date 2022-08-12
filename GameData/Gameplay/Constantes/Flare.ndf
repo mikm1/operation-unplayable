@@ -15,7 +15,6 @@ TempsBonusLancementFlareParArme_Avion is 0.05 // 0.2 en seconde
 TempsMinimalEntreLancementFlare_Avion is 0.1 // 0.05 en seconde
 DistanceActivationFlare_Avion is 8000 * Metre // 8000 / 4000
 VitesseInitialFlare_Avion is 0
-AngleDispersionFlare_Avion is 5 // 5, en degrée
 
 
 

@@ -1,4 +1,4 @@
-export ModelFile_Harrier_UK is 'GameData:/Assets/3D/Units/UK/Avion/Harrier/Harrier.Ase2NdfBin'
+export ModelFile_Harrier_UK is 'GameData:/Assets/3D/Units/UK/Avion/Harrier_GR3/Harrier_GR3.Ase2NdfBin'
 
 Modele_Harrier_UK is TResourceMultiMaterialMeshWithLod
 (
@@ -8,18 +8,18 @@ Modele_Harrier_UK is TResourceMultiMaterialMeshWithLod
 
 Modele_Harrier_UK_MID is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/UK/Avion/Harrier/Harrier.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/UK/Avion/Harrier_GR3/Harrier_GR3.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 
 Modele_Harrier_UK_LOW is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/UK/Avion/Harrier/Harrier.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/UK/Avion/Harrier_GR3/Harrier_GR3.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 
 Modele_Harrier_UK_train is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/UK/Avion/Harrier/Harrier_train.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/UK/Avion/Harrier_GR3/Harrier_GR3_train.Ase2NdfBin'
     CivMask =  CivMask/Common
 )

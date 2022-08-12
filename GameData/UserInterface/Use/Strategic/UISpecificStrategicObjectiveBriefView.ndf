@@ -15,12 +15,6 @@ BUCKSpecificStrategicObjectiveBriefMainComponentDescriptor is BUCKListDescriptor
 
     HidePointerEvents = true
 
-    //HasBackground = true
-    BackgroundBlockColorToken = 'SD2_BleuGris'
-    //HasBorder = true
-    BorderThicknessToken = '1'
-    BorderLineColorToken = "SD2_LigneBleuGris"
-
     Elements =
     [
         BUCKListElementDescriptor

@@ -6,7 +6,7 @@ public UnitLabelAggregationHeight is ~/LabelUnitIconWidthHeight[1] + interstice
 
 private UnitLabelAggregationViewDescriptor is BUCKSensibleAreaDescriptor
 (
-    ElementName = "LabelUnitSensibleArea"
+    ElementName = "UnitIconSensibleArea"
 
     ComponentFrame = TUIFramePropertyRTTI
     (
@@ -80,42 +80,29 @@ private LabelDuHaut is BUCKListDescriptor
         BUCKListElementDescriptor(ComponentDescriptor = ~/UnitLabelUnitPlayerNameBUCKComponent),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = BUCKListDescriptor
+            ComponentDescriptor = BUCKContainerDescriptor
             (
-                ComponentFrame =TUIFramePropertyRTTI
+                ComponentFrame = TUIFramePropertyRTTI
                 (
                     AlignementToFather = [0.5, 0.0]
                     AlignementToAnchor = [0.5, 0.0]
-
                 )
 
-                BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-                Axis = ~/ListAxis/Horizontal
+                FitStyle = ~/ContainerFitStyle/FitToContent
 
-                Elements =
+                Components =
                 [
-                    BUCKListElementDescriptor
+                    UnitNameListSensibleArea
                     (
-                        ComponentDescriptor = UnitLabelUnitCountIconBUCKComponent
-                        (
-                            LocalRenderLayer = 4
-                            IsForCarriedUnit = true
-                        )
-                    ),
-                    BUCKListElementDescriptor
-                    (
-                        ComponentDescriptor = UnitLabelUnitNameBUCKComponent
-                        (
-                            Alignement = [0.0, 0.5]
-                            IsForCarriedUnit = true
-                        )
+                        IsForCarriedUnit = true
+                        LocalRenderLayer = 4
                     ),
                 ]
             )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = BUCKListDescriptor
+            ComponentDescriptor = BUCKContainerDescriptor
             (
                 ComponentFrame =TUIFramePropertyRTTI
                 (
@@ -124,13 +111,15 @@ private LabelDuHaut is BUCKListDescriptor
 
                 )
 
-                Axis = ~/ListAxis/Horizontal
-                BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+                FitStyle = ~/ContainerFitStyle/FitToContent
 
-                Elements =
+                Components =
                 [
-                    BUCKListElementDescriptor(ComponentDescriptor = UnitLabelUnitCountIconBUCKComponent(LocalRenderLayer = 4)),
-                    BUCKListElementDescriptor(ComponentDescriptor = UnitLabelUnitNameBUCKComponent(Alignement = [0.0, 0.5])),
+                    UnitNameListSensibleArea
+                    (
+                        IsForCarriedUnit = false
+                        LocalRenderLayer = 4
+                    ),
                 ]
             )
         ),

@@ -9,6 +9,10 @@ export Texture_Division_Emblem_7_Panzerdivision_DDR is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/7_Panzerdivision_DDR.png"
 )
+export Texture_Division_Emblem_RDA_KDA_Erfurt is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/RDA_KDA_Erfurt.png"
+)
 export Texture_Division_Emblem_2_PzGrenDivision_RFA is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/2_PzGrenDivision_RFA.png"
@@ -16,6 +20,10 @@ export Texture_Division_Emblem_2_PzGrenDivision_RFA is TUIResourceTexture_Common
 export Texture_Division_Emblem_5_Panzerdivision_RFA is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/5_Panzerdivision_RFA.png"
+)
+export Texture_Division_Emblem_RFA_TerrKdo_Sud is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/RFA_TerrKdo_Sud.png"
 )
 export Texture_Division_Emblem_35th_VDV_Brigade is TUIResourceTexture_Common
 (
@@ -62,8 +70,10 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
     [
         ("Texture_Division_Emblem_4_MSD_DDR", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_4_MSD_DDR)]),
         ("Texture_Division_Emblem_7_Panzerdivision_DDR", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_7_Panzerdivision_DDR)]),
+        ("Texture_Division_Emblem_RDA_KDA_Erfurt", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RDA_KDA_Erfurt)]),
         ("Texture_Division_Emblem_2_PzGrenDivision_RFA", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_2_PzGrenDivision_RFA)]),
         ("Texture_Division_Emblem_5_Panzerdivision_RFA", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_5_Panzerdivision_RFA)]),
+        ("Texture_Division_Emblem_RFA_TerrKdo_Sud", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_TerrKdo_Sud)]),
         ("Texture_Division_Emblem_35th_VDV_Brigade", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_35th_VDV_Brigade)]),
         ("Texture_Division_Emblem_39th_gmsd", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_39th_gmsd)]),
         ("Texture_Division_Emblem_79th_gtd", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_79th_gtd)]),

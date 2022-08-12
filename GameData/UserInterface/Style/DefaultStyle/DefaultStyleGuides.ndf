@@ -115,6 +115,8 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
                                                                 ]),
 
         ("AutoKick",                                            MAP [ ( ~/ComponentState/Normal, TextStyleStroke0806 ), ]),
+        ("EGWin",                                            MAP [ ( ~/ComponentState/Normal, TextStyle_EGWin ), ]),
+        ("EGWin2",                                            MAP [ ( ~/ComponentState/Normal, TextStyle_EGWin2 ), ]),
     ]
 
     Typeface = MAP [
@@ -304,6 +306,7 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
         ("Debrief/TimeTitle",                           MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = 20 ) ), ]),
         ("Debrief/Time",                                MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = 35 ) ), ]),
         ("Debrief/PointsTitle",                         MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = 20 ) ), ]),
+        ("Debrief/UpdateProfile",                       MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = 20 ) ), ]),
         ("Debrief/Points",                              MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = 50 ) ), ]),
         ("AutoMatchOption",                             MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Moyen ) ), ]),
         ("Lobby/PlayerLine",                            MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Moyen ) ), ]),
@@ -568,6 +571,7 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
 
 
         ("Vert",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Vert ) ), ]),
+        ("Vert50p",                MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Vert50p ) ), ]),
 
         ("BeigeSteelman",          MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BeigeSteelman ) ), ]),
         ("GrisSteelman",           MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisSteelman ) ), ]),
@@ -626,6 +630,7 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
                                         ]),
 
 
+        ("Debrief/UpdateProfile",         MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Noir ) ), ]),
 
 
         ("SD2_Gris80",                MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Gray90 ) ), ]),
@@ -691,9 +696,9 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
         ("LightestGray",               MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = LightestGray ) ), ]),
         ("SeaBlue",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = SeaBlue ) ), ]),
         ("Cyan",                       MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Cyan ) ), ]),
-        ("Cyan50p",                       MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Cyan50p ) ), ]),
+        ("Cyan50p",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Cyan50p ) ), ]),
         ("Blanc",                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc ) ), ]),
-        ("Blanc50p",                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc30 ) ), ]),
+        ("Blanc50p",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc30 ) ), ]),
         ("Orange",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = JauneOrange ) ), ]),
         ("Orange3",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Orange3 ) ), ]),
         ("Red",                        MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Rouge4_strat2 ) ), ]),
@@ -1779,6 +1784,7 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
                                                             ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = GrayGave ) ),
                                                         ]),
 
+        ("Debrief/UpdateProfile",         MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Noir ) ), ]),
 
         ("ButtonHUD/ExternalBorder",                                MAP [
                                                                         ( ~/ComponentState/Normal,                TColorRTTI( Color = Transparent ) ),
@@ -1977,6 +1983,7 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
     //TextColors
     TextColorsMap = MAP [
 
+        ("Debrief/UpdateProfile",         MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Noir ) ), ]),
 
 
         ("SovDivision1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [134,37,4,180] ) ), ]),
@@ -2413,6 +2420,7 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
                                             ( ~/ComponentState/Highlighted,            TColorRTTI( Color = [255,255,255,255]  ) ),
                                             ]),
         ("Gris_boutonAction",            MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [188,181,182,255] ) ),
+                                              ( ~/ComponentState/Grayed,                 TColorRTTI( Color = [110,110,110,180] ) ),
                                               ( ~/ComponentState/Highlighted,            TColorRTTI( Color = [210,210,210,255] ) ),
                                             ]),
         //-------------------------------------------------------------------------------------

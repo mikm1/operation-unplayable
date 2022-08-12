@@ -53,7 +53,7 @@ export Descriptor_Unit_test_avion_alex is TEntityDescriptor
                 (
                     UseFollowCam               = False
                     StickToGround              = True
-                    InGeoDb                    = False
+                    InGeoDb                    = True
                     PorteurMustBeVisible       = True
                     ClampInWorld               = False
                     ClampOutMap                = True
@@ -226,10 +226,8 @@ export Descriptor_Unit_test_avion_alex is TEntityDescriptor
                 HasZoneOfControl = False
                 AirDenyRadius = 4000.0 * Metre
                 AirDenyRange = -1.0 * Metre
-                LandDenyRadius = 0 * Metre
-                LandDenyRange = 0 * Metre
-                BattleSupportRadius = -1.0 * Metre
-                MinBattleSupportRadius = 0.0 * Metre
+                BattleSupportRadius = 100000000.0 * Metre
+                MinBattleSupportRadius = 1.0 * Metre
             )
             Selection = [ ~/NilDescriptorIfGhostOrCadavre ]
         ),
@@ -288,9 +286,9 @@ export Descriptor_Unit_test_avion_alex is TEntityDescriptor
         // ActionPoints
         TActionPointsModuleDescriptor
         (
-            InitialActionPoint = 3
-            ActionPointRecoveryPerTurn = 3
-            NbInitialActionsPointsForProducedPawn = 3
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
         ),
 
         // StrategicMovementLink
@@ -432,7 +430,7 @@ export Descriptor_Unit_test_avion_bomber is TEntityDescriptor
                 (
                     UseFollowCam               = False
                     StickToGround              = True
-                    InGeoDb                    = False
+                    InGeoDb                    = True
                     PorteurMustBeVisible       = True
                     ClampInWorld               = False
                     ClampOutMap                = True
@@ -605,8 +603,6 @@ export Descriptor_Unit_test_avion_bomber is TEntityDescriptor
                 HasZoneOfControl = False
                 AirDenyRadius = 0 * Metre
                 AirDenyRange = 0 * Metre
-                LandDenyRadius = 0 * Metre
-                LandDenyRange = 0 * Metre
                 BattleSupportRadius = -1.0 * Metre
                 MinBattleSupportRadius = 0.0 * Metre
             )
@@ -667,9 +663,9 @@ export Descriptor_Unit_test_avion_bomber is TEntityDescriptor
         // ActionPoints
         TActionPointsModuleDescriptor
         (
-            InitialActionPoint = 3
-            ActionPointRecoveryPerTurn = 3
-            NbInitialActionsPointsForProducedPawn = 3
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
         ),
 
         // StrategicMovementLink
@@ -819,7 +815,7 @@ export Descriptor_Unit_test_avion_cas is TEntityDescriptor
                 (
                     UseFollowCam               = False
                     StickToGround              = True
-                    InGeoDb                    = False
+                    InGeoDb                    = True
                     PorteurMustBeVisible       = True
                     ClampInWorld               = False
                     ClampOutMap                = True
@@ -992,8 +988,6 @@ export Descriptor_Unit_test_avion_cas is TEntityDescriptor
                 HasZoneOfControl = False
                 AirDenyRadius = 0 * Metre
                 AirDenyRange = 0 * Metre
-                LandDenyRadius = 0 * Metre
-                LandDenyRange = 0 * Metre
                 BattleSupportRadius = -1.0 * Metre
                 MinBattleSupportRadius = 0.0 * Metre
             )
@@ -1054,9 +1048,9 @@ export Descriptor_Unit_test_avion_cas is TEntityDescriptor
         // ActionPoints
         TActionPointsModuleDescriptor
         (
-            InitialActionPoint = 3
-            ActionPointRecoveryPerTurn = 3
-            NbInitialActionsPointsForProducedPawn = 3
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
         ),
 
         // StrategicMovementLink

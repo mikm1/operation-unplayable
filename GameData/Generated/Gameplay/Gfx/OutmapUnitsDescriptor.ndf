@@ -163,7 +163,6 @@ export Descriptor_Unit_test is TEntityDescriptor
                     NameToken = 'None'
                     InfoPanelConfigurationToken = 'Default'
                     TypeSpecificToken = ''
-                    ShowInMenu = True
                     IsAce = False
                     GenerateName = true
                     MenuIconTexture = 'Texture_MenuIcon_default'

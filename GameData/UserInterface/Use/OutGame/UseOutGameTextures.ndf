@@ -197,6 +197,7 @@ Outgame_Chat_Dropdown_Normal is TUIResourceTexture_OutGame( FileName = "GameData
 Outgame_Chat_Dropdown_Selected is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/Common/Expandable/vitesseDownn.png" )
 //-------------------------------------------------------------------------------------
 // EndGame
+Outgame_BestScore is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/EndGame/BestScore.png" )
 Outgame_fond_EndGame is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/EndGame/EndGame_FondEcran.png" )
 Outgame_fond_EndGame_foreground is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/EndGame/endgame_foreground.png" )
 EndGame_ForegroundEcranXP is TUIResourceTexture_OutGame( FileName =         "GameData:/Assets/2D/Interface/UseOutGame/EndGame/EndGame_ForegroundEcranXP.png" )
@@ -247,6 +248,8 @@ kick_player is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interf
 lobby_dropdown_arrow is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/dropdown_arrow.png" )
 switch_to_left_team is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/switch_to_left_team.png" )
 switch_to_right_team is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/switch_to_right_team.png" )
+player_ready is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/player_ready.png" )
+player_not_ready is TUIResourceTexture_OutGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/player_not_ready.png" )
 
 //-------------------------------------------------------------------------------------
 // profile
@@ -279,6 +282,10 @@ Texture_LongButton is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2
 Texture_LongButton_grayed is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Boutons/bouton_long_grayed.png" )
 Texture_LongButton_toggled is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Boutons/bouton_long_toggled.png" )
 Texture_LongButton_toggled_clicked is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Boutons/bouton_long_toggled_clicked.png" )
+
+Texture_ShortButton_FilterButtonOverlay is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Boutons/bouton_court_FilterButtonOverlay.png" )
+Texture_ShortButton_FilterButtonOverlay_hovered is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Boutons/bouton_court_FilterButtonOverlay_hovered.png" )
+Texture_ShortButton_FilterButtonOverlay_clicked is TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Boutons/bouton_court_FilterButtonOverlay_clicked.png" )
 
 //-------------------------------------------------------------------------------------
 // accueil
@@ -380,6 +387,7 @@ unnamed TBUCKToolAdditionalTextureBank
         ("outgame_dropdown_lobby", MAP [( ~/ComponentState/Normal, TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Lobby/dropdown_parametre.png" )), ]),
         //-------------------------------------------------------------------------------------
         // endgame
+         ("Outgame_BestScore", MAP [( ~/ComponentState/Normal, ~/Outgame_BestScore), ]),
          ("Outgame_fond_EndGame", MAP [( ~/ComponentState/Normal, ~/Outgame_fond_EndGame), ]),
          ("Outgame_fond_EndGame_foreground", MAP [( ~/ComponentState/Normal, ~/Outgame_fond_EndGame_foreground), ]),
          ("EndGame_ForegroundEcranXP", MAP [( ~/ComponentState/Normal, ~/EndGame_ForegroundEcranXP), ]),
@@ -495,6 +503,8 @@ unnamed TBUCKToolAdditionalTextureBank
         ("close_slot", MAP [( ~/ComponentState/Normal, ~/close_slot),]),
         ("kick_player", MAP [( ~/ComponentState/Normal, ~/kick_player),]),
         ("lobby_dropdown_arrow", MAP [( ~/ComponentState/Normal, ~/lobby_dropdown_arrow),]),
+        ("player_ready", MAP [( ~/ComponentState/Normal, ~/player_ready),]),
+        ("player_not_ready", MAP [( ~/ComponentState/Normal, ~/player_not_ready),]),
         //-------------------------------------------------------------------------------------
         // profile
         ("fond_stats", MAP [( ~/ComponentState/Normal, ~/fond_stats), ]),
@@ -511,6 +521,15 @@ unnamed TBUCKToolAdditionalTextureBank
                                             ( ~/ComponentState/Toggled, ~/Texture_ShortButton_toggled),
                                             ( ~/ComponentState/ToggleHighlighted, ~/Texture_ShortButton_toggled),
                                             ( ~/ComponentState/ToggleClicked, ~/Texture_ShortButton_toggled_clicked),
+                                        ]),
+        ("Texture_ShortButton_FilterButtonOverlay", MAP [
+                                            ( ~/ComponentState/Normal, ~/Texture_ShortButton_FilterButtonOverlay),
+                                            ( ~/ComponentState/Grayed, ~/Texture_ShortButton_FilterButtonOverlay),
+                                            ( ~/ComponentState/Highlighted, ~/Texture_ShortButton_FilterButtonOverlay_hovered),
+                                            ( ~/ComponentState/Clicked, ~/Texture_ShortButton_FilterButtonOverlay_hovered),
+                                            ( ~/ComponentState/Toggled, ~/Texture_ShortButton_FilterButtonOverlay_clicked),
+                                            ( ~/ComponentState/ToggleHighlighted, ~/Texture_ShortButton_FilterButtonOverlay_hovered),
+                                            ( ~/ComponentState/ToggleClicked, ~/Texture_ShortButton_FilterButtonOverlay_hovered),
                                         ]),
         ("Texture_LongButton", MAP [
                                             ( ~/ComponentState/Normal, ~/Texture_LongButton),

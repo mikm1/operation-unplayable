@@ -63,14 +63,6 @@ template ShortcutButton
             TextureToken = <TextureToken>
             TextureColorToken = "CouleurTexture_boutonShortcuts"
 
-            {TextureFrame = TUIFramePropertyRTTI
-                                    (
-                                        RelativeWidthHeight = <RelativeWidthHeight>
-                                        MagnifiableWidthHeight = <MagnifiableWidthHeight>
-                                        AlignementToFather = [0.5, 0.5]
-                                        AlignementToAnchor = [0.5, 0.5]
-                                    )}
-
             Components =
             [
                  BUCKSpecificHintableArea

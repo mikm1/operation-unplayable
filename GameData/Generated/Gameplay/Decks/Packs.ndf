@@ -1,16 +1,310 @@
 // Ne pas éditer, ce fichier est auto-généré !
 
 
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_ATteam_Milan_2_RFA is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_CH53G_RFA is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{57d109be-d6bf-4ab3-8a9f-4a78b5cbcc9c}
+    DescriptorId = GUID:{6bcb856f-d7ef-448a-805c-e29ef9dec919}
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_ATteam_Milan_2_RFA,
+                ~/Descriptor_Unit_CH53G_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Fallschirm_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{2bdc60af-77b3-4042-a20b-f807e006ac54}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Fallschirm_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Fallschirmjager_CMD_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{2943c3ae-bf4f-4f01-9897-be36555b3118}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Fallschirmjager_CMD_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Fallschirmjager_Scout_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{097a9916-36b5-4c26-9ceb-e14adc7a3b4c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Fallschirmjager_Scout_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_20mm_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{05cc0c30-115e-4210-a4af-6e3929527ae8}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_20mm_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_20mm_reco_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f8dfe1e8-96a5-4e84-b4e1-165ac51b9717}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_20mm_reco_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_HOT_2_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{de7d18d9-05a0-4b1c-a7fb-1d854bf1ac25}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_HOT_2_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_HOT_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{aeefc602-4bcd-4c88-878c-116bbe9e301a}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_HOT_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_reco_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{710bd386-00f4-40ff-9a32-930bc982a812}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_reco_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Mirage_2000_C_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{0f1320b8-8046-44e8-a8ad-5c7c7ed64d96}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mirage_2000_C_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Rifles_Aero_CMD_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{75b80d95-ca13-468d-af32-d22a911fc1a1}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Rifles_Aero_CMD_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Rifles_Aero_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b6eba814-e572-4a3d-b09d-b54ac475f936}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Rifles_Aero_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLTT_P4_MILAN_para_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{278c5216-164f-43c0-9371-979a83d2652d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_VLTT_P4_MILAN_para_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_5e_Blindee_multi_AMX_10_RC_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{0155fbb7-9bca-43eb-87f6-f89b0f2e3498}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AMX_10_RC_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_5e_Blindee_multi_ATteam_Milan_2_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{17261e67-5b32-4488-a693-501d97269c80}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ATteam_Milan_2_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_5e_Blindee_multi_Gazelle_HOT_2_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8a97731f-2347-427c-9ae2-c28bfb9a9736}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_HOT_2_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_5e_Blindee_multi_Gazelle_HOT_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{7bbd6d8c-8158-47dc-852a-a8f3350dd3a5}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_HOT_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_5e_Blindee_multi_Mirage_5_F_clu_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6277b450-eb05-4b1d-8626-40035ee9751b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mirage_5_F_clu_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_5e_Blindee_multi_Rifles_CMD_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{92f18160-b3bb-420f-8238-4f1a96c9001d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Rifles_CMD_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_5e_Blindee_multi_Rifles_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{47b6c979-b2e3-4139-8cd0-3c8a02145db6}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Rifles_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_FR_5e_Blindee_multi_VLTT_P4_MILAN_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8d99a60f-5b23-4e4e-a828-654af879c5de}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_VLTT_P4_MILAN_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_ATteam_Milan_2_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{71d40cbb-a736-41c9-9f67-a52ab5b7a1b4}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ATteam_Milan_2_FR,
             ]
         ),
     ]
@@ -57,58 +351,16 @@ export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Engineers_Flash_US is
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Engineers_US is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Harrier_UK is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{f839da32-8b59-4305-b0e5-10e3f0e2504c}
+    DescriptorId = GUID:{6ac99d0c-89ae-4f13-9370-92576b5c62f8}
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_Engineers_US,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_FH70_155mm_RFA is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{0759ae0d-36eb-498a-8c67-285704de2d00}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_FH70_155mm_RFA,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Feldgendarmerie_RFA is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{6f3cbf42-dbfc-4758-aa11-5910c1c069a0}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_Feldgendarmerie_RFA,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_HEMTT is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{04463a00-ab90-4d51-a367-44bde90e6844}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_HEMTT,
+                ~/Descriptor_Unit_Harrier_UK,
             ]
         ),
     ]
@@ -123,34 +375,6 @@ export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_HeimatschutzJager_RFA
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_HeimatschutzJager_RFA,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Jager_RFA is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{91998da2-edfd-4a19-950f-81bbcfa66c85}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_Jager_RFA,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_M1025_Humvee_AGL_US is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{98dc4430-ad92-4350-84e2-51e6105e2595}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_M1025_Humvee_AGL_US,
             ]
         ),
     ]
@@ -193,20 +417,6 @@ export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_M125_HOWZ_US is TDeck
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_M125_HOWZ_US,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_M151_MUTT_CMD_US is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{3f5f368c-ae88-4ab1-882b-6ca44ef63569}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_M151_MUTT_CMD_US,
             ]
         ),
     ]
@@ -323,20 +533,6 @@ export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_MANPAD_Stinger_C_US i
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_MP_RCL_US is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{391024db-e66a-4389-9fb7-6aa7d93a8e60}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_MP_RCL_US,
-            ]
-        ),
-    ]
-)
 export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_MP_US is TDeckPackDescriptor
 (
     DescriptorId = GUID:{1a5c2a21-fc5e-4dc5-b1d4-92dd50069c3f}
@@ -351,58 +547,30 @@ export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_MP_US is TDeckPackDes
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Mortier_107mm_US is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Rifles_CMD_FR is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{51576870-00d2-4a4f-a572-0784af6ec19f}
+    DescriptorId = GUID:{f1d20a0d-1767-4789-b9e0-6eed23f26f19}
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_Mortier_107mm_US,
+                ~/Descriptor_Unit_Rifles_CMD_FR,
             ]
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Rifles_CMD_US is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Rifles_FR is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{ad97d7e0-6618-4181-8e36-6a403b37dc2b}
+    DescriptorId = GUID:{c3500983-c133-49aa-a5c6-7776759f4482}
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_Rifles_CMD_US,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Rifles_US is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{e7d6f264-54e4-405f-944e-518d43d4d2bd}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_Rifles_US,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Scout_BEL is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{9cae08c5-b5ff-40a2-9793-fa10a19f5a7d}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_Scout_BEL,
+                ~/Descriptor_Unit_Rifles_FR,
             ]
         ),
     ]
@@ -421,16 +589,16 @@ export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_Scout_US is TDeckPack
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_TPZ_Fuchs_CMD_RFA is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_NATO_Garnison_Berlin_multi_VLTT_P4_MILAN_FR is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{77829ff1-a800-404d-9ea3-8045b783dcc7}
+    DescriptorId = GUID:{2394e48b-dec6-4b40-8a65-e9b0145fad3d}
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_TPZ_Fuchs_CMD_RFA,
+                ~/Descriptor_Unit_VLTT_P4_MILAN_FR,
             ]
         ),
     ]
@@ -2227,6 +2395,902 @@ export Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_ZSU_23_Shilka_DDR is TDeckPac
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_2S7M_Malka_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{7de77610-c017-4679-842f-bc1bd1fc63f3}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_2S7M_Malka_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_AT_D44_85mm_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1e948aad-658f-48a4-8397-ad2987e2a4b6}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AT_D44_85mm_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_AT_T12_Rapira_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ccc88a8e-480d-433d-ba73-d0d0f55c3e13}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AT_T12_Rapira_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_ATteam_Fagot_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c9a56dd2-7adb-483c-ba9a-6c225a8aea13}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ATteam_Fagot_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_ATteam_RCL_SPG9_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{60de4ec3-a0d1-4bff-bc6c-4e5787ac8200}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ATteam_RCL_SPG9_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_BM30_Smerch_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{86e6fa1d-9ee1-472d-893f-26a3eb92c869}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BM30_Smerch_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_BRDM_2_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{40370cd2-5a50-4ad8-9f57-dd791add2ecd}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BRDM_2_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_BRDM_2_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{44102852-60e3-4956-8ceb-dabfddae5cb3}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BRDM_2_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_BRDM_Malyu_P_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b2e6bfca-2c90-41b5-bb78-cf35c2691d54}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BRDM_Malyu_P_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_BTR_50_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{29af4ca9-b785-4b86-9ee3-43b6c7813c0b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BTR_50_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Buk_9K37M_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{27f6e60b-c02b-4910-ae54-5d36a1c11472}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Buk_9K37M_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_DCA_ZU_23_2_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e09dad9d-2f5c-462f-b47b-06fa9cc804e9}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_DCA_ZU_23_2_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Engineers_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{274c8afe-70f3-4738-a1c7-65498954e991}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Engineers_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6c34c8e9-e3ab-42ca-a826-8502b6f9293b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Engineers_Flam_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d72793d9-c5f1-4fc0-ad63-0f1aef7ff129}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_Flam_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Howz_D30_122mm_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1b4133e8-63b1-4c83-a875-88072f01f2e5}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Howz_D30_122mm_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Howz_M46_130mm_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d60461e8-8a1e-43c5-9f53-cc2a2b37e3e4}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Howz_M46_130mm_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_KdA_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{5654e0e9-b0f3-4652-9fe5-28ffb1199495}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_KdA_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_KdA_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{77cbf4c1-c902-412d-87e1-8a304e274fe1}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_KdA_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MANPAD_Strela_2M_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a672bd62-83b3-42de-a799-58d65ac1f514}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MANPAD_Strela_2M_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MTLB_supply_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{0cb27c5f-77ac-4956-ae19-32f2f7a4c785}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MTLB_supply_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MiG_21bis_HE_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f995a713-4342-4333-8eb2-c04f1e442cb8}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_21bis_HE_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MiG_21bis_RKT2_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{677844a5-db46-4e3e-a29d-987ec471bcb1}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_21bis_RKT2_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MiG_23BN_AT_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{909dd419-0eb3-4883-a79a-b3fdbb6fca33}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_23BN_AT_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MiG_23MF_AA_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{71d8ce37-9c35-4c01-9808-d129766473ae}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_23MF_AA_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MiG_25RBF_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{87e00b67-9d51-4f7a-8d99-9f65ba2f79ae}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_25RBF_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MiG_27M_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ce00cdb5-8b5d-45d6-b93e-ed4c2d6ac6a8}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_27M_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MiG_27M_bombe_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{bcefb8c8-a304-4d01-bc07-93ea72beddbc}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_27M_bombe_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Mi_24P_s8_AT2_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{892cfdc9-4687-4933-bf84-1ffecbba47af}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_24P_s8_AT2_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Mi_26_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{7f18f06d-24a4-4657-9c43-89d25838df55}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_26_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Mi_2_reco_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{fafffec8-9a12-4b6a-a0b1-cbface59b77c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_2_reco_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Mi_8TB_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{198e4e4d-2af8-4151-a78b-66e71d2ef470}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_8TB_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Mi_8TV_PodGatling_PodAGL_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{59e59738-c578-4019-9cd7-0076b3a57e2d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_8TV_PodGatling_PodAGL_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Mi_8TV_s57_32_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c0ce3dc7-7314-4538-b674-bfae7d0e44a4}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_8TV_s57_32_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Mortier_PM43_120mm_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{be589472-6f96-4977-a119-172484a503f2}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mortier_PM43_120mm_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MotRifles_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{3e2f6ccd-22b9-4559-b967-a35e37c6a2bb}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MotRifles_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{de7ecf86-242c-4008-a647-3f988238ec17}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MotRifles_HMG_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b853b38a-a1c7-488e-b432-4fa39fa4f91f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_HMG_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_MotSchutzen_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6c83b691-a7bf-4a19-a332-864fb98ba4cb}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotSchutzen_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Osa_9K33M3_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c0cbdac0-1784-41e3-8cd5-3363c6747523}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Osa_9K33M3_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_PT76B_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e0c6d368-27d3-4a4a-97c1-d9e590856dff}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_PT76B_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_PT76B_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d668f3de-b44b-48d5-a81b-1d92bccbfbdc}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_PT76B_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_PT76B_tank_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b5bd930a-8245-462b-880d-10558edadd0e}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_PT76B_tank_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Scout_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{7e7d4924-9693-4c45-b174-aa777cfc67dd}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Scout_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Scout_LRRP_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f977241f-f9a8-4ffd-85b7-ea7e2f5e4c57}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Scout_LRRP_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Spetsnaz_CMD_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6347b787-41d7-46e0-bb56-017706b31e37}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Spetsnaz_CMD_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Spetsnaz_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{80582e03-423e-457f-ad93-92a87709ff0d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Spetsnaz_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Su_17M4_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c3bd5649-f27e-4ae9-a98f-c4fd8e838762}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Su_17M4_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Su_22_clu_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{85665f4d-3b4f-4bd9-a839-426e0a0401a8}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Su_22_clu_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Su_24MP_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{88222628-8130-44e2-8dd1-b77b89d1a5e0}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Su_24MP_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Su_24M_nplm_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{76cdcde8-f700-4661-949b-d697405e832c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Su_24M_nplm_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_T34_85M_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d4a8d86d-89b7-4616-a771-975af14fafac}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T34_85M_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_T55A_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c6f58fb1-3db5-4b5f-ad2f-e8462f85dac3}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T55A_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_T55A_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{997e3675-f1c7-4cee-a81e-b5cd0a3a42da}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T55A_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_T62M1_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ef58251f-ddd3-4db3-9b58-08a3e27b45c8}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T62M1_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_T62M_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{85e058c8-4d21-444a-b3f0-45e98437cb93}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T62M_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_T813_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b10dda32-f06c-4e19-90f3-30f2bee5b24c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T813_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_UAZ_469_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d33b12eb-81c2-4d67-a36d-7c739bc74256}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_UAZ_469_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_UAZ_469_Fagot_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ef3c2a11-3ce6-46e7-aafe-abe226e33ac0}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_UAZ_469_Fagot_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_UAZ_469_SPG9_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{5ea267ca-4be0-4a1d-b0cc-a5870daa2922}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_UAZ_469_SPG9_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Ural_4320_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1600f3f9-187e-4214-b630-47ef26b10c41}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Ural_4320_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Volkspolizei_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1fbeb635-b179-43a6-bb71-0da361e289bb}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Volkspolizei_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_Volkspolizei_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{449adbf7-e014-4892-82bd-3b63eb05a6e2}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Volkspolizei_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RDA_KdA_Bezirk_Erfurt_multi_ZSU_57_2_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{4bfb0984-6c9c-42c6-aa92-be3a56a1c375}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ZSU_57_2_DDR,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_RFA_2_PzGrenadier_multi_ATteam_Milan_1_RFA is TDeckPackDescriptor
 (
     DescriptorId = GUID:{28a0cbdd-bcc0-4f81-b96d-835e0d37a57a}
@@ -3977,6 +5041,20 @@ export Descriptor_Deck_Pack_TOE_RFA_5_Panzer_multi_Unimog_S_404_RFA is TDeckPack
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_AMX_10_RC_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{0201497a-4e25-4935-9c63-21ae4517a9de}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AMX_10_RC_FR,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_ATteam_Milan_1_RFA is TDeckPackDescriptor
 (
     DescriptorId = GUID:{88cfe757-b9d8-41f3-a6e2-44606e3e8d27}
@@ -3987,6 +5065,20 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_ATteam_Milan_1_RFA is TDec
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_ATteam_Milan_1_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_ATteam_Milan_2_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e37c06d3-0a51-4212-82a7-f47a6980127a}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ATteam_Milan_2_FR,
             ]
         ),
     ]
@@ -4005,16 +5097,16 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_ATteam_RCL_M40A1_RFA is TD
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Alouette_II_reco_RFA is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Bofors_40mm_RFA is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{52d483fa-1d42-4fc8-a324-7177f02f459b}
+    DescriptorId = GUID:{78707272-240b-4c2f-9832-12bae05ec405}
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_Alouette_II_reco_RFA,
+                ~/Descriptor_Unit_Bofors_40mm_RFA,
             ]
         ),
     ]
@@ -4029,6 +5121,20 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_CH53G_RFA is TDeckPackDesc
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_CH53G_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_DCA_FK20_2_20mm_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a1dd3578-90e0-4bfb-a308-7d991307bfb2}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_DCA_FK20_2_20mm_RFA,
             ]
         ),
     ]
@@ -4103,6 +5209,104 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Engineers_RFA is TDeckPack
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Engineers_Reserve_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{bc1cb54f-d700-4c0e-9733-001c474c077a}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_Reserve_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_F104G_Starfighter_HE_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{4793a621-c501-4a44-a358-52cce6730594}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F104G_Starfighter_HE_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_F111F_Aardvark_LGB2_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f59a30c3-c1cd-4dc2-a3bc-9f04423e3553}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F111F_Aardvark_LGB2_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_F4F_Phantom_II_AA_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{61d4f236-7c3c-4616-8f9e-5ecbe38819ea}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F4F_Phantom_II_AA_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_F4F_Phantom_II_AT_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f159d00c-b2ee-44fc-b6ee-e5a1e477ffc3}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F4F_Phantom_II_AT_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_F4F_Phantom_II_HE1_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{943ac77e-b500-4673-901c-f0dc2baf4ae1}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F4F_Phantom_II_HE1_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_F4F_Phantom_II_HE2_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{9e7f3719-89cb-426e-b42c-0b5de230d38a}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F4F_Phantom_II_HE2_RFA,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_FH70_155mm_RFA is TDeckPackDescriptor
 (
     DescriptorId = GUID:{d1b09070-32a2-4fce-996c-21c44ddf94c9}
@@ -4117,44 +5321,16 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_FH70_155mm_RFA is TDeckPac
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Fallschirm_RFA is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Fallschirm_B1_RFA is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{d3a15a14-9fbb-49be-92ba-44c4a4e2d96f}
+    DescriptorId = GUID:{206b372e-9fe1-498f-aab6-837f59168598}
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_Fallschirm_RFA,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Fallschirmjager_CMD_RFA is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{52cf8b5a-c64d-403a-b15a-93e435078e2d}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_Fallschirmjager_CMD_RFA,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Fallschirmjager_Scout_RFA is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{b1aa4290-7e8c-4b65-bc1f-bf031c46c478}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_Fallschirmjager_Scout_RFA,
+                ~/Descriptor_Unit_Fallschirm_B1_RFA,
             ]
         ),
     ]
@@ -4173,6 +5349,118 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Feldgendarmerie_RFA is TDe
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Gazelle_20mm_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{3447b94a-ad95-4d60-812e-400c1e47c221}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_20mm_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Gazelle_20mm_reco_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a7903458-f4a3-4838-b889-e05ae65fbc6c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_20mm_reco_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Gazelle_HOT_2_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{100a544d-7ca4-4ba3-8b4a-145d07c1037c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_HOT_2_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Gazelle_HOT_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e7a094a6-429d-4654-a7f2-bb6e6f9219d3}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_HOT_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Gazelle_reco_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b8087da5-2fae-4e05-bc97-da3c92161bbc}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Gazelle_reco_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_GreenBerets_CMD_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f08866b5-553b-4b91-a013-448713bf34a5}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_GreenBerets_CMD_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_GreenBerets_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1c5a2e06-755d-474f-8ad4-ae93196ee8af}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_GreenBerets_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_HS30_Panzermorser_120mm_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e26035cf-aef4-4038-ae10-24dabe806056}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_HS30_Panzermorser_120mm_RFA,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_HeimatschutzJager_RFA is TDeckPackDescriptor
 (
     DescriptorId = GUID:{ce63f770-b85a-4bba-98d8-23308c444577}
@@ -4183,6 +5471,20 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_HeimatschutzJager_RFA is T
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_HeimatschutzJager_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Howz_M101_105mm_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{7ce595bf-a035-4d08-813d-ad8edb0adf00}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Howz_M101_105mm_RFA,
             ]
         ),
     ]
@@ -4257,16 +5559,16 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_KanJagdPanzer_RFA is TDeck
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_M113A1G_supply_RFA is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_M113_GreenArcher_RFA is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{d21fef9a-b53e-40b9-948f-558d0b12d364}
+    DescriptorId = GUID:{a3b34abb-2be1-4d85-a9fa-c8a938aee6ce}
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_M113A1G_supply_RFA,
+                ~/Descriptor_Unit_M113_GreenArcher_RFA,
             ]
         ),
     ]
@@ -4281,6 +5583,20 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_M48A2C_RFA is TDeckPackDes
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_M48A2C_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_M48A2GA2_CMD_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{159eea7a-6cc2-4e62-a451-286e9ea86339}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M48A2GA2_CMD_RFA,
             ]
         ),
     ]
@@ -4327,6 +5643,20 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_MANPAD_Redeye_RFA is TDeck
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_MAN_Kat_6x6_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a81d5806-1d40-4f43-a50b-91a35fa42f2b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MAN_Kat_6x6_RFA,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Marder_Roland_2_RFA is TDeckPackDescriptor
 (
     DescriptorId = GUID:{ae7b7c29-2125-43f8-b548-db1eb5f02a7a}
@@ -4355,6 +5685,34 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Marder_Roland_RFA is TDeck
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Mirage_2000_C_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e04841fd-f6a0-4468-bfce-93877c2cf9a7}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mirage_2000_C_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Mirage_5_F_clu_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6b57f49f-d927-450f-ade4-c1f5ad405443}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mirage_5_F_clu_FR,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Mortier_Tampella_120mm_RFA is TDeckPackDescriptor
 (
     DescriptorId = GUID:{465f6aa3-2807-463d-9ac6-07db8f3b296a}
@@ -4365,6 +5723,48 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Mortier_Tampella_120mm_RFA
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_Mortier_Tampella_120mm_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Rifles_Aero_CMD_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ca5647c1-5b11-49db-a8ce-6e8e6bd28cad}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Rifles_Aero_CMD_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Rifles_Aero_FR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{77c8f343-b902-43cc-9075-40ddf61ddbaa}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Rifles_Aero_FR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Scout_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1e76ba90-3cd4-4014-b132-faca2e8dadb7}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Scout_RFA,
             ]
         ),
     ]
@@ -4383,16 +5783,16 @@ export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Security_RFA is TDeckPackD
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_Unimog_S_404_RFA is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_VLTT_P4_MILAN_FR is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{cf7b292e-11fe-4f6c-b2a6-3be85ce71bf2}
+    DescriptorId = GUID:{d22be7f4-9c3f-4af8-8c39-9311551889e5}
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_Unimog_S_404_RFA,
+                ~/Descriptor_Unit_VLTT_P4_MILAN_FR,
             ]
         ),
     ]
@@ -4687,6 +6087,20 @@ export Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_HvyScout_SOV is TDeckP
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_HvyScout_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_Ka_50_AA_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{bc028bd1-13e8-46b7-b23c-2026034236f1}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Ka_50_AA_SOV,
             ]
         ),
     ]
@@ -6963,6 +8377,20 @@ export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80U_SOV is TDeckPackDescr
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_TOS1_Buratino_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a0759353-0eb5-4787-903f-4c2fa90f6eed}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_TOS1_Buratino_SOV,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Tunguska_2K22_SOV is TDeckPackDescriptor
 (
     DescriptorId = GUID:{c5c600cb-3ed3-43fa-a195-4ff11d8340c1}
@@ -7001,6 +8429,944 @@ export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Ural_4320_SOV is TDeckPack
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_Ural_4320_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_CH47_Super_Chinook_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b5cc0ad8-3312-4ea2-b808-549b2db9eb3c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_CH47_Super_Chinook_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_FV101_Scorpion_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{82c11fce-1a48-4d17-9a2e-69ad9b6d0f79}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_FV101_Scorpion_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_FV102_Striker_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6b87e8d1-0437-474c-a790-19f1e9c53aa7}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_FV102_Striker_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_FV105_Sultan_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6c554ce9-bd45-4f15-a932-7466e4af62d0}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_FV105_Sultan_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_FV107_Scimitar_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{19eb71a7-afd6-4e4f-84c6-f6d6973db25f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_FV107_Scimitar_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_Tornado_ADV_HE_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{efaf4efd-f9d9-47b8-9a92-544cf598f884}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Tornado_ADV_HE_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_Tornado_ADV_SEAD_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{af34a6ed-0426-475a-8248-7fd3b867a8da}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Tornado_ADV_SEAD_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_Tornado_ADV_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{36a31cbf-7418-43eb-acd6-cb8de643e3c9}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Tornado_ADV_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_Tornado_ADV_clu_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e7f76f68-7078-4380-914f-770bcf4cf09b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Tornado_ADV_clu_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_2nd_Infantry_multi_CH47_Super_Chinook_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{2132d291-256c-4f21-811f-18db58f45ae3}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_CH47_Super_Chinook_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_2nd_Infantry_multi_FV101_Scorpion_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6b973611-4546-4be7-8a6d-ef31e0705b5f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_FV101_Scorpion_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_2nd_Infantry_multi_FV102_Striker_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{146a1cfe-69cc-4cca-9b33-8a260ea6ffd4}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_FV102_Striker_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_2nd_Infantry_multi_FV105_Sultan_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{2e7adee3-af83-4a48-b0bc-b5bca70bb75f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_FV105_Sultan_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_2nd_Infantry_multi_FV107_Scimitar_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{5f3b28a3-d9f2-491f-a67c-8f92288db100}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_FV107_Scimitar_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_UK_2nd_Infantry_multi_Tornado_ADV_HE_UK is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{75ca9ec4-6ccc-45f0-865a-4111cc6c14e9}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Tornado_ADV_HE_UK,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_A10_Thunderbolt_II_ATGM_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d9db8bbc-e571-4a4a-bd30-6eab94d225ab}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_A10_Thunderbolt_II_ATGM_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_A10_Thunderbolt_II_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a6f4b4e6-6d2e-4278-b42d-9babb8ca0f37}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_A10_Thunderbolt_II_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_AH1F_Cobra_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6a92b049-67fd-4aac-96f1-ae155e678e62}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AH1F_Cobra_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_AH1S_Cobra_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{46209a50-f385-4809-9380-f401111d7a92}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AH1S_Cobra_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_AH64_Apache_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ec5b0e0e-ecb5-435f-95e5-5b10a68033ce}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AH64_Apache_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_AH64_Apache_emp1_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a9975a95-1a84-4069-b06c-bd59d3c3460c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AH64_Apache_emp1_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_AH64_Apache_emp2_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b3dabe6e-196d-43bc-95d4-2da5132e23c4}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AH64_Apache_emp2_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_AeroRifles_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{892a349d-a252-40c7-ad0a-dd7427c2d6c0}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AeroRifles_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_Engineer_CMD_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{97c8da95-f441-483c-8f06-ddca6c1d1d51}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineer_CMD_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_Engineers_Dragon_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{7ad86f24-2d77-4f66-af4a-3fa0c9561d4e}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_Dragon_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_Engineers_Flash_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{78a84c85-bbe6-496e-8c62-042efda15062}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_Flash_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_Engineers_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{7f15a8c3-d454-40ee-9901-f5d5499942f4}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_F111E_Aardvark_CBU_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{4abc7de8-edf1-4eee-8b19-dabc7de1749c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F111E_Aardvark_CBU_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_F111E_Aardvark_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{83a9273d-1382-4233-a217-43046cb3e522}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F111E_Aardvark_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_F111E_Aardvark_napalm_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b3ec8bfc-d0a0-4f51-932c-16c878d348b4}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F111E_Aardvark_napalm_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_F15C_Eagle_AA_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f26e194e-e403-4240-898d-0bcb45148037}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F15C_Eagle_AA_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_F4E_Phantom_II_AA_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b80e464f-f06d-472a-a811-2e680da61e03}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F4E_Phantom_II_AA_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_F4E_Phantom_II_CBU_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{9db12148-c61a-4104-9485-f259cb021868}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F4E_Phantom_II_CBU_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_F4E_Phantom_II_HE_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{629ccc55-1f91-4e0b-83fd-1852b597d000}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F4E_Phantom_II_HE_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_F4E_Phantom_II_napalm_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{93b18f2a-9f77-445c-9072-85c7909be081}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F4E_Phantom_II_napalm_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_F4_Wild_Weasel_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e2fce5ad-ab20-4106-a830-abf4f180d797}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_F4_Wild_Weasel_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_HEMTT is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e2d38761-c2d0-4c9f-b348-d31137cc136f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_HEMTT,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_HeimatschutzJager_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{442ba32f-eebc-43c9-8b6a-8bac0eea442f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_HeimatschutzJager_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_LRRP_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a467ec4e-8d2d-4cfb-baee-d01d973989cd}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_LRRP_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M106A2_HOWZ_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{504ecbc1-2721-49a9-9238-92ffcd25e60d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M106A2_HOWZ_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M109A2_HOWZ_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{81ce4c06-5714-4a83-8a3f-9840011c1f35}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M109A2_HOWZ_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M113A1_TOW_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{94ea388f-73d6-47a4-851d-29c768ef1552}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M113A1_TOW_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M113A2_supply_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b7767e68-a8bc-4b77-85f7-338806d15047}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M113A2_supply_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M113_ACAV_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{20cab00e-d22a-43e8-9702-b43e345876ac}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M113_ACAV_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M151_MUTT_CMD_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{dbde8e1c-f5c0-491f-9ac1-e77512ba3a72}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M151_MUTT_CMD_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M163_PIVADS_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f27f9883-2707-47c3-9749-1c503a1e2fb1}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M163_PIVADS_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M1A1HA_Abrams_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{0bf5c0c0-a4f3-4073-bb81-f302fc8b7940}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M1A1HA_Abrams_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M1A1_Abrams_CMD_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{3a6a42a0-10a3-4b62-b8cf-ae670a95173d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M1A1_Abrams_CMD_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M1A1_Abrams_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{5f3a92ce-41ee-404f-ae4e-f5d4b3876059}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M1A1_Abrams_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M270_MLRS_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{03c0464f-96a0-4ab2-81c1-06dfedf77326}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M270_MLRS_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M270_MLRS_cluster_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8f1330b8-499d-48a2-b901-437e68a59a2a}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M270_MLRS_cluster_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M35_supply_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6dfeb58a-1964-4089-8d5e-02323ddd6774}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M35_supply_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M3A1_Bradley_CFV_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{12b17c53-5888-4e23-a2e3-32b56f1288cd}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M3A1_Bradley_CFV_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M48_Chaparral_MIM72F_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{dfce6a67-f393-4b07-ae33-ee0881275c50}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M48_Chaparral_MIM72F_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M577_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{41325160-2750-465e-839c-3bb6dc0bea7f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M577_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M728_CEV_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{566d0f5b-54b1-4e67-8eba-9d73afbe3637}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M728_CEV_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M901A1_ITW_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e180826f-4d0b-4d1d-91a1-bdcd0c18f67c}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M901A1_ITW_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_M901_TOW_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{635d8ae7-fe20-45b7-ad1d-bbd0fe184426}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M901_TOW_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_MANPAD_Stinger_C_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{289cb71b-b8e9-433b-af4c-d5a503206051}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MANPAD_Stinger_C_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_Mortier_107mm_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{cffe0d05-19ac-406a-b3a0-f0af136e5a03}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mortier_107mm_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_OH58C_Scout_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{2fef0ae6-52a4-4a11-b2c2-156bd599747a}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_OH58C_Scout_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_OH58D_Kiowa_Warrior_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6f60137b-9c10-48c8-a2f6-23e2a28b1aed}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_OH58D_Kiowa_Warrior_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_OH58_CS_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f81c2ef3-5958-48f3-8a72-1263ea1e5bfd}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_OH58_CS_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_Panzergrenadier_CMD_RFA is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{85f300f9-fd27-4bda-91a1-edc7cc340b0d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Panzergrenadier_CMD_RFA,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_Scout_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8c740b02-70b9-41f6-9cdd-25ef5bd9a55b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Scout_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_UH60A_CO_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{142915bd-d7f7-4fe0-8549-8ca0db64b5ee}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_UH60A_CO_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_UH60A_Supply_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f4e1d0b5-38bf-46c4-8e24-607b8429f75d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_UH60A_Supply_US,
             ]
         ),
     ]
@@ -7407,20 +9773,6 @@ export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M113A2_supply_US is TDeckPackDe
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_M113A2_supply_US,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M113_ACAV_US is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{d7645eae-3439-4190-ab02-f418faf6dcd1}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_M113_ACAV_US,
             ]
         ),
     ]
@@ -8013,6 +10365,20 @@ export Descriptor_Deck_Pack_TOE_US_82nd_Airborne_multi_Airborne_Engineer_CMD_US 
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_US_82nd_Airborne_multi_Airborne_Engineers_Flash_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{3b83b094-acc6-4ff5-ab0b-26ad88349164}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Airborne_Engineers_Flash_US,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_US_82nd_Airborne_multi_Airborne_Engineers_US is TDeckPackDescriptor
 (
     DescriptorId = GUID:{11ec1573-ad7d-4e3c-8088-9703b61b08ff}
@@ -8331,20 +10697,6 @@ export Descriptor_Deck_Pack_TOE_US_82nd_Airborne_multi_M1025_Humvee_TOW_para_US 
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_M1025_Humvee_TOW_para_US,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_US_82nd_Airborne_multi_M1025_Humvee_scout_US is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{b709c73b-94b8-4cf9-8ad1-5af9478199f2}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_M1025_Humvee_scout_US,
             ]
         ),
     ]
@@ -9035,20 +11387,6 @@ export Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_M113A2_supply_US is TDeckPackDe
         ),
     ]
 )
-export Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_M113_ACAV_US is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{2d987b8d-52c5-4e78-aac6-39ac1bde84bc}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_M113_ACAV_US,
-            ]
-        ),
-    ]
-)
 export Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_M125_HOWZ_US is TDeckPackDescriptor
 (
     DescriptorId = GUID:{f38ee906-05a0-4ae1-bb79-d808be81c78f}
@@ -9059,20 +11397,6 @@ export Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_M125_HOWZ_US is TDeckPackDescri
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_M125_HOWZ_US,
-            ]
-        ),
-    ]
-)
-export Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_M151A2_scout_US is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{7cd5b567-d4f9-423c-a50b-7e8ade464e05}
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptorList =
-            [
-                ~/Descriptor_Unit_M151A2_scout_US,
             ]
         ),
     ]
@@ -9535,6 +11859,1140 @@ export Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_UH60A_Supply_US is TDeckPackDes
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_UH60A_Supply_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_2K12_KUB_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c60d02bb-d840-4b1b-919f-be0abc31a17a}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_2K12_KUB_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_2S1_Gvozdika_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{86573956-5914-4b1b-93da-f7256c7e4349}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_2S1_Gvozdika_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_AT_T12_Rapira_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{bc6cbf59-d145-4e3b-9cc0-1de244c9dc78}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_AT_T12_Rapira_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_ATteam_Fagot_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{272bcc20-13f4-485b-8ec8-a82434eafbb2}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ATteam_Fagot_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_ATteam_Fagot_FJ_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c28320ac-e8b0-4c77-bdd3-553b22d87507}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ATteam_Fagot_FJ_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_ATteam_Konkurs_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{65ab4e6f-d77c-4845-aec8-c1979a41ba46}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ATteam_Konkurs_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_ATteam_RCL_SPG9_FJ_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e4df8bc8-ecb9-4544-ad11-b61f18f5dd3b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ATteam_RCL_SPG9_FJ_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_BM27_Uragan_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b595bdbd-3212-4a26-ab0a-f130537ef926}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BM27_Uragan_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_BMP_1_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8e6bb8f0-24dd-4faf-8b19-377bdb72e57b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BMP_1_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_BRDM_2_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{4b00125a-6f70-4724-8d3e-bf7fa3aa8122}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BRDM_2_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_BRDM_2_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{63ff78b8-7588-4d4c-af08-7f6a497ce0ea}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BRDM_2_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_BRDM_Konkurs_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b487f9eb-ae2f-467b-b168-a0b38619979d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BRDM_Konkurs_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_BRM_1_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c6df312b-7d1c-4742-8b98-ecbed08b3416}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BRM_1_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_BTR_50_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{42a3a38e-f760-4825-b7d5-027e81ad9e0f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_BTR_50_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Buk_9K37M_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ec133d05-7279-4bd6-b7cf-d5acba00d033}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Buk_9K37M_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Engineers_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{14bd10f2-91bf-480b-8cd7-474ca47a2db0}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Engineers_CMD_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{dc1ad2f9-e180-408b-bd32-6197c9025c4e}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_CMD_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Engineers_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f8aa0426-652a-4e8b-9611-1335b9f75aba}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Engineers_Flam_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6516d5a7-6c50-4f0d-a661-93190df3a963}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_Flam_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Engineers_Flam_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d1482d32-efbd-4c70-b33c-a57732c109ed}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_Flam_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Engineers_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8e89de44-5241-4b0f-b885-6bab90f788e2}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Engineers_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Fallschirmjager_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{2b581b16-59db-4875-80a3-f0840d066804}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Fallschirmjager_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Fallschirmjager_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{7e4435e2-88f8-4bab-9b2b-870b938f2905}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Fallschirmjager_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Fallschirmjager_Metys_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{486e6deb-09a0-48aa-94ed-414955e1a26b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Fallschirmjager_Metys_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Grenzer_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6181d3aa-aec3-4c0f-97d1-1880ccf23b6d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Grenzer_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Howz_D20_152mm_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a4f2a149-3dd6-45ce-b460-d48ff57e4ff3}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Howz_D20_152mm_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Howz_D20_152mm_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e78917f9-744b-4b63-9f87-7dceb64d5c30}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Howz_D20_152mm_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Howz_D30_122mm_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{05c91a73-12b7-4986-8957-4e39502d4b54}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Howz_D30_122mm_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Howz_M46_130mm_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e52802a0-0896-4027-b589-ff81a5ec4dc6}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Howz_M46_130mm_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_HvyScout_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{0e7b7231-dda9-4c53-9cb5-108997e20259}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_HvyScout_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_HvyScout_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{bbe084a6-e044-4132-b5b9-8f8f27d9ca69}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_HvyScout_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_KdA_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1057a9e2-2bf0-4192-aeaf-718ec5be2890}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_KdA_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_KdA_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d2c45b42-791f-42f6-bb26-06dd9785425b}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_KdA_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MANPAD_Igla_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{efcc4721-b2e9-46c4-b512-b1bacbcb71bf}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MANPAD_Igla_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MANPAD_Strela_2M_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d365f07e-2892-4f4c-8cb3-fd45b3a81a66}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MANPAD_Strela_2M_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MFRW_RM70_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{0ea43ccd-819a-49bd-b12e-d35ebe005c61}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MFRW_RM70_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MTLB_Strela10_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d155d199-d606-4e47-baf9-50cfa99c19d1}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MTLB_Strela10_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MTLB_supply_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ead2b016-1150-4c3f-b0a1-0fe5847a03fd}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MTLB_supply_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MiG_21PFM_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{fbf318b4-9a34-4e28-b116-eafd61a825d2}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_21PFM_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MiG_21bis_HE_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{97349d10-6f05-43ce-b690-3c9c58fcf7ec}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_21bis_HE_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MiG_21bis_RKT2_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ae5e457e-aa26-44a6-8169-0561051f27f2}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_21bis_RKT2_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MiG_23ML_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{569aedb0-f0a3-4b06-b867-5560e042dd86}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_23ML_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MiG_23P_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{4aef51a1-6baf-497d-808e-7ce47d54545d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MiG_23P_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Mi_8TV_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{051c9408-4d7f-4373-b366-b6cc277e5f57}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_8TV_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Mi_8TV_PodGatling_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d25c687d-e163-40c6-aafe-b4512a30e21d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_8TV_PodGatling_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Mi_8TV_s57_32_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{dfe66e0f-243f-41a8-a3b2-5da008a70b11}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_8TV_s57_32_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Mi_8_supply_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{411b39d1-65f6-469a-8bd4-7124a8355d20}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mi_8_supply_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Mortier_2S12_120mm_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{54fb7ac7-0854-43d6-817e-db314e13bdf6}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mortier_2S12_120mm_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Mortier_PM43_120mm_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8bbd754a-ac44-4534-b0b0-a4b364a132b8}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Mortier_PM43_120mm_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotRifles_BTR_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{92aabe60-bb7e-4b2b-bad1-db1d2ee14719}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_BTR_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotRifles_BTR_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{634a4817-3310-4e82-8a06-cc831c7433ae}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_BTR_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotRifles_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b08aaf9b-1bee-4e1f-a96d-81d71da47164}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotRifles_CMD_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{37d77d5b-4977-4216-bde5-cbc0bb38f78d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_CMD_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotRifles_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{f035fca3-7c90-4d53-b934-80c70b64fc3f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotRifles_HMG_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a1c8be43-14b3-491f-adb7-7d97be5175c4}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_HMG_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotRifles_HMG_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{91ecc2b1-f368-4f6a-b486-37e9fb7ebd3d}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_HMG_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotRifles_Metis_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{3df28fe8-8122-4d87-8b4f-75a93cd88371}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_Metis_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotRifles_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b73283f8-e057-4cbc-a518-ae3d0d6077b2}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_MotSchutzen_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c9a7a45e-653b-438f-a8dd-3ef5b363e149}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotSchutzen_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Scout_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{9fca9933-24dc-4cf6-8906-bc0df20d0ae6}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Scout_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Su_17M4_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e486d39a-eda5-4945-9582-0558c5f59616}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Su_17M4_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Su_22_AT_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1ad2b263-0c9c-4ab5-bc6c-d6b112a53c66}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Su_22_AT_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Su_22_clu_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{37bff87e-3555-44ee-afb2-3f198431c0bb}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Su_22_clu_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Su_22_nplm_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{eb864728-0553-445e-9b3d-da2117f49e23}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Su_22_nplm_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T34_85M_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{33c473cc-b8da-4146-8913-5a7a6b25f9b9}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T34_85M_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T55AM2B_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{2cd55b08-2058-4e0c-9233-5e089149a022}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T55AM2B_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T55AM2_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{876dbfce-e6be-4006-ab0f-b87e04fceada}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T55AM2_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T55AM2_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{0fe43146-80a8-47d2-a72d-2c381aba2029}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T55AM2_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T55A_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{94a82e96-725b-4186-bab2-5309f2bd32e2}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T55A_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T55A_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{b185b94e-dc9c-47e8-98cd-d3ae0df5b193}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T55A_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T80BV_CMD_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{9b6cbe06-31cc-45c2-9039-ae3aaf43b6e5}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T80BV_CMD_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T80BV_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{e0224836-4bf0-48ca-8ebd-e2c3f2903432}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T80BV_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T813_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{bf41eed9-c5c3-4a59-956d-e33ccae886a4}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T813_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_TOS1_Buratino_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{84d096e0-b513-4174-9c21-cd03a4983a4f}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_TOS1_Buratino_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_UAZ_469_SPG9_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1327571c-bbf0-4d44-aef3-484d5d048922}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_UAZ_469_SPG9_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Volkspolizei_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c8ec060f-765e-46c8-b9ec-cc9f1539eaff}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Volkspolizei_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Volkspolizei_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8fc7042e-310a-4546-bebe-9ccb023f0788}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Volkspolizei_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Wachregiment_CMD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8fe95741-438b-4fa8-8b1e-d44ac04045de}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Wachregiment_CMD_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Wachregiment_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ea3c26ad-6035-4464-b080-4418228eddaa}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Wachregiment_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Wachregiment_SMG_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{2911a4f1-30fa-4f0d-81ba-ab58217e6579}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Wachregiment_SMG_DDR,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_ZSU_23_Shilka_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{14b40058-a390-4539-8a53-fa9bc03db313}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_ZSU_23_Shilka_DDR,
             ]
         ),
     ]

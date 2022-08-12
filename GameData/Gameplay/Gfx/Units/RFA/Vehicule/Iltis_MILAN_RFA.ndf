@@ -20,6 +20,6 @@ Modele_Iltis_MILAN_RFA_LOW is TResourceMultiMaterialMeshWithLod
 
 Modele_Iltis_MILAN_RFA_Tourelle_01 is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/FR/Antichar/AMX_10_P_MILAN/MILAN_t1.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/FR/APC/AMX_10P_MILAN/MILAN_t1.Ase2NdfBin'
     CivMask =  CivMask/Common
 )

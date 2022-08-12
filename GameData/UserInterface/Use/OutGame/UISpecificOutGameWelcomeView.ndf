@@ -395,6 +395,7 @@ template  BoutonMenuPrincipal
     [
         BUCKTextDescriptor
         (
+
             ParagraphStyle = TParagraphStyleRTTI ( VerticalAlignment = ~/UIText_VerticalCenter Alignment = ~/UIText_Center )
 
             ComponentFrame = TUIFramePropertyRTTI ( AlignementToFather = [0,0.5] AlignementToAnchor = [0,0.5] )

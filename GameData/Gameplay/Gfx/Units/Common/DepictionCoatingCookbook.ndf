@@ -1,7 +1,19 @@
 liveEditCoatingCookbook is TCoatingCookbook
 (
     Recipes = MAP[
-        ('F117_Nighthawk', TCoatingRecipe
+        ('F117_Nighthawk_CBU_US', TCoatingRecipe
+        (
+            Ingredients = [
+                'F117_Nighthawk_trapdoor'
+            ]
+        )),
+        ('F117_Nighthawk_US', TCoatingRecipe
+        (
+            Ingredients = [
+                'F117_Nighthawk_trapdoor'
+            ]
+        )),
+        ('F117_Nighthawk_napalm_US', TCoatingRecipe
         (
             Ingredients = [
                 'F117_Nighthawk_trapdoor'
@@ -80,6 +92,12 @@ liveEditCoatingCookbook is TCoatingCookbook
             ]
         )),
         ('Ka_50_SOV', TCoatingRecipe
+        (
+            Ingredients = [
+                'Ka_50_SOV_landing_gears'
+            ]
+        )),
+        ('Ka_50_AA_SOV', TCoatingRecipe
         (
             Ingredients = [
                 'Ka_50_SOV_landing_gears'

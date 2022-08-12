@@ -17,11 +17,7 @@ export InGameHUDResource is TUISpecificInGameHUDResource
 
     OrderDisplayResources                   = ~/UIOrderDisplayResources
     MultiSelectionPanelViewDescriptor       = ~/UISpecificHUDMultiSelectionPanelViewDescriptor
-    SmartGroupSelectionPanelViewDescriptor  = UISpecificSmartGroupSelectionPanelViewDescriptor
-    (
-        MainComponentContainerUniqueName = "UISpecificSmartGroupSelectionPanelView"
-        HasActionButtons = true
-    )
+    SmartGroupSelectionPanelViewDescriptor  = UISpecificSmartGroupSelectionPanelViewDescriptor(MainComponentContainerUniqueName = "UISpecificSmartGroupSelectionPanelView")
 
     SelectionPanelDescriptor                 = ~/UISpecificUnitSelectionPanelViewDescriptor
     SelectionWeaponPanelDescriptor           = ~/UISpecificUnitSelectionWeaponPanelViewDescriptor

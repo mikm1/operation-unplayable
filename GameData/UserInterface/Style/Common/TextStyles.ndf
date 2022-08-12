@@ -463,3 +463,28 @@ TextStylePointActionBlanc is TTextStyleRTTI
     FontSize = 1
     AllowSmallFont = true
 )
+
+TextStyle_EGWin is TTextStyleRTTI
+(
+    ColorBottom = [  200,   200,   200, 255]
+    ColorUp     = [  255,   255,   255, 255]
+    ColorStroke = [  30,   32,   33, 255]
+    Stroke = true
+    StrokeSize = 0.93
+    StrokeHardness = 0.09
+    TextThickness = 0.38
+    FontSize = 1
+    AllowSmallFont = true
+)
+TextStyle_EGWin2 is TTextStyleRTTI
+(
+    ColorBottom = [  255,   234,   0, 255]
+    ColorUp     = [  255,   234,   0, 255]
+    ColorStroke = [  200,   62,   13, 255]
+    Stroke = true
+    StrokeSize = 1
+    StrokeHardness = 0.01
+    TextThickness = 0.38
+    FontSize = 1
+    AllowSmallFont = true
+)

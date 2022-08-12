@@ -496,6 +496,15 @@ BUCKSpecificStrategicTacticalPreparationMainComponentDescriptor is BUCKContainer
                                     TextToken = "BtnBattle"
                                 )
                             ),
+                            BUCKListElementDescriptor
+                            (
+                                ComponentDescriptor = BUCKSpecificButton
+                                (
+                                    ElementName = "BackButton"
+
+                                    TextToken = "BtnBack"
+                                )
+                            ),
                         ]
                     )
                 ),

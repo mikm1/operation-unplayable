@@ -60,7 +60,7 @@ private SoloQuitButton is ConfirmButton
 (
     ElementName = 'BackButton'
     TextToken = 'BTN_CLOSE'
-    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ENTER ) )
+    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
     ButtonMagnifiableWidthHeight = [175.0, 35.0]
     TextTypefaceToken = "Liberator"
     //TextStyle = 'TextStyleEcranMoniteur_gris'

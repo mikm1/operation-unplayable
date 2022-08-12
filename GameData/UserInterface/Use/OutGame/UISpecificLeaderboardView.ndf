@@ -179,7 +179,6 @@ private template LeaderboardMultiSimplifiedListContent
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [1.0, 1.0]
-
                         )
 
                         ParagraphStyle = TParagraphStyleRTTI
@@ -211,7 +210,6 @@ private template LeaderboardMultiSimplifiedListContent
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     MagnifiableWidthHeight = [16,16]
-                    //RelativeWidthHeight = [0.0, 1.0]
                 )
                 Components =
                 [
@@ -276,7 +274,6 @@ private template LeaderboardMultiSimplifiedListContent
         // Grade
         BUCKListElementDescriptor
         (
-
             ComponentDescriptor = BUCKMultiListContentElementDescriptor
             (
                 ElementName = <ElementNamePrefix> + "LdbGradeMultiList"
@@ -286,8 +283,7 @@ private template LeaderboardMultiSimplifiedListContent
                     MagnifiableWidthHeight = [45,0]
                     RelativeWidthHeight = [0.0, 1.0]
                 )
-                //HasBackground = true
-                BackgroundBlockColorToken = 'Orange'
+
                 Components =
                 [
                     BUCKSpecificRankDescriptor
@@ -352,7 +348,8 @@ private LeaderboardContentContainer is BUCKContainerDescriptor
     HasBackground = false
     BackgroundBlockColorToken = 'Orange'
     ClipContent = true
-    Components = [
+    Components =
+    [
         BUCKRackDescriptor
         (
             ElementName = "LeaderboardRack"
@@ -360,9 +357,7 @@ private LeaderboardContentContainer is BUCKContainerDescriptor
             (
                 RelativeWidthHeight = [1.0, 0.0]
             )
-            //FirstMargin = TRTTILength(Magnifiable = 1.0)
             InterItemMargin = TRTTILength(Magnifiable = 2.0)
-            //LastMargin = TRTTILength(Magnifiable = 2.0)
             BladeDescriptor = LeaderboardButton()
         ),
         BUCKSensibleAreaDescriptor
@@ -538,7 +533,7 @@ private BUCKSpecificLeaderboardMainComponentDescriptor is WindowFrame
 
                         Components =
                         [
-                        ~/LeaderboardAddFriendButton,
+                            ~/LeaderboardAddFriendButton,
                         ]
                     ),
                     BUCKContainerDescriptor
@@ -552,7 +547,7 @@ private BUCKSpecificLeaderboardMainComponentDescriptor is WindowFrame
                         BackgroundBlockColorToken = 'Orange'
                         Components =
                         [
-                        ~/LeaderboardViewProfileButton,
+                            ~/LeaderboardViewProfileButton,
                         ]
                     ),
 

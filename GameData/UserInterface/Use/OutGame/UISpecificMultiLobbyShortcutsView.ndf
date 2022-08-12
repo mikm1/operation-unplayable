@@ -334,7 +334,7 @@ UISpecificMultiLobbyShortcutsViewDescriptor is TUISpecificMultiLobbyShortcutsVie
         (
             NameToDisplay   = "QCK_10V10"
             NumberOfPlayers = 20
-            InitMoney       = 500
+            InitMoney       = 1500
             UseAutofill     = false
             CombatRule      = ~/CombatRule/CaptureTheFlag
         ),
@@ -342,7 +342,7 @@ UISpecificMultiLobbyShortcutsViewDescriptor is TUISpecificMultiLobbyShortcutsVie
         (
             NameToDisplay = "QCK_10V10T"
             NumberOfPlayers = 20
-            InitMoney       = 250
+            InitMoney       = 1000
             UseAutofill = false
             CombatRule      = ~/CombatRule/CaptureTheFlag
         ),

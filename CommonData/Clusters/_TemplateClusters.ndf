@@ -258,7 +258,6 @@ template TemplateClusterLoadNDFForIA
     ModName                    : string = '',
     ModDependencyTag           : string = '',
     FillResourceList           : bool   = false,
-    MissingFileTorerant        : bool   = false,
     ExplicitImportedNamespaces          = [],
     UsingNamespaces                     = [],
     FileList                            = [],
@@ -277,7 +276,6 @@ template TemplateClusterLoadNDFForIA
         FillResourceListOutputFileName = <FillResourceList> ? (( ( <OverrideBaseName> != '' ) ? <OverrideBaseName>  : <NameSpace> ) + '.ndfbin') : ''
         StripPrivateRootObjects    = True
         NeedsChecksum              = <NeedsChecksum>
-        MissingFileTorerant        = <MissingFileTorerant>
 #ifdef EUG_PC
         DebugInfo                  = True
 #endif

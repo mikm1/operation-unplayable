@@ -88,40 +88,52 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
             )
         ),
         (
-            ~/ETerrainType/StrategicRalentisseur, // foret
+            ~/ETerrainType/ForetLegere, // foretRoute
             THintContentHolder
             (
-                TitleToken = "smTer_f" // foret
-                //BodyToken = "terr_roub"
-                //ExtendedToken = "terr_roue"
+                BodyToken = "smTer_f"
+                ExtendedToken = "smTer_feR"
             )
         ),
         (
-            ~/ETerrainType/ForetLegere, // plaine
+            ~/ETerrainType/ForetDense, // foret
             THintContentHolder
             (
-                TitleToken = "smTer_p"
-                //BodyToken = "terr_autb"
-                //ExtendedToken = "terr_aute" //TERR_02E"
+                BodyToken = "smTer_f"
+                ExtendedToken = "smTer_fe"
             )
         ),
 
         (
-            ~/ETerrainType/BloqueConstruction, // route
+            ~/ETerrainType/Batiment, // semi urbain
             THintContentHolder
             (
-                TitleToken = ""
-                //BodyToken = "terr_roub"
-                //ExtendedToken = "terr_roue"
+                BodyToken = "smTer_s"
+                ExtendedToken = "smTer_se"
             )
         ),
         (
-            ~/ETerrainType/EauPeuProfonde, // impassable
+            ~/ETerrainType/PetitBatiment, // semi urbain R
             THintContentHolder
             (
-                TitleToken = ""
-                //BodyToken = "TERR_05B"
-                //ExtendedToken = "TERR_05E"
+                BodyToken = "smTer_s"
+                ExtendedToken = "smTer_seR"
+            )
+        ),
+        (
+            ~/ETerrainType/StrategicRalentisseur, // plaine
+            THintContentHolder
+            (
+                BodyToken = "smTer_p"
+                ExtendedToken = "smTer_pe"
+            )
+        ),
+        (
+            ~/ETerrainType/StrategicAccelerateur, // plaineR
+            THintContentHolder
+            (
+                BodyToken = "smTer_p"
+                ExtendedToken = "smTer_peR"
             )
         ),
 
@@ -523,29 +535,6 @@ StrategicMouseWidgetSelector_BombOrder is TUIStrategicMouseWidgetSelectorOrder
     SignpostBodyToken = "SIG_BOMBOD"
 )
 
-StrategicMouseWidgetSelector_TransferOrder is TUIStrategicMouseWidgetSelectorOrder
-(
-    MouseWidgetList = MAP
-    [
-        (Cursor_None             , ~/MouseWidget_Blank),
-        (Cursor_Default          , ~/MouseWidget_TransferOrder),
-        (Cursor_OrderInvalid     , ~/MouseWidget_InvalidOrder),
-    ]
-
-    TextStyleList = MAP
-    [
-        (TextStyle_WithinRange  , "Strategic/WidgetSelector/WithinRange"),
-        (TextStyle_OutOfRange   , "Strategic/WidgetSelector/OutOfRange"),
-        (TextStyle_Invalid      , "Strategic/WidgetSelector/Invalid"),
-    ]
-
-    ValidOrderToken = "CUR_TRAVAL"
-    InvalidOrderToken = "CUR_TRAINV"
-
-    SignpostTitleToken = "SIG_TRATIT"
-    SignpostBodyToken = "SIG_TRABOD"
-)
-
 private StrategicMousePolicyManagerResources is TUIStrategicMousePolicyManagerResources
 (
     KeyBoardPresetUpdater   = $/KeyboardPreset/KeyboardPresetUpdater
@@ -579,10 +568,6 @@ private StrategicMousePolicyManagerResources is TUIStrategicMousePolicyManagerRe
         (
             "MouseWidgetSelector_RecoOrder",
             ~/StrategicMouseWidgetSelector_RecoOrder
-        ),
-        (
-            "MouseWidgetSelector_TransferOrder",
-            ~/StrategicMouseWidgetSelector_TransferOrder
         ),
     ]
 )

@@ -1,4 +1,4 @@
-export ModelFile_BMP_1_SP1_DDR is 'GameData:/Assets/3D/Units/DDR/APC/BMP1P/BMP1P.Ase2NdfBin'
+export ModelFile_BMP_1_SP1_DDR is 'GameData:/Assets/3D/Units/DDR/APC/BMP_1P/BMP_1P_SP1.Ase2NdfBin'
 
 Modele_BMP_1_SP1_DDR is TResourceMultiMaterialMeshWithLod
 (
@@ -8,13 +8,13 @@ Modele_BMP_1_SP1_DDR is TResourceMultiMaterialMeshWithLod
 
 Modele_BMP_1_SP1_DDR_MID is TResourceMultiMaterialMeshWithLod
 (
-    FileName     = 'GameData:/Assets/3D/Units/DDR/APC/BMP1P/BMP1P.Ase2NdfBin'
+    FileName     = 'GameData:/Assets/3D/Units/DDR/APC/BMP_1P_MID/BMP_1P_SP1_MID.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 
 Modele_BMP_1_SP1_DDR_LOW is TResourceMultiMaterialMeshWithLod
 (
-    FileName     = 'GameData:/Assets/3D/Units/DDR/APC/BMP1P/BMP1P.Ase2NdfBin'
+    FileName     = 'GameData:/Assets/3D/Units/DDR/APC/LODS/BMP_1P_SP1_LOW.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 

@@ -191,9 +191,9 @@ is BUCKListElementDescriptor
 )
 
 CombatRuleColumnWidth is 80
-GameNameColumnWidth is 215
-MapNameColumnWidth is 238
-NbPlayersColumnWidth is 129
+GameNameColumnWidth is 275
+MapNameColumnWidth is 218
+NbPlayersColumnWidth is 89
 GameStatusColumnWidth is 112
 GameRulesColumnWidth is 71
 ModsStatusColumnWidth is 71

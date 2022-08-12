@@ -1129,24 +1129,16 @@ private TextureToutVert is TResourceTextureFromFile
 
 //--------------------------------------------------------
 
-// A maintenir synchro avec Engine\Code\Eugen\CPP\InterfaceMultiProjets\UIPathDescriptor.h
-private EndPathShapeType_Nothing     is 0
-private EndPathShapeType_NarrowArrow is 1
-private EndPathShapeType_WideArrow   is 2
-
 // Flèche pour l'envoi d'un avion en mission
 private AirplaneMissionArrowDescriptor is TUIPathDescriptor
 (
     Color                 = [255, 255, 255, 128] // BGRA
     PlaqueSurLeSol        = true
-    VertexCountPerSection = 3
     RenderLayerSelector = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
     Material              = $/M3D/Shader/MaterialBezierLine_Bichrome
     Width                 = 1500
     ArrowLength           = 2500
     ArrowWidth            = 2500
-    Texture               = TextureToutVert
-    EndPathShapeMode      = EndPathShapeType_WideArrow
     SizeMultiplierHelper  = PathAndArrowSizeMultiplierHelper
     OpacityControlByFloat = $/M3D/Shader/AreaFillOpacity
 )
@@ -1156,14 +1148,11 @@ private SpawnUnitArrowDescriptor is TUIPathDescriptor
 (
     Color                 = [255, 255, 255, 128] // BGRA
     PlaqueSurLeSol        = true
-    VertexCountPerSection = 3
     RenderLayerSelector = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
     Material              = $/M3D/Shader/MaterialBezierLine_Bichrome
     Width                 = 1500
     ArrowLength           = 2500
     ArrowWidth            = 2500
-    Texture               = TextureToutVert
-    EndPathShapeMode      = EndPathShapeType_WideArrow
     SizeMultiplierHelper  = PathAndArrowSizeMultiplierHelper
     OpacityControlByFloat = $/M3D/Shader/AreaFillOpacity
 )

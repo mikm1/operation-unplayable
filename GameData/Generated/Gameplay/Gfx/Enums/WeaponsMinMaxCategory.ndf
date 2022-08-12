@@ -16,9 +16,9 @@ export MinMax_Fusil_assaut is 9
 export MinMax_Gatling is 10
 export MinMax_smoke is 11
 export MinMax_Grenade is 12
-export MinMax_MLRS is 13
-export MinMax_Mortier is 14
-export MinMax_MMG is 15
+export MinMax_MMG is 13
+export MinMax_MLRS is 14
+export MinMax_Mortier is 15
 export MinMax_Cluster is 16
 export MinMax_LAW is 17
 export MinMax_Roquette_AS is 18
@@ -44,9 +44,9 @@ export MinMaxCategory_Enum is TWeaponMinMaxCategory
         "Gatling",
         "smoke",
         "Grenade",
+        "MMG",
         "MLRS",
         "Mortier",
-        "MMG",
         "Cluster",
         "LAW",
         "Roquette_AS",

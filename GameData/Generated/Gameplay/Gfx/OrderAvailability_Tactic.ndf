@@ -139,6 +139,30 @@ export Descriptor_OrderAvailability_2S3_DDR is [
     "AIManageArtillery_Auto",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_2S7M_Malka_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIManageArtillery_Focus",
+    "AIManageArtillery_CounterBattery",
+    "AIManageArtillery_Auto",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_2S9_Nona_SOV is [
     "Stop",
     "Move",
@@ -162,6 +186,28 @@ export Descriptor_OrderAvailability_2S9_Nona_SOV is [
     "AIManageArtillery_Focus",
     "AIManageArtillery_CounterBattery",
     "AIManageArtillery_Auto",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_AMX_10_RC_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_AT_D44_85mm_DDR is [
@@ -372,6 +418,23 @@ export Descriptor_OrderAvailability_ATteam_Konkurs_SOV is [
     "AIStop",
 ]
 export Descriptor_OrderAvailability_ATteam_Milan_1_RFA is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Attack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_ATteam_Milan_2_FR is [
     "Stop",
     "Move",
     "FollowFormation",
@@ -623,6 +686,27 @@ export Descriptor_OrderAvailability_Airborne_Engineer_CMD_US is [
     "Attack",
     "SmartMoveAndAttack",
     "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Airborne_Engineers_Flash_US is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
     "MoveAndAttack",
     "Spread",
     "Shoot",
@@ -1128,8 +1212,12 @@ export Descriptor_OrderAvailability_BMP_1P_reco_DDR is [
     "ShootOnPositionWithoutCorrection",
     "AskForSupply",
     "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
     "LoadIntoTransport",
     "Load",
+    "LoadUnit",
     "AIDefend",
     "AIAttack",
     "AIStop",
@@ -1428,6 +1516,26 @@ export Descriptor_OrderAvailability_BRDM_Konkurs_DDR is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_BRDM_Malyu_P_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_BRDM_Strela_1_SOV is [
     "Stop",
     "Move",
@@ -1512,7 +1620,6 @@ export Descriptor_OrderAvailability_BTR_50_CMD_DDR is [
 ]
 export Descriptor_OrderAvailability_BTR_50_DDR is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -1563,7 +1670,6 @@ export Descriptor_OrderAvailability_BTR_60_CMD_SOV is [
 ]
 export Descriptor_OrderAvailability_BTR_60_SOV is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -1589,7 +1695,31 @@ export Descriptor_OrderAvailability_BTR_60_SOV is [
 ]
 export Descriptor_OrderAvailability_BTR_70_DDR is [
     "Stop",
-    "Sell",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_BTR_80_SOV is [
+    "Stop",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -1615,7 +1745,6 @@ export Descriptor_OrderAvailability_BTR_70_DDR is [
 ]
 export Descriptor_OrderAvailability_BTR_D_Robot_SOV is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -1642,7 +1771,6 @@ export Descriptor_OrderAvailability_BTR_D_Robot_SOV is [
 ]
 export Descriptor_OrderAvailability_BTR_D_SOV is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -1668,7 +1796,6 @@ export Descriptor_OrderAvailability_BTR_D_SOV is [
 ]
 export Descriptor_OrderAvailability_BTR_ZD_Skrezhet_SOV is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -1692,6 +1819,26 @@ export Descriptor_OrderAvailability_BTR_ZD_Skrezhet_SOV is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_Bofors_40mm_RFA is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_Buk_9K37M_SOV is [
     "Stop",
     "Move",
@@ -1703,6 +1850,26 @@ export Descriptor_OrderAvailability_Buk_9K37M_SOV is [
     "Spread",
     "Reverse",
     "Shoot",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_DCA_FK20_2_20mm_RFA is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
     "AskForSupply",
     "GoGetSupply",
     "LoadIntoTransport",
@@ -2173,6 +2340,28 @@ export Descriptor_OrderAvailability_Engineers_RFA is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_Engineers_Reserve_RFA is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_Engineers_SOV is [
     "Stop",
     "Move",
@@ -2286,7 +2475,55 @@ export Descriptor_OrderAvailability_FV101_Scorpion_BEL is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_FV101_Scorpion_UK is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_FV102_Striker_BEL is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_FV102_Striker_UK is [
     "Stop",
     "Move",
     "FollowFormation",
@@ -2312,7 +2549,6 @@ export Descriptor_OrderAvailability_FV102_Striker_BEL is [
 ]
 export Descriptor_OrderAvailability_FV103_Spartan_BEL is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -2340,7 +2576,6 @@ export Descriptor_OrderAvailability_FV103_Spartan_BEL is [
 ]
 export Descriptor_OrderAvailability_FV103_Spartan_UK is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -2389,6 +2624,29 @@ export Descriptor_OrderAvailability_FV105_Sultan_BEL is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_FV105_Sultan_UK is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_FV107_Scimitar_BEL is [
     "Stop",
     "Move",
@@ -2407,6 +2665,52 @@ export Descriptor_OrderAvailability_FV107_Scimitar_BEL is [
     "ShootOnPositionWithoutCorrectionSmoke",
     "AskForSupply",
     "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_FV107_Scimitar_UK is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Fallschirm_B1_RFA is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
     "LoadIntoTransport",
     "Load",
     "AIDefend",
@@ -2632,6 +2936,24 @@ export Descriptor_OrderAvailability_Fallschirmjager_Scout_RFA is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_Faun_kraka_RFA is [
+    "Stop",
+    "Sell",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Spread",
+    "Reverse",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_Feldgendarmerie_RFA is [
     "Stop",
     "Move",
@@ -2777,6 +3099,49 @@ export Descriptor_OrderAvailability_Gepard_1A2_RFA is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_GreenBerets_CMD_US is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_GreenBerets_US is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_Grenzer_CMD_DDR is [
     "Stop",
     "Move",
@@ -2831,6 +3196,30 @@ export Descriptor_OrderAvailability_HEMTT is [
     "GoGetSupply",
     "LoadIntoTransport",
     "Load",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_HS30_Panzermorser_120mm_RFA is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIManageArtillery_Focus",
+    "AIManageArtillery_CounterBattery",
+    "AIManageArtillery_Auto",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_HeimatschutzJager_RFA is [
@@ -2973,6 +3362,29 @@ export Descriptor_OrderAvailability_Howz_D30_122mm_VDV_SOV is [
     "AIManageArtillery_Auto",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_Howz_M101_105mm_RFA is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIManageArtillery_Focus",
+    "AIManageArtillery_CounterBattery",
+    "AIManageArtillery_Auto",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_Howz_M102_105mm_US is [
     "Stop",
     "Move",
@@ -2997,6 +3409,29 @@ export Descriptor_OrderAvailability_Howz_M102_105mm_US is [
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Howz_M46_130mm_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIManageArtillery_Focus",
+    "AIManageArtillery_CounterBattery",
+    "AIManageArtillery_Auto",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Howz_M46_130mm_SOV is [
     "Stop",
     "Move",
     "FollowFormation",
@@ -3754,7 +4189,6 @@ export Descriptor_OrderAvailability_M110A2_Howz_RFA is [
 ]
 export Descriptor_OrderAvailability_M113A1G_RFA is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -3797,8 +4231,12 @@ export Descriptor_OrderAvailability_M113A1G_reco_RFA is [
     "ShootOnPositionWithoutCorrectionSmoke",
     "AskForSupply",
     "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
     "LoadIntoTransport",
     "Load",
+    "LoadUnit",
     "AIDefend",
     "AIAttack",
     "AIStop",
@@ -3855,7 +4293,6 @@ export Descriptor_OrderAvailability_M113A2_supply_US is [
 ]
 export Descriptor_OrderAvailability_M113A3_US is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -3895,15 +4332,18 @@ export Descriptor_OrderAvailability_M113_ACAV_US is [
     "ShootOnPositionWithoutCorrection",
     "AskForSupply",
     "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
     "LoadIntoTransport",
     "Load",
+    "LoadUnit",
     "AIDefend",
     "AIAttack",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_M113_Dragon_US is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -4016,8 +4456,12 @@ export Descriptor_OrderAvailability_M151A2_scout_US is [
     "ShootOnPositionWithoutCorrection",
     "AskForSupply",
     "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
     "LoadIntoTransport",
     "Load",
+    "LoadUnit",
     "AIDefend",
     "AIAttack",
     "AIStop",
@@ -4033,6 +4477,53 @@ export Descriptor_OrderAvailability_M151_MUTT_CMD_US is [
     "GoGetSupply",
     "LoadIntoTransport",
     "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_M151_MUTT_RCL_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_M151_MUTT_Reco_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
     "AIDefend",
     "AIAttack",
     "AIStop",
@@ -4441,6 +4932,30 @@ export Descriptor_OrderAvailability_M48A2C_RFA is [
     "Shoot",
     "ShootOnPosition",
     "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_M48A2GA2_CMD_RFA is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
     "AskForSupply",
     "GoGetSupply",
     "LoadIntoTransport",
@@ -5051,7 +5566,6 @@ export Descriptor_OrderAvailability_MTLB_supply_SOV is [
 ]
 export Descriptor_OrderAvailability_MTLB_trans_DDR is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -5077,7 +5591,6 @@ export Descriptor_OrderAvailability_MTLB_trans_DDR is [
 ]
 export Descriptor_OrderAvailability_MTLB_transp_SOV is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -5630,6 +6143,25 @@ export Descriptor_OrderAvailability_MotSchutzen_DDR is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_Osa_9K33M3_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_Osa_9K33M3_SOV is [
     "Stop",
     "Move",
@@ -5672,6 +6204,28 @@ export Descriptor_OrderAvailability_PT76B_CMD_DDR is [
     "AIStop",
 ]
 export Descriptor_OrderAvailability_PT76B_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_PT76B_tank_DDR is [
     "Stop",
     "Move",
     "FollowFormation",
@@ -5824,7 +6378,93 @@ export Descriptor_OrderAvailability_Rangers_CMD_US is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_Rifles_Aero_CMD_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Rifles_Aero_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Rifles_CMD_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_Rifles_CMD_US is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Rifles_FR is [
     "Stop",
     "Move",
     "FollowFormation",
@@ -5974,6 +6614,31 @@ export Descriptor_OrderAvailability_Rifles_half_LAW_US is [
     "EnterDistrict",
     "LoadIntoTransport",
     "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_SPW_152K_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
     "AIDefend",
     "AIAttack",
     "AIStop",
@@ -6254,6 +6919,28 @@ export Descriptor_OrderAvailability_Spetsnaz_SOV is [
     "AskForSupply",
     "GoGetSupply",
     "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_T34_85M_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
     "LoadIntoTransport",
     "Load",
     "AIDefend",
@@ -6768,6 +7455,28 @@ export Descriptor_OrderAvailability_T813_trans_DDR is [
     "LoadUnit",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_TOS1_Buratino_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIManageArtillery_Focus",
+    "AIManageArtillery_CounterBattery",
+    "AIManageArtillery_Auto",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_TO_55_DDR is [
     "Stop",
     "Move",
@@ -6814,7 +7523,6 @@ export Descriptor_OrderAvailability_TO_55_SOV is [
 ]
 export Descriptor_OrderAvailability_TPZ_Fuchs_1_RFA is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -6865,7 +7573,6 @@ export Descriptor_OrderAvailability_TPZ_Fuchs_CMD_RFA is [
 ]
 export Descriptor_OrderAvailability_TPZ_Fuchs_MILAN_RFA is [
     "Stop",
-    "Sell",
     "Move",
     "FollowFormation",
     "QuickMove",
@@ -7026,6 +7733,21 @@ export Descriptor_OrderAvailability_UAZ_469_AGL_VDV_SOV is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_UAZ_469_CMD_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Spread",
+    "Reverse",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_UAZ_469_CMD_SOV is [
     "Stop",
     "Move",
@@ -7048,6 +7770,26 @@ export Descriptor_OrderAvailability_UAZ_469_CMD_VDV_SOV is [
     "QuickMove",
     "Spread",
     "Reverse",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_UAZ_469_Fagot_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
     "AskForSupply",
     "GoGetSupply",
     "LoadIntoTransport",
@@ -7096,6 +7838,56 @@ export Descriptor_OrderAvailability_UAZ_469_Konkurs_VDV_SOV is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_UAZ_469_Reco_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_UAZ_469_Reco_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_UAZ_469_SOV is [
     "Stop",
     "Sell",
@@ -7115,6 +7907,28 @@ export Descriptor_OrderAvailability_UAZ_469_SOV is [
     "AIStop",
 ]
 export Descriptor_OrderAvailability_UAZ_469_SPG9_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_UAZ_469_SPG9_FJ_DDR is [
     "Stop",
     "Move",
     "FollowFormation",
@@ -7258,6 +8072,24 @@ export Descriptor_OrderAvailability_Unimog_trans_RFA is [
     "LoadUnit",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_Ural_4320_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Spread",
+    "Reverse",
+    "SupplyUnit",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_Ural_4320_SOV is [
     "Stop",
     "Move",
@@ -7381,6 +8213,89 @@ export Descriptor_OrderAvailability_VDV_SOV is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_VLTT_P4_MILAN_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_VLTT_P4_MILAN_para_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Volkspolizei_CMD_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Volkspolizei_DDR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_W50_LA_A_DDR is [
     "Stop",
     "Sell",
@@ -7427,7 +8342,6 @@ export Descriptor_OrderAvailability_Wachregiment_DDR is [
     "SmartMove",
     "Attack",
     "SmartMoveAndAttack",
-    "SmartHoldFire",
     "MoveAndAttack",
     "Spread",
     "Shoot",
@@ -7449,6 +8363,7 @@ export Descriptor_OrderAvailability_Wachregiment_SMG_DDR is [
     "SmartMove",
     "Attack",
     "SmartMoveAndAttack",
+    "SmartHoldFire",
     "MoveAndAttack",
     "Spread",
     "Shoot",
@@ -7552,6 +8467,27 @@ export Descriptor_OrderAvailability_ZSU_23_Shilka_DDR is [
     "AIStop",
 ]
 export Descriptor_OrderAvailability_ZSU_23_Shilka_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_ZSU_57_2_DDR is [
     "Stop",
     "Move",
     "FollowFormation",
@@ -7960,6 +8896,134 @@ export Descriptor_OrderAvailability_CH53G_trans_RFA is [
     "LoadIntoTransport",
     "Load",
     "LoadUnit",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Gazelle_20mm_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Attack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "Land",
+    "GoUp",
+    "GoDown",
+    "ChangeAltitude",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Gazelle_20mm_reco_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Attack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "Land",
+    "GoUp",
+    "GoDown",
+    "ChangeAltitude",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Gazelle_HOT_2_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Attack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "Land",
+    "GoUp",
+    "GoDown",
+    "ChangeAltitude",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Gazelle_HOT_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Attack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "Land",
+    "GoUp",
+    "GoDown",
+    "ChangeAltitude",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Gazelle_reco_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Spread",
+    "Land",
+    "GoUp",
+    "GoDown",
+    "ChangeAltitude",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Ka_50_AA_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Attack",
+    "SmartHoldFire",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "Land",
+    "GoUp",
+    "GoDown",
+    "ChangeAltitude",
+    "AskForSupply",
+    "GoGetSupply",
+    "LoadIntoTransport",
+    "Load",
     "AIDefend",
     "AIAttack",
     "AIStop",
@@ -8783,6 +9847,28 @@ export Descriptor_OrderAvailability_OH58_CS_US is [
     "AIAttack",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_Super_Puma_FR is [
+    "Stop",
+    "Sell",
+    "Move",
+    "FollowFormation",
+    "Spread",
+    "Land",
+    "GoUp",
+    "GoDown",
+    "ChangeAltitude",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 export Descriptor_OrderAvailability_UH1D_RFA is [
     "Stop",
     "Sell",
@@ -8905,7 +9991,7 @@ export Descriptor_OrderAvailability_A10_Thunderbolt_II_ATGM_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_A10_Thunderbolt_II_Rkt_US is [
@@ -8921,7 +10007,7 @@ export Descriptor_OrderAvailability_A10_Thunderbolt_II_Rkt_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_A10_Thunderbolt_II_US is [
@@ -8937,7 +10023,7 @@ export Descriptor_OrderAvailability_A10_Thunderbolt_II_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Alpha_Jet_A_clu_RFA is [
@@ -8953,7 +10039,7 @@ export Descriptor_OrderAvailability_Alpha_Jet_A_clu_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Alpha_Jet_A_he_RFA is [
@@ -8969,7 +10055,7 @@ export Descriptor_OrderAvailability_Alpha_Jet_A_he_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Alpha_Jet_A_nplm_RFA is [
@@ -8985,7 +10071,7 @@ export Descriptor_OrderAvailability_Alpha_Jet_A_nplm_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Alpha_Jet_A_rkt_RFA is [
@@ -9001,7 +10087,7 @@ export Descriptor_OrderAvailability_Alpha_Jet_A_rkt_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_EF111_Raven is [
@@ -9015,7 +10101,7 @@ export Descriptor_OrderAvailability_EF111_Raven is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F104G_Starfighter_AT_RFA is [
@@ -9029,7 +10115,7 @@ export Descriptor_OrderAvailability_F104G_Starfighter_AT_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F104G_Starfighter_HE_RFA is [
@@ -9045,7 +10131,7 @@ export Descriptor_OrderAvailability_F104G_Starfighter_HE_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F104G_Starfighter_RFA is [
@@ -9059,7 +10145,7 @@ export Descriptor_OrderAvailability_F104G_Starfighter_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F111E_Aardvark_CBU_US is [
@@ -9075,7 +10161,7 @@ export Descriptor_OrderAvailability_F111E_Aardvark_CBU_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F111E_Aardvark_US is [
@@ -9091,7 +10177,7 @@ export Descriptor_OrderAvailability_F111E_Aardvark_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F111E_Aardvark_napalm_US is [
@@ -9107,7 +10193,7 @@ export Descriptor_OrderAvailability_F111E_Aardvark_napalm_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F111F_Aardvark_CBU_US is [
@@ -9123,7 +10209,39 @@ export Descriptor_OrderAvailability_F111F_Aardvark_CBU_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_F111F_Aardvark_LGB2_US is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AirplanePatrol",
+    "AirplaneAttack",
+    "AirplaneMoveAndEngage",
+    "AirplaneTakeOff",
+    "AirplaneEvacuate",
+    "AirplaneShoot",
+    "AIAirplaneAutoManage",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_F111F_Aardvark_LGB_US is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AirplanePatrol",
+    "AirplaneAttack",
+    "AirplaneMoveAndEngage",
+    "AirplaneTakeOff",
+    "AirplaneEvacuate",
+    "AirplaneShoot",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F111F_Aardvark_US is [
@@ -9139,7 +10257,7 @@ export Descriptor_OrderAvailability_F111F_Aardvark_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F111F_Aardvark_napalm_US is [
@@ -9155,7 +10273,7 @@ export Descriptor_OrderAvailability_F111F_Aardvark_napalm_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F15C_Eagle_AA_US is [
@@ -9169,7 +10287,7 @@ export Descriptor_OrderAvailability_F15C_Eagle_AA_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F16E_AA_US is [
@@ -9183,7 +10301,7 @@ export Descriptor_OrderAvailability_F16E_AA_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F16E_AGM_US is [
@@ -9197,7 +10315,7 @@ export Descriptor_OrderAvailability_F16E_AGM_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F16E_CBU_US is [
@@ -9213,7 +10331,7 @@ export Descriptor_OrderAvailability_F16E_CBU_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F16E_HE_US is [
@@ -9229,7 +10347,7 @@ export Descriptor_OrderAvailability_F16E_HE_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F16E_SEAD_US is [
@@ -9243,7 +10361,7 @@ export Descriptor_OrderAvailability_F16E_SEAD_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F16E_napalm_US is [
@@ -9259,7 +10377,7 @@ export Descriptor_OrderAvailability_F16E_napalm_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4E_Phantom_II_AA_US is [
@@ -9273,7 +10391,7 @@ export Descriptor_OrderAvailability_F4E_Phantom_II_AA_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4E_Phantom_II_CBU_US is [
@@ -9289,7 +10407,7 @@ export Descriptor_OrderAvailability_F4E_Phantom_II_CBU_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4E_Phantom_II_HE_US is [
@@ -9305,7 +10423,7 @@ export Descriptor_OrderAvailability_F4E_Phantom_II_HE_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4E_Phantom_II_napalm_US is [
@@ -9321,7 +10439,7 @@ export Descriptor_OrderAvailability_F4E_Phantom_II_napalm_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4F_Phantom_II_AA_RFA is [
@@ -9335,7 +10453,7 @@ export Descriptor_OrderAvailability_F4F_Phantom_II_AA_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4F_Phantom_II_AT_RFA is [
@@ -9349,7 +10467,7 @@ export Descriptor_OrderAvailability_F4F_Phantom_II_AT_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4F_Phantom_II_HE1_RFA is [
@@ -9365,7 +10483,7 @@ export Descriptor_OrderAvailability_F4F_Phantom_II_HE1_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4F_Phantom_II_HE2_RFA is [
@@ -9381,7 +10499,7 @@ export Descriptor_OrderAvailability_F4F_Phantom_II_HE2_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4F_Phantom_II_RKT1_RFA is [
@@ -9397,7 +10515,7 @@ export Descriptor_OrderAvailability_F4F_Phantom_II_RKT1_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4F_Phantom_II_RKT2_RFA is [
@@ -9413,7 +10531,7 @@ export Descriptor_OrderAvailability_F4F_Phantom_II_RKT2_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_F4_Wild_Weasel_US is [
@@ -9427,21 +10545,7 @@ export Descriptor_OrderAvailability_F4_Wild_Weasel_US is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
-    "AIStop",
-]
-export Descriptor_OrderAvailability_G91_R3_Gina_AA_RFA is [
-    "Stop",
-    "Move",
-    "FollowFormation",
-    "Shoot",
-    "AirplanePatrol",
-    "AirplaneAttack",
-    "AirplaneMoveAndEngage",
-    "AirplaneTakeOff",
-    "AirplaneEvacuate",
-    "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_G91_R3_Gina_HE_RFA is [
@@ -9457,7 +10561,7 @@ export Descriptor_OrderAvailability_G91_R3_Gina_HE_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_G91_R3_Gina_NPL_RFA is [
@@ -9473,7 +10577,7 @@ export Descriptor_OrderAvailability_G91_R3_Gina_NPL_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_G91_R3_Gina_RKT_RFA is [
@@ -9489,7 +10593,7 @@ export Descriptor_OrderAvailability_G91_R3_Gina_RKT_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Harrier_UK is [
@@ -9503,7 +10607,7 @@ export Descriptor_OrderAvailability_Harrier_UK is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_21PFM_AA_DDR is [
@@ -9517,7 +10621,7 @@ export Descriptor_OrderAvailability_MiG_21PFM_AA_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_21PFM_DDR is [
@@ -9533,7 +10637,7 @@ export Descriptor_OrderAvailability_MiG_21PFM_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_21bis_AA2_DDR is [
@@ -9547,7 +10651,7 @@ export Descriptor_OrderAvailability_MiG_21bis_AA2_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_21bis_HE_DDR is [
@@ -9563,7 +10667,7 @@ export Descriptor_OrderAvailability_MiG_21bis_HE_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_21bis_RKT2_DDR is [
@@ -9579,7 +10683,7 @@ export Descriptor_OrderAvailability_MiG_21bis_RKT2_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_23BN_AT_DDR is [
@@ -9593,7 +10697,7 @@ export Descriptor_OrderAvailability_MiG_23BN_AT_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_23MF_AA_DDR is [
@@ -9607,7 +10711,7 @@ export Descriptor_OrderAvailability_MiG_23MF_AA_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_23MF_DDR is [
@@ -9623,7 +10727,7 @@ export Descriptor_OrderAvailability_MiG_23MF_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_23ML_DDR is [
@@ -9637,7 +10741,7 @@ export Descriptor_OrderAvailability_MiG_23ML_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_23ML_SOV is [
@@ -9651,7 +10755,7 @@ export Descriptor_OrderAvailability_MiG_23ML_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_23P_SOV is [
@@ -9665,7 +10769,7 @@ export Descriptor_OrderAvailability_MiG_23P_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_25BM_SOV is [
@@ -9679,7 +10783,7 @@ export Descriptor_OrderAvailability_MiG_25BM_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_25RBF_SOV is [
@@ -9695,7 +10799,23 @@ export Descriptor_OrderAvailability_MiG_25RBF_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_MiG_27M_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AirplanePatrol",
+    "AirplaneAttack",
+    "AirplaneMoveAndEngage",
+    "AirplaneTakeOff",
+    "AirplaneEvacuate",
+    "AirplaneShoot",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_27M_bombe_SOV is [
@@ -9711,7 +10831,7 @@ export Descriptor_OrderAvailability_MiG_27M_bombe_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_27M_napalm_SOV is [
@@ -9727,7 +10847,7 @@ export Descriptor_OrderAvailability_MiG_27M_napalm_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_27M_rkt_SOV is [
@@ -9743,7 +10863,7 @@ export Descriptor_OrderAvailability_MiG_27M_rkt_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_27M_sead_SOV is [
@@ -9759,7 +10879,7 @@ export Descriptor_OrderAvailability_MiG_27M_sead_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_29_AA_DDR is [
@@ -9773,7 +10893,7 @@ export Descriptor_OrderAvailability_MiG_29_AA_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_29_AA_SOV is [
@@ -9787,7 +10907,7 @@ export Descriptor_OrderAvailability_MiG_29_AA_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_MiG_31M_SOV is [
@@ -9801,7 +10921,53 @@ export Descriptor_OrderAvailability_MiG_31M_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Mirage_2000_C_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Shoot",
+    "AirplanePatrol",
+    "AirplaneAttack",
+    "AirplaneMoveAndEngage",
+    "AirplaneTakeOff",
+    "AirplaneEvacuate",
+    "AirplaneShoot",
+    "AIAirplaneAutoManage",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Mirage_5_F_clu_FR is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AirplanePatrol",
+    "AirplaneAttack",
+    "AirplaneMoveAndEngage",
+    "AirplaneTakeOff",
+    "AirplaneEvacuate",
+    "AirplaneShoot",
+    "AIAirplaneAutoManage",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Su_17M4_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AirplanePatrol",
+    "AirplaneAttack",
+    "AirplaneMoveAndEngage",
+    "AirplaneTakeOff",
+    "AirplaneEvacuate",
+    "AirplaneShoot",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_22_AT_DDR is [
@@ -9815,7 +10981,7 @@ export Descriptor_OrderAvailability_Su_22_AT_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_22_DDR is [
@@ -9831,7 +10997,7 @@ export Descriptor_OrderAvailability_Su_22_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_22_RKT_DDR is [
@@ -9847,7 +11013,7 @@ export Descriptor_OrderAvailability_Su_22_RKT_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_22_SEAD_DDR is [
@@ -9861,7 +11027,7 @@ export Descriptor_OrderAvailability_Su_22_SEAD_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_22_clu_DDR is [
@@ -9877,7 +11043,7 @@ export Descriptor_OrderAvailability_Su_22_clu_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_22_nplm_DDR is [
@@ -9893,7 +11059,21 @@ export Descriptor_OrderAvailability_Su_22_nplm_DDR is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Su_24MP_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Shoot",
+    "AirplanePatrol",
+    "AirplaneAttack",
+    "AirplaneMoveAndEngage",
+    "AirplaneTakeOff",
+    "AirplaneEvacuate",
+    "AirplaneShoot",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_24M_SOV is [
@@ -9909,7 +11089,7 @@ export Descriptor_OrderAvailability_Su_24M_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_24M_clu_SOV is [
@@ -9925,7 +11105,7 @@ export Descriptor_OrderAvailability_Su_24M_clu_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_24M_nplm_SOV is [
@@ -9941,21 +11121,7 @@ export Descriptor_OrderAvailability_Su_24M_nplm_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
-    "AIStop",
-]
-export Descriptor_OrderAvailability_Su_25T_SOV is [
-    "Stop",
-    "Move",
-    "FollowFormation",
-    "Shoot",
-    "AirplanePatrol",
-    "AirplaneAttack",
-    "AirplaneMoveAndEngage",
-    "AirplaneTakeOff",
-    "AirplaneEvacuate",
-    "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_25_SOV is [
@@ -9969,7 +11135,7 @@ export Descriptor_OrderAvailability_Su_25_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_25_clu_SOV is [
@@ -9985,7 +11151,7 @@ export Descriptor_OrderAvailability_Su_25_clu_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_25_he_SOV is [
@@ -10001,7 +11167,7 @@ export Descriptor_OrderAvailability_Su_25_he_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_25_nplm_SOV is [
@@ -10017,7 +11183,7 @@ export Descriptor_OrderAvailability_Su_25_nplm_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_25_rkt_SOV is [
@@ -10033,7 +11199,7 @@ export Descriptor_OrderAvailability_Su_25_rkt_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Su_27S_SOV is [
@@ -10047,7 +11213,23 @@ export Descriptor_OrderAvailability_Su_27S_SOV is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Tornado_ADV_HE_UK is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AirplanePatrol",
+    "AirplaneAttack",
+    "AirplaneMoveAndEngage",
+    "AirplaneTakeOff",
+    "AirplaneEvacuate",
+    "AirplaneShoot",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Tornado_ADV_SEAD_UK is [
@@ -10061,7 +11243,7 @@ export Descriptor_OrderAvailability_Tornado_ADV_SEAD_UK is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Tornado_ADV_UK is [
@@ -10075,7 +11257,23 @@ export Descriptor_OrderAvailability_Tornado_ADV_UK is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
+    "AIStop",
+]
+export Descriptor_OrderAvailability_Tornado_ADV_clu_UK is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AirplanePatrol",
+    "AirplaneAttack",
+    "AirplaneMoveAndEngage",
+    "AirplaneTakeOff",
+    "AirplaneEvacuate",
+    "AirplaneShoot",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Tornado_IDS_AT1_RFA is [
@@ -10089,21 +11287,7 @@ export Descriptor_OrderAvailability_Tornado_IDS_AT1_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
-    "AIStop",
-]
-export Descriptor_OrderAvailability_Tornado_IDS_AT2_RFA is [
-    "Stop",
-    "Move",
-    "FollowFormation",
-    "Shoot",
-    "AirplanePatrol",
-    "AirplaneAttack",
-    "AirplaneMoveAndEngage",
-    "AirplaneTakeOff",
-    "AirplaneEvacuate",
-    "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Tornado_IDS_CLUS_RFA is [
@@ -10119,7 +11303,7 @@ export Descriptor_OrderAvailability_Tornado_IDS_CLUS_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Tornado_IDS_HE1_RFA is [
@@ -10135,23 +11319,7 @@ export Descriptor_OrderAvailability_Tornado_IDS_HE1_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
-    "AIStop",
-]
-export Descriptor_OrderAvailability_Tornado_IDS_HE2_RFA is [
-    "Stop",
-    "Move",
-    "FollowFormation",
-    "Shoot",
-    "ShootOnPosition",
-    "ShootOnPositionWithoutCorrection",
-    "AirplanePatrol",
-    "AirplaneAttack",
-    "AirplaneMoveAndEngage",
-    "AirplaneTakeOff",
-    "AirplaneEvacuate",
-    "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Tornado_IDS_MW1_RFA is [
@@ -10167,7 +11335,7 @@ export Descriptor_OrderAvailability_Tornado_IDS_MW1_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 export Descriptor_OrderAvailability_Tornado_IDS_RFA is [
@@ -10183,21 +11351,7 @@ export Descriptor_OrderAvailability_Tornado_IDS_RFA is [
     "AirplaneTakeOff",
     "AirplaneEvacuate",
     "AirplaneShoot",
-    "AIAiplaneAutoManage",
-    "AIStop",
-]
-export Descriptor_OrderAvailability_Tornado_IDS_SEAD_RFA is [
-    "Stop",
-    "Move",
-    "FollowFormation",
-    "Shoot",
-    "AirplanePatrol",
-    "AirplaneAttack",
-    "AirplaneMoveAndEngage",
-    "AirplaneTakeOff",
-    "AirplaneEvacuate",
-    "AirplaneShoot",
-    "AIAiplaneAutoManage",
+    "AIAirplaneAutoManage",
     "AIStop",
 ]
 

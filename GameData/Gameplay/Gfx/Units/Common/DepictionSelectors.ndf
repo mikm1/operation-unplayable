@@ -79,6 +79,11 @@ export HumanAlwaysVisibleSelector is HumanSelectorTemplate
     DisplayCondition = nil
 )
 
+export HumanVisibleWhenAliveSelector is HumanSelectorTemplate
+(
+    DisplayCondition = TVisibleWhenAliveCondition()
+)
+
 export HumanVisibleWhenDeployedSelector is HumanSelectorTemplate
 (
     DisplayCondition = TVisibleWhenAliveAndDeployedCondition()

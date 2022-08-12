@@ -17,4 +17,5 @@ GroupSelectionReminder is TGroupSelectionReminderResources
     UserInputLayer              = $/M3D/Input/UserInputLayerHandler/InputLayer_InGameShortcuts
     EpsilonTimeForDoubleClic    = 1
     PositionEventManager        = ~/MainPositionEvents
+    MergeUnitsMapping           = $/KeyboardOption/Mapping_MergeUnits
 )

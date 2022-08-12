@@ -32,7 +32,7 @@ FeedbackMessage_OnFlareDefendPlaced             is 27
 FeedbackMessage_OnFlareHelpPlaced               is 28
 FeedbackMessage_OnFlareCustomPlaced             is 29
 FeedbackMessage_OnUnitUnderAttack               is 30
-FeedbackMessage_OnUnloadOrder                   is 31
+FeedbackMessage_OnUnloadFromTransportOrder      is 31
 FeedbackMessage_OnUnloadAtPositionOrder         is 32
 FeedbackMessage_OnEvacuateOrder                 is 33
 FeedbackMessage_OnEvacFromDistrictOrder         is 34
@@ -86,6 +86,19 @@ FeedbackMessage_OnAerialCorridorLost            is 81
 FeedbackMessage_OnBombarderOrder                is 82
 FeedbackMessage_OnSmartMoveOrder                is 83
 FeedbackMessage_OnSmartMoveAndAttackOrder       is 84
+FeedbackMessage_OnSellOrder                     is 85
+FeedbackMessage_OnLandOrder                     is 86
+FeedbackMessage_OnHoldPositionOrder             is 87
+FeedbackMessage_OnAirplaneEvacuateOrder         is 88
+FeedbackMessage_OnAirplaneTakeOffOrder          is 89
+FeedbackMessage_OnFortifyOrder                  is 90
+FeedbackMessage_OnFortifyAntiAirOrder           is 91
+FeedbackMessage_ChangeAltitudeOrder             is 92
+FeedbackMessage_SpreadOrder                     is 93
+FeedbackMessage_OnAIManageArtillery_AutoOrder   is 94
+FeedbackMessage_OnAIManageArtillery_CounterBatteryOrder   is 95
+FeedbackMessage_OnAIDefendOrder                 is 96
+FeedbackMessage_AIAirplaneAutoManageOrder       is 97
 
 
 export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
@@ -122,7 +135,7 @@ export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
         "FeedbackMessage_OnFlareHelpPlaced",
         "FeedbackMessage_OnFlareCustomPlaced",
         "FeedbackMessage_OnUnitUnderAttack",
-        "FeedbackMessage_OnUnloadOrder",
+        "FeedbackMessage_OnUnloadFromTransportOrder",
         "FeedbackMessage_OnUnloadAtPositionOrder",
         "FeedbackMessage_OnEvacuateOrder",
         "FeedbackMessage_OnEvacFromDistrictOrder",
@@ -175,6 +188,19 @@ export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
         "FeedbackMessage_OnAerialCorridorLost",
         "FeedbackMessage_OnBombarderOrder",
         "FeedbackMessage_OnSmartMoveOrder",
-        "FeedbackMessage_OnSmartMoveAndAttackOrder"
-    ]
+        "FeedbackMessage_OnSmartMoveAndAttackOrder",
+        "FeedbackMessage_OnSellOrder",
+        "FeedbackMessage_OnLandOrder",
+        "FeedbackMessage_OnHoldPositionOrder",
+        "FeedbackMessage_OnAirplaneEvacuateOrder",
+        "FeedbackMessage_OnAirplaneTakeOffOrder",
+        "FeedbackMessage_OnFortifyOrder",
+        "FeedbackMessage_OnFortifyAntiAirOrder",
+        "FeedbackMessage_OnChangeAltitudeOrder",
+        "FeedbackMessage_OnSpreadOrder",
+        "FeedbackMessage_OnAIManageArtillery_AutoOrder",
+        "FeedbackMessage_OnAIManageArtillery_CounterBatteryOrder",
+        "FeedbackMessage_OnAIDefendOrder",
+        "FeedbackMessage_OnAIAirplaneAutoManageOrder",
+        ]
 )

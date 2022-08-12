@@ -230,7 +230,7 @@ SideBySideButtonDescriptor is BUCKButtonDescriptor
 
 AnimationButtonDescriptor is BUCKButtonDescriptor
 (
-    ElementName = 'BoutonAnimationPanelInfo'
+    ElementName = "BoutonAnimationPanelInfo"
 
     ComponentFrame = TUIFramePropertyRTTI
     (

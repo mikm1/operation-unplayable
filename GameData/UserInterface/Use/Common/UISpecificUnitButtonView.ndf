@@ -594,11 +594,12 @@ private UnitButtonUnitNameAndAdditonnalUnitIconContainer is BUCKContainerDescrip
 
 // -------------------------------------------------------------------------------------------------
 // Unit name
-private UnitButtonUnitNameText is BUCKTextDescriptor
+private UnitButtonUnitNameText is BUCKSpecificTextWithHint
 (
     ElementName = 'UnitNameText'
     ComponentFrame = TUIFramePropertyRTTI
     (
+        RelativeWidthHeight = [1.0, 0.0]
         MagnifiableWidthHeight = [0.0, 16.0]
     )
 
@@ -611,7 +612,6 @@ private UnitButtonUnitNameText is BUCKTextDescriptor
 
     TextStyle = "Default"
 
-    HorizontalFitStyle = ~/FitStyle/FitToContent
     VerticalFitStyle = ~/FitStyle/UserDefined
 
     TypefaceToken = "Liberator"
@@ -659,16 +659,7 @@ PackAndUnitNameList is BUCKContainerDescriptor
                 BUCKListElementDescriptor
                 (
                     ExtendWeight = 1.0
-                    ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI ())
-                ),
-                BUCKListElementDescriptor
-                (
                     ComponentDescriptor = UnitButtonUnitNameText
-                ),
-                BUCKListElementDescriptor
-                (
-                    ExtendWeight = 1.0
-                    ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI ())
                 ),
             ]
         )
@@ -1229,23 +1220,24 @@ NbUnitInThePack is BUCKContainerDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                RelativeWidthHeight = [0,1]
+                RelativeWidthHeight = [0.0, 1.0]
             )
+
             FirstMargin = TRTTILength( Magnifiable = 3.0 )
             InterItemMargin = TRTTILength( Magnifiable = 3.0 )
             LastMargin = TRTTILength( Magnifiable = 3.0 )
             Axis = ~/ListAxis/Horizontal
+
             Elements =
             [
-            BUCKListElementDescriptor
-            (
+                BUCKListElementDescriptor
+                (
                     ComponentDescriptor = BUCKTextDescriptor
                     (
 
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [0.0, 1.0]
-
                         )
 
                         ParagraphStyle = TParagraphStyleRTTI
@@ -1278,65 +1270,60 @@ NbUnitInThePack is BUCKContainerDescriptor
                             HintBodyToken = "HIP_UNUMB"
                         )
                     )
-
-            ),
-            BUCKListElementDescriptor
-            (
-                ComponentDescriptor = BUCKTextDescriptor
+                ),
+                BUCKListElementDescriptor
                 (
-                    ElementName = "NbUnitsInPackText"
-                    ComponentFrame = TUIFramePropertyRTTI
+                    ComponentDescriptor = BUCKTextDescriptor
                     (
-                        RelativeWidthHeight = [0.0, 1.0]
+                        ElementName = "NbUnitsInPackText"
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            RelativeWidthHeight = [0.0, 1.0]
+                        )
+
+                        ParagraphStyle = TParagraphStyleRTTI
+                        (
+                            Alignment = UIText_Center
+                            VerticalAlignment = UIText_VerticalCenter
+                            InterLine = 0
+                        )
+
+                        TextStyle = "LabelUnitNameStroke"
+
+                        HorizontalFitStyle = ~/FitStyle/FitToContent
+                        VerticalFitStyle = ~/FitStyle/UserDefined
+
+                        TypefaceToken = "Liberator"
+                        BigLineAction = ~/BigLineAction/CutByDots
+
+                        UniformDrawer = $/UserInterface/UIUniformDrawer
+
+                        TextDico = ~/LocalisationConstantes/dico_interface_ingame
+                        TextToken = "HPROD_NBU"
+
+                        TextColor = "VertSecteur"
+                        TextSize = "14"
+
+                         Hint = BUCKSpecificHintableArea
+                        (
+                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                            HintTitleToken = "HIP_UNUMT"
+                            HintBodyToken = "HIP_UNUMB"
+                        )
                     )
-
-                    ParagraphStyle = TParagraphStyleRTTI
-                    (
-                        Alignment = UIText_Center
-                        VerticalAlignment = UIText_VerticalCenter
-                        InterLine = 0
-                    )
-
-                    TextStyle = "LabelUnitNameStroke"
-
-                    HorizontalFitStyle = ~/FitStyle/FitToContent
-                    VerticalFitStyle = ~/FitStyle/UserDefined
-
-                    TypefaceToken = "Liberator"
-                    BigLineAction = ~/BigLineAction/CutByDots
-
-                    UniformDrawer = $/UserInterface/UIUniformDrawer
-
-                    TextDico = ~/LocalisationConstantes/dico_interface_ingame
-                    TextToken = "HPROD_NBU"
-
-                    TextColor = "VertSecteur"
-                    TextSize = "14"
-
-                     Hint = BUCKSpecificHintableArea
-                    (
-                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        HintTitleToken = "HIP_UNUMT"
-                        HintBodyToken = "HIP_UNUMB"
-                    )
-                )
-            ),
-
+                ),
             ]
-
 
             BackgroundComponents =
             [
                 PanelRoundedCorner
-                        (
-                            Radius = 2
-                            BackgroundBlockColorToken = "BoutonTemps"
-                            BorderLineColorToken = "BoutonTemps"
-                        )
+                (
+                    Radius = 2
+                    BackgroundBlockColorToken = "BoutonTemps"
+                    BorderLineColorToken = "BoutonTemps"
+                )
             ]
         )
-
-
     ]
 )
 

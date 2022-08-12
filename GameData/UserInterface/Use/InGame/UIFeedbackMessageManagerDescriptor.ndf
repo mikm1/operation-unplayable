@@ -770,7 +770,7 @@ IngameFeedbackMessageManagerDescriptor is TUISpecificInGameFeedbackMessageManage
         ( FeedbackMessage_OnFlareFireSupportPlaced, ~/OnFlareFireSupportPlaced ),
         ( FeedbackMessage_OnFlareEnemySpottedPlaced, ~/OnFlareEnemySpottedPlaced ),
         ( FeedbackMessage_OnUnitUnderAttack, ~/OnUnitUnderAttack ),
-        ( FeedbackMessage_OnUnloadOrder, ~/OnUnloadOrder ),
+        ( FeedbackMessage_OnUnloadFromTransportOrder, ~/OnUnloadOrder ),
         ( FeedbackMessage_OnUnloadAtPositionOrder, ~/OnUnloadAtPositionOrder ),
         ( FeedbackMessage_OnEvacuateOrder, ~/OnEvacuateOrder ),
         ( FeedbackMessage_OnEvacFromDistrictOrder, ~/OnEvacFromDistrictOrder ),

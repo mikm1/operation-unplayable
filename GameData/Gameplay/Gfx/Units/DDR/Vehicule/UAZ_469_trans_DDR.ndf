@@ -8,13 +8,13 @@ Modele_UAZ_469_trans_DDR is TResourceMultiMaterialMeshWithLod
 
 Modele_UAZ_469_trans_DDR_MID is TResourceMultiMaterialMeshWithLod
 (
-    FileName     = 'GameData:/Assets/3D/Units/URSS/Vehicule/UAZ_469_Konkurs/UAZ_469_Konkurs.Ase2NdfBin'
+    FileName     = 'GameData:/Assets/3D/Units/URSS/Vehicule/UAZ_469_CMD/UAZ_469_CMD.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 
 Modele_UAZ_469_trans_DDR_LOW is TResourceMultiMaterialMeshWithLod
 (
-    FileName     = 'GameData:/Assets/3D/Units/URSS/Vehicule/UAZ_469_Konkurs/UAZ_469_Konkurs.Ase2NdfBin'
+    FileName     = 'GameData:/Assets/3D/Units/URSS/Vehicule/UAZ_469_CMD/UAZ_469_CMD.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 

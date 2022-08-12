@@ -163,6 +163,7 @@ Base_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Trait_Icon_cac",                          MAP [(~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/Common/traits/CaC.png' )), ] ),
         ("Texture_Trait_Icon_napalm",                          MAP [(~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/Common/traits/napalm.png' )), ] ),
         ("Texture_Trait_Icon_cluster",                          MAP [(~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/Common/traits/cluster.png' )), ] ),
+        ("Texture_Trait_Icon_autoloader",                          MAP [(~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/Common/traits/autoloader.png' )), ] ),
         //-------------------------------------------------------------------------------------
         ("OutGameTexture_LevelUpAnimation_0",                                                MAP [(~/ComponentState/Normal, ~/OutGameTexture_LevelUpAnimation_0)]),
         ("OutGameTexture_LevelUpAnimation_1",                                                MAP [(~/ComponentState/Normal, ~/OutGameTexture_LevelUpAnimation_1)]),

@@ -1,4 +1,4 @@
-optionsResources is TUIWargame2InGameOptionsResources
+optionsResources is TUISpecificInGameOptionsResources
 (
     ShowUnitName                        = $/GUIOption/ShowUnitName
     IconsToShow                         = $/GUIOption/IconType
@@ -7,6 +7,7 @@ optionsResources is TUIWargame2InGameOptionsResources
     StrategicLabelSize                  = $/GUIOption/StrategicLabelsSize
     MinimalistTargetCursorDisplay       = $/GUIOption/MinimalistTargetCursorDisplay
     MinimapDisplay                      = $/GUIOption/MinimapDisplay
+    AutoCreateSmartGroup                = $/GUIOption/AutoCreateSmartGroup
     HudSize                             = $/GUIOption/HUDSize
     NumberOfLinesInMultipleSelection    = $/GUIOption/NumberOfLinesInMultipleSelection
     ProdMenuBehavior                    = $/GUIOption/ProdMenuBehavior
@@ -14,5 +15,4 @@ optionsResources is TUIWargame2InGameOptionsResources
     AllowStrategicAggregation           = $/GUIOption/AllowStrategicAggregation
     DisplayAutoDeploy                   = $/GUIOption/ShowAutoDeploy
     CurrentComparator                   = $/GUIOption/UnitComparisonDisplayMode
-    AllowMicroManagementSmartGroup      = $/GUIOption/AllowMicroManagementSmartGroup
 )

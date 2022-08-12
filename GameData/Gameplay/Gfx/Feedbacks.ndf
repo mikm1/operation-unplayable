@@ -16,17 +16,14 @@ export GfxReinforcementLocation is TGfxDescriptorPath
     Color                 = [  0, 255,   0, 1]
     PlaqueSurLeSol        = true
     AngularPrecision      = 20
-    VertexCountPerSection = 3
     RenderLayerSelector = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
     Material              = $/M3D/Shader/MaterialBezierLine_Bichrome
     Width                 = 1500
     ArrowLength           = 2500
     ArrowWidth            = 2500
-    Texture               = ~/TextureToutBlanc
     FadeOffDuration       = 0
     GrowingSpeed          = 0
     GrowingDuration       = 0
-    EndPathShapeMode      = EndPathShapeMode_WideArrow
     SizeMultiplierHelper  = PathAndArrowSizeMultiplierHelper
     GFxInstanceDirectRenderHandler = ~/directRenderHandler_default
 
@@ -42,17 +39,14 @@ export GfxAerialCorridorLocation is TGfxDescriptorPath
     Color                 = [  0, 255,   0, 64]
     PlaqueSurLeSol        = true
     AngularPrecision      = 20
-    VertexCountPerSection = 3
     RenderLayerSelector = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
     Material              = $/M3D/Shader/MaterialBezierLine_Bichrome
     Width                 = 1000
     ArrowLength           = 1000
-    ArrowWidth            = 500
-    Texture               = ~/TextureToutBlanc
+    ArrowWidth            = 1000
     FadeOffDuration       = 0
     GrowingSpeed          = 0
     GrowingDuration       = 0
-    EndPathShapeMode      = EndPathShapeMode_NarrowArrow
     SizeMultiplierHelper  = PathAndArrowSizeMultiplierHelper
     GFxInstanceDirectRenderHandler = ~/directRenderHandler_default
 
@@ -68,17 +62,14 @@ export GfxMaritimeCorridorLocation is TGfxDescriptorPath
     Color                 = [  0, 255,   0, 64]
     PlaqueSurLeSol        = true
     AngularPrecision      = 20
-    VertexCountPerSection = 3
     RenderLayerSelector = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
     Material              = $/M3D/Shader/MaterialBezierLine_Bichrome
     Width                 = 1500
     ArrowLength           = 2500
     ArrowWidth            = 2500
-    Texture               = ~/TextureToutBlanc
     FadeOffDuration       = 0
     GrowingSpeed          = 0
     GrowingDuration       = 0
-    EndPathShapeMode      = EndPathShapeMode_WideArrow
     SizeMultiplierHelper  = PathAndArrowSizeMultiplierHelper
     GFxInstanceDirectRenderHandler = ~/directRenderHandler_default
 

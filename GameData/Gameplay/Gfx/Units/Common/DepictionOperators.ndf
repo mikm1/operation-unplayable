@@ -422,14 +422,7 @@ is TCosmeticWeaponInfantryInstantFireOperatorDesc
 // ***** Lancement des flares *************************************************************************************************************
 // ****************************************************************************************************************************************
 
-template DepictionOperator_Flares
-[
-    SweepAngle                          : float,
-]
-is TCosmeticFlareOperatorDesc
-(
-    SweepAngle = <SweepAngle>
-)
+ DepictionOperator_Flares is TCosmeticFlareOperatorDesc( SweepAngle = 5 * Degre )
 
 
 // ****************************************************************************************************************************************
@@ -444,6 +437,7 @@ DepictionOperator_DamageRatio_Generic is TCosmeticDamageOperatorDesc
 DepictionOperator_Feedback_Degat_Level1 is TCosmeticDegatFXOperatorDesc( FXKey1Name = 'Stress_' FXKey2Name = 'fumee_noire' FXBoxCount = 2 Scale = 1 DamageRatioOverride = 0.5)
 DepictionOperator_Feedback_Degat_Level2 is TCosmeticDegatFXOperatorDesc( FXKey1Name = 'Stress_' FXKey2Name = 'fumee_noire' FXBoxCount = 2 Scale = 1 DamageRatioOverride = 0.75)
 DepictionOperator_CriticalEffects is TCosmeticCriticalEffectsOperatorDescriptor()
+DepictionOperator_HelicopterLanding is TCosmeticHelicopterLandingOperatorDesc()
 
 template DepictionOperator_EjectableProps_Vehicle
 [

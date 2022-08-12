@@ -604,6 +604,19 @@ export ModelFile_Airborne_Engineer_CMD_US_09 is US_AB_Sniper
 export ModelFile_Airborne_Engineer_CMD_US_10 is US_AB_Officer
 export ModelFile_Airborne_Engineer_CMD_US_LOW is US_AB_1
 
+//Airborne_Engineers_Flash_US
+export ModelFile_Airborne_Engineers_Flash_US is US_AB_1
+export ModelFile_Airborne_Engineers_Flash_US_02 is US_AB_1
+export ModelFile_Airborne_Engineers_Flash_US_03 is US_AB_2
+export ModelFile_Airborne_Engineers_Flash_US_04 is US_AB_2
+export ModelFile_Airborne_Engineers_Flash_US_05 is US_AB_NCO
+export ModelFile_Airborne_Engineers_Flash_US_06 is US_AB_NCO
+export ModelFile_Airborne_Engineers_Flash_US_07 is US_AB_spe
+export ModelFile_Airborne_Engineers_Flash_US_08 is US_AB_spe
+export ModelFile_Airborne_Engineers_Flash_US_09 is US_AB_Sniper
+export ModelFile_Airborne_Engineers_Flash_US_10 is US_AB_Officer
+export ModelFile_Airborne_Engineers_Flash_US_LOW is US_AB_1
+
 //Airborne_Engineers_US
 export ModelFile_Airborne_Engineers_US is US_AB_1
 export ModelFile_Airborne_Engineers_US_02 is US_AB_1
@@ -657,6 +670,20 @@ export ModelFile_AeroRifles_US_08 is US_GI_spe
 export ModelFile_AeroRifles_US_09 is US_GI_Sniper
 export ModelFile_AeroRifles_US_10 is US_GI_Officer
 export ModelFile_AeroRifles_US_LOW is US_GI_1
+
+//LightRifles_CMD_US
+export ModelFile_LightRifles_CMD_US is US_GI_1
+export ModelFile_LightRifles_CMD_US_02 is US_GI_1
+export ModelFile_LightRifles_CMD_US_03 is US_GI_2
+export ModelFile_LightRifles_CMD_US_04 is US_GI_2
+export ModelFile_LightRifles_CMD_US_05 is US_GI_NCO
+export ModelFile_LightRifles_CMD_US_06 is US_GI_NCO
+export ModelFile_LightRifles_CMD_US_07 is US_GI_spe
+export ModelFile_LightRifles_CMD_US_08 is US_GI_spe
+export ModelFile_LightRifles_CMD_US_09 is US_GI_Sniper
+export ModelFile_LightRifles_CMD_US_10 is US_GI_Officer
+export ModelFile_LightRifles_CMD_US_LOW is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_spe.Ase2NdfBin'
+
 
 //LightRifles_RCL_US
 export ModelFile_LightRifles_RCL_US is US_GI_1
@@ -1448,6 +1475,26 @@ export ModelFile_Scout_FJ_DDR_05 is DDR_FJB_1
 export ModelFile_Scout_FJ_DDR_06 is DDR_FJB_2
 export ModelFile_Scout_FJ_DDR_LOW is DDR_FJB_LOW
 
+//Volkspolizei_CMD_DDR
+
+export ModelFile_Volkspolizei_CMD_DDR is DDR_Grenzer_1
+export ModelFile_Volkspolizei_CMD_DDR_02 is DDR_Grenzer_2
+export ModelFile_Volkspolizei_CMD_DDR_03 is DDR_Grenzer_NCO
+export ModelFile_Volkspolizei_CMD_DDR_04 is DDR_Grenzer_1
+export ModelFile_Volkspolizei_CMD_DDR_05 is DDR_Grenzer_2
+export ModelFile_Volkspolizei_CMD_DDR_06 is DDR_Grenzer_NCO
+export ModelFile_Volkspolizei_CMD_DDR_LOW is DDR_Grenzer_LOW
+
+//Volkspolizei_DDR
+
+export ModelFile_Volkspolizei_DDR is DDR_Grenzer_1
+export ModelFile_Volkspolizei_DDR_02 is DDR_Grenzer_2
+export ModelFile_Volkspolizei_DDR_03 is DDR_Grenzer_NCO
+export ModelFile_Volkspolizei_DDR_04 is DDR_Grenzer_1
+export ModelFile_Volkspolizei_DDR_05 is DDR_Grenzer_2
+export ModelFile_Volkspolizei_DDR_06 is DDR_Grenzer_NCO
+export ModelFile_Volkspolizei_DDR_LOW is DDR_Grenzer_LOW
+
 
 //------------------------------------------------------------------------------
 //
@@ -1615,7 +1662,6 @@ export ModelFile_Engineers_CMD_RFA_05 is RFA_PzGrenadier_sniper
 export ModelFile_Engineers_CMD_RFA_06 is RFA_PzGrenadier_spe
 export ModelFile_Engineers_CMD_RFA_LOW is RFA_PzGrenadier_LOW
 
-
 //Engineers_AT_RFA
 export ModelFile_Engineers_AT_RFA is RFA_PzGrenadier_1
 export ModelFile_Engineers_AT_RFA_02 is RFA_PzGrenadier_2
@@ -1624,17 +1670,6 @@ export ModelFile_Engineers_AT_RFA_04 is RFA_PzGrenadier_Officer
 export ModelFile_Engineers_AT_RFA_05 is RFA_PzGrenadier_sniper
 export ModelFile_Engineers_AT_RFA_06 is RFA_PzGrenadier_spe
 export ModelFile_Engineers_AT_RFA_LOW is RFA_PzGrenadier_LOW
-
-//Engineers_Flam_RFA
-export ModelFile_Engineers_Flam_RFA is RFA_PzGrenadier_1
-export ModelFile_Engineers_Flam_RFA_02 is RFA_PzGrenadier_2
-export ModelFile_Engineers_Flam_RFA_03 is RFA_PzGrenadier_NCO
-export ModelFile_Engineers_Flam_RFA_04 is RFA_PzGrenadier_Officer
-export ModelFile_Engineers_Flam_RFA_05 is RFA_PzGrenadier_sniper
-export ModelFile_Engineers_Flam_RFA_06 is RFA_PzGrenadier_spe
-export ModelFile_Engineers_Flam_RFA_LOW is RFA_PzGrenadier_LOW
-
-//Engineers_RFA
 
 //LRRP_RFA
 export ModelFile_LRRP_RFA is RFA_Fernspaher_1
@@ -1664,7 +1699,6 @@ export ModelFile_HeimatschutzJager_RFA_05 is RFA_PzGrenadier_sniper
 export ModelFile_HeimatschutzJager_RFA_06 is RFA_PzGrenadier_2
 export ModelFile_HeimatschutzJager_RFA_LOW is RFA_PzGrenadier_LOW
 
-
 //Feldgendarmerie_RFA
 export ModelFile_Feldgendarmerie_RFA is Feldjager_2
 export ModelFile_Feldgendarmerie_RFA_02 is Feldjager_2
@@ -1683,6 +1717,22 @@ export ModelFile_Engineers_RFA_05 is RFA_PzGrenadier_sniper
 export ModelFile_Engineers_RFA_06 is RFA_PzGrenadier_spe
 export ModelFile_Engineers_RFA_LOW is RFA_PzGrenadier_LOW
 
+//Engineers_Flam_RFA
+export ModelFile_Engineers_Flam_RFA is RFA_PzGrenadier_1
+export ModelFile_Engineers_Flam_RFA_02 is RFA_PzGrenadier_2
+export ModelFile_Engineers_Flam_RFA_03 is RFA_PzGrenadier_NCO
+export ModelFile_Engineers_Flam_RFA_04 is RFA_PzGrenadier_Officer
+export ModelFile_Engineers_Flam_RFA_05 is RFA_PzGrenadier_sniper
+export ModelFile_Engineers_Flam_RFA_06 is RFA_PzGrenadier_spe
+export ModelFile_Engineers_Flam_RFA_LOW is RFA_PzGrenadier_LOW
+
+//Engineers_Reserve_RFA
+export ModelFile_Engineers_Reserve_RFA is RFA_PzGrenadier_1
+export ModelFile_Engineers_Reserve_RFA_02 is RFA_PzGrenadier_2
+export ModelFile_Engineers_Reserve_RFA_03 is RFA_PzGrenadier_NCO
+export ModelFile_Engineers_Reserve_RFA_04 is RFA_PzGrenadier_sniper
+export ModelFile_Engineers_Reserve_RFA_LOW is RFA_PzGrenadier_LOW
+
 //Jager_Aufk_RFA
 export ModelFile_Jager_Aufk_RFA is RFA_Jager_1
 export ModelFile_Jager_Aufk_RFA_02 is RFA_Jager_NCO
@@ -1694,22 +1744,22 @@ export ModelFile_Jager_Aufk_RFA_LOW is RFA_Jager_LOW
 
 
 //ATGM_Milan_2_RFA
-export ModelFile_ATGM_Milan_2_RFA is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_2_RFA_02 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_2_RFA_03 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_2_RFA_04 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_2_RFA_05 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_2_RFA_06 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_2_RFA_LOW is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
+export ModelFile_ATGM_Milan_2_RFA is RFA_Jager_1
+export ModelFile_ATGM_Milan_2_RFA_02 is RFA_Jager_NCO
+export ModelFile_ATGM_Milan_2_RFA_03 is RFA_Jager_spe
+export ModelFile_ATGM_Milan_2_RFA_04 is RFA_Jager_1
+export ModelFile_ATGM_Milan_2_RFA_05 is RFA_Jager_1
+export ModelFile_ATGM_Milan_2_RFA_06 is RFA_Jager_1
+export ModelFile_ATGM_Milan_2_RFA_LOW is RFA_Jager_LOW
 
 //ATGM_Milan_1_RFA
-export ModelFile_ATGM_Milan_1_RFA is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_1_RFA_02 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_1_RFA_03 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_1_RFA_04 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_1_RFA_05 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_1_RFA_06 is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
-export ModelFile_ATGM_Milan_1_RFA_LOW is 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
+export ModelFile_ATGM_Milan_1_RFA is RFA_Jager_1
+export ModelFile_ATGM_Milan_1_RFA_02 is RFA_Jager_NCO
+export ModelFile_ATGM_Milan_1_RFA_03 is RFA_Jager_spe
+export ModelFile_ATGM_Milan_1_RFA_04 is RFA_Jager_1
+export ModelFile_ATGM_Milan_1_RFA_05 is RFA_Jager_1
+export ModelFile_ATGM_Milan_1_RFA_06 is RFA_Jager_1
+export ModelFile_ATGM_Milan_1_RFA_LOW is RFA_Jager_LOW
 
 //Panzergrenadier_CMD_RFA
 export ModelFile_Panzergrenadier_CMD_RFA is RFA_PzGrenadier_1
@@ -1760,6 +1810,32 @@ export ModelFile_Fallschirmjager_Scout_RFA_LOW is RFA_Fallschirm_LOW
 //------------------------------------------------------------------------------
 //-----------------------------------SOLDATS FR---------------------------------
 //------------------------------------------------------------------------------
+
+FR_Chasseur_1 is 'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_1.Ase2NdfBin'
+FR_Chasseur_2 is 'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_2.Ase2NdfBin'
+FR_Chasseur_NCO is 'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_NCO.Ase2NdfBin'
+FR_Chasseur_Officer is 'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_Officer.Ase2NdfBin'
+FR_Chasseur_Sniper is 'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_Sniper.Ase2NdfBin'
+FR_Chasseur_spe is 'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_spe.Ase2NdfBin'
+FR_Chasseur_LOW is 'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_2.Ase2NdfBin'
+
+FR_Gendarme_2 is 'GameData:/Assets/3D/Units/FR/Infanterie/Gendarmes/Gendarme_2.Ase2NdfBin'
+FR_Gendarme_NCO is 'GameData:/Assets/3D/Units/FR/Infanterie/Gendarmes/Gendarme_NCO.Ase2NdfBin'
+FR_Gendarme_LOW is 'GameData:/Assets/3D/Units/FR/Infanterie/Gendarmes/Gendarme_2.Ase2NdfBin'
+
+FR_Alpin_NCO is 'GameData:/Assets/3D/Units/FR/Infanterie/Alpins/Alpin_NCO.Ase2NdfBin'
+FR_RCAM is 'GameData:/Assets/3D/Units/FR/Infanterie/Alpins/RCAM.Ase2NdfBin'
+
+FR_Legion_1 is 'GameData:/Assets/3D/Units/FR/Infanterie/Legion/Legion_1.Ase2NdfBin'
+FR_Legion_NCO is 'GameData:/Assets/3D/Units/FR/Infanterie/Legion/Legion_NCO.Ase2NdfBin'
+FR_Legion_spe is 'GameData:/Assets/3D/Units/FR/Infanterie/Legion/Legion_spe.Ase2NdfBin'
+FR_Legion_LOW is 'GameData:/Assets/3D/Units/FR/Infanterie/Legion/Legion_1.Ase2NdfBin'
+
+FR_Para_NCO is 'GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_NCO.Ase2NdfBin'
+FR_Para_spe is 'GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_spe.Ase2NdfBin'
+FR_Para_LOW is 'GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_NCO.Ase2NdfBin'
+
+
 // 'GameData:/Assets/3D/Units/FR/Infanterie/Alpins/Alpin_NCO.Ase2NdfBin'
 // 'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_1.Ase2NdfBin'
 // 'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_2.Ase2NdfBin'
@@ -1775,23 +1851,262 @@ export ModelFile_Fallschirmjager_Scout_RFA_LOW is RFA_Fallschirm_LOW
 // 'GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_NCO.Ase2NdfBin'
 // 'GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_spe.Ase2NdfBin'
 // 'GameData:/Assets/3D/Units/FR/Infanterie/Alpins/Alpin_NCO.Ase2NdfBin'
+// 'GameData:/Assets/3D/Units/FR/Infanterie/Alpins/RCAM.Ase2NdfBin'
 //------------------------------------------------------------------------------
+//Chasseurs_CMD_FR
+export ModelFile_Chasseurs_CMD_FR is FR_Chasseur_1
+export ModelFile_Chasseurs_CMD_FR_02 is FR_Chasseur_Officer
+export ModelFile_Chasseurs_CMD_FR_03 is FR_Chasseur_NCO
+export ModelFile_Chasseurs_CMD_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Chasseurs_CMD_FR_05 is FR_Chasseur_spe
+export ModelFile_Chasseurs_CMD_FR_LOW is FR_Chasseur_LOW
+
+//Groupe_AT_FR
+export ModelFile_Groupe_AT_FR is FR_Chasseur_1
+export ModelFile_Groupe_AT_FR_02 is FR_Chasseur_2
+export ModelFile_Groupe_AT_FR_03 is FR_Chasseur_NCO
+export ModelFile_Groupe_AT_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Groupe_AT_FR_05 is FR_Chasseur_spe
+export ModelFile_Groupe_AT_FR_06 is FR_Chasseur_2
+export ModelFile_Groupe_AT_FR_LOW is FR_Chasseur_LOW
+
+//Reserviste_FR
+export ModelFile_Reserviste_FR is FR_Chasseur_1
+export ModelFile_Reserviste_FR_02 is FR_Chasseur_2
+export ModelFile_Reserviste_FR_03 is FR_Chasseur_NCO
+export ModelFile_Reserviste_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Reserviste_FR_05 is FR_Chasseur_spe
+export ModelFile_Reserviste_FR_06 is FR_Chasseur_2
+export ModelFile_Reserviste_FR_LOW is FR_Chasseur_LOW
+
+//Sapeurs_CMD_FR
+export ModelFile_Sapeurs_CMD_FR is FR_Chasseur_1
+export ModelFile_Sapeurs_CMD_FR_02 is FR_Chasseur_2
+export ModelFile_Sapeurs_CMD_FR_03 is FR_Chasseur_NCO
+export ModelFile_Sapeurs_CMD_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Sapeurs_CMD_FR_05 is FR_Chasseur_spe
+export ModelFile_Sapeurs_CMD_FR_06 is FR_Chasseur_2
+export ModelFile_Sapeurs_CMD_FR_LOW is FR_Chasseur_LOW
+
+//Sapeurs_FR
+export ModelFile_Sapeurs_FR is FR_Chasseur_1
+export ModelFile_Sapeurs_FR_02 is FR_Chasseur_2
+export ModelFile_Sapeurs_FR_03 is FR_Chasseur_NCO
+export ModelFile_Sapeurs_FR_04 is FR_Chasseur_Officer
+export ModelFile_Sapeurs_FR_05 is FR_Chasseur_spe
+export ModelFile_Sapeurs_FR_06 is FR_Chasseur_2
+export ModelFile_Sapeurs_FR_LOW is FR_Chasseur_LOW
+
+//Sapeurs_Flam_FR
+export ModelFile_Sapeurs_Flam_FR is FR_Chasseur_1
+export ModelFile_Sapeurs_Flam_FR_02 is FR_Chasseur_2
+export ModelFile_Sapeurs_Flam_FR_03 is FR_Chasseur_NCO
+export ModelFile_Sapeurs_Flam_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Sapeurs_Flam_FR_05 is FR_Chasseur_spe
+export ModelFile_Sapeurs_Flam_FR_06 is FR_Chasseur_2
+export ModelFile_Sapeurs_Flam_FR_LOW is FR_Chasseur_LOW
+
+//Scout_FR
+export ModelFile_Scout_FR is FR_Chasseur_1
+export ModelFile_Scout_FR_02 is FR_Chasseur_2
+export ModelFile_Scout_FR_03 is FR_Chasseur_NCO
+export ModelFile_Scout_FR_04 is FR_Chasseur_spe
+export ModelFile_Scout_FR_LOW is FR_Chasseur_LOW
+
+//Commandos_FR
+export ModelFile_Commandos_FR is FR_Chasseur_1
+export ModelFile_Commandos_FR_02 is FR_Chasseur_2
+export ModelFile_Commandos_FR_03 is FR_Para_NCO
+export ModelFile_Commandos_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Commandos_FR_05 is FR_Para_spe
+export ModelFile_Commandos_FR_06 is FR_Para_spe
+export ModelFile_Commandos_FR_LOW is FR_Chasseur_LOW
+
+//Escorte_FR
+export ModelFile_Escorte_FR is FR_Chasseur_1
+export ModelFile_Escorte_FR_02 is FR_Chasseur_2
+export ModelFile_Escorte_FR_03 is FR_Chasseur_NCO
+export ModelFile_Escorte_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Escorte_FR_05 is FR_Chasseur_spe
+export ModelFile_Escorte_FR_06 is FR_Chasseur_2
+export ModelFile_Escorte_FR_LOW is FR_Chasseur_LOW
+
+//Para_CMD_FR
+export ModelFile_Para_CMD_FR is FR_Para_NCO
+export ModelFile_Para_CMD_FR_02 is FR_Para_spe
+export ModelFile_Para_CMD_FR_03 is FR_Chasseur_1
+export ModelFile_Para_CMD_FR_04 is FR_Para_NCO
+export ModelFile_Para_CMD_FR_05 is FR_Chasseur_Sniper
+export ModelFile_Para_CMD_FR_06 is FR_Chasseur_2
+export ModelFile_Para_CMD_FR_LOW is FR_Para_LOW
+
+//Groupe_AT_para_FR
+export ModelFile_Groupe_AT_para_FR is FR_Para_NCO
+export ModelFile_Groupe_AT_para_FR_02 is FR_Para_spe
+export ModelFile_Groupe_AT_para_FR_03 is FR_Chasseur_1
+export ModelFile_Groupe_AT_para_FR_04 is FR_Para_NCO
+export ModelFile_Groupe_AT_para_FR_05 is FR_Chasseur_Sniper
+export ModelFile_Groupe_AT_para_FR_06 is FR_Chasseur_2
+export ModelFile_Groupe_AT_para_FR_LOW is FR_Para_LOW
+
+//Para_FR
+export ModelFile_Para_FR is FR_Para_NCO
+export ModelFile_Para_FR_02 is FR_Para_spe
+export ModelFile_Para_FR_03 is FR_Chasseur_1
+export ModelFile_Para_FR_04 is FR_Para_NCO
+export ModelFile_Para_FR_05 is FR_Chasseur_Sniper
+export ModelFile_Para_FR_06 is FR_Chasseur_2
+export ModelFile_Para_FR_LOW is FR_Para_LOW
+
+//Para_Legion_CMD_FR
+export ModelFile_Para_Legion_CMD_FR is FR_Legion_1
+export ModelFile_Para_Legion_CMD_FR_02 is FR_Chasseur_Sniper
+export ModelFile_Para_Legion_CMD_FR_03 is FR_Chasseur_2
+export ModelFile_Para_Legion_CMD_FR_04 is FR_Legion_1
+export ModelFile_Para_Legion_CMD_FR_LOW is FR_Chasseur_LOW
+
+//Para_Legion_FR
+export ModelFile_Para_Legion_FR is FR_Legion_1
+export ModelFile_Para_Legion_FR_02 is FR_Legion_NCO
+export ModelFile_Para_Legion_FR_03 is FR_Legion_spe
+export ModelFile_Para_Legion_FR_04 is FR_Legion_1
+export ModelFile_Para_Legion_FR_05 is FR_Chasseur_1
+export ModelFile_Para_Legion_FR_06 is FR_Chasseur_2
+export ModelFile_Para_Legion_FR_LOW is FR_Chasseur_LOW
+
+//Para_Sapeurs_CMD_FR
+export ModelFile_Para_Sapeurs_CMD_FR is FR_Para_NCO
+export ModelFile_Para_Sapeurs_CMD_FR_02 is FR_Para_spe
+export ModelFile_Para_Sapeurs_CMD_FR_03 is FR_Chasseur_1
+export ModelFile_Para_Sapeurs_CMD_FR_04 is FR_Para_NCO
+export ModelFile_Para_Sapeurs_CMD_FR_05 is FR_Chasseur_Sniper
+export ModelFile_Para_Sapeurs_CMD_FR_06 is FR_Chasseur_2
+export ModelFile_Para_Sapeurs_CMD_FR_LOW is FR_Para_LOW
+
+//Para_Sapeurs_FR
+export ModelFile_Para_Sapeurs_FR is FR_Para_NCO
+export ModelFile_Para_Sapeurs_FR_02 is FR_Para_spe
+export ModelFile_Para_Sapeurs_FR_03 is FR_Chasseur_1
+export ModelFile_Para_Sapeurs_FR_04 is FR_Para_NCO
+export ModelFile_Para_Sapeurs_FR_05 is FR_Chasseur_Sniper
+export ModelFile_Para_Sapeurs_FR_06 is FR_Chasseur_2
+export ModelFile_Para_Sapeurs_FR_LOW is FR_Para_LOW
+
+//Para_Sapeurs_Flam_FR
+export ModelFile_Para_Sapeurs_Flam_FR is FR_Para_NCO
+export ModelFile_Para_Sapeurs_Flam_FR_02 is FR_Para_spe
+export ModelFile_Para_Sapeurs_Flam_FR_03 is FR_Chasseur_1
+export ModelFile_Para_Sapeurs_Flam_FR_04 is FR_Para_NCO
+export ModelFile_Para_Sapeurs_Flam_FR_05 is FR_Chasseur_Sniper
+export ModelFile_Para_Sapeurs_Flam_FR_06 is FR_Chasseur_2
+export ModelFile_Para_Sapeurs_Flam_FR_LOW is FR_Para_LOW
+
+//SAS_CMD_FR
+export ModelFile_SAS_CMD_FR is FR_Para_NCO
+export ModelFile_SAS_CMD_FR_02 is FR_Para_spe
+export ModelFile_SAS_CMD_FR_03 is FR_Chasseur_1
+export ModelFile_SAS_CMD_FR_04 is FR_Para_NCO
+export ModelFile_SAS_CMD_FR_LOW is FR_Para_LOW
+
+//SAS_FR
+export ModelFile_SAS_FR is FR_Para_NCO
+export ModelFile_SAS_FR_02 is FR_Para_spe
+export ModelFile_SAS_FR_03 is FR_Chasseur_1
+export ModelFile_SAS_FR_04 is FR_Para_NCO
+export ModelFile_SAS_FR_05 is FR_Chasseur_Sniper
+export ModelFile_SAS_FR_06 is FR_Chasseur_2
+export ModelFile_SAS_FR_LOW is FR_Para_LOW
+
+//SAS_Sniper_FR
+export ModelFile_SAS_Sniper_FR is FR_Para_NCO
+export ModelFile_SAS_Sniper_FR_02 is FR_Para_spe
+export ModelFile_SAS_Sniper_FR_LOW is FR_Para_LOW
+
+//Scout_para_FR
+export ModelFile_Scout_para_FR is FR_Para_NCO
+export ModelFile_Scout_para_FR_02 is FR_Para_spe
+export ModelFile_Scout_para_FR_03 is FR_Chasseur_1
+export ModelFile_Scout_para_FR_04 is FR_Para_NCO
+export ModelFile_Scout_para_FR_LOW is FR_Para_LOW
+
+//Chasseurs_FR
+export ModelFile_Chasseurs_FR is FR_Chasseur_1
+export ModelFile_Chasseurs_FR_02 is FR_Chasseur_2
+export ModelFile_Chasseurs_FR_03 is FR_Chasseur_NCO
+export ModelFile_Chasseurs_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Chasseurs_FR_05 is FR_Chasseur_spe
+export ModelFile_Chasseurs_FR_06 is FR_Chasseur_2
+export ModelFile_Chasseurs_FR_LOW is FR_Chasseur_LOW
+
+//Rifles_Aero_CMD_FR
+export ModelFile_Rifles_Aero_CMD_FR is FR_Chasseur_1
+export ModelFile_Rifles_Aero_CMD_FR_02 is FR_Chasseur_Officer
+export ModelFile_Rifles_Aero_CMD_FR_03 is FR_Chasseur_1
+export ModelFile_Rifles_Aero_CMD_FR_04 is FR_RCAM
+export ModelFile_Rifles_Aero_CMD_FR_05 is FR_Chasseur_1
+export ModelFile_Rifles_Aero_CMD_FR_06 is FR_Chasseur_Sniper
+export ModelFile_Rifles_Aero_CMD_FR_LOW is FR_Chasseur_LOW
+
+//Rifles_CMD_FR
+export ModelFile_Rifles_CMD_FR is FR_Chasseur_1
+export ModelFile_Rifles_CMD_FR_02 is FR_Chasseur_Officer
+export ModelFile_Rifles_CMD_FR_03 is FR_Chasseur_NCO
+export ModelFile_Rifles_CMD_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Rifles_CMD_FR_LOW is FR_Chasseur_LOW
+
+//Rifles_APILAS_FR
+export ModelFile_Rifles_APILAS_FR is FR_Chasseur_1
+export ModelFile_Rifles_APILAS_FR_02 is FR_Chasseur_2
+export ModelFile_Rifles_APILAS_FR_03 is FR_Chasseur_NCO
+export ModelFile_Rifles_APILAS_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Rifles_APILAS_FR_05 is FR_Chasseur_spe
+export ModelFile_Rifles_APILAS_FR_06 is FR_Chasseur_2
+export ModelFile_Rifles_APILAS_FR_LOW is FR_Chasseur_LOW
+
+//Gendarmerie_FR
+export ModelFile_Gendarmerie_FR is FR_Gendarme_2
+export ModelFile_Gendarmerie_FR_02 is FR_Gendarme_2
+export ModelFile_Gendarmerie_FR_03 is FR_Gendarme_NCO
+export ModelFile_Gendarmerie_FR_04 is FR_Chasseur_1
+export ModelFile_Gendarmerie_FR_LOW is FR_Gendarme_LOW
+
+//Rifles_Aero_FR
+export ModelFile_Rifles_Aero_FR is FR_Chasseur_1
+export ModelFile_Rifles_Aero_FR_02 is FR_Chasseur_2
+export ModelFile_Rifles_Aero_FR_03 is FR_Chasseur_1
+export ModelFile_Rifles_Aero_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Rifles_Aero_FR_05 is FR_RCAM
+export ModelFile_Rifles_Aero_FR_06 is FR_Chasseur_2
+export ModelFile_Rifles_Aero_FR_LOW is FR_Chasseur_LOW
+
 //Rifles_FR
-export ModelFile_Rifles_FR is     'GameData:/Assets/3D/Units/FR/Infanterie/Alpins/Alpin_NCO.Ase2NdfBin'
-export ModelFile_Rifles_FR_02 is  'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_1.Ase2NdfBin'
-export ModelFile_Rifles_FR_03 is  'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_2.Ase2NdfBin'
-export ModelFile_Rifles_FR_04 is  'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_NCO.Ase2NdfBin'
-export ModelFile_Rifles_FR_05 is  'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_Officer.Ase2NdfBin'
-export ModelFile_Rifles_FR_06 is  'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_Sniper.Ase2NdfBin'
-export ModelFile_Rifles_FR_07 is  'GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_spe.Ase2NdfBin'
-export ModelFile_Rifles_FR_08 is  'GameData:/Assets/3D/Units/FR/Infanterie/Gendarmes/Gendarme_2.Ase2NdfBin'
-export ModelFile_Rifles_FR_09 is  'GameData:/Assets/3D/Units/FR/Infanterie/Gendarmes/Gendarme_NCO.Ase2NdfBin'
-export ModelFile_Rifles_FR_10 is  'GameData:/Assets/3D/Units/FR/Infanterie/Legion/Legion_1.Ase2NdfBin'
-export ModelFile_Rifles_FR_11 is  'GameData:/Assets/3D/Units/FR/Infanterie/Legion/Legion_NCO.Ase2NdfBin'
-export ModelFile_Rifles_FR_12 is  'GameData:/Assets/3D/Units/FR/Infanterie/Legion/Legion_spe.Ase2NdfBin'
-export ModelFile_Rifles_FR_13 is  'GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_NCO.Ase2NdfBin'
-export ModelFile_Rifles_FR_14 is  'GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_spe.Ase2NdfBin'
-export ModelFile_Rifles_FR_LOW is 'GameData:/Assets/3D/Units/FR/Infanterie/Alpins/Alpin_NCO.Ase2NdfBin'
+export ModelFile_Rifles_FR is  FR_Chasseur_1
+export ModelFile_Rifles_FR_02 is FR_Chasseur_2
+export ModelFile_Rifles_FR_03 is FR_Chasseur_NCO
+export ModelFile_Rifles_FR_04 is FR_Chasseur_Sniper
+export ModelFile_Rifles_FR_05 is FR_Chasseur_spe
+export ModelFile_Rifles_FR_06 is FR_Chasseur_2
+export ModelFile_Rifles_FR_LOW is FR_Chasseur_LOW
+
+
+//MANPAD_Mistral_para_FR
+export ModelFile_MANPAD_Mistral_para_FR is FR_Chasseur_1
+export ModelFile_MANPAD_Mistral_para_FR_02 is FR_Chasseur_2
+export ModelFile_MANPAD_Mistral_para_FR_03 is FR_Chasseur_NCO
+export ModelFile_MANPAD_Mistral_para_FR_04 is FR_Chasseur_Sniper
+export ModelFile_MANPAD_Mistral_para_FR_05 is FR_Chasseur_spe
+export ModelFile_MANPAD_Mistral_para_FR_06 is FR_Chasseur_2
+export ModelFile_MANPAD_Mistral_para_FR_LOW is FR_Chasseur_LOW
+
+//MANPAD_Mistral_FR
+export ModelFile_MANPAD_Mistral_FR is FR_Chasseur_1
+export ModelFile_MANPAD_Mistral_FR_02 is FR_Chasseur_2
+export ModelFile_MANPAD_Mistral_FR_03 is FR_Chasseur_NCO
+export ModelFile_MANPAD_Mistral_FR_04 is FR_Chasseur_Sniper
+export ModelFile_MANPAD_Mistral_FR_05 is FR_Chasseur_spe
+export ModelFile_MANPAD_Mistral_FR_06 is FR_Chasseur_2
+export ModelFile_MANPAD_Mistral_FR_LOW is FR_Chasseur_LOW
+
 //------------------------------------------------------------------------------
 //-----------------------------------SOLDATS UK---------------------------------
 //------------------------------------------------------------------------------
@@ -1813,39 +2128,257 @@ export ModelFile_Rifles_FR_LOW is 'GameData:/Assets/3D/Units/FR/Infanterie/Alpin
 // 'GameData:/Assets/3D/Units/UK/Infanterie/SAS/SAS_NCO.Ase2NdfBin'
 // 'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Territorial_1.Ase2NdfBin'
 // 'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Territorial_2.Ase2NdfBin'
+
+UK_Para_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_1.Ase2NdfBin'
+UK_Para_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_2.Ase2NdfBin'
+UK_Para_NCO is 'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_NCO.Ase2NdfBin'
+UK_Para_Officer is 'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_Officer.Ase2NdfBin'
+UK_Para_spe is 'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_spe.Ase2NdfBin'
+
+UK_Rifleman_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_1.Ase2NdfBin'
+UK_Rifleman_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_2.Ase2NdfBin'
+UK_Rifleman_NCO is 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_NCO.Ase2NdfBin'
+UK_Rifleman_Officer is 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_Officer.Ase2NdfBin'
+UK_Rifleman_Sniper is 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_Sniper.Ase2NdfBin'
+UK_Rifleman_spe is 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_spe.Ase2NdfBin'
+
+UK_RMP_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/RMP/RMP_1.Ase2NdfBin'
+UK_RMP_NCO is 'GameData:/Assets/3D/Units/UK/Infanterie/RMP/RMP_NCO.Ase2NdfBin'
+
+UK_SAS_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/SAS/SAS_1.Ase2NdfBin'
+UK_SAS_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/SAS/SAS_2.Ase2NdfBin'
+UK_SAS_NCO is 'GameData:/Assets/3D/Units/UK/Infanterie/SAS/SAS_NCO.Ase2NdfBin'
+
+UK_Territorial_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Territorial_1.Ase2NdfBin'
+UK_Territorial_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Territorial_2.Ase2NdfBin'
 //------------------------------------------------------------------------------
+//Engineers_AT_UK
+export ModelFile_Engineers_AT_UK is UK_Rifleman_1
+export ModelFile_Engineers_AT_UK_02 is UK_Rifleman_2
+export ModelFile_Engineers_AT_UK_03 is UK_Rifleman_NCO
+export ModelFile_Engineers_AT_UK_04 is UK_Rifleman_Officer
+export ModelFile_Engineers_AT_UK_05 is UK_Rifleman_Sniper
+export ModelFile_Engineers_AT_UK_06 is UK_Rifleman_spe
+export ModelFile_Engineers_AT_UK_LOW is UK_Rifleman_1
+
+//Airmobile_UK
+export ModelFile_Airmobile_UK is UK_Para_1
+export ModelFile_Airmobile_UK_02 is UK_Para_NCO
+export ModelFile_Airmobile_UK_03 is UK_Para_2
+export ModelFile_Airmobile_UK_04 is UK_Para_2
+export ModelFile_Airmobile_UK_05 is UK_Para_Officer
+export ModelFile_Airmobile_UK_06 is UK_Para_spe
+export ModelFile_Airmobile_UK_LOW is UK_Para_1
+
+//Airmobile_MILAN__UK
+export ModelFile_Airmobile_MILAN_UK is UK_Para_1
+export ModelFile_Airmobile_MILAN_UK_02 is UK_Para_NCO
+export ModelFile_Airmobile_MILAN_UK_03 is UK_Para_2
+export ModelFile_Airmobile_MILAN_UK_04 is UK_Para_2
+export ModelFile_Airmobile_MILAN_UK_05 is UK_Para_Officer
+export ModelFile_Airmobile_MILAN_UK_06 is UK_Para_spe
+export ModelFile_Airmobile_MILAN_UK_LOW is UK_Para_1
+
+//Engineers_UK
+export ModelFile_Engineers_UK is UK_Rifleman_1
+export ModelFile_Engineers_UK_02 is UK_Rifleman_2
+export ModelFile_Engineers_UK_03 is UK_Rifleman_NCO
+export ModelFile_Engineers_UK_04 is UK_Rifleman_Officer
+export ModelFile_Engineers_UK_05 is UK_Rifleman_Sniper
+export ModelFile_Engineers_UK_06 is UK_Rifleman_spe
+export ModelFile_Engineers_UK_LOW is UK_Rifleman_1
+
+//Rifles_AT_UK
+export ModelFile_Rifles_AT_UK is UK_Rifleman_1
+export ModelFile_Rifles_AT_UK_02 is UK_Rifleman_2
+export ModelFile_Rifles_AT_UK_03 is UK_Rifleman_NCO
+export ModelFile_Rifles_AT_UK_04 is UK_Rifleman_Officer
+export ModelFile_Rifles_AT_UK_05 is UK_Rifleman_Sniper
+export ModelFile_Rifles_AT_UK_06 is UK_Rifleman_spe
+export ModelFile_Rifles_AT_UK_LOW is UK_Rifleman_1
+
+//Engineers_TA_UK
+export ModelFile_Engineers_TA_UK is UK_Territorial_1
+export ModelFile_Engineers_TA_UK_02 is UK_Territorial_2
+export ModelFile_Engineers_TA_UK_LOW is UK_Territorial_1
+
+//Paratroopers_TA_UK
+export ModelFile_Paratroopers_TA_UK is UK_Territorial_1
+export ModelFile_Paratroopers_TA_UK_02 is UK_Para_NCO
+export ModelFile_Paratroopers_TA_UK_03 is UK_Territorial_2
+export ModelFile_Paratroopers_TA_UK_04 is UK_Territorial_2
+export ModelFile_Paratroopers_TA_UK_05 is UK_Para_Officer
+export ModelFile_Paratroopers_TA_UK_06 is UK_Para_spe
+export ModelFile_Paratroopers_TA_UK_LOW is UK_Para_1
+
+//Paratroopers_MILAN_TA_UK
+export ModelFile_Paratroopers_MILAN_TA_UK is UK_Territorial_1
+export ModelFile_Paratroopers_MILAN_TA_UK_02 is UK_Para_NCO
+export ModelFile_Paratroopers_MILAN_TA_UK_03 is UK_Territorial_2
+export ModelFile_Paratroopers_MILAN_TA_UK_04 is UK_Territorial_2
+export ModelFile_Paratroopers_MILAN_TA_UK_05 is UK_Para_Officer
+export ModelFile_Paratroopers_MILAN_TA_UK_06 is UK_Para_spe
+export ModelFile_Paratroopers_MILAN_TA_UK_LOW is UK_Para_1
+
+
+//Airmobile_CMD_UK
+export ModelFile_Airmobile_CMD_UK is UK_Para_1
+export ModelFile_Airmobile_CMD_UK_02 is UK_Para_NCO
+export ModelFile_Airmobile_CMD_UK_03 is UK_Para_2
+export ModelFile_Airmobile_CMD_UK_04 is UK_Para_2
+export ModelFile_Airmobile_CMD_UK_05 is UK_Para_Officer
+export ModelFile_Airmobile_CMD_UK_06 is UK_Para_spe
+export ModelFile_Airmobile_CMD_UK_LOW is UK_Para_1
+
+//Engineers_CMD_UK
+export ModelFile_Engineers_CMD_UK is UK_Rifleman_1
+export ModelFile_Engineers_CMD_UK_02 is UK_Rifleman_2
+export ModelFile_Engineers_CMD_UK_03 is UK_Rifleman_NCO
+export ModelFile_Engineers_CMD_UK_04 is UK_Rifleman_Officer
+export ModelFile_Engineers_CMD_UK_05 is UK_Rifleman_Sniper
+export ModelFile_Engineers_CMD_UK_06 is UK_Rifleman_spe
+export ModelFile_Engineers_CMD_UK_LOW is UK_Rifleman_1
+
+//Paratroopers_CMD_UK
+export ModelFile_Paratroopers_CMD_UK is UK_Para_1
+export ModelFile_Paratroopers_CMD_UK_02 is UK_Para_NCO
+export ModelFile_Paratroopers_CMD_UK_03 is UK_Para_2
+export ModelFile_Paratroopers_CMD_UK_04 is UK_Para_2
+export ModelFile_Paratroopers_CMD_UK_05 is UK_Para_Officer
+export ModelFile_Paratroopers_CMD_UK_06 is UK_Para_spe
+export ModelFile_Paratroopers_CMD_UK_LOW is UK_Para_1
+
+//Rifles_CMD_UK
+export ModelFile_Rifles_CMD_UK is UK_Rifleman_1
+export ModelFile_Rifles_CMD_UK_02 is UK_Rifleman_2
+export ModelFile_Rifles_CMD_UK_03 is UK_Rifleman_NCO
+export ModelFile_Rifles_CMD_UK_04 is UK_Rifleman_Officer
+export ModelFile_Rifles_CMD_UK_05 is UK_Rifleman_Sniper
+export ModelFile_Rifles_CMD_UK_06 is UK_Rifleman_spe
+export ModelFile_Rifles_CMD_UK_LOW is UK_Rifleman_1
+
+//Territorial_CMD_UK
+export ModelFile_Territorial_CMD_UK is UK_Territorial_1
+export ModelFile_Territorial_CMD_UK_02 is UK_Territorial_2
+export ModelFile_Territorial_CMD_UK_LOW is UK_Territorial_1
+
+//Scout_Airmobile_UK
+export ModelFile_Scout_Airmobile_UK is UK_Para_1
+export ModelFile_Scout_Airmobile_UK_02 is UK_Para_NCO
+export ModelFile_Scout_Airmobile_UK_03 is UK_Para_2
+export ModelFile_Scout_Airmobile_UK_04 is UK_Para_2
+export ModelFile_Scout_Airmobile_UK_05 is UK_Para_Officer
+export ModelFile_Scout_Airmobile_UK_06 is UK_Para_spe
+export ModelFile_Scout_Airmobile_UK_LOW is UK_Para_1
+
+//Scout_Para_UK
+export ModelFile_Scout_Para_UK is UK_Para_1
+export ModelFile_Scout_Para_UK_02 is UK_Para_NCO
+export ModelFile_Scout_Para_UK_03 is UK_Para_2
+export ModelFile_Scout_Para_UK_04 is UK_Para_2
+export ModelFile_Scout_Para_UK_05 is UK_Para_Officer
+export ModelFile_Scout_Para_UK_06 is UK_Para_spe
+export ModelFile_Scout_Para_UK_LOW is UK_Para_1
+
+//Pathfinders_UK
+export ModelFile_Pathfinders_UK is UK_Para_1
+export ModelFile_Pathfinders_UK_02 is UK_Para_NCO
+export ModelFile_Pathfinders_UK_03 is UK_Para_2
+export ModelFile_Pathfinders_UK_04 is UK_Para_2
+export ModelFile_Pathfinders_UK_05 is UK_Para_Officer
+export ModelFile_Pathfinders_UK_06 is UK_Para_spe
+export ModelFile_Pathfinders_UK_LOW is UK_Para_1
+
+//LRRP_UK
+export ModelFile_LRRP_UK is UK_SAS_1
+export ModelFile_LRRP_UK_02 is UK_SAS_2
+export ModelFile_LRRP_UK_03 is  UK_SAS_NCO
+export ModelFile_LRRP_UK_LOW is UK_SAS_1
+
+
+//Scout_UK
+export ModelFile_Scout_UK is UK_Rifleman_1
+export ModelFile_Scout_UK_02 is UK_Rifleman_2
+export ModelFile_Scout_UK_03 is UK_Rifleman_NCO
+export ModelFile_Scout_UK_04 is UK_Rifleman_Officer
+export ModelFile_Scout_UK_05 is UK_Rifleman_Sniper
+export ModelFile_Scout_UK_06 is UK_Rifleman_spe
+export ModelFile_Scout_UK_LOW is UK_Rifleman_1
+
+//Scout_AT_UK
+export ModelFile_Scout_AT_UK is UK_Rifleman_1
+export ModelFile_Scout_AT_UK_02 is UK_Rifleman_2
+export ModelFile_Scout_AT_UK_03 is UK_Rifleman_NCO
+export ModelFile_Scout_AT_UK_04 is UK_Rifleman_Officer
+export ModelFile_Scout_AT_UK_05 is UK_Rifleman_Sniper
+export ModelFile_Scout_AT_UK_06 is UK_Rifleman_spe
+export ModelFile_Scout_AT_UK_LOW is UK_Rifleman_1
+
+//Scout_TA_UK
+export ModelFile_Scout_TA_UK is     UK_Territorial_1
+export ModelFile_Scout_TA_UK_02 is  UK_Territorial_2
+export ModelFile_Scout_TA_UK_LOW is UK_Territorial_1
+
+//MANPAD_Blowpipe_UK
+export ModelFile_MANPAD_Blowpipe_UK is UK_Rifleman_1
+export ModelFile_MANPAD_Blowpipe_UK_02 is UK_Rifleman_2
+export ModelFile_MANPAD_Blowpipe_UK_03 is UK_Rifleman_NCO
+export ModelFile_MANPAD_Blowpipe_UK_04 is UK_Rifleman_Officer
+export ModelFile_MANPAD_Blowpipe_UK_05 is UK_Rifleman_Sniper
+export ModelFile_MANPAD_Blowpipe_UK_06 is UK_Rifleman_spe
+export ModelFile_MANPAD_Blowpipe_UK_LOW is UK_Rifleman_1
+
+//MANPAD_Javelin_UK
+export ModelFile_MANPAD_Javelin_UK is UK_Rifleman_1
+export ModelFile_MANPAD_Javelin_UK_02 is UK_Rifleman_2
+export ModelFile_MANPAD_Javelin_UK_03 is UK_Rifleman_NCO
+export ModelFile_MANPAD_Javelin_UK_04 is UK_Rifleman_Officer
+export ModelFile_MANPAD_Javelin_UK_05 is UK_Rifleman_Sniper
+export ModelFile_MANPAD_Javelin_UK_06 is UK_Rifleman_spe
+export ModelFile_MANPAD_Javelin_UK_LOW is UK_Rifleman_1
+
+//Rifles_RAF_UK
+export ModelFile_Rifles_RAF_UK is UK_Rifleman_1
+export ModelFile_Rifles_RAF_UK_02 is UK_Rifleman_2
+export ModelFile_Rifles_RAF_UK_03 is UK_Rifleman_NCO
+export ModelFile_Rifles_RAF_UK_04 is UK_Rifleman_Officer
+export ModelFile_Rifles_RAF_UK_05 is UK_Rifleman_Sniper
+export ModelFile_Rifles_RAF_UK_06 is UK_Rifleman_spe
+export ModelFile_Rifles_RAF_UK_LOW is UK_Rifleman_1
+
 //Rifles_UK
-export ModelFile_Rifles_UK is      'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_1.Ase2NdfBin'
-export ModelFile_Rifles_UK_02 is   'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_2.Ase2NdfBin'
-export ModelFile_Rifles_UK_03 is   'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_NCO.Ase2NdfBin'
-export ModelFile_Rifles_UK_04 is   'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_Officer.Ase2NdfBin'
-export ModelFile_Rifles_UK_05 is   'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_Sniper.Ase2NdfBin'
-export ModelFile_Rifles_UK_06 is   'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_spe.Ase2NdfBin'
-export ModelFile_Rifles_UK_LOW is  'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_1.Ase2NdfBin'
+export ModelFile_Rifles_UK is UK_Rifleman_1
+export ModelFile_Rifles_UK_02 is UK_Rifleman_2
+export ModelFile_Rifles_UK_03 is UK_Rifleman_NCO
+export ModelFile_Rifles_UK_04 is UK_Rifleman_Officer
+export ModelFile_Rifles_UK_05 is UK_Rifleman_Sniper
+export ModelFile_Rifles_UK_06 is UK_Rifleman_spe
+export ModelFile_Rifles_UK_LOW is UK_Rifleman_1
 
 //Paratroopers_UK
-export ModelFile_Paratroopers_UK is      'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_1.Ase2NdfBin'
-export ModelFile_Paratroopers_UK_02 is   'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_2.Ase2NdfBin'
-export ModelFile_Paratroopers_UK_03 is   'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_NCO.Ase2NdfBin'
-export ModelFile_Paratroopers_UK_04 is   'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_Officer.Ase2NdfBin'
-export ModelFile_Paratroopers_UK_05 is   'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_spe.Ase2NdfBin'
-export ModelFile_Paratroopers_UK_LOW is  'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_1.Ase2NdfBin'
+export ModelFile_Paratroopers_UK is UK_Para_1
+export ModelFile_Paratroopers_UK_02 is UK_Para_NCO
+export ModelFile_Paratroopers_UK_03 is UK_Para_2
+export ModelFile_Paratroopers_UK_04 is UK_Para_2
+export ModelFile_Paratroopers_UK_05 is UK_Para_Officer
+export ModelFile_Paratroopers_UK_06 is UK_Para_spe
+export ModelFile_Paratroopers_UK_LOW is UK_Para_1
 
 //SAS_UK
-export ModelFile_SAS_UK is     'GameData:/Assets/3D/Units/UK/Infanterie/SAS/SAS_1.Ase2NdfBin'
-export ModelFile_SAS_UK_02 is  'GameData:/Assets/3D/Units/UK/Infanterie/SAS/SAS_2.Ase2NdfBin'
-export ModelFile_SAS_UK_03 is  'GameData:/Assets/3D/Units/UK/Infanterie/SAS/SAS_NCO.Ase2NdfBin'
-export ModelFile_SAS_UK_LOW is 'GameData:/Assets/3D/Units/BEL/Infanterie/Belgian_Chasseurs/Chasseurs_1.Ase2NdfBin'
+export ModelFile_SAS_UK is UK_SAS_1
+export ModelFile_SAS_UK_02 is UK_SAS_2
+export ModelFile_SAS_UK_03 is  UK_SAS_NCO
+export ModelFile_SAS_UK_LOW is UK_SAS_1
 
 //RMP_UK
-export ModelFile_RMP_UK is     'GameData:/Assets/3D/Units/UK/Infanterie/RMP/RMP_1.Ase2NdfBin'
-export ModelFile_RMP_UK_02 is  'GameData:/Assets/3D/Units/UK/Infanterie/RMP/RMP_NCO.Ase2NdfBin'
-export ModelFile_RMP_UK_LOW is 'GameData:/Assets/3D/Units/UK/Infanterie/RMP/RMP_1.Ase2NdfBin'
+export ModelFile_RMP_UK is   UK_RMP_1
+export ModelFile_RMP_UK_02 is UK_RMP_NCO
+export ModelFile_RMP_UK_LOW is UK_RMP_1
 
 //Territorial_UK
-export ModelFile_Territorial_UK is     'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Territorial_1.Ase2NdfBin'
-export ModelFile_Territorial_UK_02 is  'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Territorial_2.Ase2NdfBin'
-export ModelFile_Territorial_UK_LOW is 'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Territorial_1.Ase2NdfBin'
+export ModelFile_Territorial_UK is     UK_Territorial_1
+export ModelFile_Territorial_UK_02 is  UK_Territorial_2
+export ModelFile_Territorial_UK_LOW is UK_Territorial_1
 
 
 //-------------------------------------------------------------------------------
@@ -1863,3 +2396,5 @@ export ModelFile_Scout_BEL_04 is BEL_Chasseur_2
 export ModelFile_Scout_BEL_05 is BEL_Chasseur_NCO
 export ModelFile_Scout_BEL_06 is BEL_Chasseur_1
 export ModelFile_Scout_BEL_LOW is BEL_Chasseur_1
+
+

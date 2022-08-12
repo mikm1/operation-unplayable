@@ -59,7 +59,7 @@ export Reco is TMacroActionDescriptor_CorridorDynamicDefense_Specific
 (
     ParametresDeMission =
     [
-        TGenerationSettingHolder(GenerationType = TGenerationType_BasedOnNumberOfCorridors NumberLaunchBasedOnGenerationType = 1 AlsoConsiderTheseDescriptorsForMaintain = []),
+        TGenerationSettingHolder(GenerationType = TGenerationType_BasedOnNumberOfCorridors NumberLaunchBasedOnGenerationType = 2 AlsoConsiderTheseDescriptorsForMaintain = []),
         TDefensePositionSettingHolder(IgnoreEnemyDirectionForDefensePosition = true),
         TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Reco_Skirmish]),
     ]

@@ -34,60 +34,35 @@ _AxeNotDefined
 // Mechant copier-coller de visualdebuginfohandler.ndf, mais je ne sais pas vraiment comment ça marche, alors je fais ce que je peux.
 template Template_RenderParameterBlended
 [
-    Name = "blend",
     MeshMaterialFill2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend2D,
-    MeshMaterialBorder2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend2D,
-    MeshMaterialFill3D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend,
-    MeshMaterialBorder3D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend,
-    CalqueLine2D = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Line,
     CalqueFill2D = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Fill,
-    CalqueLine3D = $/M3D/Scene/Scene3D_AfterPostProcess/debugInfo/Render/Calque_DebugInfo_Line,
-    CalqueFill3D = $/M3D/Scene/Scene3D_AfterPostProcess/debugInfo/Render/Calque_DebugInfo_Fill,
-    SortTriangles2D = false,
-    SortTriangles3D = true
 ]
 is TRenderTypeParameters
 (
-    Name = <Name>
+    Name = "blend"
     MeshMaterialFill2D = <MeshMaterialFill2D>
-    MeshMaterialBorder2D = <MeshMaterialBorder2D>
-    MeshMaterialFill3D = <MeshMaterialFill3D>
-    MeshMaterialBorder3D = <MeshMaterialBorder3D>
-    CalqueLine2D = <CalqueLine2D>
+    MeshMaterialBorder2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend2D
+    MeshMaterialFill3D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend
+    MeshMaterialBorder3D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend
+    CalqueLine2D = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Line
     CalqueFill2D = <CalqueFill2D>
-    CalqueLine3D = <CalqueLine3D>
-    CalqueFill3D = <CalqueFill3D>
-    SortTriangles2D = <SortTriangles2D>
-    SortTriangles3D = <SortTriangles3D>
+    CalqueLine3D = $/M3D/Scene/Scene3D_AfterPostProcess/debugInfo/Render/Calque_DebugInfo_Line
+    CalqueFill3D = $/M3D/Scene/Scene3D_AfterPostProcess/debugInfo/Render/Calque_DebugInfo_Fill
+    SortTriangles3D = true
 )
 
-template Template_RenderParameterAdditive
-[
-    Name = "additive",
-    MeshMaterialFill2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Additive2D,
-    MeshMaterialBorder2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Additive2D,
-    MeshMaterialFill3D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Additive,
-    MeshMaterialBorder3D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Additive,
-    CalqueLine2D = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Line,
-    CalqueFill2D = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Fill,
-    CalqueLine3D = $/M3D/Scene/Scene3D_AfterPostProcess/debugInfo/Render/Calque_DebugInfo_Line,
-    CalqueFill3D = $/M3D/Scene/Scene3D_AfterPostProcess/debugInfo/Render/Calque_DebugInfo_Fill,
-    SortTriangles2D = false,
-    SortTriangles3D = false
-]
-is TRenderTypeParameters
+RenderParameterAdditive is TRenderTypeParameters
 (
-    Name = <Name>
-    MeshMaterialFill2D = <MeshMaterialFill2D>
-    MeshMaterialBorder2D = <MeshMaterialBorder2D>
-    MeshMaterialFill3D = <MeshMaterialFill3D>
-    MeshMaterialBorder3D = <MeshMaterialBorder3D>
-    CalqueLine2D = <CalqueLine2D>
-    CalqueFill2D = <CalqueFill2D>
-    CalqueLine3D = <CalqueLine3D>
-    CalqueFill3D = <CalqueFill3D>
-    SortTriangles2D = <SortTriangles2D>
-    SortTriangles3D = <SortTriangles3D>
+    Name = "additive"
+    MeshMaterialFill2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Additive2D
+    MeshMaterialBorder2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Additive2D
+    MeshMaterialFill3D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Additive
+    MeshMaterialBorder3D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Additive
+    CalqueLine2D = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Line
+    CalqueFill2D = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Fill
+    CalqueLine3D = $/M3D/Scene/Scene3D_AfterPostProcess/debugInfo/Render/Calque_DebugInfo_Line
+    CalqueFill3D = $/M3D/Scene/Scene3D_AfterPostProcess/debugInfo/Render/Calque_DebugInfo_Fill
+    SortTriangles3D = false
 )
 
 template Template_TextRenderParameter // standard
@@ -119,7 +94,7 @@ export SelectionRenderToolBox is TDynamicRenderToolBox
     RenderParameters =
     [
         Template_RenderParameterBlended(), // 0
-        Template_RenderParameterAdditive(), // 1
+        RenderParameterAdditive, // 1
         Template_RenderParameterBlended // Button Standard 2
         (
             MeshMaterialFill2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend2D_ButtonStandard

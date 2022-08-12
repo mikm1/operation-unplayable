@@ -123,15 +123,16 @@ private deckNameDescription is BUCKTextDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [162.0+35, 32.0]
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, 32.0]
     )
-    //HasBackground = true
-    BackgroundBlockColorToken = 'Orange'
+
     ParagraphStyle = TParagraphStyleRTTI
     (
         Alignment = UIText_Left
         VerticalAlignment = UIText_VerticalCenter
         MaxLine = 2
+        BigWordAction = ~/BigWordAction/BigWordNewLine
     )
 
     BigLineAction = ~/BigLineAction/MultiLine
@@ -139,6 +140,7 @@ private deckNameDescription is BUCKTextDescriptor
     UniformDrawer = $/UserInterface/UIUniformDrawer
     TextDico = ~/LocalisationConstantes/dico_interface_outgame
 
+    TextPadding = TRTTILength4( Magnifiable = [2.0, 0.0, 2.0, 0.0] )
     TextStyle = "Default"
     TypefaceToken = "IBM"
     TextColor = 'Gris_QuickServeur'
@@ -153,7 +155,8 @@ private PlayerDeckButton is BUCKButtonDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [233.0, 32.0]
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, 32.0]
     )
 
     HidePointerEvents = true
@@ -676,6 +679,68 @@ template SwitchTeamButton
 
 //-------------------------------------------------------------------------------------
 
+LobbyReadyTexture is BUCKTextureDescriptor
+(
+    ElementName = "ReadyTexture"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [0.0, 1.0]
+        MagnifiableWidthHeight = [24.0, 0.0]
+    )
+
+    TextureFrame =  TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [14.0, 14.0]
+        AlignementToFather = [0.5, 0.5]
+        AlignementToAnchor = [0.5, 0.5]
+    )
+
+    TextureToken = "player_ready"
+    TextureColorToken = "Blanc220"
+
+    Components =
+    [
+        BUCKSpecificHintableArea
+        (
+            HintTitleToken = "READY_SLOT"
+            DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+        )
+    ]
+)
+
+//-------------------------------------------------------------------------------------
+
+LobbyNotReadyTexture is BUCKTextureDescriptor
+(
+    ElementName = "NotReadyTexture"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [0.0, 1.0]
+        MagnifiableWidthHeight = [24.0, 0.0]
+    )
+
+    TextureFrame =  TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [14.0, 14.0]
+        AlignementToFather = [0.5, 0.5]
+        AlignementToAnchor = [0.5, 0.5]
+    )
+
+    TextureToken = "player_not_ready"
+    TextureColorToken = "Blanc220"
+
+    Components =
+    [
+        BUCKSpecificHintableArea
+        (
+            HintTitleToken = "NRDY_SLOT"
+            DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+        )
+    ]
+)
+
+//-------------------------------------------------------------------------------------
+
 LigneDuBas is BUCKListDescriptor
 (
     ElementName = "PlayerLineLigneDuBas"
@@ -700,6 +765,14 @@ LigneDuBas is BUCKListDescriptor
         (
             ExtendWeight = 1.0
             ComponentDescriptor = ~/PlayerDeckButton
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = ~/LobbyReadyTexture
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = ~/LobbyNotReadyTexture
         ),
     ]
 )

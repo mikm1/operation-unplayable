@@ -356,19 +356,36 @@ template TransportedInfantryDepiction
          ] //pour avoir un 'high' pour le skeleton
 )
 
-
-template GhostVehicleDepictionTemplate
-[ Selector, Alternatives ]
+template GhostUnitDepictionTemplate
+[ Selector, Scaler, Alternatives ]
 is TTimelyReceiverFactoryCarrier
 (
     DepictionTemplate = TDepictionTemplate
     (
         ResidentMaterialTags = [ MaterialTagGhost ]
-        Scaler = CommonVehicleScaler
+        Scaler = <Scaler>
         Selector = <Selector>
         DepictionAlternatives = <Alternatives>
         Operators = [ DepictionOperator_Shader_Ghost,  DepictionOperator_Shader_Selection ]
     )
+)
+
+template GhostVehicleDepictionTemplate
+[ Selector, Alternatives ]
+is GhostUnitDepictionTemplate
+(
+    Selector = <Selector>
+    Alternatives = <Alternatives>
+    Scaler = CommonVehicleScaler
+)
+
+template GhostAerialDepictionTemplate
+[ Selector, Alternatives ]
+is GhostUnitDepictionTemplate
+(
+    Selector = <Selector>
+    Alternatives = <Alternatives>
+    Scaler = SpecificFlyingScaler
 )
 
 template TacticVehicleDepictionTemplate
@@ -390,6 +407,31 @@ is TTimelyReceiverFactoryCarrier
         Selector = <Selector>
         DepictionAlternatives = <Alternatives>
         Operators = CommonOperators + <Operators>
+        Actions = <Actions>
+        SubDepictions = <SubDepictions>
+        SubDepictionGenerators = <SubDepictionGenerators>
+    )
+)
+
+template TacticAerialDepictionTemplate
+[
+    CoatingName,
+    Selector,
+    Alternatives,
+    Operators,
+    Actions,
+    SubDepictions = [],
+    SubDepictionGenerators = []
+]
+is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        CoatingName = <CoatingName>
+        Scaler = SpecificFlyingScaler
+        Selector = <Selector>
+        DepictionAlternatives = <Alternatives>
+        Operators = CommonOperators + [ DepictionOperator_CadaverCrashing ] + <Operators>
         Actions = <Actions>
         SubDepictions = <SubDepictions>
         SubDepictionGenerators = <SubDepictionGenerators>
@@ -457,7 +499,6 @@ template ShowroomLandingGear
 ]
 is TSubDepiction
 (
-    Anchor = "Landing Gear"
     Depiction = TDepictionTemplate
     (
         Scaler = CommonIdentityScaler
@@ -512,7 +553,7 @@ is TTimelyReceiverFactoryCarrier
 )
 
 template TacticTowedSubDepictionTemplate
-[ Alternatives, InitialPoses ]
+[ Alternatives, InitialPoses, SubDepictionGenerators ]
 is TSubDepiction
 (
     Anchor = "remorque_1"
@@ -533,5 +574,7 @@ is TSubDepiction
             ),
             DepictionOperator_Propulsion_Wheels_TowedCanon,
         ]
+
+        SubDepictionGenerators = <SubDepictionGenerators>
     )
 )

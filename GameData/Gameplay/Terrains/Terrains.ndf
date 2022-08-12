@@ -126,12 +126,13 @@ export PetitBatiment is TGameplayTerrain
     CriticalEffectProbability = 0
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.75)]),
-            ("he_autocanon", MAP [("infanterie",0.75)]),
-            ("balle", MAP [("infanterie",0.75)]),
-            ("balledca", MAP [("infanterie",0.75)]),
-            ("howz", MAP [("infanterie",0.75)]),
-            ("fmballe", MAP [("infanterie",0.75)]),
+            ("he", MAP [("infanterie",0.3)]),
+            ("he_autocanon", MAP [("infanterie",0.4)]),
+            ("balle", MAP [("infanterie",0.3)]),
+            ("balledca", MAP [("infanterie",0.3)]),
+            ("howz", MAP [("infanterie",0.3)]),
+            ("howz_bombe", MAP [("infanterie",0.3)]),
+            ("fmballe", MAP [("infanterie",0.3)]),
             ("cac", MAP [("infanterie",1)]),
         ]
     DebugColor = rgba[0, 0, 0, 255]
@@ -169,13 +170,13 @@ export Batiment is TGameplayTerrain
     CriticalEffectProbability = 0
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.75)]),
-            ("he_autocanon", MAP [("infanterie",0.75)]),
-            ("balle", MAP [("infanterie",0.75)]),
-            ("balledca", MAP [("infanterie",0.75)]),
-            ("howz", MAP [("infanterie",0.75)]),
-            ("howz_bombe", MAP [("infanterie",0.75)]),
-            ("fmballe", MAP [("infanterie",0.75)]),
+            ("he", MAP [("infanterie",0.3)]),
+            ("he_autocanon", MAP [("infanterie",0.4)]),
+            ("balle", MAP [("infanterie",0.3)]),
+            ("balledca", MAP [("infanterie",0.3)]),
+            ("howz", MAP [("infanterie",0.3)]),
+            ("howz_bombe", MAP [("infanterie",0.3)]),
+            ("fmballe", MAP [("infanterie",0.3)]),
             ("cac", MAP [("infanterie",1)]),
         ]
     DebugColor = rgba[0, 0, 0, 255]
@@ -213,14 +214,14 @@ export Ruin is TGameplayTerrain
     CriticalEffectProbability = 0
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.65)]),
-            ("he_autocanon", MAP [("infanterie",0.65)]),
-            ("balle", MAP [("infanterie",0.65)]),
-            ("balledca", MAP [("infanterie",0.65)]),
-            ("howz", MAP [("infanterie",0.65)]),
-            ("howz_bombe", MAP [("infanterie",0.65)]),
+            ("he", MAP [("infanterie",0.40)]),
+            ("he_autocanon", MAP [("infanterie",0.50)]),
+            ("balle", MAP [("infanterie",0.40)]),
+            ("balledca", MAP [("infanterie",0.40)]),
+            ("howz", MAP [("infanterie",0.40)]),
+            ("howz_bombe", MAP [("infanterie",0.40)]),
             //("roquette_ap_1", MAP [("infanterie",0.65)]),
-            ("fmballe", MAP [("infanterie",0.65)]),
+            ("fmballe", MAP [("infanterie",0.40)]),
         ]
     DebugColor = rgba[0, 6, 200, 255]
     DissimulationModifierGroundAir = 10.5

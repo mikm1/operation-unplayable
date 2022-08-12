@@ -1,3 +1,5 @@
+//-------------------------------------------------------------------------------------
+
 private template MissionDescriptionText
 [
     ElementName : string = "",
@@ -28,7 +30,7 @@ is BUCKTextDescriptor
         Alignment         = <Alignment>
         VerticalAlignment = UIText_Up
         Balanced          = true
-        InterLine = 0.4
+        InterLine         = 0.4
     )
 
     TextStyle = "Default"
@@ -48,29 +50,31 @@ is BUCKTextDescriptor
     VerticalFitStyle = ~/FitStyle/FitToContent
     //surlignage
     Components =
-                    [
-                        BUCKContainerDescriptor
-                        (
-                            ComponentFrame = TUIFramePropertyRTTI
-                            (
-                                RelativeWidthHeight = [1.0, 0.0]
-                                MagnifiableWidthHeight = [0.0, 1.0]
-                                PixelWidthHeight = [0.0, 1.0]
-                                AlignementToFather = [0.5, 1.0]
-                                AlignementToAnchor = [0.5, 1.0]
-                            )
+    [
+        BUCKContainerDescriptor
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 0.0]
+                MagnifiableWidthHeight = [0.0, 1.0]
+                PixelWidthHeight = [0.0, 1.0]
+                AlignementToFather = [0.5, 1.0]
+                AlignementToAnchor = [0.5, 1.0]
+            )
 
-                            HasBackground = true
-                            BackgroundBlockColorToken = <CouleurDuTrait>
-                        )
-                    ]
+            HasBackground = true
+            BackgroundBlockColorToken = <CouleurDuTrait>
+        )
+    ]
 )
+
+//-------------------------------------------------------------------------------------
 
 private template MissionDescriptionTexture
 [
     ElementName : string,
     MagnifiableWidthHeight : float2,
-    RelativeWidthHeight : float2 = [0,0],
+    RelativeWidthHeight : float2 = [0.0, 0.0],
     AlignementToFather : float2 = [0.0, 0.0],
     AlignementToAnchor : float2 = [0.0, 0.0]
 ]
@@ -91,6 +95,8 @@ is BUCKTextureDescriptor
     ClipTextureToComponent = true
 )
 
+//-------------------------------------------------------------------------------------
+
 template ResumeMissionSimple
 [
     BackgroundComponents = [],
@@ -98,15 +104,16 @@ template ResumeMissionSimple
 ]
 is BUCKListDescriptor
 (
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [1140.0, 0.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
+    )
+
     Axis = ~/ListAxis/Vertical
     HasBackground = true
     BackgroundBlockColorToken = 'Orange'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [1140,0]
-        AlignementToFather = [0.5, 0]
-        AlignementToAnchor = [0.5, 0]
-    )
 
     Elements =
     [
@@ -125,6 +132,8 @@ is BUCKListDescriptor
     ForegroundComponents = <ForegroundComponents>
 )
 
+//-------------------------------------------------------------------------------------
+
 template ResumeCampagneType2
 [
     BackgroundComponents = [],
@@ -136,12 +145,14 @@ is BUCKListDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [1140,0]
-        AlignementToFather = [0.5, 0]
-        AlignementToAnchor = [0.5, 0]
+        MagnifiableWidthHeight = [1140.0, 0.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
     )
+
     HasBackground = true
     BackgroundBlockColorToken = 'Orange'
+
     Elements =
     [
         BUCKListElementDescriptor
@@ -199,12 +210,14 @@ is BUCKListDescriptor
     ForegroundComponents = <ForegroundComponents>
 )
 
+//-------------------------------------------------------------------------------------
+
 private template OneHint
 [
     TextureElementName : string,
     TextElementName : string,
-    TextureSize : float2 = [32.0, 32.0], // 80, 80
-    TextureContainerSize : float2 = [40.0, 40.0], // 100, 100
+    TextureSize : float2 = [32.0, 32.0],
+    TextureContainerSize : float2 = [40.0, 40.0],
     ContainerWidth : float = 524.0
 ]
 is BUCKListElementDescriptor
@@ -252,6 +265,8 @@ is BUCKListElementDescriptor
     )
 )
 
+//-------------------------------------------------------------------------------------
+
 private ListSeparator is BUCKListElementDescriptor
 (
     ComponentDescriptor = MissionDescriptionText
@@ -260,6 +275,8 @@ private ListSeparator is BUCKListElementDescriptor
         Alignment = UIText_Center
     )
 )
+
+//-------------------------------------------------------------------------------------
 
 private template ResumeHint11
 [
@@ -272,9 +289,9 @@ is BUCKListDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [524,0]
-        AlignementToFather = [0.5, 0]
-        AlignementToAnchor = [0.5, 0]
+        MagnifiableWidthHeight = [524.0, 0.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
     )
 
     Elements =
@@ -350,6 +367,7 @@ is BUCKListDescriptor
     ForegroundComponents = <ForegroundComponents>
 )
 
+//-------------------------------------------------------------------------------------
 
 private template ResumeHint8
 [
@@ -362,9 +380,9 @@ is BUCKListDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [524,0]
-        AlignementToFather = [0, 0]
-        AlignementToAnchor = [0, 0]
+        MagnifiableWidthHeight = [524.0, 0.0]
+        AlignementToFather = [0.0, 0.0]
+        AlignementToAnchor = [0.0, 0.0]
     )
 
     Elements =
@@ -422,6 +440,8 @@ is BUCKListDescriptor
     ForegroundComponents = <ForegroundComponents>
 )
 
+//-------------------------------------------------------------------------------------
+
 private template ResumeHint16
 [
     BackgroundComponents = [],
@@ -433,9 +453,9 @@ is BUCKListDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [524,0]
-        AlignementToFather = [0.5, 0]
-        AlignementToAnchor = [0.5, 0]
+        MagnifiableWidthHeight = [524.0, 0.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
     )
 
     Elements =
@@ -535,12 +555,13 @@ is BUCKListDescriptor
             TextureElementName = "Texture16"
             TextElementName = "Text16"
         )
-
     ]
 
     BackgroundComponents = <BackgroundComponents>
     ForegroundComponents = <ForegroundComponents>
 )
+
+//-------------------------------------------------------------------------------------
 
 private template ResumeHint17
 [
@@ -553,9 +574,9 @@ is BUCKListDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [524,0]
-        AlignementToFather = [0.5, 0]
-        AlignementToAnchor = [0.5, 0]
+        MagnifiableWidthHeight = [524.0, 0.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
     )
 
     Elements =
@@ -668,6 +689,8 @@ is BUCKListDescriptor
     ForegroundComponents = <ForegroundComponents>
 )
 
+//-------------------------------------------------------------------------------------
+
 template ResumeCampagneType1
 [
     BackgroundComponents = [],
@@ -681,9 +704,9 @@ is BUCKListDescriptor
     BackgroundBlockColorToken = 'Orange'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [1100, 0]
-        AlignementToFather = [0.5, 0]
-        AlignementToAnchor = [0.5, 0]
+        MagnifiableWidthHeight = [1100.0, 0.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
     )
 
     Elements =
@@ -702,7 +725,7 @@ is BUCKListDescriptor
                         ComponentDescriptor = MissionDescriptionTexture
                         (
                             ElementName = "TextureHautGauche"
-                            MagnifiableWidthHeight = [110, 101]
+                            MagnifiableWidthHeight = [110.0, 101.0]
                         )
                     ),
                     BUCKListElementDescriptor
@@ -722,7 +745,7 @@ is BUCKListDescriptor
                         (
                             ComponentFrame = TUIFramePropertyRTTI
                             (
-                                MagnifiableWidthHeight = [110, 101]
+                                MagnifiableWidthHeight = [110.0, 101.0]
                             )
 
                             Components =
@@ -730,7 +753,7 @@ is BUCKListDescriptor
                                 MissionDescriptionTexture
                                 (
                                     ElementName = "TextureHautDroite"
-                                    MagnifiableWidthHeight = [82, 101]
+                                    MagnifiableWidthHeight = [82.0, 101.0]
                                     AlignementToAnchor = [0.5, 0.0]
                                     AlignementToFather = [0.5, 0.0]
                                 )
@@ -761,34 +784,28 @@ template ResumeCampagneType3
 [
     BackgroundComponents = [],
     ForegroundComponents = [],
-    ImageWidthHeight = [392,280]
+    ImageWidthHeight = [392.0, 280.0]
 ]
 is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [750,0]
-        //RelativeWidthHeight = [1,0]
+        MagnifiableWidthHeight = [750.0, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
-    //FirstMargin = TRTTILength (Magnifiable = 80)
+
     Elements =
     [
-
-
-    BUCKListElementDescriptor
-    (
-        ComponentDescriptor = MissionDescriptionText
+        BUCKListElementDescriptor
         (
-            ElementName = "TextePrincipal"
-            //TextColor = "loadTexte"//"ButtonSimple/TextBleuGris"
+            ComponentDescriptor = MissionDescriptionText
+            (
+                ElementName = "TextePrincipal"
+            )
         )
-    )
-
     ]
 )
-
 
 //-------------------------------------------------------------------------------------
 
@@ -800,7 +817,7 @@ is BUCKListElementDescriptor
 (
     ComponentDescriptor = BUCKContainerDescriptor
     (
-        ComponentFrame = TUIFramePropertyRTTI( MagnifiableWidthHeight = [60,72] )
+        ComponentFrame = TUIFramePropertyRTTI( MagnifiableWidthHeight = [60.0, 72.0] )
         Components =
         [
             BUCKTextureDescriptor
@@ -808,7 +825,7 @@ is BUCKListElementDescriptor
                 ElementName = <ElementName>
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    MagnifiableWidthHeight = [55,55]
+                    MagnifiableWidthHeight = [55.0, 55.0]
                     AlignementToFather = [0.5,0.5]
                     AlignementToAnchor = [0.5,0.5]
                 )
@@ -843,42 +860,27 @@ template ResumeCampagneTypeHistorique
 is BUCKListDescriptor
 (
     Axis = ~/ListAxis/Vertical
-    FirstMargin = TRTTILength( Magnifiable = 50)
-    //InterItemMargin = TRTTILength( Magnifiable = 5)
+    FirstMargin = TRTTILength( Magnifiable = 50.0)
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1, 0]
+        RelativeWidthHeight = [1.0, 0.0]
     )
 
     Elements =
     [
-       { BUCKListElementDescriptor
-               (
-                   ComponentDescriptor = MissionDescriptionTexture
-                   (
-                       ElementName = "TextureBas"
-
-                       MagnifiableWidthHeight = [392,280]
-                   )
-               ),}
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKSpecificScrollingContainerDescriptor
             (
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-
-                    RelativeWidthHeight = [1,0]
-                    MagnifiableWidthHeight = [0,800]
-                    //MagnifiableOffset = [0,280]
-                    //AlignementToFather = [0.5, 0]
-                    //AlignementToAnchor = [0.5, 0]
+                    RelativeWidthHeight = [1.0, 0.0]
+                    MagnifiableWidthHeight = [0.0, 800.0]
                 )
 
                 ExternalScrollbar = true
                 HasVerticalScrollbar = true
-
 
                 VerticalScrollbarComponentFrame = TUIFramePropertyRTTI
                 (
@@ -895,70 +897,101 @@ is BUCKListDescriptor
                         ElementName = "CampaignDescriptionContainer"
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            RelativeWidthHeight = [1,0]
+                            RelativeWidthHeight = [1.0, 0.0]
                         )
 
                         FitStyle = ~/ContainerFitStyle/FitToContentVertically
 
                         Components =
                         [
-                        ListeDesElementsDansMission
+                            ~/ListeDesElementsDansMission
                         ]
                     )
-
-
                 ]
             )
         )
+    ]
 
-        // à dégager => tout est passé en transparent :/
-        //-------------------------------------------------------------------------------------
-        // bloc de textures de divisions
-        {BUCKListElementDescriptor
+    BackgroundComponents = <BackgroundComponents>
+    ForegroundComponents = <ForegroundComponents>
+
+)
+
+//-------------------------------------------------------------------------------------
+ListeDesElementsDansMission is BUCKListDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableOffset = [35.0, 0.0]
+        RelativeWidthHeight = [0.95, 0.0]
+    )
+
+    Axis = ~/ListAxis/Vertical
+    InterItemMargin = TRTTILength( Magnifiable = 5.0)
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = MissionDescriptionText
+            (
+                ElementName = "TextePresentationScenario"
+                Alignment = UIText_Left
+            )
+        ),
+        // fake paragraphe
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKContainerDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
                 (
-                    ComponentDescriptor = BUCKListDescriptor
+                    MagnifiableWidthHeight = [0.0, 10.0]
+                )
+            )
+        ),
+
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = MissionDescriptionText
+            (
+                ElementName = "TexteForcesEnPresence"
+                Alignment = UIText_Left
+            )
+        ),
+
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKContainerDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [0.0, 1.0]
+                )
+
+                Components =
+                [
+                    MissionDescriptionText
                     (
-                        Axis = ~/ListAxis/Horizontal
-                        BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-
-                        Elements =
-                        [
-                            BUCKListElementDescriptor
-                            (
-                                ExtendWeight = 0.5
-                                ComponentDescriptor = MissionDescriptionText
-                                (
-                                    ElementName = "TexteHautGauche"
-                                    TextSize = "SD2_Moyen"
-                                    Alignment = UIText_Left
-                                    TextColor = 'SD2_Transparent'
-                                    //MagnifiableMargin = [10, 10, 10, 0]
-                                )
-                            ),
-                            BUCKListElementDescriptor
-                            (
-                                ExtendWeight = 0.5
-                                ComponentDescriptor = MissionDescriptionText
-                                (
-                                    ElementName = "TexteHautDroite"
-                                    TextSize = "SD2_Moyen"
-                                    TextColor = 'SD2_Transparent'
-                                    Alignment = UIText_Right
-                                    //MagnifiableMargin = [10, 10, 10, 0]
-                                )
-                            )
-                        ]
-                    )
-                ),}
-        {BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKListDescriptor
+                        ElementName = "TexteHautGauche"
+                        TextSize = "SD2_Moyen"
+                        Alignment = UIText_Left
+                        TextColor = 'SD2_Transparent'
+                    ),
+                    MissionDescriptionText
+                    (
+                        ElementName = "TexteHautDroite"
+                        TextSize = "SD2_Moyen"
+                        TextColor = 'SD2_Transparent'
+                        Alignment = UIText_Right
+                    ),
+                    BUCKListDescriptor
                     (
                         Axis = ~/ListAxis/Horizontal
                         BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
                         UniformDrawer = $/UserInterface/UIUniformDrawer
-                        HasBorder = true
+                        HasBorder = false
                         BorderLineColorToken = "Resume/CadreDivisions"
                         BorderThicknessToken = "1"
                         BordersToDraw = ~/TBorderSide/All
@@ -971,9 +1004,13 @@ is BUCKListDescriptor
 
                             BUCKListElementDescriptor
                             (
+                                ExtendWeight = 1.0
                                 ComponentDescriptor = BUCKTextDescriptor
                                 (
-                                    ComponentFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1,1] )
+                                    ComponentFrame = TUIFramePropertyRTTI
+                                    (
+                                        RelativeWidthHeight = [1.0, 1.0]
+                                    )
 
                                     ParagraphStyle = TParagraphStyleRTTI
                                     (
@@ -1002,176 +1039,28 @@ is BUCKListDescriptor
                                     BorderThicknessToken = "1"
                                     BordersToDraw = ~/TBorderSide/Left
                                 )
-                                ExtendWeight = 1
                             ),
 
                             BlocTextureDivisionHistorique( ElementName = "TextureDivisionDroite3" ),
                             BlocTextureDivisionHistorique( ElementName = "TextureDivisionDroite2" ),
                             BlocTextureDivisionHistorique( ElementName = "TextureDivisionDroite1" ),
                         ]
+                    ),
+                    MissionDescriptionText
+                    (
+                        ElementName = "TexteTitreObjectifs"
+                        TextToken = "HB_SCEOB"
+                        TextSize = "19"
+                        TextColor = 'SD2_Transparent'
+                        Alignment = UIText_Left
+                    ),
+                    MissionDescriptionText
+                    (
+                        ElementName = "TexteObjectifs"
+                        TextSize = "SD2_Moyen"
+                        TextColor = 'SD2_Transparent'
+                        Alignment = UIText_Left
                     )
-                ),}
-
-    ]
-
-    BackgroundComponents = <BackgroundComponents>
-    ForegroundComponents = <ForegroundComponents>
-
-)
-
-//-------------------------------------------------------------------------------------
-ListeDesElementsDansMission is BUCKListDescriptor
-(
-    Axis = ~/ListAxis/Vertical
-    //FirstMargin = TRTTILength( Magnifiable = 5)
-    InterItemMargin = TRTTILength( Magnifiable = 5)
-
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableOffset = [35,0]
-        RelativeWidthHeight = [0.95, 0]
-
-    )
-
-
-    Elements =
-    [
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = MissionDescriptionText
-            (
-                ElementName = "TextePresentationScenario"
-
-                Alignment = UIText_Left
-                //MagnifiableMargin = [10, 0, 10, 0]
-            )
-        ),
-        // fake paragraphe
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKContainerDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [0,10]
-                )
-            )
-        ),
-
-
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = MissionDescriptionText
-            (
-                ElementName = "TexteForcesEnPresence"
-
-                Alignment = UIText_Left
-                //MagnifiableMargin = [10, 0, 10, 0]
-            )
-        ),
-
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKContainerDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [0,1]
-                )
-
-                Components =
-                [
-                MissionDescriptionText
-                (
-                    ElementName = "TexteHautGauche"
-                    TextSize = "SD2_Moyen"
-                    Alignment = UIText_Left
-                    TextColor = 'SD2_Transparent'
-                    //MagnifiableMargin = [10, 10, 10, 0]
-                ),
-                MissionDescriptionText
-                (
-                    ElementName = "TexteHautDroite"
-                    TextSize = "SD2_Moyen"
-                    TextColor = 'SD2_Transparent'
-                    Alignment = UIText_Right
-                    //MagnifiableMargin = [10, 10, 10, 0]
-                ),
-                BUCKListDescriptor
-                (
-                    Axis = ~/ListAxis/Horizontal
-                    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-
-                    UniformDrawer = $/UserInterface/UIUniformDrawer
-                    HasBorder = false
-                    BorderLineColorToken = "Resume/CadreDivisions"
-                    BorderThicknessToken = "1"
-                    BordersToDraw = ~/TBorderSide/All
-
-                    Elements =
-                    [
-                        BlocTextureDivisionHistorique( ElementName = "TextureDivisionGauche1" ),
-                        BlocTextureDivisionHistorique( ElementName = "TextureDivisionGauche2" ),
-                        BlocTextureDivisionHistorique( ElementName = "TextureDivisionGauche3" ),
-
-                        BUCKListElementDescriptor
-                        (
-                            ComponentDescriptor = BUCKTextDescriptor
-                            (
-                                ComponentFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1,1] )
-
-                                ParagraphStyle = TParagraphStyleRTTI
-                                (
-                                    Alignment         = UIText_Center
-                                    VerticalAlignment = UIText_VerticalCenter
-                                    Balanced          = true
-                                )
-
-                                TextStyle = "Default"
-                                TypefaceToken = "Liberator"
-
-                                TextDico = ~/LocalisationConstantes/dico_maps
-                                TextToken = "HistoForcs"
-
-                                TextSize = "SD2_Moyen"
-                                TextColor = "SD2_Transparent"
-
-                                BigLineAction = ~/BigLineAction/MultiLine
-
-                                HorizontalFitStyle = ~/FitStyle/UserDefined
-                                VerticalFitStyle = ~/FitStyle/UserDefined
-
-                                UniformDrawer = $/UserInterface/UIUniformDrawer
-                                HasBorder = false
-                                BorderLineColorToken = "Resume/CadreDivisions"
-                                BorderThicknessToken = "1"
-                                BordersToDraw = ~/TBorderSide/Left
-                            )
-                            ExtendWeight = 1
-                        ),
-
-                        BlocTextureDivisionHistorique( ElementName = "TextureDivisionDroite3" ),
-                        BlocTextureDivisionHistorique( ElementName = "TextureDivisionDroite2" ),
-                        BlocTextureDivisionHistorique( ElementName = "TextureDivisionDroite1" ),
-                    ]
-                ),
-                MissionDescriptionText
-                (
-                    ElementName = "TexteTitreObjectifs"
-                    TextToken = "HB_SCEOB"
-                    TextSize = "19"
-                    TextColor = 'SD2_Transparent'
-                    Alignment = UIText_Left
-                    //MagnifiableMargin = [10, 0, 10, 0]
-                ),
-                MissionDescriptionText
-                (
-                    ElementName = "TexteObjectifs"
-                    TextSize = "SD2_Moyen"
-                    TextColor = 'SD2_Transparent'
-                    Alignment = UIText_Left
-                    //MagnifiableMargin = [10, 0, 10, 0]
-                )
                 ]
             )
         ),

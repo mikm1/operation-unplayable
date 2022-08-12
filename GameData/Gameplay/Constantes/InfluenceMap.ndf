@@ -18,15 +18,6 @@ export InfluenceMapCstTactic is TInfluenceMapConstantesDescriptor
 
     TauxDeRalentissement = 0.5    // 1 pour que ça se propage comme le reste, 0 pour que ça propage pas du tout (en dessous de 80% ça risque de pas être très joli)
 
-    // Réglage de poids sur la valeur d'une case de l'influence map :
-    // Ca permet de faire une capture non linéaire sur le terrain suivant
-    // la formule : 1 + MultiplicateurDuModificateurDePoids * (Distance) ^ PuissanceDuModificateurDePoids
-    // où la distance est la distance d'une case de l'influence map à une droite médiane
-    // aux deux points d'influence Origine définis dans l'éditeur.
-    // La distance est divisée par la demi distance entre ces deux points pour avoir 0 <= Distance <= 1 (approximativement)
-    // Personnellement j'utilise GraphCalc pour voir ce que ça donne http://www.graphcalc.com/
-    PuissanceDuModificateurDePoids = 0.0
-    MultiplicateurDuModificateurDePoids = 0.0
     PasDeValeurMinPourCaptuerEmptyOwner = false
 
     ParametresDeCalculDeLaGeometry = DefaultGeometryParameters
@@ -60,15 +51,6 @@ export InfluenceMapCstStrategic is TInfluenceMapConstantesDescriptor
 
     TauxDeRalentissement = 0.5    // 1 pour que ça se propage comme le reste, 0 pour que ça propage pas du tout (en dessous de 80% ça risque de pas être très joli)
 
-    // Réglage de poids sur la valeur d'une case de l'influence map :
-    // Ca permet de faire une capture non linéaire sur le terrain suivant
-    // la formule : 1 + MultiplicateurDuModificateurDePoids * (Distance) ^ PuissanceDuModificateurDePoids
-    // où la distance est la distance d'une case de l'influence map à une droite médiane
-    // aux deux points d'influence Origine définis dans l'éditeur.
-    // La distance est divisée par la demi distance entre ces deux points pour avoir 0 <= Distance <= 1 (approximativement)
-    // Personnellement j'utilise GraphCalc pour voir ce que ça donne http://www.graphcalc.com/
-    PuissanceDuModificateurDePoids = 0.0
-    MultiplicateurDuModificateurDePoids = 0.0
     PasDeValeurMinPourCaptuerEmptyOwner = true // Si cette valeur est a true et une valeur de MinValueInfluenceForOwnership suffisamment élevée, l'infmap va se comporter comme un fow
 
     ParametresDeCalculDeLaGeometry = DefaultGeometryParameters

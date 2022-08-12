@@ -1276,8 +1276,7 @@ is BUCKContainerDescriptor
     BordersToDraw = 1 | 8
     Components =
     [
-        // titre
-        BUCKTextDescriptor
+        BUCKListDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
@@ -1285,62 +1284,81 @@ is BUCKContainerDescriptor
                 AlignementToAnchor = [0.0, 0.5]
                 AlignementToFather = [0.0, 0.5]
             )
+            Axis = ~/ListAxis/Horizontal
 
-            ParagraphStyle = TParagraphStyleRTTI
-            (
-                Alignment = UIText_Left
-                VerticalAlignment = UIText_VerticalCenter
-                InterLine = 0
-            )
+            Elements =
+            [
+                // titre
+                BUCKListElementDescriptor
+                (
+                    ExtendWeight = 1.0
+                    ComponentDescriptor = BUCKTextDescriptor
+                    (
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            RelativeWidthHeight = [1.0, 1.0]
+                        )
 
-            TextStyle = "Default"
+                        ParagraphStyle = TParagraphStyleRTTI
+                        (
+                            Alignment = UIText_Left
+                            VerticalAlignment = UIText_VerticalCenter
+                            InterLine = 0
+                        )
 
-            VerticalFitStyle = ~/FitStyle/UserDefined
-            HorizontalFitStyle = ~/FitStyle/FitToContent
-            TextPadding = TRTTILength4( Magnifiable = [5.0, 0.0, 0.0, 0.0] )
+                        TextStyle = "Default"
 
-            TypefaceToken = "Liberator"
-            BigLineAction = ~/BigLineAction/CutByDots
+                        VerticalFitStyle = ~/FitStyle/UserDefined
+                        HorizontalFitStyle = ~/FitStyle/UserDefined
+                        TextPadding = TRTTILength4( Magnifiable = [5.0, 0.0, 5.0, 0.0] )
 
-            TextDico = ~/LocalisationConstantes/dico_interface_ingame
-            TextToken = <Token>
+                        TypefaceToken = "Liberator"
+                        BigLineAction = ~/BigLineAction/CutByDots
 
-            TextColor = (<IsTransparent> == true ? "Transparent" : "MarronPanel_noir")
-            TextSize = "12"
-        ),
-        // valeur
-        BUCKTextDescriptor
-        (
-            ElementName = <ElementName> + "Value"
+                        TextDico = ~/LocalisationConstantes/dico_interface_ingame
+                        TextToken = <Token>
 
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                MagnifiableWidthHeight = [0.0, 10.0]
-                AlignementToAnchor = [1.0, 0.5]
-                AlignementToFather = [1.0, 0.5]
-            )
+                        TextColor = (<IsTransparent> == true ? "Transparent" : "MarronPanel_noir")
+                        TextSize = "12"
+                    )
+                ),
+                BUCKListElementDescriptor
+                (
+                    // valeur
+                    ComponentDescriptor = BUCKTextDescriptor
+                    (
+                        ElementName = <ElementName> + "Value"
 
-            ParagraphStyle = TParagraphStyleRTTI
-            (
-                Alignment = UIText_Right
-                VerticalAlignment = UIText_VerticalCenter
-                InterLine = 0
-            )
-            TextPadding = TRTTILength4( Magnifiable = [0.0, 0.0, 5.0, 0.0] )
-            TextStyle = "Default"
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            RelativeWidthHeight = [0.0, 1.0]
+                        )
 
-            VerticalFitStyle = ~/FitStyle/UserDefined
-            HorizontalFitStyle = ~/FitStyle/FitToContent
+                        ParagraphStyle = TParagraphStyleRTTI
+                        (
+                            Alignment = UIText_Right
+                            VerticalAlignment = UIText_VerticalCenter
+                            InterLine = 0
+                        )
+                        TextPadding = TRTTILength4( Magnifiable = [5.0, 0.0, 5.0, 0.0] )
+                        TextStyle = "Default"
 
-            TypefaceToken = "Eurostyle"
-            BigLineAction = ~/BigLineAction/CutByDots
+                        VerticalFitStyle = ~/FitStyle/UserDefined
+                        HorizontalFitStyle = ~/FitStyle/FitToContent
 
-            TextDico = <DicoToken>
-            TextToken = <ValueToken>
+                        TypefaceToken = "Eurostyle"
+                        BigLineAction = ~/BigLineAction/CutByDots
 
-            TextColor = (<IsTransparent> == true ? "Transparent" : "MarronPanel_blanc")
-            TextSize = "13"
+                        TextDico = <DicoToken>
+                        TextToken = <ValueToken>
+
+                        TextColor = (<IsTransparent> == true ? "Transparent" : "MarronPanel_blanc")
+                        TextSize = "13"
+                    )
+                )
+            ]
         )
+        ,
     ]
      +
 
@@ -1884,8 +1902,8 @@ is TUISpecificUnitInfoPanelViewDescriptor
     BlindageToToken = MAP
     [
         ("infanterie_1", "UIP_INF1"),
-        ("vehicule_leger_1","UIP_vehl"),
-        ("vehicule_1","UIP_hel2"),
+        ("vehicule_1","UIP_vehl"),
+        ("vehicule_2","UIP_hel2"),
         ("helico_1","UIP_vehl"),
         ("helico_2","UIP_hel2"),
         ("helico_3","UIP_hel3"),
