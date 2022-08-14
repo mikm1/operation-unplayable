@@ -597,7 +597,12 @@ WargameConstantes is TWargameTunableConstante
     DefaultIncomeMultiplierIndex    = 3 // normal
     //                   none   very_low   low      normal    high     very_high
     IncomeMultiplier = [   0,    0.5,    0.75,       1,      1.25,       1.5 ]
-    TimeBeforeEarningCommandPoints  = 60 // en secondes
+    TimeBeforeEarningCommandPoints = MAP
+    [
+        (CombatRule/NotSpecified,   60.0),
+        (CombatRule/CaptureTheFlag, 60.0),
+        (CombatRule/Destruction,     4.0),
+    ]
 
     TimeBeforeEarningCommandPointsFactorToAddByNbPlayers = //Facteur de TimeBeforeEarningCommandPoints à ajouter selon des paliers de joueurs
                 [
@@ -811,7 +816,7 @@ WargameConstantes is TWargameTunableConstante
 
     AmphibiousSpawnLandSeaRatio = 1.5 // >=0, ponderation arbitraire pour determiner si une amphibie spawne au spawn marin ou terrestre (=1:elle prendra le plus proche a vol d'oiseau ; <1:elle preferera le marin, >1:elle preferera le terrestre)
     InfantryTrenchDepth = 7 * Metre //9 * Metre //11.5 * Metre
-    TimeForOnePAMove = 0.7 //0.5 // temps de mouvement pour dépenser un PA : ne pas descendre trop bas. Cela affecte la qualité de certains algo
+    TimeForOnePAMove = 0.2 //0.5 // temps de mouvement pour dépenser un PA : ne pas descendre trop bas. Cela affecte la qualité de certains algo
 
 //------------------------ Constantes Option_Graphique ----------------------------------//
 
