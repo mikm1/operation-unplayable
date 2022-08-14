@@ -32,10 +32,6 @@ export Constantes is TTunableConstante
     FumigeneMaxCount = 4
     FumigeneTimeout = 60.0
 
-//------------------------------ Constantes Apparence -------------------------------------//
-
-    ApparenceGhostToBuildTransitionInFuncOfBuildProgression = ~/GhostToBuildTransitionInFuncOfBuildProgression
-
 //------------------------ Constantes AutomaticBehavior ----------------------------------//
 
     AutoCover_DistanceMaxEntreLesChecksDeTerrains = 60 * Metre //100 * Metre // distance entre les échantillonnages de terrain pour savoir si on fait un autocover.
@@ -55,7 +51,6 @@ export Constantes is TTunableConstante
     AltitudeVol = 3000 * Metre
     CadavreOffsetMax = 0.3  // 0.33
     CadavreOffsetMin = 0.1 // 0.18
-    Dogfight3D = true
 
 //--------------------------- Constantes Bâtiments ---------------------------------------//
 
@@ -127,7 +122,6 @@ export Constantes is TTunableConstante
 //---------------------------- Constantes GameRules ---------------------------------------//
 
     DefaultAIDifficultyForPlayerReplacement = IADifficulty/Normal
-    DefaultCampaignDifficulty = CampaignDifficulty/Medium
 
     // List d'options effects appliqué a toutes les parties, quelque soit les options choisies. Exemple : DefaultEffectsList = [ ~/OptionsEffectsDescriptor_ShowAllGisement ]
     DefaultEffectsList = [  ]
@@ -687,6 +681,8 @@ WargameConstantes is TWargameTunableConstante
     FactoriesWhichNeverCloseProductionMenuAfterValidation = [
     ]
 
+    MaxNbMergedUnitsInGroup = 4 // Nombre maximum d'unites dans un groupe merge
+    
     MultiplicateurMetreRTSVersVitesseTactiquePourAvions = 0.35 // 0.45 div 1.0 est le ratio réaliste
     MultiplicateurMetreRTSVersVitesseTactiquePourInfantrie = 0.35
     MultiplicateurMetreRTSVersVitesseTactiquePourVehicule = 0.35
