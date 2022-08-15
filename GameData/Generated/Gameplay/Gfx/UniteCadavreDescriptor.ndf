@@ -25503,6 +25503,95 @@ Descriptor_UnitCadavre_MotRifles_SOV is TEntityDescriptor
 
     ]
 )
+Descriptor_UnitCadavre_MotRifles_VR_SOV is TEntityDescriptor
+(
+    DescriptorId       = GUID:{9e38dcd1-50f6-4a16-8576-c75b6a296cd7}
+    ClassNameForDebug  = 'Unit_CadavreMotRifles_VR_SOV'
+    ModulesDescriptors = [
+        // TypeUnit
+            TTypeUnitModuleDescriptor
+            (
+                TypeUnitValue                    = ETypeUnit/Inf
+                Nationalite                      = ENationalite/Axis
+                MotherCountry                    = 'SOV'
+                AcknowUnitType                   = ~/TAcknowUnitType_Inf
+                TypeUnitFormation                = 'Char'
+            ),
+
+        // Tags
+            TTagsModuleDescriptor
+            (
+            ),
+
+        // Flags
+            TFlagsModuleDescriptor
+            (
+                InitialFlagSet =
+                [
+                    Flag_Detectable,
+                    Flag_LdDetectable,
+                ]
+            ),
+
+        // Position
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // Cadavre
+            TCadavreModuleDescriptor
+            (
+                ExplodeAtEnd = True
+                KillAsVehicule = False
+                KillAsInfanterie = True
+                KillAsHelico = False
+                KillAsAirplane = False
+                KillAsBatiment = False
+                CadavreDuration = $/GFX/Everything/CadavreDuration_Infanterie
+                DisappearanceDuration = 0.0
+                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum
+                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum
+                FadingDuration = 1
+                DamageRatio = 1.
+                DeathExplosionAmmo = ~/Ammo_Mort_Unite_infanterie
+                SecondaryDeathExplosionAmmo = nil
+                InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
+                ModuleDescriptorsToSteal =
+                [
+                   $/GFX/Everything/Descriptor_Unit_MotRifles_VR_SOV/GroupeCombat,
+                   $/GFX/Everything/Descriptor_Unit_MotRifles_VR_SOV/LandMovement,
+                   $/GFX/Everything/Descriptor_Unit_MotRifles_VR_SOV/GenericMovement,
+                   $/GFX/Everything/Descriptor_Unit_MotRifles_VR_SOV/FacingInfos,
+                ]
+            ),
+            $/GFX/Everything/Descriptor_Unit_MotRifles_VR_SOV/GroupeCombat,
+            $/GFX/Everything/Descriptor_Unit_MotRifles_VR_SOV/LandMovement,
+            $/GFX/Everything/Descriptor_Unit_MotRifles_VR_SOV/GenericMovement,
+            $/GFX/Everything/Descriptor_Unit_MotRifles_VR_SOV/FacingInfos,
+
+        // PackSignaux
+            ~/PackSignauxModuleDescriptor,
+
+        // Debug
+            ~/DebugModuleDescriptor,
+
+    ]
+)
 Descriptor_UnitCadavre_MotSchutzen_DDR is TEntityDescriptor
 (
     DescriptorId       = GUID:{00efd8bd-f77a-45dd-95b5-8a745e413d88}

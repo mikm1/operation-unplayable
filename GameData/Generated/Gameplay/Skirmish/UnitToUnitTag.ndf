@@ -284,6 +284,7 @@ private UnitToUnitTag is TUnitToUnitTagForIAStrat
         ( ~/Descriptor_Unit_MotRifles_HMG_SOV, "UNITE_MotRifles_HMG_SOV" ),
         ( ~/Descriptor_Unit_MotRifles_Metis_SOV, "UNITE_MotRifles_Metis_SOV" ),
         ( ~/Descriptor_Unit_MotRifles_SOV, "UNITE_MotRifles_SOV" ),
+        ( ~/Descriptor_Unit_MotRifles_VR_SOV, "UNITE_MotRifles_VR_SOV" ),
         ( ~/Descriptor_Unit_MotSchutzen_DDR, "UNITE_MotSchutzen_DDR" ),
         ( ~/Descriptor_Unit_Osa_9K33M3_DDR, "UNITE_Osa_9K33M3_DDR" ),
         ( ~/Descriptor_Unit_Osa_9K33M3_SOV, "UNITE_Osa_9K33M3_SOV" ),

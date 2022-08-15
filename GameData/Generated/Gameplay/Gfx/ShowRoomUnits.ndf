@@ -28100,6 +28100,145 @@ export Descriptor_ShowRoomUnit_MotRifles_SOV is TEntityDescriptor
     ]
 )
 
+export Descriptor_ShowRoomUnit_MotRifles_VR_SOV is TEntityDescriptor
+(
+    DescriptorId        = GUID:{dc04c804-f71d-4762-b39a-12102d04af12}
+    ClassNameForDebug   = "ShowRoomUnit_MotRifles__VR_SOV"
+    ModulesDescriptors = [
+        // TypeUnit
+            TModuleSelector
+            (
+                Default            = TTypeUnitModuleDescriptor
+                (
+                    TypeUnitValue                    = ETypeUnit/Inf
+                    Nationalite                      = ENationalite/Axis
+                    MotherCountry                    = 'SOV'
+                    AcknowUnitType                   = ~/TAcknowUnitType_Inf
+                    TypeUnitFormation                = 'Char'
+                )
+                Selection = [
+                    NilDescriptorIfCadavre,
+                    TModuleSelectorFilterIfGhost
+                    (
+                        Descriptor = TTypeUnitModuleDescriptor
+                        (
+                            MotherCountry                    = 'SOV'
+                            Nationalite                      = ENationalite/Axis
+                            TypeUnitValue                    = ETypeUnit/Inf
+                        )
+                    )
+                ]
+            ),
+
+        // Position
+        (
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            )
+        ),
+
+        // ApparenceModel
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject       = False
+            Depiction            = ~/InfantryDepictionSquadShowroom
+        ),
+
+        // WeaponManager
+        WeaponManager is
+            TModuleSelector
+            (
+                Default        = $/GFX/Everything/WeaponDescriptor_MotRifles_VR_SOV
+                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+            ),
+
+        // InfantrySquad
+        GroupeCombat is
+            TModuleSelector
+            (
+                Default        = TInfantrySquadModuleDescriptor
+                (
+                    NbSoldatInGroupeCombat = 7
+                    SquadDataDescriptor = ~/SoldierSquadDataDescriptor
+                    InfantryMimeticName = 'MotRifles_VR_SOV'
+                    InfantryAlternativeName = 'MotRifles_VR_SOV'
+                    InfantryGhostMimeticName = 'MotRifles_VR_SOV_ghost'
+                    WeaponUnitFXKey     = 'MotRifles_VR_SOV'
+                    MimeticDescriptor   = ~/Descriptor_Unit_MimeticUnit
+                    BoundingBoxSize     = 9 * Metre
+                )
+                Selection      = [ NilDescriptorIfCadavre ]
+            ),
+
+        // GroupeCombat
+        GroupeCombatPositions is
+            TModuleSelector
+            (
+                Default        = TInfantrySquadSlotPositionsModuleDescriptor
+                (
+                    SquadMovementDataDescriptor  = ~/SoldierSquadMovementDataDescriptor
+                    SquadFormationDescriptor = ~/SoldierColumnDescriptor
+                    NoiseDescriptor    = ~/SoldierNoiseDescriptor
+                )
+                Selection      = [ NilDescriptorIfCadavre ]
+            ),
+
+        // InfantrySquadWeaponAssignment
+        TInfantrySquadWeaponAssignmentModuleDescriptor
+        (
+            InitialTurretToSoldiersIndexMap = MAP[
+                                        (0,[1,2,3,4,5,]),
+                                        (1,[0,]),
+                                        (2,[6,]),
+                                      ]
+            InitialSoldiersToTurretIndexMap = MAP[
+                                        (0,[1,]),
+                                        (1,[0,]),
+                                        (2,[0,]),
+                                        (3,[0,]),
+                                        (4,[0,]),
+                                        (5,[0,]),
+                                        (6,[2,]),
+                                      ]
+            TurretWithOnlyOneSoldier = [1,2,]
+        ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // EffectApplier
+            ~/EffectApplierModuleSelector,
+
+        // Experience
+            TExperienceModuleDescriptor
+            (
+                ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple
+                CanWinExperience = True
+                ExperienceGainBySecond = ~/ExperienceGainBySecond
+                ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+            ),
+
+        // CameraShowroom
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'Inf'
+        ),
+
+    ]
+)
+
 export Descriptor_ShowRoomUnit_MotSchutzen_DDR is TEntityDescriptor
 (
     DescriptorId        = GUID:{b5a70992-ae2d-44da-a384-380a3f38e865}
@@ -35703,10 +35842,10 @@ export Descriptor_ShowRoomUnit_Tuto_MotRifles_SOV is TEntityDescriptor
                 (
                     NbSoldatInGroupeCombat = 7
                     SquadDataDescriptor = ~/SoldierSquadDataDescriptor
-                    InfantryMimeticName = 'Tuto_MotRifles_SOV'
-                    InfantryAlternativeName = 'Tuto_MotRifles_SOV'
-                    InfantryGhostMimeticName = 'Tuto_MotRifles_SOV_ghost'
-                    WeaponUnitFXKey     = 'Tuto_MotRifles_SOV'
+                    InfantryMimeticName = 'Tuto_MotRifles_VR_SOV'
+                    InfantryAlternativeName = 'Tuto_MotRifles_VR_SOV'
+                    InfantryGhostMimeticName = 'Tuto_MotRifles_VR_SOV_ghost'
+                    WeaponUnitFXKey     = 'Tuto_MotRifles_VR_SOV'
                     MimeticDescriptor   = ~/Descriptor_Unit_MimeticUnit
                     BoundingBoxSize     = 9 * Metre
                 )

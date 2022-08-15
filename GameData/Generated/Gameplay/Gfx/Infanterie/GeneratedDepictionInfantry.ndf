@@ -4191,6 +4191,68 @@ TacticDepiction_MotRifles_SOV_Ghost is TemplateInfantryDepictionFactoryGhost
   Surrogates = TacticDepiction_MotRifles_SOV_Surrogates
   Alternatives = TacticDepiction_MotRifles_SOV_Alternatives
 )
+// *****************************[ MotRifles_VR_SOV ]*********************************
+Gfx_MotRifles_VR_SOV is TemplateInfantryDepictionSquad
+(
+  SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_SOVIET
+)
+AllWeaponAlternatives_MotRifles_VR_SOV is [
+  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_AK74 ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_RPK ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_RPG7VR ),
+]
+AllWeaponSubDepiction_MotRifles_VR_SOV is TemplateAllSubWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_MotRifles_VR_SOV
+  Operators = [
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_FM_AK_74"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_1"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_SAW_RPK_74_5_56mm"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_2"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_RocketInf_RPG7VR_64mm"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_3"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_RocketInf_RPG7VL"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    ),
+  ]
+)
+AllWeaponSubDepictionBackpack_MotRifles_VR_SOV is TemplateAllSubBackpackWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_MotRifles_VR_SOV
+)
+TacticDepiction_MotRifles_VR_SOV_Surrogates is [['high', '01'], ['high', '02'], {['high', '03'],} ['high', '04'], ['high', '05'], ['high', '06']]
+TacticDepiction_MotRifles_VR_SOV_Alternatives is [
+  TDepictionDescriptor( SelectorId = ['high', '01'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_MotRifles_VR_SOV ) ),
+  TDepictionDescriptor( SelectorId = ['high', '02'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_MotRifles_VR_SOV_02 ) ),
+  //TDepictionDescriptor( SelectorId = ['high', '03'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_MotRifles_VR_SOV_03 ) ),
+  TDepictionDescriptor( SelectorId = ['high', '04'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_MotRifles_VR_SOV_04 ) ),
+  TDepictionDescriptor( SelectorId = ['high', '05'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_MotRifles_VR_SOV_05 ) ),
+  TDepictionDescriptor( SelectorId = ['high', '06'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_MotRifles_VR_SOV_06 ) ),
+  TDepictionDescriptor( SelectorId = ['low']  MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_MotRifles_VR_SOV_LOW ) ),
+]
+TacticDepiction_MotRifles_VR_SOV_Soldier is TemplateInfantryDepictionFactoryTactic
+(
+  Surrogates = TacticDepiction_MotRifles_VR_SOV_Surrogates
+  Alternatives = TacticDepiction_MotRifles_VR_SOV_Alternatives
+  SubDepictions = [AllWeaponSubDepiction_MotRifles_VR_SOV, AllWeaponSubDepictionBackpack_MotRifles_VR_SOV]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2') ] )]
+)
+TacticDepiction_MotRifles_VR_SOV_Ghost is TemplateInfantryDepictionFactoryGhost
+(
+  Surrogates = TacticDepiction_MotRifles_VR_SOV_Surrogates
+  Alternatives = TacticDepiction_MotRifles_VR_SOV_Alternatives
+)
 // *****************************[ MotSchutzen_DDR ]*********************************
 Gfx_MotSchutzen_DDR is TemplateInfantryDepictionSquad
 (
@@ -6686,7 +6748,9 @@ InfantryMimetic is MAP[
   ( 'MotRifles_Metis_SOV', TacticDepiction_MotRifles_Metis_SOV_Soldier ),
   ( 'MotRifles_Metis_SOV_ghost', TacticDepiction_MotRifles_Metis_SOV_Ghost ),
   ( 'MotRifles_SOV', TacticDepiction_MotRifles_SOV_Soldier ),
+  ( 'MotRifles_VR_SOV', TacticDepiction_MotRifles_VR_SOV_Soldier ),
   ( 'MotRifles_SOV_ghost', TacticDepiction_MotRifles_SOV_Ghost ),
+  ( 'MotRifles_VR_SOV_ghost', TacticDepiction_MotRifles_VR_SOV_Ghost ),
   ( 'MotSchutzen_DDR', TacticDepiction_MotSchutzen_DDR_Soldier ),
   ( 'MotSchutzen_DDR_ghost', TacticDepiction_MotSchutzen_DDR_Ghost ),
   ( 'Panzergrenadier_APC_RFA', TacticDepiction_Panzergrenadier_APC_RFA_Soldier ),
@@ -6854,6 +6918,7 @@ TransportedInfantryAlternativesCount is MAP[
   ('MotRifles_HMG_SOV', 6),
   ('MotRifles_Metis_SOV', 6),
   ('MotRifles_SOV', 6),
+  ('MotRifles_VR_SOV', 6),
   ('MotSchutzen_DDR', 6),
   ('Panzergrenadier_APC_RFA', 6),
   ('Panzergrenadier_CMD_RFA', 1),

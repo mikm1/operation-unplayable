@@ -1735,6 +1735,7 @@ is TUISpecificInGameUnitLabelViewDescriptor
     // Valeur de transparence de la version de l'étiquette pour les ghost
     GhostLabelVersionTransparency = 0.5
     GhostLabelDeploymentVersionTransparency = 0.9
+    CriticalsMaxListSize = 5
 
     // Taille relative de l'icône NATO
     UnitIconTextureNATOSize = 0.7

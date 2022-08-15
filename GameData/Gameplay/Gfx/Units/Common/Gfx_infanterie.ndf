@@ -250,6 +250,14 @@ export ModelFile_MotRifles_SOV_05 is SOV_MotoStrelki_2
 export ModelFile_MotRifles_SOV_06 is SOV_MotoStrelki_1
 export ModelFile_MotRifles_SOV_LOW is SOV_MotoStrelki_1_LOW
 
+//MotRifles_VR_SOV
+export ModelFile_MotRifles_VR_SOV is SOV_MotoStrelki_1
+export ModelFile_MotRifles_VR_SOV_02 is SOV_MotoStrelki_2
+export ModelFile_MotRifles_VR_SOV_03 is SOV_MotoStrelki_NCO
+export ModelFile_MotRifles_VR_SOV_04 is SOV_MotoStrelki_1
+export ModelFile_MotRifles_VR_SOV_05 is SOV_MotoStrelki_2
+export ModelFile_MotRifles_VR_SOV_06 is SOV_MotoStrelki_1
+export ModelFile_MotRifles_VR_SOV_LOW is SOV_MotoStrelki_1_LOW
 
 //Scout_LRRP_SOV
 export ModelFile_Scout_LRRP_SOV is SOV_MotoStrelki_1

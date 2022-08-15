@@ -18383,7 +18383,7 @@ export Ammo_Canon_HE_100mm_D10T_early is TAmmunitionDescriptor
     HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
     (
          DescriptorId          = GUID:{44274a5f-d63a-4d5e-88a7-3720146191fe}
-         BaseCriticModifier = 25
+         BaseCriticModifier = 0
          BaseEffectModifier = 0
          BaseHitValueModifiers =
          [
@@ -51955,7 +51955,7 @@ export Ammo_RocketArt_M21OF_122mm is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((1000) * Metre)
     DispersionAtMinRange              = ((1000) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((171) * Metre)
     PhysicalDamages                   = 1.83

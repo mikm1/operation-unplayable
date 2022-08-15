@@ -283,7 +283,7 @@ export ShowRoomEquivalenceManager is TShowRoomEquivalenceManager
         ( ~/Descriptor_Unit_MotRifles_HMG_DDR, ~/Descriptor_ShowRoomUnit_MotRifles_HMG_DDR ),
         ( ~/Descriptor_Unit_MotRifles_HMG_SOV, ~/Descriptor_ShowRoomUnit_MotRifles_HMG_SOV ),
         ( ~/Descriptor_Unit_MotRifles_Metis_SOV, ~/Descriptor_ShowRoomUnit_MotRifles_Metis_SOV ),
-        ( ~/Descriptor_Unit_MotRifles_VR_SOV, ~/Descriptor_ShowRoomUnit_MotRifles_SOV ),
+        ( ~/Descriptor_Unit_MotRifles_VR_SOV, ~/Descriptor_ShowRoomUnit_MotRifles_VR_SOV ),
         ( ~/Descriptor_Unit_MotRifles_SOV, ~/Descriptor_ShowRoomUnit_MotRifles_SOV ),
         ( ~/Descriptor_Unit_MotSchutzen_DDR, ~/Descriptor_ShowRoomUnit_MotSchutzen_DDR ),
         ( ~/Descriptor_Unit_Osa_9K33M3_DDR, ~/Descriptor_ShowRoomUnit_Osa_9K33M3_DDR ),
