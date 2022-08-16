@@ -74947,6 +74947,7 @@ export WeaponDescriptor_test is TWeaponManagerModuleDescriptor
         )
     ]
 )
+
 export WeaponDescriptor_MotRifles_VR_SOV is TWeaponManagerModuleDescriptor   //ADDED RPG-7VR MOTOS
 (
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
