@@ -30556,10 +30556,10 @@ Descriptor_UnitCadavre_T80BV_SOV is TEntityDescriptor
 
     ]
 )
-Descriptor_UnitCadavre_T80BV_TEST_SOV is TEntityDescriptor
+Descriptor_UnitCadavre_T80BV_nomissile_SOV is TEntityDescriptor
 (
     DescriptorId       = GUID:{31a6c0d9-3151-494d-8311-cdcf66d2a38f}
-    ClassNameForDebug  = 'Unit_CadavreT80BV_SOV'
+    ClassNameForDebug  = 'Unit_CadavreT80BV_nomissile_SOV'
     ModulesDescriptors = [
         // TypeUnit
             TTypeUnitModuleDescriptor
@@ -30626,20 +30626,20 @@ Descriptor_UnitCadavre_T80BV_TEST_SOV is TEntityDescriptor
                 InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
                 ModuleDescriptorsToSteal =
                 [
-                   $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/WeaponManager,
-                   $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/ApparenceModel,
-                   $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/LandMovement,
-                   $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/GenericMovement,
-                   $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/FacingInfos,
-                   $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/MissileCarriage,
+                   $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/WeaponManager,
+                   $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/ApparenceModel,
+                   $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/LandMovement,
+                   $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/GenericMovement,
+                   $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/FacingInfos,
+                   //$/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/MissileCarriage,
                 ]
             ),
-            $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/WeaponManager,
-            $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/ApparenceModel,
-            $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/LandMovement,
-            $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/GenericMovement,
-            $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/FacingInfos,
-            $/GFX/Everything/Descriptor_Unit_T80BV_TEST_SOV/MissileCarriage,
+            $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/WeaponManager,
+            $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/ApparenceModel,
+            $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/LandMovement,
+            $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/GenericMovement,
+            $/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/FacingInfos,
+            //$/GFX/Everything/Descriptor_Unit_T80BV_nomissile_SOV/MissileCarriage,
 
         // PackSignaux
             ~/PackSignauxModuleDescriptor,
@@ -30734,6 +30734,97 @@ Descriptor_UnitCadavre_T80B_SOV is TEntityDescriptor
             $/GFX/Everything/Descriptor_Unit_T80B_SOV/GenericMovement,
             $/GFX/Everything/Descriptor_Unit_T80B_SOV/FacingInfos,
             $/GFX/Everything/Descriptor_Unit_T80B_SOV/MissileCarriage,
+
+        // PackSignaux
+            ~/PackSignauxModuleDescriptor,
+
+        // Debug
+            ~/DebugModuleDescriptor,
+
+    ]
+)
+Descriptor_UnitCadavre_T80B_nomissile_SOV is TEntityDescriptor
+(
+    DescriptorId       = GUID:{60384553-b1bb-444e-870a-3b4879dc8ac1}
+    ClassNameForDebug  = 'Unit_CadavreT80B_nomissile_SOV'
+    ModulesDescriptors = [
+        // TypeUnit
+            TTypeUnitModuleDescriptor
+            (
+                TypeUnitValue                    = ETypeUnit/MBT
+                Nationalite                      = ENationalite/Axis
+                MotherCountry                    = 'SOV'
+                AcknowUnitType                   = ~/TAcknowUnitType_Tank
+                TypeUnitFormation                = 'Char'
+            ),
+
+        // Tags
+            TTagsModuleDescriptor
+            (
+            ),
+
+        // Flags
+            TFlagsModuleDescriptor
+            (
+                InitialFlagSet =
+                [
+                    Flag_Detectable,
+                    Flag_LdDetectable,
+                ]
+            ),
+
+        // Position
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((30) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // Cadavre
+            TCadavreModuleDescriptor
+            (
+                ExplodeAtEnd = True
+                KillAsVehicule = True
+                KillAsInfanterie = False
+                KillAsHelico = False
+                KillAsAirplane = False
+                KillAsBatiment = False
+                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+                DisappearanceDuration = 0.0
+                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum
+                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum
+                FadingDuration = 1
+                DamageRatio = 1.
+                DeathExplosionAmmo = ~/Ammo_Mort_Unite_forte
+                SecondaryDeathExplosionAmmo = nil
+                InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
+                ModuleDescriptorsToSteal =
+                [
+                   $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/WeaponManager,
+                   $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/ApparenceModel,
+                   $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/LandMovement,
+                   $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/GenericMovement,
+                   $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/FacingInfos,
+                ]
+            ),
+            $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/WeaponManager,
+            $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/ApparenceModel,
+            $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/LandMovement,
+            $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/GenericMovement,
+            $/GFX/Everything/Descriptor_Unit_T80B_nomissile_SOV/FacingInfos,
 
         // PackSignaux
             ~/PackSignauxModuleDescriptor,

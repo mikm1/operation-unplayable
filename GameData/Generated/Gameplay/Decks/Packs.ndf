@@ -8320,7 +8320,7 @@ export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_SOV is TDeckPackDesc
     ]
 )
 
-export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_TEST_SOV is TDeckPackDescriptor
+export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_nomissile_SOV is TDeckPackDescriptor
 (
     DescriptorId = GUID:{30c95e8c-5895-4e06-9558-28077b58eea3}
     TransporterAndUnitsList =
@@ -8329,7 +8329,7 @@ export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_TEST_SOV is TDeckPac
         (
             UnitDescriptorList =
             [
-                ~/Descriptor_Unit_T80BV_TEST_SOV,
+                ~/Descriptor_Unit_T80BV_nomissile_SOV,
             ]
         ),
     ]
@@ -8345,6 +8345,20 @@ export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_SOV is TDeckPackDescr
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_T80B_SOV,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_nomissile_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8a99dbe1-5bcb-4741-b0ff-30fef31add2e}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_T80B_nomissile_SOV,
             ]
         ),
     ]

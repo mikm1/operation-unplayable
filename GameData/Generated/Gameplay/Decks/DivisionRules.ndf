@@ -5189,7 +5189,7 @@ private DivisionRules is TDeckDivisionRules
                     ),
                     TDeckUniteRule
                     (
-                        UnitDescriptor = ~/Descriptor_Unit_T80BV_TEST_SOV
+                        UnitDescriptor = ~/Descriptor_Unit_T80BV_nomissile_SOV
                         AvailableWithoutTransport = True
                         MaxPackNumber = 5
                         NumberOfUnitInPack = 6
@@ -5198,6 +5198,14 @@ private DivisionRules is TDeckDivisionRules
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_T80B_SOV
+                        AvailableWithoutTransport = True
+                        MaxPackNumber = 1
+                        NumberOfUnitInPack = 9
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
+                    ),
+                    TDeckUniteRule
+                    (
+                        UnitDescriptor = ~/Descriptor_Unit_T80B_nomissile_SOV
                         AvailableWithoutTransport = True
                         MaxPackNumber = 1
                         NumberOfUnitInPack = 9

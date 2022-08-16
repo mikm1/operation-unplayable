@@ -1131,12 +1131,17 @@ Alternatives_T80BV_SOV is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_T80BV_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_T80BV_SOV_LOW DisabledOperators = [ 'tourelle2', 'tourelle4' ] ),
 ]
-Alternatives_T80BV_TEST_SOV is [
+Alternatives_T80BV_nomissile_SOV is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_T80BV_SOV ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_T80BV_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_T80BV_SOV_LOW DisabledOperators = [ 'tourelle2', 'tourelle4' ] ),
 ]
 Alternatives_T80B_SOV is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_T80B_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_T80B_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_T80B_SOV_LOW DisabledOperators = [ 'tourelle2', 'tourelle4' ] ),
+]
+Alternatives_T80B_nomissile_SOV is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_T80B_SOV ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_T80B_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_T80B_SOV_LOW DisabledOperators = [ 'tourelle2', 'tourelle4' ] ),

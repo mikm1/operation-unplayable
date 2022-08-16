@@ -21,52 +21,30 @@ is TCriticalEffectModuleDescriptor
 
     EffectsOnFront = 
     [
-        CriticalEffect_TracksBroken(Roll = (1,2)), //no rotation
-        CriticalEffect_TurretStuck(Roll = (3,7)),
-        CriticalEffect_SightDamaged(Roll = (8,12)), // Laser range damaged -> Précision 0.5
-        CriticalEffect_LoaderWounded(Roll = (13,15)), // Gun breech damaged -> reload *0.5
-        CriticalEffect_CompReset(Roll = (16,16)),// Computer reset -> Précision 0.5
-        CriticalEffect_ShooterKO(Roll = (17,17)),//Armes stop 10sec
-        CriticalEffect_LoaderKO(Roll = (18,18)),//no reload 10sec
-        CriticalEffect_DriverKO(Roll = (19,20)),//Full stop 10sec
-        CriticalEffect_Bounce(Roll = (21,100)),
+        CriticalEffect_TurretStuck(Roll = (1,2)),
+        CriticalEffect_SightDamaged(Roll = (3,4)), // Laser range damaged -> Précision 0.5
+        CriticalEffect_CompReset(Roll = (5,5)),// Computer reset -> Précision 0.5
+        CriticalEffect_Bounce(Roll = (6,100)),
     ]
     EffectsOnSides = 
     [
-        //CriticalEffect_CrewPanicked(Roll = (1,5)), //Deroute
-        CriticalEffect_TracksBroken(Roll = (1,15)), //no rotation
-        CriticalEffect_TurretStuck(Roll = (16,20)),
-        CriticalEffect_EngineDamaged(Roll = (21,23)), //50% vitesse
-        CriticalEffect_TransmissionDamaged(Roll = (24,25)), //50% vitesse
-        CriticalEffect_LoaderWounded(Roll = (26,26)), // Gun breech damaged -> reload *0.5
-        CriticalEffect_CompReset(Roll = (27,27)),// Computer reset -> Précision 0.5
-        CriticalEffect_ShooterKO(Roll = (28,28)),//Armes stop 10sec
-        CriticalEffect_LoaderKO(Roll = (29,29)),//no reload 10sec
-        CriticalEffect_DriverKO(Roll = (30,30)),//Full stop 10sec
-        CriticalEffect_Bounce(Roll = (31,100)),
+        CriticalEffect_TracksBroken(Roll = (1,4)), //no rotation
+        CriticalEffect_TurretStuck(Roll = (5,6)),
+        CriticalEffect_EngineDamaged(Roll = (7,7)), //50% vitesse
+        CriticalEffect_CompReset(Roll = (8,8)),// Computer reset -> Précision 0.5
+        CriticalEffect_Bounce(Roll = (9,100)),
     ]
     EffectsOnRear = 
     [
-        //CriticalEffect_CrewPanicked(Roll = (1,10)), //Deroute
-        CriticalEffect_TracksBroken(Roll = (1,4)), //no rotation
-        CriticalEffect_TurretStuck(Roll = (5,10)),
-        CriticalEffect_EngineDamaged(Roll = (11,17)), //50% vitesse
-        CriticalEffect_TransmissionDamaged(Roll = (18,27)), //50% vitesse
-        CriticalEffect_CompReset(Roll = (28,28)),// Computer reset -> Précision 0.5
-        CriticalEffect_LoaderKO(Roll = (29,30)),//no reload 10sec
-        CriticalEffect_Bounce(Roll = (31,100)),
+        CriticalEffect_TurretStuck(Roll = (1,2)),
+        CriticalEffect_EngineDamaged(Roll = (3,4)), //50% vitesse
+        CriticalEffect_TransmissionDamaged(Roll = (5,6)), //50% vitesse
+        CriticalEffect_CompReset(Roll = (7,8)),// Computer reset -> Précision 0.5
+        CriticalEffect_Bounce(Roll = (9,100)),
     ]
     EffectsOnTop = 
     [
-        CriticalEffect_TracksBroken(Roll = (1,2)), //no rotation
-        CriticalEffect_TurretStuck(Roll = (3,7)),
-        CriticalEffect_SightDamaged(Roll = (8,12)), // Laser range damaged -> Précision 0.5
-        CriticalEffect_LoaderWounded(Roll = (13,15)), // Gun breech damaged -> reload *0.5
-        CriticalEffect_CompReset(Roll = (16,16)),// Computer reset -> Précision 0.5
-        CriticalEffect_ShooterKO(Roll = (17,17)),//Armes stop 10sec
-        CriticalEffect_LoaderKO(Roll = (18,18)),//no reload 10sec
-        CriticalEffect_DriverKO(Roll = (19,20)),//Full stop 10sec
-        CriticalEffect_Bounce(Roll = (21,100)),
+        
     ]
 
     PierceEffectsOnFront = //<PackEffetCritique>

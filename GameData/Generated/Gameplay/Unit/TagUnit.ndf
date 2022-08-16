@@ -2690,15 +2690,20 @@ TagWrapper_UNITE_T80BV_SOV is TTagWrapper
     DescriptorId = GUID:{9b61e952-f907-4e28-b90e-ba8b9663f34c}
     Tag = "UNITE_T80BV_SOV"
 )
-TagWrapper_UNITE_T80BV_TEST_SOV is TTagWrapper
+TagWrapper_UNITE_T80BV_nomissile_SOV is TTagWrapper
 (
     DescriptorId = GUID:{137f97ec-a1bd-4ab9-bb8e-44406e81a9f2}
-    Tag = "UNITE_T80BV_TEST_SOV"
+    Tag = "UNITE_T80BV_nomissile_SOV"
 )
 TagWrapper_UNITE_T80B_SOV is TTagWrapper
 (
     DescriptorId = GUID:{97348b74-2341-4a02-8476-a673f13377c5}
     Tag = "UNITE_T80B_SOV"
+)
+TagWrapper_UNITE_T80B_nomissile_SOV is TTagWrapper
+(
+    DescriptorId = GUID:{8bfd3070-4939-42d7-a2cc-8d3c30d04cd4}
+    Tag = "UNITE_T80B_nomissile_SOV"
 )
 TagWrapper_UNITE_T80U_CMD_SOV is TTagWrapper
 (
@@ -5460,10 +5465,20 @@ TagWrapper_OnProduction_T80BV_SOV is TTagWrapper
     DescriptorId = GUID:{fa8bb060-73b7-4505-bcdf-7cf2dafe1404}
     Tag = "OnProduction_T80BV_SOV"
 )
+TagWrapper_OnProduction_T80BV_nomissile_SOV is TTagWrapper
+(
+    DescriptorId = GUID:{4562a312-226b-42a2-8047-e1d38a1f1807}
+    Tag = "OnProduction_T80BV_nomissile_SOV"
+)
 TagWrapper_OnProduction_T80B_SOV is TTagWrapper
 (
     DescriptorId = GUID:{6fe4023a-a522-4537-a7a6-69085395ebf4}
     Tag = "OnProduction_T80B_SOV"
+)
+TagWrapper_OnProduction_T80B_nomissile_SOV is TTagWrapper
+(
+    DescriptorId = GUID:{33ca0481-493b-4d1a-86cf-ecb21db920fe}
+    Tag = "OnProduction_T80B_nomissile_SOV"
 )
 TagWrapper_OnProduction_T80U_CMD_SOV is TTagWrapper
 (

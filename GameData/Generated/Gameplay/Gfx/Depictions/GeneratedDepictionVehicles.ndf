@@ -12189,25 +12189,26 @@ DepictionOperator_T80BV_CMD_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_CMD_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T80BV_CMD_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle1_tir_01"]
+    Connoisseur = MissileCarriage_T80BV_CMD_SOV
+    WeaponIndex = 1
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_CMD_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80BV_CMD_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Connoisseur = MissileCarriage_T80BV_CMD_SOV
-    WeaponIndex = 1
-    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
-    NbProj = 1
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
 )
 DepictionOperator_T80BV_CMD_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle2_tir_01"]
+    Anchors = ["fx_tourelle4_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
@@ -12250,9 +12251,9 @@ Gfx_T80BV_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_125_mm_2A46M_T80B ),
                 ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
-                ( [ "weapon_effet_tag3" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
-                ( [ "weapon_effet_tag4" ], Weapon_ATGM_9M112_1_Kobra ),
-                ( [ "weapon_effet_tag5" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_9M112_1_Kobra ),
+                ( [ "weapon_effet_tag4" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag5" ], Weapon_MMG_PKT_7_62mm ),
                 ( [ "weapon_effet_tag6" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -12275,25 +12276,26 @@ DepictionOperator_T80BV_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T80BV_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle1_tir_01"]
+    Connoisseur = MissileCarriage_T80BV_SOV
+    WeaponIndex = 1
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80BV_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Connoisseur = MissileCarriage_T80BV_SOV
-    WeaponIndex = 1
-    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
-    NbProj = 1
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
 )
 DepictionOperator_T80BV_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle2_tir_01"]
+    Anchors = ["fx_tourelle4_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
@@ -12336,9 +12338,9 @@ Gfx_T80BV_SOV_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_125_mm_2A46M_T80B ),
                 ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
-                ( [ "weapon_effet_tag3" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
-                ( [ "weapon_effet_tag4" ], Weapon_ATGM_9M112_1_Kobra ),
-                ( [ "weapon_effet_tag5" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_9M112_1_Kobra ),
+                ( [ "weapon_effet_tag4" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag5" ], Weapon_MMG_PKT_7_62mm ),
                 ( [ "weapon_effet_tag6" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -12346,56 +12348,56 @@ Gfx_T80BV_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_Heat_1
 )
-// Dépiction de l'unité T80BV_TEST_SOV
-DepictionOperator_T80BV_TEST_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
+// Dépiction de l'unité T80BV_nomissile_SOV
+DepictionOperator_T80BV_nomissile_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag1"
     Anchors = ["fx_tourelle1_tir_01"]
     WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_TEST_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T80BV_nomissile_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag2"
     Anchors = ["fx_tourelle1_tir_01"]
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_TEST_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T80BV_nomissile_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag3"
     Anchors = ["fx_tourelle1_tir_01"]
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80BV_TEST_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80BV_nomissile_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Connoisseur = MissileCarriage_T80BV_SOV
-    WeaponIndex = 1
-    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
-    NbProj = 1
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
 )
-DepictionOperator_T80BV_TEST_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_T80BV_nomissile_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle2_tir_01"]
+    Anchors = ["fx_tourelle4_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
 )
-DepictionOperator_T80BV_TEST_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T80BV_nomissile_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
     WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
     NbProj = 1
 )
-Gfx_T80BV_TEST_SOV_Autogen is TacticVehicleDepictionTemplate
+Gfx_T80BV_nomissile_SOV_Autogen is TacticVehicleDepictionTemplate
 (
-    CoatingName = 'T80BV_TEST_SOV'
-    Selector = Selector_T80BV_TEST_SOV
-    Alternatives = Alternatives_T80BV_TEST_SOV
+    CoatingName = 'T80BV_nomissile_SOV'
+    Selector = Selector_T80BV_nomissile_SOV
+    Alternatives = Alternatives_T80BV_nomissile_SOV
 
     Operators = 
     [
@@ -12404,11 +12406,12 @@ Gfx_T80BV_TEST_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_1_HydraulicRecoil,
         DepictionOperator_Turret_2_Aim,
         DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
-        DepictionOperator_T80BV_TEST_SOV_Weapon1,
-        DepictionOperator_T80BV_TEST_SOV_Weapon2,
-        DepictionOperator_T80BV_TEST_SOV_Weapon3,
-        DepictionOperator_T80BV_TEST_SOV_Weapon4,
-        DepictionOperator_T80BV_TEST_SOV_Weapon6,
+        DepictionOperator_T80BV_nomissile_SOV_Weapon1,
+        DepictionOperator_T80BV_nomissile_SOV_Weapon2,
+        DepictionOperator_T80BV_nomissile_SOV_Weapon3,
+        DepictionOperator_T80BV_nomissile_SOV_Weapon4,
+        DepictionOperator_T80BV_nomissile_SOV_Weapon5,
+        DepictionOperator_T80BV_nomissile_SOV_Weapon6,
         DepictionOperator_CropFlattening,
         DepictionOperator_MovementSound_SM_T80,
         DepictionOperator_CriticalEffects,
@@ -12422,8 +12425,8 @@ Gfx_T80BV_TEST_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_125_mm_2A46M_T80B ),
                 ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
                 ( [ "weapon_effet_tag3" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
-                ( [ "weapon_effet_tag4" ], Weapon_ATGM_9M112_1_Kobra ),
-                ( [ "weapon_effet_tag5" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag4" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag5" ], Weapon_MMG_PKT_7_62mm ),
                 ( [ "weapon_effet_tag6" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -12446,25 +12449,26 @@ DepictionOperator_T80B_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80B_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T80B_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle1_tir_01"]
+    Connoisseur = MissileCarriage_T80B_SOV
+    WeaponIndex = 1
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80B_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80B_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Connoisseur = MissileCarriage_T80B_SOV
-    WeaponIndex = 1
-    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
-    NbProj = 1
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
 )
 DepictionOperator_T80B_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle2_tir_01"]
+    Anchors = ["fx_tourelle4_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
@@ -12518,9 +12522,9 @@ Gfx_T80B_SOV_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_125_mm_2A46M_T80B ),
                 ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
-                ( [ "weapon_effet_tag3" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
-                ( [ "weapon_effet_tag4" ], Weapon_ATGM_9M112_1_Kobra ),
-                ( [ "weapon_effet_tag5" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_9M112_1_Kobra ),
+                ( [ "weapon_effet_tag4" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag5" ], Weapon_MMG_PKT_7_62mm ),
                 ( [ "weapon_effet_tag6" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -12528,6 +12532,104 @@ Gfx_T80B_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_Heat_1
             + Eject_Actions_T80B_SOV
+)
+// Dépiction de l'unité T80B_nomissile_SOV
+DepictionOperator_T80B_nomissile_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+    NbProj = 1
+)
+DepictionOperator_T80B_nomissile_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+    NbProj = 1
+)
+DepictionOperator_T80B_nomissile_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag3"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_T80B_nomissile_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_T80B_nomissile_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+    NbFX = 1
+)
+DepictionOperator_T80B_nomissile_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag6"
+    Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
+    NbProj = 1
+)
+Gfx_T80B_nomissile_SOV_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'T80B_nomissile_SOV'
+    Selector = Selector_T80B_nomissile_SOV
+    Alternatives = Alternatives_T80B_nomissile_SOV
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_T80,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_HeavyTank,
+        DepictionOperator_Propulsion_ContinuousTrack,
+        DepictionOperator_MovementFX_Standard,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_TurretSound_ST_T64_T72_T80,
+        DepictionOperator_Turret_1_HydraulicRecoil,
+        DepictionOperator_Turret_2_Aim,
+        DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
+        DepictionOperator_T80B_nomissile_SOV_Weapon1,
+        DepictionOperator_T80B_nomissile_SOV_Weapon2,
+        DepictionOperator_T80B_nomissile_SOV_Weapon3,
+        DepictionOperator_T80B_nomissile_SOV_Weapon4,
+        DepictionOperator_T80B_nomissile_SOV_Weapon5,
+        DepictionOperator_T80B_nomissile_SOV_Weapon6,
+        DepictionOperator_Heat_1,
+        DepictionOperator_EjectableProps_Vehicle
+        (
+            AdditionalEjectableNodes = 
+            [
+                "tourelle_01",
+                "tourelle_02",
+            ]
+            ArmorPlateCount = 0
+            PropCount = 3
+            TrapdoorCount = 0
+        ),
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_125_mm_2A46M_T80B ),
+                ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
+                ( [ "weapon_effet_tag3" ], Weapon_Canon_HE_125_mm_2A46M_T80B ),
+                ( [ "weapon_effet_tag4" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag5" ], Weapon_MMG_PKT_7_62mm ),
+                ( [ "weapon_effet_tag6" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Tracked
+            + DepictionAction_CriticalFX_Tank
+            + DepictionAction_Heat_1
+            //+ Eject_Actions_T80B_SOV
 )
 // Dépiction de l'unité T80U_CMD_SOV
 DepictionOperator_T80U_CMD_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -12544,25 +12646,26 @@ DepictionOperator_T80U_CMD_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_T80U_CMD_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
+DepictionOperator_T80U_CMD_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle1_tir_01"]
+    Connoisseur = MissileCarriage_T80U_CMD_SOV
+    WeaponIndex = 1
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80U_CMD_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80U_CMD_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Connoisseur = MissileCarriage_T80U_CMD_SOV
-    WeaponIndex = 1
-    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
-    NbProj = 1
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
 )
 DepictionOperator_T80U_CMD_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle2_tir_01"]
+    Anchors = ["fx_tourelle4_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
@@ -12605,9 +12708,9 @@ Gfx_T80U_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_125_mm_2A46M_late ),
                 ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_125_mm_2A46M_late ),
-                ( [ "weapon_effet_tag3" ], Weapon_Canon_HE_125_mm_2A46M_late ),
-                ( [ "weapon_effet_tag4" ], Weapon_ATGM_9M119M_Refleks ),
-                ( [ "weapon_effet_tag5" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_9M119M_Refleks ),
+                ( [ "weapon_effet_tag4" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag5" ], Weapon_MMG_PKT_7_62mm ),
                 ( [ "weapon_effet_tag6" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
             + DepictionAction_Stress_And_Wrecked
@@ -12637,18 +12740,18 @@ DepictionOperator_T80U_SOV_Weapon3 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
     NbProj = 1
 )
-DepictionOperator_T80U_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+DepictionOperator_T80U_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Connoisseur = MissileCarriage_T80U_SOV
-    WeaponIndex = 1
-    WeaponShootDataPropertyName = ["WeaponShootData_0_4", ]
-    NbProj = 1
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
 )
 DepictionOperator_T80U_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle2_tir_01"]
+    Anchors = ["fx_tourelle4_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_5"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
     NbFX = 1
@@ -12691,9 +12794,9 @@ Gfx_T80U_SOV_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_125_mm_2A46M_late ),
                 ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_125_mm_2A46M_late ),
-                ( [ "weapon_effet_tag3" ], Weapon_Canon_HE_125_mm_2A46M_late ),
-                ( [ "weapon_effet_tag4" ], Weapon_ATGM_9M119M_Refleks ),
-                ( [ "weapon_effet_tag5" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_9M119M_Refleks ),
+                ( [ "weapon_effet_tag4" ], Weapon_HMG_12_7_mm_NSVT ),
+                ( [ "weapon_effet_tag5" ], Weapon_MMG_PKT_7_62mm ),
                 ( [ "weapon_effet_tag6" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
             + DepictionAction_Stress_And_Wrecked

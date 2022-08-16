@@ -340,6 +340,7 @@ private UnitToUnitTag is TUnitToUnitTagForIAStrat
         ( ~/Descriptor_Unit_T72_DDR, "UNITE_T72_DDR" ),
         ( ~/Descriptor_Unit_T80BV_CMD_SOV, "UNITE_T80BV_CMD_SOV" ),
         ( ~/Descriptor_Unit_T80BV_SOV, "UNITE_T80BV_SOV" ),
+        ( ~/Descriptor_Unit_T80BV_nomissile_SOV, "UNITE_T80BV_nomissile_SOV" ),
         ( ~/Descriptor_Unit_T80B_SOV, "UNITE_T80B_SOV" ),
         ( ~/Descriptor_Unit_T80U_CMD_SOV, "UNITE_T80U_CMD_SOV" ),
         ( ~/Descriptor_Unit_T80U_SOV, "UNITE_T80U_SOV" ),

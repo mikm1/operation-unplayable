@@ -1552,10 +1552,20 @@ Gfx_T80BV_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Alternatives = Alternatives_T80BV_SOV
     Selector = Selector_T80BV_SOV
 )
+Gfx_T80BV_nomissile_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_T80BV_nomissile_SOV
+    Selector = Selector_T80BV_nomissile_SOV
+)
 Gfx_T80B_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
     Alternatives = Alternatives_T80B_SOV
     Selector = Selector_T80B_SOV
+)
+Gfx_T80B_nomissile_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_T80B_nomissile_SOV
+    Selector = Selector_T80B_nomissile_SOV
 )
 Gfx_T80U_CMD_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (

@@ -951,7 +951,8 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Mi_8_supply_DDR, 1770),
         (Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_MotRifles_VR_SOV, 5000), //new units ~MM
 	    (Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_VR_SOV, 50001),
-        (Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_TEST_SOV, 5002),
+        (Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_nomissile_SOV, 50002),
+        (Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_nomissile_SOV, 50003),
     ]
     UnitIds = MAP
     [
@@ -1505,6 +1506,7 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Unit_F111F_Aardvark_LGB2_US, 915),
         (Descriptor_Unit_F111F_Aardvark_LGB_US, 916),
         (Descriptor_Unit_MotRifles_VR_SOV, 4000), //new units ~MM
-        (Descriptor_Unit_T80BV_TEST_SOV, 4001),
+        (Descriptor_Unit_T80BV_nomissile_SOV, 4001),
+        (Descriptor_Unit_T80B_nomissile_SOV, 4002),
     ]
 )
