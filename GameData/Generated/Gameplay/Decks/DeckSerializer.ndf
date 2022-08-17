@@ -953,6 +953,8 @@ DeckSerializer is TDeckSerializer
 	    (Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_VR_SOV, 50001),
         (Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_nomissile_SOV, 50002),
         (Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_nomissile_SOV, 50003),
+	    (Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_Fagot_SOV, 50004),
+
     ]
     UnitIds = MAP
     [
@@ -1508,5 +1510,8 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Unit_MotRifles_VR_SOV, 4000), //new units ~MM
         (Descriptor_Unit_T80BV_nomissile_SOV, 4001),
         (Descriptor_Unit_T80B_nomissile_SOV, 4002),
+        (Descriptor_Unit_MotRifles_Fagot_SOV, 4003),
+        (Descriptor_Unit_BMP_1P_nomissile_SOV, 4004),
+
     ]
 )

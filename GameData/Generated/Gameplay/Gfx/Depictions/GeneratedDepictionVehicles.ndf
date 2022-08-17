@@ -1998,6 +1998,7 @@ Gfx_BMP_1P_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_Heat_1
 
     SubDepictionGenerators = [ TransportedInfantrySubGenerator ])
+
 // Dépiction de l'unité BMP_1P_reco_DDR
 DepictionOperator_BMP_1P_reco_DDR_Weapon1 is DepictionOperator_WeaponInstantFire
 (
@@ -2066,6 +2067,64 @@ Gfx_BMP_1P_reco_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_Heat_1
 
     SubDepictionGenerators = [ SubGenerators_BMP_1P_reco_DDR, TransportedInfantrySubGenerator ])
+    // Dépiction de l'unité BMP_1P_nomissile_SOV
+DepictionOperator_BMP_1P_nomissile_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+    NbProj = 1
+)
+DepictionOperator_BMP_1P_nomissile_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+    NbProj = 1
+)
+DepictionOperator_BMP_1P_nomissile_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+Gfx_BMP_1P_nomissile_SOV_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'BMP_1P_nomissile_SOV'
+    Selector = Selector_BMP_1P_nomissile_SOV
+    Alternatives = Alternatives_BMP_1P_nomissile_SOV
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_Bmp1,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_SmallTank,
+        DepictionOperator_Propulsion_ContinuousTrack,
+        DepictionOperator_MovementFX_Standard,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_TurretSound_ST_BMP,
+        DepictionOperator_Turret_1_HydraulicRecoil,
+        DepictionOperator_Turret_4_Aim,
+        DepictionOperator_BMP_1P_nomissile_SOV_Weapon1,
+        DepictionOperator_BMP_1P_nomissile_SOV_Weapon2,
+        DepictionOperator_BMP_1P_nomissile_SOV_Weapon4,
+        DepictionOperator_Heat_1,
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_73_mm_2A28_Grom ),
+                ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_73_mm_2A28_Grom ),
+                ( [ "weapon_effet_tag4" ], Weapon_MMG_PKT_7_62mm ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Tracked
+            + DepictionAction_CriticalFX_Tank
+            + DepictionAction_Heat_1
+
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator ])
 // Dépiction de l'unité BMP_1P_reco_SOV
 DepictionOperator_BMP_1P_reco_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
 (

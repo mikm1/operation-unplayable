@@ -221,6 +221,11 @@ Alternatives_BMP_1P_SOV is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_BMP_1P_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_BMP_1P_SOV_LOW ),
 ]
+Alternatives_BMP_1P_nomissile_SOV is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_BMP_1P_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_BMP_1P_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_BMP_1P_SOV_LOW ),
+]
 Alternatives_BMP_1P_reco_DDR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_BMP_1P_reco_DDR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_BMP_1P_reco_DDR_MID ),

@@ -8123,6 +8123,21 @@ export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_VR_SOV is TDeckP
     ]
 )
 
+export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_Fagot_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{a656a8fa-1c2e-4b5d-8224-de8db2a74df2}
+    TransporterAndUnitsList =
+   [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MotRifles_Fagot_SOV,
+            ]
+       ),
+    ]
+)
+
 export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Osa_9K33M3_SOV is TDeckPackDescriptor
 (
     DescriptorId = GUID:{c3effeb2-f36f-4cad-b998-0bf55ab2a29c}

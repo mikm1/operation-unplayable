@@ -836,6 +836,7 @@ export Descriptor_Deck_Division_SOV_79_Gds_Tank_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_Metis_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_SOV, 4),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_VR_SOV, 1),
+        (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_Fagot_SOV, 1),
         //(~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Osa_9K33M3_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Scout_LRRP_SOV, 1),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Scout_SOV, 2),

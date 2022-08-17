@@ -5072,6 +5072,15 @@ private DivisionRules is TDeckDivisionRules
                         NumberOfUnitInPack = 9
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
                     ),
+                    TDeckUniteRule
+                    (
+                        UnitDescriptor = ~/Descriptor_Unit_MotRifles_Fagot_SOV
+                        AvailableWithoutTransport = False
+                        AvailableTransportList = [~/Descriptor_Unit_BMP_1P_nomissile_SOV]
+                        MaxPackNumber = 1
+                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
+                    ),
                     {TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Osa_9K33M3_SOV
@@ -5320,6 +5329,11 @@ private DivisionRules is TDeckDivisionRules
                     TDeckTransportRule
                     (
                         TransportDescriptor = ~/Descriptor_Unit_MTLB_transp_SOV
+                        MaxNumber = 1000
+                    ),
+                    TDeckTransportRule
+                    (
+                        TransportDescriptor = ~/Descriptor_Unit_BMP_1P_nomissile_SOV
                         MaxNumber = 1000
                     ),
                 ]

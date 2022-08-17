@@ -221,6 +221,11 @@ GhostDepiction_BMP_1P_SOV is GhostVehicleDepictionTemplate
     Selector = Selector_BMP_1P_SOV
     Alternatives = Alternatives_BMP_1P_SOV
 )
+GhostDepiction_BMP_1P_nomissile_SOV is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_BMP_1P_nomissile_SOV
+    Alternatives = Alternatives_BMP_1P_nomissile_SOV
+)
 GhostDepiction_BMP_1P_reco_DDR is GhostVehicleDepictionTemplate
 (
     Selector = Selector_BMP_1P_reco_DDR

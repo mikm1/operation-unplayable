@@ -1295,6 +1295,11 @@ TagWrapper_UNITE_BMP_1P_SOV is TTagWrapper
     DescriptorId = GUID:{0eadb89e-4811-4c41-8ea2-5950d6f76221}
     Tag = "UNITE_BMP_1P_SOV"
 )
+TagWrapper_UNITE_BMP_1P_nomissile_SOV is TTagWrapper
+(
+    DescriptorId = GUID:{55c6a2a2-5d60-45ec-911a-e880f75c5e94}
+    Tag = "UNITE_BMP_1P_nomissile_SOV"
+)
 TagWrapper_UNITE_BMP_1P_reco_DDR is TTagWrapper
 (
     DescriptorId = GUID:{67ba8a1f-8c55-413b-a45a-f73d10be0b18}
@@ -2379,6 +2384,11 @@ TagWrapper_UNITE_MotRifles_VR_SOV is TTagWrapper
 (
     DescriptorId = GUID:{a93df472-6dd8-41e5-a994-3384bed0ceaa}
     Tag = "UNITE_MotRifles_VR_SOV"
+)
+TagWrapper_UNITE_MotRifles_Fagot_SOV is TTagWrapper
+(
+    DescriptorId = GUID:{1634d25f-05bc-4d28-95c9-625886c3a733}
+    Tag = "UNITE_MotRifles_Fagot_SOV"
 )
 TagWrapper_UNITE_MotRifles_CMD_DDR is TTagWrapper
 (
@@ -4074,6 +4084,11 @@ TagWrapper_OnProduction_BMP_1P_SOV is TTagWrapper
 (
     DescriptorId = GUID:{33c1c9f4-0d2d-49fd-b337-039c3629c18d}
     Tag = "OnProduction_BMP_1P_SOV"
+)
+TagWrapper_OnProduction_BMP_1P_nomissile_SOV is TTagWrapper
+(
+    DescriptorId = GUID:{7f607f67-b568-43fb-9bd1-2def36522d51}
+    Tag = "OnProduction_BMP_1P_nomissile_SOV"
 )
 TagWrapper_OnProduction_BMP_1P_reco_DDR is TTagWrapper
 (

@@ -261,6 +261,11 @@ Gfx_BMP_1P_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Alternatives = Alternatives_BMP_1P_SOV
     Selector = Selector_BMP_1P_SOV
 )
+Gfx_BMP_1P_nomissile_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_BMP_1P_nomissile_SOV
+    Selector = Selector_BMP_1P_nomissile_SOV
+)
 Gfx_BMP_1P_reco_DDR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
     Alternatives = Alternatives_BMP_1P_reco_DDR
