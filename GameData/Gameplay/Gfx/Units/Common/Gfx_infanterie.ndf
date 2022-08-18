@@ -471,6 +471,10 @@ export ModelFile_HvyScout_SOV_05 is SOV_MotoStrelki_Sniper
 export ModelFile_HvyScout_SOV_06 is SOV_MotoStrelki_spe
 export ModelFile_HvyScout_SOV_LOW is SOV_MotoStrelki_1_LOW
 
+//Scout_2man_SOV
+export ModelFile_Scout_2man_SOV is SOV_MotoStrelki_1
+export ModelFile_Scout_2man_SOV_02 is SOV_MotoStrelki_2
+export ModelFile_Scout_2man_SOV_LOW is SOV_MotoStrelki_1_LOW
 
 //Scout_VDV_SOV
 export ModelFile_Scout_VDV_SOV is SOV_VDV_1

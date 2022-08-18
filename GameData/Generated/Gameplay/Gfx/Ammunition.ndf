@@ -57924,7 +57924,7 @@ export Ammo_SMOKE_Vehicle_Grenadex8 is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 0.2
+    TempsDeVisee                      = 0.5
     TempsEntreDeuxSalves              = 4.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0

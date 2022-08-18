@@ -7827,6 +7827,20 @@ export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_HvyScout_SOV is TDeckPackD
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Scout_2man_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c2ef8039-9ade-4de0-add4-a9cd4014c090}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Scout_2man_SOV,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MANPAD_Igla_SOV is TDeckPackDescriptor
 (
     DescriptorId = GUID:{64ba3094-87f8-4512-adc9-f6a7ac909daf}

@@ -2886,6 +2886,47 @@ TacticDepiction_HvyScout_SOV_Ghost is TemplateInfantryDepictionFactoryGhost
   Surrogates = TacticDepiction_HvyScout_SOV_Surrogates
   Alternatives = TacticDepiction_HvyScout_SOV_Alternatives
 )
+// *****************************[ HvyScout_SOV ]*********************************
+Gfx_Scout_2man_SOV is TemplateInfantryDepictionSquad
+(
+  SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_SOVIET
+)
+AllWeaponAlternatives_Scout_2man_SOV is [
+  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_AKs74 ),
+]
+AllWeaponSubDepiction_Scout_2man_SOV is TemplateAllSubWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_Scout_2man_SOV
+  Operators = [
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_FM_AK_74"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_1"
+    ),
+  ]
+)
+AllWeaponSubDepictionBackpack_Scout_2man_SOV is TemplateAllSubBackpackWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_Scout_2man_SOV
+)
+TacticDepiction_Scout_2man_SOV_Surrogates is [['high', '01'], ['high', '02'] ]
+TacticDepiction_Scout_2man_SOV_Alternatives is [
+  TDepictionDescriptor( SelectorId = ['high', '01'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Scout_2man_SOV ) ),
+  TDepictionDescriptor( SelectorId = ['high', '02'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Scout_2man_SOV_02 ) ),
+  TDepictionDescriptor( SelectorId = ['low']  MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Scout_2man_SOV_LOW ) ),
+]
+TacticDepiction_Scout_2man_SOV_Soldier is TemplateInfantryDepictionFactoryTactic
+(
+  Surrogates = TacticDepiction_Scout_2man_SOV_Surrogates
+  Alternatives = TacticDepiction_Scout_2man_SOV_Alternatives
+  SubDepictions = [AllWeaponSubDepiction_Scout_2man_SOV, AllWeaponSubDepictionBackpack_Scout_2man_SOV]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2') ] )]
+)
+TacticDepiction_Scout_2man_SOV_Ghost is TemplateInfantryDepictionFactoryGhost
+(
+  Surrogates = TacticDepiction_Scout_2man_SOV_Surrogates
+  Alternatives = TacticDepiction_Scout_2man_SOV_Alternatives
+)
 // *****************************[ Jager_Aufk_RFA ]*********************************
 Gfx_Jager_Aufk_RFA is TemplateInfantryDepictionSquad
 (
@@ -6699,6 +6740,8 @@ InfantryMimetic is MAP[
   ( 'HvyScout_DDR_ghost', TacticDepiction_HvyScout_DDR_Ghost ),
   ( 'HvyScout_SOV', TacticDepiction_HvyScout_SOV_Soldier ),
   ( 'HvyScout_SOV_ghost', TacticDepiction_HvyScout_SOV_Ghost ),
+  ( 'Scout_2man_SOV', TacticDepiction_Scout_2man_SOV_Soldier ),
+  ( 'Scout_2man_SOV_ghost', TacticDepiction_Scout_2man_SOV_Ghost ),
   ( 'Jager_Aufk_RFA', TacticDepiction_Jager_Aufk_RFA_Soldier ),
   ( 'Jager_Aufk_RFA_ghost', TacticDepiction_Jager_Aufk_RFA_Ghost ),
   ( 'Jager_CMD_RFA', TacticDepiction_Jager_CMD_RFA_Soldier ),
@@ -6893,6 +6936,7 @@ TransportedInfantryAlternativesCount is MAP[
   ('HeimatschutzJager_RFA', 6),
   ('HvyScout_DDR', 6),
   ('HvyScout_SOV', 6),
+  ('Scout_2man_SOV', 2),
   ('Jager_Aufk_RFA', 6),
   ('Jager_CMD_RFA', 1),
   ('Jager_RFA', 6),
@@ -7310,6 +7354,8 @@ TransportedInfantryAlternatives is [
   AlternativeWithId( SelectorId = ['HvyScout_SOV', '04'] ModelFile = ModelFile_HvyScout_SOV_04 ),
   AlternativeWithId( SelectorId = ['HvyScout_SOV', '05'] ModelFile = ModelFile_HvyScout_SOV_05 ),
   AlternativeWithId( SelectorId = ['HvyScout_SOV', '06'] ModelFile = ModelFile_HvyScout_SOV_06 ),
+  AlternativeWithId( SelectorId = ['Scout_2man_SOV', '01'] ModelFile = ModelFile_Scout_2man_SOV ),
+  AlternativeWithId( SelectorId = ['Scout_2man_SOV', '02'] ModelFile = ModelFile_Scout_2man_SOV_02 ),
   AlternativeWithId( SelectorId = ['Jager_Aufk_RFA', '01'] ModelFile = ModelFile_Jager_Aufk_RFA ),
   AlternativeWithId( SelectorId = ['Jager_Aufk_RFA', '02'] ModelFile = ModelFile_Jager_Aufk_RFA_02 ),
   AlternativeWithId( SelectorId = ['Jager_Aufk_RFA', '03'] ModelFile = ModelFile_Jager_Aufk_RFA_03 ),

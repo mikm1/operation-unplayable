@@ -162,6 +162,7 @@ AllUnitsTactic is [
     ~/Descriptor_Unit_Howz_M46_130mm_SOV,
     ~/Descriptor_Unit_HvyScout_DDR,
     ~/Descriptor_Unit_HvyScout_SOV,
+    ~/Descriptor_Unit_Scout_2man_SOV,
     ~/Descriptor_Unit_Iltis_RFA,
     ~/Descriptor_Unit_Iltis_reco_RFA,
     ~/Descriptor_Unit_Iltis_trans_RFA,

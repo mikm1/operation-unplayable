@@ -44,7 +44,7 @@ export StandardSupply is TSupplyDescriptor
     SupplySupplyCostBySecond = 20 //30
 
     // Point de munition ravitaillés par seconde
-    AmmunitionSupplyBySecond = 5
+    AmmunitionSupplyBySecond = 10
     // Cout du ravitaillement de munition par seconde
     AmmunitionSupplyCostBySecond = 30
 

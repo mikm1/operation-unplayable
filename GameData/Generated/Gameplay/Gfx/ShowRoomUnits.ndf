@@ -15200,6 +15200,128 @@ export Descriptor_ShowRoomUnit_HvyScout_SOV is TEntityDescriptor
 
     ]
 )
+export Descriptor_ShowRoomUnit_Scout_2man_SOV is TEntityDescriptor
+(
+    DescriptorId        = GUID:{2ce6362d-d889-4ac8-9ee3-82c40f0116a1}
+    ClassNameForDebug   = "ShowRoomUnit_Scout_2man_SOV"
+    ModulesDescriptors = [
+        // TypeUnit
+            TModuleSelector
+            (
+                Default            = TTypeUnitModuleDescriptor
+                (
+                    TypeUnitValue                    = ETypeUnit/InfReco
+                    Nationalite                      = ENationalite/Axis
+                    MotherCountry                    = 'SOV'
+                    AcknowUnitType                   = ~/TAcknowUnitType_Inf
+                    TypeUnitFormation                = 'Reconnaissance'
+                )
+                Selection = [
+                    NilDescriptorIfCadavre,
+                ]
+            ),
+
+        // Position
+        (
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            )
+        ),
+
+        // ApparenceModel
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject       = False
+            Depiction            = ~/InfantryDepictionSquadShowroom
+        ),
+
+        // WeaponManager
+        WeaponManager is
+            TModuleSelector
+            (
+                Default        = $/GFX/Everything/WeaponDescriptor_Scout_2man_SOV
+                Selection      = [~/NilDescriptorIfCadavre]
+            ),
+
+        // InfantrySquad
+        GroupeCombat is
+            TModuleSelector
+            (
+                Default        = TInfantrySquadModuleDescriptor
+                (
+                    NbSoldatInGroupeCombat = 2
+                    SquadDataDescriptor = ~/SoldierSquadDataDescriptor
+                    InfantryMimeticName = 'Scout_2man_SOV'
+                    InfantryAlternativeName = 'Scout_2man_SOV'
+                    InfantryGhostMimeticName = 'Scout_2man_SOV_ghost'
+                    WeaponUnitFXKey     = 'Scout_2man_SOV'
+                    MimeticDescriptor   = ~/Descriptor_Unit_MimeticUnit
+                    BoundingBoxSize     = 9 * Metre
+                )
+                Selection      = [ NilDescriptorIfCadavre ]
+            ),
+
+        // GroupeCombat
+        GroupeCombatPositions is
+            TModuleSelector
+            (
+                Default        = TInfantrySquadSlotPositionsModuleDescriptor
+                (
+                    SquadMovementDataDescriptor  = ~/SoldierSquadMovementDataDescriptor
+                    SquadFormationDescriptor = ~/SoldierColumnDescriptor
+                    NoiseDescriptor    = ~/SoldierNoiseDescriptor
+                )
+                Selection      = [ NilDescriptorIfCadavre ]
+            ),
+
+        // InfantrySquadWeaponAssignment
+        TInfantrySquadWeaponAssignmentModuleDescriptor
+        (
+            InitialTurretToSoldiersIndexMap = MAP[
+                                        (0,[0,1,]),
+                                      ]
+            InitialSoldiersToTurretIndexMap = MAP[
+                                        (0,[0,]),
+                                        (1,[0,]),
+                                      ]
+            TurretWithOnlyOneSoldier = []
+        ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // EffectApplier
+            ~/EffectApplierModuleSelector,
+
+        // Experience
+            TExperienceModuleDescriptor
+            (
+                ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple
+                CanWinExperience = True
+                ExperienceGainBySecond = ~/ExperienceGainBySecond
+                ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+            ),
+
+        // CameraShowroom
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'Inf'
+        ),
+
+    ]
+)
 export Descriptor_ShowRoomUnit_Iltis_RFA is TEntityDescriptor
 (
     DescriptorId        = GUID:{a4b34b12-c9cd-40e5-8bc2-7e053228a26b}

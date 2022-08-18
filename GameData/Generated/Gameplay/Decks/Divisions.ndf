@@ -1151,6 +1151,7 @@ export Descriptor_Deck_Division_SOV_79_Gds_Tank_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Engineers_SOV, 1),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Howz_D30_122mm_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_HvyScout_SOV, 1),
+        (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Scout_2man_SOV, 4),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MANPAD_Igla_SOV, 5),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MTLB_Strela10_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MTLB_supply_SOV, 2),
