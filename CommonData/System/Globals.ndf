@@ -51,6 +51,7 @@ ContentType_Texture_FX                   is 14
 
 ContentType_Texture_Shadow               is 16
 ContentType_Texture_GBuffer              is 17
+ContentType_Texture_Shooting             is 18
 
 ContentType_Texture_SSR                  is 19
 ContentType_Texture_SSAO                 is 20
@@ -114,12 +115,15 @@ SDMask_HeavySlope           is 64
 SDMask_SquashOrDestroy      is SDMask_Squash+SDMask_Destroy
 
 
-// mask navigation aspect. bit 0 réservé par sdb. bit 1 détermine type de mask (0:Reliefs, 1:Terrains). 2-7 : signification suivant le bit 1.
-// /!\ Doit matcher avec Eugen::IA::MaskSparseDB dans MaskSparseDB.h /!\
-    // Reliefs (pathfind + vision)
-NAMask_ReliefDefault        is 4  // 00000100  // legacy dans WARGAME
-NAMask_ReliefVision         is 8  // 00001000  // legacy dans WARGAME
-NAMask_ReliefForest         is 16 // 00010000  // legacy dans WARGAME
+// Usage de SceneryDescriptor ou de carte.
+// Doit matcher avec ESceneryPurpose::Type.
+SceneryPurpose is TBaseClass
+(
+    All is 0
+    Prod is 1
+    Test is 2
+    FXEditor is 3
+)
 
 // mask raytrace aspect
 // /!\ Doit matcher avec SceneryDescriptorRaytraceAspect.h /!\
@@ -133,6 +137,7 @@ SnapMode is TBaseClass
     Node is 2
     Center is 3
 )
+
 
 //-----------------------------------------------------------------------------
 // primitive type.
@@ -181,7 +186,6 @@ GDTagName_5 is "Calque 4"
 // Constantes diverses
 MaxCalquesForSticker    is 75
 MaxParticleCount        is 80000
-ScalingValuesForPawns   is VECTOR[1.0, 28.0, 15000.0]
 WaterSimulationSize     is 256
 
 //-----------------------------------------------------------------------------
@@ -844,6 +848,5 @@ ELevelLaunch is TBaseClass
     Replay  is 5
     TestAuto  is 6
     OutGame is 10
-    OutGameWithTestAuto is 11
     PerformanceTest is 12
 )

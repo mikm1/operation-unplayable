@@ -15,6 +15,7 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "CampaignComponentWithoutPause", LDHintDefaultComponent ),
         ( "AlertComponent", LDHintAlertComponent ),
         ( "RemainingTimeAlertComponent", LDHintRemainingTimeAlertComponent),
+        ( "SuddenDeathAlertComponent", LDHintSuddenDeathAlertComponent),
         ( "ConquestLocalPlayerHasAdvantageComponent", LDHintConquestLocalPlayerHasAdvantageComponent ),
         ( "ConquestOpponentHasAdvantageComponent", LDHintConquestOpponentHasAdvantageComponent ),
         ( "StrategicPlayerTurn", LDHintDefaultComponentWithoutPause ),
@@ -665,6 +666,8 @@ private LDHintAlertComponent is LDHintStandardComponent
 )
 
 private LDHintRemainingTimeAlertComponent is LDHintStandardComponent( TextSize = "19" )
+private LDHintSuddenDeathAlertComponent is LDHintStandardComponent(     TextureToken = "LDHintCampaign_InfoTexture"
+    TextureMagnifiableWidthHeight = [32,32] TextSize = "19" )
 private LDHintConquestLocalPlayerHasAdvantageComponent is LDHintStandardComponent( TextSize = "19" BackgroundBlockColorToken = "SD2_BleuGris" BorderLineColorToken = 'SD2_LigneBleuGris')
 private LDHintConquestOpponentHasAdvantageComponent is LDHintStandardComponent( TextSize = "19" )
 

@@ -9,7 +9,7 @@ GroupableUnitModuleSelector is TModuleSelector
     Default        = TGroupableUnitModuleDescriptor
     (
     )
-    Selection      = [~/NilDescriptorIfGhostOrCadavre]
+    Selection      = [~/NilDescriptorIfCadavre]
 )
 
 PlayerMissionModuleDescriptor is TPlayerMissionModuleDescriptor
@@ -21,7 +21,7 @@ TargetCoordinatorModuleSelector is TModuleSelector
     Default        = TTargetCoordinatorModuleDescriptor
     (
     )
-    Selection      = [~/NilDescriptorIfGhostOrCadavre]
+    Selection      = [~/NilDescriptorIfCadavre]
 )
 
 TargetManagerModuleSelector is TModuleSelector
@@ -29,7 +29,7 @@ TargetManagerModuleSelector is TModuleSelector
     Default        = TTargetManagerModuleDescriptor
     (
     )
-    Selection      = [~/NilDescriptorIfGhostOrCadavre]
+    Selection      = [~/NilDescriptorIfCadavre]
 )
 
 IAStratZoneIndexModuleDescriptor is TModuleSelector
@@ -37,5 +37,5 @@ IAStratZoneIndexModuleDescriptor is TModuleSelector
     Default        = TIAStratZoneIndexModuleDescriptor
     (
     )
-    Selection      = [~/NilDescriptorIfGhostOrCadavre]
+    Selection      = [~/NilDescriptorIfCadavre]
 )

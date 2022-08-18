@@ -9,7 +9,7 @@ private template AttackCursorText
     TextVerticalAlignment : int = UIText_VerticalCenter,
     TextColor : string = "MouseWidget/TextModule",
     TextSize : string = "18",
-    TextStyle : string = "MouseWidget/TextModule",,
+    TextStyle : string = "MouseWidget/TextModule",
     HasBackground : bool = false,
 ] is BUCKTextDescriptor
 (
@@ -124,6 +124,22 @@ template BUCKSpecificMouseWidgetAttackMainComponentDescriptor
 
     Components =
     [
+        // Haut
+        AttackCursorText
+        (
+            ElementName = "CorrectedShot"
+            TextToken = "TC_CORRSHT"
+            TextColor = "Green3" // Même couleur que le VERY EASY de l'unit comparator
+
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 0.0]
+                AlignementToFather = [0.5, 0]
+                AlignementToAnchor = [0.5, 1.0]
+            )
+            TextAlignment = UIText_Center
+        ),
+
         // Droite
         AttackModule_TextList
         (
@@ -299,8 +315,7 @@ template BUCKSpecificMouseWidgetAttackMainComponentDescriptor
                     TextElementName = "ArmorSide"
                     TextAlignment = UIText_Right
                     TextColor = "VividRed"
-                    TextSize = "12"
-                    TextStyle = 'Default'
+                    TextSize = "16"
                 ),
                 AttackModule_TextElement
                 (

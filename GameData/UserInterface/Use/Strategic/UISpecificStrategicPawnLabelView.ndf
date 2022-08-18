@@ -176,6 +176,7 @@ MainLabelList is TBUCKLocalLayerContainerDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [60.0, 40.0]
+        MagnifiableOffset = [-10,0]
     )
 
     NbLayersToLock = 3
@@ -196,27 +197,19 @@ MainLabelList is TBUCKLocalLayerContainerDescriptor
             [
                 BUCKListElementDescriptor
                 (
-                    ComponentDescriptor = BUCKTextureDescriptor
+                    ComponentDescriptor = BUCKContainerDescriptor
                     (
-                        ElementName = 'UnitTexture'
+
 
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                              MagnifiableWidthHeight = [60.0, 40.0]
                         )
 
-                        HasBackground = true
-
-                        TextureFrame = TUIFramePropertyRTTI
-                        (
-                            MagnifiableWidthHeight = [40.0, 40.0]
-                            AlignementToAnchor = [0.5, 0.0]
-                            AlignementToFather = [0.5, 0.0]
-                        )
-
                         Components =
                         [
 
+                            IconeUnit_and_PA,
                             ~/CombatValue,
                             ~/Fatigue,
                             ~/NoSupplied,
@@ -228,7 +221,7 @@ MainLabelList is TBUCKLocalLayerContainerDescriptor
                                                         ~/terrain_plaine,
                                                         ~/terrain_plaine2,}
 
-                            ~/CanAttack,
+                            //~/CanAttack,
                             ~/DivisionLabel,
                         ]
                     )
@@ -251,6 +244,7 @@ UpperLabelList is BUCKListDescriptor
     (
         AlignementToFather = [0.5, 0.0]
         AlignementToAnchor = [0.5, 1.0]
+        MagnifiableOffset = [0,20]
     )
 
     Axis = ~/ListAxis/Vertical
@@ -414,6 +408,31 @@ UpperLabelList is BUCKListDescriptor
 // Under label List
 // -----------------------------------------------
 
+private IconeUnit_and_PA is BUCKTextureDescriptor
+(
+    ElementName = 'UnitTexture'
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+         MagnifiableWidthHeight = [40.0, 20.0]
+         MagnifiableOffset = [20,20]
+    )
+
+    HasBackground = true
+
+    TextureFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [20.0, 20.0]
+        AlignementToAnchor = [0, 0.0]
+        AlignementToFather = [0, 0.0]
+    )
+
+    Components =
+    [
+        PANumber
+    ]
+
+)
 private CombatValue is BUCKListDescriptor
 (
     ElementName = 'PowerValueGaugesContainer'
@@ -430,10 +449,10 @@ private CombatValue is BUCKListDescriptor
 
     Elements =
     [
-        BUCKListElementDescriptor
-        (
-                ComponentDescriptor = ~/PANumber
-                ),
+        {BUCKListElementDescriptor
+                (
+                        ComponentDescriptor = ~/PANumber
+                        ),}
         BUCKListElementDescriptor
         (
             ComponentDescriptor = PowerValueContainer
@@ -478,8 +497,8 @@ private NoSupplied is BUCKTextureDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [IconeSize*2.0, IconeSize*2.0]
-        AlignementToFather = [0.5, 0.5]
-        AlignementToAnchor = [0.5, 0.5]
+        MagnifiableOffset = [-10,20]
+
     )
 
     TextureToken = "UseStrategic_Labels_NoSupply"
@@ -579,12 +598,13 @@ private CanAttack is BUCKTextureDescriptor
     ElementName = 'CanAttackIcon'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [~/IconeSize, ~/IconeSize]
-        AlignementToFather = [0.0, 1.0]
-        AlignementToAnchor = [0.0, 1.0]
+        MagnifiableWidthHeight = [20, 20]
+        AlignementToFather = [0.0, 0.0]
+        AlignementToAnchor = [0.0, 0.0]
 
     )
     TextureToken = "UseStrategic_Labels_CanLaunchAttack"
+    //TextureColorToken = 'White'
     TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
 )
 //-------------------------------------------------------------------------------------
@@ -718,6 +738,7 @@ private PANumber is BUCKTextDescriptor
         MagnifiableWidthHeight = [20.0, 20.0]
         AlignementToFather = [0.0, 0.0]
         AlignementToAnchor = [0.0, 0.0]
+        MagnifiableOffset = [20,0]
     )
 
     ParagraphStyle = TParagraphStyleRTTI
@@ -726,10 +747,10 @@ private PANumber is BUCKTextDescriptor
         VerticalAlignment = UIText_VerticalCenter
     )
 
-    HasBackground = true
+    HasBackground = false
     BackgroundBlockColorToken = "Red"
 
-    HasBorder = true
+    HasBorder = false
     BorderLineColorToken = "PawnLabel/ActionPoints"
     BorderThicknessToken = "PawnLabel/ActionPoints"
 
@@ -749,6 +770,7 @@ private PANumber is BUCKTextDescriptor
 
     Components =
     [
+        CanAttack,
     ]
 )
 
@@ -824,7 +846,7 @@ is BUCKTextDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [20.0, 20.0]
+        MagnifiableWidthHeight = [20.0, 13.0]
     )
 
     HorizontalFitStyle = ~/FitStyle/UserDefined

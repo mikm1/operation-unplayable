@@ -31,6 +31,11 @@ GhostDepiction_2S3_DDR is GhostVehicleDepictionTemplate
     Selector = Selector_2S3_DDR
     Alternatives = Alternatives_2S3_DDR
 )
+GhostDepiction_2S5_GiatsintS_SOV is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_2S5_GiatsintS_SOV
+    Alternatives = Alternatives_2S5_GiatsintS_SOV
+)
 GhostDepiction_2S7M_Malka_SOV is GhostVehicleDepictionTemplate
 (
     Selector = Selector_2S7M_Malka_SOV
@@ -171,11 +176,6 @@ GhostDepiction_BM21V_GradV_SOV is GhostVehicleDepictionTemplate
     Selector = Selector_BM21V_GradV_SOV
     Alternatives = Alternatives_BM21V_GradV_SOV
 )
-GhostDepiction_BM21_Grad_DDR is GhostVehicleDepictionTemplate
-(
-    Selector = Selector_BM21_Grad_DDR
-    Alternatives = Alternatives_BM21_Grad_DDR
-)
 GhostDepiction_BM21_Grad_SOV is GhostVehicleDepictionTemplate
 (
     Selector = Selector_BM21_Grad_SOV
@@ -210,11 +210,6 @@ GhostDepiction_BMP_1PG_SOV is GhostVehicleDepictionTemplate
 (
     Selector = Selector_BMP_1PG_SOV
     Alternatives = Alternatives_BMP_1PG_SOV
-)
-GhostDepiction_BMP_1P_DDR is GhostVehicleDepictionTemplate
-(
-    Selector = Selector_BMP_1P_DDR
-    Alternatives = Alternatives_BMP_1P_DDR
 )
 GhostDepiction_BMP_1P_SOV is GhostVehicleDepictionTemplate
 (
@@ -280,6 +275,11 @@ GhostDepiction_BRDM_2_DDR is GhostVehicleDepictionTemplate
 (
     Selector = Selector_BRDM_2_DDR
     Alternatives = Alternatives_BRDM_2_DDR
+)
+GhostDepiction_BRDM_2_Konkurs_DDR is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_BRDM_2_Konkurs_DDR
+    Alternatives = Alternatives_BRDM_2_Konkurs_DDR
 )
 GhostDepiction_BRDM_2_Konkurs_SOV is GhostVehicleDepictionTemplate
 (
@@ -541,11 +541,6 @@ GhostDepiction_Howz_M46_130mm_SOV is GhostVehicleDepictionTemplate
     Selector = Selector_Howz_M46_130mm_SOV
     Alternatives = Alternatives_Howz_M46_130mm_SOV
 )
-GhostDepiction_Iltis_MILAN_RFA is GhostVehicleDepictionTemplate
-(
-    Selector = Selector_Iltis_MILAN_RFA
-    Alternatives = Alternatives_Iltis_MILAN_RFA
-)
 GhostDepiction_Iltis_RFA is GhostVehicleDepictionTemplate
 (
     Selector = Selector_Iltis_RFA
@@ -580,11 +575,6 @@ GhostDepiction_Lars_2_RFA is GhostVehicleDepictionTemplate
 (
     Selector = Selector_Lars_2_RFA
     Alternatives = Alternatives_Lars_2_RFA
-)
-GhostDepiction_Leopard_1A1_CMD_RFA is GhostVehicleDepictionTemplate
-(
-    Selector = Selector_Leopard_1A1_CMD_RFA
-    Alternatives = Alternatives_Leopard_1A1_CMD_RFA
 )
 GhostDepiction_Leopard_1A1_RFA is GhostVehicleDepictionTemplate
 (
@@ -731,11 +721,6 @@ GhostDepiction_M151_MUTT_RCL_DDR is GhostVehicleDepictionTemplate
     Selector = Selector_M151_MUTT_RCL_DDR
     Alternatives = Alternatives_M151_MUTT_RCL_DDR
 )
-GhostDepiction_M151_MUTT_Reco_DDR is GhostVehicleDepictionTemplate
-(
-    Selector = Selector_M151_MUTT_Reco_DDR
-    Alternatives = Alternatives_M151_MUTT_Reco_DDR
-)
 GhostDepiction_M151_MUTT_trans_US is GhostVehicleDepictionTemplate
 (
     Selector = Selector_M151_MUTT_trans_US
@@ -745,11 +730,6 @@ GhostDepiction_M163_PIVADS_US is GhostVehicleDepictionTemplate
 (
     Selector = Selector_M163_PIVADS_US
     Alternatives = Alternatives_M163_PIVADS_US
-)
-GhostDepiction_M1A1HA_Abrams_CMD_US is GhostVehicleDepictionTemplate
-(
-    Selector = Selector_M1A1HA_Abrams_CMD_US
-    Alternatives = Alternatives_M1A1HA_Abrams_CMD_US
 )
 GhostDepiction_M1A1HA_Abrams_US is GhostVehicleDepictionTemplate
 (
@@ -1180,11 +1160,6 @@ GhostDepiction_TO_55_DDR is GhostVehicleDepictionTemplate
 (
     Selector = Selector_TO_55_DDR
     Alternatives = Alternatives_TO_55_DDR
-)
-GhostDepiction_TO_55_SOV is GhostVehicleDepictionTemplate
-(
-    Selector = Selector_TO_55_SOV
-    Alternatives = Alternatives_TO_55_SOV
 )
 GhostDepiction_TPZ_Fuchs_1_RFA is GhostVehicleDepictionTemplate
 (

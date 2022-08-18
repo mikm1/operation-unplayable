@@ -22,7 +22,7 @@ FeedbackLineOfSightDescriptor is TFeedbackLineOfSightDescriptor
 (
     DistanceVisionMax = 10000 * Metre// distance d'affichache
     TheoreticalMaxVision = 35000 * Metre // utilisé pour les calculs
-    AnimationDuration = 0.35*5 //0.35*5 why would you even want that
+    AnimationDuration = 0.05*6 //0.35*5 why would you even want that
 
     VisionOffset = DecalageParDefautDuPointDeVision
 

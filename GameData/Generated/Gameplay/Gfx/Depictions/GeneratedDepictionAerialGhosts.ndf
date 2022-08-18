@@ -66,11 +66,6 @@ GhostDepiction_Alouette_II_reco_RFA is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Alouette_II_reco_RFA
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alpha_Jet_A_clu_RFA is GhostAerialDepictionTemplate
-(
-    Alternatives = Alternatives_Alpha_Jet_A_clu_RFA
-    Selector = SpecificAirplaneDepictionSelector
-)
 GhostDepiction_Alpha_Jet_A_he_RFA is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Alpha_Jet_A_he_RFA
@@ -176,11 +171,6 @@ GhostDepiction_F111F_Aardvark_LGB2_US is GhostAerialDepictionTemplate
     Alternatives = Alternatives_F111F_Aardvark_LGB2_US
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F111F_Aardvark_LGB_US is GhostAerialDepictionTemplate
-(
-    Alternatives = Alternatives_F111F_Aardvark_LGB_US
-    Selector = SpecificAirplaneDepictionSelector
-)
 GhostDepiction_F111F_Aardvark_US is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_F111F_Aardvark_US
@@ -189,6 +179,11 @@ GhostDepiction_F111F_Aardvark_US is GhostAerialDepictionTemplate
 GhostDepiction_F111F_Aardvark_napalm_US is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_F111F_Aardvark_napalm_US
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F15C_Eagle_AA2_US is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_F15C_Eagle_AA2_US
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_F15C_Eagle_AA_US is GhostAerialDepictionTemplate
@@ -511,11 +506,6 @@ GhostDepiction_Mi_2_reco_DDR is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Mi_2_reco_DDR
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_reco_SOV is GhostAerialDepictionTemplate
-(
-    Alternatives = Alternatives_Mi_2_reco_SOV
-    Selector = SpecificHelicoDepictionSelector
-)
 GhostDepiction_Mi_2_trans_DDR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Mi_2_trans_DDR
@@ -769,11 +759,6 @@ GhostDepiction_Tornado_IDS_RFA is GhostAerialDepictionTemplate
 GhostDepiction_UH1D_RFA is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_UH1D_RFA
-    Selector = SpecificHelicoDepictionSelector
-)
-GhostDepiction_UH1D_Supply_RFA is GhostAerialDepictionTemplate
-(
-    Alternatives = Alternatives_UH1D_Supply_RFA
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_UH60A_Black_Hawk_US is GhostAerialDepictionTemplate

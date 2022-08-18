@@ -51,12 +51,10 @@ template TemplateClusterWithNDFLoadedSubCluster
     UsingNamespaces = [],
     NonPatchable = false,
     AllowObjectsToSurvive = false,
-    AllowNoSubCluster = false,
     NeedsChecksum = false
 ] is TClusterWithNDFLoadedSubCluster
 (
     SubClusterName = <SubClusterName>
-    AllowNoSubCluster = <AllowNoSubCluster>
     NdfTransaction = TNDFTransaction
     (
         BaseName        = <NonPatchable> ? ("NonPatchable/" + <BaseName> ) : ("Patchable/" + <BaseName> )
@@ -84,12 +82,10 @@ template TemplateClusterWithNDFLoadedSubCluster_FileList_ReloadableForUI
     UsingNamespaces = [],
     NonPatchable = false,
     AllowObjectsToSurvive = false,
-    AllowNoSubCluster = false,
     NeedsChecksum = false
 ] is TClusterWithNDFLoadedSubCluster_Reloadable
 (
     SubClusterName = <SubClusterName>
-    AllowNoSubCluster = <AllowNoSubCluster>
     NdfTransaction = TNDFTransaction
     (
         BaseName        = <NonPatchable> ? ("NonPatchable/" + <BaseName> ) : ("Patchable/" + <BaseName> )
@@ -120,12 +116,10 @@ template TemplateClusterWithNDFLoadedSubCluster_ReloadableForGameplay
     UsingNamespaces = [],
     NonPatchable = false,
     AllowObjectsToSurvive = false,
-    AllowNoSubCluster = false,
     NeedsChecksum = false
 ] is TClusterWithNDFLoadedSubCluster_Reloadable
 (
     SubClusterName = <SubClusterName>
-    AllowNoSubCluster = <AllowNoSubCluster>
     NdfTransaction = TNDFTransaction
     (
         BaseName        = <NonPatchable> ? ("NonPatchable/" + <BaseName> ) : ("Patchable/" + <BaseName> )

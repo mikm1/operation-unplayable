@@ -551,6 +551,7 @@ is TDepictionTemplate
     Operators = [
         DepictionOperator_Shader_Selection,
         DepictionOperator_Shader_TeamColor,
+        DepictionOperator_Shader_Ghost,
         TCosmeticFreezeSkeletalAnimationOperatorDesc(Animation = <Animation>)
     ]
 )
@@ -637,7 +638,7 @@ template SubDepiction_ServantTemplate
             TDepictionDescriptor( SelectorId = ['none'] RequireOthersSkeleton = true),
         ]
 
-        Operators = [ <AnimationOperator> ]
+        Operators = [ <AnimationOperator>, DepictionOperator_Shader_Ghost ]
     )
 )
 

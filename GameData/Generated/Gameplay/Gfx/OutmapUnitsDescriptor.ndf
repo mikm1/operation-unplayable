@@ -19,15 +19,6 @@ export Descriptor_Unit_test is TEntityDescriptor
                 )
                 Selection = [
                     NilDescriptorIfCadavre,
-                    TModuleSelectorFilterIfGhost
-                    (
-                        Descriptor = TTypeUnitModuleDescriptor
-                        (
-                            MotherCountry                    = 'US'
-                            Nationalite                      = ENationalite/Allied
-                            TypeUnitValue                    = ETypeUnit/ArtHowit
-                        )
-                    )
                 ]
             ),
 
@@ -61,7 +52,7 @@ export Descriptor_Unit_test is TEntityDescriptor
             TModuleSelector
             (
                 Default        = $/GFX/Everything/WeaponDescriptor_test
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // StateEngineCompany
@@ -72,7 +63,7 @@ export Descriptor_Unit_test is TEntityDescriptor
                     InitialStateId = 'CompanyInit'
                     StateEngineUpdateMode = WorldControllerAccess_InWorld
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // StateEngine
@@ -83,7 +74,7 @@ export Descriptor_Unit_test is TEntityDescriptor
                     InitialStateId = 'UnitIdle'
                     StateEngineUpdateMode = WorldControllerAccess_InWorld
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // Debug
@@ -117,7 +108,7 @@ export Descriptor_Unit_test is TEntityDescriptor
                 (
                 UnlockableOrders          = ~/Descriptor_OrderAvailability_test
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // IAStrat
@@ -128,7 +119,7 @@ export Descriptor_Unit_test is TEntityDescriptor
                     DatabaseId = 1
                     GameplayBehavior = EGameplayBehavior/Nothing
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // GroupableUnit
@@ -144,48 +135,29 @@ export Descriptor_Unit_test is TEntityDescriptor
                         (EOutMapArtilleryShootMode/Warning, (0, 0)),
                     ]
                 )
-                Selection = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // PackSignaux
             ~/PackSignauxModuleDescriptor,
 
         // UnitUI
-            TModuleSelector
+            TUnitUIModuleDescriptor
             (
-                Default = TUnitUIModuleDescriptor
-                (
-                    HintToken = 'ArtHowit'
-                    RoleList = [
-                    ]
-                    SpecialtiesList = [
-                    ]
-                    NameToken = 'None'
-                    InfoPanelConfigurationToken = 'Default'
-                    TypeSpecificToken = ''
-                    IsAce = False
-                    GenerateName = true
-                    MenuIconTexture = 'Texture_MenuIcon_default'
-                    ButtonTexture = 'Texture_Button_Unit_test'
-                    CountryTexture = 'CommonTexture_MotherCountryFlag_US'
-                    TypeStrategicCount = ETypeStrategicCount/NotCounted
-                )
-                Selection = [
-                    TModuleSelectorFilterIfGhost
-                    (
-                        Descriptor = TUnitUIModuleDescriptor
-                        (
-                            HintToken = 'ArtHowit'
-                            NameToken = 'None'
-                            InfoPanelConfigurationToken = 'Default'
-                            TypeSpecificToken = ''
-                            MenuIconTexture = 'Texture_MenuIcon_default'
-                            ButtonTexture = 'Texture_Button_Unit_test'
-                            CountryTexture = 'CommonTexture_MotherCountryFlag_US'
-                            TypeStrategicCount = ETypeStrategicCount/NotCounted
-                        )
-                    )
+                HintToken = 'ArtHowit'
+                RoleList = [
                 ]
+                SpecialtiesList = [
+                ]
+                NameToken = 'None'
+                InfoPanelConfigurationToken = 'Default'
+                TypeSpecificToken = ''
+                IsAce = False
+                GenerateName = true
+                MenuIconTexture = 'Texture_MenuIcon_default'
+                ButtonTexture = 'Texture_Button_Unit_test'
+                CountryTexture = 'CommonTexture_MotherCountryFlag_US'
+                TypeStrategicCount = ETypeStrategicCount/NotCounted
             ),
 
     ]

@@ -342,6 +342,7 @@ private ScenarioBriefsRack is BUCKRackDescriptor
 
 private ScenarioDescriptionContainer is BUCKContainerDescriptor
 (
+    ElementName = "ScenarioDescription"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [520.0,741.0]
@@ -379,7 +380,8 @@ private ScenarioDescriptionContainer is BUCKContainerDescriptor
 
                     FitStyle = ~/ContainerFitStyle/FitToContentVertically
 
-                    // envoie ResumeCampagneTypeHistorique
+                    // envoie ResumeCampagneTypeHistorique pour les challenge
+                    // envoie ResumeCampagneType3 pour campagne et tuto
                 ),
                 // liste des boutons
                 BUCKListDescriptor
@@ -421,7 +423,8 @@ private ScenarioDescriptionContainer is BUCKContainerDescriptor
 //-------------------------------------------------------------------------------------
 template ScenarioListContainer
 [
-    ListTitle : string
+    ListTitle : string,
+    IsTutorial : bool
 ] is BUCKContainerDescriptor
 (
     ElementName = "ScenarioListContainer"
@@ -450,7 +453,11 @@ template ScenarioListContainer
 
             Components =
             [
-                ScenarioMultilist(ListTitle = <ListTitle>)
+                ScenarioMultilist
+                (
+                    ListTitle = <ListTitle>
+                    IsTutorial = <IsTutorial>
+                )
             ]
         ),
     ]
@@ -460,7 +467,8 @@ template ScenarioListContainer
 
 template ScenarioMultilist
 [
-    ListTitle : string
+    ListTitle : string,
+    IsTutorial : bool
 ] is BUCKMultiListDescriptor
 (
     ElementName = "ScenarioMultilist"
@@ -477,13 +485,13 @@ template ScenarioMultilist
         "OperationDurationMultilist"
     ]
 
-    SortableColumnNames =
+    SortableColumnNames = (<IsTutorial> ? [] :
     [
         "IsCompletedMultilist",
         "OperationNameMultilist",
         "OperationDifficultyMultilist",
         "OperationDurationMultilist"
-    ]
+    ])
 
     RackName = "ScenarioBriefsRack"
 
@@ -774,6 +782,7 @@ private template BUCKSpecificScenarioMainComponentDescriptor
                 (
                     ListTitle = (<GameType> == ~/GameCampaign) ? "tuto_list" : ((<GameType> == ~/GameStrategic) ? "str_list" : "op_list")
                     BackgroundTexture = (<GameType> == ~/GameCampaign) ? ~/TutorielMissionListBackground : ((<GameType> == ~/GameStrategic) ? ~/StrategicMissionListBackground : ~/ChallengeMissionListBackground)
+                    IsTutorial = (<GameType> == ~/GameCampaign) ? true : false
                 )
             ]
         )
@@ -785,6 +794,7 @@ template FullPanelLoadMission
 [
     BackgroundTexture : string,
     ListTitle : string,
+    IsTutorial : bool
 ] is BUCKContainerDescriptor
 (
     ElementName = "LoadMissionFullPanel"
@@ -808,7 +818,11 @@ template FullPanelLoadMission
 
             Components =
             [
-                ScenarioListContainer(ListTitle = <ListTitle>),
+                ScenarioListContainer
+                (
+                    ListTitle = <ListTitle>
+                    IsTutorial = <IsTutorial>
+                ),
                 ScenarioDescriptionContainer,
             ]
         ),

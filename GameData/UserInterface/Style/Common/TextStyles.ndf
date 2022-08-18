@@ -310,85 +310,65 @@ TextStyleTerrainCover is TTextStyleRTTI
     AllowSmallFont = true
 )
 
-TextStyleMouseWidgetTextModule is TTextStyleRTTI
+private template BaseTextStyleForSmartCursor
+[
+    ColorBottom : color = [220, 220, 220,255],
+    ColorUp : color = [220, 220, 220, 255]
+] is TTextStyleRTTI
 (
     AllowSmallFont = true
     FontSize = 1
-    ColorBottom = [255, 255, 255, 255]
-    ColorUp     = [255, 255, 255, 255]
+    ColorBottom = <ColorBottom>
+    ColorUp     = <ColorUp>
     ColorStroke = [  0,   0,   0, 255]
     Stroke = true
-    StrokeSize = 0.8
+    StrokeSize = 0.5
+    StrokeHardness = 0.4
+    TextThickness = 0.20
 )
 
-TextStyleBonus is TTextStyleRTTI
+TextStyleMouseWidgetTextModule is BaseTextStyleForSmartCursor()
+
+TextStyleBonus is BaseTextStyleForSmartCursor
 (
     ColorBottom = ~/textModuleGreen
     ColorUp     = ~/textModuleGreen
-    ColorStroke = [  0,  0,  0,255]
-    Stroke = true
-    FontSize = 1
-    AllowSmallFont = true
 )
 
-TextStyleWithinRange is TTextStyleRTTI
+TextStyleWithinRange is BaseTextStyleForSmartCursor
 (
     ColorBottom = ~/textModuleCyan
     ColorUp     = ~/textModuleCyan
-    ColorStroke = [  0,  0,  0,255]
-    Stroke = false
-    FontSize = 1
-    AllowSmallFont = true
 )
 
-TextStyleOutOfRange is TTextStyleRTTI
+TextStyleOutOfRange is BaseTextStyleForSmartCursor
 (
     ColorBottom = [  255,  255,  255,255]
     ColorUp     = [  255,  255,  255,255]
-    ColorStroke = [  0,  0,  0,255]
-    Stroke = false
-    FontSize = 1
-    AllowSmallFont = true
 )
 
-TextStyleUnseen is TTextStyleRTTI
+TextStyleUnseen is BaseTextStyleForSmartCursor
 (
     ColorBottom = [  255,  255,  255,255]
     ColorUp     = [  255,  255,  255,255]
-    ColorStroke = [  0,  0,  0,255]
-    Stroke = true
-    FontSize = 1
-    AllowSmallFont = true
 )
 
-TextStyleBlocked is TTextStyleRTTI
+TextStyleBlocked is BaseTextStyleForSmartCursor
 (
     ColorBottom = [  0,  0,  0,255]
     ColorUp     = [  0,  0,  0,255]
-    ColorStroke = [  0,  0,  0,255]
-    Stroke = true
-    FontSize = 1
-    AllowSmallFont = true
 )
 
-TextStyleInvalid is TTextStyleRTTI
+TextStyleInvalid is BaseTextStyleForSmartCursor
 (
     ColorBottom = ~/textModuleMagenta
     ColorUp     = ~/textModuleMagenta
-    ColorStroke = [  0,  0,  0,255]
-    Stroke = false
-    FontSize = 1
-    AllowSmallFont = true
 )
 
-TextStyleNotEfficient is TTextStyleRTTI
+TextStyleNotEfficient is BaseTextStyleForSmartCursor
 (
     ColorBottom = ~/textModuleYellow
     ColorUp     = ~/textModuleYellow
-    ColorStroke = [  0,  0,  0,255]
-    Stroke = false
-    FontSize = 1
-    AllowSmallFont = true
 )
 
 TextStyleStrategicPhaseLabel is TTextStyleRTTI

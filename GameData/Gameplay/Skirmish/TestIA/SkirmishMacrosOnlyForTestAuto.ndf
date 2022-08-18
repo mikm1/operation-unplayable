@@ -310,3 +310,43 @@ export Pool_Airstrike_Assault_TestAuto is TPoolModel
     ),
     ]
 )
+
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+
+export Supply_TestAutoOnly is TMacroActionDescriptor_Supply_Specific
+(
+    ParametresDeMission =
+    [
+        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
+        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Supply_Skirmish_TestAuto]),
+        TSupplySettingHolder(MinimumAmmoRatio = 0.3 MinimumFuelRatio = 0.3)
+    ]
+)
+//-------------------------------------------------------------------------
+export Supply_Allied_TestAutoOnly is TMacroActionDescriptor_Supply_Specific
+(
+    ParametresDeMission =
+    [
+        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
+        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Supply_Skirmish_TestAuto] DisableReinforcement = true),
+        TSupplySettingHolder(MinimumAmmoRatio = 0.2 MinimumFuelRatio = 0.2),
+        TCanTargetAlliedSettingHolder(),
+    ]
+)
+//-------------------------------------------------------------------------
+
+export Pool_Supply_Skirmish_TestAuto is TPoolModel
+(
+    ModelList = [
+    TPoolElement(
+        DescriptorId = GUID:{ebf80b0c-0dd4-4fac-a39b-cabba0a308fa}
+        Required = true
+        Nb = 1
+        TagsPriority = [
+            "Vehicule_Logistique",
+        ]
+    ),
+    ]
+)

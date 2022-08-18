@@ -79,5 +79,5 @@ UISpecificConnectionStateViewDescriptor is TUISpecificConnectionStateViewDescrip
     MainComponentDescriptor = ~/BUCKSpecificConnectionStateMainComponentDescriptor
     MainComponentContainerUniqueName = "LoginPanel" // Permet d'indiquer l'endroit ou le composant doit s'insérer
     OnlineToken = "NET_ONLN"
-    OfflineToken = ""
+    OfflineToken = "NET_OFLN"
 )

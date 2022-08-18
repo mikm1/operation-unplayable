@@ -3,19 +3,7 @@ TemplateTargetCoordinator is TModuleSelector
     Default        = TTargetCoordinatorModuleDescriptor
     (
     )
-    Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
-)
-
-TemplateUnitGhostModule is TModuleSelector
-(
-    Default        = nil
-    Selection      = [
-        TModuleSelectorFilter
-        (
-            Condition  = TModuleSelectorCondition_ParamEquals_Integer(ParamId=~/Parameter_ModuleCreationSelectionFilter  ParamValue=~/ModuleCreationFilter_Ghost)
-            Descriptor = $/GFX/Everything/GhostModuleDescriptor
-        )
-    ]
+    Selection      = [ ~/NilDescriptorIfCadavre ]
 )
 
 template TemplateUnitCriticalModule
@@ -24,7 +12,7 @@ template TemplateUnitCriticalModule
 ] is TModuleSelector
 (
     Default        = <Module>
-    Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+    Selection      = [ ~/NilDescriptorIfCadavre ]
 )
 
 template TemplateUnitMissileCarriage
@@ -36,5 +24,5 @@ template TemplateUnitMissileCarriage
     (
         Connoisseur    = <Connoisseur>
     )
-    Selection      = [~/NilDescriptorIfGhostOrCadavre]
+    Selection      = [~/NilDescriptorIfCadavre]
 )

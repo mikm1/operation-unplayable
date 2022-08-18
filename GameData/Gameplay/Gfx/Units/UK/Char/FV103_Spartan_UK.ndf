@@ -8,13 +8,13 @@ Modele_FV103_Spartan_UK is TResourceMultiMaterialMeshWithLod
 
 Modele_FV103_Spartan_UK_MID is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/UK/APC/FV103_Spartan/FV103_Spartan.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/UK/APC/FV103_Spartan_MID/FV103_Spartan_MID.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 
 Modele_FV103_Spartan_UK_LOW is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/UK/APC/FV103_Spartan/FV103_Spartan.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/UK/APC/LODS/FV103_Spartan_LOW.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 

@@ -81,8 +81,8 @@ export ForetLegere is TGameplayTerrain
     CriticalEffectProbability = 0.025
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.5)]),
-            ("he_autocanon", MAP [("infanterie",0.5)]),
+            ("he", MAP [("infanterie",0.55)]),
+            ("he_autocanon", MAP [("infanterie",0.55)]),
             ("balle", MAP [("infanterie",0.5)]),
             ("balledca", MAP [("infanterie",0.5)]),
             ("howz", MAP [("infanterie",0.5)]),
@@ -126,7 +126,7 @@ export PetitBatiment is TGameplayTerrain
     CriticalEffectProbability = 0
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.3)]),
+            ("he", MAP [("infanterie",0.4)]),
             ("he_autocanon", MAP [("infanterie",0.4)]),
             ("balle", MAP [("infanterie",0.3)]),
             ("balledca", MAP [("infanterie",0.3)]),
@@ -134,6 +134,7 @@ export PetitBatiment is TGameplayTerrain
             ("howz_bombe", MAP [("infanterie",0.3)]),
             ("fmballe", MAP [("infanterie",0.3)]),
             ("cac", MAP [("infanterie",1)]),
+            ("roquette_ap", MAP [("infanterie",0.8)]),
         ]
     DebugColor = rgba[0, 0, 0, 255]
     DissimulationModifierGroundAir = 10.5
@@ -170,7 +171,7 @@ export Batiment is TGameplayTerrain
     CriticalEffectProbability = 0
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.3)]),
+            ("he", MAP [("infanterie",0.4)]),
             ("he_autocanon", MAP [("infanterie",0.4)]),
             ("balle", MAP [("infanterie",0.3)]),
             ("balledca", MAP [("infanterie",0.3)]),
@@ -178,6 +179,7 @@ export Batiment is TGameplayTerrain
             ("howz_bombe", MAP [("infanterie",0.3)]),
             ("fmballe", MAP [("infanterie",0.3)]),
             ("cac", MAP [("infanterie",1)]),
+            ("roquette_ap", MAP [("infanterie",0.8)]),
         ]
     DebugColor = rgba[0, 0, 0, 255]
     DissimulationModifierGroundAir = 10.5

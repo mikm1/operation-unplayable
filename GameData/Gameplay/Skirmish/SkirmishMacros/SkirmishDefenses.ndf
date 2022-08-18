@@ -293,6 +293,7 @@ is TMacroActionDescriptor_CaptureCommandZone_Specific
                 ]
             DefensePointPositioning = EDefensePointPositioningType/Defensive)
         ),
+        TDefensePositionSettingHolder(ForbidDefenseOnZoneBorder = true),
     ]
     +
     (

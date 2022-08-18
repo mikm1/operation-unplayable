@@ -2178,7 +2178,7 @@ export Descriptor_Deck_RFA_TerrKdo_Sud_multi is TDeckDescriptor
         TDeckPackDescription
         (
             ExperienceLevel = 1
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_CH53G_RFA
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_RFA_TerrKdo_Sud_multi_MAN_Kat_6x6_RFA
         ),
         TDeckPackDescription
         (
@@ -2616,14 +2616,10 @@ export Descriptor_Deck_US_3rd_Arm_multi_test_challenge_new is TDeckDescriptor
     [
         TDeckCombatGroupDescriptor
         (
-            Name = ""
             SmartGroupList =
             [
                 TDeckSmartGroupDescriptor
                 (
-                    Name = ""
-                    LeaderName = ""
-                    LeaderGradeName = ""
                     PackIndexUnitNumberList =
                     [
                         (7,1),
@@ -2631,9 +2627,6 @@ export Descriptor_Deck_US_3rd_Arm_multi_test_challenge_new is TDeckDescriptor
                 ),
                 TDeckSmartGroupDescriptor
                 (
-                    Name = ""
-                    LeaderName = ""
-                    LeaderGradeName = ""
                     PackIndexUnitNumberList =
                     [
                         (0,2),
@@ -2642,9 +2635,6 @@ export Descriptor_Deck_US_3rd_Arm_multi_test_challenge_new is TDeckDescriptor
                 ),
                 TDeckSmartGroupDescriptor
                 (
-                    Name = ""
-                    LeaderName = ""
-                    LeaderGradeName = ""
                     PackIndexUnitNumberList =
                     [
                         (5,4),
@@ -2652,9 +2642,6 @@ export Descriptor_Deck_US_3rd_Arm_multi_test_challenge_new is TDeckDescriptor
                 ),
                 TDeckSmartGroupDescriptor
                 (
-                    Name = ""
-                    LeaderName = ""
-                    LeaderGradeName = ""
                     PackIndexUnitNumberList =
                     [
                         (0,2),

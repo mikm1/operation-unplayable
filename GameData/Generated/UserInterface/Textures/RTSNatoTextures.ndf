@@ -245,16 +245,6 @@ Texture_RTS_H_supply is TUIResourceTexture_Common
     FileName      = 'Assets\2D\Interface\UseInGame\LabelIcons\RTS\supply.png'
 )
 
-Texture_CMD_tank is TUIResourceTexture_Common
-(
-    FileName      = 'Assets\2D\Interface\UseInGame\LabelIcons\NATO\CMD_tank.png'
-)
-
-Texture_RTS_H_CMD_tank is TUIResourceTexture_Common
-(
-    FileName      = 'Assets\2D\Interface\UseInGame\LabelIcons\RTS\CMD_tank.png'
-)
-
 Texture_Armor is TUIResourceTexture_Common
 (
     FileName      = 'Assets\2D\Interface\UseInGame\LabelIcons\NATO\Armor.png'
@@ -263,6 +253,16 @@ Texture_Armor is TUIResourceTexture_Common
 Texture_RTS_H_Armor is TUIResourceTexture_Common
 (
     FileName      = 'Assets\2D\Interface\UseInGame\LabelIcons\RTS\Armor.png'
+)
+
+Texture_CMD_tank is TUIResourceTexture_Common
+(
+    FileName      = 'Assets\2D\Interface\UseInGame\LabelIcons\NATO\CMD_tank.png'
+)
+
+Texture_RTS_H_CMD_tank is TUIResourceTexture_Common
+(
+    FileName      = 'Assets\2D\Interface\UseInGame\LabelIcons\RTS\CMD_tank.png'
 )
 
 Texture_manpad is TUIResourceTexture_Common
@@ -454,10 +454,10 @@ NATORTSAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_RTS_H_transport_noweapon", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_transport_noweapon)]),
         ("Texture_supply", MAP [(~/ComponentState/Normal, ~/Texture_supply)]),
         ("Texture_RTS_H_supply", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_supply)]),
-        ("Texture_CMD_tank", MAP [(~/ComponentState/Normal, ~/Texture_CMD_tank)]),
-        ("Texture_RTS_H_CMD_tank", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_CMD_tank)]),
         ("Texture_Armor", MAP [(~/ComponentState/Normal, ~/Texture_Armor)]),
         ("Texture_RTS_H_Armor", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_Armor)]),
+        ("Texture_CMD_tank", MAP [(~/ComponentState/Normal, ~/Texture_CMD_tank)]),
+        ("Texture_RTS_H_CMD_tank", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_CMD_tank)]),
         ("Texture_manpad", MAP [(~/ComponentState/Normal, ~/Texture_manpad)]),
         ("Texture_RTS_H_manpad", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_manpad)]),
         ("Texture_AA_hel", MAP [(~/ComponentState/Normal, ~/Texture_AA_hel)]),

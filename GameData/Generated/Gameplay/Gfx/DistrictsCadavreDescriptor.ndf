@@ -69,7 +69,7 @@ export Descriptor_UnitCadavre_Quartier_Gros is TEntityDescriptor(
                     DatabaseId = 2
                     GameplayBehavior = EGameplayBehavior/Nothing
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // Cadavre
@@ -167,7 +167,7 @@ export Descriptor_UnitCadavre_Quartier_Moyen is TEntityDescriptor(
                     DatabaseId = 2
                     GameplayBehavior = EGameplayBehavior/Nothing
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // Cadavre
@@ -265,7 +265,7 @@ export Descriptor_UnitCadavre_Quartier_Petit is TEntityDescriptor(
                     DatabaseId = 2
                     GameplayBehavior = EGameplayBehavior/Nothing
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // Cadavre

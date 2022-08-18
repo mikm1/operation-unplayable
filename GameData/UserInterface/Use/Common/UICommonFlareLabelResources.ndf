@@ -141,7 +141,7 @@ is BUCKListDescriptor
             (
                 RelativeWidthHeight = [1.0, 0.0]
                 MagnifiableWidthHeight = [-6.0, 15.0]
-                MagnifiableOffset = [3.0, -3.0]
+                MagnifiableOffset = [3.0, -1.0]
                 AlignementToAnchor = [0.0, 1.0]
             )
 
@@ -152,6 +152,9 @@ is BUCKListDescriptor
             VerticalFitStyle = ~/FitStyle/UserDefined
             BigLineAction = ~/BigLineAction/CutByDots
             BigWordAction = ~/BigWordAction/BigWordCut
+
+            HasBackground = true
+            BackgroundBlockColorToken = "ObjectiveEtiquetteManager/TextBackground"
         )
     ]
     BackgroundComponents =
@@ -167,13 +170,15 @@ private template FlareLabelText
     ComponentFrame : TUIFramePropertyRTTI,
     TypefaceToken : string = "IBM",
     TextSize : string,
-    TextColor : string = "ObjectiveEtiquetteManager/Text",
+    TextColor : string = "ObjectiveEtiquetteManager/FlareText",
     Alignment = UIText_Left,
     HorizontalFitStyle = ~/FitStyle/FitToContent,
     VerticalFitStyle = ~/FitStyle/FitToContent,
     BigLineAction = ~/BigLineAction/MultiLine,
     BigWordAction = ~/BigWordAction/BigWordNewLine,
-    TextPadding = TRTTILength4()
+    TextPadding = TRTTILength4( Magnifiable = [5.0, 0.0, 5.0, 0.0]),
+    HasBackground : bool = false,
+    BackgroundBlockColorToken : string = "",
 ]
 is BUCKTextDescriptor
 (
@@ -192,6 +197,9 @@ is BUCKTextDescriptor
 
     TextStyle = "Default"
     TypefaceToken = <TypefaceToken>
+
+    HasBackground = <HasBackground>
+    BackgroundBlockColorToken = <BackgroundBlockColorToken>
 
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
 

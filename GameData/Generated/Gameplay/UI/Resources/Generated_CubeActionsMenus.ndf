@@ -819,6 +819,7 @@ export CubeAction_Menu_Ordres_transports_Arme is TCubeActionMenuDescriptor
             6,
             [
                 ~/CubeAction_Order_ShootOnPositionSmoke,
+                ~/CubeAction_Order_ShootDefensiveSmoke,
             ]
         ),
         (
@@ -911,6 +912,7 @@ export CubeAction_Menu_Ordres_transports_Arme_AP is TCubeActionMenuDescriptor
             6,
             [
                 ~/CubeAction_Order_ShootOnPositionSmoke,
+                ~/CubeAction_Order_ShootDefensiveSmoke,
             ]
         ),
         (
@@ -1010,6 +1012,7 @@ export CubeAction_Menu_Ordres_transports_Artillery is TCubeActionMenuDescriptor
             6,
             [
                 ~/CubeAction_Order_ShootOnPositionSmoke,
+                ~/CubeAction_Order_ShootDefensiveSmoke,
             ]
         ),
         (
@@ -1177,6 +1180,7 @@ export CubeAction_Menu_Ordres_unites is TCubeActionMenuDescriptor
             6,
             [
                 ~/CubeAction_Order_ShootOnPositionSmoke,
+                ~/CubeAction_Order_ShootDefensiveSmoke,
             ]
         ),
         (
@@ -1293,6 +1297,7 @@ export CubeAction_Menu_Ordres_unites_Arme_AP is TCubeActionMenuDescriptor
             6,
             [
                 ~/CubeAction_Order_ShootOnPositionSmoke,
+                ~/CubeAction_Order_ShootDefensiveSmoke,
             ]
         ),
         (

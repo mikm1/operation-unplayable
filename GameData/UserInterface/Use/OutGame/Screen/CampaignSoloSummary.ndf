@@ -790,10 +790,12 @@ is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [750.0, 0.0]
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [-40.0, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
+    FirstMargin = TRTTILength( Magnifiable = 50.0)
 
     Elements =
     [
@@ -855,7 +857,6 @@ template ResumeCampagneTypeHistorique
 [
     BackgroundComponents = [],
     ForegroundComponents = [],
-
 ]
 is BUCKListDescriptor
 (

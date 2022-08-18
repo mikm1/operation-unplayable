@@ -2255,63 +2255,6 @@ TacticDepiction_Fallschirmjager_FlaseFlag_Demo_DDR_Ghost is TemplateInfantryDepi
 (
   Alternatives = TacticDepiction_Fallschirmjager_FlaseFlag_Demo_DDR_Alternatives
 )
-// *****************************[ Fallschirmjager_HMG_DDR ]*********************************
-Gfx_Fallschirmjager_HMG_DDR is TemplateInfantryDepictionSquad
-(
-  SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_GER
-)
-AllWeaponAlternatives_Fallschirmjager_HMG_DDR is [
-  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_AKs74 ),
-  AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_PKM ),
-  AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_RPG18 ),
-]
-AllWeaponSubDepiction_Fallschirmjager_HMG_DDR is TemplateAllSubWeaponDepiction
-(
-  Alternatives = AllWeaponAlternatives_Fallschirmjager_HMG_DDR
-  Operators = [
-    DepictionOperator_WeaponInstantFireInfantry
-    (
-      FireEffectTag = ["FireEffect_FM_Mpi_AKS_74NK"]
-      WeaponShootDataPropertyName = "WeaponShootData_0_1"
-    ),
-    DepictionOperator_WeaponInstantFireInfantry
-    (
-      FireEffectTag = ["FireEffect_MMG_PKM_7_62mm"]
-      WeaponShootDataPropertyName = "WeaponShootData_0_2"
-    ),
-    DepictionOperator_WeaponInstantFireInfantry
-    (
-      FireEffectTag = ["FireEffect_RocketInf_RPG18_64mm"]
-      WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    ),
-  ]
-)
-AllWeaponSubDepictionBackpack_Fallschirmjager_HMG_DDR is TemplateAllSubBackpackWeaponDepiction
-(
-  Alternatives = AllWeaponAlternatives_Fallschirmjager_HMG_DDR
-)
-TacticDepiction_Fallschirmjager_HMG_DDR_Surrogates is [['high', '01'], ['high', '02'], ['high', '03'], ['high', '04'], ['high', '05'], ['high', '06']]
-TacticDepiction_Fallschirmjager_HMG_DDR_Alternatives is [
-  TDepictionDescriptor( SelectorId = ['high', '01'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Fallschirmjager_HMG_DDR ) ),
-  TDepictionDescriptor( SelectorId = ['high', '02'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Fallschirmjager_HMG_DDR_02 ) ),
-  TDepictionDescriptor( SelectorId = ['high', '03'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Fallschirmjager_HMG_DDR_03 ) ),
-  TDepictionDescriptor( SelectorId = ['high', '04'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Fallschirmjager_HMG_DDR_04 ) ),
-  TDepictionDescriptor( SelectorId = ['high', '05'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Fallschirmjager_HMG_DDR_05 ) ),
-  TDepictionDescriptor( SelectorId = ['high', '06'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Fallschirmjager_HMG_DDR_06 ) ),
-  TDepictionDescriptor( SelectorId = ['low']  MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Fallschirmjager_HMG_DDR_LOW ) ),
-]
-TacticDepiction_Fallschirmjager_HMG_DDR_Soldier is TemplateInfantryDepictionFactoryTactic
-(
-  Surrogates = TacticDepiction_Fallschirmjager_HMG_DDR_Surrogates
-  Alternatives = TacticDepiction_Fallschirmjager_HMG_DDR_Alternatives
-  SubDepictions = [AllWeaponSubDepiction_Fallschirmjager_HMG_DDR, AllWeaponSubDepictionBackpack_Fallschirmjager_HMG_DDR]
-  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2') ] )]
-)
-TacticDepiction_Fallschirmjager_HMG_DDR_Ghost is TemplateInfantryDepictionFactoryGhost
-(
-  Surrogates = TacticDepiction_Fallschirmjager_HMG_DDR_Surrogates
-  Alternatives = TacticDepiction_Fallschirmjager_HMG_DDR_Alternatives
-)
 // *****************************[ Fallschirmjager_Metys_DDR ]*********************************
 Gfx_Fallschirmjager_Metys_DDR is TemplateInfantryDepictionSquad
 (
@@ -6418,7 +6361,7 @@ Gfx_Volkspolizei_CMD_DDR is TemplateInfantryDepictionSquad
   SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_GER
 )
 AllWeaponAlternatives_Volkspolizei_CMD_DDR is [
-  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_Uzi ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_Skorpion ),
 ]
 AllWeaponSubDepiction_Volkspolizei_CMD_DDR is TemplateAllSubWeaponDepiction
 (
@@ -6463,7 +6406,7 @@ Gfx_Volkspolizei_DDR is TemplateInfantryDepictionSquad
   SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_GER
 )
 AllWeaponAlternatives_Volkspolizei_DDR is [
-  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_Uzi ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_Skorpion ),
   AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_RPG18 ),
 ]
 AllWeaponSubDepiction_Volkspolizei_DDR is TemplateAllSubWeaponDepiction
@@ -6514,7 +6457,7 @@ Gfx_Wachregiment_CMD_DDR is TemplateInfantryDepictionSquad
   SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_GER
 )
 AllWeaponAlternatives_Wachregiment_CMD_DDR is [
-  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_Uzi ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_Skorpion ),
   AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_STG941 ),
   AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_MANPAD_Strela2M ),
 ]
@@ -6612,7 +6555,7 @@ Gfx_Wachregiment_SMG_DDR is TemplateInfantryDepictionSquad
   SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_GER
 )
 AllWeaponAlternatives_Wachregiment_SMG_DDR is [
-  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_Uzi ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_Skorpion ),
   AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_RPG22 ),
 ]
 AllWeaponSubDepiction_Wachregiment_SMG_DDR is TemplateAllSubWeaponDepiction
@@ -6732,8 +6675,6 @@ InfantryMimetic is MAP[
   ( 'Fallschirmjager_FalseFlag_DDR_ghost', TacticDepiction_Fallschirmjager_FalseFlag_DDR_Ghost ),
   ( 'Fallschirmjager_FlaseFlag_Demo_DDR', TacticDepiction_Fallschirmjager_FlaseFlag_Demo_DDR_Soldier ),
   ( 'Fallschirmjager_FlaseFlag_Demo_DDR_ghost', TacticDepiction_Fallschirmjager_FlaseFlag_Demo_DDR_Ghost ),
-  ( 'Fallschirmjager_HMG_DDR', TacticDepiction_Fallschirmjager_HMG_DDR_Soldier ),
-  ( 'Fallschirmjager_HMG_DDR_ghost', TacticDepiction_Fallschirmjager_HMG_DDR_Ghost ),
   ( 'Fallschirmjager_Metys_DDR', TacticDepiction_Fallschirmjager_Metys_DDR_Soldier ),
   ( 'Fallschirmjager_Metys_DDR_ghost', TacticDepiction_Fallschirmjager_Metys_DDR_Ghost ),
   ( 'Fallschirmjager_Scout_RFA', TacticDepiction_Fallschirmjager_Scout_RFA_Soldier ),
@@ -6940,7 +6881,6 @@ TransportedInfantryAlternativesCount is MAP[
   ('Fallschirmjager_FalseFlag_CMD_DDR', 1),
   ('Fallschirmjager_FalseFlag_DDR', 6),
   ('Fallschirmjager_FlaseFlag_Demo_DDR', 1),
-  ('Fallschirmjager_HMG_DDR', 6),
   ('Fallschirmjager_Metys_DDR', 6),
   ('Fallschirmjager_Scout_RFA', 6),
   ('Feldgendarmerie_RFA', 6),
@@ -7303,12 +7243,6 @@ TransportedInfantryAlternatives is [
   AlternativeWithId( SelectorId = ['Fallschirmjager_FalseFlag_DDR', '05'] ModelFile = ModelFile_Fallschirmjager_FalseFlag_DDR_05 ),
   AlternativeWithId( SelectorId = ['Fallschirmjager_FalseFlag_DDR', '06'] ModelFile = ModelFile_Fallschirmjager_FalseFlag_DDR_06 ),
   AlternativeWithId( SelectorId = ['Fallschirmjager_FlaseFlag_Demo_DDR', '01'] ModelFile = ModelFile_Fallschirmjager_FlaseFlag_Demo_DDR ),
-  AlternativeWithId( SelectorId = ['Fallschirmjager_HMG_DDR', '01'] ModelFile = ModelFile_Fallschirmjager_HMG_DDR ),
-  AlternativeWithId( SelectorId = ['Fallschirmjager_HMG_DDR', '02'] ModelFile = ModelFile_Fallschirmjager_HMG_DDR_02 ),
-  AlternativeWithId( SelectorId = ['Fallschirmjager_HMG_DDR', '03'] ModelFile = ModelFile_Fallschirmjager_HMG_DDR_03 ),
-  AlternativeWithId( SelectorId = ['Fallschirmjager_HMG_DDR', '04'] ModelFile = ModelFile_Fallschirmjager_HMG_DDR_04 ),
-  AlternativeWithId( SelectorId = ['Fallschirmjager_HMG_DDR', '05'] ModelFile = ModelFile_Fallschirmjager_HMG_DDR_05 ),
-  AlternativeWithId( SelectorId = ['Fallschirmjager_HMG_DDR', '06'] ModelFile = ModelFile_Fallschirmjager_HMG_DDR_06 ),
   AlternativeWithId( SelectorId = ['Fallschirmjager_Metys_DDR', '01'] ModelFile = ModelFile_Fallschirmjager_Metys_DDR ),
   AlternativeWithId( SelectorId = ['Fallschirmjager_Metys_DDR', '02'] ModelFile = ModelFile_Fallschirmjager_Metys_DDR_02 ),
   AlternativeWithId( SelectorId = ['Fallschirmjager_Metys_DDR', '03'] ModelFile = ModelFile_Fallschirmjager_Metys_DDR_03 ),

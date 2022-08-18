@@ -588,35 +588,6 @@ export MissileCarriage_BMP_1PG_SOV_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
-// BMP_1P_DDR : ['ATGM 9K111 Fagot']
-export MissileCarriage_BMP_1P_DDR is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = Modele_BMP_1P_DDR
-    PylonSet = DepictionPylonSet_ATGM( CastShadow = False )
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 4
-            MissileType = eAGM
-            WeaponIndex = 4
-        ),
-    ]
-)
-export MissileCarriage_BMP_1P_DDR_Showroom is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = Modele_BMP_1P_DDR
-    PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 4
-            MissileType = eAGM
-            WeaponIndex = 4
-        ),
-    ]
-)
 // BMP_1P_SOV : ['ATGM 9K111 Fagot']
 export MissileCarriage_BMP_1P_SOV is TMissileCarriageConnoisseur
 (
@@ -844,6 +815,35 @@ export MissileCarriage_BMP_3_SOV_Showroom is TMissileCarriageConnoisseur
         TMissileCarriageWeaponInfo
         (
             Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+// BRDM_2_Konkurs_DDR : ['ATGM 9M113 Konkurs x5']
+export MissileCarriage_BRDM_2_Konkurs_DDR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_BRDM_2_Konkurs_DDR
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 10
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_BRDM_2_Konkurs_DDR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_BRDM_2_Konkurs_DDR
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 10
             MissileType = eAGM
             WeaponIndex = 1
         ),
@@ -1134,35 +1134,6 @@ export MissileCarriage_FV102_Striker_UK_Showroom is TMissileCarriageConnoisseur
         TMissileCarriageWeaponInfo
         (
             Count = 10
-            MissileType = eAGM
-            WeaponIndex = 1
-        ),
-    ]
-)
-// Iltis_MILAN_RFA : ['ATGM MILAN']
-export MissileCarriage_Iltis_MILAN_RFA is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = Modele_Iltis_MILAN_RFA
-    PylonSet = DepictionPylonSet_Vehicle_Default( CastShadow = False )
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 4
-            MissileType = eAGM
-            WeaponIndex = 1
-        ),
-    ]
-)
-export MissileCarriage_Iltis_MILAN_RFA_Showroom is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = Modele_Iltis_MILAN_RFA
-    PylonSet = DepictionPylonSet_Vehicle_Default( CastShadow = True )
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 4
             MissileType = eAGM
             WeaponIndex = 1
         ),
@@ -4021,37 +3992,6 @@ export MissileCarriage_A10_Thunderbolt_II_US_Showroom is TMissileCarriageConnois
         ),
     ]
 )
-// Alpha_Jet_A_clu_RFA : ['Bomb CBU Mk20 Rockeye II 250kg x2']
-export MissileCarriage_Alpha_Jet_A_clu_RFA is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = Modele_Alpha_Jet_A_clu_RFA
-    PylonSet = DepictionPylonSet_Airplane_RFA( CastShadow = False )
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 2
-            MissileType = eAGM
-            MountingType = eMountingBomb
-            WeaponIndex = 2
-        ),
-    ]
-)
-export MissileCarriage_Alpha_Jet_A_clu_RFA_Showroom is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = Modele_Alpha_Jet_A_clu_RFA
-    PylonSet = DepictionPylonSet_Airplane_RFA( CastShadow = True )
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 2
-            MissileType = eAGM
-            MountingType = eMountingBomb
-            WeaponIndex = 2
-        ),
-    ]
-)
 // Alpha_Jet_A_he_RFA : ['Bomb Mk82 250kg x2']
 export MissileCarriage_Alpha_Jet_A_he_RFA is TMissileCarriageConnoisseur
 (
@@ -4418,37 +4358,6 @@ export MissileCarriage_F111F_Aardvark_LGB2_US_Showroom is TMissileCarriageConnoi
         ),
     ]
 )
-// F111F_Aardvark_LGB_US : ['Bomb GBU 12 x4']
-export MissileCarriage_F111F_Aardvark_LGB_US is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = Modele_F111F_Aardvark_LGB_US
-    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = False )
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 4
-            MissileType = eAGM
-            MountingType = eMountingBomb
-            WeaponIndex = 2
-        ),
-    ]
-)
-export MissileCarriage_F111F_Aardvark_LGB_US_Showroom is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = Modele_F111F_Aardvark_LGB_US
-    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = True )
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 4
-            MissileType = eAGM
-            MountingType = eMountingBomb
-            WeaponIndex = 2
-        ),
-    ]
-)
 // F111F_Aardvark_US : ['Bomb Mk82 250kg x12']
 export MissileCarriage_F111F_Aardvark_US is TMissileCarriageConnoisseur
 (
@@ -4508,6 +4417,47 @@ export MissileCarriage_F111F_Aardvark_napalm_US_Showroom is TMissileCarriageConn
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
+        ),
+    ]
+)
+// F15C_Eagle_AA2_US : ['AA AIM7M Sparrow'] ['AA AIM9M Sidewinder']
+export MissileCarriage_F15C_Eagle_AA2_US is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_F15C_Eagle_AA2_US
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_F15C_Eagle_AA2_US_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_F15C_Eagle_AA2_US
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 3
         ),
     ]
 )

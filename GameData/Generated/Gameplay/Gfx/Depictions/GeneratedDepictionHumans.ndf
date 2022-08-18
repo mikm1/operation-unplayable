@@ -1154,15 +1154,6 @@ HumanSubDepictionsShowroom_Howz_M46_130mm_SOV is
         MeshDescriptor = MeshDescriptor_Servant_D_SOV
     ),
 ]
-HumanSubDepictions_Iltis_MILAN_RFA is 
-[
-    SubDepiction_Driver
-    (
-        MeshDescriptorHigh = MeshDescriptor_Driver_RFA
-        MeshDescriptorLow = MeshDescriptor_Driver_RFA_LOW
-    ),
-]
-HumanSubDepictionsShowroom_Iltis_MILAN_RFA is []
 HumanSubDepictions_Iltis_RFA is 
 [
     SubDepiction_Driver
@@ -1226,15 +1217,6 @@ HumanSubDepictions_M151_MUTT_RCL_DDR is
     ),
 ]
 HumanSubDepictionsShowroom_M151_MUTT_RCL_DDR is []
-HumanSubDepictions_M151_MUTT_Reco_DDR is 
-[
-    SubDepiction_Driver
-    (
-        MeshDescriptorHigh = MeshDescriptor_Driver_US
-        MeshDescriptorLow = MeshDescriptor_Driver_US_LOW
-    ),
-]
-HumanSubDepictionsShowroom_M151_MUTT_Reco_DDR is []
 HumanSubDepictions_M151_MUTT_trans_US is 
 [
     SubDepiction_Driver
@@ -1790,7 +1772,6 @@ MAP[
     ("Howz_M102_105mm_US", 2),
     ("Howz_M46_130mm_DDR", 2),
     ("Howz_M46_130mm_SOV", 2),
-    ("Iltis_MILAN_RFA", 1),
     ("Iltis_RFA", 1),
     ("Iltis_reco_RFA", 1),
     ("Iltis_trans_RFA", 1),
@@ -1798,7 +1779,6 @@ MAP[
     ("M151A2_scout_US", 1),
     ("M151_MUTT_CMD_US", 1),
     ("M151_MUTT_RCL_DDR", 1),
-    ("M151_MUTT_Reco_DDR", 1),
     ("M151_MUTT_trans_US", 1),
     ("M35_supply_US", 1),
     ("M35_trans_US", 1),
@@ -1941,7 +1921,6 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_DDR SelectorId = [ "Howz_M46_130mm_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_G_SOV SelectorId = [ "Howz_M46_130mm_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Servant_D_SOV SelectorId = [ "Howz_M46_130mm_SOV", "02" ] ),
-    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_MILAN_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_reco_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_trans_RFA", "01" ] ),
@@ -1949,7 +1928,6 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M151A2_scout_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M151_MUTT_CMD_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_SOV SelectorId = [ "M151_MUTT_RCL_DDR", "01" ] ),
-    TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M151_MUTT_Reco_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M151_MUTT_trans_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M35_supply_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = MeshDescriptor_Driver_US SelectorId = [ "M35_trans_US", "01" ] ),

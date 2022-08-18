@@ -1,15 +1,3 @@
-// parametres obligatoires (on pourrait metre default values = nil)
-
-// NbCaseX                  : int,
-// NbCaseY                  : int,
-
-// MapName                  : string,
-// MapDirectory             : string,
-// LevelBuildDirectory        : string,
-// ScriptingDirectory       : string,
-// UnitLevelBuildDirectory  : string,
-// UnitLevelDesignDirectory : string,
-
 MapGameModeContext is TBaseClass
 (
     Tactic        is 0
@@ -21,11 +9,9 @@ DefaultValues is TBaseClass
 (
     private MapInfoPath                 is 'MapInfo.IA'
 
-    private ClusterDecorsSet            is $/ClusterSets/ClusterLoad_EmptyDecorsSet
     private HauteurMer                  is 0
-    private WindForFX                   is float3[100,100,50]
 
-    private PNGHeightMultiplicator      is 100000.0
+    private MaxAltitude                 is 100000.0
 
     // extra values
     private CellSize                is 655360

@@ -20,6 +20,6 @@ Modele_M151A2_scout_US_LOW is TResourceMultiMaterialMeshWithLod
 
 Modele_M151A2_scout_US_Tourelle_01 is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/Ammo/Tourelles/M60_t1.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/Ammo/Tourelles/M2HB_12_7mm_t1.Ase2NdfBin'
     CivMask =  CivMask/Common
 )

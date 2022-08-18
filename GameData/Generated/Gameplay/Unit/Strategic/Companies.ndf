@@ -17,14 +17,6 @@ export Descriptor_Company_TestPawn is TEntityDescriptor
                 )
                 Selection = [
                     NilDescriptorIfCadavre,
-                    TModuleSelectorFilterIfGhost
-                    (
-                        Descriptor = TTypeUnitModuleDescriptor
-                        (
-                            Nationalite                      = ENationalite/Allied
-                            TypeUnitValue                    = ETypeUnit/Undef
-                        )
-                    )
                 ]
             ),
 
@@ -64,24 +56,6 @@ export Descriptor_Company_TestPawn is TEntityDescriptor
                 )
                 Selection = [
                     TModuleSelectorFilterIfCadavre
-                    (
-                        Descriptor = TPositionModuleDescriptor
-                        (
-                            UseFollowCam               = False
-                            StickToGround              = True
-                            InGeoDb                    = False
-                            PorteurMustBeVisible       = True
-                            ClampInWorld               = True
-                            ClampOutMap                = False
-                            HasNearlyNullBBox          = False
-                            GfxDescriptorPorteur       = ~/GfxPorteurUnite
-                            Radius                     = ((0) * Metre)
-                            RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
-                            LowAltitudeFlyingAltitude  = ((0) * Metre)
-                            NearGroundFlyingAltitude   = ((0) * Metre)
-                        )
-                    ),
-                    TModuleSelectorFilterIfGhost
                     (
                         Descriptor = TPositionModuleDescriptor
                         (
@@ -143,7 +117,7 @@ export Descriptor_Company_TestPawn is TEntityDescriptor
                     VisionObstructionType = EVisionObstructionType/Vehicle
                     GroundDissimulationModifierType = EGroundDissumulationModifierType/Ground
                 )
-                Selection = [~/NilDescriptorIfGhostOrCadavre]
+                Selection = [~/NilDescriptorIfCadavre]
             ),
 
         // ActionPoints

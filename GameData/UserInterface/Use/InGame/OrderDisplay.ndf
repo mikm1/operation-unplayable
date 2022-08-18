@@ -26,6 +26,7 @@ export OrderDisplayDrawer is TOrderDisplayDrawer
                                 OrderDisplayShoot,
                                 OrderDisplayShootOnPosition,
                                 OrderDisplayShootOnPositionSmoke,
+                                OrderDisplayShootDefensiveSmoke,
                                 OrderDisplayAirplaneShoot,
                                 //UNLOAD
                                 OrderDisplayUnload,
@@ -326,6 +327,22 @@ export OrderDisplayShootOnPositionSmoke is TOrderDisplayDrawInfo //Fire Pos Indi
     ColorLineStart              = [255, 255, 255, 50]
     ColorLineEnd                = [255, 255, 255, alpha]
     MaxMetersBetweenColors      = MaxMeter
+    LineThickness               = 2000.0
+    ColorCircleDestination      = [255, 255, 255, 200]
+    CircleDestinationThickness  = 1000.0
+    CircleDestinationRadius     = 2000.0
+    DashLengthInMeters          = 0
+    DisplayWaypoints            = false
+    HideNextOrders              = false
+    MustDrawCircle              = true
+    MustDrawArrow               = false
+    EffectMode                  = ~/FeedbackEffectMode/Solid
+)
+
+export OrderDisplayShootDefensiveSmoke is TOrderDisplayDrawInfo //Fire Pos Indirect Fire
+(
+    OrderToken                  = "ShootDefensiveSmoke"
+
     LineThickness               = 2000.0
     ColorCircleDestination      = [255, 255, 255, 200]
     CircleDestinationThickness  = 1000.0

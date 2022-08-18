@@ -2,25 +2,6 @@
 // *** Critiques de véhicules à roues ou à chenilles **************************************************************************************
 // ****************************************************************************************************************************************
 
-CriticalEffect_New_Fuel_leak_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC1'
-    EffectsPack = ~/UnitEffect_Fuel_leak
-    TimeOut = 100
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = True
-)
-
-template CriticalEffect_New_Fuel_leak
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_New_Fuel_leak_Desc
-)
-
 CriticalEffect_AmmoExplosion_Desc is TCriticalEffectDescriptor
 (
     Token = 'CRITIC1'

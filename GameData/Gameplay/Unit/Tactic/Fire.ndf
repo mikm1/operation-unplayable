@@ -141,7 +141,7 @@ export Descriptor_FireWithHighSpreadProba is TEntityDescriptor
             IsNewFireProbability           = 1
             Radius                         = ((100) * Metre)
             AmmunitionForBurn              = ~/Ammo_Degats_incendie
-            TimeBetweenBurns               = ((0.5) * Seconde)
+            TimeBetweenBurns               = ((1) * Seconde)
             OverridenSpreadDescriptor      = nil
             SmokeDescriptor                = Descriptor_Smoke_FumiNapalm
         ),

@@ -26,6 +26,8 @@ template DeckListButton
 
     ButtonMagnifiableWidthHeight = ~/DeckListButtonsDims
     BackgroundBlockColorToken = 'Vert_bouton'
+    ButtonAlignementToAnchor = [0.0, 0.5]
+    ButtonAlignementToFather = [0.0, 0.5]
     BorderLineColorToken = 'blanc_contour'
     HasBackground = true
     BorderThicknessToken = '2'
@@ -174,7 +176,7 @@ private DeckListPanelCreateButton is ModalButtonGris
     LeftClickSound = SoundEvent_OpenCreateDeckModal
 )
 
-private DeckListPanelSelectButton is ModalButtonGris
+private DeckListPanelSelectButton is ConfirmButton
 (
     ElementName = "SelectButton"
     TextToken = "NV_SELECT"
@@ -183,6 +185,20 @@ private DeckListPanelSelectButton is ModalButtonGris
     HintBodyToken = "ODL_SELEBB"
     HintExtendedToken = "ODL_SELEBE"
     HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    BigLineAction = ~/BigLineAction/ResizeFont
+
+    ButtonMagnifiableWidthHeight = [400.0, 34.0]
+    BackgroundBlockColorToken = 'VertConfirm'
+    ButtonAlignementToAnchor = [0.5, 0.5]
+    ButtonAlignementToFather = [0.5, 0.5]
+    BorderLineColorToken = 'blanc_contour'
+    HasBackground = true
+    BorderThicknessToken = '2'
+    TextColorToken = 'blanc_contour'
+    TextSizeToken = '26'
+    TextTypefaceToken = "Liberator"
+    TextPadding = TRTTILength4( Magnifiable = [2.0, 0.0, 2.0, 0.0] )
+
     LeftClickSound = SoundEvent_SelectDeck
 )
 
@@ -304,21 +320,17 @@ BattlegroupBriefsScrollingContainer is BUCKSpecificScrollingContainerDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1.0, 0.0]
-        MagnifiableWidthHeight = [0.0, 520.0]
+        RelativeWidthHeight = [1.0, 1.0]
         AlignementToAnchor = [0.0, 0.0]
         AlignementToFather = [0.0, 0.0]
     )
 
     HasVerticalScrollbar = true
-    ScrollStepSize = [0.0, 50.0]
+    ScrollStepSize = [0.0, 20.0]
 
     VerticalScrollbarComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [10.0, 0.0]
-        MagnifiableOffset = [-6.0, 0.0]
-        AlignementToFather = [0.0, 0.0]
-        AlignementToAnchor = [1.0, 0.0]
+        MagnifiableWidthHeight = [DeckListScrollbarWidth, 0.0]
     )
 
     Components =
@@ -328,12 +340,19 @@ BattlegroupBriefsScrollingContainer is BUCKSpecificScrollingContainerDescriptor
             ElementName = "BattlegroupsBriefRack"
             ComponentFrame = TUIFramePropertyRTTI
             (
-                RelativeWidthHeight = [1.0, 0.0]
+                MagnifiableWidthHeight = [DeckListListWidth, 0.0]
+                AlignementToAnchor = [1.0, 0.0]
+                AlignementToFather = [1.0, 0.0]
             )
-            FirstMargin = TRTTILength(Magnifiable = 2.0)
+
             InterItemMargin = TRTTILength(Magnifiable = 0.0)
 
             BladeDescriptor = ~/BattlegroupBriefDescriptorForSelection
+
+            ForegroundComponents =
+            [
+                ~/EffetStylePochettePlastique,
+            ]
         ),
     ]
 )
@@ -389,11 +408,15 @@ is BUCKTextDescriptor
 
 //-------------------------------------------------------------------------------------
 
-WDeckColonne_alliance is 68.0
-WDeckColonne_name is 130.0
-WDeckColonne_Flag is 60.0
-WDeckColonne_case is 55.0
-WDeckColonne_valeur is 100.0
+DeckListTotalWidth is 600.0
+DeckListScrollbarWidth is 10.0
+DeckListListWidth is 580.0
+
+DeckListColonne_Alliance is 68.0
+DeckListColonne_Flag is 60.0
+DeckListColonne_Division is 55.0
+DeckListColonne_Power is 50.0
+DeckListColonne_Type is 50.0
 
 BattlegroupsBriefMultiListTitle is BUCKListDescriptor
 (
@@ -405,8 +428,8 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
     )
 
     Axis = ~/ListAxis/Horizontal
-    FirstMargin = TRTTILength (Magnifiable = 0.0)
-    InterItemMargin = TRTTILength (Magnifiable = 0.0)
+    FirstMargin = TRTTILength (Magnifiable = DeckListTotalWidth - DeckListListWidth)
+
     Elements =
     [
         //embleme
@@ -419,7 +442,7 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [WDeckColonne_case, 0.0]
+                    MagnifiableWidthHeight = [DeckListColonne_Division, 0.0]
                 )
                 ShowCheckbox = true
                 CheckBoxBorderLineColorToken = 'gris_load'
@@ -447,7 +470,7 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [50.0, 0.0]
+                    MagnifiableWidthHeight = [DeckListColonne_Flag, 0.0]
                 )
 
                 SortingType = ~/MultiListSorting/Integer
@@ -473,7 +496,7 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [50.0, 0.0]
+                    MagnifiableWidthHeight = [DeckListColonne_Alliance, 0.0]
                 )
                 ShowCheckbox = true
 
@@ -495,14 +518,14 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
         // BattlegroupName
         BUCKListElementDescriptor
         (
+            ExtendWeight = 1.0
             ComponentDescriptor = BUCKMultiListTitleButtonDescriptor
             (
                 ElementName = 'BattlegroupNameMultiList'
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [WDeckColonne_name+180.0, 0.0]
+                    RelativeWidthHeight = [1.0, 1.0]
                 )
                 ShowCheckbox = false
                 CheckBoxBorderLineColorToken = 'gris_load'
@@ -530,7 +553,7 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [55.0, 0.0]
+                    MagnifiableWidthHeight = [DeckListColonne_Power, 0.0]
                 )
                 ShowCheckbox = true
                 CheckBoxBorderLineColorToken = 'gris_load'
@@ -560,7 +583,7 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [50.0, 0.0]
+                    MagnifiableWidthHeight = [DeckListColonne_Type, 0.0]
                 )
                 ShowCheckbox = true
                 CheckBoxBorderLineColorToken = 'gris_load'
@@ -579,37 +602,7 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                     )
                 ]
             )
-        ),
-        //-------------------------------------------------------------------------------------
-        // infos DEPREC
-        // BattlegroupName
-
-        // IncomeText
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKMultiListTitleButtonDescriptor
-            (
-                ElementName = 'IncomeTextMultiList'
-
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [WDeckColonne_case, 0.0]
-                )
-                ShowCheckbox = false
-                SortingType = ~/MultiListSorting/String
-                HidePointerEvents = true
-                Components =
-                [
-                    TextListe( TextToken = '' ),
-                    BUCKSpecificHintableArea
-                    (
-                        DicoToken = ~/LocalisationConstantes/dico_interface_outgame
-                        HintBodyToken = "div_commB"
-                    )
-                ]
-            )
-        ),
+        )
     ]
 )
 
@@ -620,14 +613,8 @@ BattlegroupsBriefMultiList is BUCKMultiListDescriptor
     ElementName = "BattlegroupsBriefMultiList"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [617.0, 0.0]
-        RelativeWidthHeight = [0.0, 1.0]
-        AlignementToFather = [0.5, 0.5]
-        AlignementToAnchor = [0.5, 0.5]
-        MagnifiableOffset = [0.0, 60.0]
+        RelativeWidthHeight = [1.0, 1.0]
     )
-
-    FirstMargin  = TRTTILength (Magnifiable = 30.0)
 
     ColumnNames =
     [
@@ -987,12 +974,31 @@ private DeckListModalExportDeckWindowFrame is SpecificModaleWindowFrame
 
 //-------------------------------------------------------------------------------------
 
+private SelectionButton is BUCKContainerDescriptor
+(
+    ElementName = "SelectionButtonContainer"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, 45.0]
+        AlignementToAnchor = [0.5, 0.0]
+        AlignementToFather = [0.5, 0.0]
+    )
+
+    Components =
+    [
+        DeckListPanelSelectButton
+    ]
+)
+
+//-------------------------------------------------------------------------------------
+
 private BoutonsAction is BUCKListDescriptor
 (
+    ElementName = "ActionButtonsList"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 45.0]
-        MagnifiableOffset = [0.0, 714.0]
         AlignementToAnchor = [0.5, 0.0]
         AlignementToFather = [0.5, 0.0]
     )
@@ -1002,7 +1008,6 @@ private BoutonsAction is BUCKListDescriptor
 
     Elements =
     [
-        BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelSelectButton ),
         BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelCreateButton ),
         BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelImportButton ),
         BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListBackButton ),
@@ -1016,8 +1021,7 @@ private BoutonsDeck is BUCKListDescriptor
     ElementName = "DeckButtonsList"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, 27.0]
-        MagnifiableOffset = [0.0, 667.0]
+        MagnifiableWidthHeight = [0.0, 45.0]
         AlignementToAnchor = [0.5, 0.0]
         AlignementToFather = [0.5, 0.0]
     )
@@ -1148,20 +1152,49 @@ EcranDeckAnimated is WindowFrame
                 ),
                 BUCKContainerDescriptor
                 (
+                    ElementName = "DeckListArea"
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        RelativeWidthHeight = [1.0, 1.0]
+                        MagnifiableWidthHeight = [DeckListTotalWidth, 670.0]
+                        AlignementToFather = [0.5, 0.0]
+                        AlignementToAnchor = [0.5, 0.0]
+                        MagnifiableOffset = [0.0, 90.0]
                     )
 
                     Components =
                     [
-                        ~/BattlegroupsBriefMultiList,
+                        BUCKListDescriptor
+                        (
+                            ElementName = "DeckListVerticalList"
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                            )
+                            Axis = ~/ListAxis/Vertical
+
+                            Elements =
+                            [
+                                BUCKListElementDescriptor
+                                (
+                                    ExtendWeight = 1.0
+                                    ComponentDescriptor = BattlegroupsBriefMultiList
+                                ),
+                                BUCKListElementDescriptor
+                                (
+                                    ComponentDescriptor = SelectionButton
+                                ),
+                                BUCKListElementDescriptor
+                                (
+                                    ComponentDescriptor = BoutonsDeck
+                                ),
+                                BUCKListElementDescriptor
+                                (
+                                    ComponentDescriptor = BoutonsAction
+                                ),
+                            ]
+                        ),
                     ]
                 ),
-
-                ~/BoutonsDeck,
-                ~/BoutonsAction,
-                ~/EffetStylePochettePlastique,
             ]
         )
     ]
@@ -1171,141 +1204,25 @@ EcranDeckAnimated is WindowFrame
 
 testHauteur is 52.0
 testlargeur is 610.0
-EffetStylePochettePlastique is BUCKListDescriptor
+EffetStylePochettePlastique is BUCKRackDescriptor
 (
+    ElementName = "PlaticPochettes"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [617.0, 0.0]
-        AlignementToAnchor = [0.5, 0.0]
-        AlignementToFather = [0.5, 0.0]
-        MagnifiableOffset = [5.0, 140.0]
+        RelativeWidthHeight = [1.0, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
 
-    Elements =
-    [
-        BUCKListElementDescriptor
+    BladeDescriptor = BUCKTextureDescriptor
+    (
+        ComponentFrame = TUIFramePropertyRTTI
         (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [testlargeur, testHauteur]
-                )
-                TextureDrawer  = 'ColorMultiply_Additive'
-                TextureToken =  'Outgame_deck_pochette'
-            )
+            MagnifiableWidthHeight = [testlargeur, testHauteur]
         )
-    ]
+        TextureDrawer  = 'ColorMultiply_Additive'
+        TextureToken =  'Outgame_deck_pochette'
+    )
 )
 
 //--------------------------------------------------------

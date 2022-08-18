@@ -394,6 +394,25 @@ export CubeAction_Order_ShootOnPositionSmoke is Template_CubeActionOrderButtonIn
     Mapping                  = $/KeyboardOption/Mapping_Smoke
 )
 
+export CubeAction_Order_ShootDefensiveSmoke is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
+(
+    CubeActionName           = "CubeAction_Order_DefensiveSmoke"
+    DebugName                = "InGameCubeAction_ButtonDefensiveSmoke"
+
+    CubeActionFunctionType   = TacticCubeActionFunctionType/Orders
+
+    ButtonTextToken          = 'ORD_SMOKD'
+    HintTitleToken           = 'ORD_SMOKD'
+    HintBodyToken            = 'HNT_SMOKE'
+    HintExtendedToken        = ''
+    HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
+
+    OrderToken               = "ShootDefensiveSmoke"
+    ActionType               = OrderInstant
+    ValidationTargetToken    = 'CA_VALPOS'
+    Mapping                  = $/KeyboardOption/Mapping_Smoke
+)
+
 export CubeAction_Order_Move is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
 (
     CubeActionName           = "CubeAction_Order_Move"

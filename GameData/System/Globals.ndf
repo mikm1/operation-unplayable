@@ -1,10 +1,4 @@
 //-----------------------------------------------------------------------------
-// Transition visuelle entre le ghost de production
-// en fonction de la progression de la construction [0 = début ; 1 = fin]
-// nb : dès 0, côté IA, le bâtiment n'est plus considéré comme un ghost de production
-GhostToBuildTransitionInFuncOfBuildProgression is 0.3
-
-//-----------------------------------------------------------------------------
 // terrains
 // ATTENTION : si on veut supprimer/modifier des masques de terrain, gérer la rétrocompatibilité dans
 // ZonesLoader.cpp & mettre à jour le numéro de version du Zones.mesh dans ZonesLoader.cpp & LoadSaveZones.cpp
@@ -57,8 +51,3 @@ SpecificCommandName is TBaseClass
     UpdateGUIFromShowAutoDeploy                 is "GUI::UpdateGUIFromShowAutoDeploy"
     UpdateGUIFromComparisonDisplay              is "GUI::UpdateGUIFromComparisonDisplay"
 )
-
-//-----------------------------------------------------------------------------
-// Terrains a ignorer (utiles pour les bateaux)
-// A garder a jour avec MouvementHandlerEnums.h
-TerrainToIgnoreMask_Beach        is 16 // 1 << 4 pour les plages.

@@ -17,6 +17,13 @@ DamageTypeComponentConfigurations is
     ),
     TDamageComponentConfiguration
     (
+        DamageType = "he_autocanon"
+        Button = "HEButton"
+        AmmoText = "WeaponHEAmmoText"
+        CalibreText = "WeaponHECalibreText"
+    ),
+    TDamageComponentConfiguration
+    (
         DamageType = "howz"
         Button = "HOWZAPButton"
         AmmoText = "WeaponHowzAPAmmoText"
@@ -87,7 +94,7 @@ DamageTypeComponentConfigurations is
     ),
     TDamageComponentConfiguration
     (
-        DamageType = "frag"
+        DamageType = "superhe"
         Button = "RocketFragButton"
         AmmoText = "WeaponRocketFragAmmoText"
         CalibreText = "WeaponRocketFragCalibreText"
@@ -140,7 +147,7 @@ DamageTypeComponentConfigurations is
         Button = "MissileHEButton"
         AmmoText = "WeaponMissileHEAmmoText"
         CalibreText = "WeaponMissileHECalibreText"
-    ),
+    )
 ]
 
 // -------------------------------------------------------------------------------------------------

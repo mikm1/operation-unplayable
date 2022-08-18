@@ -1900,14 +1900,6 @@ Weapon_GatlingAir_Mauser_BK_27mm is TCompositeHappening
         SFXWeapon_GatlingAir_Mauser_BK_27mm,
     ]
 )
-Weapon_Bomb_CBU_Mk20_Rockeye_II_250kg_x2 is TCompositeHappening
-(
-    SubHappenings = 
-    [
-        FXWeapon_Bomb_CBU_Mk20_Rockeye_II_250kg_x2,
-        SFXWeapon_Bomb_CBU_Mk20_Rockeye_II_250kg_x2,
-    ]
-)
 Weapon_Bomb_Mk82_250kg_x2 is TCompositeHappening
 (
     SubHappenings = 
@@ -1997,7 +1989,14 @@ Weapon_Bomb_Mk77_340kg_Napalm_x4 is TCompositeHappening
     ]
 )
 Weapon_Bomb_GBU_10_x4 is FXWeapon_Bomb_GBU_10_x4
-Weapon_Bomb_GBU_12_x4 is FXWeapon_Bomb_GBU_12_x4
+Weapon_AA_AIM7M_Sparrow is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_AA_AIM7M_Sparrow,
+        SFXWeapon_AA_AIM7M_Sparrow,
+    ]
+)
 Weapon_AA_AIM120A_AMRAAM is TCompositeHappening
 (
     SubHappenings = 
@@ -2006,12 +2005,12 @@ Weapon_AA_AIM120A_AMRAAM is TCompositeHappening
         SFXWeapon_AA_AIM120A_AMRAAM,
     ]
 )
-Weapon_AA_AIM7M_Sparrow is TCompositeHappening
+Weapon_Bomb_CBU_Mk20_Rockeye_II_250kg_x2 is TCompositeHappening
 (
     SubHappenings = 
     [
-        FXWeapon_AA_AIM7M_Sparrow,
-        SFXWeapon_AA_AIM7M_Sparrow,
+        FXWeapon_Bomb_CBU_Mk20_Rockeye_II_250kg_x2,
+        SFXWeapon_Bomb_CBU_Mk20_Rockeye_II_250kg_x2,
     ]
 )
 Weapon_Bomb_Mk82_250kg_x6 is TCompositeHappening

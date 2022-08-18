@@ -1517,7 +1517,7 @@ private SupplyFeedbackIcons is TBUCKSpecificLabelFeedbackIconsDescriptor
         TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
 
         FeedbackTexture = "icone_shell"
-        FeedbackRefillTexture = "icone_shell"
+        FeedbackRefillTexture = "icone_shell_refill"
     )
 
     RepairIcon = TBUCKSpecificLabelFeedbackIconDescriptor
@@ -1529,7 +1529,7 @@ private SupplyFeedbackIcons is TBUCKSpecificLabelFeedbackIconsDescriptor
         TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
 
         FeedbackTexture = "icone_life"
-        FeedbackRefillTexture = "icone_life"
+        FeedbackRefillTexture = "icone_life_refill"
     )
 )
 

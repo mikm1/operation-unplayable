@@ -25,6 +25,9 @@ template PylonDepictionTemplate [ MeshDescriptor, MaterialTags = nil, CastShadow
             DepictionDescriptor_LOD_High       ( MeshDescriptor = <MeshDescriptor> MaterialTags = <MaterialTags> ),
             TDepictionDescriptor( SelectorId = ['none'] RequireOthersSkeleton = true),
         ]
+    Operators = [
+        DepictionOperator_Shader_Ghost,
+    ]
 )
 
 template DepictionOnePylonSet_DefaultMissile [ MaterialTags = nil, CastShadow ] is TDepictionPylonSet

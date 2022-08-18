@@ -3,7 +3,7 @@ ZocRadius is 353 * Metre
 StrategicCampaignConstantes is TStrategicCampaignConstantes
 (
     MovementSmoothingMaxAngle = 45. // entre 10° (si vraiment besoin de moins, venir en discuter avec un dev) et 180° (équivaut à "pas d'angle max")
-    MaxSubMovementLength = 500 * Metre
+    MaxSubMovementLength = 1 * ~/ActionPointConsumptionRefs/CaseSize
 
     FatigueGainOnMove = ~/StrategicFatigueGainOnMove
     FatigueLossOnNextTurn = ~/StrategicFatigueLossOnNextTurn
@@ -42,57 +42,10 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     TacticalScoreLimit = 1000
 
     //----------
-    // Consequences de combat
-    MaxActionPointsUsedByDefenseToFlee = MAP [
-        (EVictoryType/Draw,             9),
-        (EVictoryType/MinorVictory,     9),
-        (EVictoryType/MajorVictory,     6),
-        (EVictoryType/TotalVictory,     3),
-    ]
-    MaxActionPointsUsedByAttackToFlee = MAP [
-        (EVictoryType/Draw,             9),
-        (EVictoryType/MinorDefeat,      9),
-        (EVictoryType/MajorDefeat,      9),
-        (EVictoryType/TotalDefeat,      3),
-    ]
-    ActionPointsPenaltyForDefenseDefeat = MAP [
-        (EVictoryType/MinorVictory,     4),
-        (EVictoryType/MajorVictory,     4),
-        (EVictoryType/TotalVictory,     4),
-    ]
-    ActionPointsPenaltyForAttackDefeat = MAP [
-        (EVictoryType/MinorDefeat,      4),
-        (EVictoryType/MajorDefeat,      4),
-        (EVictoryType/TotalDefeat,      4),
-    ]
-    ActionPointsPenaltyForDefenseDefeatForPlane = MAP [
-        (EVictoryType/MinorVictory,     4),
-        (EVictoryType/MajorVictory,     4),
-        (EVictoryType/TotalVictory,     4),
-    ]
-    ActionPointsPenaltyForAttackDefeatForPlane = MAP [
-        (EVictoryType/MinorDefeat,      4),
-        (EVictoryType/MajorDefeat,      4),
-        (EVictoryType/TotalDefeat,      4),
-    ]
-    ActionPointsPenaltyForDefenseDefeatForOutMapArtillery = MAP [
-        (EVictoryType/MinorVictory,     1),
-        (EVictoryType/MajorVictory,     2),
-        (EVictoryType/TotalVictory,     3),
-    ]
-    ActionPointsPenaltyForAttackDefeatForOutMapArtillery = MAP [
-        (EVictoryType/MinorDefeat,      2),
-        (EVictoryType/MajorDefeat,      3),
-        (EVictoryType/TotalDefeat,      4),
-    ]
 
     ActionPointsPenaltyForAllAttackersIntercepted = 0 // embuscade
 
     NbTurnToRepairDisabledUnit = 2
-
-    NbColumnsPerFormationLine = 5
-    DistanceBetweenFormationColumns = 500 * Metre
-    DistanceBetweenFormationLines = 500 * Metre
 
     //cosmetique des ordres
     BattleArrowStartBorderColor = [0, 0, 0, 0]
@@ -118,9 +71,6 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     // Règles de multisélection
     MultiSelectionLimit = 5
 
-    // Règles de compagnies
-    MaxUnitsPerCompany = 9
-
     // Ecoulement du temps
     TurnTimeOfDay = ["StrMorn", "StrAftn"] // un tour de jeu a 8h, le suivant a 14h etc...
 
@@ -134,7 +84,6 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     // Possibilite de conserver un ordre sur plusieurs tours
     MultipleTurnOrdersActivated = false
 
-    DeployDisplayFactor = 0.1
     PowerValuesBattleFactor = 0.003 //0.0045*1.2  // valeur du point de force dans l'affichage des pions et de la barre
     DigitToDisplayForAutoresolveUnitPower = 0
     DigitToDisplayForAutoresolveArmyRatio = 1
@@ -227,9 +176,6 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     SetupDurationPerOrder = MAP [
         ("FortifyAntiAir",          0), // FortifyAntiAir - action de defense Anti aerienne des unites au sol
     ]
-
-    //Apparence
-    OverrideModelWithMostRepresentativeUnitInDeck = false
 
     //IA steelman
     AvailableAIList =

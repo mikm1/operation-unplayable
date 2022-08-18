@@ -6,7 +6,6 @@ DepictionOperator_Shader_Selection is TCosmeticSelectionStyleOperatorDesc()
 DepictionOperator_Shader_Ghost is TCosmeticGhostColorOperatorDesc()
 DepictionOperator_Shader_TeamColor is TCosmeticTeamColorOperatorDesc()
 DepictionOperator_Shader_Exploded is TCosmeticExplodedStyleOperatorDesc()
-DepictionOperator_Shader_Sold is TCosmeticSoldOperatorDesc()
 
 // ****************************************************************************************************************************************
 // *** Reset (doit être le premier Operator de toute liste qu'on souhaite réinitialiser à chaque frame) ***********************************
@@ -124,8 +123,8 @@ DepictionOperator_Propulsion_Wheels_TowedCanon is TCosmeticWheelsOperatorDesc( O
 // ***** Chaleur **************************************************************************************************************************
 // ****************************************************************************************************************************************
 
-DepictionOperator_Heat_1 is TCosmeticLaunchActionDesc( OperatorId = 'chaleur1' ActionId = ['chaleur1'] )
-DepictionOperator_Heat_2 is TCosmeticLaunchActionDesc( OperatorId = 'chaleur2' ActionId = ['chaleur2'] )
+DepictionOperator_Heat_1 is TCosmeticLaunchActionNotGhostDesc( OperatorId = 'chaleur1' ActionId = ['chaleur1'] )
+DepictionOperator_Heat_2 is TCosmeticLaunchActionNotGhostDesc( OperatorId = 'chaleur2' ActionId = ['chaleur2'] )
 
 // ****************************************************************************************************************************************
 // ***** Radar ****************************************************************************************************************************
@@ -662,6 +661,7 @@ CommonOperators is [
     DepictionOperator_Reset_Generic,
     DepictionOperator_DamageRatio_Generic,
     DepictionOperator_CadaverBurning,
+    DepictionOperator_Shader_Ghost,
 ]
 
 CommonTowedUnitsOperators is

@@ -18,5 +18,39 @@ Modele_Marder_1A3_RFA_LOW is TResourceMultiMaterialMeshWithLod
     CivMask =  CivMask/Common
 )
 
+//-------------------------------------------------------------------------------------
+Gfx_Modele_Marder_1A3_RFA  is TTimelyReceiverFactoryCarrier
+(
+    DepictionTemplate = TDepictionTemplate
+    (
+        Scaler = TConstantScaler( Scale = 7)
+        Selector = OnlyHighDepictionSelector
+        DepictionAlternatives = [ DepictionDescriptor_LOD_High( MeshDescriptor = MeshModele_Socle_RFA ) ]
 
+        SubDepictions = [ TSubDepiction
+        (
+            Depiction = TDepictionTemplate
+            (
+                Scaler = CommonIdentityScaler
+                Selector = OnlyHighDepictionSelector
+                DepictionAlternatives = [ DepictionDescriptor_LOD_High( MeshDescriptor = MeshModele_Tige_courte ) ]
+
+                SubDepictions = [ TSubDepiction
+                (
+                    Anchor = "vehicule"
+                    Depiction = TDepictionTemplate
+                    (
+                        Scaler = TConstantScaler( Scale = 7)
+                        Selector = CommonDepictionSelector
+                        DepictionAlternatives = [
+                            DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Marder_1A3_RFA ),
+                            DepictionDescriptor_LOD_Mid ( MeshDescriptor = Modele_Marder_1A3_RFA ),
+                            DepictionDescriptor_LOD_Low ( MeshDescriptor = Modele_Marder_1A3_RFA DisabledOperators = ['tourelle3'] ),
+                        ]
+                    )
+                ) ]
+            )
+        ) ]
+    )
+)
 

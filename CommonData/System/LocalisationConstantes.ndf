@@ -16,5 +16,6 @@ LocalisationConstantes is TBaseClass
     dico_effets                          is "EFFETS"
     dico_ui_editor                       is "UIEDITOR"
     dico_packs                           is "PACKS"
+    dico_pelotons                        is "PELOTONS"
     dico_traits                          is "TRAITS"
 )

@@ -1383,6 +1383,7 @@ DeckPanelAnimation is BUCKTranslationAnimatedContainerDescriptor
     ]
 )
 
+//-------------------------------------------------------------------------------------
 DeckEditorCloseButton is MainBackButtonContainer
 (
     ButtonDefaultToken = "BTN_CLOSE"

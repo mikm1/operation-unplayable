@@ -1202,7 +1202,7 @@ ChallengeDescriptionContainer is BUCKTranslationAnimatedContainerDescriptor
         MagnifiableWidthHeight = [750.0, 0.0]
         AlignementToAnchor = [0.0, 0.0]
         AlignementToFather = [1.0, 1.0]
-        MagnifiableOffset = [-75.0, -75.0]
+        MagnifiableOffset = [-75.0, -125.0]
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContentVertically
@@ -1261,6 +1261,26 @@ ChallengeDescriptionContainer is BUCKTranslationAnimatedContainerDescriptor
 
 //-------------------------------------------------------------------------------------
 
+LaunchChallengeButton is ConfirmButton
+(
+    ElementName = 'LaunchChallengeButton'
+    TextToken = 'CLS_LAUNCH'
+    ButtonAlignementToAnchor = [0.5,0.5]
+    ButtonAlignementToFather = [0.5,0.2]
+    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ENTER ) )
+    ButtonMagnifiableWidthHeight = [183.0, 90.0]
+    TextTypefaceToken = "UISecondFont"
+    TextStyle = 'TextStyleEcranMoniteur_cyan'
+    TextColorToken = 'loginBlanc'
+    BorderLineColorToken = 'Cyan'
+    HasBackground = true
+    BackgroundBlockColorToken = 'loginBoutonBackground_cyan'
+    TextSizeToken = '30'
+    BorderThicknessToken = '3'
+)
+
+//-------------------------------------------------------------------------------------
+
 BUCKSpecificShowRoomGroupsDeckCreatorScreenMainComponentDescriptor is BUCKContainerDescriptor
 (
     ElementName = "BUCKSpecificShowRoomGroupsDeckCreatorScreenMainComponent"
@@ -1278,6 +1298,7 @@ BUCKSpecificShowRoomGroupsDeckCreatorScreenMainComponentDescriptor is BUCKContai
         ~/AnimationPanelUnitInfos,
         ~/DeckEditorCloseButton,
         ~/ChallengeDescriptionContainer,
+        ~/LaunchChallengeButton,
     ]
 )
 

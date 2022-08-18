@@ -297,7 +297,7 @@ template TemplateInfantryDepictionFactoryTactic
     Alternatives = <Alternatives>
     SubDepictions = <SubDepictions>
     Surrogates = <Surrogates>
-    Operators = [ DepictionOperator_Shader_Selection, DepictionOperator_Shader_TeamColor ] + <Operators>
+    Operators = [ DepictionOperator_Shader_Selection, DepictionOperator_Shader_TeamColor, DepictionOperator_Shader_Ghost ] + <Operators>
 )
 
 template TemplateInfantryDepictionSquad
@@ -348,7 +348,7 @@ template TransportedInfantryDepiction
         OptionalLimit = $/GraphicOption/ModelQuality
     )
 
-    Operators = [ TCosmeticFreezeSkeletalAnimationOperatorDesc(Animation = FusilierTransport) ]
+    Operators = [ TCosmeticFreezeSkeletalAnimationOperatorDesc(Animation = FusilierTransport), DepictionOperator_Shader_Ghost ]
 
     DepictionAlternatives = <Alternatives>
         + [ AlternativeNoneNoSkeleton,

@@ -15,7 +15,7 @@ template BUCKSpecificDivisionBriefMainComponentDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = (<HasBattlegroup> == true ? [610.0, 52.0] : [285.0 + <DivisionNameWidth>, 50.0])
+        MagnifiableWidthHeight = (<HasBattlegroup> == true ? [DeckListListWidth, 52.0] : [285.0 + <DivisionNameWidth>, 50.0])
         AlignementToAnchor = <AlignementToAnchor>
         AlignementToFather = <AlignementToFather>
     )
@@ -78,7 +78,7 @@ is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [WDeckColonne_alliance, 0.0]
+                    MagnifiableWidthHeight = [DeckListColonne_Alliance, 0.0]
                 )
 
                 Components =
@@ -88,8 +88,7 @@ is BUCKListDescriptor
                         ElementName = "AllianceTexture"
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            RelativeWidthHeight = [0.0, 1.0]
-                            MagnifiableWidthHeight = [50.0, 0.0]
+                            RelativeWidthHeight = [1.0, 1.0]
                         )
 
                         TextureFrame = TUIFramePropertyRTTI
@@ -137,6 +136,7 @@ is BUCKListDescriptor
         // affichage nom du deck
         BUCKListElementDescriptor
         (
+            ExtendWeight = 1.0
             ComponentDescriptor = DivisionInfoDeckName
         ),
     ] :
@@ -144,6 +144,7 @@ is BUCKListDescriptor
         // affichage nom de la division
         BUCKListElementDescriptor
         (
+            ExtendWeight = 1.0
             ComponentDescriptor = DivisionInfoName ( DivisionNameWidth = <DivisionNameWidth> )
         ),
     ]) +
@@ -208,8 +209,7 @@ private DivisionInfoDeckName is BUCKMultiListContentElementDescriptor
     ElementName = 'BattlegroupNameMultiList'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [0.0, 1.0]
-        MagnifiableWidthHeight = [315.0, 0.0]
+        RelativeWidthHeight = [1.0, 1.0]
     )
     Components =
     [
@@ -250,9 +250,8 @@ private DivisionInfoDrapeauNation is BUCKMultiListContentElementDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [0.0, 1.0]
+        MagnifiableWidthHeight = [DeckListColonne_Flag, 0.0]
     )
-
-    FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
 
     Components =
     [
@@ -260,8 +259,7 @@ private DivisionInfoDrapeauNation is BUCKMultiListContentElementDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                RelativeWidthHeight = [0.0, 1.0]
-                MagnifiableWidthHeight = [WDeckColonne_Flag, 0.0]
+                RelativeWidthHeight = [1.0, 1.0]
             )
 
             Components =
@@ -272,9 +270,7 @@ private DivisionInfoDrapeauNation is BUCKMultiListContentElementDescriptor
 
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        MagnifiableWidthHeight = [52.0, 32.0]
-                        AlignementToAnchor = [0.5, 0.5]
-                        AlignementToFather = [0.5, 0.5]
+                        RelativeWidthHeight = [1.0, 1.0]
                     )
 
                     TextureFrame = TUIFramePropertyRTTI
@@ -299,7 +295,7 @@ private DivisionPower is BUCKMultiListContentElementDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [0.0, 1.0]
-        MagnifiableWidthHeight = [WDeckColonne_case, 0.0]
+        MagnifiableWidthHeight = [DeckListColonne_Power, 0.0]
     )
 
     Components =
@@ -309,8 +305,7 @@ private DivisionPower is BUCKMultiListContentElementDescriptor
             ElementName = "DivisionPowerText"
             ComponentFrame = TUIFramePropertyRTTI
             (
-                RelativeWidthHeight = [0.0, 1.0]
-                MagnifiableWidthHeight = [WDeckColonne_case, 0.0]
+                RelativeWidthHeight = [1.0, 1.0]
             )
 
             ParagraphStyle = TParagraphStyleRTTI
@@ -342,7 +337,7 @@ private DivisionType is BUCKMultiListContentElementDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [0.0, 1.0]
-        MagnifiableWidthHeight = [50.0, 0.0]
+        MagnifiableWidthHeight = [DeckListColonne_Type, 0.0]
     )
 
     Components =
@@ -361,19 +356,19 @@ private DivisionType is BUCKMultiListContentElementDescriptor
                     ElementName = "DivisionUnitType"
                     ComponentFrame = TUIFramePropertyRTTI
                     (
+                        RelativeWidthHeight = [1.0, 1.0]
+                        AlignementToAnchor = [0.5, 0.5]
+                        AlignementToFather = [0.5, 0.5]
+                    )
 
-                        MagnifiableWidthHeight = [34.0, 34.0]
+                    TextureFrame = TUIFramePropertyRTTI
+                    (
                         AlignementToAnchor = [0.5, 0.5]
                         AlignementToFather = [0.5, 0.5]
                     )
 
                     ResizeMode = ~/TextureResizeMode/FitToParentConservingRatio
                     TextureColorToken = "White"
-                    TextureFrame = TUIFramePropertyRTTI
-                    (
-                        AlignementToAnchor = [0.5, 0.5]
-                        AlignementToFather = [0.5, 0.5]
-                    )
                 ),
                 BUCKTextureDescriptor
                 (
@@ -449,9 +444,8 @@ private DivisionInfoEmblem is BUCKMultiListContentElementDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [0.0, 1.0]
+        MagnifiableWidthHeight = [DeckListColonne_Division, 0.0]
     )
-
-    FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
 
     Components =
     [
@@ -459,8 +453,7 @@ private DivisionInfoEmblem is BUCKMultiListContentElementDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                RelativeWidthHeight = [0.0, 1.0]
-                MagnifiableWidthHeight = [50, 0.0]
+                RelativeWidthHeight = [1.0, 1.0]
             )
 
             Components =
@@ -470,14 +463,11 @@ private DivisionInfoEmblem is BUCKMultiListContentElementDescriptor
                     ElementName = "DivisionEmblem"
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        RelativeWidthHeight = [0.0, 1.0]
-                        MagnifiableWidthHeight = [50.0, 0.0]
+                        RelativeWidthHeight = [1.0, 1.0]
                     )
 
                     TextureFrame = TUIFramePropertyRTTI
                     (
-                        RelativeWidthHeight = [0.0, 0.0]
-                        MagnifiableWidthHeight = [0.0, 0.0]
                         AlignementToAnchor = [0.5, 0.5]
                         AlignementToFather = [0.5, 0.5]
                     )
@@ -516,15 +506,7 @@ template UISpecificDivisionBriefViewDescriptor
 
     HasBattlegroup = false,
     PremadeBattlegroupTextColor = "Gold",
-
-    MainComponentDescriptor = BUCKSpecificDivisionBriefMainComponentDescriptor
-    (
-        AlignementToAnchor = [0.5, 0.0]
-        AlignementToFather = [0.5, 0.0]
-        IsTogglable = false
-        RadioButtonManager = nil
-        HasBattlegroup = false
-    )
+    MainComponentDescriptor : TBUCKButtonDescriptor,
 ] is TUISpecificDivisionBriefViewDescriptor
 (
     MainComponentDescriptor = <MainComponentDescriptor>

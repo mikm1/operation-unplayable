@@ -2,6 +2,12 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
     GameplayLogicManagerHandler = $/UI/LogicManagers/InGameLogicManagerHandler
     OrderEvaluatorList = [
 
+        TOrderEvaluatorShootDefensiveSmoke(
+            OrderToken = "ShootDefensiveSmoke"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
         TOrderEvaluatorAny(
             OrderToken = "UnloadFromTransport"
             IgnoreDefaultOrder = true
@@ -195,6 +201,26 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
             OrderInterpretationForOrderDisplayAndAcknows = "MoveAndAttack"
+        ),
+
+        TOrderEvaluatorShootOnPosition(
+            OrderToken = "ShootOnPositionWithoutCorrection"
+            IgnoreDefaultOrder = true
+            FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
+            MouseWidgetSelector = "MouseWidgetSelector_Attack"
+            PlayFXFeedbackWithoutTargets = true
+            PlayFXFeedbackWithPositionOnScreen = false
+            OrderInterpretationForOrderDisplayAndAcknows = "ShootOnPosition"
+        ),
+
+        TOrderEvaluatorShootOnPosition(
+            OrderToken = "ShootOnPositionWithoutCorrectionSmoke"
+            IgnoreDefaultOrder = true
+            FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
+            MouseWidgetSelector = "MouseWidgetSelector_Attack"
+            PlayFXFeedbackWithoutTargets = true
+            PlayFXFeedbackWithPositionOnScreen = false
+            OrderInterpretationForOrderDisplayAndAcknows = "ShootOnPositionSmoke"
         ),
 
         TOrderEvaluatorShootOnPosition(

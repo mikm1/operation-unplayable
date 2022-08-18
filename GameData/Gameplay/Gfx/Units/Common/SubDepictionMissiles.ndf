@@ -47,6 +47,9 @@ is TDepictionTemplate
             ),
         TDepictionDescriptor( SelectorId = ['none']),
     ]
+    Operators = [
+        DepictionOperator_Shader_Ghost,
+    ]
 )
 
 template TemplateDepictionMissileTowed

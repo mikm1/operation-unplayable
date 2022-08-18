@@ -52,7 +52,7 @@ export Descriptor_District_Quartier_Gros is TEntityDescriptor(
                        ("roquette", 1.0),
                     ]
                 )
-                Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection      = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // DistrictUnitsContainer
@@ -65,7 +65,7 @@ export Descriptor_District_Quartier_Gros is TEntityDescriptor(
                         "Inf_quartier_ok",
                     ]
                 )
-                Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection      = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // DistrictDynamicTerrain
@@ -76,7 +76,7 @@ export Descriptor_District_Quartier_Gros is TEntityDescriptor(
                     TerrainToApplyOnInit  = ETerrainType/Batiment
                     TerrainToApplyOnDeath = ETerrainType/Ruin
                 )
-                Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection      = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // Inflammable
@@ -118,10 +118,10 @@ export Descriptor_District_Quartier_Gros is TEntityDescriptor(
                     MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
                     MaxStunDamages = ~/Building_MaxStunDamages
                 )
-                MaxDamages = 30.0
+                MaxDamages = 36.0
                 HitRollSize = 5.0
                 HitRollECM = 0.0
-                MaxHPForHUD = 30
+                MaxHPForHUD = 36
                 AutoOrientation = False
                 IsTargetableAsBoat = False
                 IsTargetableOutsideCenter = False
@@ -171,7 +171,7 @@ export Descriptor_District_Quartier_Gros is TEntityDescriptor(
                     DatabaseId = 2
                     GameplayBehavior = EGameplayBehavior/Nothing
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // CadavreGenerator
@@ -245,7 +245,7 @@ export Descriptor_District_Quartier_Moyen is TEntityDescriptor(
                        ("roquette", 1.0),
                     ]
                 )
-                Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection      = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // DistrictUnitsContainer
@@ -258,7 +258,7 @@ export Descriptor_District_Quartier_Moyen is TEntityDescriptor(
                         "Inf_quartier_ok",
                     ]
                 )
-                Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection      = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // DistrictDynamicTerrain
@@ -269,7 +269,7 @@ export Descriptor_District_Quartier_Moyen is TEntityDescriptor(
                     TerrainToApplyOnInit  = ETerrainType/Batiment
                     TerrainToApplyOnDeath = ETerrainType/Ruin
                 )
-                Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection      = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // Inflammable
@@ -311,10 +311,10 @@ export Descriptor_District_Quartier_Moyen is TEntityDescriptor(
                     MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
                     MaxStunDamages = ~/Building_MaxStunDamages
                 )
-                MaxDamages = 10.0
+                MaxDamages = 12.0
                 HitRollSize = 5.0
                 HitRollECM = 0.0
-                MaxHPForHUD = 10
+                MaxHPForHUD = 12
                 AutoOrientation = False
                 IsTargetableAsBoat = False
                 IsTargetableOutsideCenter = False
@@ -364,7 +364,7 @@ export Descriptor_District_Quartier_Moyen is TEntityDescriptor(
                     DatabaseId = 2
                     GameplayBehavior = EGameplayBehavior/Nothing
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // CadavreGenerator
@@ -438,7 +438,7 @@ export Descriptor_District_Quartier_Petit is TEntityDescriptor(
                        ("roquette", 0.8),
                     ]
                 )
-                Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection      = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // DistrictUnitsContainer
@@ -451,7 +451,7 @@ export Descriptor_District_Quartier_Petit is TEntityDescriptor(
                         "Inf_quartier_ok",
                     ]
                 )
-                Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection      = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // DistrictDynamicTerrain
@@ -462,7 +462,7 @@ export Descriptor_District_Quartier_Petit is TEntityDescriptor(
                     TerrainToApplyOnInit  = ETerrainType/Batiment
                     TerrainToApplyOnDeath = ETerrainType/Ruin
                 )
-                Selection      = [ ~/NilDescriptorIfGhostOrCadavre ]
+                Selection      = [ ~/NilDescriptorIfCadavre ]
             ),
 
         // Inflammable
@@ -504,10 +504,10 @@ export Descriptor_District_Quartier_Petit is TEntityDescriptor(
                     MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
                     MaxStunDamages = ~/Building_MaxStunDamages
                 )
-                MaxDamages = 10.0
+                MaxDamages = 12.0
                 HitRollSize = 5.0
                 HitRollECM = 0.0
-                MaxHPForHUD = 10
+                MaxHPForHUD = 12
                 AutoOrientation = False
                 IsTargetableAsBoat = False
                 IsTargetableOutsideCenter = False
@@ -557,7 +557,7 @@ export Descriptor_District_Quartier_Petit is TEntityDescriptor(
                     DatabaseId = 2
                     GameplayBehavior = EGameplayBehavior/Nothing
                 )
-                Selection      = [~/NilDescriptorIfGhostOrCadavre]
+                Selection      = [~/NilDescriptorIfCadavre]
             ),
 
         // CadavreGenerator

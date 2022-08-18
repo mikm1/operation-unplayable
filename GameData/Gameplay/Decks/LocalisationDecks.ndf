@@ -5,3 +5,10 @@ DicoPacks is TLocalisationDicoResource
     ModFileName = "GameData:/Localisation/MODDING.csv"
 )
 
+DicoPelotons is TLocalisationDicoResource
+(
+    DicoToken = ~/LocalisationConstantes/dico_pelotons
+    FileName = "GameData:/Localisation/SteelMan/pelotons.csv"
+    ModFileName = "GameData:/Localisation/MODDING.csv"
+)
+

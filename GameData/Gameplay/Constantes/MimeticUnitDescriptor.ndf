@@ -46,17 +46,5 @@ export Descriptor_Unit_MimeticUnit is TEntityDescriptor
             TMimeticFXManagerModuleDescriptor
             (
             ),
-
-            // GhostModule
-            TModuleSelector
-            (
-                Default        = nil
-                Selection      = [
-                    TModuleSelectorFilterIfGhost
-                    (
-                        Descriptor = TGhostModuleDescriptor()
-                    )
-                ]
-            ),
     ]
 )

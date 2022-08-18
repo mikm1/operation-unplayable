@@ -1,19 +1,6 @@
 
 DebugModuleDescriptor is TDebugModuleDescriptor()
 
-template TModuleSelectorFilterIfGhost
-[ Descriptor ]
-is TModuleSelectorFilter
-(
-    Condition  = TModuleSelectorCondition_ParamEquals_Integer(ParamId=~/Parameter_ModuleCreationSelectionFilter  ParamValue=~/ModuleCreationFilter_Ghost)
-    Descriptor = <Descriptor>
-)
-
-NilDescriptorIfGhost is TModuleSelectorFilterIfGhost
-(
-    Descriptor = nil
-)
-
 template TModuleSelectorFilterIfCadavre
 [ Descriptor ]
 is TModuleSelectorFilter
@@ -27,35 +14,6 @@ NilDescriptorIfCadavre is TModuleSelectorFilterIfCadavre
     Descriptor = nil
 )
 
-template TModuleSelectorFilterIfGhostOrCadavre
-[ Descriptor ]
-is TModuleSelectorFilter
-(
-    Condition  = TModuleSelectorCondition_OR(
-        A=TModuleSelectorCondition_ParamEquals_Integer(ParamId=~/Parameter_ModuleCreationSelectionFilter  ParamValue=~/ModuleCreationFilter_Cadavre)
-        B=TModuleSelectorCondition_ParamEquals_Integer(ParamId=~/Parameter_ModuleCreationSelectionFilter  ParamValue=~/ModuleCreationFilter_Ghost)
-    )
-
-    Descriptor = <Descriptor>
-)
-
-NilDescriptorIfGhostOrCadavre is TModuleSelectorFilterIfGhostOrCadavre
-(
-    Descriptor = nil
-)
-
-NilDescriptorIfCadavreOrGhostNotForProd is TModuleSelectorFilter
-(
-    Condition  = TModuleSelectorCondition_OR(
-        A=TModuleSelectorCondition_AND(
-            A=TModuleSelectorCondition_ParamEquals_Integer(ParamId=~/Parameter_ModuleCreationSelectionFilter  ParamValue=~/ModuleCreationFilter_Ghost)
-            B=TModuleSelectorCondition_ParamEquals_Boolean(ParamId=~/Parameter_IsForProduction ParamValue=False))
-        B=TModuleSelectorCondition_ParamEquals_Integer(ParamId=~/Parameter_ModuleCreationSelectionFilter  ParamValue=~/ModuleCreationFilter_Cadavre)
-    )
-
-    Descriptor = nil
-)
-
 LinkTeamModuleDescriptor is TLinkTeamModuleDescriptor
 (
 )
@@ -65,25 +23,19 @@ InfluenceDataModuleSelector is TModuleSelector
      Default = TInfluenceDataModuleDescriptor
      (
      )
-     Selection = [ ~/NilDescriptorIfGhostOrCadavre ]
+     Selection = [ ~/NilDescriptorIfCadavre ]
 )
 
-EffectApplierModuleSelector is TModuleSelector
+EffectApplierModuleSelector is TEffectApplierModuleDescriptor
 (
-    Default        = TEffectApplierModuleDescriptor
-    (
-    )
-    Selection      = [ ~/NilDescriptorIfGhost ]
 )
 
 OrderDisplayModuleDescriptor is TOrderDisplayModuleDescriptor()
 
 PackSignauxModuleDescriptor  is TPackSignauxModuleDescriptor()
 
-InflammableModuleDescriptorUnit  is TModuleSelector
+InflammableModuleDescriptorUnit  is TInflammableModuleDescriptor
 (
-    Default        = TInflammableModuleDescriptor()
-    Selection = [ ~/NilDescriptorIfGhost ]
 )
 
 public FXState is TBaseClass
@@ -98,14 +50,10 @@ public FXState is TBaseClass
     All is Idle + OnFire
 )
 
-InflammableModuleDescriptorDistrict  is TModuleSelector
+InflammableModuleDescriptorDistrict  is TInflammableModuleDescriptor
 (
-    Default        = TInflammableModuleDescriptor
-    (
-        FireFxStateId                   = ~/FXState/OnFire
-        IdleFxStateId                   = ~/FXState/Idle
-    )
-    Selection = [ ~/NilDescriptorIfGhost ]
+    FireFxStateId                   = ~/FXState/OnFire
+    IdleFxStateId                   = ~/FXState/Idle
 )
 
 DefaultShowroomCameraModule is TCameraShowroomModuleDescriptor
@@ -116,7 +64,7 @@ DefaultShowroomCameraModule is TCameraShowroomModuleDescriptor
 TargetDataModuleDescriptor is TModuleSelector
 (
     Default        = TTargetDataModuleDescriptor()
-    Selection = [~/NilDescriptorIfGhostOrCadavre]
+    Selection = [~/NilDescriptorIfCadavre]
 )
 
 template TCadavreGeneratorModuleDescriptorUnit
@@ -124,5 +72,5 @@ template TCadavreGeneratorModuleDescriptorUnit
 is TModuleSelector
 (
     Default        = TCadavreGeneratorModuleDescriptor( CadavreDescriptor = <CadavreDescriptor> )
-    Selection      = [~/NilDescriptorIfGhostOrCadavre]
+    Selection      = [~/NilDescriptorIfCadavre]
 )

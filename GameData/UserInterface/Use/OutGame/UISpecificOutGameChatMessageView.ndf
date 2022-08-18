@@ -61,6 +61,6 @@ UISpecificOutGameChatMessageViewDescriptor is TUISpecificOutGameChatMessageViewD
     [
         "Cyan", //System
         "Blanc", //Public
-        "Rouge", //Private
+        "VertPur", //Private
     ]
 )
