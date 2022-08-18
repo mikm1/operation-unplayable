@@ -824,7 +824,7 @@ WargameConstantes is TWargameTunableConstante
 
 //------------------------- Constantes Supply -------------------------------------------//
 
-    RatioSupplyHealth = 0.1 // En dessous ce ce ratio de vie, l'unité entrera dans la boucle de ravitaillement
+    RatioSupplyHealth = 0.0001 // En dessous ce ce ratio de vie, l'unité entrera dans la boucle de ravitaillement
     RatioSupplyToStartAMission = 0.4 // Valeur en dessous de laquelle les unités ne sont pas ajouté dans les missions (valable pour tous les type de ravitaillement contrairement aux variables au dessus)
     SupplyFuelForBoat = false
     SupplyHealthForBoat = false

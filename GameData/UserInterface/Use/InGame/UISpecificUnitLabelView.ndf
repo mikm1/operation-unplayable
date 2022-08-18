@@ -1520,7 +1520,7 @@ private SupplyFeedbackIcons is TBUCKSpecificLabelFeedbackIconsDescriptor
         FeedbackRefillTexture = "icone_shell_refill"
     )
 
-    RepairIcon = TBUCKSpecificLabelFeedbackIconDescriptor
+    RepairIcon = nil {TBUCKSpecificLabelFeedbackIconDescriptor
     (
         ComponentFrame = TUIFramePropertyRTTI(MagnifiableWidthHeight = [32.0, 32.0])
 
@@ -1530,7 +1530,7 @@ private SupplyFeedbackIcons is TBUCKSpecificLabelFeedbackIconsDescriptor
 
         FeedbackTexture = "icone_life"
         FeedbackRefillTexture = "icone_life_refill"
-    )
+    )}
 )
 
 //-------------------------------------------------------------------------------------
