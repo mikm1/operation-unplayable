@@ -28449,6 +28449,95 @@ Descriptor_UnitCadavre_Scout_US is TEntityDescriptor
 
     ]
 )
+Descriptor_UnitCadavre_Cav_Scout_US is TEntityDescriptor
+(
+    DescriptorId       = GUID:{37b848b6-877a-43b8-b04b-9d06d4a55e1c}
+    ClassNameForDebug  = 'Unit_CadavreCav_Scout_US'
+    ModulesDescriptors = [
+        // TypeUnit
+            TTypeUnitModuleDescriptor
+            (
+                TypeUnitValue                    = ETypeUnit/InfReco
+                Nationalite                      = ENationalite/Allied
+                MotherCountry                    = 'US'
+                AcknowUnitType                   = ~/TAcknowUnitType_Inf
+                TypeUnitFormation                = 'Reconnaissance'
+            ),
+
+        // Tags
+            TTagsModuleDescriptor
+            (
+            ),
+
+        // Flags
+            TFlagsModuleDescriptor
+            (
+                InitialFlagSet =
+                [
+                    Flag_Detectable,
+                    Flag_LdDetectable,
+                ]
+            ),
+
+        // Position
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // Cadavre
+            TCadavreModuleDescriptor
+            (
+                ExplodeAtEnd = True
+                KillAsVehicule = False
+                KillAsInfanterie = True
+                KillAsHelico = False
+                KillAsAirplane = False
+                KillAsBatiment = False
+                CadavreDuration = $/GFX/Everything/CadavreDuration_Infanterie
+                DisappearanceDuration = 0.0
+                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum
+                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum
+                FadingDuration = 1
+                DamageRatio = 1.
+                DeathExplosionAmmo = ~/Ammo_Mort_Unite_infanterie
+                SecondaryDeathExplosionAmmo = nil
+                InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
+                ModuleDescriptorsToSteal =
+                [
+                   $/GFX/Everything/Descriptor_Unit_Cav_Scout_US/GroupeCombat,
+                   $/GFX/Everything/Descriptor_Unit_Cav_Scout_US/LandMovement,
+                   $/GFX/Everything/Descriptor_Unit_Cav_Scout_US/GenericMovement,
+                   $/GFX/Everything/Descriptor_Unit_Cav_Scout_US/FacingInfos,
+                ]
+            ),
+            $/GFX/Everything/Descriptor_Unit_Cav_Scout_US/GroupeCombat,
+            $/GFX/Everything/Descriptor_Unit_Cav_Scout_US/LandMovement,
+            $/GFX/Everything/Descriptor_Unit_Cav_Scout_US/GenericMovement,
+            $/GFX/Everything/Descriptor_Unit_Cav_Scout_US/FacingInfos,
+
+        // PackSignaux
+            ~/PackSignauxModuleDescriptor,
+
+        // Debug
+            ~/DebugModuleDescriptor,
+
+    ]
+)
 Descriptor_UnitCadavre_Scout_VDV_SOV is TEntityDescriptor
 (
     DescriptorId       = GUID:{b445b665-06af-4a51-803c-18581312f2ce}

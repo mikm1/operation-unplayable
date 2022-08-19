@@ -1357,6 +1357,7 @@ export Descriptor_Deck_Division_US_3rd_Arm_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Rifles_half_LAW_US, 3),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Rifles_half_AT4_US, 3),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Scout_US, 2),
+        (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Cav_Scout_US, 2),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_UH60A_CO_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_UH60A_Supply_US, 1),
     ]

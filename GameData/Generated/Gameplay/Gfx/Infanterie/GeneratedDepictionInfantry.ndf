@@ -3663,7 +3663,7 @@ Gfx_MP_US is TemplateInfantryDepictionSquad
 )
 AllWeaponAlternatives_MP_US is [
   AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_M16A2 ),
-  AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_M60 ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_M72A4 ),
 ]
 AllWeaponSubDepiction_MP_US is TemplateAllSubWeaponDepiction
 (
@@ -3676,7 +3676,7 @@ AllWeaponSubDepiction_MP_US is TemplateAllSubWeaponDepiction
     ),
     DepictionOperator_WeaponInstantFireInfantry
     (
-      FireEffectTag = ["FireEffect_MMG_M60_7_62mm"]
+      FireEffectTag = ["FireEffect_RocketInf_M72_LAW_66mm"]
       WeaponShootDataPropertyName = "WeaponShootData_0_2"
     ),
   ]
@@ -3704,7 +3704,7 @@ TacticDepiction_MP_US_Soldier is TemplateInfantryDepictionFactoryTactic
   Surrogates = TacticDepiction_MP_US_Surrogates
   Alternatives = TacticDepiction_MP_US_Alternatives
   SubDepictions = [AllWeaponSubDepiction_MP_US, AllWeaponSubDepictionBackpack_MP_US]
-  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2') ] )]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('bazooka', 'MeshAlternative_2') ] )]
 )
 TacticDepiction_MP_US_Ghost is TemplateInfantryDepictionFactoryGhost
 (
@@ -4267,7 +4267,7 @@ TacticDepiction_MotRifles_VR_SOV_Soldier is TemplateInfantryDepictionFactoryTact
   Surrogates = TacticDepiction_MotRifles_VR_SOV_Surrogates
   Alternatives = TacticDepiction_MotRifles_VR_SOV_Alternatives
   SubDepictions = [AllWeaponSubDepiction_MotRifles_VR_SOV, AllWeaponSubDepictionBackpack_MotRifles_VR_SOV]
-  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2') ] )]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2'), ('bazooka', 'MeshAlternative_3')  ] )]
 )
 TacticDepiction_MotRifles_VR_SOV_Ghost is TemplateInfantryDepictionFactoryGhost
 (
@@ -5814,6 +5814,52 @@ TacticDepiction_Scout_US_Ghost is TemplateInfantryDepictionFactoryGhost
   Surrogates = TacticDepiction_Scout_US_Surrogates
   Alternatives = TacticDepiction_Scout_US_Alternatives
 )
+// *****************************[ Cav_Scout_US ]*********************************
+Gfx_Cav_Scout_US is TemplateInfantryDepictionSquad
+(
+  SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_US
+)
+AllWeaponAlternatives_Cav_Scout_US is [
+  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_M16A2 ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_M47_DRAGON_II ),
+]
+AllWeaponSubDepiction_Cav_Scout_US is TemplateAllSubWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_Cav_Scout_US
+  Operators = [
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_FM_M16"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_1"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_M47_DRAGON"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_2"
+    ),
+  ]
+)
+AllWeaponSubDepictionBackpack_Cav_Scout_US is TemplateAllSubBackpackWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_Cav_Scout_US
+)
+TacticDepiction_Cav_Scout_US_Surrogates is [['high', '01']]
+TacticDepiction_Cav_Scout_US_Alternatives is [
+  TDepictionDescriptor( SelectorId = ['high', '01'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Cav_Scout_US ) ),
+  TDepictionDescriptor( SelectorId = ['low']  MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_Cav_Scout_US_LOW ) ),
+]
+TacticDepiction_Cav_Scout_US_Soldier is TemplateInfantryDepictionFactoryTactic
+(
+  Surrogates = TacticDepiction_Cav_Scout_US_Surrogates
+  Alternatives = TacticDepiction_Cav_Scout_US_Alternatives
+  SubDepictions = [AllWeaponSubDepiction_Cav_Scout_US, AllWeaponSubDepictionBackpack_Cav_Scout_US]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('bazooka', 'MeshAlternative_2') ] )]
+)
+TacticDepiction_Cav_Scout_US_Ghost is TemplateInfantryDepictionFactoryGhost
+(
+  Surrogates = TacticDepiction_Cav_Scout_US_Surrogates
+  Alternatives = TacticDepiction_Cav_Scout_US_Alternatives
+)
 // *****************************[ Scout_VDV_SOV ]*********************************
 Gfx_Scout_VDV_SOV is TemplateInfantryDepictionSquad
 (
@@ -6887,6 +6933,8 @@ InfantryMimetic is MAP[
   ( 'Scout_SOV_ghost', TacticDepiction_Scout_SOV_Ghost ),
   ( 'Scout_US', TacticDepiction_Scout_US_Soldier ),
   ( 'Scout_US_ghost', TacticDepiction_Scout_US_Ghost ),
+  ( 'Cav_Scout_US', TacticDepiction_Cav_Scout_US_Soldier ),
+  ( 'Cav_Scout_US_ghost', TacticDepiction_Cav_Scout_US_Ghost ),
   ( 'Scout_VDV_SOV', TacticDepiction_Scout_VDV_SOV_Soldier ),
   ( 'Scout_VDV_SOV_ghost', TacticDepiction_Scout_VDV_SOV_Ghost ),
   ( 'Security_RFA', TacticDepiction_Security_RFA_Soldier ),
@@ -7030,6 +7078,7 @@ TransportedInfantryAlternativesCount is MAP[
   ('Scout_RFA', 6),
   ('Scout_SOV', 6),
   ('Scout_US', 10),
+  ('Cav_Scout_US', 1),
   ('Scout_VDV_SOV', 6),
   ('Security_RFA', 6),
   ('Spetsnaz_CMD_SOV', 6),
@@ -7691,6 +7740,7 @@ TransportedInfantryAlternatives is [
   AlternativeWithId( SelectorId = ['Scout_SOV', '04'] ModelFile = ModelFile_Scout_SOV_04 ),
   AlternativeWithId( SelectorId = ['Scout_SOV', '05'] ModelFile = ModelFile_Scout_SOV_05 ),
   AlternativeWithId( SelectorId = ['Scout_SOV', '06'] ModelFile = ModelFile_Scout_SOV_06 ),
+  AlternativeWithId( SelectorId = ['Cav_Scout_US', '01'] ModelFile = ModelFile_Cav_Scout_US ),
   AlternativeWithId( SelectorId = ['Scout_US', '01'] ModelFile = ModelFile_Scout_US ),
   AlternativeWithId( SelectorId = ['Scout_US', '02'] ModelFile = ModelFile_Scout_US_02 ),
   AlternativeWithId( SelectorId = ['Scout_US', '03'] ModelFile = ModelFile_Scout_US_03 ),

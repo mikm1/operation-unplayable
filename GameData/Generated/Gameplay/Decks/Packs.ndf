@@ -10240,6 +10240,20 @@ export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Scout_US is TDeckPackDescriptor
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Cav_Scout_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{1a5d344a-ec71-445c-9740-cd9c68840685}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Cav_Scout_US,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_UH60A_CO_US is TDeckPackDescriptor
 (
     DescriptorId = GUID:{d20500f9-c266-4855-b624-4c3af9511551}

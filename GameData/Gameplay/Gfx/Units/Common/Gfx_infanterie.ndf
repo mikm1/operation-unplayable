@@ -1027,6 +1027,9 @@ export ModelFile_Scout_US_09 is US_GI_Sniper
 export ModelFile_Scout_US_10 is US_GI_Sniper
 export ModelFile_Scout_US_LOW is US_GI_1
 
+//Cav_Scout_US
+export ModelFile_Cav_Scout_US is US_GI_1
+export ModelFile_Cav_Scout_US_LOW is US_GI_1
 
 //Engineer_CMD_US
 export ModelFile_Engineer_CMD_US is US_GI_1

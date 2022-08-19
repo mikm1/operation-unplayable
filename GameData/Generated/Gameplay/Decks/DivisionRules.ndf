@@ -5733,6 +5733,15 @@ private DivisionRules is TDeckDivisionRules
                     ),
                     TDeckUniteRule
                     (
+                        UnitDescriptor = ~/Descriptor_Unit_Cav_Scout_US
+                        AvailableWithoutTransport = False
+                        AvailableTransportList = [~/Descriptor_Unit_M3A1_Bradley_CFV_US]
+                        MaxPackNumber = 2
+                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
+                    ),
+                    TDeckUniteRule
+                    (
                         UnitDescriptor = ~/Descriptor_Unit_UH60A_CO_US
                         AvailableWithoutTransport = True
                         MaxPackNumber = 1
@@ -5798,6 +5807,11 @@ private DivisionRules is TDeckDivisionRules
                     TDeckTransportRule
                     (
                         TransportDescriptor = ~/Descriptor_Unit_M901A1_ITW_US
+                        MaxNumber = 1000
+                    ),
+                    TDeckTransportRule
+                    (
+                        TransportDescriptor = ~/Descriptor_Unit_M3A1_Bradley_CFV_US
                         MaxNumber = 1000
                     ),
                 ]

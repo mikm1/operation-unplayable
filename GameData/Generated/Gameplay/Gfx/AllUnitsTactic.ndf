@@ -315,6 +315,7 @@ AllUnitsTactic is [
     ~/Descriptor_Unit_Scout_RFA,
     ~/Descriptor_Unit_Scout_SOV,
     ~/Descriptor_Unit_Scout_US,
+    ~/Descriptor_Unit_Cav_Scout_US,
     ~/Descriptor_Unit_Scout_VDV_SOV,
     ~/Descriptor_Unit_Security_RFA,
     ~/Descriptor_Unit_Spetsnaz_CMD_SOV,

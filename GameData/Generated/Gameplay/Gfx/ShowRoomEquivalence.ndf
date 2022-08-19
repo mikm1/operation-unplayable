@@ -317,6 +317,7 @@ export ShowRoomEquivalenceManager is TShowRoomEquivalenceManager
         ( ~/Descriptor_Unit_Scout_RFA, ~/Descriptor_ShowRoomUnit_Scout_RFA ),
         ( ~/Descriptor_Unit_Scout_SOV, ~/Descriptor_ShowRoomUnit_Scout_SOV ),
         ( ~/Descriptor_Unit_Scout_US, ~/Descriptor_ShowRoomUnit_Scout_US ),
+        ( ~/Descriptor_Unit_Cav_Scout_US, ~/Descriptor_ShowRoomUnit_Cav_Scout_US ),
         ( ~/Descriptor_Unit_Scout_VDV_SOV, ~/Descriptor_ShowRoomUnit_Scout_VDV_SOV ),
         ( ~/Descriptor_Unit_Security_RFA, ~/Descriptor_ShowRoomUnit_Security_RFA ),
         ( ~/Descriptor_Unit_Spetsnaz_CMD_SOV, ~/Descriptor_ShowRoomUnit_Spetsnaz_CMD_SOV ),

@@ -22644,7 +22644,7 @@ export Descriptor_ShowRoomUnit_MP_US is TEntityDescriptor
             (
                 Default        = TInfantrySquadModuleDescriptor
                 (
-                    NbSoldatInGroupeCombat = 5
+                    NbSoldatInGroupeCombat = 4
                     SquadDataDescriptor = ~/SoldierSquadDataDescriptor
                     InfantryMimeticName = 'MP_US'
                     InfantryAlternativeName = 'MP_US'
@@ -22673,15 +22673,14 @@ export Descriptor_ShowRoomUnit_MP_US is TEntityDescriptor
         TInfantrySquadWeaponAssignmentModuleDescriptor
         (
             InitialTurretToSoldiersIndexMap = MAP[
-                                        (0,[1,2,3,4,]),
+                                        (0,[0,1,2,3]),
                                         (1,[0,]),
                                       ]
             InitialSoldiersToTurretIndexMap = MAP[
-                                        (0,[1,]),
+                                        (0,[0,1,]),
                                         (1,[0,]),
                                         (2,[0,]),
                                         (3,[0,]),
-                                        (4,[0,]),
                                       ]
             TurretWithOnlyOneSoldier = [1,]
         ),
@@ -29615,6 +29614,129 @@ export Descriptor_ShowRoomUnit_Scout_US is TEntityDescriptor
                                         (1,[0,]),
                                         (2,[0,]),
                                         (3,[0,]),
+                                      ]
+            TurretWithOnlyOneSoldier = [1,]
+        ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // EffectApplier
+            ~/EffectApplierModuleSelector,
+
+        // Experience
+            TExperienceModuleDescriptor
+            (
+                ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple
+                CanWinExperience = True
+                ExperienceGainBySecond = ~/ExperienceGainBySecond
+                ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+            ),
+
+        // CameraShowroom
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'Inf'
+        ),
+
+    ]
+)
+export Descriptor_ShowRoomUnit_Cav_Scout_US is TEntityDescriptor
+(
+    DescriptorId        = GUID:{b3c9b580-98fb-4a6b-a0d0-6034b32d4172}
+    ClassNameForDebug   = "ShowRoomUnit_Cav_Scout_US"
+    ModulesDescriptors = [
+        // TypeUnit
+            TModuleSelector
+            (
+                Default            = TTypeUnitModuleDescriptor
+                (
+                    TypeUnitValue                    = ETypeUnit/InfReco
+                    Nationalite                      = ENationalite/Allied
+                    MotherCountry                    = 'US'
+                    AcknowUnitType                   = ~/TAcknowUnitType_Inf
+                    TypeUnitFormation                = 'Reconnaissance'
+                )
+                Selection = [
+                    NilDescriptorIfCadavre,
+                ]
+            ),
+
+        // Position
+        (
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            )
+        ),
+
+        // ApparenceModel
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject       = False
+            Depiction            = ~/InfantryDepictionSquadShowroom
+        ),
+
+        // WeaponManager
+        WeaponManager is
+            TModuleSelector
+            (
+                Default        = $/GFX/Everything/WeaponDescriptor_Cav_Scout_US
+                Selection      = [~/NilDescriptorIfCadavre]
+            ),
+
+        // InfantrySquad
+        GroupeCombat is
+            TModuleSelector
+            (
+                Default        = TInfantrySquadModuleDescriptor
+                (
+                    NbSoldatInGroupeCombat = 2
+                    SquadDataDescriptor = ~/SoldierSquadDataDescriptor
+                    InfantryMimeticName = 'Cav_Scout_US'
+                    InfantryAlternativeName = 'Cav_Scout_US'
+                    InfantryGhostMimeticName = 'Cav_Scout_US_ghost'
+                    WeaponUnitFXKey     = 'Cav_Scout_US'
+                    MimeticDescriptor   = ~/Descriptor_Unit_MimeticUnit
+                    BoundingBoxSize     = 4 * Metre
+                )
+                Selection      = [ NilDescriptorIfCadavre ]
+            ),
+
+        // GroupeCombat
+        GroupeCombatPositions is
+            TModuleSelector
+            (
+                Default        = TInfantrySquadSlotPositionsModuleDescriptor
+                (
+                    SquadMovementDataDescriptor  = ~/SoldierSquadMovementDataDescriptor
+                    SquadFormationDescriptor = ~/SoldierLineDescriptor
+                    NoiseDescriptor    = ~/SoldierNoiseDescriptor
+                )
+                Selection      = [ NilDescriptorIfCadavre ]
+            ),
+
+        // InfantrySquadWeaponAssignment
+        TInfantrySquadWeaponAssignmentModuleDescriptor
+        (
+            InitialTurretToSoldiersIndexMap = MAP[
+                                        (0,[0,1]),
+                                        (1,[0,]),
+                                      ]
+            InitialSoldiersToTurretIndexMap = MAP[
+                                        (0,[0,1]),
+                                        (1,[0,]),
                                       ]
             TurretWithOnlyOneSoldier = [1,]
         ),
