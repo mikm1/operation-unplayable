@@ -4901,7 +4901,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_MANPAD_Igla_SOV
                         AvailableWithoutTransport = True
-                        AvailableTransportList = [~/Descriptor_Unit_UAZ_469_SOV]
+                        AvailableTransportList = [~/Descriptor_Unit_BTR_80_SOV, ~/Descriptor_Unit_BMP_1P_SOV, ~/Descriptor_Unit_BMP_1PG_SOV, ~/Descriptor_Unit_BMP_2_SOV ]
                         MaxPackNumber = 5
                         NumberOfUnitInPack = 12
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
