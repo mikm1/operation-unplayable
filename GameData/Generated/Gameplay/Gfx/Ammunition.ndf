@@ -54636,7 +54636,7 @@ export Ammo_RocketInf_M67_RCL_90mm_HE is TAmmunitionDescriptor
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
     SupplyCost                        = 90
-    CanShootOnPosition                = False
+    CanShootOnPosition                = True
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
     AffichageMunitionParSalve         = 1

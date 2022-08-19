@@ -10386,7 +10386,7 @@ export Descriptor_ShowRoomUnit_Engineers_US is TEntityDescriptor
             (
                 Default        = TInfantrySquadModuleDescriptor
                 (
-                    NbSoldatInGroupeCombat = 10
+                    NbSoldatInGroupeCombat = 8
                     SquadDataDescriptor = ~/SoldierSquadDataDescriptor
                     InfantryMimeticName = 'Engineers_US'
                     InfantryAlternativeName = 'Engineers_US'
@@ -10415,9 +10415,11 @@ export Descriptor_ShowRoomUnit_Engineers_US is TEntityDescriptor
         TInfantrySquadWeaponAssignmentModuleDescriptor
         (
             InitialTurretToSoldiersIndexMap = MAP[
-                                        (0,[1,2,3,4,5,6,7,8,9,]),
+                                        (0,[1,2,3,4,5,6,7,]),
                                         (1,[0,]),
-                                        (2,[9,]),
+                                        (2,[6,]),
+                                        (3,[7,]),
+                                        (4,[7,]),
                                       ]
             InitialSoldiersToTurretIndexMap = MAP[
                                         (0,[1,]),
@@ -10426,12 +10428,10 @@ export Descriptor_ShowRoomUnit_Engineers_US is TEntityDescriptor
                                         (3,[0,]),
                                         (4,[0,]),
                                         (5,[0,]),
-                                        (6,[0,]),
-                                        (7,[0,]),
-                                        (8,[0,]),
-                                        (9,[0,2,]),
+                                        (6,[0,2]),
+                                        (7,[0,3,4]),
                                       ]
-            TurretWithOnlyOneSoldier = [1,2,]
+            TurretWithOnlyOneSoldier = [1,2,3,4]
         ),
 
         // LinkTeam

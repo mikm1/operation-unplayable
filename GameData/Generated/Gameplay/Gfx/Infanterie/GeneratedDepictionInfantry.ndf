@@ -1738,6 +1738,7 @@ AllWeaponAlternatives_Engineers_US is [
   AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_M16A2 ),
   AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_M60 ),
   AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_MainNue ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_4'] ModelFile = ModelFile_M67_RCL ),
 ]
 AllWeaponSubDepiction_Engineers_US is TemplateAllSubWeaponDepiction
 (
@@ -1757,6 +1758,11 @@ AllWeaponSubDepiction_Engineers_US is TemplateAllSubWeaponDepiction
     (
       FireEffectTag = ["FireEffect_Grenade_Satchel_Charge"]
       WeaponShootDataPropertyName = "WeaponShootData_0_3"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_RocketInf_M67_RCL_90mm_HE"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_4"
     ),
   ]
 )
@@ -1783,7 +1789,7 @@ TacticDepiction_Engineers_US_Soldier is TemplateInfantryDepictionFactoryTactic
   Surrogates = TacticDepiction_Engineers_US_Surrogates
   Alternatives = TacticDepiction_Engineers_US_Alternatives
   SubDepictions = [AllWeaponSubDepiction_Engineers_US, AllWeaponSubDepictionBackpack_Engineers_US]
-  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2'), ('grenade', 'MeshAlternative_3') ] )]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2'), ('grenade', 'MeshAlternative_3'), ('bazooka', 'MeshAlternative_4') ] )]
 )
 TacticDepiction_Engineers_US_Ghost is TemplateInfantryDepictionFactoryGhost
 (
