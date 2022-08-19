@@ -55,5 +55,5 @@ ConstantesDeroute is TRoutConstants
     // Une unité sort de déroute lorsque TOUTES les conditions de cette section sont vérifiées.
 
     // condition : suppression non arrondie de l'unité <= 'SortieSeuilSuppression'
-    SortieSeuilSuppression = 0.8 // flottant, pourcentage de la suppression maximale
+    SortieSeuilSuppression = 0.95 // flottant, pourcentage de la suppression maximale
 )

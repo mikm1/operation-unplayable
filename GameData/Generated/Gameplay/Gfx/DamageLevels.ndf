@@ -741,7 +741,7 @@ export DamageLevelsPackDescriptor_GroundUnits_packSupp is TDamageLevelsPackDescr
         DamageLevelDescriptor_GroundUnits_packSupp_palier_2 is TDamageLevelDescriptor
         (
             DescriptorId = GUID:{9dce6755-8d45-48b3-b7a1-39d42a6975ef}
-            Value = 0.1
+            Value = 0.05
             LocalizationToken = "mrl_4"
             MoralModifier = 99
             HitRollModifier = 0
@@ -799,7 +799,7 @@ export DamageLevelsPackDescriptor_GroundUnits_packSupp is TDamageLevelsPackDescr
         DamageLevelDescriptor_GroundUnits_packSupp_palier_6 is TDamageLevelDescriptor
         (
             DescriptorId = GUID:{7b0dd037-e912-47e9-aab9-fd802312a7cf}
-            Value = 0.8
+            Value = 0.9
             LocalizationToken = "mrl_1"
             HitRollModifier = -70
             TextColor = RGBA[255,84,84,255]
@@ -1240,7 +1240,7 @@ export DamageLevelsPackDescriptor_helo_packSupp is TDamageLevelsPackDescriptor
         DamageLevelDescriptor_GroundUnits_packSupp_palier_2 is TDamageLevelDescriptor
         (
             DescriptorId = GUID:{9dce6755-8d45-48b3-b7a1-39d42a6975ef}
-            Value = 0.1
+            Value = 0.05
             LocalizationToken = "mrl_4"
             MoralModifier = 99
             HitRollModifier = 0
@@ -1298,7 +1298,7 @@ export DamageLevelsPackDescriptor_helo_packSupp is TDamageLevelsPackDescriptor
         DamageLevelDescriptor_HeloUnits_packSupp_palier_6 is TDamageLevelDescriptor
         (
             DescriptorId = GUID:{4ce63232-dd3d-4f8f-9e5e-da677defc55d}
-            Value = 0.8
+            Value = 0.9
             LocalizationToken = "mrl_1"
             HitRollModifier = -70
             TextColor = RGBA[255,84,84,255]
