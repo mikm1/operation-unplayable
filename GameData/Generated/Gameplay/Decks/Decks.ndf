@@ -2568,88 +2568,9 @@ export Descriptor_Deck_US_3rd_Arm_multi_test_challenge_new is TDeckDescriptor
     DeckIdentifier = 'test_challenge_new'
     DeckDivision = ~/Descriptor_Deck_Division_US_3rd_Arm_multi
     DeckPackList =
-    [
-        TDeckPackDescription
-        (
-            ExperienceLevel = 1
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M1A1_Abrams_US
-        ),
-        TDeckPackDescription
-        (
-            ExperienceLevel = 1
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M1A1_Abrams_US
-        ),
-        TDeckPackDescription
-        (
-            ExperienceLevel = 1
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M1A1_Abrams_US
-        ),
-        TDeckPackDescription
-        (
-            ExperienceLevel = 1
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M1A1_Abrams_US
-        ),
-        TDeckPackDescription
-        (
-            ExperienceLevel = 1
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M1A1_Abrams_US
-        ),
-        TDeckPackDescription
-        (
-            ExperienceLevel = 1
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Rifles_US
-            Transport = ~/Descriptor_Unit_M35_trans_US
-        ),
-        TDeckPackDescription
-        (
-            ExperienceLevel = 1
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Rifles_US
-            Transport = ~/Descriptor_Unit_M35_trans_US
-        ),
-        TDeckPackDescription
-        (
-            ExperienceLevel = 2
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M577_US
-        ),
-    ]
+    []
     DeckCombatGroupList =
-    [
-        TDeckCombatGroupDescriptor
-        (
-            SmartGroupList =
-            [
-                TDeckSmartGroupDescriptor
-                (
-                    PackIndexUnitNumberList =
-                    [
-                        (7,1),
-                    ]
-                ),
-                TDeckSmartGroupDescriptor
-                (
-                    PackIndexUnitNumberList =
-                    [
-                        (0,2),
-                        (5,2),
-                    ]
-                ),
-                TDeckSmartGroupDescriptor
-                (
-                    PackIndexUnitNumberList =
-                    [
-                        (5,4),
-                    ]
-                ),
-                TDeckSmartGroupDescriptor
-                (
-                    PackIndexUnitNumberList =
-                    [
-                        (0,2),
-                    ]
-                ),
-            ]
-        ),
-    ]
+    []
 )
 
 export Descriptor_Deck_SOV_79_Gds_Tank_multi_test_challenge_pack is TDeckDescriptor

@@ -9414,6 +9414,20 @@ export Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_UH60A_Supply_US is TDeckPackDe
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Rifles_half_AT4_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{93f8120b-eb12-44a4-bdd5-0666b0d89062}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_Rifles_half_AT4_US,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_A10_Thunderbolt_II_ATGM_US is TDeckPackDescriptor
 (
     DescriptorId = GUID:{b208d9c2-295c-4ef7-90df-53b1ae98adf9}
@@ -9886,6 +9900,34 @@ export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M1A1_Abrams_US is TDeckPackDesc
             UnitDescriptorList =
             [
                 ~/Descriptor_Unit_M1A1_Abrams_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M1_Abrams_CMD_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{86b55ff0-69d8-4d2d-8178-e89ccea98b91}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M1_Abrams_CMD_US,
+            ]
+        ),
+    ]
+)
+export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M1_Abrams_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{4b30588a-a054-4c3d-8995-ed688c274e33}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_M1_Abrams_US,
             ]
         ),
     ]

@@ -7222,7 +7222,6 @@ export WeaponDescriptor_BMP_1P_SOV is TWeaponManagerModuleDescriptor
         )
     ]
 )
-
 export WeaponDescriptor_BMP_1P_nomissile_SOV is TWeaponManagerModuleDescriptor
 (
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
