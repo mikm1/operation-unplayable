@@ -2575,7 +2575,7 @@ export Descriptor_ShowRoomUnit_AeroRifles_US is TEntityDescriptor
             (
                 Default        = TInfantrySquadModuleDescriptor
                 (
-                    NbSoldatInGroupeCombat = 10
+                    NbSoldatInGroupeCombat = 9
                     SquadDataDescriptor = ~/SoldierSquadDataDescriptor
                     InfantryMimeticName = 'AeroRifles_US'
                     InfantryAlternativeName = 'AeroRifles_US'
@@ -2604,9 +2604,9 @@ export Descriptor_ShowRoomUnit_AeroRifles_US is TEntityDescriptor
         TInfantrySquadWeaponAssignmentModuleDescriptor
         (
             InitialTurretToSoldiersIndexMap = MAP[
-                                        (0,[2,3,4,5,6,7,8,9,]),
+                                        (0,[2,3,4,5,6,7,8,]),
                                         (1,[0,1,]),
-                                        (2,[9,]),
+                                        (2,[8,]),
                                       ]
             InitialSoldiersToTurretIndexMap = MAP[
                                         (0,[1,]),
@@ -2617,8 +2617,7 @@ export Descriptor_ShowRoomUnit_AeroRifles_US is TEntityDescriptor
                                         (5,[0,]),
                                         (6,[0,]),
                                         (7,[0,]),
-                                        (8,[0,]),
-                                        (9,[0,2,]),
+                                        (8,[0,2,]),
                                       ]
             TurretWithOnlyOneSoldier = [2,]
         ),
@@ -9222,7 +9221,7 @@ export Descriptor_ShowRoomUnit_Engineers_Dragon_US is TEntityDescriptor
             (
                 Default        = TInfantrySquadModuleDescriptor
                 (
-                    NbSoldatInGroupeCombat = 10
+                    NbSoldatInGroupeCombat = 8
                     SquadDataDescriptor = ~/SoldierSquadDataDescriptor
                     InfantryMimeticName = 'Engineers_Dragon_US'
                     InfantryAlternativeName = 'Engineers_Dragon_US'
@@ -9251,8 +9250,8 @@ export Descriptor_ShowRoomUnit_Engineers_Dragon_US is TEntityDescriptor
         TInfantrySquadWeaponAssignmentModuleDescriptor
         (
             InitialTurretToSoldiersIndexMap = MAP[
-                                        (0,[0,1,2,3,4,5,6,7,8,9,]),
-                                        (1,[9,]),
+                                        (0,[0,1,2,3,4,5,6,7,]),
+                                        (1,[7,]),
                                       ]
             InitialSoldiersToTurretIndexMap = MAP[
                                         (0,[0,]),
@@ -9262,9 +9261,7 @@ export Descriptor_ShowRoomUnit_Engineers_Dragon_US is TEntityDescriptor
                                         (4,[0,]),
                                         (5,[0,]),
                                         (6,[0,]),
-                                        (7,[0,]),
-                                        (8,[0,]),
-                                        (9,[0,1,]),
+                                        (7,[0,1,]),
                                       ]
             TurretWithOnlyOneSoldier = [1,]
         ),
@@ -27980,14 +27977,14 @@ export Descriptor_ShowRoomUnit_Rifles_US is TEntityDescriptor
             (
                 Default        = TInfantrySquadModuleDescriptor
                 (
-                    NbSoldatInGroupeCombat = 11
+                    NbSoldatInGroupeCombat = 7
                     SquadDataDescriptor = ~/SoldierSquadDataDescriptor
                     InfantryMimeticName = 'Rifles_US'
                     InfantryAlternativeName = 'Rifles_US'
                     InfantryGhostMimeticName = 'Rifles_US_ghost'
                     WeaponUnitFXKey     = 'Rifles_US'
                     MimeticDescriptor   = ~/Descriptor_Unit_MimeticUnit
-                    BoundingBoxSize     = 13 * Metre
+                    BoundingBoxSize     = 8 * Metre
                 )
                 Selection      = [ NilDescriptorIfCadavre ]
             ),
@@ -28009,24 +28006,21 @@ export Descriptor_ShowRoomUnit_Rifles_US is TEntityDescriptor
         TInfantrySquadWeaponAssignmentModuleDescriptor
         (
             InitialTurretToSoldiersIndexMap = MAP[
-                                        (0,[3,4,5,6,7,8,9,10,]),
-                                        (1,[0,1,2,]),
-                                        (2,[10,]),
+                                        (0,[2,3,4,5,6,]),
+                                        (1,[0,1,]),
+                                        (2,[5,]),
+                                        (3,[6,]),
                                       ]
             InitialSoldiersToTurretIndexMap = MAP[
                                         (0,[1,]),
                                         (1,[1,]),
-                                        (2,[1,]),
+                                        (2,[0,]),
                                         (3,[0,]),
                                         (4,[0,]),
-                                        (5,[0,]),
-                                        (6,[0,]),
-                                        (7,[0,]),
-                                        (8,[0,]),
-                                        (9,[0,]),
-                                        (10,[0,2,]),
+                                        (5,[0,2]),
+                                        (6,[0,3,]),
                                       ]
-            TurretWithOnlyOneSoldier = [2,]
+            TurretWithOnlyOneSoldier = [2,3]
         ),
 
         // LinkTeam

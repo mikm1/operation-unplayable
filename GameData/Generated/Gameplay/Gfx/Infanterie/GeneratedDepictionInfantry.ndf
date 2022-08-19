@@ -5120,6 +5120,7 @@ AllWeaponAlternatives_Rifles_US is [
   AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_M16A2 ),
   AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_M249 ),
   AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_M47_DRAGON_II ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_4'] ModelFile = ModelFile_M72A4 ),
 ]
 AllWeaponSubDepiction_Rifles_US is TemplateAllSubWeaponDepiction
 (
@@ -5139,6 +5140,11 @@ AllWeaponSubDepiction_Rifles_US is TemplateAllSubWeaponDepiction
     (
       FireEffectTag = ["FireEffect_M47_DRAGON_II"]
       WeaponShootDataPropertyName = "WeaponShootData_0_3"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_RocketInf_M72_LAW_66mm"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_4"
     ),
   ]
 )
@@ -5165,7 +5171,7 @@ TacticDepiction_Rifles_US_Soldier is TemplateInfantryDepictionFactoryTactic
   Surrogates = TacticDepiction_Rifles_US_Surrogates
   Alternatives = TacticDepiction_Rifles_US_Alternatives
   SubDepictions = [AllWeaponSubDepiction_Rifles_US, AllWeaponSubDepictionBackpack_Rifles_US]
-  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2'), ('bazooka', 'MeshAlternative_3') ] )]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2'), ('bazooka', 'MeshAlternative_3'), ('bazooka', 'MeshAlternative_4') ] )]
 )
 TacticDepiction_Rifles_US_Ghost is TemplateInfantryDepictionFactoryGhost
 (
