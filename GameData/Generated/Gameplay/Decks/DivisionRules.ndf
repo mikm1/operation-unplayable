@@ -4495,7 +4495,7 @@ private DivisionRules is TDeckDivisionRules
 					TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_MotRifles_VR_SOV
-                        AvailableWithoutTransport = False
+                        AvailableWithoutTransport = True
                         AvailableTransportList = [~/Descriptor_Unit_BMP_1P_SOV, ~/Descriptor_Unit_BMP_1PG_SOV, ~/Descriptor_Unit_BMP_2_SOV, ~/Descriptor_Unit_BMP_3_SOV, ~/Descriptor_Unit_MTLB_transp_SOV]
                         MaxPackNumber = 1
                         NumberOfUnitInPack = 9
@@ -4780,7 +4780,7 @@ private DivisionRules is TDeckDivisionRules
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_ATteam_Fagot_SOV
-                        AvailableWithoutTransport = False
+                        AvailableWithoutTransport = True
                         AvailableTransportList = [~/Descriptor_Unit_BTR_80_SOV]
                         MaxPackNumber = 1
                         NumberOfUnitInPack = 9
@@ -4789,7 +4789,7 @@ private DivisionRules is TDeckDivisionRules
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_ATteam_Konkurs_SOV
-                        AvailableWithoutTransport = False
+                        AvailableWithoutTransport = True
                         AvailableTransportList = [~/Descriptor_Unit_BTR_80_SOV]
                         MaxPackNumber = 1
                         NumberOfUnitInPack = 6
@@ -4855,7 +4855,7 @@ private DivisionRules is TDeckDivisionRules
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Engineers_Flam_SOV
-                        AvailableWithoutTransport = False
+                        AvailableWithoutTransport = True
                         AvailableTransportList = [~/Descriptor_Unit_BTR_60_SOV, ~/Descriptor_Unit_GAZ_66_SOV]
                         MaxPackNumber = 1
                         NumberOfUnitInPack = 6
@@ -4864,7 +4864,7 @@ private DivisionRules is TDeckDivisionRules
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Engineers_SOV
-                        AvailableWithoutTransport = False
+                        AvailableWithoutTransport = True
                         AvailableTransportList = [~/Descriptor_Unit_BTR_60_SOV, ~/Descriptor_Unit_GAZ_66_SOV]
                         MaxPackNumber = 1
                         NumberOfUnitInPack = 9
@@ -4900,7 +4900,7 @@ private DivisionRules is TDeckDivisionRules
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_MANPAD_Igla_SOV
-                        AvailableWithoutTransport = False
+                        AvailableWithoutTransport = True
                         AvailableTransportList = [~/Descriptor_Unit_UAZ_469_SOV]
                         MaxPackNumber = 5
                         NumberOfUnitInPack = 12

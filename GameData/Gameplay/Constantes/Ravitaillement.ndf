@@ -44,9 +44,9 @@ export StandardSupply is TSupplyDescriptor
     SupplySupplyCostBySecond = 20 //30
 
     // Point de munition ravitaillés par seconde
-    AmmunitionSupplyBySecond = 10
+    AmmunitionSupplyBySecond = 100
     // Cout du ravitaillement de munition par seconde
-    AmmunitionSupplyCostBySecond = 30
+    AmmunitionSupplyCostBySecond = 10
 
     // Types de mouvement dont les critiques sont réparables. Liste des valeurs dans UnitMovingType.ndf
     CriticsSuppliableMovingTypes = [
