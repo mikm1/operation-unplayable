@@ -3468,6 +3468,43 @@ TacticDepiction_MANPAD_Stinger_C_US_Ghost is TemplateInfantryDepictionFactoryGho
 (
   Alternatives = TacticDepiction_MANPAD_Stinger_C_US_Alternatives
 )
+// *****************************[ MANPAD_Stinger_crew_US ]*********************************
+Gfx_MANPAD_Stinger_crew_US is TemplateInfantryDepictionSquad
+(
+  SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_US
+)
+AllWeaponAlternatives_MANPAD_Stinger_crew_US is [
+  AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_MANPAD_FIM92 ),
+]
+AllWeaponSubDepiction_MANPAD_Stinger_crew_US is TemplateAllSubWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_MANPAD_Stinger_crew_US
+  Operators = [
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_MANPAD_FIM92"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_1"
+    ),
+  ]
+)
+AllWeaponSubDepictionBackpack_MANPAD_Stinger_crew_US is TemplateAllSubBackpackWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_MANPAD_Stinger_crew_US
+)
+TacticDepiction_MANPAD_Stinger_crew_US_Alternatives is [
+  TDepictionDescriptor( SelectorId = ['high', '01'] MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_MANPAD_Stinger_crew_US ) ),
+  TDepictionDescriptor( SelectorId = ['low']  MeshDescriptor = TemplateMeshDescriptor( ModelFile = ModelFile_MANPAD_Stinger_crew_US_LOW ) ),
+]
+TacticDepiction_MANPAD_Stinger_crew_US_Soldier is TemplateInfantryDepictionFactoryTactic
+(
+  Alternatives = TacticDepiction_MANPAD_Stinger_crew_US_Alternatives
+  SubDepictions = [AllWeaponSubDepiction_MANPAD_Stinger_crew_US, AllWeaponSubDepictionBackpack_MANPAD_Stinger_crew_US]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('bazooka', 'MeshAlternative_1') ] )]
+)
+TacticDepiction_MANPAD_Stinger_crew_US_Ghost is TemplateInfantryDepictionFactoryGhost
+(
+  Alternatives = TacticDepiction_MANPAD_Stinger_crew_US_Alternatives
+)
 // *****************************[ MANPAD_Stinger_C_para_US ]*********************************
 Gfx_MANPAD_Stinger_C_para_US is TemplateInfantryDepictionSquad
 (
@@ -6764,6 +6801,8 @@ InfantryMimetic is MAP[
   ( 'MANPAD_Redeye_RFA_ghost', TacticDepiction_MANPAD_Redeye_RFA_Ghost ),
   ( 'MANPAD_Stinger_C_US', TacticDepiction_MANPAD_Stinger_C_US_Soldier ),
   ( 'MANPAD_Stinger_C_US_ghost', TacticDepiction_MANPAD_Stinger_C_US_Ghost ),
+  ( 'MANPAD_Stinger_crew_US', TacticDepiction_MANPAD_Stinger_crew_US_Soldier ),
+  ( 'MANPAD_Stinger_crew_US_ghost', TacticDepiction_MANPAD_Stinger_crew_US_Ghost ),
   ( 'MANPAD_Stinger_C_para_US', TacticDepiction_MANPAD_Stinger_C_para_US_Soldier ),
   ( 'MANPAD_Stinger_C_para_US_ghost', TacticDepiction_MANPAD_Stinger_C_para_US_Ghost ),
   ( 'MANPAD_Strela_2M_DDR', TacticDepiction_MANPAD_Strela_2M_DDR_Soldier ),
@@ -6948,6 +6987,7 @@ TransportedInfantryAlternativesCount is MAP[
   ('MANPAD_Igla_VDV_SOV', 6),
   ('MANPAD_Redeye_RFA', 6),
   ('MANPAD_Stinger_C_US', 1),
+  ('MANPAD_Stinger_crew_US', 1),
   ('MANPAD_Stinger_C_para_US', 1),
   ('MANPAD_Strela_2M_DDR', 2),
   ('MP_RCL_US', 10),
@@ -7402,6 +7442,7 @@ TransportedInfantryAlternatives is [
   AlternativeWithId( SelectorId = ['MANPAD_Redeye_RFA', '05'] ModelFile = ModelFile_MANPAD_Redeye_RFA_05 ),
   AlternativeWithId( SelectorId = ['MANPAD_Redeye_RFA', '06'] ModelFile = ModelFile_MANPAD_Redeye_RFA_06 ),
   AlternativeWithId( SelectorId = ['MANPAD_Stinger_C_US', '01'] ModelFile = ModelFile_MANPAD_Stinger_C_US ),
+  AlternativeWithId( SelectorId = ['MANPAD_Stinger_crew_US', '01'] ModelFile = ModelFile_MANPAD_Stinger_crew_US ),
   AlternativeWithId( SelectorId = ['MANPAD_Stinger_C_para_US', '01'] ModelFile = ModelFile_MANPAD_Stinger_C_para_US ),
   AlternativeWithId( SelectorId = ['MANPAD_Strela_2M_DDR', '01'] ModelFile = ModelFile_MANPAD_Strela_2M_DDR ),
   AlternativeWithId( SelectorId = ['MANPAD_Strela_2M_DDR', '02'] ModelFile = ModelFile_MANPAD_Strela_2M_DDR_02 ),

@@ -10072,6 +10072,20 @@ export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_MANPAD_Stinger_C_US is TDeckPac
         ),
     ]
 )
+export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_MANPAD_Stinger_crew_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{702fc314-5e50-42bb-8170-8490be830af0}
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptorList =
+            [
+                ~/Descriptor_Unit_MANPAD_Stinger_crew_US,
+            ]
+        ),
+    ]
+)
 export Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_MP_RCL_US is TDeckPackDescriptor
 (
     DescriptorId = GUID:{fe38e914-3bfe-40e0-93d8-3de8281d361f}

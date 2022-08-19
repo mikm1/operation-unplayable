@@ -244,6 +244,7 @@ export ShowRoomEquivalenceManager is TShowRoomEquivalenceManager
         ( ~/Descriptor_Unit_MANPAD_Igla_VDV_SOV, ~/Descriptor_ShowRoomUnit_MANPAD_Igla_VDV_SOV ),
         ( ~/Descriptor_Unit_MANPAD_Redeye_RFA, ~/Descriptor_ShowRoomUnit_MANPAD_Redeye_RFA ),
         ( ~/Descriptor_Unit_MANPAD_Stinger_C_US, ~/Descriptor_ShowRoomUnit_MANPAD_Stinger_C_US ),
+        ( ~/Descriptor_Unit_MANPAD_Stinger_crew_US, ~/Descriptor_ShowRoomUnit_MANPAD_Stinger_crew_US ),
         ( ~/Descriptor_Unit_MANPAD_Stinger_C_para_US, ~/Descriptor_ShowRoomUnit_MANPAD_Stinger_C_para_US ),
         ( ~/Descriptor_Unit_MANPAD_Strela_2M_DDR, ~/Descriptor_ShowRoomUnit_MANPAD_Strela_2M_DDR ),
         ( ~/Descriptor_Unit_MAN_Kat_6x6_RFA, ~/Descriptor_ShowRoomUnit_MAN_Kat_6x6_RFA ),

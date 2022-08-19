@@ -21869,6 +21869,127 @@ export Descriptor_ShowRoomUnit_MANPAD_Stinger_C_US is TEntityDescriptor
 
     ]
 )
+export Descriptor_ShowRoomUnit_MANPAD_Stinger_crew_US is TEntityDescriptor
+(
+    DescriptorId        = GUID:{f7529368-859d-4a45-9b18-b133e63ab165}
+    ClassNameForDebug   = "ShowRoomUnit_MANPAD_Stinger_crew_US"
+    ModulesDescriptors = [
+        // TypeUnit
+            TModuleSelector
+            (
+                Default            = TTypeUnitModuleDescriptor
+                (
+                    TypeUnitValue                    = ETypeUnit/InfAA
+                    Nationalite                      = ENationalite/Allied
+                    MotherCountry                    = 'US'
+                    AcknowUnitType                   = ~/TAcknowUnitType_Inf
+                    TypeUnitFormation                = 'Char'
+                )
+                Selection = [
+                    NilDescriptorIfCadavre,
+                ]
+            ),
+
+        // Position
+        (
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            )
+        ),
+
+        // ApparenceModel
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject       = False
+            Depiction            = ~/InfantryDepictionSquadShowroom
+        ),
+
+        // WeaponManager
+        WeaponManager is
+            TModuleSelector
+            (
+                Default        = $/GFX/Everything/WeaponDescriptor_MANPAD_Stinger_crew_US
+                Selection      = [~/NilDescriptorIfCadavre]
+            ),
+
+        // InfantrySquad
+        GroupeCombat is
+            TModuleSelector
+            (
+                Default        = TInfantrySquadModuleDescriptor
+                (
+                    NbSoldatInGroupeCombat = 1
+                    SquadDataDescriptor = ~/SoldierSquadDataDescriptor
+                    InfantryMimeticName = 'MANPAD_Stinger_crew_US'
+                    InfantryAlternativeName = 'MANPAD_Stinger_crew_US'
+                    InfantryGhostMimeticName = 'MANPAD_Stinger_crew_US_ghost'
+                    WeaponUnitFXKey     = 'MANPAD_Stinger_crew_US'
+                    MimeticDescriptor   = ~/Descriptor_Unit_MimeticUnit
+                    BoundingBoxSize     = 2 * Metre
+                )
+                Selection      = [ NilDescriptorIfCadavre ]
+            ),
+
+        // GroupeCombat
+        GroupeCombatPositions is
+            TModuleSelector
+            (
+                Default        = TInfantrySquadSlotPositionsModuleDescriptor
+                (
+                    SquadMovementDataDescriptor  = ~/SoldierSquadMovementDataDescriptor
+                    SquadFormationDescriptor = ~/SoldierLineDescriptor
+                    NoiseDescriptor    = ~/SoldierNoiseDescriptor
+                )
+                Selection      = [ NilDescriptorIfCadavre ]
+            ),
+
+        // InfantrySquadWeaponAssignment
+        TInfantrySquadWeaponAssignmentModuleDescriptor
+        (
+            InitialTurretToSoldiersIndexMap = MAP[
+                                        (0,[0,]),
+                                      ]
+            InitialSoldiersToTurretIndexMap = MAP[
+                                        (0,[0,]),
+                                      ]
+            TurretWithOnlyOneSoldier = [0,]
+        ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // EffectApplier
+            ~/EffectApplierModuleSelector,
+
+        // Experience
+            TExperienceModuleDescriptor
+            (
+                ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple
+                CanWinExperience = True
+                ExperienceGainBySecond = ~/ExperienceGainBySecond
+                ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+            ),
+
+        // CameraShowroom
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'Inf'
+        ),
+
+    ]
+)
 export Descriptor_ShowRoomUnit_MANPAD_Stinger_C_para_US is TEntityDescriptor
 (
     DescriptorId        = GUID:{cb081ad3-db37-4041-a6a6-5e870608e2c1}

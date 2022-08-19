@@ -1346,6 +1346,7 @@ export Descriptor_Deck_Division_US_3rd_Arm_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M901A1_ITW_US, 2),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M901_TOW_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_MANPAD_Stinger_C_US, 5),
+        (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_MANPAD_Stinger_crew_US, 2),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_MP_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_OH58C_Scout_US, 2),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_OH58D_Kiowa_Warrior_US, 1),

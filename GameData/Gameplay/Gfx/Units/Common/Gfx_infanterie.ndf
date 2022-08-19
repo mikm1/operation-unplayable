@@ -1148,6 +1148,10 @@ export ModelFile_MANPAD_Stinger_C_para_US_LOW is US_AB_2
 export ModelFile_MANPAD_Stinger_C_US is US_GI_1  //'GameData:/Assets/3D/Units/US/Infanterie/Airborne/Airborne_spe.Ase2NdfBin'
 export ModelFile_MANPAD_Stinger_C_US_LOW is US_GI_2 //'GameData:/Assets/3D/Units/US/Infanterie/Airborne/Airborne_spe.Ase2NdfBin'
 
+//MANPAD_Stinger_crew_US
+export ModelFile_MANPAD_Stinger_crew_US is US_GI_1
+export ModelFile_MANPAD_Stinger_crew_US_LOW is US_GI_2
+
 //MANPAD_Stinger_US
 export ModelFile_MANPAD_Stinger_US is US_GI_1
 export ModelFile_MANPAD_Stinger_US_02 is US_GI_1

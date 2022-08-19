@@ -21865,6 +21865,95 @@ Descriptor_UnitCadavre_MANPAD_Stinger_C_US is TEntityDescriptor
 
     ]
 )
+Descriptor_UnitCadavre_MANPAD_Stinger_crew_US is TEntityDescriptor
+(
+    DescriptorId       = GUID:{2bd8a40d-687d-481a-844b-dfcb2862240b}
+    ClassNameForDebug  = 'Unit_CadavreMANPAD_Stinger_crew_US'
+    ModulesDescriptors = [
+        // TypeUnit
+            TTypeUnitModuleDescriptor
+            (
+                TypeUnitValue                    = ETypeUnit/InfAA
+                Nationalite                      = ENationalite/Allied
+                MotherCountry                    = 'US'
+                AcknowUnitType                   = ~/TAcknowUnitType_Inf
+                TypeUnitFormation                = 'Char'
+            ),
+
+        // Tags
+            TTagsModuleDescriptor
+            (
+            ),
+
+        // Flags
+            TFlagsModuleDescriptor
+            (
+                InitialFlagSet =
+                [
+                    Flag_Detectable,
+                    Flag_LdDetectable,
+                ]
+            ),
+
+        // Position
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // Cadavre
+            TCadavreModuleDescriptor
+            (
+                ExplodeAtEnd = True
+                KillAsVehicule = False
+                KillAsInfanterie = True
+                KillAsHelico = False
+                KillAsAirplane = False
+                KillAsBatiment = False
+                CadavreDuration = $/GFX/Everything/CadavreDuration_Infanterie
+                DisappearanceDuration = 0.0
+                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum
+                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum
+                FadingDuration = 1
+                DamageRatio = 1.
+                DeathExplosionAmmo = ~/Ammo_Mort_Unite_infanterie
+                SecondaryDeathExplosionAmmo = nil
+                InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
+                ModuleDescriptorsToSteal =
+                [
+                   $/GFX/Everything/Descriptor_Unit_MANPAD_Stinger_crew_US/GroupeCombat,
+                   $/GFX/Everything/Descriptor_Unit_MANPAD_Stinger_crew_US/LandMovement,
+                   $/GFX/Everything/Descriptor_Unit_MANPAD_Stinger_crew_US/GenericMovement,
+                   $/GFX/Everything/Descriptor_Unit_MANPAD_Stinger_crew_US/FacingInfos,
+                ]
+            ),
+            $/GFX/Everything/Descriptor_Unit_MANPAD_Stinger_crew_US/GroupeCombat,
+            $/GFX/Everything/Descriptor_Unit_MANPAD_Stinger_crew_US/LandMovement,
+            $/GFX/Everything/Descriptor_Unit_MANPAD_Stinger_crew_US/GenericMovement,
+            $/GFX/Everything/Descriptor_Unit_MANPAD_Stinger_crew_US/FacingInfos,
+
+        // PackSignaux
+            ~/PackSignauxModuleDescriptor,
+
+        // Debug
+            ~/DebugModuleDescriptor,
+
+    ]
+)
 Descriptor_UnitCadavre_MANPAD_Stinger_C_para_US is TEntityDescriptor
 (
     DescriptorId       = GUID:{e1bfa5b4-d3e0-40a7-a3d8-1462c4db65d7}
@@ -21954,6 +22043,7 @@ Descriptor_UnitCadavre_MANPAD_Stinger_C_para_US is TEntityDescriptor
 
     ]
 )
+
 Descriptor_UnitCadavre_MANPAD_Strela_2M_DDR is TEntityDescriptor
 (
     DescriptorId       = GUID:{bb696992-3152-4c15-845c-2f5e2df9ea50}
