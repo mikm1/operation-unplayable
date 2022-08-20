@@ -48524,9 +48524,9 @@ export Ammo_RocketAir__SNEB_68mm is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -48555,8 +48555,8 @@ export Ammo_RocketAir__SNEB_68mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 25),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -48629,9 +48629,9 @@ export Ammo_RocketAir_B8_80mm is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((125.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((40) * Metre)
     PhysicalDamages                   = 0.96
@@ -48660,8 +48660,8 @@ export Ammo_RocketAir_B8_80mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -48734,9 +48734,9 @@ export Ammo_RocketAir_B8_80mm_x10 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((125.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((40) * Metre)
     PhysicalDamages                   = 0.96
@@ -48765,8 +48765,8 @@ export Ammo_RocketAir_B8_80mm_x10 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -48839,9 +48839,9 @@ export Ammo_RocketAir_B8_80mm_x32 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((125.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((40) * Metre)
     PhysicalDamages                   = 0.96
@@ -48870,8 +48870,8 @@ export Ammo_RocketAir_B8_80mm_x32 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -48946,7 +48946,7 @@ export Ammo_RocketAir_B8_80mm_x40 is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((40) * Metre)
     PhysicalDamages                   = 0.96
@@ -48975,8 +48975,8 @@ export Ammo_RocketAir_B8_80mm_x40 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -49049,9 +49049,9 @@ export Ammo_RocketAir_B8_80mm_x80 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((125.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((40) * Metre)
     PhysicalDamages                   = 0.96
@@ -49080,8 +49080,8 @@ export Ammo_RocketAir_B8_80mm_x80 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -49154,9 +49154,9 @@ export Ammo_RocketAir_Hydra_70mm_x114 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -49185,8 +49185,8 @@ export Ammo_RocketAir_Hydra_70mm_x114 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -49259,9 +49259,9 @@ export Ammo_RocketAir_Hydra_70mm_x14 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -49290,8 +49290,8 @@ export Ammo_RocketAir_Hydra_70mm_x14 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -49364,9 +49364,9 @@ export Ammo_RocketAir_Hydra_70mm_x19 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -49395,8 +49395,8 @@ export Ammo_RocketAir_Hydra_70mm_x19 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -49469,9 +49469,9 @@ export Ammo_RocketAir_Hydra_70mm_x38 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -49500,8 +49500,8 @@ export Ammo_RocketAir_Hydra_70mm_x38 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -49574,9 +49574,9 @@ export Ammo_RocketAir_Hydra_70mm_x57 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -49605,8 +49605,8 @@ export Ammo_RocketAir_Hydra_70mm_x57 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -49679,9 +49679,9 @@ export Ammo_RocketAir_Hydra_70mm_x76 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -49710,8 +49710,8 @@ export Ammo_RocketAir_Hydra_70mm_x76 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -49815,8 +49815,8 @@ export Ammo_RocketAir_S13_122mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 30),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -49920,8 +49920,8 @@ export Ammo_RocketAir_S13_122mm_x10 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 30),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50025,8 +50025,8 @@ export Ammo_RocketAir_S13_122mm_x10_avion is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 30),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50130,8 +50130,8 @@ export Ammo_RocketAir_S13_122mm_x20 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 30),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50235,8 +50235,8 @@ export Ammo_RocketAir_S24_240mm_x4 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 30),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50309,9 +50309,9 @@ export Ammo_RocketAir_S5_57mm is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((100.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((29) * Metre)
     PhysicalDamages                   = 0.684
@@ -50340,8 +50340,8 @@ export Ammo_RocketAir_S5_57mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50414,9 +50414,9 @@ export Ammo_RocketAir_S5_57mm_x192 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((100.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((29) * Metre)
     PhysicalDamages                   = 0.684
@@ -50445,8 +50445,8 @@ export Ammo_RocketAir_S5_57mm_x192 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50519,9 +50519,9 @@ export Ammo_RocketAir_S5_57mm_x32 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((100.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((29) * Metre)
     PhysicalDamages                   = 0.684
@@ -50550,8 +50550,8 @@ export Ammo_RocketAir_S5_57mm_x32 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50624,9 +50624,9 @@ export Ammo_RocketAir_S5_57mm_x64 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((100.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((29) * Metre)
     PhysicalDamages                   = 0.684
@@ -50655,8 +50655,8 @@ export Ammo_RocketAir_S5_57mm_x64 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50720,7 +50720,7 @@ export Ammo_RocketAir_S5_57mm_x8 is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 0.25
     PorteeMaximale                    = ((15000) * Metre)
-    PorteeMinimaleTBA                 = ((0) * Metre)
+    PorteeMinimaleTBA                 = ((1000) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
@@ -50729,9 +50729,9 @@ export Ammo_RocketAir_S5_57mm_x8 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((100.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((29) * Metre)
     PhysicalDamages                   = 0.684
@@ -50760,8 +50760,8 @@ export Ammo_RocketAir_S5_57mm_x8 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50834,9 +50834,9 @@ export Ammo_RocketAir_S5_57mm_x96 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((100.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((29) * Metre)
     PhysicalDamages                   = 0.684
@@ -50865,8 +50865,8 @@ export Ammo_RocketAir_S5_57mm_x96 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -50939,9 +50939,9 @@ export Ammo_RocketAir_SNEB_68mm_x12 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -50970,8 +50970,8 @@ export Ammo_RocketAir_SNEB_68mm_x12 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 25),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -51044,9 +51044,9 @@ export Ammo_RocketAir_SNEB_68mm_x18 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -51075,8 +51075,8 @@ export Ammo_RocketAir_SNEB_68mm_x18 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 25),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -51149,9 +51149,9 @@ export Ammo_RocketAir_SNEB_68mm_x36 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -51180,8 +51180,8 @@ export Ammo_RocketAir_SNEB_68mm_x36 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 25),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -51254,9 +51254,9 @@ export Ammo_RocketAir_SNEB_68mm_x38 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -51285,8 +51285,8 @@ export Ammo_RocketAir_SNEB_68mm_x38 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 25),
-             (EBaseHitValueModifier/Moving, 20),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -51568,9 +51568,9 @@ export Ammo_RocketAir_m151_70mm is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((150.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((50) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((35) * Metre)
     PhysicalDamages                   = 0.84
@@ -51599,8 +51599,8 @@ export Ammo_RocketAir_m151_70mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 15),
+             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
