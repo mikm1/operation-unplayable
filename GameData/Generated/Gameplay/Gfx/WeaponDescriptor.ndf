@@ -27228,7 +27228,7 @@ export WeaponDescriptor_M163_PIVADS_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface        = 1
-                    Ammunition                          = ~/Ammo_Gatling_M61_Vulcan_20mm_AP_late
+                    Ammunition                          = ~/Ammo_Gatling_M61_Vulcan_20mm_late
                     AnimateOnlyOneSoldier               = False
                     DispersionRadiusOffColor            = RGBA[0,0,0,0]
                     DispersionRadiusOffThickness        = -0.1
@@ -27261,7 +27261,7 @@ export WeaponDescriptor_M163_PIVADS_US is TWeaponManagerModuleDescriptor
                     WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
                     WeaponIgnoredPropertyName           = 'WeaponIgnored_1'
                     WeaponShootDataPropertyName         = ["WeaponShootData_0_1", ]
-                ){,
+                ),
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface        = 1
@@ -27298,7 +27298,7 @@ export WeaponDescriptor_M163_PIVADS_US is TWeaponManagerModuleDescriptor
                     WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
                     WeaponIgnoredPropertyName           = 'WeaponIgnored_2'
                     WeaponShootDataPropertyName         = ["WeaponShootData_0_2", ]
-                )}
+                )
             ]
             NbFX                            = 1
             OutOfRangeTrackingDuration      = 3.5
