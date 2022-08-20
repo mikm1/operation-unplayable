@@ -12767,7 +12767,7 @@ export Ammo_Canon_AP_115mm_U5TS_T62M is TAmmunitionDescriptor
 
     MaxSuccessiveHitCount             = 5
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
@@ -12870,7 +12870,7 @@ export Ammo_Canon_AP_120_mm_L11A5 is TAmmunitionDescriptor
 
     MaxSuccessiveHitCount             = 5
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 6.6
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
@@ -13278,7 +13278,7 @@ export Ammo_Canon_AP_120_mm_L44_late87 is TAmmunitionDescriptor
 
     MaxSuccessiveHitCount             = 5
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 6.6
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
@@ -13381,7 +13381,7 @@ export Ammo_Canon_AP_120_mm_L52_M68 is TAmmunitionDescriptor
 
     MaxSuccessiveHitCount             = 5
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 6.6
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
@@ -13484,7 +13484,7 @@ export Ammo_Canon_AP_120_mm_L52_M68_HA is TAmmunitionDescriptor
 
     MaxSuccessiveHitCount             = 5
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 6.6
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
@@ -13587,7 +13587,7 @@ export Ammo_Canon_AP_120mm_L44_late is TAmmunitionDescriptor
 
     MaxSuccessiveHitCount             = 5
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 6.6
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
@@ -15227,7 +15227,7 @@ export Ammo_Canon_HEAT_115mm_U5TS_T62M is TAmmunitionDescriptor
 
     MaxSuccessiveHitCount             = 5
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
@@ -20563,7 +20563,7 @@ export Ammo_Canon_HE_115mm_U5TS_T62M is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
@@ -22714,7 +22714,7 @@ export Ammo_Canon_HE_165mm_AVRE is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 18.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
