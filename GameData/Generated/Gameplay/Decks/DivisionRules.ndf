@@ -5436,7 +5436,7 @@ private DivisionRules is TDeckDivisionRules
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_MANPAD_Stinger_C_US
-                        AvailableWithoutTransport = True
+                        AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_M998_Humvee_US]
                         MaxPackNumber = 5
                         NumberOfUnitInPack = 4

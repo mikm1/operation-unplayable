@@ -14992,7 +14992,7 @@ export WeaponDescriptor_Engineers_US is TWeaponManagerModuleDescriptor
                     MaxRangeDisplay_Thickness           = -0.1
                     MinRangeDisplay_Color               = RGBA[0,0,0,0]
                     MinRangeDisplay_Thickness           = -0.1
-                    NbWeapons                           = 9
+                    NbWeapons                           = 7
                     SalvoStockIndex                     = 0
                     ShowDispersion                      = False
                     ShowInInterface                     = True
@@ -15176,7 +15176,7 @@ export WeaponDescriptor_Engineers_US is TWeaponManagerModuleDescriptor
                     SplashRadiusOnThickness             = -0.1
                     WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_5'
                     WeaponIgnoredPropertyName           = 'WeaponIgnored_5'
-                    WeaponShootDataPropertyName         = ["WeaponShootData_0_4", ]
+                    WeaponShootDataPropertyName         = ["WeaponShootData_0_5", ]
                 )
             ]
             NbFX                        = 1
@@ -40072,8 +40072,8 @@ export WeaponDescriptor_Rifles_CMD_US is TWeaponManagerModuleDescriptor
     NeedsExplicitOrderToUseSmoke = True
     Salves               = [
         160,
-        80,
         4,
+        -1,
         -1,
         -1,
         -1
@@ -40109,7 +40109,7 @@ export WeaponDescriptor_Rifles_CMD_US is TWeaponManagerModuleDescriptor
                     MaxRangeDisplay_Thickness           = -0.1
                     MinRangeDisplay_Color               = RGBA[0,0,0,0]
                     MinRangeDisplay_Thickness           = -0.1
-                    NbWeapons                           = 8
+                    NbWeapons                           = 4
                     SalvoStockIndex                     = 0
                     ShowDispersion                      = False
                     ShowInInterface                     = True
@@ -40140,13 +40140,13 @@ export WeaponDescriptor_Rifles_CMD_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface        = 1
-                    Ammunition                          = ~/Ammo_MMG_M60_7_62mm
+                    Ammunition                          = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier               = True
                     DispersionRadiusOffColor            = RGBA[0,0,0,0]
                     DispersionRadiusOffThickness        = -0.1
                     DispersionRadiusOnColor             = RGBA[0,0,0,0]
                     DispersionRadiusOnThickness         = -0.1
-                    EffectTag                           = 'FireEffect_MMG_M60_7_62mm'
+                    EffectTag                           = 'FireEffect_RocketInf_M72_LAW_66mm'
                     HandheldEquipmentKey                = 'MeshAlternative_2'
                     MaxRangeDisplay_Color               = RGBA[0,0,0,0]
                     MaxRangeDisplay_Thickness           = -0.1
@@ -40176,49 +40176,6 @@ export WeaponDescriptor_Rifles_CMD_US is TWeaponManagerModuleDescriptor
             ]
             NbFX                        = 1
             YulBoneOrdinal              = 2
-        ),
-        TTurretInfanterieDescriptor
-        (
-            MountedWeaponDescriptorList = [
-                TMountedWeaponDescriptor
-                (
-                    AmmoConsumption_ForInterface        = 1
-                    Ammunition                          = ~/Ammo_RocketInf_M72_LAW_66mm
-                    AnimateOnlyOneSoldier               = True
-                    DispersionRadiusOffColor            = RGBA[0,0,0,0]
-                    DispersionRadiusOffThickness        = -0.1
-                    DispersionRadiusOnColor             = RGBA[0,0,0,0]
-                    DispersionRadiusOnThickness         = -0.1
-                    EffectTag                           = 'FireEffect_RocketInf_M72_LAW_66mm'
-                    HandheldEquipmentKey                = 'MeshAlternative_3'
-                    MaxRangeDisplay_Color               = RGBA[0,0,0,0]
-                    MaxRangeDisplay_Thickness           = -0.1
-                    MinRangeDisplay_Color               = RGBA[0,0,0,0]
-                    MinRangeDisplay_Thickness           = -0.1
-                    NbWeapons                           = 1
-                    SalvoStockIndex                     = 2
-                    ShowDispersion                      = False
-                    ShowInInterface                     = True
-                    ShowMaximumRange                    = False
-                    ShowMaximumRange_HA                 = False
-                    ShowMaximumRange_Projectile         = False
-                    ShowMaximumRange_TBA                = False
-                    ShowMinimumRange                    = False
-                    ShowMinimumRange_HA                 = False
-                    ShowMinimumRange_Projectile         = False
-                    ShowMinimumRange_TBA                = False
-                    ShowSplashRadius                    = False
-                    SplashRadiusOffColor                = RGBA[0,0,0,0]
-                    SplashRadiusOffThickness            = -0.1
-                    SplashRadiusOnColor                 = RGBA[0,0,0,0]
-                    SplashRadiusOnThickness             = -0.1
-                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
-                    WeaponIgnoredPropertyName           = 'WeaponIgnored_3'
-                    WeaponShootDataPropertyName         = ["WeaponShootData_0_3", ]
-                )
-            ]
-            NbFX                        = 1
-            YulBoneOrdinal              = 3
         )
     ]
 )
