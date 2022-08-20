@@ -2365,7 +2365,7 @@ export Descriptor_Deck_US_8th_Inf_multi_test_challenge is TDeckDescriptor
     DeckDivision = ~/Descriptor_Deck_Division_US_8th_Inf_multi
     DeckPackList =
     [
-        TDeckPackDescription
+        {TDeckPackDescription
         (
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_Rifles_LAW_US
@@ -2432,7 +2432,7 @@ export Descriptor_Deck_US_8th_Inf_multi_test_challenge is TDeckDescriptor
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_M270_MLRS_US
-        ),}
+        ),}{
         TDeckPackDescription
         (
             ExperienceLevel = 2
@@ -2489,7 +2489,7 @@ export Descriptor_Deck_US_8th_Inf_multi_test_challenge is TDeckDescriptor
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_M163_PIVADS_US
-        ),}
+        ),}{
         TDeckPackDescription
         (
             ExperienceLevel = 2
@@ -2544,7 +2544,7 @@ export Descriptor_Deck_US_8th_Inf_multi_test_challenge is TDeckDescriptor
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_EF111_Raven
-        ),}
+        ),}{
         TDeckPackDescription
         (
             ExperienceLevel = 2
@@ -2555,7 +2555,7 @@ export Descriptor_Deck_US_8th_Inf_multi_test_challenge is TDeckDescriptor
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_Jager_RFA
             Transport = ~/Descriptor_Unit_Unimog_trans_RFA
-        ),
+        ),}
     ]
     DeckCombatGroupList =
     [
@@ -2580,7 +2580,7 @@ export Descriptor_Deck_SOV_79_Gds_Tank_multi_test_challenge_pack is TDeckDescrip
     DeckDivision = ~/Descriptor_Deck_Division_SOV_79_Gds_Tank_multi
     DeckPackList =
     [
-        TDeckPackDescription
+        {TDeckPackDescription
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_BRDM_2_CMD_SOV
@@ -2595,11 +2595,11 @@ export Descriptor_Deck_SOV_79_Gds_Tank_multi_test_challenge_pack is TDeckDescrip
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_2S3M_Akatsiya_SOV
         ),
-        {TDeckPackDescription
+        TDeckPackDescription
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_2K12_KUB_SOV
-        ),}
+        ),
         TDeckPackDescription
         (
             ExperienceLevel = 2
@@ -2732,7 +2732,7 @@ export Descriptor_Deck_SOV_79_Gds_Tank_multi_test_challenge_pack is TDeckDescrip
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Osa_9K33M3_SOV
         ),}
-        TDeckPackDescription
+        {TDeckPackDescription
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Mi_8TV_s80_SOV
@@ -2741,17 +2741,17 @@ export Descriptor_Deck_SOV_79_Gds_Tank_multi_test_challenge_pack is TDeckDescrip
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_2S3M_Akatsiya_SOV
-        ),
+        ),}
         {TDeckPackDescription
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MiG_31M_SOV
-        ),}
+        ),
         TDeckPackDescription
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80U_CMD_SOV
-        ),
+        ),}
     ]
     DeckCombatGroupList =
     [
