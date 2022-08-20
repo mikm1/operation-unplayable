@@ -3,8 +3,8 @@ export CriticalEffectModule_Vehicule_Arme is TemplateCriticalEffectModule_Ground
 export CriticalEffectModule_Vehicule_NonArme is TemplateCriticalEffectModule_GroundUnit_Unarmed()
 export CriticalEffectModule_Vehicule_Arme_FrontEngine is TemplateCriticalEffectModule_GroundUnit_FrontEngine()
 export CriticalEffectModule_Vehicule_Arme_MG_only is TemplateCriticalEffectModule_GroundUnit_MG_only()
-export CriticalEffectModule_Helico_NonArme is TemplateCriticalEffectModule_GroundUnit( PackEffetCritique = PackEffetCritique_HelicoNonArme )
-export CriticalEffectModule_Helico_Arme is TemplateCriticalEffectModule_GroundUnit( PackEffetCritique = PackEffetCritique_HelicoArme )
+export CriticalEffectModule_Helico_NonArme is TemplateCriticalEffectModule_Helico( PackEffetCritique = PackEffetCritique_HelicoNonArme )
+export CriticalEffectModule_Helico_Arme is TemplateCriticalEffectModule_Helico( PackEffetCritique = PackEffetCritique_HelicoArme )
 
 private template TemplateCriticalEffectModule_GroundUnit
 [
@@ -440,6 +440,37 @@ is TCriticalEffectModuleDescriptor
         CriticalEffect_ShooterKO(Roll = (16,25)),//Armes stop 10sec
         CriticalEffect_Bounce(Roll = (26,100)),
     ]
+    RicochetEffectsOnTop = []
+)
+private template TemplateCriticalEffectModule_Helico
+[
+    EffectsFromTerrain = [],
+    PackEffetCritique = PackEffetCritique_VehiculeStandard,
+
+]
+is TCriticalEffectModuleDescriptor
+(
+    Bounds = (1,100) //(1,200)
+    TerrainCriticalEffectTimer = 5.0// 5.0
+
+    EffectsFromTerrain = <EffectsFromTerrain>
+
+    EffectsOnFront = <PackEffetCritique>
+    EffectsOnSides = <PackEffetCritique>
+    EffectsOnRear = <PackEffetCritique>
+    EffectsOnTop = <PackEffetCritique>
+
+    PierceEffectsOnFront = <PackEffetCritique>
+    PierceEffectsOnSides = <PackEffetCritique>
+    PierceEffectsOnRear = <PackEffetCritique>
+    PierceEffectsOnTop = <PackEffetCritique>
+
+    RicochetEffectsOnFront = 
+    []
+    RicochetEffectsOnSides = 
+    []
+    RicochetEffectsOnRear = 
+    []
     RicochetEffectsOnTop = []
 )
 export CriticalEffectModule_Chenilles is TemplateCriticalEffectModule_GroundUnit
