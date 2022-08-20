@@ -7233,6 +7233,14 @@ DepictionOperator_M163_PIVADS_US_Weapon1 is DepictionOperator_WeaponContinuousFi
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
     NbFX = 1
 )
+DepictionOperator_M163_PIVADS_US_Weapon2 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_2"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+    NbFX = 1
+)
 Gfx_M163_PIVADS_US_Autogen is TacticVehicleDepictionTemplate
 (
     CoatingName = 'M163_PIVADS_US'
@@ -7251,10 +7259,12 @@ Gfx_M163_PIVADS_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_TurretSound_ST_SAM_US,
         DepictionOperator_Turret_1_RotaryCannon_FastRotation,
         DepictionOperator_M163_PIVADS_US_Weapon1,
+        DepictionOperator_M163_PIVADS_US_Weapon2,
     ]
 
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Gatling_M61_Vulcan_20mm_late ),
+                ( [ "weapon_effet_tag2" ], Weapon_Gatling_M61_Vulcan_20mm_late ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked

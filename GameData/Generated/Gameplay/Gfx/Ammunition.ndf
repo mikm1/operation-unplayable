@@ -29981,12 +29981,118 @@ export Ammo_Gatling_M61_Vulcan_20mm_late is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 0.05
-    PorteeMaximale                    = (15000 * Metre)
+    PorteeMaximale                    = (14000 * Metre * 0)
     PorteeMinimaleTBA                 = ((100) * Metre)
-    PorteeMaximaleTBA                 = (25000 * Metre)
+    PorteeMaximaleTBA                 = (20000 * Metre * 0)
     PorteeMinimaleHA                  = ((100) * Metre)
-    PorteeMaximaleHA                  = (20000 * Metre)
+    PorteeMaximaleHA                  = (18000 * Metre * 0)
     PorteeMinimale                    = ((100) * Metre)
+    AltitudeAPorteeMinimale           = ((20.0) * Metre)
+    AltitudeAPorteeMaximale           = ((40.0) * Metre)
+    AffecteParNombre                  = True
+    AngleDispersion                   = 0.0
+    DispersionAtMaxRange              = ((10) * Metre)
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = False
+    CorrectedShotAimtimeMultiplier    = 1.0
+    RadiusSplashPhysicalDamages       = ((13) * Metre)
+    PhysicalDamages                   = 0.5
+    RadiusSplashSuppressDamages       = ((25) * Metre)
+    SuppressDamages                   = 50.0
+    RayonPinned                       = ((400) * Metre)
+    AllowSuppressDamageWhenNoImpact                = True
+    DisplaySalveAccuracy              = False
+    TirIndirect                       = False
+    TirReflexe                        = True
+    InterdireTirReflexe               = False
+    FX_vitesse_de_depart              = 0.0
+    FX_acceleration_max               = 0.0
+    FX_tir_sans_physic                = False
+    FX_frottement                     = 0.0
+    TempsAnimation                    = 0.0
+    NoiseDissimulationMalus           = 5.5
+    ShotsBeforeMaxNoise               = 5
+    TargetsDistricts                  = True
+        // DiceHitRollRule
+    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
+    (
+         DescriptorId          = GUID:{e5e0b219-9c4b-49f6-b230-024477289588}
+         BaseCriticModifier = 25
+         BaseEffectModifier = 0
+         BaseHitValueModifiers =
+         [
+             (EBaseHitValueModifier/Base, 0.0),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 0),
+             (EBaseHitValueModifier/SuccessfulShots, 0.0),
+             (EBaseHitValueModifier/Targeted, 0.0),
+         ]
+         HitModifierList       =
+         [
+             EDiceHitModifier/Precision,
+             EDiceHitModifier/DistanceToTarget,
+             EDiceHitModifier/SuccesiveShots,
+             EDiceHitModifier/Suppress,
+         ]
+    )
+
+    MaxSuccessiveHitCount             = 1
+    //Guidance                          = Guidance_Radar
+    TempsDeVisee                      = aim_time_multiplier * 1.5
+    TempsEntreDeuxSalves              = 2.0
+    TempsEntreDeuxSalves_Min           = -1.0
+    TempsEntreDeuxSalves_Max           = -1.0
+    NbTirParSalves                    = 10
+    SupplyCost                        = 200
+    NbSalvosShootOnPosition           = 1
+    CanShootOnPosition                = True
+    CanShootWhileMoving               = False
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 80
+    MissileDescriptor                 = nil
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_m168"
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = ~/Descriptor_Fire_Incendie
+    FireTriggeringProbability         = 0.1
+    TargetUnitCenter                  = True
+    CanHarmInfantry                   = True
+    CanHarmVehicles                   = True
+    CanHarmHelicopters                = True
+    CanHarmAirplanes                  = True
+    CanHarmGuidedMissiles             = True
+    IsHarmlessForAllies               = True
+    PiercingWeapon                    = False
+    FlightTimeForSpeed                    = 1.3
+    DistanceForSpeed                      = 15000.0 * Metre
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_DCA
+)
+export Ammo_Gatling_M61_Vulcan_20mm_AP_late is TAmmunitionDescriptor
+(
+    DescriptorId                      = GUID:{04b9a831-47af-4d4f-a1e7-8426f7af65be}
+    Name                              = 'TGXKUUMJEM'
+    TypeName                          = 'NA'
+    TypeCategoryName                  = 'ZJQCIJREVP'
+    Caliber                           = 'JGUAUSQSOC'
+    WeaponDescriptionToken            = 'BRUJGAAJMP'
+    TraitsToken                       = [ 'MOTION' ]
+    WeaponCursorType                  = Weapon_Cursor_MachineGun
+    MinMaxCategory                    = MinMax_DCA
+    Level                             = 3
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=4)
+    ProjectileType                    = EProjectileType/Obus
+    FxWeaponType                      = ~/TFxWeaponType_M168Gatling
+    FxPower                           = EFXPower/Moyen
+    Puissance                         = 100.0
+    TempsEntreDeuxTirs                = 0.2
+    TempsEntreDeuxTirs_Min             = -1.0
+    TempsEntreDeuxTirs_Max             = -1.0
+    TempsEntreDeuxFx                  = 0.05
+    PorteeMaximale                    = ((14000) * Metre)
+    PorteeMinimaleTBA                 = ((0) * Metre)
+    PorteeMaximaleTBA                 = ((20000) * Metre)
+    PorteeMinimaleHA                  = ((0) * Metre)
+    PorteeMaximaleHA                  = ((14000) * Metre)
+    PorteeMinimale                    = ((0) * Metre)
     AltitudeAPorteeMinimale           = ((20.0) * Metre)
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
@@ -30016,14 +30122,14 @@ export Ammo_Gatling_M61_Vulcan_20mm_late is TAmmunitionDescriptor
         // DiceHitRollRule
     HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
     (
-         DescriptorId          = GUID:{e5e0b219-9c4b-49f6-b230-024477289588}
+         DescriptorId          = GUID:{f3c6ad71-8c34-40d8-b28d-53823129d994}
          BaseCriticModifier = 25
          BaseEffectModifier = 0
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 0),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -30038,15 +30144,15 @@ export Ammo_Gatling_M61_Vulcan_20mm_late is TAmmunitionDescriptor
 
     MaxSuccessiveHitCount             = 1
     //Guidance                          = Guidance_Radar
-    TempsDeVisee                      = aim_time_multiplier * 0.5
+    TempsDeVisee                      = aim_time_multiplier * 1.5
     TempsEntreDeuxSalves              = 2.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 10
     SupplyCost                        = 200
     NbSalvosShootOnPosition           = 1
-    CanShootOnPosition                = True
-    CanShootWhileMoving               = True
+    CanShootOnPosition                = False
+    CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
     AffichageMunitionParSalve         = 80
     MissileDescriptor                 = nil
@@ -30061,7 +30167,7 @@ export Ammo_Gatling_M61_Vulcan_20mm_late is TAmmunitionDescriptor
     CanHarmAirplanes                  = True
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = True
-    PiercingWeapon                    = False
+    PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.3
     DistanceForSpeed                      = 15000.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_DCA
@@ -69029,7 +69135,7 @@ export Ammo_MANPAD_FIM92 is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 1.0
+    TempsDeVisee                      = aim_time_multiplier * 4.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0

@@ -15,7 +15,7 @@ export DamageTypeEvolutionOverRangeDescriptor_Balle_500 is TStairsDamageTypeEvol
 
 export DamageTypeEvolutionOverRangeDescriptor_DCA is TStairsDamageTypeEvolutionOverRangeDescriptor
 (
-   Distance= 700.0
+   Distance= 500.0
    AP= 1.0
 )
 
