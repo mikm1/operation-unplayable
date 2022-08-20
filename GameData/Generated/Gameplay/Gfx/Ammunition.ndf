@@ -15,6 +15,9 @@ heavy_cluster_damage is 4.0
 
 //aim time multiplier. aim times need to go up for the randomization to make sense, see GDConstances -> FacteurMinTempsViseeReel
 aim_time_multiplier is 2.0
+howitzer_aim_time is 40.0
+mortar_hvy_aim_time is 20.0
+mortar_light_aim_time is 10.0
 
 export Ammo_AGL_Mk19_40mm_Twin is TAmmunitionDescriptor
 (
@@ -33939,7 +33942,7 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34044,7 +34047,7 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34149,7 +34152,7 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm_TOWED is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = 20.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 25.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34252,7 +34255,7 @@ export Ammo_Howz_Canon_2A44_Howitzer_203mm_late is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 25.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34357,7 +34360,7 @@ export Ammo_Howz_Canon_2A44_Howitzer_203mm_late_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 25.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34462,7 +34465,7 @@ export Ammo_Howz_Canon_2A60_Howitzer_120mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34567,7 +34570,7 @@ export Ammo_Howz_Canon_2A60_Howitzer_120mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34672,7 +34675,7 @@ export Ammo_Howz_Canon_D20_Howitzer_152mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34777,7 +34780,7 @@ export Ammo_Howz_Canon_D20_Howitzer_152mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34882,7 +34885,7 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -34987,7 +34990,7 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -35092,7 +35095,7 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -35197,7 +35200,7 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -35302,7 +35305,7 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -35407,7 +35410,7 @@ export Ammo_Howz_Canon_FH70_Howitzer_155mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -35512,7 +35515,7 @@ export Ammo_Howz_Canon_FH70_Howitzer_155mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -35617,7 +35620,7 @@ export Ammo_Howz_Canon_FH70_SP_Howitzer_155mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -35722,7 +35725,7 @@ export Ammo_Howz_Canon_FH70_SP_Howitzer_155mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -35827,7 +35830,7 @@ export Ammo_Howz_Canon_GCT_Howitzer_155mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -36035,7 +36038,7 @@ export Ammo_Howz_Canon_GCT_Howitzer_155mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -37287,7 +37290,7 @@ export Ammo_Howz_Canon_M126_L39_Howitzer_155mm_early is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -37392,7 +37395,7 @@ export Ammo_Howz_Canon_M126_L39_Howitzer_155mm_early_SMOKE is TAmmunitionDescrip
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -37497,7 +37500,7 @@ export Ammo_Howz_Canon_M185_L39_Howitzer_155mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -37602,7 +37605,7 @@ export Ammo_Howz_Canon_M185_L39_Howitzer_155mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -38081,12 +38084,13 @@ export Ammo_Howz_Canon_M46_Howitzer_130mm is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((500) * Metre)
     DispersionAtMinRange              = ((500) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
+    CorrectedShotDispersionMultiplier = 0.7
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = ((171) * Metre)
-    PhysicalDamages                   = 1.83
-    RadiusSplashSuppressDamages       = ((183) * Metre)
-    SuppressDamages                   = 81.0
+    RadiusSplashPhysicalDamages       = ((260) * Metre)
+    PhysicalDamages                   = 1.95
+    RadiusSplashSuppressDamages       = ((520) * Metre)
+    SuppressDamages                   = 86.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
     DisplaySalveAccuracy              = True
@@ -38124,7 +38128,7 @@ export Ammo_Howz_Canon_M46_Howitzer_130mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -38229,7 +38233,7 @@ export Ammo_Howz_Canon_M46_Howitzer_130mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -38334,7 +38338,7 @@ export Ammo_Howz_Canon_M50_155mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = 20.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -38439,7 +38443,7 @@ export Ammo_Howz_Canon_M50_155mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = 20.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -38754,7 +38758,7 @@ export Ammo_Howz_GCT_F1_155mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -39169,7 +39173,7 @@ export Ammo_M185_155mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -39482,7 +39486,7 @@ export Ammo_M185_155mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 15.0
+    TempsDeVisee                      = 40.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -43093,7 +43097,7 @@ export Ammo_Mortier_2S12_120mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 5.0
+    TempsDeVisee                      = 20.0
     TempsEntreDeuxSalves              = 5.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -43197,7 +43201,7 @@ export Ammo_Mortier_2S12_120mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 5.0
+    TempsDeVisee                      = 20.0
     TempsEntreDeuxSalves              = 5.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -44599,11 +44603,11 @@ export Ammo_Mortier_M40_107mm is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((1250) * Metre)
     DispersionAtMinRange              = ((200) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = ((150) * Metre)
+    RadiusSplashPhysicalDamages       = ((214) * Metre)
     PhysicalDamages                   = 1.605
-    RadiusSplashSuppressDamages       = ((161) * Metre)
+    RadiusSplashSuppressDamages       = ((428) * Metre)
     SuppressDamages                   = 71.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -44642,7 +44646,7 @@ export Ammo_Mortier_M40_107mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 5.0
+    TempsDeVisee                      = 20.0
     TempsEntreDeuxSalves              = 5.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -44668,110 +44672,6 @@ export Ammo_Mortier_M40_107mm is TAmmunitionDescriptor
     PiercingWeapon                    = False
     FlightTimeForSpeed                    = 25.0
     DistanceForSpeed                      = 40000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = nil
-)
-export Ammo_Mortier_M40_107mm_low_range is TAmmunitionDescriptor
-(
-    DescriptorId                      = GUID:{a6d9b1db-0b6a-4dc8-8de1-56a5cf5b9350}
-    Name                              = 'OUFYBKAIUB'
-    TypeName                          = 'NA'
-    TypeCategoryName                  = 'HYUWZSIKYW'
-    Caliber                           = 'XYZPPNZEHG'
-    WeaponDescriptionToken            = 'YWFMBNSXOW'
-    TraitsToken                       = [ 'STAT', 'HE', 'IND', ]
-    WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
-    MinMaxCategory                    = MinMax_Mortier
-    Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="howz" Index=1)
-
-    ProjectileType                    = EProjectileType/Artillerie
-    FxWeaponType                      = ~/TFxWeaponType_MortierM30107Mm
-    FxPower                           = EFXPower/Moyen
-    Puissance                         = 100.0
-    TempsEntreDeuxTirs                = 3.0
-    TempsEntreDeuxTirs_Min             = -1.0
-    TempsEntreDeuxTirs_Max             = -1.0
-    TempsEntreDeuxFx                  = 3.0
-    PorteeMaximale                    = ((38000) * Metre)
-    PorteeMinimaleTBA                 = ((0) * Metre)
-    PorteeMaximaleTBA                 = ((0) * Metre)
-    PorteeMinimaleHA                  = ((0) * Metre)
-    PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((4000) * Metre)
-    AltitudeAPorteeMinimale           = ((250.0) * Metre)
-    AltitudeAPorteeMaximale           = ((5000.0) * Metre)
-    AffecteParNombre                  = False
-    AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((400) * Metre)
-    DispersionAtMinRange              = ((200) * Metre)
-    CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = ((150) * Metre)
-    PhysicalDamages                   = 1.605
-    RadiusSplashSuppressDamages       = ((161) * Metre)
-    SuppressDamages                   = 71.0
-    RayonPinned                       = ((400) * Metre)
-    AllowSuppressDamageWhenNoImpact                = True
-    DisplaySalveAccuracy              = True
-    TirIndirect                       = True
-    TirReflexe                        = False
-    InterdireTirReflexe               = False
-    FX_vitesse_de_depart              = 0.0
-    FX_acceleration_max               = 0.0
-    FX_tir_sans_physic                = False
-    FX_frottement                     = 0.0
-    TempsAnimation                    = 0.0
-    NoiseDissimulationMalus           = 2.0
-    ShotsBeforeMaxNoise               = 2
-    TargetsDistricts                  = False
-        // DiceHitRollRule
-    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
-    (
-         DescriptorId          = GUID:{92425954-b8c5-4462-86d3-75deb3347b04}
-         BaseCriticModifier = 25
-         BaseEffectModifier = 0
-         BaseHitValueModifiers =
-         [
-             (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 0),
-             (EBaseHitValueModifier/Moving, 0),
-             (EBaseHitValueModifier/SuccessfulShots, 0.0),
-             (EBaseHitValueModifier/Targeted, 0.0),
-         ]
-         HitModifierList       =
-         [
-             EDiceHitModifier/Precision,
-             EDiceHitModifier/DistanceToTarget,
-             EDiceHitModifier/SuccesiveShots,
-             EDiceHitModifier/Suppress,
-         ]
-    )
-
-    TempsDeVisee                      = aim_time_multiplier * 5.0
-    TempsEntreDeuxSalves              = 5.0
-    TempsEntreDeuxSalves_Min           = -1.0
-    TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 4
-    SupplyCost                        = 428
-    NbSalvosShootOnPosition           = 1
-    CanShootOnPosition                = True
-    CanShootWhileMoving               = False
-    NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 4
-    MissileDescriptor                 = nil
-    InterfaceWeaponTexture            = "Texture_Interface_Weapon_M30"
-    SmokeDescriptor                   = nil
-    FireDescriptor                    = ~/Descriptor_Fire_Incendie
-    FireTriggeringProbability         = 0.2
-    TargetUnitCenter                  = True
-    CanHarmInfantry                   = True
-    CanHarmVehicles                   = True
-    CanHarmHelicopters                = True
-    CanHarmAirplanes                  = True
-    CanHarmGuidedMissiles             = True
-    IsHarmlessForAllies               = False
-    PiercingWeapon                    = False
-    FlightTimeForSpeed                    = 10.0
-    DistanceForSpeed                      = 20000.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Mortier_M40_107mm_SMOKE is TAmmunitionDescriptor
@@ -44807,7 +44707,7 @@ export Ammo_Mortier_M40_107mm_SMOKE is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((1250) * Metre)
     DispersionAtMinRange              = ((200) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 0.12
@@ -44850,7 +44750,7 @@ export Ammo_Mortier_M40_107mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 5.0
+    TempsDeVisee                      = 20.0
     TempsEntreDeuxSalves              = 4.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -44953,7 +44853,7 @@ export Ammo_Mortier_M40_towed_107mm_SMOKE is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 5.0
+    TempsDeVisee                      = 20.0
     TempsEntreDeuxSalves              = 4.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -45056,7 +44956,7 @@ export Ammo_Mortier_M40_tower_107mm is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 5.0
+    TempsDeVisee                      = 20.0
     TempsEntreDeuxSalves              = 4.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
