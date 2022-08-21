@@ -11078,7 +11078,7 @@ export WeaponDescriptor_BTR_80_SOV is TWeaponManagerModuleDescriptor
     Salves               = [
         53,
         15,
-        -1,
+        1,
         -1,
         -1,
         -1
@@ -11140,6 +11140,42 @@ export WeaponDescriptor_BTR_80_SOV is TWeaponManagerModuleDescriptor
                     WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
                     WeaponIgnoredPropertyName           = 'WeaponIgnored_1'
                     WeaponShootDataPropertyName         = ["WeaponShootData_0_1", ]
+                ),
+				TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface        = 1
+                    Ammunition                          = ~/Ammo_HMG_14_5_mm_KPVT_AP
+                    AnimateOnlyOneSoldier               = True
+                    DispersionRadiusOffColor            = RGBA[0,0,0,0]
+                    DispersionRadiusOffThickness        = -0.1
+                    DispersionRadiusOnColor             = RGBA[0,0,0,0]
+                    DispersionRadiusOnThickness         = -0.1
+                    EffectTag                           = 'FireEffect_HMG_14_5_mm_KPVT'
+                    HandheldEquipmentKey                = 'MeshAlternative_2'
+                    MaxRangeDisplay_Color               = RGBA[0,0,0,0]
+                    MaxRangeDisplay_Thickness           = -0.1
+                    MinRangeDisplay_Color               = RGBA[0,0,0,0]
+                    MinRangeDisplay_Thickness           = -0.1
+                    NbWeapons                           = 1
+                    SalvoStockIndex                     = 0
+                    ShowDispersion                      = False
+                    ShowInInterface                     = True
+                    ShowMaximumRange                    = False
+                    ShowMaximumRange_HA                 = False
+                    ShowMaximumRange_Projectile         = False
+                    ShowMaximumRange_TBA                = False
+                    ShowMinimumRange                    = False
+                    ShowMinimumRange_HA                 = False
+                    ShowMinimumRange_Projectile         = False
+                    ShowMinimumRange_TBA                = False
+                    ShowSplashRadius                    = False
+                    SplashRadiusOffColor                = RGBA[0,0,0,0]
+                    SplashRadiusOffThickness            = -0.1
+                    SplashRadiusOnColor                 = RGBA[0,0,0,0]
+                    SplashRadiusOnThickness             = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName           = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName         = ["WeaponShootData_0_2", ]
                 )
             ]
             NbFX                            = 1
@@ -11169,7 +11205,7 @@ export WeaponDescriptor_BTR_80_SOV is TWeaponManagerModuleDescriptor
                     DispersionRadiusOnColor             = RGBA[0,0,0,0]
                     DispersionRadiusOnThickness         = -0.1
                     EffectTag                           = 'FireEffect_MMG_PKT_7_62mm'
-                    HandheldEquipmentKey                = 'MeshAlternative_2'
+                    HandheldEquipmentKey                = 'MeshAlternative_3'
                     MaxRangeDisplay_Color               = RGBA[0,0,0,0]
                     MaxRangeDisplay_Thickness           = -0.1
                     MinRangeDisplay_Color               = RGBA[0,0,0,0]
@@ -11192,9 +11228,9 @@ export WeaponDescriptor_BTR_80_SOV is TWeaponManagerModuleDescriptor
                     SplashRadiusOnColor                 = RGBA[0,0,0,0]
                     SplashRadiusOnThickness             = -0.1
                     TirContinu                          = True
-                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
-                    WeaponIgnoredPropertyName           = 'WeaponIgnored_2'
-                    WeaponShootDataPropertyName         = ["WeaponShootData_0_2", ]
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
+                    WeaponIgnoredPropertyName           = 'WeaponIgnored_3'
+                    WeaponShootDataPropertyName         = ["WeaponShootData_0_3", ]
                 )
             ]
             NbFX                            = 1
@@ -11203,6 +11239,53 @@ export WeaponDescriptor_BTR_80_SOV is TWeaponManagerModuleDescriptor
             TurretIdleBehaviourDescriptor   = ~/TurretIdle_WatchForwardMG
             VitesseRotation                 = 1.5707963267948966
             YulBoneOrdinal                  = 4
+        ),
+        TTurretUnitDescriptor
+        (
+            AngleRotationMax            = 2.0943951023931953
+            AngleRotationMaxPitch       = 1.5707963267948966
+            AngleRotationMinPitch       = -1.5707963267948966
+            MountedWeaponDescriptorList = [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface        = 1
+                    Ammunition                          = ~/Ammo_SMOKE_Vehicle_Grenadex8
+                    AnimateOnlyOneSoldier               = True
+                    DispersionRadiusOffColor            = RGBA[0,0,0,0]
+                    DispersionRadiusOffThickness        = -0.1
+                    DispersionRadiusOnColor             = RGBA[0,0,0,0]
+                    DispersionRadiusOnThickness         = -0.1
+                    EffectTag                           = 'FireEffect_SMOKE_Vehicle_Grenadex8'
+                    HandheldEquipmentKey                = 'MeshAlternative_6'
+                    MaxRangeDisplay_Color               = RGBA[0,0,0,0]
+                    MaxRangeDisplay_Thickness           = -0.1
+                    MinRangeDisplay_Color               = RGBA[0,0,0,0]
+                    MinRangeDisplay_Thickness           = -0.1
+                    NbWeapons                           = 1
+                    SalvoStockIndex                     = 2
+                    ShowDispersion                      = False
+                    ShowInInterface                     = False
+                    ShowMaximumRange                    = False
+                    ShowMaximumRange_HA                 = False
+                    ShowMaximumRange_Projectile         = False
+                    ShowMaximumRange_TBA                = False
+                    ShowMinimumRange                    = False
+                    ShowMinimumRange_HA                 = False
+                    ShowMinimumRange_Projectile         = False
+                    ShowMinimumRange_TBA                = False
+                    ShowSplashRadius                    = False
+                    SplashRadiusOffColor                = RGBA[0,0,0,0]
+                    SplashRadiusOffThickness            = -0.1
+                    SplashRadiusOnColor                 = RGBA[0,0,0,0]
+                    SplashRadiusOnThickness             = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_6'
+                    WeaponIgnoredPropertyName           = 'WeaponIgnored_6'
+                    WeaponShootDataPropertyName         = ["WeaponShootData_0_6", ]
+                )
+            ]
+            NbFX                        = 2
+            Tag                         = 'tourelle5'
+            YulBoneOrdinal              = 5
         )
     ]
 )
@@ -24991,7 +25074,7 @@ export WeaponDescriptor_M106A2_HOWZ_US is TWeaponManagerModuleDescriptor
                     DispersionRadiusOnColor             = RGBA[90,180,180,255]
                     DispersionRadiusOnThickness         = 0.8
                     EffectTag                           = 'FireEffect_Mortier_M40_107mm_SMOKE'
-                    HandheldEquipmentKey                = 'MeshAlternative_3'
+                    HandheldEquipmentKey                = 'MeshAlternative_2'
                     MaxRangeDisplay_Color               = RGBA[0,0,0,0]
                     MaxRangeDisplay_Thickness           = -0.1
                     MinRangeDisplay_Color               = RGBA[0,0,0,0]
@@ -25013,9 +25096,9 @@ export WeaponDescriptor_M106A2_HOWZ_US is TWeaponManagerModuleDescriptor
                     SplashRadiusOffThickness            = -0.1
                     SplashRadiusOnColor                 = RGBA[0,0,0,0]
                     SplashRadiusOnThickness             = -0.1
-                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
-                    WeaponIgnoredPropertyName           = 'WeaponIgnored_3'
-                    WeaponShootDataPropertyName         = ["WeaponShootData_0_3", ]
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName           = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName         = ["WeaponShootData_0_2", ]
                 )
             ]
             NbFX                            = 1
@@ -25043,7 +25126,7 @@ export WeaponDescriptor_M106A2_HOWZ_US is TWeaponManagerModuleDescriptor
                     DispersionRadiusOnColor             = RGBA[90,180,180,255]
                     DispersionRadiusOnThickness         = 0.8
                     EffectTag                           = 'FireEffect_HMG_12_7_mm_M2HB'
-                    HandheldEquipmentKey                = 'MeshAlternative_2'
+                    HandheldEquipmentKey                = 'MeshAlternative_3'
                     MaxRangeDisplay_Color               = RGBA[0,0,0,0]
                     MaxRangeDisplay_Thickness           = -0.1
                     MinRangeDisplay_Color               = RGBA[0,0,0,0]
@@ -25066,9 +25149,9 @@ export WeaponDescriptor_M106A2_HOWZ_US is TWeaponManagerModuleDescriptor
                     SplashRadiusOnColor                 = RGBA[0,0,0,0]
                     SplashRadiusOnThickness             = -0.1
                     TirContinu                          = True
-                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
-                    WeaponIgnoredPropertyName           = 'WeaponIgnored_2'
-                    WeaponShootDataPropertyName         = ["WeaponShootData_0_2", ]
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
+                    WeaponIgnoredPropertyName           = 'WeaponIgnored_3'
+                    WeaponShootDataPropertyName         = ["WeaponShootData_0_3", ]
                 )
             ]
             NbFX                            = 1

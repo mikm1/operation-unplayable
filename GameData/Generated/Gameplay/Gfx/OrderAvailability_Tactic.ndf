@@ -1743,6 +1743,7 @@ export Descriptor_OrderAvailability_BTR_80_SOV is [
     "Shoot",
     "ShootOnPosition",
     "ShootOnPositionWithoutCorrection",
+    "ShootDefensiveSmoke",
     "AskForSupply",
     "GoGetSupply",
     "UnloadFromTransport",

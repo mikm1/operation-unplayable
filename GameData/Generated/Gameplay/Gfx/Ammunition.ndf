@@ -30025,7 +30025,7 @@ export Ammo_Gatling_M61_Vulcan_20mm_late is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 10),
+             (EBaseHitValueModifier/Idling, 20),
              (EBaseHitValueModifier/Moving, 0),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
@@ -30131,7 +30131,7 @@ export Ammo_Gatling_M61_Vulcan_20mm_AP_late is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Idling, 20),
              (EBaseHitValueModifier/Moving, 0),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
@@ -69035,7 +69035,7 @@ export Ammo_MANPAD_FIM92 is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 4.0
+    TempsDeVisee                      = 8.0
     TempsEntreDeuxSalves              = 20.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -69277,9 +69277,9 @@ export Ammo_MANPAD_igla is TAmmunitionDescriptor
     TempsEntreDeuxFx                  = 2.0
     PorteeMaximale                    = ((0) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
-    PorteeMaximaleTBA                 = ((7000) * Metre)
+    PorteeMaximaleTBA                 = ((30000) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
-    PorteeMaximaleHA                  = ((7000) * Metre)
+    PorteeMaximaleHA                  = ((30000) * Metre)
     PorteeMinimale                    = ((0) * Metre)
     AngleDispersion                   = 0.02
     DispersionWithoutSorting          = False
@@ -69325,7 +69325,7 @@ export Ammo_MANPAD_igla is TAmmunitionDescriptor
          ]
     )
 
-    TempsDeVisee                      = aim_time_multiplier * 1.0
+    TempsDeVisee                      = 8.0
     TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0

@@ -189,7 +189,7 @@ CriticalEffect_TracksBroken_Desc is TCriticalEffectDescriptor
     HappeningKey = 'critical_track_broke'
     EffectsPack = ~/UnitEffect_Critic_Chenille_Detruite
     TimeOut = -1
-    RepairCost = -1
+    RepairCost = 100
     Unique = True
     DisplayOnDeath = False
 )
@@ -209,7 +209,7 @@ CriticalEffect_TurretStuck_Desc is TCriticalEffectDescriptor
     HappeningKey = 'critical_gun_turret_stuck'
     EffectsPack = ~/UnitEffect_Critic_Tourelle_Bloquee
     TimeOut = -1
-    RepairCost = -1
+    RepairCost = 100
     Unique = True
     DisplayOnDeath = False
 )
