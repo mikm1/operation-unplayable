@@ -44650,13 +44650,13 @@ export Ammo_Mortier_M40_107mm is TAmmunitionDescriptor
     TempsEntreDeuxSalves              = 5.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 4
-    SupplyCost                        = 428
+    NbTirParSalves                    = 5
+    SupplyCost                        = 535
     NbSalvosShootOnPosition           = 1
     CanShootOnPosition                = True
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 4
+    AffichageMunitionParSalve         = 5
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_M30"
     SmokeDescriptor                   = nil
@@ -46463,7 +46463,7 @@ export Ammo_Mortier_Vasilek_indirect_82mm_towed is TAmmunitionDescriptor
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((7900) * Metre)
+    PorteeMinimale                    = ((4005) * Metre)
     AltitudeAPorteeMinimale           = ((50.0) * Metre)
     AltitudeAPorteeMaximale           = ((100.0) * Metre)
     AffecteParNombre                  = False

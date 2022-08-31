@@ -446,9 +446,6 @@ ArtilleryStrikeConstantes is TIAStratArtilleryStrikeConstantes
 
 VisionConstantes is TIAStratVisionConstantes
 (
-    //Triche de vision ou pas
-    InfluenceMapAlwaysKnowAllUnits = false // NB : ce parametre ne sert a rien si IgnoreInvisibleUnit = false. IgnoreInvisibleUnit a false desactive entierement le code anti triche
-
     //--------------- Réglage de la connaissance des unités non visibles -------------//
 
     VisionParametersByDifficulty = MAP
@@ -524,21 +521,21 @@ FakeGunThreatDescriptor is TFakeGunThreatDescriptor
     GunList = [
         TFakeGunDescriptor(
 
-            CurrentRange = 30000.0 * Metre
+            CurrentRange = 5000.0 * Metre
             TirIndirect = false
             TypeArme = TDamageTypeRTTI(Family="balle" Index=1)
             ColPlan = ~/ECollisionPlane/Ground
             ),
         TFakeGunDescriptor(
 
-            CurrentRange = 30000.0 * Metre
+            CurrentRange = 5000.0 * Metre
             TirIndirect = false
             TypeArme = TDamageTypeRTTI(Family="he" Index=1)
             ColPlan = ~/ECollisionPlane/Ground
             ),
         TFakeGunDescriptor(
 
-            CurrentRange = 30000.0 * Metre
+            CurrentRange = 5000.0 * Metre
             TirIndirect = false
             TypeArme = TDamageTypeRTTI(Family="ap" Index=10)
             ColPlan = ~/ECollisionPlane/Ground

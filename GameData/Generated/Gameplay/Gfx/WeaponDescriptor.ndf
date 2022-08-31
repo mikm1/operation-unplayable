@@ -1167,7 +1167,7 @@ export WeaponDescriptor_2S9_Nona_SOV is TWeaponManagerModuleDescriptor
     DefaultRiposteStance = False
     NeedsExplicitOrderToUseSmoke = True
     Salves               = [
-        3,
+        5,
         7,
         -1,
         -1,
@@ -12607,7 +12607,7 @@ export WeaponDescriptor_DShV_CMD_SOV is TWeaponManagerModuleDescriptor
     Salves               = [
         120,
         90,
-        0,
+        4,
         -1,
         -1,
         -1
@@ -19917,7 +19917,7 @@ export WeaponDescriptor_Howz_D20_152mm_DDR is TWeaponManagerModuleDescriptor
     DefaultRiposteStance = False
     NeedsExplicitOrderToUseSmoke = True
     Salves               = [
-        10,
+        8,
         -1,
         -1,
         -1,
@@ -20034,7 +20034,7 @@ export WeaponDescriptor_Howz_D20_152mm_SOV is TWeaponManagerModuleDescriptor
     DefaultRiposteStance = False
     NeedsExplicitOrderToUseSmoke = True
     Salves               = [
-        10,
+        8,
         -1,
         -1,
         -1,
@@ -26737,7 +26737,7 @@ export WeaponDescriptor_M113_PzMorser_RFA is TWeaponManagerModuleDescriptor
     DefaultRiposteStance = False
     NeedsExplicitOrderToUseSmoke = True
     Salves               = [
-        30,
+        20,
         21,
         -1,
         -1,

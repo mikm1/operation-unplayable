@@ -169,6 +169,12 @@ export CubeAction_Menu_Ordres_avions is TCubeActionMenuDescriptor
             ]
         ),
         (
+            8,
+            [
+                ~/CubeAction_Order_Move,
+            ]
+        ),
+        (
             14,
             [
                 ~/CubeAction_Order_AIAirplaneAutoManage,
@@ -210,6 +216,12 @@ export CubeAction_Menu_Ordres_helicos is TCubeActionMenuDescriptor
             5,
             [
                 ~/CubeAction_Order_ChangeAltitude,
+            ]
+        ),
+        (
+            8,
+            [
+                ~/CubeAction_Order_Move,
             ]
         ),
         (
