@@ -74819,7 +74819,6 @@ export WeaponDescriptor_MotRifles_VR_SOV is TWeaponManagerModuleDescriptor   //A
         )
     ]
 )
-
 export WeaponDescriptor_MotRifles_Fagot_SOV is TWeaponManagerModuleDescriptor
 (
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
