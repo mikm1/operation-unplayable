@@ -25942,11 +25942,11 @@ export Ammo_DCA_2_canons_2A38M_30mm is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 0.2
-    PorteeMaximale                    = ((3000) * Metre)
-    PorteeMinimaleTBA                 = ((100) * Metre)
-    PorteeMaximaleTBA                 = ((7500) * Metre)
+    PorteeMaximale                    = ((15000) * Metre)
+    PorteeMinimaleTBA                 = ((50) * Metre)
+    PorteeMaximaleTBA                 = ((20000) * Metre)
     PorteeMinimaleHA                  = ((100) * Metre)
-    PorteeMaximaleHA                  = ((7995) * Metre)
+    PorteeMaximaleHA                  = ((15000) * Metre)
     PorteeMinimale                    = ((100) * Metre)
     AltitudeAPorteeMinimale           = ((35.0) * Metre)
     AltitudeAPorteeMaximale           = ((70.0) * Metre)
@@ -53033,7 +53033,7 @@ export Ammo_RocketArt_thermobaric_220mm_x30 is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 1.0
-    PorteeMaximale                    = ((10004) * Metre)
+    PorteeMaximale                    = ((36000) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
@@ -53114,7 +53114,7 @@ export Ammo_RocketArt_thermobaric_220mm_x30 is TAmmunitionDescriptor
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     FlightTimeForSpeed                    = 8.0
-    DistanceForSpeed                      = 10004.0 * Metre
+    DistanceForSpeed                      = 36000.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_RocketAvion_S13_122mm is TAmmunitionDescriptor
