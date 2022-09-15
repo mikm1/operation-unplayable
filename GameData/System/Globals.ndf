@@ -8,7 +8,6 @@ NAMask_Terrain is TBaseClass
     None                    is 0
     Default                 is 2    // 00000010 // WARGAME
     PetitBatiment           is 22   // 00010110 // WARGAME
-    StrategicRalentisseur   is 26   // 00011010 // WARGAME
     Urbain                  is 34   // 00100010 // WARGAME
     EauProfonde             is 38   // 00100110 // WARGAME
     ForetDense              is 42   // 00101010 // WARGAME
@@ -17,8 +16,10 @@ NAMask_Terrain is TBaseClass
     EauPeuProfonde          is 54   // 00110110 // WARGAME
     Rocher                  is 58   // 00111010 // WARGAME
     Tranchee                is 74   // 01001010 // WARGAME
-    StrategicAccelerateur   is 82   // 01010010 // WARGAME
+    StrategicForest         is 78   // 01001110 // WARGAME
+    StrategicPlain          is 86   // 01010110 // WARGAME
     Bloqueur                is 90   // 01011010
+    StrategicSemiUrban      is 94   // 01011110 // WARGAME
     ForetLegere             is 102  // 01100110
     NidMitrailleuse         is 106  // 01101010
     BloqueConstruction      is 114  // 01110010

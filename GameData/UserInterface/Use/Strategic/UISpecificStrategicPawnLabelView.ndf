@@ -211,7 +211,6 @@ MainLabelList is TBUCKLocalLayerContainerDescriptor
 
                             IconeUnit_and_PA,
                             ~/CombatValue,
-                            ~/Fatigue,
                             ~/NoSupplied,
 
                             {~/terrain_urbain,
@@ -402,6 +401,11 @@ UpperLabelList is BUCKListDescriptor
                 TextSize = "12"
             )
         ),
+        BUCKListElementDescriptor
+        (
+                ComponentDescriptor = ~/Fatigue
+        ),
+
     ]
 )
 
@@ -509,7 +513,7 @@ private NoSupplied is BUCKTextureDescriptor
 
 private  terrain_urbain is BUCKTextureDescriptor
 (
-    ElementName = 'Terrain_TerrainPetitBatiment'
+    ElementName = 'Terrain_TerrainStrategicSemiUrban'
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [75.0, 55.0]
@@ -521,38 +525,9 @@ private  terrain_urbain is BUCKTextureDescriptor
     TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
     TextureColorToken = 'Gris_leaderboard'
 )
-private  terrain_urbain2 is BUCKTextureDescriptor
-(
-    ElementName = 'Terrain_TerrainBatiment'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [75.0, 55.0]
-        AlignementToFather = [0.5,0.5]
-        AlignementToAnchor = [0.5,0.5]
-    )
-
-    TextureToken = 'UseStrategic_Labels_Terrain_TerrainUrbain'
-    TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
-    TextureColorToken = 'Gris_leaderboard'
-)
-//-------------------------------------------------------------------------------------
 private terrain_foret is BUCKTextureDescriptor
 (
-    ElementName = 'Terrain_TerrainForetLegere'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [80.0, 55.0]
-        AlignementToFather = [0.5,0.5]
-        AlignementToAnchor = [0.5,0.5]
-    )
-
-    TextureToken = "UseStrategic_Labels_Terrain_TerrainForet"
-    TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
-    TextureColorToken = 'Vert'
-)
-private terrain_foret2 is BUCKTextureDescriptor
-(
-    ElementName = 'Terrain_TerrainForetDense'
+    ElementName = 'Terrain_TerrainStrategicForest'
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [80.0, 55.0]
@@ -566,21 +541,7 @@ private terrain_foret2 is BUCKTextureDescriptor
 )
 private terrain_plaine is BUCKTextureDescriptor
 (
-    ElementName = 'Terrain_TerrainStrategicRalentisseur'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [80.0, 55.0]
-        AlignementToFather = [0.5,0.5]
-        AlignementToAnchor = [0.5,0.5]
-    )
-
-    TextureToken = "UseStrategic_Labels_Terrain_TerrainPlaine"
-    TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
-    TextureColorToken = 'Vert'
-)
-private terrain_plaine2 is BUCKTextureDescriptor
-(
-    ElementName = 'Terrain_TerrainStrategicAccelerateur'
+    ElementName = 'Terrain_TerrainStrategicPlain'
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [80.0, 55.0]

@@ -92,10 +92,10 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
 
     SpeedIncreaseBetweenTurns = 20 // vitesse des pions non pdt visibile pendant le tour de l'ia
 
-    BattleNbBattleGroup = 3 // Nombre maximal de pions qui peuvent rejoindre le combat pour une équipe
-    BattleNbSlotsAllowedPerBattleGroup = 1
-    BattleNbMaxSupportPawn = 1 // Nombre maximal de pions support (hors avions) qui peuvent rejoindre le combat pour une équipe
-    BattleNbMaxPlanePawn = 1 // Nombre maximal de pions avions qui peuvent rejoindre le combat pour une équipe
+    // Nombre maximal de pions par type de pion (cf. StrategicBattleRole.ndf) qui peuvent rejoindre le combat pour une équipe
+    // la position dans le tableau correspond au role défini dans StrategicBattleRole.ndf (NbFighter en position 0 par exemple)
+    BattleNbMaxPawnByRole  = [ 3, 1, 1 ]
+
     BattleDeploymentMode = EDeploymentMode/Breakthrough
 
     SteelmanMaxUnitSelection = MAP[
@@ -103,16 +103,20 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
         (ENationalite/Axis, 1)
     ]
 
-    DefaultStartingTicketsPoints = MAP
+    // Le tableau de valeur contient le nombre de ticketPoint disponible en fonction du nombre de pions dans le battle plan, le nombre de cases dans le tableau
+    // doit correspondre au nombre de pion (cf. BattleNbMaxPawnByRole) plus 1 (pour le cas où on n'a pas de pions)
+    DefaultStartingTicketsPointsByPawnNumber = MAP
     [
-        (ENationalite/Allied, 17),
-        (ENationalite/Axis, 17),
+        (ENationalite/Allied, [ 0, 17, 34, 45, 50, 55] ),
+        (ENationalite/Axis, [ 0, 17, 34, 45, 50, 55] ),
     ]
 
-    DefaultTicketsPointsIncome = MAP // points par minute
+    // Le tableau de valeur contient l'income disponible en fonction du nombre de pions dans le battle plan, le nombre de cases dans le tableau
+    // doit correspondre au nombre de pion (cf. BattleNbMaxPawnByRole) plus 1 (pour le cas où on n'a pas de pions)
+    DefaultTicketsPointsIncomeByPawnNumber = MAP // points par minute
     [
-        (ENationalite/Allied, 3),
-        (ENationalite/Axis, 3),
+        (ENationalite/Allied, [ 0, 3, 6, 8, 10, 12]),
+        (ENationalite/Axis, [ 0, 3, 6, 8, 10, 12]),
     ]
 
     AerialBattleTicketsPoint = MAP
@@ -166,7 +170,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     // Ordres
     ActionPointCostPerOrder = MAP [
         ("Shoot",                   3.0), // GroundDeny - les zones de ralentissement terrestres posées par bombardier et artilleries.
-        ("AirplaneMoveAndEngage",   3.0), // Boxing/AirDeny - zones Air/Air
+        ("AirplaineAirDeny",        3.0), // Boxing/AirDeny - zones Air/Air
         ("AirplanePatrol",          3.0), // AirplaneReco - reconnaissance aérienne
         ("Bombarder",               1.0), // Bomb - bombardement single target (avion ou arti)
         ("Fortify",                 3.0), // Fortify - action de défense

@@ -437,6 +437,12 @@
         Action3 = $/GFX/GameFx/fx_impact_sol_Bomb_FAB250_3
         Action4 = $/GFX/GameFx/fx_impact_sol_Bomb_FAB250_4
     )
+    export FxImpactSolBombGBU12__Connector                           is ImpactConnector
+    (
+        Action1 = $/GFX/GameFx/fx_impact_sol_Bomb_GBU12_1
+        Action2 = $/GFX/GameFx/fx_impact_sol_Bomb_GBU12_2
+        Action3 = $/GFX/GameFx/fx_impact_sol_Bomb_GBU12_3
+    )
     export FxImpactSolBombM117__Connector                            is ImpactConnector
     (
         Action1 = $/GFX/GameFx/fx_impact_sol_Bomb_M117_1
@@ -451,6 +457,15 @@
     export FxImpactSolBombMk77__Connector                            is ImpactConnector
     (
         Action1 = $/GFX/GameFx/fx_impact_sol_Bomb_Mk77_1
+    )
+    export FxImpactSolBombMk83__Connector                            is ImpactConnector
+    (
+        Action1 = $/GFX/GameFx/fx_impact_sol_Bomb_Mk83_1
+        Action2 = $/GFX/GameFx/fx_impact_sol_Bomb_Mk83_2
+        Action3 = $/GFX/GameFx/fx_impact_sol_Bomb_Mk83_3
+        Action4 = $/GFX/GameFx/fx_impact_sol_Bomb_Mk83_4
+        Action5 = $/GFX/GameFx/fx_impact_sol_Bomb_Mk83_5
+        Action6 = $/GFX/GameFx/fx_impact_sol_Bomb_Mk83_6
     )
     export FxImpactSolBombMk84__Connector                            is ImpactConnector
     (
@@ -560,6 +575,9 @@
         Action1 = $/GFX/GameFx/fx_impact_sol_HE_gros_1
         Action2 = $/GFX/GameFx/fx_impact_sol_HE_gros_2
         Action3 = $/GFX/GameFx/fx_impact_sol_HE_gros_3
+        Action4 = $/GFX/GameFx/fx_impact_sol_HE_gros_4
+        Action5 = $/GFX/GameFx/fx_impact_sol_HE_gros_5
+        Action6 = $/GFX/GameFx/fx_impact_sol_HE_gros_6
     )
     export FxImpactSolHEMoyen_Connector                              is ImpactConnector
     (
@@ -576,12 +594,27 @@
         Action3 = $/GFX/GameFx/fx_impact_sol_HE_petit_3
         Action4 = $/GFX/GameFx/fx_impact_sol_HE_petit_4
     )
+    export FxImpactSolHERoquette110Mm130Mm__Connector                is ImpactConnector
+    (
+        Action1 = $/GFX/GameFx/fx_impact_sol_HE_roquette_110mm_130mm_1
+        Action2 = $/GFX/GameFx/fx_impact_sol_HE_roquette_110mm_130mm_2
+        Action3 = $/GFX/GameFx/fx_impact_sol_HE_roquette_110mm_130mm_3
+        Action4 = $/GFX/GameFx/fx_impact_sol_HE_roquette_110mm_130mm_4
+        Action5 = $/GFX/GameFx/fx_impact_sol_HE_roquette_110mm_130mm_5
+        Action6 = $/GFX/GameFx/fx_impact_sol_HE_roquette_110mm_130mm_6
+        Action7 = $/GFX/GameFx/fx_impact_sol_HE_roquette_110mm_130mm_7
+        Action8 = $/GFX/GameFx/fx_impact_sol_HE_roquette_110mm_130mm_8
+    )
     export FxImpactSolHETresGros__Connector                          is ImpactConnector
     (
         Action1 = $/GFX/GameFx/fx_impact_sol_HE_tres_gros_1
         Action2 = $/GFX/GameFx/fx_impact_sol_HE_tres_gros_2
         Action3 = $/GFX/GameFx/fx_impact_sol_HE_tres_gros_3
         Action4 = $/GFX/GameFx/fx_impact_sol_HE_tres_gros_4
+        Action5 = $/GFX/GameFx/fx_impact_sol_HE_tres_gros_5
+        Action6 = $/GFX/GameFx/fx_impact_sol_HE_tres_gros_6
+        Action7 = $/GFX/GameFx/fx_impact_sol_HE_tres_gros_7
+        Action8 = $/GFX/GameFx/fx_impact_sol_HE_tres_gros_8
     )
     export FxImpactSolM242APFDS_Connector                            is ImpactConnector
     (
@@ -845,6 +878,30 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
+        (   TFxWeaponType_BombMatra250Kg , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHeTrestresgros_Connector ),
+                ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_BombMatra400Kg , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHeTrestresgros_Connector ),
+                ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
         (   TFxWeaponType_BombeBLG66 , MAP
             [
                 ( EImpactSurface/Ground        , FxImpactSolClusterMK20RockeyeIISalve_Connector ),
@@ -859,12 +916,12 @@ AllImpactHappenings is TImpactHappening
         ),
         (   TFxWeaponType_BombeBLU100Mk83 , MAP
             [
-                ( EImpactSurface/Ground        , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Ground        , FxImpactSolBombMk83__Connector ),
                 ( EImpactSurface/Water         , FxImpactEauHeTrestresgros_Connector ),
                 ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
-                ( EImpactSurface/Wall          , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/Vehicle       , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/FlyingVehicle , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolBombMk83__Connector ),
                 ( EImpactSurface/Missile       , nil ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
@@ -881,38 +938,50 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
-        (   TFxWeaponType_BombeGBU10 , MAP
+        (   TFxWeaponType_BombeFAB500 , MAP
             [
-                ( EImpactSurface/Ground        , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Ground        , FxImpactSolBombMk83__Connector ),
                 ( EImpactSurface/Water         , FxImpactEauHeTrestresgros_Connector ),
                 ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
-                ( EImpactSurface/Wall          , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/Vehicle       , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/FlyingVehicle , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_BombeGBU10 , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolBombMk84__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHeTrestresgros_Connector ),
+                ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolBombMk84__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolBombMk84__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolBombMk84__Connector ),
                 ( EImpactSurface/Missile       , nil ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
         (   TFxWeaponType_BombeGBU12 , MAP
             [
-                ( EImpactSurface/Ground        , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Ground        , FxImpactSolBombGBU12__Connector ),
                 ( EImpactSurface/Water         , FxImpactEauHeTrestresgros_Connector ),
                 ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
-                ( EImpactSurface/Wall          , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/Vehicle       , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/FlyingVehicle , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolBombGBU12__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolBombGBU12__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolBombGBU12__Connector ),
                 ( EImpactSurface/Missile       , nil ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
         (   TFxWeaponType_BombeGBU24 , MAP
             [
-                ( EImpactSurface/Ground        , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Ground        , FxImpactSolBombMk84__Connector ),
                 ( EImpactSurface/Water         , FxImpactEauHeTrestresgros_Connector ),
                 ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
-                ( EImpactSurface/Wall          , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/Vehicle       , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/FlyingVehicle , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolBombMk84__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolBombMk84__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolBombMk84__Connector ),
                 ( EImpactSurface/Missile       , nil ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
@@ -1003,12 +1072,12 @@ AllImpactHappenings is TImpactHappening
         ),
         (   TFxWeaponType_BombeMk83 , MAP
             [
-                ( EImpactSurface/Ground        , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Ground        , FxImpactSolBombMk83__Connector ),
                 ( EImpactSurface/Water         , FxImpactEauHeTrestresgros_Connector ),
                 ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
-                ( EImpactSurface/Wall          , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/Vehicle       , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/FlyingVehicle , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolBombMk83__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolBombMk83__Connector ),
                 ( EImpactSurface/Missile       , nil ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
@@ -1018,9 +1087,9 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Ground        , FxImpactSolBombMk84__Connector ),
                 ( EImpactSurface/Water         , FxImpactEauHeTrestresgros_Connector ),
                 ( EImpactSurface/Air           , FxImpactDCAAirGros_Connector ),
-                ( EImpactSurface/Wall          , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/Vehicle       , FxImpactSolBombM117__Connector ),
-                ( EImpactSurface/FlyingVehicle , FxImpactSolBombM117__Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolBombMk84__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolBombMk84__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolBombMk84__Connector ),
                 ( EImpactSurface/Missile       , nil ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
@@ -2029,6 +2098,30 @@ AllImpactHappenings is TImpactHappening
                 ( EImpactSurface/Wall          , nil ),
                 ( EImpactSurface/Vehicle       , nil ),
                 ( EImpactSurface/FlyingVehicle , nil ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_Roquette110Mm130Mm , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolHERoquette110Mm130Mm__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHeTresgros2_Connector ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , FxImpactSolHERoquette110Mm130Mm__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolHERoquette110Mm130Mm__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolHERoquette110Mm130Mm__Connector ),
+                ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_Roquette110Mm130MmCluster , MAP
+            [
+                ( EImpactSurface/Ground        , FxImpactSolHEM270227MmCluster__Connector ),
+                ( EImpactSurface/Water         , FxImpactEauHeTresgros2_Connector ),
+                ( EImpactSurface/Air           , FxOuvertureRoquetteCluster_Connector ),
+                ( EImpactSurface/Wall          , FxImpactSolHEM270227MmCluster__Connector ),
+                ( EImpactSurface/Vehicle       , FxImpactSolHEM270227MmCluster__Connector ),
+                ( EImpactSurface/FlyingVehicle , FxImpactSolHEM270227MmCluster__Connector ),
                 ( EImpactSurface/Missile       , nil ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]

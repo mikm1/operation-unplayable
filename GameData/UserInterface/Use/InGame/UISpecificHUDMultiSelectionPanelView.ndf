@@ -2,14 +2,15 @@ HUDMultiSelectionHorizontalListDescriptor is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, 50.0]
+        MagnifiableWidthHeight = [0.0, 66.0]
         MagnifiableOffset = [0.0, 0.0]
-        AlignementToFather = [0.5, 0.0]
-        AlignementToAnchor = [0.5, 0.0]
+        AlignementToFather = [0.0, 0.0]
+        AlignementToAnchor = [0.0, 0.0]
     )
 
     AssumeChildrenAreFixedSize = true
     Axis = ~/ListAxis/Horizontal
+    FirstMargin = TRTTILength(Magnifiable = 4)
     InterItemMargin = TRTTILength(Magnifiable = 4.0)
     HidePointerEvents = true
 )
@@ -20,14 +21,16 @@ BUCKSpecificHUDMultiSelectionPanelMainComponentDescriptor is BUCKContainerDescri
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [1200.0, 0.0]
+        MagnifiableWidthHeight = [950.0-10, 0.0]
         MagnifiableOffset = [18.0, 0.0]
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContentVertically
-
+    HasBackground = false
+    BackgroundBlockColorToken = "Vert"
     Components =
     [
+
         BUCKSpecificScrollingContainerDescriptor
         (
             ElementName = 'ScrollingContainer'
@@ -38,13 +41,22 @@ BUCKSpecificHUDMultiSelectionPanelMainComponentDescriptor is BUCKContainerDescri
 
             FitToMaximumSize = TRTTILength2
             (
-                Magnifiable = [0.0, 110.0]
+                Magnifiable = [0.0, 132.0+66]
             )
 
             FitStyle = ~/ContainerFitStyle/FitToContentVertically
 
             ExternalScrollbar = false
             HasVerticalScrollbar = true
+            ScrollStepSize = [0,66]
+
+            VerticalScrollbarComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = [7.0, 0.0]
+                MagnifiableOffset =  [10.0, 0.0]
+                AlignementToFather = [1.0, 0.0]
+                AlignementToAnchor = [1.0, 0.0]
+            )
 
             Components =
             [
@@ -54,12 +66,17 @@ BUCKSpecificHUDMultiSelectionPanelMainComponentDescriptor is BUCKContainerDescri
                     ComponentFrame = TUIFramePropertyRTTI
                     (
                         RelativeWidthHeight = [1.0, 0.0]
-                        AlignementToFather = [0.5, 1.0]
-                        AlignementToAnchor = [0.5, 1.0]
+                        AlignementToFather = [0.5, 0.0]
+                        AlignementToAnchor = [0.5, 0.0]
                     )
 
                     Axis = ~/ListAxis/Vertical
                 )
+            ]
+
+            BackgroundComponents =
+            [
+                PanelRoundedCorner(),
             ]
         )
     ]
@@ -73,6 +90,6 @@ UISpecificHUDMultiSelectionPanelViewDescriptor is TUISpecificHUDMultiSelectionPa
     MultiSelectionHorizontalListDescriptor = ~/HUDMultiSelectionHorizontalListDescriptor
     UnitLabelResources = ~/SpecificInGameUnitLabelResources
 
-    NbUnitsByLine = 8
-    LabelMagnifier = 0.8
+    NbUnitsByLine = 9
+    LabelMagnifier = 1
 )

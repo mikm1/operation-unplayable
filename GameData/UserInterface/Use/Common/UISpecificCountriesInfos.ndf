@@ -89,6 +89,22 @@ export SpecificCountriesInfos is MAP [
             LocalisationToken = "COUN_AWP"
             Country = "AWP"
         )),
+    ("LUX", TUISpecificCountryInfos
+        (
+            FlagTexture = "CommonTexture_MotherCountryFlag_LUX"
+            PawnExpTexture = "CommonTexture_Etoile_Grande"
+            ExpTextures = [ "CommonTexture_Chevron_0", "CommonTexture_Chevron_1", "CommonTexture_Chevron_2", "CommonTexture_Chevron_3"]
+            LocalisationToken = "COUN_LUX"
+            Country = "LUX"
+        )),
+    ("NL", TUISpecificCountryInfos
+        (
+            FlagTexture = "CommonTexture_MotherCountryFlag_NL"
+            PawnExpTexture = "CommonTexture_Etoile_Grande"
+            ExpTextures = [ "CommonTexture_Chevron_0", "CommonTexture_Chevron_1", "CommonTexture_Chevron_2", "CommonTexture_Chevron_3"]
+            LocalisationToken = "COUN_NL"
+            Country = "NL"
+        )),
     ("FIN", TUISpecificCountryInfos
         (
             FlagTexture = "CommonTexture_MotherCountryFlag_FIN"

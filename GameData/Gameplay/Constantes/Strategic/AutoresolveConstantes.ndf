@@ -37,23 +37,14 @@ private NoInfantryAdvantage is TCombatAdvantageDefinition
 
 StrategicAutoresolveConstantes is TStrategicAutoResolveConstantes
 (
-    TacticalGameDurationInMin = 30 // On considere qu'une partie tactique va durer a peu pres ce temps là
-
     PertesAttaquantSelonTerrain = MAP
     [
         (~/ETerrainType/Default, PerteAttaquantSurTerrainDefault),
         (~/ETerrainType/Urbain, PerteAttaquantSurTerrainUrbain),
-        //(~/ETerrainType/StrategicRalentisseur, PerteSurTerrainStrategicRalentisseur),
         //-------------------------------------------------------------------------------------
-        // foret
-        (~/ETerrainType/ForetDense, PerteAttaquantSurTerrainForet),
-        (~/ETerrainType/ForetLegere, PerteAttaquantSurTerrainForet),
-        // plaine
-        (~/ETerrainType/StrategicRalentisseur, PerteAttaquantSurTerrainPlaine),
-        (~/ETerrainType/StrategicAccelerateur, PerteAttaquantSurTerrainPlaine),
-        // semi urbain
-        (~/ETerrainType/Batiment, PerteAttaquantSurTerrainSemiUrbain),
-        (~/ETerrainType/PetitBatiment, PerteAttaquantSurTerrainSemiUrbain),
+        (~/ETerrainType/StrategicForest, PerteAttaquantSurTerrainForet),
+        (~/ETerrainType/StrategicPlain, PerteAttaquantSurTerrainPlaine),
+        (~/ETerrainType/StrategicSemiUrban, PerteAttaquantSurTerrainSemiUrbain),
     ]
 
     PertesDefenseurSelonTerrain = MAP

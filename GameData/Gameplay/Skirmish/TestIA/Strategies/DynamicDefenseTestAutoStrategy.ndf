@@ -8,7 +8,7 @@ export DynamicDefense_TestAuto_Strategy is TIAGeneralStrategy
 
 export TestAuto_DynamicDefense is TSequenceGeneratorDescriptor
 (
-    NbMacroActionAllowedToProduceSimultaneous = 1
+    NbMacroActionAllowedToProduceSimultaneous = 9001
 
     GeneratorList =
     [

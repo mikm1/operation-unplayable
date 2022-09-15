@@ -100,6 +100,8 @@ FeedbackMessage_OnAIManageArtillery_CounterBatteryOrder   is 95
 FeedbackMessage_OnAIDefendOrder                 is 96
 FeedbackMessage_AIAirplaneAutoManageOrder       is 97
 FeedbackMessage_OnShootDefensiveSmokeOrder      is 98
+FeedbackMessage_OnAirplaineAirDenyOrder         is 99
+FeedbackMessage_OnAISupplyOrder                 is 100
 
 
 export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
@@ -204,5 +206,7 @@ export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
         "FeedbackMessage_OnAIDefendOrder",
         "FeedbackMessage_OnAIAirplaneAutoManageOrder",
         "FeedbackMessage_OnShootDefensiveSmokeOrder",
-        ]
+        "FeedbackMessage_OnAirplaineAirDenyOrder",
+        "FeedbackMessage_OnAISupplyOrder",
+    ]
 )

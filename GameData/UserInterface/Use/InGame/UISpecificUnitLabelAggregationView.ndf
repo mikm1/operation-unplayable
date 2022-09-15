@@ -35,10 +35,10 @@ private UnitLabelAggregationViewDescriptor is BUCKSensibleAreaDescriptor
             Components =
             [
                 ~/LabelDuHaut,
-                UnitLabelBackground
-                (
-                    LocalRenderLayer = 2
-                ),
+                {UnitLabelBackground
+                                (
+                                    LocalRenderLayer = 2
+                                ),}
                 UnitLabelUnitIcon
                 (
                     LocalRenderLayer = 3
@@ -78,28 +78,8 @@ private LabelDuHaut is BUCKListDescriptor
     [
         BUCKListElementDescriptor(ComponentDescriptor = ~/UnitLabelUnitEvacIconBUCKComponent),
         BUCKListElementDescriptor(ComponentDescriptor = ~/UnitLabelUnitPlayerNameBUCKComponent),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKContainerDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    AlignementToFather = [0.5, 0.0]
-                    AlignementToAnchor = [0.5, 0.0]
-                )
+        BUCKListElementDescriptor(ComponentDescriptor = UnitLabelUnitReloadIconBUCKComponent(MagnifiableOffset = [0.0 ,0.0])),
 
-                FitStyle = ~/ContainerFitStyle/FitToContent
-
-                Components =
-                [
-                    UnitNameListSensibleArea
-                    (
-                        IsForCarriedUnit = true
-                        LocalRenderLayer = 4
-                    ),
-                ]
-            )
-        ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKContainerDescriptor
@@ -123,7 +103,29 @@ private LabelDuHaut is BUCKListDescriptor
                 ]
             )
         ),
-        BUCKListElementDescriptor(ComponentDescriptor = UnitLabelUnitReloadIconBUCKComponent(MagnifiableOffset = [112.0 ,0.0])),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKContainerDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    AlignementToFather = [0.5, 0.0]
+                    AlignementToAnchor = [0.5, 0.0]
+                )
+
+                FitStyle = ~/ContainerFitStyle/FitToContent
+
+                Components =
+                [
+                    UnitNameListSensibleArea
+                    (
+                        IsForCarriedUnit = true
+                        LocalRenderLayer = 4
+                    ),
+                ]
+            )
+        ),
+
     ]
 )
 

@@ -47,10 +47,10 @@ ShowRoomResource is TUISpecificShowRoomResources
 
     DummyComponentForBlur = ~/DummyComponentForBlur
 
-    CountriesToShow = ["SOV","US","UK","FR","CAN","POL","DDR","RFA","BEL"]
+    CountriesToShow = ["SOV","US","UK","FR","CAN","POL","DDR","RFA","BEL","NL","LUX"]
     AllianceToCountriesToShow = MAP [
         (ENationalite/Axis, ["SOV","DDR","POL"]),
-        (ENationalite/Allied, ["US","UK","FR","RFA","CAN","BEL"])
+        (ENationalite/Allied, ["US","UK","FR","RFA","CAN","BEL","NL","LUX"])
     ]
 
     SpecificHidingViewDescriptor = ~/UISpecificHidingViewDescriptor

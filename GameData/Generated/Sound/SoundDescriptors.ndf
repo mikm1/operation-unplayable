@@ -8977,6 +8977,48 @@ is TSoundHappening
     Volume = 2
 )
 
+template SoundHappening_FULDA_Tir_roquette_BM21_122mm_MLRS
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_MLRS
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Roquettes/Roquette_122_BM21_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_MLRS
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Roquettes/Roquette_122_BM21_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_MLRS
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Roquettes/Roquette_122_BM21_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+
 template SoundHappening_FULDA_Tir_roquette_BM30
 [
 ]

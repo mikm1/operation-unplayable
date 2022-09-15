@@ -618,6 +618,14 @@ Eject_Actions_M60A3_Patton_US is MAP
         )
     ),
 ]
+Eject_Actions_Roland_2_FR is MAP
+[
+    ( [ "fx_eject_tourelle_01" ], template_UnitDebrisHappening
+        (
+            Action = $/VFX_Bank/Roland_2_FR_DebrisFX_Tourelle_01
+        )
+    ),
+]
 Eject_Actions_T64BV_SOV is MAP
 [
     ( [ "fx_eject_blindage_d1" ], template_UnitDebrisHappening

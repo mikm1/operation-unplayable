@@ -82,12 +82,12 @@ MatrixCostName_RFA_5_Panzer_multi is MAP
    ( EDefaultFactories/Logistic,    [1, 1, 2, 3, 3, 3] ),//6;13
    ( EDefaultFactories/reco,        [1, 1, 1, 2, 3, 3, 3] ),//7;14
    ( EDefaultFactories/infanterie,  [1, 1, 1, 1, 2, 3, 3, 3] ),//8;15
-   ( EDefaultFactories/tank,        [1, 1, 1, 1, 1, 1, 1, 1, 2, 3] ),//10;13
+   ( EDefaultFactories/tank,        [1, 1, 1, 1, 1, 1, 1, 2, 2, 3] ),//10;14
    ( EDefaultFactories/support,     [1, 1, 1, 1, 2, 3, 3, 3] ),//8;15   =ART
    ( EDefaultFactories/at,          [1, 1, 2, 3, 3, 3] ),//6;13   =AA
    ( EDefaultFactories/dca,         [0,] ),//0...DEPREC
    ( EDefaultFactories/art,         [0,] ),//0...DEPREC
-   ( EDefaultFactories/Helis,       [2, 3, 3, 3] ),//4;11
+   ( EDefaultFactories/Helis,       [1, 2, 3, 4] ),//4;10
    ( EDefaultFactories/air,         [1, 1, 2, 3, 3, 3] ),//6;13
    ( EDefaultFactories/defense,     [0,] ),//55cases 107pts...Coef 1,95
 ]

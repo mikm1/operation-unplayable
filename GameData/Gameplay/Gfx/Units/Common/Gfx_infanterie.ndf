@@ -8,7 +8,7 @@
 export ModelFile_M16   is 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M16A2.fbx'
 
 export ModelFile_M72_LAW   is 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M72A4.Ase2NdfBin'
-export ModelFile_M47_DRAGON   is 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M72A4.Ase2NdfBin'
+export ModelFile_M47_DRAGON   is 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M47_Dragon_II.Ase2NdfBin'
 export ModelFile_Test_missile_AA_inf   is 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M72A4.Ase2NdfBin'
 export ModelFile_MANPAD_FIM92   is 'GameData:/Assets/3D/Units/Ammo/Armes/USA/FIM-92_Stinger.Ase2NdfBin'
 
@@ -88,12 +88,13 @@ export ModelFile_MANPAD_FIM43   is 'GameData:/Assets/3D/Units/Ammo/Armes/USA/FIM
 //------------------------------------ARMES UK----------------------------------
 //------------------------------------------------------------------------------
 export ModelFile_Javelin            is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/Javelin.Ase2NdfBin'
-export ModelFile_Javelin_LML        is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/Javelin_LML.Ase2NdfBin'
+export ModelFile_Javelin_LML        is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/Javelin.Ase2NdfBin'
 export ModelFile_L1A1_SLR           is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L1A1_SLR.Ase2NdfBin'
 export ModelFile_L2A3               is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L2A3.Ase2NdfBin'
-export ModelFile_L85A1              is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L85A1.Ase2NdfBin'
+export ModelFile_L85A1              is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L85A1.fbx'
 export ModelFile_L86A1_LSW          is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L86A1_LSW.Ase2NdfBin'
 export ModelFile_LAW_80             is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/LAW_80.Ase2NdfBin'
+export ModelFile_L4A4_Bren          is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/Bren.Ase2NdfBin'
 
 //------------------------------------------------------------------------------
 //------------------------------------ARMES FR----------------------------------
@@ -1256,27 +1257,27 @@ export ModelFile_ATGM_Fagot_DDR_LOW is DDR_MotSchutzen_LOW
 export ModelFile_Wachregiment_SMG_DDR is Wach_1
 export ModelFile_Wachregiment_SMG_DDR_02 is Wach_2
 export ModelFile_Wachregiment_SMG_DDR_03 is Wach_NCO
-export ModelFile_Wachregiment_SMG_DDR_04 is DDR_MotSchutzen_Officer
-export ModelFile_Wachregiment_SMG_DDR_05 is DDR_MotSchutzen_Sniper
-export ModelFile_Wachregiment_SMG_DDR_06 is DDR_MotSchutzen_spe
+export ModelFile_Wachregiment_SMG_DDR_04 is Wach_1
+export ModelFile_Wachregiment_SMG_DDR_05 is Wach_2
+export ModelFile_Wachregiment_SMG_DDR_06 is Wach_2
 export ModelFile_Wachregiment_SMG_DDR_LOW is DDR_MotSchutzen_LOW
 
 //  Wachregiment_DDR
-export ModelFile_Wachregiment_DDR is DDR_MotSchutzen_1
-export ModelFile_Wachregiment_DDR_02 is DDR_MotSchutzen_2
-export ModelFile_Wachregiment_DDR_03 is DDR_MotSchutzen_NCO
-export ModelFile_Wachregiment_DDR_04 is DDR_MotSchutzen_Officer
-export ModelFile_Wachregiment_DDR_05 is DDR_MotSchutzen_Sniper
-export ModelFile_Wachregiment_DDR_06 is DDR_MotSchutzen_spe
+export ModelFile_Wachregiment_DDR is Wach_1
+export ModelFile_Wachregiment_DDR_02 is Wach_2
+export ModelFile_Wachregiment_DDR_03 is Wach_NCO
+export ModelFile_Wachregiment_DDR_04 is Wach_1
+export ModelFile_Wachregiment_DDR_05 is Wach_2
+export ModelFile_Wachregiment_DDR_06 is Wach_1
 export ModelFile_Wachregiment_DDR_LOW is DDR_MotSchutzen_LOW
 
 //  Wachregiment_CMD_DDR
-export ModelFile_Wachregiment_CMD_DDR is DDR_MotSchutzen_1
-export ModelFile_Wachregiment_CMD_DDR_02 is DDR_MotSchutzen_2
-export ModelFile_Wachregiment_CMD_DDR_03 is DDR_MotSchutzen_NCO
-export ModelFile_Wachregiment_CMD_DDR_04 is DDR_MotSchutzen_Officer
-export ModelFile_Wachregiment_CMD_DDR_05 is DDR_MotSchutzen_Sniper
-export ModelFile_Wachregiment_CMD_DDR_06 is DDR_MotSchutzen_spe
+export ModelFile_Wachregiment_CMD_DDR is Wach_NCO
+export ModelFile_Wachregiment_CMD_DDR_02 is Wach_2
+export ModelFile_Wachregiment_CMD_DDR_03 is Wach_NCO
+export ModelFile_Wachregiment_CMD_DDR_04 is Wach_2
+export ModelFile_Wachregiment_CMD_DDR_05 is Wach_NCO
+export ModelFile_Wachregiment_CMD_DDR_06 is Wach_1
 export ModelFile_Wachregiment_CMD_DDR_LOW is DDR_MotSchutzen_LOW
 
 //  Scout_LRRP_DDR
@@ -1313,20 +1314,20 @@ export ModelFile_MotRifles_CMD_DDR_LOW is DDR_MotSchutzen_LOW
 export ModelFile_KdA_DDR is DDR_KdA_1
 export ModelFile_KdA_DDR_02 is DDR_KdA_2
 export ModelFile_KdA_DDR_03 is DDR_KdA_NCO
-export ModelFile_KdA_DDR_04 is DDR_MotSchutzen_Officer
-export ModelFile_KdA_DDR_05 is DDR_MotSchutzen_Sniper
-export ModelFile_KdA_DDR_06 is DDR_MotSchutzen_spe
-export ModelFile_KdA_DDR_LOW is DDR_MotSchutzen_LOW
+export ModelFile_KdA_DDR_04 is DDR_KdA_1
+export ModelFile_KdA_DDR_05 is DDR_KdA_1
+export ModelFile_KdA_DDR_06 is DDR_KdA_NCO
+export ModelFile_KdA_DDR_LOW is DDR_KdA_2
 
 //  KdA_CMD_DDR
 
-export ModelFile_KdA_CMD_DDR is DDR_MotSchutzen_1
-export ModelFile_KdA_CMD_DDR_02 is DDR_MotSchutzen_2
-export ModelFile_KdA_CMD_DDR_03 is DDR_MotSchutzen_NCO
-export ModelFile_KdA_CMD_DDR_04 is DDR_MotSchutzen_Officer
-export ModelFile_KdA_CMD_DDR_05 is DDR_MotSchutzen_Sniper
-export ModelFile_KdA_CMD_DDR_06 is DDR_MotSchutzen_spe
-export ModelFile_KdA_CMD_DDR_LOW is DDR_MotSchutzen_LOW
+export ModelFile_KdA_CMD_DDR is DDR_KdA_1
+export ModelFile_KdA_CMD_DDR_02 is DDR_KdA_2
+export ModelFile_KdA_CMD_DDR_03 is DDR_KdA_LOW
+export ModelFile_KdA_CMD_DDR_04 is DDR_KdA_NCO
+export ModelFile_KdA_CMD_DDR_05 is DDR_KdA_1
+export ModelFile_KdA_CMD_DDR_06 is DDR_KdA_NCO
+export ModelFile_KdA_CMD_DDR_LOW is DDR_KdA_2
 
 //  Fallschirmjager_FlaseFlag_Demo_DDR
 

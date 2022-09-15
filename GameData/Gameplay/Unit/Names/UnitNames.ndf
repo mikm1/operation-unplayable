@@ -16,6 +16,18 @@ Dico_UnitNames_BEL is TLocalisationDicoResource
     FileName = "GameData:/Gameplay/Unit/Names/UNITNAMES_BEL.csv"
     ModFileName = "GameData:/Gameplay/Unit/Names/UNITNAMES_BEL.csv"
 )
+Dico_UnitNames_NL is TLocalisationDicoResource
+(
+    DicoToken = "NAMES_NL"
+    FileName = "GameData:/Gameplay/Unit/Names/UNITNAMES_NL.csv"
+    ModFileName = "GameData:/Gameplay/Unit/Names/UNITNAMES_NL.csv"
+)
+Dico_UnitNames_LUX is TLocalisationDicoResource
+(
+    DicoToken = "NAMES_LUX"
+    FileName = "GameData:/Gameplay/Unit/Names/UNITNAMES_LUX.csv"
+    ModFileName = "GameData:/Gameplay/Unit/Names/UNITNAMES_LUX.csv"
+)
 Dico_UnitNames_GER is TLocalisationDicoResource
 (
     DicoToken = "NAMES_GER"

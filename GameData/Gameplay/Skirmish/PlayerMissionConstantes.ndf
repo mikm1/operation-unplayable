@@ -98,6 +98,20 @@ export colonelAirRecoDescriptor is TMacroActionDescriptor_AirReco_Specific
     ]
 )
 ///////////////////////////////////////////////////////////////////////////////////////////
+export colonelSupplyDescriptor is TMacroActionDescriptor_Supply_Specific
+(
+    ParametresDeMission =
+    [
+        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
+        TSupplySettingHolder(SupplyableMinimumRatio = MAP[
+            (ESupplyableType_Fuel, 0.3),
+            (ESupplyableType_Weapons, 0.3),
+            (ESupplyableType_Life, 0.5),
+        ]),
+        TMacroActionLifetimeSettingHolder(MaintainForever = true), //IMPORTANT
+    ]
+)
+///////////////////////////////////////////////////////////////////////////////////////////
 // MISSION DESCRIPTORS
 ///////////////////////////////////////////////////////////////////////////////////////////
 export PlayerMissionDescriptorAttack is TPlayerMissionDescriptor(
@@ -154,6 +168,14 @@ export PlayerMissionDescriptor_ManageAirReco is TPlayerMissionDescriptor(
     ExclusionTags = ~/ManageAirReco_ExcludedTags
     Mergeable = true
     UsePosition = true
+)
+
+export PlayerMissionDescriptor_Supply is TPlayerMissionDescriptor(
+    MacroActionDescriptor = colonelSupplyDescriptor
+    AuthorizedTags = ~/Supply_AuthorizedTags
+    ExclusionTags = ~/Supply_ExcludedTags
+    Mergeable = false
+    UsePosition = false
 )
 
 export PlayerMissionDescriptor_Stop is TPlayerMissionDescriptor(
@@ -241,6 +263,16 @@ export PlayerMissionDescriptorList is TPlayerMissionConstantesDescriptor
                     PlayerMissionDescriptor_Stop,
                 ]
                 DebugName = "Stop Managing"
+                UseMousePolicy = false
+            )
+        ),
+        (
+            EPlayerMissionRequestType_Supply,
+            TPlayerMissionOrderDescriptor(
+                DescriptorPriority = [
+                    PlayerMissionDescriptor_Supply,
+                ]
+                DebugName = "Supply"
                 UseMousePolicy = false
             )
         ),

@@ -44,6 +44,7 @@ FXWeapon_AGM_AGM45_Shrike is FXWeapon_6
 FXWeapon_AGM_AGM65B_Maverick is FXWeapon_6
 FXWeapon_AGM_AGM88_HARM is FXWeapon_6
 FXWeapon_AGM_ALARM is FXWeapon_6
+FXWeapon_AGM_ARMAT is FXWeapon_6
 FXWeapon_AGM_AS30 is FXWeapon_6
 FXWeapon_AGM_AS30L is FXWeapon_6
 FXWeapon_AGM_AS37_Martel is FXWeapon_6
@@ -55,6 +56,7 @@ FXWeapon_AGM_HOT2 is FXWeapon_3
 FXWeapon_AGM_HOT2_x4 is FXWeapon_3
 FXWeapon_AGM_Kh23M is FXWeapon_6
 FXWeapon_AGM_Kh25ML is FXWeapon_6
+FXWeapon_AGM_Kh25MPU is FXWeapon_6
 FXWeapon_AGM_Kh28_X28 is FXWeapon_6
 FXWeapon_AGM_Kh29D is FXWeapon_6
 FXWeapon_AGM_Kh29T is FXWeapon_6
@@ -103,14 +105,14 @@ FXWeapon_ATGM_Swingfire_x2 is FXWeapon_4
 FXWeapon_ATGM_Swingfire_x5 is FXWeapon_4
 FXWeapon_ATGM_9K115_Metis_M is FXWeapon_4
 FXWeapon_FakeRoquette_S_24 is FXWeapon_8
-FXWeapon_Javelin is FXWeapon_7
-FXWeapon_Javelin_x3 is FXWeapon_7
+FXWeapon_Javelin is FXWeapon_8
+FXWeapon_Javelin_LML is FXWeapon_8
 FXWeapon_M47_DRAGON is FXWeapon_4
 FXWeapon_M47_DRAGON_II is FXWeapon_4
 FXWeapon_MANPAD_Blowpipe is FXWeapon_8
 FXWeapon_MANPAD_FIM43 is FXWeapon_8
 FXWeapon_MANPAD_FIM92 is FXWeapon_8
-FXWeapon_MANPAD_Javelin is FXWeapon_7
+FXWeapon_MANPAD_Javelin is FXWeapon_8
 FXWeapon_MANPAD_Strela2M is FXWeapon_8
 FXWeapon_MANPAD_igla is FXWeapon_7
 FXWeapon_Mistral is FXWeapon_7

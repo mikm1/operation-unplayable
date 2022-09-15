@@ -11,14 +11,14 @@ public orderEvaluatorCollectionStrategic is TOrderEvaluatorCollectionDescriptor(
             IsTargetAuthorized = false
         ),
         TOrderEvaluatorBoxing(
-            OrderToken = "AirplaneMoveAndEngage"
+            OrderToken = "AirplaineAirDeny"
             IgnoreDefaultOrder = true
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_BoxingOrder"
             PlayFXFeedbackWithPositionOnScreen = true
         ),
         TOrderEvaluatorAny(
-            OrderToken = "AirplaneMoveAndEngage"
+            OrderToken = "AirplaineAirDeny"
             IgnoreDefaultOrder = true
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack_PositionInScreen
             MouseWidgetSelector = "MouseWidgetSelector_BoxingOrder"

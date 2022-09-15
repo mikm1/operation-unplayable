@@ -115,10 +115,6 @@ UseStrategic_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
 
         ("UseStrategic_Lock_Company",                                MAP [(~/ComponentState/Normal, ~/UseStrategic_Lock_Company)] ),
 
-        ("UseStrategic_Cursor_Deny",                                MAP [(~/ComponentState/Normal, ~/UseStrategic_Cursor_Deny)] ),
-        ("UseStrategic_Cursor_Reco",                                MAP [(~/ComponentState/Normal, ~/UseStrategic_Cursor_Reco)] ),
-        ("UseStrategic_Cursor_Transfert",                           MAP [(~/ComponentState/Normal, ~/UseStrategic_Cursor_Transfert)] ),
-
         ("UseInGame_division_icone",  MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/3rd_Armored_Division.png"))] ),
     ]
 )
@@ -187,8 +183,4 @@ UseStrategic_SpawnPointMain_HorizontalBorder             is TUIResourceTexture_I
 UseStrategic_SpawnPointMain_Fill                         is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/SpawnPointMain_Fill.png")
 
 UseStrategic_Lock_Company                                is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/lock.png")
-
-UseStrategic_Cursor_Deny                                 is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Cursors/curseur_steelman_deny.png")
-UseStrategic_Cursor_Reco                                 is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Cursors/curseur_steelman_reco.png")
-UseStrategic_Cursor_Transfert                            is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Cursors/curseur_transfer.png")
 

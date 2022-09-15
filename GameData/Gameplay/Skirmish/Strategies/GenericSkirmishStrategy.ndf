@@ -83,7 +83,7 @@ export Gen_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/Reco,            // 40 par reco
 
-        ~/CaptureHalfZoneObjectif_Floor,
+        ~/CaptureHalfZoneObjectif_Ceil,
         ~/Defense_Objectif,
 
         //------------------------------
@@ -137,14 +137,19 @@ export Gen_Phase_Command is TSequenceGeneratorDescriptor
 
         ~/Reco,
 
+        ~/CaptureHalfZoneObjectif_Ceil,
+
         //------------------------------
         // Défenses prioritaires
         //------------------------------
         // Statiques pour tenir le terrain
         ~/Defense_Static_Adaptive, // Canon AT - Chasseur de char - ATInf - HMG - Flamer // 85
+
+        ~/Defense_Dynamic_Adaptive,
+        ~/Defense_Dynamic_Adaptive,
+
         ~/Defense_Static_AA,
 
-        ~/CaptureHalfZoneObjectif_Floor,
         ~/Defense_Objectif,
 
         ~/Attack_Filler,
@@ -156,8 +161,6 @@ export Gen_Phase_Command is TSequenceGeneratorDescriptor
         ~/Artillery_Support,        // Artillerie pas chère                 //  80
 
         ~/Attack_Adaptive,  // Faire du code pour adapater le budget en fonction de l'income
-        ~/Attack_Adaptive,
-
         ~/Attack_Adaptive,
 
         //Cet mission lance les objectifs restant
@@ -209,23 +212,9 @@ Defenses_Airstrike_Arti_Shuffle_Deploy is
 
 ]
 
-Defenses_Airstrike_Arti_Shuffle is
-[
-    ~/Defense_Dynamic_Adaptive,
-    ~/Airstrike_Assault,
-    ~/Artillery_Expensive,
-    ~/Defense_Dynamic_Adaptive,
-    ~/Artillery_TriggerHappy,
-    ~/Defense_Static_AA,
-    ~/Defense_Dynamic_Adaptive,
-    ~/Airstrike_Offense,
-    ~/AirReco,
-    ~/Airstrike_Defense,
-    ~/Artillery_TriggerHappy_1for4Corridors,
-]
-
 Airstrike_Arti_Shuffle is
 [
+    ~/Airstrike_SEAD,
     ~/Airstrike_Assault,
     ~/Artillery_Expensive,
     ~/AirReco,

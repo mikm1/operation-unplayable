@@ -21,7 +21,7 @@ export CubeAction_Strategic_AirplaineAirDeny is Template_CubeActionOrderButtonIn
     CubeActionName          = "CubeAction_Strategic_AirplaineAirDeny"
     DebugName               = "InGameCubeAction_Strategic_AirplaineAirDeny"
 
-    OrderToken = 'AirplaneMoveAndEngage'
+    OrderToken = 'AirplaineAirDeny'
     ValidationTargetToken = 'HNT_WARN'
 
     ButtonTextToken         = 'ORD_ARDENY'

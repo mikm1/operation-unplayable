@@ -42,8 +42,8 @@ StrategicResource is TUISpecificStrategicResources
     LabelResource               = ~/SpecificInGameLabelResource
     LDHintResource              = ~/SpecificInGameLDHintResource
     SignpostDescriptor          = ~/UISpecificSignpostViewDescriptor
-    GabaritResources            = ~/CommonGabaritResources
-    ZoCResources                = ~/CommonZoCResources
+    GabaritResources            = ~/StrategicGabaritResources
+    ZoCResources                = ~/StrategicZoCResources
     WarningPanelResources       = ~/WarningPanelResources
     LabelsOnMapResources        = ~/labelsOnMapResources
     ObjectivesResource          = ~/StrategicObjectivesResources

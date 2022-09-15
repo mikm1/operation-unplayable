@@ -6,25 +6,19 @@
 EMacroActionMissionType is TBaseClass
 (
     Undefined is 0
-    Wait is 1
-    Attack is 2
-    Defense is 3
-    SimpleMove is 4
-    Support is 5
-    ZoneCapture is 6
-    Deploy is 7
-    Harass is 8
-    Supply is 9
-    AirStrike is 10
-    AirReco is 11
-    Test is 12
-    Reco is 13
-    CorridorAttack is 14
-    CorridorDefense is 15
-    CorridorArtillery is 16
-    CorridorDynamicDefense is 17
-    ObjectiveAttack is 18
-    PlayerMissionAttack is 19
-    PlayerMissionArtillery is 20
-    CaptureCommandZone is 21
+    Attack is 1
+    Defense is 2
+    Support is 3
+    Supply is 4
+    AirStrike is 5
+    AirReco is 6
+    Reco is 7
+    CorridorAttack is 8
+    CorridorDefense is 9
+    CorridorArtillery is 10
+    CorridorDynamicDefense is 11
+    ObjectiveAttack is 12
+    PlayerMissionAttack is 13
+    PlayerMissionArtillery is 14
+    CaptureCommandZone is 15
 )

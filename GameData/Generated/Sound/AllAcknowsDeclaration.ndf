@@ -20319,188 +20319,6 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Select_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_1e_compagnie_au_rapport' )
-            Version           = 1
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_a_vos_ordres' )
-            Version           = 2
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_3
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_fermez_la_et_ecoutez_le_chef' )
-            Version           = 3
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_4
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_l_esprit_fantassin_n_existe_plus_c_est_un_tort' )
-            Version           = 4
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_5
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_on_en_revient_toujours_au_fantassin_et_son_fusil' )
-            Version           = 5
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_6
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_oui_chef' )
-            Version           = 6
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_7
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_pares' )
-            Version           = 7
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_8
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_quels_sont_les_ordres' )
-            Version           = 8
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_9
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_restez_sur_vos_gardes_les_gars' )
-            Version           = 9
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_10
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_section_prete' )
-            Version           = 10
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_11
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_section_prete_en_formation' )
-            Version           = 11
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_12
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_si_l_ennemi_est_a_portee_alors_nous_aussi' )
-            Version           = 12
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Select_13
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_verifiez_vos_munitions_soldats' )
-            Version           = 13
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Select
-        ),
-        TAcknowUnitDescriptor
-        (
             // AcknowUnit_EU_FR_Inf2_Select_1
             FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_1e_compagnie_au_rapport' )
             Version           = 1
@@ -20572,7 +20390,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowUnitDescriptor
         (
             // AcknowUnit_EU_FR_Inf2_Select_6
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_pares' )
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_oui_chef' )
             Version           = 6
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20586,7 +20404,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowUnitDescriptor
         (
             // AcknowUnit_EU_FR_Inf2_Select_7
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_quels_sont_les_ordres' )
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_pares' )
             Version           = 7
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20600,7 +20418,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowUnitDescriptor
         (
             // AcknowUnit_EU_FR_Inf2_Select_8
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_restez_sur_vos_gardes_les_gars' )
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_quels_sont_les_ordres' )
             Version           = 8
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20614,7 +20432,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowUnitDescriptor
         (
             // AcknowUnit_EU_FR_Inf2_Select_9
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_section_prete' )
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_restez_sur_vos_gardes_les_gars' )
             Version           = 9
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20628,7 +20446,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowUnitDescriptor
         (
             // AcknowUnit_EU_FR_Inf2_Select_10
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_si_l_ennemi_est_a_portee_alors_nous_aussi' )
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_section_prete' )
             Version           = 10
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20642,7 +20460,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowUnitDescriptor
         (
             // AcknowUnit_EU_FR_Inf2_Select_11
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_verifiez_vos_munitions_soldats' )
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_section_prete_en_formation' )
             Version           = 11
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20655,8 +20473,36 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Move_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_affirmatif' )
+            // AcknowUnit_EU_FR_Inf2_Select_12
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_si_l_ennemi_est_a_portee_alors_nous_aussi' )
+            Version           = 12
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf2
+            Action            = TAcknowUnitAction_Select
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf2_Select_13
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf2_Select_verifiez_vos_munitions_soldats' )
+            Version           = 13
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf2
+            Action            = TAcknowUnitAction_Select
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Select_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_1e_compagnie_au_rapport' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20665,12 +20511,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Move
+            Action            = TAcknowUnitAction_Select
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Move_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_alors_mes_cailles_vous_attendez_quoi_votre_cafe' )
+            // AcknowUnit_EU_FR_Inf_Select_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_a_vos_ordres' )
             Version           = 2
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20679,12 +20525,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Move
+            Action            = TAcknowUnitAction_Select
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Move_3
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_bougez_vos_cul_on_y_va' )
+            // AcknowUnit_EU_FR_Inf_Select_3
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_fermez_la_et_ecoutez_le_chef' )
             Version           = 3
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20693,12 +20539,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Move
+            Action            = TAcknowUnitAction_Select
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Move_4
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_deux_intellectuels_assis_vont_moins_loin_qu_une' )
+            // AcknowUnit_EU_FR_Inf_Select_4
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_l_esprit_fantassin_n_existe_plus_c_est_un_tort' )
             Version           = 4
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20707,12 +20553,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Move
+            Action            = TAcknowUnitAction_Select
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Move_5
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_en_marche' )
+            // AcknowUnit_EU_FR_Inf_Select_5
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_on_en_revient_toujours_au_fantassin_et_son_fusil' )
             Version           = 5
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20721,12 +20567,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Move
+            Action            = TAcknowUnitAction_Select
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Move_6
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_on_bouge' )
+            // AcknowUnit_EU_FR_Inf_Select_6
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_pares' )
             Version           = 6
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20735,12 +20581,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Move
+            Action            = TAcknowUnitAction_Select
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Move_7
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_oui_chef' )
+            // AcknowUnit_EU_FR_Inf_Select_7
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_quels_sont_les_ordres' )
             Version           = 7
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20749,12 +20595,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Move
+            Action            = TAcknowUnitAction_Select
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Move_8
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_section_suivez_moi' )
+            // AcknowUnit_EU_FR_Inf_Select_8
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_restez_sur_vos_gardes_les_gars' )
             Version           = 8
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20763,7 +20609,49 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Move
+            Action            = TAcknowUnitAction_Select
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Select_9
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_section_prete' )
+            Version           = 9
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_Select
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Select_10
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_si_l_ennemi_est_a_portee_alors_nous_aussi' )
+            Version           = 10
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_Select
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Select_11
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Select_verifiez_vos_munitions_soldats' )
+            Version           = 11
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_Select
         ),
         TAcknowUnitDescriptor
         (
@@ -20879,8 +20767,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_en_avant_doigt_sur_la_gachette' )
+            // AcknowUnit_EU_FR_Inf_Move_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_affirmatif' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20889,12 +20777,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_MoveAndAttackOrder
+            Action            = TAcknowUnitAction_Move
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_en_formation_de_combat' )
+            // AcknowUnit_EU_FR_Inf_Move_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_alors_mes_cailles_vous_attendez_quoi_votre_cafe' )
             Version           = 2
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20903,12 +20791,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_MoveAndAttackOrder
+            Action            = TAcknowUnitAction_Move
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_3
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_on_y_va_et_gaffe_aux_popofs' )
+            // AcknowUnit_EU_FR_Inf_Move_3
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_bougez_vos_cul_on_y_va' )
             Version           = 3
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20917,12 +20805,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_MoveAndAttackOrder
+            Action            = TAcknowUnitAction_Move
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_4
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_ramassez_votre_paquetage_on_y_va' )
+            // AcknowUnit_EU_FR_Inf_Move_4
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_deux_intellectuels_assis_vont_moins_loin_qu_une' )
             Version           = 4
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20931,12 +20819,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_MoveAndAttackOrder
+            Action            = TAcknowUnitAction_Move
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_5
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_tassin_pithiviers_avec_moi' )
+            // AcknowUnit_EU_FR_Inf_Move_5
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_en_marche' )
             Version           = 5
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20945,12 +20833,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_MoveAndAttackOrder
+            Action            = TAcknowUnitAction_Move
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_6
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_tirez_d_abord_et_reflechissez_ensuite' )
+            // AcknowUnit_EU_FR_Inf_Move_6
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_on_bouge' )
             Version           = 6
             Priority          = 1
             TimeBeforeLooping = 5
@@ -20959,7 +20847,35 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_MoveAndAttackOrder
+            Action            = TAcknowUnitAction_Move
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Move_7
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_oui_chef' )
+            Version           = 7
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_Move
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Move_8
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_section_suivez_moi' )
+            Version           = 8
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_Move
         ),
         TAcknowUnitDescriptor
         (
@@ -21047,8 +20963,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_LoadIntoTransport_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Load_tout_le_monde_en_voiture' )
+            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_en_avant_doigt_sur_la_gachette' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21057,7 +20973,77 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_LoadIntoTransport
+            Action            = TAcknowUnitAction_MoveAndAttackOrder
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_en_formation_de_combat' )
+            Version           = 2
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_MoveAndAttackOrder
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_3
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_on_y_va_et_gaffe_aux_popofs' )
+            Version           = 3
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_MoveAndAttackOrder
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_4
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_ramassez_votre_paquetage_on_y_va' )
+            Version           = 4
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_MoveAndAttackOrder
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_5
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_tassin_pithiviers_avec_moi' )
+            Version           = 5
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_MoveAndAttackOrder
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_MoveAndAttackOrder_6
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Move_Attack_tirez_d_abord_et_reflechissez_ensuite' )
+            Version           = 6
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_MoveAndAttackOrder
         ),
         TAcknowUnitDescriptor
         (
@@ -21075,8 +21061,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Stop_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Stop_tenez_vos_positions' )
+            // AcknowUnit_EU_FR_Inf_LoadIntoTransport_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Load_tout_le_monde_en_voiture' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21085,7 +21071,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Stop
+            Action            = TAcknowUnitAction_LoadIntoTransport
         ),
         TAcknowUnitDescriptor
         (
@@ -21103,8 +21089,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_ShootOnPosition_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_Position_feu_a_volonte' )
+            // AcknowUnit_EU_FR_Inf_Stop_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Stop_tenez_vos_positions' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21113,7 +21099,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_ShootOnPosition
+            Action            = TAcknowUnitAction_Stop
         ),
         TAcknowUnitDescriptor
         (
@@ -21131,8 +21117,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Attack_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_choisissez_vos_cibles' )
+            // AcknowUnit_EU_FR_Inf_ShootOnPosition_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_Position_feu_a_volonte' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21141,63 +21127,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Attack
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Attack_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_descendez_moi_ces_rouges' )
-            Version           = 2
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Attack
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Attack_3
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_ouvrez_le_feu' )
-            Version           = 3
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Attack
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Attack_4
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_pour_la_france' )
-            Version           = 4
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Attack
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_Attack_5
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_tirez_a_vue' )
-            Version           = 5
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Attack
+            Action            = TAcknowUnitAction_ShootOnPosition
         ),
         TAcknowUnitDescriptor
         (
@@ -21271,8 +21201,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_PositionForbidden_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Impossible_negatif_chef' )
+            // AcknowUnit_EU_FR_Inf_Attack_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_choisissez_vos_cibles' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21281,7 +21211,63 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_PositionForbidden
+            Action            = TAcknowUnitAction_Attack
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Attack_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_descendez_moi_ces_rouges' )
+            Version           = 2
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_Attack
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Attack_3
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_ouvrez_le_feu' )
+            Version           = 3
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_Attack
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Attack_4
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_pour_la_france' )
+            Version           = 4
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_Attack
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_Attack_5
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Attack_tirez_a_vue' )
+            Version           = 5
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_Attack
         ),
         TAcknowUnitDescriptor
         (
@@ -21299,8 +21285,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_DamageReceived_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_DamageReceived_aaaaah_je_suis_touche' )
+            // AcknowUnit_EU_FR_Inf_PositionForbidden_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Impossible_negatif_chef' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21309,35 +21295,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_DamageReceived
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_DamageReceived_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_DamageReceived_hubert_couche_toi' )
-            Version           = 2
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_DamageReceived
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_DamageReceived_3
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_DamageReceived_un_medecin' )
-            Version           = 3
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_DamageReceived
+            Action            = TAcknowUnitAction_PositionForbidden
         ),
         TAcknowUnitDescriptor
         (
@@ -21383,8 +21341,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_OutOfAmmo_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_No_Ammo_besoin_de_munitions' )
+            // AcknowUnit_EU_FR_Inf_DamageReceived_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_DamageReceived_aaaaah_je_suis_touche' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21393,12 +21351,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_OutOfAmmo
+            Action            = TAcknowUnitAction_DamageReceived
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_OutOfAmmo_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_No_Ammo_on_va_etre_a_sec' )
+            // AcknowUnit_EU_FR_Inf_DamageReceived_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_DamageReceived_hubert_couche_toi' )
             Version           = 2
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21407,7 +21365,21 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_OutOfAmmo
+            Action            = TAcknowUnitAction_DamageReceived
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_DamageReceived_3
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_DamageReceived_un_medecin' )
+            Version           = 3
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_DamageReceived
         ),
         TAcknowUnitDescriptor
         (
@@ -21439,8 +21411,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Panicking_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Panicking_morphine_besoin_de_morphine_ici' )
+            // AcknowUnit_EU_FR_Inf_OutOfAmmo_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_No_Ammo_besoin_de_munitions' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21449,12 +21421,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Panicking
+            Action            = TAcknowUnitAction_OutOfAmmo
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Panicking_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Panicking_tout_le_monde_a_terre' )
+            // AcknowUnit_EU_FR_Inf_OutOfAmmo_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_No_Ammo_on_va_etre_a_sec' )
             Version           = 2
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21463,7 +21435,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Panicking
+            Action            = TAcknowUnitAction_OutOfAmmo
         ),
         TAcknowUnitDescriptor
         (
@@ -21495,8 +21467,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Surrender_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Surrender_ne_tirez_pas' )
+            // AcknowUnit_EU_FR_Inf_Panicking_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Panicking_morphine_besoin_de_morphine_ici' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21505,12 +21477,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Surrender
+            Action            = TAcknowUnitAction_Panicking
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_Surrender_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Surrender_on_se_rend' )
+            // AcknowUnit_EU_FR_Inf_Panicking_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Panicking_tout_le_monde_a_terre' )
             Version           = 2
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21519,7 +21491,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_Surrender
+            Action            = TAcknowUnitAction_Panicking
         ),
         TAcknowUnitDescriptor
         (
@@ -21551,8 +21523,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_WithdrawOrder_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Withdraw_en_arriere_les_gars' )
+            // AcknowUnit_EU_FR_Inf_Surrender_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Surrender_ne_tirez_pas' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21561,12 +21533,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_WithdrawOrder
+            Action            = TAcknowUnitAction_Surrender
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_WithdrawOrder_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Withdraw_retraite' )
+            // AcknowUnit_EU_FR_Inf_Surrender_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Surrender_on_se_rend' )
             Version           = 2
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21575,7 +21547,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_WithdrawOrder
+            Action            = TAcknowUnitAction_Surrender
         ),
         TAcknowUnitDescriptor
         (
@@ -21607,8 +21579,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_TargetDestroyed_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Target_Destroyed_bien_joue_les_gars' )
+            // AcknowUnit_EU_FR_Inf_WithdrawOrder_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Withdraw_en_arriere_les_gars' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21617,12 +21589,12 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_TargetDestroyed
+            Action            = TAcknowUnitAction_WithdrawOrder
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_TargetDestroyed_2
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Target_Destroyed_on_les_a_eu' )
+            // AcknowUnit_EU_FR_Inf_WithdrawOrder_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Withdraw_retraite' )
             Version           = 2
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21631,21 +21603,7 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_TargetDestroyed
-        ),
-        TAcknowUnitDescriptor
-        (
-            // AcknowUnit_EU_FR_Inf_TargetDestroyed_3
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Target_Destroyed_un_popof_en_moins' )
-            Version           = 3
-            Priority          = 1
-            TimeBeforeLooping = 5
-            Volume            = 1
-            SoundSet          = 0
-            Nationalite       = TAcknowUnitNationalite_EU
-            MotherCountry     = 'FR'
-            TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_TargetDestroyed
+            Action            = TAcknowUnitAction_WithdrawOrder
         ),
         TAcknowUnitDescriptor
         (
@@ -21691,8 +21649,8 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
         ),
         TAcknowUnitDescriptor
         (
-            // AcknowUnit_EU_FR_Inf_EnemyUnitContact_1
-            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Enemy_Contact_popof_droit_devant_mettez_vous_en_formation' )
+            // AcknowUnit_EU_FR_Inf_TargetDestroyed_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Target_Destroyed_bien_joue_les_gars' )
             Version           = 1
             Priority          = 1
             TimeBeforeLooping = 5
@@ -21701,7 +21659,35 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf
-            Action            = TAcknowUnitAction_EnemyUnitContact
+            Action            = TAcknowUnitAction_TargetDestroyed
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_TargetDestroyed_2
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Target_Destroyed_on_les_a_eu' )
+            Version           = 2
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_TargetDestroyed
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_TargetDestroyed_3
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Target_Destroyed_un_popof_en_moins' )
+            Version           = 3
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
+            Action            = TAcknowUnitAction_TargetDestroyed
         ),
         TAcknowUnitDescriptor
         (
@@ -21715,6 +21701,20 @@ AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Nationalite       = TAcknowUnitNationalite_EU
             MotherCountry     = 'FR'
             TypeSpecific      = TAcknowUnitType_Inf2
+            Action            = TAcknowUnitAction_EnemyUnitContact
+        ),
+        TAcknowUnitDescriptor
+        (
+            // AcknowUnit_EU_FR_Inf_EnemyUnitContact_1
+            FXName            = Template_UnitAcknow( Identifier = 'FR_Inf_Enemy_Contact_popof_droit_devant_mettez_vous_en_formation' )
+            Version           = 1
+            Priority          = 1
+            TimeBeforeLooping = 5
+            Volume            = 1
+            SoundSet          = 0
+            Nationalite       = TAcknowUnitNationalite_EU
+            MotherCountry     = 'FR'
+            TypeSpecific      = TAcknowUnitType_Inf
             Action            = TAcknowUnitAction_EnemyUnitContact
         ),
         TAcknowUnitDescriptor

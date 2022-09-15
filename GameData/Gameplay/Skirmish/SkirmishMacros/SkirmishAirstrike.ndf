@@ -55,6 +55,13 @@ export Airstrike_Assault is Template_Airstrike
     PoolModel = ~/Pool_Airstrike_Assault
 )
 //-------------------------------------------------------------------------
+export Airstrike_SEAD is Template_Airstrike
+(
+    AnnulerSupportSiAttaqueEchoue = true
+    TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/OpportunisticSingleTarget
+    PoolModel = ~/Pool_Airstrike_SEAD
+)
+//-------------------------------------------------------------------------
 // Autogens
 //-------------------------------------------------------------------------
 export Airstrike_Defense_Autogen is Template_Airstrike
@@ -136,6 +143,22 @@ export Pool_Airstrike_Assault is TPoolModel
         TagsPriority = [
             "Avion_AT",
             "Avion_Assaut",
+        ]
+    ),
+    ]
+)
+
+//-------------------------------------------------------------------------
+export Pool_Airstrike_SEAD is TPoolModel
+(
+    ModelList = [
+    TPoolElement(
+        DescriptorId = GUID:{8d3598d6-de00-4fbe-88e1-617b67d4748e}
+        Required = true
+        Nb = 1
+        IndexPriorityOverPrice = true
+        TagsPriority = [
+            "Avion_SEAD",
         ]
     ),
     ]

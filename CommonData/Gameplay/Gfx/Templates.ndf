@@ -14,7 +14,6 @@ public template TemplateGfxDescriptorBatimentWithLevelDesignPattern_OnlyLevelBui
             LevelBuildStateGeoDatabaseProxy = $/M3D/Scene/LevelBuildStateGeoDatabaseProxy
             LevelBuildSymbolDatabaseProxy = $/M3D/Scene/LevelBuildSymbolDatabaseProxy
             Mode = SDMode_StateDB
-            LevelBuildHierarchyTag = LevelBuildHierarchyTag/BaseBuildingOnly
         )
 
         LevelBuildModification = TGfxLevelBuildModification
@@ -74,7 +73,6 @@ public template TemplateTimelyDescriptorBatimentWithLevelDesignPattern_OnlyLevel
         LevelBuildStateGeoDatabaseProxy = $/M3D/Scene/LevelBuildStateGeoDatabaseProxy
         LevelBuildSymbolDatabaseProxy = $/M3D/Scene/LevelBuildSymbolDatabaseProxy
         Mode = SDMode_StateDB
-        LevelBuildHierarchyTag = LevelBuildHierarchyTag/BaseBuildingOnly
     )
 
     LevelBuildModification = TGfxLevelBuildModification

@@ -17,6 +17,8 @@ CommonTexture_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("CommonTexture_MotherCountryFlag_POL",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_POL)]),
         ("CommonTexture_MotherCountryFlag_RFA",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_RFA)]),
         ("CommonTexture_MotherCountryFlag_BEL",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_BEL)]),
+        ("CommonTexture_MotherCountryFlag_LUX",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_LUX)]),
+        ("CommonTexture_MotherCountryFlag_NL",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_NL)]),
 
         ("CommonTexture_MotherCountryFlag_GERW",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_GERW)]),
         ("CommonTexture_MotherCountryFlag_UK",   MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_UK)]),
@@ -129,9 +131,6 @@ CommonTexture_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("CommonTexture_Couvert_Moyen",         MAP [(~/ComponentState/Normal, ~/CommonTexture_Couvert_Moyen)]),
         ("CommonTexture_Couvert_Lourd",         MAP [(~/ComponentState/Normal, ~/CommonTexture_Couvert_Lourd)]),
 
-        // Curseurs
-        ("CommonTexture_Cursor_Invalid",        MAP [(~/ComponentState/Normal, ~/CommonTexture_Cursor_Invalid)]),
-
         // missing texture
         ("VirtualData/GamerPicture/Missing",        MAP [(~/ComponentState/Normal, ~/CommonTexture_DefaultAvatarTexture)]),
 
@@ -167,6 +166,8 @@ CommonTexture_MotherCountryFlag_FR is TUIResourceTexture_Common(FileName = "Game
 CommonTexture_MotherCountryFlag_POL is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/Flags/Normal/POL_FLAG.png")
 CommonTexture_MotherCountryFlag_RFA is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/Flags/Normal/RFA_FLAG.png")
 CommonTexture_MotherCountryFlag_BEL is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/Flags/Normal/BEL_FLAG.png")
+CommonTexture_MotherCountryFlag_NL is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/Flags/Normal/NL_FLAG.png")
+CommonTexture_MotherCountryFlag_LUX is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/Flags/Normal/LUX_FLAG.png")
 
 CommonTexture_MotherCountryFlag_UK is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/Flags/Normal/UK_FLAG.png")
 CommonTexture_MotherCountryFlag_SOV is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/Flags/Normal/SOV_FLAG.png")
@@ -320,6 +321,3 @@ TextureMapTaille1v1 is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D
 TextureMapTaille2v2 is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseOutGame/mapTaille2v2.png')
 TextureMapTaille3v3 is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseOutGame/mapTaille3v3.png')
 TextureMapTaille4v4 is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseOutGame/mapTaille4v4.png')
-
-// Cursors
-CommonTexture_Cursor_Invalid is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/Cursors/curseur_invalide.png')

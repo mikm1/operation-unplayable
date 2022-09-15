@@ -218,6 +218,73 @@ is BUCKButtonDescriptor
 
 // -------------------------------------------------------------------------------------------------
 
+template WeaponDamageTypeTitle
+[
+    ElementName : string,
+    Token : string,
+    Scale : float,
+] is BUCKListDescriptor
+(
+    ElementName = <ElementName>
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+    )
+    Axis = ~/ListAxis/Vertical
+
+    MagnifierMultiplication = <Scale>
+
+    HasBorder = true
+    BorderThicknessToken = "2"
+    BorderLineColorToken = "MarronPanel_noir"
+    BordersToDraw = ~/TBorderSide/Top | ~/TBorderSide/Left | ~/TBorderSide/Right
+
+    FirstMargin = TRTTILength(Magnifiable = 2.0)
+    LastMargin = TRTTILength(Magnifiable = 2.0)
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKTextDescriptor
+            (
+                ElementName = <ElementName> + 'Text'
+
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 0.0]
+                    MagnifiableWidthHeight = [0.0, 15.0]
+                )
+
+                ParagraphStyle = TParagraphStyleRTTI
+                (
+                    Alignment = UIText_Left
+                    VerticalAlignment = UIText_VerticalCenter
+                    InterLine = 0
+                )
+
+                TextStyle = "Default"
+
+                VerticalFitStyle = ~/FitStyle/UserDefined
+                HorizontalFitStyle = ~/FitStyle/MinBetweenUserDefinedAndContent
+
+                TypefaceToken = "Liberator"
+                BigLineAction = ~/BigLineAction/ResizeFont
+
+                TextDico = ~/LocalisationConstantes/dico_interface_ingame
+                TextToken = <Token>
+
+                TextColor = "MarronPanel_noir"
+                TextSize = "12"
+
+                TextPadding = TRTTILength4( Magnifiable = [4.0, 0.0, 0.0, 0.0] )
+            )
+        )
+    ]
+)
+
+// -------------------------------------------------------------------------------------------------
+
 template WeaponDamageTypeAttribute
 [
     ElementName : string,
@@ -225,7 +292,7 @@ template WeaponDamageTypeAttribute
     Token : string,
     ValueToken : string,
     HintToken : string = "",
-    MagnifiableWidth : float = 146.70,
+    MagnifiableWidth : float = SingleWeaponColumnWidth,
     AlignementToFather : float2 = [0.5, 0.0],
     AlignementToAnchor : float2 = [0.5, 0.0],
     MagnifiableOffset : float2 =  [0.0, -1.0],
@@ -564,8 +631,7 @@ is BUCKListDescriptor
 // -------------------------------------------------------------------------------------------------
 template BUCKSpecificUnitInfoSingleWeaponPanelMainComponentDescriptor
 [
-    Scale : float,
-    IsFirstElement : bool,
+    Scale : float
 ]
 is BUCKListDescriptor
 (
@@ -573,7 +639,7 @@ is BUCKListDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [147.0, 0.0]
+        MagnifiableWidthHeight = [SingleWeaponColumnWidth, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
@@ -622,13 +688,12 @@ is BUCKListDescriptor
                 HasBorder = true
                 BorderLineColorToken = 'MarronPanel_noir'
                 BorderThicknessToken = '2'
-                BordersToDraw = <IsFirstElement> ? ~/TBorderSide/Left | ~/TBorderSide/Right | ~/TBorderSide/Bottom : ~/TBorderSide/Right | ~/TBorderSide/Bottom
             )
         ),
         //  affiche les traits de l'arme
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = WeaponTraitList(IsFirstElement = <IsFirstElement>)
+            ComponentDescriptor = WeaponTraitList
         ),
         // affichage icone armes, nom armes et munitions
         BUCKListElementDescriptor
@@ -637,7 +702,7 @@ is BUCKListDescriptor
             (
                 Scale = <Scale>
                 IsSelection = false
-                BordersToDraw = <IsFirstElement> ? ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right : ~/TBorderSide/Bottom | ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right
             )
         ),
 
@@ -665,10 +730,7 @@ is BUCKListDescriptor
 
 //-------------------------------------------------------------------------------------
 
-template WeaponTraitList
-[
-    IsFirstElement : bool,
-] is BUCKRackDescriptor
+WeaponTraitList is BUCKRackDescriptor
 (
     ElementName = "WeaponTraitsList"
 
@@ -679,7 +741,7 @@ template WeaponTraitList
 
     Axis = ~/ListAxis/Horizontal
 
-    HasBorder = <IsFirstElement>
+    HasBorder = true
     BorderLineColorToken = 'MarronPanel_noir'
     BorderThicknessToken = '2'
     BordersToDraw = ~/TBorderSide/Left
@@ -691,7 +753,7 @@ template WeaponTraitList
         ComponentFrame = TUIFramePropertyRTTI
         (
             RelativeWidthHeight = [0.0, 1.0]
-            MagnifiableWidthHeight = [49.0, 0.0]
+            MagnifiableWidthHeight = [SingleWeaponColumnWidth div 3.0, 0.0]
         )
 
         Components =
@@ -745,7 +807,7 @@ template WeaponTraitList
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [0.0, 1.0]
-                            MagnifiableWidthHeight = [49.0, 0.0]
+                            MagnifiableWidthHeight = [SingleWeaponColumnWidth div 3.0, 0.0]
                         )
 
                         HasBorder = true
@@ -761,7 +823,7 @@ template WeaponTraitList
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [0.0, 1.0]
-                            MagnifiableWidthHeight = [49.0, 0.0]
+                            MagnifiableWidthHeight = [SingleWeaponColumnWidth div 3.0, 0.0]
                         )
 
                         HasBorder = true
@@ -777,7 +839,7 @@ template WeaponTraitList
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [0.0, 1.0]
-                            MagnifiableWidthHeight = [49.0, 0.0]
+                            MagnifiableWidthHeight = [SingleWeaponColumnWidth div 3.0, 0.0]
                         )
                         HasBorder = true
                         BorderLineColorToken = 'MarronPanel_noir'
@@ -797,24 +859,37 @@ WeaponDamageTypeAttributeDummy is BUCKContainerDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 0.0]
-        MagnifiableWidthHeight = [0.0, 15.0]
+        MagnifiableWidthHeight = [0.0, 2.0]
     )
+
+    HasBackground = true
+    BackgroundBlockColorToken = "MarronPanel_fonce"
 )
 
 // -------------------------------------------------------------------------------------------------
 
 template UISpecificUnitInfoSingleWeaponPanelViewDescriptor
 [
-    Scale : float = 1.0,
-    IsFirstElement : bool,
+    Scale : float = 1.0
 ]
 is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
 (
-    MainComponentDescriptor = BUCKSpecificUnitInfoSingleWeaponPanelMainComponentDescriptor( Scale = <Scale> IsFirstElement = <IsFirstElement>)
+    MainComponentDescriptor = BUCKSpecificUnitInfoSingleWeaponPanelMainComponentDescriptor( Scale = <Scale>)
     AttributeDescriptorsPool = MAP
     [
+        // ------------------------------------------------
+        // Weapon Damage
+        // ------------------------------------------------
+        ("WeaponDamageTitle",
+            WeaponDamageTypeTitle
+            (
+                ElementName = "WeaponDmg"
+                Token = "pi_des"
+                Scale = <Scale>
+            )
+        ),
         // Weapon Penetration
-        (   "WeaponAP",
+        ("WeaponAP",
             WeaponDamageTypeAttribute
             (
                 ElementName = "WeaponAP" Token = "pi_des" ValueToken = "UIPW_MILLI" HintToken = "HIP_WAPV"
@@ -824,9 +899,7 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
                 MagnifiableOffset = [0.0, -15.0]
                 HasBorder = true
                 Padding = 0
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Top  | ~/TBorderSide/Left | ~/TBorderSide/Right
-                     : ~/TBorderSide/Top | ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Left | ~/TBorderSide/Right
                 Scale = <Scale>
                 FirstMargin = 18
                 LastMargin = 5
@@ -835,76 +908,13 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
                 TokenSousGroupe = 'UIPT_AP'
             )
         ),
-        // Weapon Range
-        ("WeaponRange",
-            WeaponDamageTypeAttribute
-            (
-                ElementName = "WeaponRange" Token = "pi_rng" ValueToken = "UIPW_METER" HintToken = "HIP_WRANG"
-                Magnifiable_barre = 70
-                HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Top |  ~/TBorderSide/Left | ~/TBorderSide/Right
-                     : ~/TBorderSide/Top |  ~/TBorderSide/Right
-                TextSize = '16'
-                MagnifiableOffset = [0.0, -3.0]
-                Scale = <Scale>
-                FirstMargin = 4
-                LastMargin = 5
-                HasSousGroupeText = true
-                TokenSousGroupe = 'UIPT_RANGE'
-            )
-        ),
-        // Weapon Range TBA
-        ("WeaponMaxRangeTBA",
-            WeaponDamageTypeAttribute
-            (
-                ElementName = "WeaponMaxRangeTBA" Token = "UIPT_RANGT" ValueToken = "UIPW_METER" HintToken = "HIP_WRANT"
-                Magnifiable_barre = 70
-                HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                     ~/TBorderSide/Left | ~/TBorderSide/Right
-                     :  ~/TBorderSide/Right
-                TextSize = '16'
-                MagnifiableOffset = [0.0, -3.0]
-                Scale = <Scale>
-                FirstMargin = 0
-                LastMargin = 5
-                HasSousGroupeText = true
-                IsSousGroupe = true
-                TokenSousGroupe = 'UIPT_RANGT'
-
-            )
-        ),
-        // Weapon Range HA
-        ("WeaponMaxRangeHA",
-            WeaponDamageTypeAttribute
-            (
-                ElementName = "WeaponMaxRangeHA" Token = "UIPT_RANGH" ValueToken = "UIPW_METER" HintToken = "HIP_WRANH"
-                Magnifiable_barre = 70
-                HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right
-                     : ~/TBorderSide/Bottom| ~/TBorderSide/Right
-                TextSize = '16'
-                MagnifiableOffset = [0.0, -3.0]
-                Scale = <Scale>
-                FirstMargin = 0
-                LastMargin = 5
-                HasSousGroupeText = true
-                IsSousGroupe = true
-                TokenSousGroupe = 'UIPT_RANGH'
-            )
-        ),
-        //-------------------------------------------------------------------------------------
         // Weapon Damage
         ("WeaponDamage",
             WeaponDamageTypeAttribute
             (
                 ElementName = "WeaponDamage" Token = "TC_HE" ValueToken = "UIP_VAL" HintToken = "HIP_WDMG"
                 HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                     ~/TBorderSide/Left | ~/TBorderSide/Right
-                     :  ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Left | ~/TBorderSide/Right
                 TextSize = '16'
                 MagnifiableOffset = [0.0, -4.0]
                 Scale = <Scale>
@@ -922,9 +932,7 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
             (
                 ElementName = "WeaponSuppress" Token = "UIPT_SUPPR" ValueToken = "UIP_VAL" HintToken = "HIP_WSUPP"
                 HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right
-                     : ~/TBorderSide/Bottom| ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right
                 TextSize = '16'
                 MagnifiableOffset = [0.0, -4.0]
                 Scale = <Scale>
@@ -935,51 +943,132 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
                 TokenSousGroupe = 'UIPT_SUPPR'
             )
         ),
-        //-------------------------------------------------------------------------------------
+        // ------------------------------------------------
+        // Weapon Range
+        // ------------------------------------------------
+        ("WeaponRangeTitle",
+            WeaponDamageTypeTitle
+            (
+                ElementName = "WeaponRng"
+                Token = "pi_rng"
+                Scale = <Scale>
+            )
+        ),
+        // Weapon ground target Range
+        ("WeaponRange",
+            WeaponDamageTypeAttribute
+            (
+                ElementName = "WeaponRange" Token = "pi_rng" ValueToken = "UIPW_METER" HintToken = "HIP_WRANG"
+                Magnifiable_barre = 70
+                HasBorder = true
+                BordersToDraw =  ~/TBorderSide/Left | ~/TBorderSide/Right
+                TextSize = '16'
+                MagnifiableOffset = [0.0, -3.0]
+                Scale = <Scale>
+                FirstMargin = 4
+                LastMargin = 5
+                HasSousGroupeText = true
+                IsSousGroupe = true
+                TokenSousGroupe = 'UIPT_RANGE'
+            )
+        ),
+        // Weapon heli target Range
+        ("WeaponMaxRangeTBA",
+            WeaponDamageTypeAttribute
+            (
+                ElementName = "WeaponMaxRangeTBA" Token = "UIPT_RANGT" ValueToken = "UIPW_METER" HintToken = "HIP_WRANT"
+                Magnifiable_barre = 70
+                HasBorder = true
+                BordersToDraw = ~/TBorderSide/Left | ~/TBorderSide/Right
+                TextSize = '16'
+                MagnifiableOffset = [0.0, -3.0]
+                Scale = <Scale>
+                FirstMargin = 0
+                LastMargin = 5
+                HasSousGroupeText = true
+                IsSousGroupe = true
+                TokenSousGroupe = 'UIPT_RANGT'
+            )
+        ),
+        // Weapon aircraft target Range
+        ("WeaponMaxRangeHA",
+            WeaponDamageTypeAttribute
+            (
+                ElementName = "WeaponMaxRangeHA" Token = "UIPT_RANGH" ValueToken = "UIPW_METER" HintToken = "HIP_WRANH"
+                Magnifiable_barre = 70
+                HasBorder = true
+                BordersToDraw = ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right
+                TextSize = '16'
+                MagnifiableOffset = [0.0, -3.0]
+                Scale = <Scale>
+                FirstMargin = 0
+                LastMargin = 5
+                HasSousGroupeText = true
+                IsSousGroupe = true
+                TokenSousGroupe = 'UIPT_RANGH'
+            )
+        ),
+        // ------------------------------------------------
         // Weapon Accuracy
+        // ------------------------------------------------
+        ("WeaponPrecisionTitle",
+            WeaponDamageTypeTitle
+            (
+                ElementName = "WeaponPrec"
+                Token = "UIPT_PREC"
+                Scale = <Scale>
+            )
+        ),
+        // Weapon Static Accuracy
         ("WeaponAccuracy",
             WeaponDamageTypeAttribute
             (
                 ElementName = "WeaponAccuracy" Token = "UIPT_PREC" ValueToken = "UIPW_PCT" HintToken = "HIP_WPREC"
                 FullGaugeIfNoMax = true
                 HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Top |  ~/TBorderSide/Left | ~/TBorderSide/Right
-                     : ~/TBorderSide/Top | ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Left | ~/TBorderSide/Right
                 TextSize = '16'
                 MagnifiableOffset = [0.0, -4.0]
                 Scale = <Scale>
                 FirstMargin = 4
                 LastMargin = 5
                 HasSousGroupeText = true
+                IsSousGroupe = true
                 TokenSousGroupe = 'FBXRVZBVFG'
             )
         ),
+        // Weapon Movement Accuracy
         ("WeaponAccuracyMovement",
             WeaponDamageTypeAttribute
             (
-                ElementName = "WeaponAccuracyMovement" Token = "UIPT_ACCMV" ValueToken = "UIPW_PCT" HintToken = "HIP_ACCMV" FullGaugeIfNoMax = true Scale = <Scale>
-
+                ElementName = "WeaponAccuracyMovement" Token = "UIPT_ACCMV" ValueToken = "UIPW_PCT" HintToken = "HIP_ACCMV" FullGaugeIfNoMax = true
+                Scale = <Scale>
                 HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right
-                     : ~/TBorderSide/Bottom| ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right
                 FirstMargin = 0
                 LastMargin = 5
                 HasSousGroupeText = true
                 IsSousGroupe = true
             )
         ),
-        //-------------------------------------------------------------------------------------
+        // ------------------------------------------------
+        // Weapon Shooting attributes
+        // ------------------------------------------------
+        ("WeaponAttributesTitle",
+            WeaponDamageTypeTitle
+            (
+                ElementName = "WeaponAttr"
+                Token = "pi_vi"
+                Scale = <Scale>
+            )
+        ),
         // Weapon Rate of fire
         ("WeaponRateOfFire",
             WeaponDamageTypeAttribute
             (
                 ElementName = "WeaponRateOfFire" Token = "pi_vi" ValueToken = "UIPW_RPM" HintToken = "HIP_WROF"
                 HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Top |  ~/TBorderSide/Left | ~/TBorderSide/Right
-                     : ~/TBorderSide/Top | ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Left | ~/TBorderSide/Right
                 TextSize = '16'
                 MagnifiableOffset = [0.0, -4.0]
                 Scale = <Scale>
@@ -987,17 +1076,16 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
                 LastMargin = 5
                 TokenSousGroupe = 'UIPT_ROF'
                 HasSousGroupeText = true
-                //IsSousGroupe = true
+                IsSousGroupe = true
             )
         ),
+        // Weapon Aiming time
         ("WeaponAimingTime",
             WeaponDamageTypeAttribute
             (
                 ElementName = "WeaponAimingTime" Token = "UIPT_AT" ValueToken = "UIP_S" HintToken = "HIP_AT"
                 HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Left | ~/TBorderSide/Right
-                     :  ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Left | ~/TBorderSide/Right
                 TextSize = '16'
                 MagnifiableOffset = [0.0, -4.0]
                 Scale = <Scale>
@@ -1008,14 +1096,13 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
                 IsSousGroupe = true
             )
         ),
+        // Weapon Reload time
         ("WeaponReloadTime",
             WeaponDamageTypeAttribute
             (
                 ElementName = "WeaponReloadTime" Token = "UIPT_RLDT" ValueToken = "UIP_S" HintToken = "HIP_WRLDT"
                 HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                     ~/TBorderSide/Left | ~/TBorderSide/Right
-                     :  ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Left | ~/TBorderSide/Right
                 TextSize = '16'
                 MagnifiableOffset = [0.0, -4.0]
                 Scale = <Scale>
@@ -1026,43 +1113,13 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
                 IsSousGroupe = true
             )
         ),
-        // Weapon Area Of Effect
-        ("WeaponAreaOfEffect",     WeaponDamageTypeAttribute(ElementName = "WeaponAreaOfEffect" Token = "UIPT_AOE" ValueToken = "UIP_VAL" HintToken = "HIP_WAOE" Scale = <Scale>)),
-        // Weapon Reload Time
-
-        // Weapon Traverse Speed
-        ("WeaponTraverseSpeed",    WeaponDamageTypeAttribute(ElementName = "WeaponTraverseSpeed" Token = "UIPA_TRSPD" ValueToken = "UIP_DPS" HintToken = "HIP_WTRSP" Scale = <Scale>)),
-        // Weapon Aiming Time
-
-        // Weapon Time between Two Shots
-        ("WeaponTimeBetweenTwoShots",
-            WeaponDamageTypeAttribute
-            (
-                ElementName = "WeaponTimeBetweenTwoShots" Token = "UIPT_TBTS" ValueToken = "UIP_S" HintToken = "HIP_TBTS"
-                HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Left | ~/TBorderSide/Right
-                     :  ~/TBorderSide/Right
-                BackgroundBlockColorToken = 'Transparent'
-                TextSize = '16'
-                MagnifiableOffset = [0.0, -4.0]
-                Scale = <Scale>
-                FirstMargin = 0
-                LastMargin = 5
-                HasSousGroupeText = true
-                TokenSousGroupe = 'UIPT_TBTS'
-                IsSousGroupe = true
-            )
-        ),
         // Weapon Nb of shots by salvo
         ("WeaponNbShotsBySalvo",
             WeaponDamageTypeAttribute
             (
                 ElementName = "WeaponNbShotsBySalvo" Token = "UIPT_NSBS" ValueToken = "UIP_VAL" HintToken = "HIP_NSBS"
                 HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right
-                     : ~/TBorderSide/Bottom| ~/TBorderSide/Right
+                BordersToDraw = ~/TBorderSide/Bottom | ~/TBorderSide/Left | ~/TBorderSide/Right
                 BackgroundBlockColorToken = 'Transparent'
                 TextSize = '16'
                 MagnifiableOffset = [0.0, -4.0]
@@ -1074,22 +1131,61 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
                 IsSousGroupe = true
             )
         ),
+        // ------------------------------------------------
+        // Weapon Supply cost
+        // ------------------------------------------------
+        ("WeaponSupplyCostTitle",
+            WeaponDamageTypeTitle
+            (
+                ElementName = "WeaponSuppCost"
+                Token = "UIPT_SC"
+                Scale = <Scale>
+            )
+        ),
         // Weapon Supply Cost
         ("WeaponSupplyCost",
             WeaponDamageTypeAttribute
             (
                 ElementName = "WeaponSupplyCost" Token = "UIPT_SC" ValueToken = "UIP_VAL" HintToken = "HIP_SC"
                 HasBorder = true
-                BordersToDraw = <IsFirstElement> ?
-                    ~/TBorderSide/Top  | ~/TBorderSide/Left | ~/TBorderSide/Right |~/TBorderSide/Bottom
-                     : ~/TBorderSide/Top | ~/TBorderSide/Right |~/TBorderSide/Bottom
+                BordersToDraw = ~/TBorderSide/Left | ~/TBorderSide/Right |~/TBorderSide/Bottom
                 TextSize = '16'
                 MagnifiableOffset = [0.0, -4.0]
                 Scale = <Scale>
                 FirstMargin = 2
                 LastMargin = 5
+                IsSousGroupe = true
             )
         ),
+
+        // ------------------------------------------------
+        // UNUSED but who knows
+        // Weapon Area Of Effect
+        ("WeaponAreaOfEffect",     WeaponDamageTypeAttribute(ElementName = "WeaponAreaOfEffect" Token = "UIPT_AOE" ValueToken = "UIP_VAL" HintToken = "HIP_WAOE" Scale = <Scale>)),
+        // Weapon Reload Time
+
+        // Weapon Traverse Speed
+        ("WeaponTraverseSpeed",    WeaponDamageTypeAttribute(ElementName = "WeaponTraverseSpeed" Token = "UIPA_TRSPD" ValueToken = "UIP_DPS" HintToken = "HIP_WTRSP" Scale = <Scale>)),
+
+        // Weapon Time between Two Shots
+        ("WeaponTimeBetweenTwoShots",
+            WeaponDamageTypeAttribute
+            (
+                ElementName = "WeaponTimeBetweenTwoShots" Token = "UIPT_TBTS" ValueToken = "UIP_S" HintToken = "HIP_TBTS"
+                HasBorder = true
+                BordersToDraw = ~/TBorderSide/Left | ~/TBorderSide/Right
+                BackgroundBlockColorToken = 'Transparent'
+                TextSize = '16'
+                MagnifiableOffset = [0.0, -4.0]
+                Scale = <Scale>
+                FirstMargin = 0
+                LastMargin = 5
+                HasSousGroupeText = true
+                TokenSousGroupe = 'UIPT_TBTS'
+                IsSousGroupe = true
+            )
+        ),
+        // ------------------------------------------------
 
     ]
 
@@ -1138,21 +1234,26 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
 listeAffichage is
 [
     "",
+    "WeaponDamageTitle",
     "WeaponAP",
-    "WeaponDamage","WeaponSuppress",
+    "WeaponDamage",
+    "WeaponSuppress",
     "",
-    "WeaponRange","WeaponMaxRangeTBA", "WeaponMaxRangeHA",
+    "WeaponRangeTitle",
+    "WeaponRange",
+    "WeaponMaxRangeTBA",
+    "WeaponMaxRangeHA",
     "",
-    //"WeaponDamage","WeaponSuppress",
+    "WeaponPrecisionTitle",
     "WeaponAccuracy",
     "WeaponAccuracyMovement",
     "",
+    "WeaponAttributesTitle",
     "WeaponRateOfFire",
     "WeaponAimingTime",
     "WeaponReloadTime",
     "WeaponNbShotsBySalvo",
-    //"WeaponTimeBetweenTwoShots",
-
     "",
+    "WeaponSupplyCostTitle",
     "WeaponSupplyCost",
 ]

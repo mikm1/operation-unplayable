@@ -88,15 +88,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
             )
         ),
         (
-            ~/ETerrainType/ForetLegere, // foretRoute
-            THintContentHolder
-            (
-                BodyToken = "smTer_f"
-                ExtendedToken = "smTer_feR"
-            )
-        ),
-        (
-            ~/ETerrainType/ForetDense, // foret
+            ~/ETerrainType/StrategicForest,
             THintContentHolder
             (
                 BodyToken = "smTer_f"
@@ -105,7 +97,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
         ),
 
         (
-            ~/ETerrainType/Batiment, // semi urbain
+            ~/ETerrainType/StrategicSemiUrban,
             THintContentHolder
             (
                 BodyToken = "smTer_s"
@@ -113,27 +105,11 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
             )
         ),
         (
-            ~/ETerrainType/PetitBatiment, // semi urbain R
-            THintContentHolder
-            (
-                BodyToken = "smTer_s"
-                ExtendedToken = "smTer_seR"
-            )
-        ),
-        (
-            ~/ETerrainType/StrategicRalentisseur, // plaine
+            ~/ETerrainType/StrategicPlain,
             THintContentHolder
             (
                 BodyToken = "smTer_p"
                 ExtendedToken = "smTer_pe"
-            )
-        ),
-        (
-            ~/ETerrainType/StrategicAccelerateur, // plaineR
-            THintContentHolder
-            (
-                BodyToken = "smTer_p"
-                ExtendedToken = "smTer_peR"
             )
         ),
 
@@ -301,20 +277,20 @@ MouseWidget_StrategicOrderNeutralLand is Template_HardwareMouseWidgetResource_Wi
                             TextSize = "18"
                         )
                     ),
-                    BUCKListElementDescriptor
-                    (
-                        ComponentDescriptor = BUCKTextureDescriptor
-                        (
-                            ComponentFrame = TUIFramePropertyRTTI
-                            (
-                                MagnifiableWidthHeight = [0.0, 10.0]
-                                RelativeWidthHeight = [1.0, 0.0]
-                            )
+                    {BUCKListElementDescriptor
+                                        (
+                                            ComponentDescriptor = BUCKTextureDescriptor
+                                            (
+                                                ComponentFrame = TUIFramePropertyRTTI
+                                                (
+                                                    MagnifiableWidthHeight = [0.0, 10.0]
+                                                    RelativeWidthHeight = [1.0, 0.0]
+                                                )
 
-                            TextureToken = "UseStrategic_MapScaleIcon"
-                            TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
-                        )
-                    ),
+                                                TextureToken = "UseStrategic_MapScaleIcon"
+                                                TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
+                                            )
+                                        ),}
                     BUCKListElementDescriptor
                     (
                         ComponentDescriptor = ~/PAComponentMouseCursor
@@ -397,21 +373,60 @@ private MouseCurseur_InvalidOrder is TMouseCursorAnimation
     )
 )
 
-private MouseWidget_TransferOrder is Template_SoftwareMouseWidgetResource_Targeting
+template Template_HardwareMouseWidgetResource_WithGabarit
+[
+    HardwareMouseCursorAnimation = ~/MouseCursorAnimationDefault,
+    RelativeTextPlacement = [0.5, 1.5],
+    TextSize = "MouseWidget/TextModuleBig"
+]
+is TUIMouseWidgetResource
 (
-    SoftwareCursorTextureName       = "UseStrategic_Cursor_Transfert"
+    ModuleResourceList =
+    MAP
+    [
+        (
+            "CursorSetter",
+            TUIMouseWidgetSimpleCursorSetterModuleResource
+            (
+                HardwareMouseCursorAnimation = <HardwareMouseCursorAnimation>
+            )
+        ),
+        (
+            "GabaritModule",
+            TUIMouseWidgetGabaritModuleResource()
+        ),
+    ]
+
+    UILayer = $/UserInterface/UILayer_2DInterface_InGame
+
+    ViewDescriptors = MAP
+    [
+        (
+            "TextView",
+            UIMouseWidgetTextViewDescriptor
+            (
+                RelativeTextPlacement = <RelativeTextPlacement>
+                TextSize = <TextSize>
+            )
+        ),
+    ]
 )
-private MouseWidget_DefaultOrder is Template_SoftwareMouseWidgetResource_Targeting
+
+private MouseWidget_TransferOrder is Template_HardwareMouseWidgetResource_WithGabarit
 (
-    SoftwareCursorTextureName       = "UseStrategic_Cursor_Deny"
+    HardwareMouseCursorAnimation    = ~/MouseCurseur_TransferOrder
 )
-private MouseWidget_RecoOrder is Template_SoftwareMouseWidgetResource_Targeting
+private MouseWidget_DefaultOrder is Template_HardwareMouseWidgetResource_WithGabarit
 (
-    SoftwareCursorTextureName       = "UseStrategic_Cursor_Reco"
+    HardwareMouseCursorAnimation    = ~/MouseCurseur_DefaultOrder
 )
-private MouseWidget_InvalidOrder is Template_SoftwareMouseWidgetResource_Targeting
+private MouseWidget_RecoOrder is Template_HardwareMouseWidgetResource_WithGabarit
 (
-    SoftwareCursorTextureName       = "CommonTexture_Cursor_Invalid"
+    HardwareMouseCursorAnimation    = ~/MouseCurseur_RecoOrder
+)
+private MouseWidget_InvalidOrder is Template_HardwareMouseWidgetResource_WithGabarit
+(
+    HardwareMouseCursorAnimation    = ~/MouseCurseur_InvalidOrder
 )
 
 StrategicMouseWidgetSelector_Default is TUIStrategicMouseWidgetSelectorDefault

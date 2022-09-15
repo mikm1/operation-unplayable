@@ -22,17 +22,6 @@ export StandardSupply is TSupplyDescriptor
     // Cout du ravitaillement d'essence par seconde
     FuelSupplyCostBySecond =  0.00001
 
-    // Types de mouvement dont la vie est suppliable. Liste des valeurs dans UnitMovingType.ndf
-    HealthSuppliableMovingTypes = [
-        {EUnitMovingType/Track,
-        EUnitMovingType/TrackAmphibious,
-        EUnitMovingType/AllTerrainWheelAmphibious,
-        EUnitMovingType/HalfTrack,
-        EUnitMovingType/AllTerrainWheel,
-        EUnitMovingType/Wheel,
-        EUnitMovingType/Flying,
-        EUnitMovingType/Infantry,}
-    ]
     // Point de vie ravitaillés par seconde
     HealthSupplyBySecond = 0.00001
     // Cout du ravitaillement de point de vie par seconde
@@ -48,15 +37,6 @@ export StandardSupply is TSupplyDescriptor
     // Cout du ravitaillement de munition par seconde
     AmmunitionSupplyCostBySecond = 10
 
-    // Types de mouvement dont les critiques sont réparables. Liste des valeurs dans UnitMovingType.ndf
-    CriticsSuppliableMovingTypes = [
-        EUnitMovingType/Track,
-        EUnitMovingType/TrackAmphibious,
-        EUnitMovingType/AllTerrainWheelAmphibious,
-        EUnitMovingType/HalfTrack,
-        EUnitMovingType/AllTerrainWheel,
-        EUnitMovingType/Wheel,
-    ]
     // Points de "critique" réparés par seconde
     CriticsSupplyBySecond = 10
     // Coût de la réparation de "critique" par seconde

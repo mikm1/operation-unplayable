@@ -75,7 +75,7 @@ is BUCKTextDescriptor
         InterLine = 0
     )
 
-    HasBackground = <IsForMultiSelection> ? false : true
+    HasBackground = <IsForMultiSelection> ? true : true
     TextPadding = <IsForMultiSelection> ? TRTTILength4(Magnifiable = [3.0, 0.0, 3.0, 0.0]) : TRTTILength4(Magnifiable = [3.0, 1.0, 3.0, 1.0])
 
     HorizontalFitStyle = ~/FitStyle/FitToContent
@@ -89,13 +89,13 @@ is BUCKTextDescriptor
     TextStyle = "Default"
     TypefaceToken = "UISecondFont"
     TextColor = "Blanc"
-    TextSize = (<IsForMultiSelection> ? "19" : "14")
+    TextSize = (<IsForCarriedUnit> ? "10" :  "14")
 )
 
 //----------------------------------------------------------------------
 // Icône d'unité
 
-LabelUnitIconWidthHeight is [46.0, 46.0]
+LabelUnitIconWidthHeight is [36.0, 36.0]
 
 template UnitLabelUnitIcon
 [
@@ -170,8 +170,8 @@ is BUCKTextureDescriptor
 template UnitLabelBackground
 [
     LocalRenderLayer : int,
-    MagnifiableWidthHeight : float2 = [47.0, 47.0],
-    FrameMagnifiableWidthHeight : float2 = [62.0, 62.0],
+    MagnifiableWidthHeight : float2 = [40.0, 40.0],
+    FrameMagnifiableWidthHeight : float2 = [40.0, 40.0],
 ]
 is BUCKSensibleAreaDescriptor
 (
@@ -193,7 +193,6 @@ is BUCKSensibleAreaDescriptor
             )
 
             UseLocalRenderLayer = true
-            HasBackground = false
             BackgroundLocalRenderLayer = <LocalRenderLayer> - 1
             LocalRenderLayer = <LocalRenderLayer>
             HasBorder = false
@@ -513,10 +512,10 @@ is BUCKTextureDescriptor
     ElementName = 'CoverIcon'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [58.0, 58.0]
-        MagnifiableOffset = (<IsForMultiSelection> ? [25.0, 0.0] : [-6.0, 0.0])
-        AlignementToFather = [0.0, 0.5]
-        AlignementToAnchor = [0.0, 0.5]
+        MagnifiableWidthHeight = [40.0, 40.0]
+        MagnifiableOffset = (<IsForMultiSelection> ? [25.0, 0.0] : [0.0, 0.0])
+        AlignementToFather = [0.5, 0.5]
+        AlignementToAnchor = [0.5, 0.5]
     )
 
     UseLocalRenderLayer = true
@@ -594,7 +593,7 @@ is BUCKContainerDescriptor
 // Icône de rechargement
 template UnitLabelUnitReloadIconBUCKComponent
 [
-    MagnifiableOffset : float2 = [-70.0, 0.0]
+    MagnifiableOffset : float2 = [0.0, 0.0]
 ]
 is BUCKChronoAnimatedTextureDescriptor
 (
@@ -603,8 +602,8 @@ is BUCKChronoAnimatedTextureDescriptor
     (
         MagnifiableWidthHeight = [22.0, 22.0]
         MagnifiableOffset = <MagnifiableOffset>
-        AlignementToFather = [0.0, 0.0]
-        AlignementToAnchor = [0.0, 0.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
     )
 
     ChronoDrawer = $/UserInterface/ChronoDrawerCommon
@@ -802,8 +801,8 @@ template OverlayIconWithChrono
 template UnitLabelUnitMoraleGaugeBUCKComponent
 [
     ElementName = "MoraleGauge",
-    AlignementToFather : float2 = [0.0, 0.0],
-    AlignementToAnchor : float2 = [0.0, 0.0],
+    AlignementToFather : float2 = [0.5, 0.0],
+    AlignementToAnchor : float2 = [0.5, 0.0],
     LocalRenderLayer : int = 0,
 ]
 is TBUCKSpecificLabelGaugeDescriptor
@@ -811,7 +810,7 @@ is TBUCKSpecificLabelGaugeDescriptor
     ElementName = <ElementName>
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [42.0, 8.0]
+        MagnifiableWidthHeight = [35.0, 8.0]
         AlignementToFather = <AlignementToFather>
         AlignementToAnchor = <AlignementToAnchor>
     )
@@ -821,7 +820,7 @@ is TBUCKSpecificLabelGaugeDescriptor
 
     BackgroundColorToken = "Noir"
     GaugeColorToken = "Blanc"
-    GaugeFillerSize = [38.0, 6.0]
+    GaugeFillerSize = [33.0, 6.0]
 
     TextureDrawer = 'ColorMultiply'
 
@@ -867,7 +866,7 @@ is BUCKTextDescriptor
     TextStyle = "LabelUnitNameStroke"
     TypefaceToken = "UISecondFont"
     TextColor = "Blanc"
-    TextSize = "14"
+    TextSize = ( <IsForCarriedUnit> ? "10" : "14")
 )
 
 //----------------------------------------------------------------------
@@ -885,13 +884,16 @@ is BUCKTextureDescriptor
         MagnifiableWidthHeight = <MagnifiableWidthHeight>
         AlignementToFather = [1.0, 0.0]
         AlignementToAnchor = [1.0, 0.0]
-        MagnifiableOffset = [-2.0, 2.0]
+        //MagnifiableOffset = [-2.0, 2.0]
     )
 
     TextureFrame   = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
     )
+
+    HasBackground = true
+    BackgroundBlockColorToken = 'label_fond_experience'
 
     UseLocalRenderLayer = true
     LocalRenderLayer = <LocalRenderLayer>
@@ -921,91 +923,6 @@ is BUCKTextureDescriptor
 
     TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
     TextureToken = "UseInGame_EfficientShot"
-)
-
-//----------------------------------------------------------------------
-// Icône de surrender
-SurrenderIcon is BUCKTextureDescriptor
-(
-    ElementName = 'SurrenderIcon'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [64.0, 32.0]
-        MagnifiableOffset = [0.0, -31.0]
-        AlignementToFather = [0.0, 1.0]
-        AlignementToAnchor = [0.0, 1.0]
-    )
-
-    UseLocalRenderLayer = true
-    LocalRenderLayer = 5
-
-    TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
-    TextureToken = "UseInGame_Surrend"
-)
-
-//----------------------------------------------------------------------
-// Animation de surrender
-SurrenderAnimation is BUCKTextureAnimationDescriptor
-(
-    ElementName = 'SurrenderAnimation'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [64.0, 32.0]
-        MagnifiableOffset = [0.0, -31.0]
-        AlignementToFather = [0.5, 1.0]
-        AlignementToAnchor = [0.5, 1.0]
-    )
-
-    AnimDuration = 1.0
-    IsCyclic = true
-    TextureList =
-    [
-        "UseInGame_SurrenderAnimation_0",
-        "UseInGame_SurrenderAnimation_1",
-        "UseInGame_SurrenderAnimation_2",
-        "UseInGame_SurrenderAnimation_3",
-        "UseInGame_SurrenderAnimation_4",
-        "UseInGame_SurrenderAnimation_5",
-        "UseInGame_SurrenderAnimation_6",
-        "UseInGame_SurrenderAnimation_7",
-        "UseInGame_SurrenderAnimation_8",
-        "UseInGame_SurrenderAnimation_9",
-        "UseInGame_SurrenderAnimation_10",
-        "UseInGame_SurrenderAnimation_11",
-        "UseInGame_SurrenderAnimation_12",
-        "UseInGame_SurrenderAnimation_13",
-        "UseInGame_SurrenderAnimation_14",
-        "UseInGame_SurrenderAnimation_15",
-        "UseInGame_SurrenderAnimation_16",
-        "UseInGame_SurrenderAnimation_17",
-        "UseInGame_SurrenderAnimation_18",
-        "UseInGame_SurrenderAnimation_19",
-        "UseInGame_SurrenderAnimation_20",
-        "UseInGame_SurrenderAnimation_21",
-        "UseInGame_SurrenderAnimation_22",
-        "UseInGame_SurrenderAnimation_23",
-        "UseInGame_SurrenderAnimation_24",
-        "UseInGame_SurrenderAnimation_25",
-        "UseInGame_SurrenderAnimation_26",
-        "UseInGame_SurrenderAnimation_27",
-        "UseInGame_SurrenderAnimation_28",
-        "UseInGame_SurrenderAnimation_29",
-        "UseInGame_SurrenderAnimation_30",
-        "UseInGame_SurrenderAnimation_31",
-        "UseInGame_SurrenderAnimation_32",
-        "UseInGame_SurrenderAnimation_33",
-        "UseInGame_SurrenderAnimation_34",
-        "UseInGame_SurrenderAnimation_35",
-        "UseInGame_SurrenderAnimation_36",
-        "UseInGame_SurrenderAnimation_37",
-        "UseInGame_SurrenderAnimation_38",
-        "UseInGame_SurrenderAnimation_39",
-        "UseInGame_SurrenderAnimation_40",
-        "UseInGame_SurrenderAnimation_41",
-        "UseInGame_SurrenderAnimation_42",
-        "UseInGame_SurrenderAnimation_43",
-        "UseInGame_SurrenderAnimation_44",
-    ]
 )
 
 //----------------------------------------------------------------------
@@ -1179,8 +1096,11 @@ UnitLabelUnitCriticalMessageBUCKComponent is BUCKContainerDescriptor
 
 private SelectionLabelList is
 [
-    BUCKListElementDescriptor(ComponentDescriptor = UpperLabel(IsForMultiSelection = false)),
 
+    BUCKListElementDescriptor
+    (
+        ComponentDescriptor = UpperLabel(IsForMultiSelection = false)
+    ),
     BUCKListElementDescriptor
     (
         ComponentDescriptor = BUCKContainerDescriptor
@@ -1188,6 +1108,8 @@ private SelectionLabelList is
             ComponentFrame = TUIFramePropertyRTTI
             (
                 MagnifiableWidthHeight = [0.0, 0.0]
+                AlignementToAnchor = [0.5, 0.0]
+                AlignementToFather = [0.5, 0.0]
             )
 
             FitStyle = ~/ContainerFitStyle/FitToContent
@@ -1224,11 +1146,7 @@ private SelectionLabelList is
                             (
                                 LocalRenderLayer = 2
                             )
-                        ),
-                        BUCKListElementDescriptor
-                        (
-                            ComponentDescriptor = RightLabel(IsForMultiSelection = false)
-                        ),
+                        )
                     ]
                 )
             ]
@@ -1248,10 +1166,10 @@ private MultiSelectionLabelList is
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableWidthHeight = [UnitLabelUnitBUCKComponentDescriptorWidth, UnitLabelUnitBUCKComponentDescriptorHeight]
+                MagnifiableWidthHeight = [100, 62]
             )
 
-            IsClippable = false
+            IsClippable = true
             LocalRenderLayer = 1
 
             Components =
@@ -1260,8 +1178,10 @@ private MultiSelectionLabelList is
                 (
                     ElementName = "CenterLabel"
 
-                    Axis = ~/ListAxis/Horizontal
+                    Axis = ~/ListAxis/Vertical
                     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestBetweenFatherAndChildren
+
+                    FirstMargin = TRTTILength (Magnifiable = 2.0)
 
                     ForegroundComponents =
                     [
@@ -1293,8 +1213,9 @@ private MultiSelectionLabelList is
                                     )
 
                                     LocalRenderLayer = 2
-                                    BackgroundBlockColorToken = 'LightGrayBlue'
-                                    BorderLineColorToken = 'H2_bleu_2_40p'
+                                    Radius = 3
+                                    BackgroundBlockColorToken = 'BoutonTemps'
+                                    BorderLineColorToken = 'BoutonTemps'
                                 ),
                             ]
                         )
@@ -1302,10 +1223,7 @@ private MultiSelectionLabelList is
 
                     Elements =
                     [
-                        BUCKListElementDescriptor
-                        (
-                            ComponentDescriptor = RightLabel(IsForMultiSelection = true)
-                        ),
+
                         BUCKListElementDescriptor
                         (
                             ExtendWeight = 1.0
@@ -1317,7 +1235,7 @@ private MultiSelectionLabelList is
         )
     ),
 
-    BUCKListElementDescriptor(ComponentDescriptor = LowerLabel(IsForMultiSelection = true)),
+    //BUCKListElementDescriptor(ComponentDescriptor = LowerLabel(IsForMultiSelection = true)),
 ]
 
 //----------------------------------------------------------------------
@@ -1333,13 +1251,16 @@ private template UnitLabelUnitBUCKComponentDescriptor
     ElementName = "LocalLayerContainer"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableOffset  = (<IsForMultiSelection> ? [0.0, 0.0] : [-25.0, 25.0])
-        AlignementToFather = [0.0, 1.0]
-        AlignementToAnchor = [0.0, 1.0]
+        MagnifiableOffset  = (<IsForMultiSelection> ? [0.0, 0.0] : [0.0, 20.0])
+        AlignementToFather = [0.5, 1.0]
+        AlignementToAnchor = [0.5, 1.0]
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContent
     NbLayersToLock = 6
+
+    HasBackground = false
+    BackgroundBlockColorToken = 'Orange'
 
     Components =
     [
@@ -1351,8 +1272,6 @@ private template UnitLabelUnitBUCKComponentDescriptor
             ForegroundComponents =
             [
                 UnitLabelSmartHoldFireIcon(LocalRenderLayer = 4),
-                ~/SurrenderIcon,
-                ~/SurrenderAnimation,
             ]
 
             Elements = (<IsForMultiSelection> ? ~/MultiSelectionLabelList : ~/SelectionLabelList)
@@ -1365,17 +1284,20 @@ private template UnitLabelUnitBUCKComponentDescriptor
 private template RightLabel
 [
     IsForMultiSelection : bool = false,
+    MagnifiableOffset : float2 = [35,17.5],
 ] is BUCKListDescriptor
 (
     ElementName = "RightLabel"
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [0.0, 1.0]
+        AlignementToAnchor = [0.5, 0.0]
+        AlignementToFather = [0.5, 0.0]
     )
 
     Axis = ~/ListAxis/Horizontal
     InterItemMargin = TRTTILength(Magnifiable = 2.0)
+    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
     Elements =
     [
@@ -1403,8 +1325,25 @@ private template RightLabel
                 ]
             )
         ),
-       BUCKListElementDescriptor(ComponentDescriptor = ~/UnitLabelUnitSupplyGaugeBUCKComponent),
-       BUCKListElementDescriptor(ComponentDescriptor = ~/SupplyFeedbackIcons)
+
+    ]
+
+    BackgroundComponents =
+    [
+        BUCKContainerDescriptor
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableOffset = <MagnifiableOffset>
+            )
+
+            Components =
+            [
+                ~/UnitLabelUnitSupplyGaugeBUCKComponent,
+                ~/SupplyFeedbackIcons
+            ]
+        )
+
     ]
 )
 
@@ -1544,9 +1483,17 @@ private template UnitNameList
 ] is BUCKListDescriptor
 (
     ElementName = <IsForCarriedUnit> ? "CarriedUnitNameList" : "UnitNameList"
-    ComponentFrame = TUIFramePropertyRTTI(MagnifiableWidthHeight = [0.0, 17.0])
+    ComponentFrame = TUIFramePropertyRTTI
+        (
+            //
+            AlignementToAnchor = [0.5, 0.0]
+            AlignementToFather = [0.5, 0.0]
+        )
 
     Axis = ~/ListAxis/Horizontal
+
+    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+
     InterItemMargin = TRTTILength(Magnifiable = 0.0)
     LocalRenderLayer = <LocalRenderLayer>
 
@@ -1556,7 +1503,7 @@ private template UnitNameList
         (
             ComponentDescriptor = UnitLabelUnitCountIconBUCKComponent
             (
-                Alignement = [0.0, 0.5]
+                //Alignement = [0.0, 0.5]
                 IsForCarriedUnit = <IsForCarriedUnit>
                 LocalRenderLayer = <LocalRenderLayer>
             )
@@ -1565,7 +1512,7 @@ private template UnitNameList
         (
             ComponentDescriptor = UnitLabelUnitNameBUCKComponent
             (
-                Alignement = [0.0, 0.5]
+                //Alignement = [0.0, 0.5]
                 IsForMultiSelection = <IsForMultiSelection>
                 IsForCarriedUnit = <IsForCarriedUnit>
             )
@@ -1590,6 +1537,8 @@ is BUCKSensibleAreaDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
+        AlignementToFather = [0.5, 0.0]
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContent
@@ -1620,6 +1569,8 @@ is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [120.0, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
+        AlignementToFather = [0.5, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
@@ -1641,49 +1592,56 @@ is BUCKListDescriptor
     ElementName = 'UpperLabel'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = (<IsForMultiSelection> ? [1.0, 0.0] : [0.0, 0.0])
-        MagnifiableWidthHeight = (<IsForMultiSelection> ? [-52.0, 0.0] : [60.0, 0.0])
-        AlignementToFather = (<IsForMultiSelection> ? [0.0, 1.0] : [0.0, 0.0])
-        AlignementToAnchor = (<IsForMultiSelection> ? [0.0, 1.0] : [0.0, 0.0])
+        //RelativeWidthHeight = (<IsForMultiSelection> ? [0.0, 0.0] : [0.0, 0.0])
+        MagnifiableWidthHeight = (<IsForMultiSelection> ? [100.0, 0.0] : [250.0, 0.0])
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
+        //MagnifiableOffset =  (<IsForMultiSelection> ? [0.0, 0.0] :[-10, 0.0])
     )
 
     Axis = ~/ListAxis/Vertical
     FirstMargin = TRTTILength (Magnifiable = 0.0)
-    InterItemMargin = TRTTILength( Magnifiable = 1.0)
-    LastMargin = TRTTILength (Magnifiable = 3.0)
+    InterItemMargin = TRTTILength( Magnifiable = 0.0)
+    LastMargin = TRTTILength (Magnifiable = 0.0)
+
+    HasBackground = false
+    BackgroundBlockColorToken = 'Vert'
 
     // Penser a modifier la taille en Pixel du LabelUnitBUCKComponent si on aggrandit ce composant !
     Elements =
     [
         BUCKListElementDescriptor(ComponentDescriptor = ~/UnitLabelUnitEvacIconBUCKComponent),
         BUCKListElementDescriptor(ComponentDescriptor = ~/UnitLabelUnitPlayerNameBUCKComponent),
-        BUCKListElementDescriptor(ComponentDescriptor = UnitLabelUnitReloadIconBUCKComponent(MagnifiableOffset = [11.0, 0.0])),
+        BUCKListElementDescriptor(ComponentDescriptor = UnitLabelUnitReloadIconBUCKComponent()),
+
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = <IsForMultiSelection> ? UnitNameList
+            ComponentDescriptor = BUCKContainerDescriptor
             (
-                IsForMultiSelection = true
-                IsForCarriedUnit = true
-                LocalRenderLayer = 1
-            )
-            : UnitNameListSensibleArea
-            (
-                IsForCarriedUnit = true
-                LocalRenderLayer = 1
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = <IsForMultiSelection> ? UnitNameList
-            (
-                IsForMultiSelection = true
-                IsForCarriedUnit = false
-                LocalRenderLayer = 1
-            )
-            : UnitNameListSensibleArea
-            (
-                IsForCarriedUnit = false
-                LocalRenderLayer = 1
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [100,14]
+                    AlignementToFather = [0.5, 0.0]
+                    AlignementToAnchor = [0.5, 0.0]
+                )
+
+                FitStyle = (<IsForMultiSelection> ? ~/ContainerFitStyle/None : ~/ContainerFitStyle/MaxBetweenUserDefinedAndContent)
+                ClipContent = true
+                Components =
+                [
+
+                    <IsForMultiSelection> ? UnitNameList
+                    (
+                        IsForMultiSelection = true
+                        IsForCarriedUnit = false
+                        LocalRenderLayer = 1
+                    )
+                    : UnitNameListSensibleArea
+                    (
+                        IsForCarriedUnit = false
+                        LocalRenderLayer = 1
+                    )
+                ]
             )
         ),
         BUCKListElementDescriptor
@@ -1691,6 +1649,41 @@ is BUCKListDescriptor
             ComponentDescriptor = UnitLabelUnitMoraleGaugeBUCKComponent
             (
                 ElementName = "MoraleGaugeNameOnly"
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = RightLabel
+            (
+                IsForMultiSelection = true
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKContainerDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    AlignementToFather = [0.5, 0.0]
+                    AlignementToAnchor = [0.5, 0.0]
+                )
+
+                FitStyle = ~/ContainerFitStyle/FitToContent
+
+                Components =
+                [
+                    <IsForMultiSelection> ? UnitNameList
+                    (
+                        IsForMultiSelection = true
+                        IsForCarriedUnit = true
+                        LocalRenderLayer = 1
+                    )
+                    : UnitNameListSensibleArea
+                    (
+                        IsForCarriedUnit = true
+                        LocalRenderLayer = 1
+                    )
+                ]
             )
         ),
     ]
@@ -1712,11 +1705,6 @@ is TUISpecificInGameUnitLabelViewDescriptor
     // Animation Panicked
     // Temps de durée d'un blink
     AnimPanickedBlinkDuration = 1.5
-    // Animation Surrender
-    // Temps de durée du fade
-    AnimSurrenderBlinkDuration = 0.5
-    // Temps de durée de l'animation
-    AnimSurrenderAnimationDuration = 10.0
     // Animation Shaken
     // Temps de pause entre les séries de blink (0 => pas de pause)
     AnimShakenPauseTime = 3.0
@@ -1788,6 +1776,10 @@ is TUISpecificInGameUnitLabelViewDescriptor
         ),
         (
             9,
+            "ORD_AISUPL"
+        ),
+        (
+            10,
             "ORD_INVLS"
         ),
     ]

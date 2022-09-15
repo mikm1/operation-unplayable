@@ -302,6 +302,24 @@ export CubeAction_Order_AIAirplaneAutoManage is Template_CubeActionOrderButtonIn
     Mapping                  = $/KeyboardOption/Mapping_AIAirplaneAutoManage
 )
 
+export CubeAction_Order_AISupply is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
+(
+    CubeActionName           = "CubeAction_Order_AISupply"
+    DebugName                = "InGameCubeAction_AISupply"
+
+    CubeActionFunctionType   = TacticCubeActionFunctionType/SmartOrders
+
+    ButtonTextToken          = 'ORD_AISUP'
+    HintTitleToken           = 'ORD_AISUP'
+    HintBodyToken            = 'HNT_AISUP'
+    HintExtendedToken        = ''
+    HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
+
+    OrderToken               = "AISupply"
+    ActionType               = OrderInstant
+    Mapping                  = $/KeyboardOption/Mapping_AISupply
+)
+
 export CubeAction_Order_AIStop is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
 (
     CubeActionName           = "CubeAction_Order_AIStop"

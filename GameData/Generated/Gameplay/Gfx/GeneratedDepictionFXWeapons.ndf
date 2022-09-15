@@ -138,6 +138,22 @@ FXWeapon_AutoCanon_HE_20mm_M621_GIAT is FiringAndProjectile
     ]
 )
 
+FXWeapon_AutoCanon_HE_20mm_M621_GIAT_AMX30 is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        FXProjectile_2( Action = $/GFX/GameFx/fx_traine_obus_M242_HEIT ),
+    ]
+)
+
+FXWeapon_AutoCanon_HE_20mm_M621_GIAT_Pirate is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        FXProjectile_2( Action = $/GFX/GameFx/fx_traine_obus_M242_HEIT ),
+    ]
+)
+
 FXWeapon_AutoCanon_HE_20mm_MK_20_Rh_202 is FiringAndProjectile
 (
     Happenings = [
@@ -280,15 +296,15 @@ FXWeapon_Bomb_FAB_250kg is TIntroduceMobileHappening( Happening = FXProjectile_3
 
 FXWeapon_Bomb_FAB_250kg_x4 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB250 ) )
 
-FXWeapon_Bomb_FAB_500kg is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB250 ) )
+FXWeapon_Bomb_FAB_500kg is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB500 ) )
 
-FXWeapon_Bomb_FAB_500kg_x2 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB250 ) )
+FXWeapon_Bomb_FAB_500kg_x2 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB500 ) )
 
-FXWeapon_Bomb_FAB_500kg_x4 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB250 ) )
+FXWeapon_Bomb_FAB_500kg_x4 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB500 ) )
 
-FXWeapon_Bomb_FAB_500kg_x6 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB250 ) )
+FXWeapon_Bomb_FAB_500kg_x6 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB500 ) )
 
-FXWeapon_Bomb_FAB_500kg_x8 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB250 ) )
+FXWeapon_Bomb_FAB_500kg_x8 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB500 ) )
 
 FXWeapon_Bomb_GBU_10 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_GBU10 ) )
 
@@ -312,17 +328,17 @@ FXWeapon_Bomb_M117_340kg_x12 is TIntroduceMobileHappening( Happening = FXProject
 
 FXWeapon_Bomb_M117_340kg_x3 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_M117 ) )
 
-FXWeapon_Bomb_Matra_250kg_x10 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk82 ) )
+FXWeapon_Bomb_Matra_250kg_x10 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA250 ) )
 
-FXWeapon_Bomb_Matra_250kg_x5 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk82 ) )
+FXWeapon_Bomb_Matra_250kg_x5 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA250 ) )
 
-FXWeapon_Bomb_Matra_400kg_x16 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
+FXWeapon_Bomb_Matra_400kg_x16 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA400 ) )
 
-FXWeapon_Bomb_Matra_400kg_x4 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
+FXWeapon_Bomb_Matra_400kg_x4 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA400 ) )
 
-FXWeapon_Bomb_Matra_400kg_x6 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
+FXWeapon_Bomb_Matra_400kg_x6 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA400 ) )
 
-FXWeapon_Bomb_Matra_400kg_x8 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
+FXWeapon_Bomb_Matra_400kg_x8 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA400 ) )
 
 FXWeapon_Bomb_Mk18_RET_513kg_x4 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
 
@@ -959,6 +975,27 @@ FXWeapon_Canon_AP_120mm_L44_late is FiringAndProjectile
     ]
 )
 
+FXWeapon_Canon_AP_120mm_L44_late_2A4 is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_01 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_02 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_03 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_04 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_05 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_06 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_07 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_08 ),
+            ]
+        ),
+        FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_105mm_APFDS ),
+    ]
+)
+
 FXWeapon_Canon_AP_120mm_RO_L11A5_very_late is FiringAndProjectile
 (
     Happenings = [
@@ -1121,6 +1158,23 @@ FXWeapon_Canon_AP_125_mm_2A46M_late is FiringAndProjectile
 )
 
 FXWeapon_Canon_AP_125_mm_2A46M_late_NSWP_T72S1 is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_125mm_T80_1 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_125mm_T80_2 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_125mm_T80_3 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_125mm_T80_4 ),
+            ]
+        ),
+        FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_125mm_APFDS ),
+    ]
+)
+
+FXWeapon_Canon_AP_125_mm_2A46M_late_T80UD is FiringAndProjectile
 (
     Happenings = [
         TRandomHappening
@@ -1970,6 +2024,27 @@ FXWeapon_Canon_HE_120mm_L44_late is FiringAndProjectile
     ]
 )
 
+FXWeapon_Canon_HE_120mm_L44_late_2A4 is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_01 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_02 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_03 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_04 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_05 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_06 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_07 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_08 ),
+            ]
+        ),
+        FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_105mm_HE ),
+    ]
+)
+
 FXWeapon_Canon_HE_120mm_RO_L11A5_very_late is FiringAndProjectile
 (
     Happenings = [
@@ -2132,6 +2207,23 @@ FXWeapon_Canon_HE_125_mm_2A46M_late is FiringAndProjectile
 )
 
 FXWeapon_Canon_HE_125_mm_2A46M_late_NSWP_T72S1 is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_125mm_T80_1 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_125mm_T80_2 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_125mm_T80_3 ),
+                FXFiring_4( Action = $/GFX/GameFx/fx_tir_obus_125mm_T80_4 ),
+            ]
+        ),
+        FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_125mm_HE ),
+    ]
+)
+
+FXWeapon_Canon_HE_125_mm_2A46M_late_T80UD is FiringAndProjectile
 (
     Happenings = [
         TRandomHappening
@@ -4888,19 +4980,19 @@ FXWeapon_Mortier_Vasilek_indirect_82mm_towed is FiringAndProjectile
 FXWeapon_PM_AKSU_74 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -4909,19 +5001,40 @@ FXWeapon_PM_AKSU_74 is FiringAndProjectile
 FXWeapon_PM_AS_Val is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+            ]
+        ),
+    ]
+)
+
+FXWeapon_PM_C8_Carbine is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -4930,19 +5043,19 @@ FXWeapon_PM_AS_Val is FiringAndProjectile
 FXWeapon_PM_M4_Carbine is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -4951,19 +5064,19 @@ FXWeapon_PM_M4_Carbine is FiringAndProjectile
 FXWeapon_PM_MAT_49 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -4972,19 +5085,19 @@ FXWeapon_PM_MAT_49 is FiringAndProjectile
 FXWeapon_PM_MP_5A3 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -4993,19 +5106,19 @@ FXWeapon_PM_MP_5A3 is FiringAndProjectile
 FXWeapon_PM_MP_5SD is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -5014,19 +5127,19 @@ FXWeapon_PM_MP_5SD is FiringAndProjectile
 FXWeapon_PM_MPi_AKSU_74NK is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -5035,19 +5148,19 @@ FXWeapon_PM_MPi_AKSU_74NK is FiringAndProjectile
 FXWeapon_PM_PM63_RAK is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -5056,19 +5169,19 @@ FXWeapon_PM_PM63_RAK is FiringAndProjectile
 FXWeapon_PM_Skorpion is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -5077,19 +5190,19 @@ FXWeapon_PM_Skorpion is FiringAndProjectile
 FXWeapon_PM_Sterling is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -5098,19 +5211,19 @@ FXWeapon_PM_Sterling is FiringAndProjectile
 FXWeapon_PM_VSS_Vintorez is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -5119,19 +5232,19 @@ FXWeapon_PM_VSS_Vintorez is FiringAndProjectile
 FXWeapon_PM_uzi is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
+        FXFiring_17( Action = $/GFX/GameFx/fx_tir_Fusil_Mitrailleur_M16_tres_petit_douilles ),
         TRandomHappening
         (
             Alternatives =
             [
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
-                FXProjectile_8( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_1 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_2 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_3 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_4 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_5 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_6 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_7 ),
+                FXProjectile_22( Action = $/GFX/GameFx/fx_traine_Fusil_Mitrailleur_M16_tres_petite_8 ),
             ]
         ),
     ]
@@ -5481,23 +5594,6 @@ FXWeapon_RocketArt_9M55K5_300mm is FiringAndProjectile
     ]
 )
 
-FXWeapon_RocketArt_ATACMS is FiringAndProjectile
-(
-    Happenings = [
-        TRandomHappening
-        (
-            Alternatives =
-            [
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_1 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_2 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_3 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_4 ),
-            ]
-        ),
-        FXProjectile_5( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_227mm ),
-    ]
-)
-
 FXWeapon_RocketArt_BM27_220mm is FiringAndProjectile
 (
     Happenings = [
@@ -5522,13 +5618,13 @@ FXWeapon_RocketArt_LARS_110mm is FiringAndProjectile
         (
             Alternatives =
             [
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_1 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_2 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_3 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_4 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_1 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_2 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_3 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_4 ),
             ]
         ),
-        FXProjectile_5( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_227mm ),
+        FXProjectile_5( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_110mm_130mm ),
     ]
 )
 
@@ -5539,13 +5635,13 @@ FXWeapon_RocketArt_LARS_110mm_cluster is FiringAndProjectile
         (
             Alternatives =
             [
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_1 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_2 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_3 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_4 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_1 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_2 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_3 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_4 ),
             ]
         ),
-        FXProjectile_5( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_227mm ),
+        FXProjectile_5( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_110mm_130mm ),
     ]
 )
 
@@ -5556,13 +5652,30 @@ FXWeapon_RocketArt_M21OF_122mm is FiringAndProjectile
         (
             Alternatives =
             [
-                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_1 ),
-                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_2 ),
-                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_3 ),
-                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_4 ),
+                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_1 ),
+                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_2 ),
+                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_3 ),
+                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_4 ),
             ]
         ),
-        FXProjectile_17( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_227mm ),
+        FXProjectile_17( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_110mm_130mm ),
+    ]
+)
+
+FXWeapon_RocketArt_M21OF_122mm_cluster is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_1 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_2 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_3 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_4 ),
+            ]
+        ),
+        FXProjectile_5( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_110mm_130mm ),
     ]
 )
 
@@ -5573,13 +5686,13 @@ FXWeapon_RocketArt_M21OF_122mm_x12 is FiringAndProjectile
         (
             Alternatives =
             [
-                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_1 ),
-                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_2 ),
-                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_3 ),
-                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_4 ),
+                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_1 ),
+                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_2 ),
+                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_3 ),
+                FXFiring_12( Action = $/GFX/GameFx/fx_tir_roquette_Small_MLRS_4 ),
             ]
         ),
-        FXProjectile_17( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_227mm ),
+        FXProjectile_17( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_110mm_130mm ),
     ]
 )
 
@@ -5601,23 +5714,6 @@ FXWeapon_RocketArt_M26_227mm is FiringAndProjectile
 )
 
 FXWeapon_RocketArt_M26_227mm_Cluster is FiringAndProjectile
-(
-    Happenings = [
-        TRandomHappening
-        (
-            Alternatives =
-            [
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_1 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_2 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_3 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_4 ),
-            ]
-        ),
-        FXProjectile_5( Action = $/GFX/GameFx/fx_traine_roquette_MLRS_227mm ),
-    ]
-)
-
-FXWeapon_RocketArt_SF2_110mm_LARS2 is FiringAndProjectile
 (
     Happenings = [
         TRandomHappening
@@ -5961,27 +6057,6 @@ FXWeapon_RocketInf_WOMBAT_RCL_120mm_TOWED is FiringAndProjectile
     Happenings = [
         FXFiring_4( Action = $/GFX/GameFx/fx_tir_Recoiless_Gun ),
         FXProjectile_4( Action = $/GFX/GameFx/fx_traine_LAW ),
-    ]
-)
-
-FXWeapon_Roquette_ATACMS is FiringAndProjectile
-(
-    Happenings = [
-        TRandomHappening
-        (
-            Alternatives =
-            [
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_01 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_02 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_03 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_04 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_05 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_06 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_07 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_08 ),
-            ]
-        ),
-        FXProjectile_5( Action = $/GFX/GameFx/fx_traine_obus_105mm_APFDS ),
     ]
 )
 

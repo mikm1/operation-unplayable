@@ -126,22 +126,7 @@ export Constantes is TTunableConstante
     // List d'options effects appliqué a toutes les parties, quelque soit les options choisies. Exemple : DefaultEffectsList = [ ~/OptionsEffectsDescriptor_ShowAllGisement ]
     DefaultEffectsList = [  ]
 
-    DefaultGameType = 0 // pour savoir quel prix d'unite choisir par defaut
-
-    RadiusRevealUnites = 1000.0
-    RevealUnitesRestantes = true
-
-    TagsRequiredToAvoidDefeat = MAP
-    [
-        (CombatRule/NotSpecified,   []),
-        (CombatRule/Destruction,    ["InfmapCommander"]),
-    ]
-    TimeBeforeSuddenDeathInSeconds = MAP
-    [
-        (CombatRule/NotSpecified,   0),
-        (CombatRule/Destruction,   60),
-    ]
-
+    SuddenDeathTime = 5 * 60 * Seconde
 
     TagControleZone = "InfmapCommander"
     DureeDeploiementControleZone = 0.2
@@ -336,15 +321,14 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
     DistanceInfanterieEnnemiDectection = 200 * Metre
     DistanceRelaunchMouvementForMoveAndAttack = 1500 * Metre // Distance pour laquelle une unité en MoveAndAttackTarget doit relancer le mouvement si sa cible s'est déplacée de cette distance (diminuer cette valeur baisse la perf)
-    DistanceToAddToEnnemiDectectionForAAWeapon = 4000.0 * Metre * 3.5
+    DistanceToAddToEnnemiDectectionForAAWeapon = 4000.0 * Metre
     DistanceToAddToEnnemiDectectionForAntiProjectileWeapon = 0.0 * Metre // grosso merdo la porté max d'une arme anti-missile
-    DistanceToAddToEnnemiDectectionForOtherWeapon = 1000.0 * Metre * 3.5
+    DistanceToAddToEnnemiDectectionForOtherWeapon = 1000.0 * Metre
     DureeDeRevelationApresAttaque = 5.0
-    FacteurMinTempsViseeReel = 0.35 // Le temps de visée réel est un random entre cette valeur et la valeur de temps de visee théorique située dans l'ODS
-    // used to be 0.75, should increase randomization of aim time -MM. 
+    FacteurMinTempsViseeReel = 0.75 // Le temps de visée réel est un random entre cette valeur et la valeur de temps de visee théorique située dans l'ODS
 
     // Portee Min pour considerer qu'une arme est une artillerie. Les unités ne cherche pas a fuire les armes considéré comme des artilleries
-    PorteeMinArmeEstConsidereCommeArtillerie = 6500.0 * Metre
+    PorteeMinArmeEstConsidereCommeArtillerie = 6500.0 * Metre // 6000
 
     // Nombre de points de suppression récupérés par seconde. Multiplié par "<TypeUnite>_SuppressDamagesRegenRatioList" dans DamageModules.ndf.
     RegenStressParSeconde = 0.5
@@ -392,28 +376,6 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
 //------------------------ Constantes IAStratModernWarfare --------------------------------//
 
-    // Bonus fixe donné à l'income de l'IA.
-    BonusFluxByIADifficulty = MAP
-    [
-        (IADifficulty/TresFacile,       0),
-        (IADifficulty/Facile,           0),
-        (IADifficulty/Normal,           0),
-        (IADifficulty/Difficile,        0),
-        (IADifficulty/TresDifficile,    0),
-        (IADifficulty/PlusDifficile,    0),
-    ]
-
-    // Bonus fixe donné en débuat de partie à l'IA
-    BonusMoneyByIADifficulty = MAP
-    [
-        (IADifficulty/TresFacile,          0),
-        (IADifficulty/Facile,              0),//500
-        (IADifficulty/Normal,              0),//1000
-        (IADifficulty/Difficile,           0),//1800
-        (IADifficulty/TresDifficile,       0),//1800
-        (IADifficulty/PlusDifficile,       0),//1800
-    ]
-
     // bonus en pourcentage donné à l'argent de départ
     RelativeBonusMoneyByIADifficulty = MAP
     [
@@ -442,7 +404,6 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
 //---------------------------- Constantes Vision ------------------------------------------//
 
-    AngleDeVisionDesUnitesDansLesDistricts = 3.1415926535897932384626433832795 * 0.95  // Presque PI
     District_AppliquerLesDegatsAuxUnitesInvisibleDansLesDistricts = true
 
 //----------------------------- Constantes Weapons ----------------------------------------//
@@ -588,7 +549,12 @@ WargameConstantes is TWargameTunableConstante
 
 //-------------------------- Constantes Economy -----------------------------------------//
 
-    DivisionIncome = 130*2
+    BaseIncome = MAP
+    [
+        (CombatRule/NotSpecified,   0),
+        (CombatRule/CaptureTheFlag, 260),
+        (CombatRule/Destruction,    4),
+    ]
     DefaultIncomeMultiplierIndex    = 3 // normal
     //                   none   very_low   low      normal    high     very_high
     IncomeMultiplier = [   0,    0.5,    0.75,       1,      1.25,       1.5 ]
@@ -610,8 +576,6 @@ WargameConstantes is TWargameTunableConstante
     BreakthroughDefenderStartMoneyMultiplier = 1.00 // Multiplicateur pour le defenseur de l'argent initial.
     BreakthroughAttackerStartMoneyMultiplier = 1.00 // Multiplicateur pour l'attaquant  de l'argent initial.
 
-    //Nombre de joueurs dans l'alliance                     0,    1,    2,    3,   4,   5,   6,   7,   8,   9,  10
-    ObjectiveValueForDestructionModeByAllianceTeamNumber = [0, 30.0, 30.0, 25.0, 25.0, 20.0, 15.0, 15.0, 15.0, 10.0, 10.0]
     BreakthroughDefenderIncomeMultiplierForDestructionMode = 1.00 // Multiplicateur pour le defenseur de l'income
     BreakthroughAttackerIncomeMultiplierForDestructionMode = 1.00 // Multiplicateur pour l'attaquant  de l'income
     BreakthroughDefenderStartMoneyMultiplierForDestructionMode = 0.666 // Multiplicateur pour le defenseur de l'argent initial.
@@ -787,13 +751,13 @@ WargameConstantes is TWargameTunableConstante
         // Syntaxe :
         // (Argent Initial Courant, [liste des valeurs de scoreToReach possibles pour cette valeur d'argent initial avec 0 signifiant Total Destruction]),
         //Toute nouvelle valeur d'ArgentInitial doit apparaitre dans VictoryTypeDestructionLevelsTable du fichier GDConstantes.ndf
-        (250*2,  [1500*2, 2000*2, 2500*2, 3000*2, 4000*2, 0]),
-        (375*2,  [1500*2, 2000*2, 2500*2, 3000*2, 4000*2, 0]),
-        (500*2,  [1500*2, 2000*2, 2500*2, 3000*2, 4000*2, 0]),
-        (750*2,  [1500*2, 2000*2, 2500*2, 3000*2, 4000*2, 0]),
-        (1000*2, [1500*2, 2000*2, 2500*2, 3000*2, 4000*2, 0]),
-        (1250*2, [1500*2, 2000*2, 2500*2, 3000*2, 4000*2, 0]),
-        (1500*2, [1500*2, 2000*2, 2500*2, 3000*2, 4000*2, 0]),
+        (500,  [3000, 4000, 5000, 6000, 8000, 0]),
+        (750,  [3000, 4000, 5000, 6000, 8000, 0]),
+        (1000, [3000, 4000, 5000, 6000, 8000, 0]),
+        (1500, [3000, 4000, 5000, 6000, 8000, 0]),
+        (2000, [3000, 4000, 5000, 6000, 8000, 0]),
+        (2500, [3000, 4000, 5000, 6000, 8000, 0]),
+        (3000, [3000, 4000, 5000, 6000, 8000, 0]),
         //(6000, [5000, 5500, 6000, 6500, 7000, 0]),
     ]
 
@@ -838,7 +802,7 @@ WargameConstantes is TWargameTunableConstante
 
     //Order Token bloqué lorsque que l'unité est sans essence
     OrderBlockedWhenOutOfFuel = ["Move", "SmartMove", "QuickMove", "FastMoveAndAttack", "Spread", "Reverse", "ChangeAltitude",
-        "AirplaneEvacuate", "AirplaneMoveAndEngage", "Bombarder"]
+        "AirplaneEvacuate", "AirplaneMoveAndEngage"]
     OrdersAcceptedByTransporterIfTransportedUnitsCanDo = ["AIAttack", "AIDefend"]
 
 //------------------------------ Constantes Vision --------------------------------------//

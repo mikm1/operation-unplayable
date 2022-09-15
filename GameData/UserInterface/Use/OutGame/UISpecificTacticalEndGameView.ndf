@@ -2756,6 +2756,7 @@ UISpecificTacticalEndGameViewDescriptor is TUISpecificTacticalEndGameViewDescrip
         (~/EGameEndingCondition/ObjectivePointCaptured, "EG_objCW"),
         (~/EGameEndingCondition/AllZonesControled,      "EG_objW"),
         (~/EGameEndingCondition/ArmyDestroyed,          "EG_armyW"),
+        (~/EGameEndingCondition/Time,                   "EG_endTim"),
     ]
     LossTokenByGameEndingCondition = MAP
     [
@@ -2766,6 +2767,7 @@ UISpecificTacticalEndGameViewDescriptor is TUISpecificTacticalEndGameViewDescrip
         (~/EGameEndingCondition/ObjectivePointCaptured, "EG_objCL"),
         (~/EGameEndingCondition/AllZonesControled,      "EG_objL"),
         (~/EGameEndingCondition/ArmyDestroyed,          "EG_armyL"),
+        (~/EGameEndingCondition/Time,                   "EG_endTim"),
     ]
     VictoryTokens = MAP
     [

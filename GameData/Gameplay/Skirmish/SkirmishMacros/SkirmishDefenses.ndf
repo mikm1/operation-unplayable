@@ -315,7 +315,7 @@ export CaptureAllZoneObjectif is Template_Capture_Command_Zone
 (
     GenerationType = TGenerationType_BasedOnNumberOfObjectives
     NumberLaunchBasedOnGenerationType = 1
-    AlsoConsiderTheseDescriptorsForMaintain = [CaptureHalfZoneObjectif_Floor]
+    AlsoConsiderTheseDescriptorsForMaintain = [CaptureHalfZoneObjectif_Floor, CaptureHalfZoneObjectif_Ceil]
 )
 //-------------------------------------------------------------------------
 export CaptureHalfZoneObjectif_Floor is Template_Capture_Command_Zone
@@ -323,7 +323,14 @@ export CaptureHalfZoneObjectif_Floor is Template_Capture_Command_Zone
     GenerationType = TGenerationType_BasedOnNumberOfObjectives
     NumberLaunchBasedOnGenerationType = 2
     RoundFloor = true
-    AlsoConsiderTheseDescriptorsForMaintain = []
+    AlsoConsiderTheseDescriptorsForMaintain = [CaptureHalfZoneObjectif_Ceil]
+)
+//-------------------------------------------------------------------------
+export CaptureHalfZoneObjectif_Ceil is Template_Capture_Command_Zone
+(
+    GenerationType = TGenerationType_BasedOnNumberOfObjectives
+    NumberLaunchBasedOnGenerationType = 2
+    AlsoConsiderTheseDescriptorsForMaintain = [CaptureHalfZoneObjectif_Floor]
 )
 //-------------------------------------------------------------------------
 export Pool_Commandant is TPoolModel

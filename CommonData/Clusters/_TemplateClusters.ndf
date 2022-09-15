@@ -270,9 +270,7 @@ template TemplateClusterLoadNDFForIA
         FillResourceListOutputFileName = <FillResourceList> ? (( ( <OverrideBaseName> != '' ) ? <OverrideBaseName>  : <NameSpace> ) + '.ndfbin') : ''
         StripPrivateRootObjects    = True
         NeedsChecksum              = <NeedsChecksum>
-#ifdef EUG_PC
         DebugInfo                  = True
-#endif
     )
 )
 //-----------------------------------------------------------------------------
@@ -418,39 +416,6 @@ template TemplateClusterLoadNDFForEditor
     LoadItIfInGenerateAll = <LoadItIfInGenerateAll>
 )
 //-----------------------------------------------------------------------------
-template TemplateClusterLoadDirectoryForEditor
-[
-    Directory   : string       = '' ,
-    BaseName  : string         = '',
-    NameSpace : string         = '',
-    Recursive : bool           = true,
-    FillResourceList : bool    = false,
-    ExplicitImportedNamespaces = [],
-    UsingNamespaces = [],
-    AllowObjectsToSurvive = false,
-    NeedsChecksum = false
-] is TClusterNdfTransactionForEditor
-(
-    NdfTransaction = TNDFTransaction
-    (
-        FileList =
-        [
-        TNDFTransactionDirectory
-        (
-            Directory = <Directory>
-            Recursive = <Recursive>
-        )
-        ]
-        BaseName = "NotFinal/" + <BaseName>
-        NameSpace =<NameSpace>
-        ExplicitImportedNamespaces = <ExplicitImportedNamespaces>
-        UsingNamespaces = <UsingNamespaces>
-        FillResourceListOutputFileName = <FillResourceList>?(<BaseName> + '.ndfbin'):''
-        AllowObjectsToSurvive = <AllowObjectsToSurvive>
-        NeedsChecksum = <NeedsChecksum>
-    )
-)
-//-----------------------------------------------------------------------------
 template TemplateClusterLoadForNoEditor
 [
     Files     = [] ,
@@ -485,42 +450,6 @@ template TemplateClusterLoadForNoEditor
     )
 )
 //-----------------------------------------------------------------------------
-template TemplateClusterLoadDirectoryForNoEditor
-[
-    Directory   : string       = '' ,
-    BaseName  : string         = '',
-    NameSpace : string         = '',
-    Recursive : bool           = true,
-    FillResourceList : bool    = false,
-    ExplicitImportedNamespaces = [],
-    UsingNamespaces = [],
-    NonPatchable = false,
-    AllowObjectsToSurvive = false,
-    AssumeSourceFileListNotEmpty = false,
-    NeedsChecksum = false
-] is TClusterNdfTransactionForNoEditor
-(
-    NdfTransaction = TNDFTransaction
-    (
-        FileList =
-        [
-        TNDFTransactionDirectory
-        (
-            Directory = <Directory>
-            Recursive = <Recursive>
-        )
-        ]
-        BaseName = <NonPatchable> ? ("NonPatchable/" + <BaseName> ) : ("Patchable/" + <BaseName> )
-        NameSpace =<NameSpace>
-        ExplicitImportedNamespaces = <ExplicitImportedNamespaces>
-        UsingNamespaces = <UsingNamespaces>
-        FillResourceListOutputFileName = <FillResourceList>?(<BaseName> + '.ndfbin'):''
-        AllowObjectsToSurvive = <AllowObjectsToSurvive>
-        AssumeSourceFileListNotEmpty = <AssumeSourceFileListNotEmpty>
-        NeedsChecksum = <NeedsChecksum>
-    )
-)
-//-----------------------------------------------------------------------------
 template TemplateClusterLoadDirectoryNDF_And_Files_ForEditor
 [
     Directory   : string       = '' ,
@@ -532,10 +461,11 @@ template TemplateClusterLoadDirectoryNDF_And_Files_ForEditor
     ExplicitImportedNamespaces = [],
     UsingNamespaces = [],
     AllowObjectsToSurvive = false,
+    LoadItIfInGenerateAll : bool,
     NeedsChecksum = false
 ] is TClusterNdfTransactionForEditor
 (
-    LoadItIfInGenerateAll = true
+    LoadItIfInGenerateAll = <LoadItIfInGenerateAll>
     NdfTransaction = TNDFTransaction
     (
         FileList =
@@ -618,24 +548,6 @@ template TemplateClusterScenarioLoop
       +
       <ClustersToRun>
    )
-)
-//-----------------------------------------------------------------------------
-//*****************************************************************************
-//-----------------------------------------------------------------------------
-// Profiling du temps de chargement des clusters
-template Template_ClusterLoadingTimeProfiler
-[
-    ClusterName,
-    ClusterSectionName = "Misc",
-    SubClusterList,
-    LoadingTimeContainerName = "ClusterBootstrap/LoadingTimeProfilerContainer"
-]
-is TClusterLoadingTimeProfiler
-(
-    ClusterName = <ClusterName>
-    ClusterSectionName = <ClusterSectionName>
-    SubClusterList = <SubClusterList>
-    LoadingTimeContainerName = <LoadingTimeContainerName>
 )
 //-----------------------------------------------------------------------------
 //*****************************************************************************

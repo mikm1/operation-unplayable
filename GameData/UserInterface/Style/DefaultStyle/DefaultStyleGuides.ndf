@@ -85,6 +85,7 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
         ("OutmapFeedback",                                      MAP [ ( ~/ComponentState/Normal, TextStyleStroke0705 ), ]),
         ("TerrainCover",                                        MAP [ ( ~/ComponentState/Normal, TextStyleTerrainCover ), ]),
         ("MouseWidget/TextModule",                              MAP [ ( ~/ComponentState/Normal, TextStyleMouseWidgetTextModule ), ]),
+        ("MouseWidget/Ennemy_Info",                              MAP [ ( ~/ComponentState/Normal, TextStyleMouseWidget_EnnemyInfo ), ]),
         ("VictoryStatus",                                       MAP [ ( ~/ComponentState/Normal, TextStyleDefault ), ]),
         ("StressStatus",                                        MAP [ ( ~/ComponentState/Normal, TextStyleStroke090704 ), ]),
         ("CommmandPointsIncomeText",                            MAP [ ( ~/ComponentState/Normal, TextStyleStroke0806 ), ]),
@@ -2193,7 +2194,7 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
         ("PacteTexte",                       MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [239,0,0,235] ) ),]),
         ("GrisTexteHighlightable",           MAP [
                                                     ( ~/ComponentState/Normal,                 TColorRTTI( Color = [69, 69, 69, 235] ) ),
-                                                    ( ~/ComponentState/Highlighted,            TColorRTTI( Color = [190, 190, 190, 235] ) ),
+                                                    ( ~/ComponentState/Highlighted,            TColorRTTI( Color = [140, 140, 140, 235] ) ),
                                                 ]),
         //-------------------------------------------------------------------------------------
 
@@ -2283,6 +2284,14 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
                                                             ( ~/ComponentState/Grayed,                              TColorRTTI( Color = [108,108,108,170] ) ),
                                                             ( ~/ComponentState/Normal,                              TColorRTTI( Color = [43,35,36,245] ) ),
                                                             //( ~/ComponentState/Highlighted,                         TColorRTTI( Color = [43+30,35+30,36+30,245] ) ),
+                                                            ( ~/ComponentState/Toggled,                             TColorRTTI( Color = [43,35,36,245] ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,                   TColorRTTI( Color = [43,35,36,245] ) ),
+                                                        ]),
+        ("MarronPanel_noir_clicked",                MAP [
+                                                            ( ~/ComponentState/Grayed,                              TColorRTTI( Color = [108,108,108,170] ) ),
+                                                            ( ~/ComponentState/Normal,                              TColorRTTI( Color = [43,35,36,245] ) ),
+                                                            ( ~/ComponentState/Highlighted,                         TColorRTTI( Color = [65, 60, 46, 235] ) ),
+                                                            ( ~/ComponentState/Clicked,                             TColorRTTI( Color = [203, 194, 180, 235] ) ),
                                                             ( ~/ComponentState/Toggled,                             TColorRTTI( Color = [43,35,36,245] ) ),
                                                             ( ~/ComponentState/ToggleHighlighted,                   TColorRTTI( Color = [43,35,36,245] ) ),
                                                         ]),
@@ -2715,6 +2724,7 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
                                     ( ~/ComponentState/Normal,             TColorRTTI( Color = [200,200,200,0] ) ),
                                     ]),
         //-------------------------------------------------------------------------------------
+        ("label_fond_experience",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [29,38,42,100] ) ), ]),
         ("LigneB",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [83,138,166,76] ) ), ]),  //ligne bleu un peu plus foncée
         ("LigneA",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [94,210,251,191] ) ), ]), //ligne quasi cyan
 
@@ -3992,6 +4002,21 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
                 )
             ),
             (
+                "boldcyan",
+                TTFSCommand_StyleChangeRTTI
+                (
+                    Style = TTextStyleRTTI
+                    (
+                        FontSize    = 1.15
+                        ColorBottom = [180, 255, 255, 255]
+                        ColorUp     = [180, 255, 255, 255]
+                        ColorStroke = [  0,   0,   0, 255]
+                        Stroke = false
+                        AllowSmallFont = true
+                    )
+                )
+            ),
+            (
                 "style_armored",
                 TTFSCommand_StyleChangeRTTI
                 (
@@ -4892,6 +4917,58 @@ DefaultStyleGuide is TUISpecificDefaultStyleGuide
 
 
             //TUTORIALS------------------------------------------------------------------------------------------------
+            (
+                "mouseleftclick",
+                TTFSCommand_UISymbol
+                (
+                    TextureToken = "UseInGame_TutorialsIcons_SizeX12_MouseLeftClick"
+                    BBMin=[0, -0.8, 0]
+                    BBMax=[1, 0.3, 0]
+                    ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
+                )
+            ),
+           (
+                "mouserightclick",
+                TTFSCommand_UISymbol
+                (
+                    TextureToken = "UseInGame_TutorialsIcons_SizeX12_MouseRightClick"
+                    BBMin=[0, -0.8, 0]
+                    BBMax=[1, 0.3, 0]
+                    ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
+                )
+            ),
+           (
+                "mousemiddle",
+                TTFSCommand_UISymbol
+                (
+                    TextureToken = "UseInGame_TutorialsIcons_SizeX12_MouseMiddle"
+                    BBMin=[0, -1.18, 0]
+                    BBMax=[1.75, 0.65, 0]
+                    ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
+                )
+            ),
+            (
+                "mousescrollwheel",
+                TTFSCommand_UISymbol
+                (
+                    TextureToken = "UseInGame_TutorialsIcons_SizeX12_MouseScrollWheel"
+                    BBMin=[0, -1.18, 0]
+                    BBMax=[1.75, 0.65, 0]
+                    ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
+                )
+            ),
+            (
+                "mouseleftclickdraganddrop",
+                TTFSCommand_UISymbol
+                (
+                    TextureToken = "UseInGame_TutorialsIcons_SizeX12_MouseLeftClickDragAndDrop"
+                    BBMin=[0, -0.8, 0]
+                    BBMax=[1, 0.3, 0]
+                    ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
+                )
+            ),
+            //-------------------------------------------------------------------------------------
+
             (
                 "tuto_LOS",
                 TTFSCommand_UISymbol

@@ -26,10 +26,6 @@ Flag_HighAltitudeFlying is 25
 Flag_FakeTarget is 26
 Flag_FakeTargetInGeoDB is 27
 Flag_ProjectileFlying is 28
-Flag_CannotShootReflexWhileStealth is 30
-Flag_AllowReflexTargetOutOfVisionRange is 31
-Flag_AllowReflexTargetOutOfVisionRange_EvenIfNotShootable is 32
 Flag_SousTirArtillerie is 33
-Flag_CannotBeCaptured is 34
 Flag_DEPRECATED_NePasUtiliser_OnlyForBriquePython_Helico is 35
 Flag_DEPRECATED_NePasUtiliser_OnlyForBriquePython_UniteDeCommandement is 36

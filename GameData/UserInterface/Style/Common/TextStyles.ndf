@@ -313,18 +313,27 @@ TextStyleTerrainCover is TTextStyleRTTI
 private template BaseTextStyleForSmartCursor
 [
     ColorBottom : color = [220, 220, 220,255],
-    ColorUp : color = [220, 220, 220, 255]
+    ColorUp : color = [220, 220, 220, 255],
+    ColorStroke : color = [  0,   0,   0, 255]
 ] is TTextStyleRTTI
 (
     AllowSmallFont = true
     FontSize = 1
     ColorBottom = <ColorBottom>
     ColorUp     = <ColorUp>
-    ColorStroke = [  0,   0,   0, 255]
+    ColorStroke = <ColorStroke>
     Stroke = true
-    StrokeSize = 0.5
-    StrokeHardness = 0.4
-    TextThickness = 0.20
+    StrokeSize = 0.99
+    StrokeHardness = 0.84
+    TextThickness = 0.06
+)
+
+
+TextStyleMouseWidget_EnnemyInfo is BaseTextStyleForSmartCursor
+(
+    ColorBottom = [255,0,0,255]
+    ColorUp  = [255, 100,0, 255]
+    ColorStroke = [0,255,0,255]
 )
 
 TextStyleMouseWidgetTextModule is BaseTextStyleForSmartCursor()

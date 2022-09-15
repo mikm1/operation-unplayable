@@ -130,7 +130,6 @@ export Static_Defense_OnlyTestAuto is TMacroActionDescriptor_CorridorDefense_Spe
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TMacroActionProductionSettingHolder(PoolModelList = [ ~/Pool_Defense_TestAuto]),
         TForcedPlacementSettingHolder(ForcedCorridor = [2]), // On force le couloirs pour ne pas dépendre du déterminisme
-        TIgnoreSafePathSettingHolder(),
     ]
 )
 
@@ -142,7 +141,6 @@ export Dynamic_Defense_OnlyTestAuto is TMacroActionDescriptor_CorridorDynamicDef
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TMacroActionProductionSettingHolder(PoolModelList = [ ~/Pool_Defense_TestAuto]),
         TForcedPlacementSettingHolder(ForcedCorridor = [2]), // On force le couloirs pour ne pas dépendre du déterminisme
-        TIgnoreSafePathSettingHolder(),
     ]
 )
 
@@ -321,7 +319,11 @@ export Supply_TestAutoOnly is TMacroActionDescriptor_Supply_Specific
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Supply_Skirmish_TestAuto]),
-        TSupplySettingHolder(MinimumAmmoRatio = 0.3 MinimumFuelRatio = 0.3)
+        TSupplySettingHolder(SupplyableMinimumRatio = MAP[
+            (ESupplyableType_Fuel, 0.3),
+            (ESupplyableType_Weapons, 0.3),
+            (ESupplyableType_Life, 0.5),
+        ]),
     ]
 )
 //-------------------------------------------------------------------------
@@ -331,7 +333,11 @@ export Supply_Allied_TestAutoOnly is TMacroActionDescriptor_Supply_Specific
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Supply_Skirmish_TestAuto] DisableReinforcement = true),
-        TSupplySettingHolder(MinimumAmmoRatio = 0.2 MinimumFuelRatio = 0.2),
+        TSupplySettingHolder(SupplyableMinimumRatio = MAP[
+            (ESupplyableType_Fuel, 0.2),
+            (ESupplyableType_Weapons, 0.2),
+            (ESupplyableType_Life, 0.4),
+        ]),
         TCanTargetAlliedSettingHolder(),
     ]
 )

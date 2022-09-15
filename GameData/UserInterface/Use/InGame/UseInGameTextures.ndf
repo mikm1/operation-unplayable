@@ -8,6 +8,18 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
 (
     Textures = MAP
     [
+        ("UseInGame_UnitInfoPanel_TurnPageRight",             MAP [(~/ComponentState/Normal, ~/UseInGame_UnitInfoPanel_TurnPageRight),
+                                                                   (~/ComponentState/Clicked, ~/UseInGame_UnitInfoPanel_TurnPageRight),
+                                                                   (~/ComponentState/Highlighted, ~/UseInGame_UnitInfoPanel_TurnPageRight),
+                                                                   (~/ComponentState/Toggled, ~/UseInGame_UnitInfoPanel_TurnPageRight)]),
+        ("UseInGame_UnitInfoPanel_TurnPageLeft",              MAP [(~/ComponentState/Normal, ~/UseInGame_UnitInfoPanel_TurnPageLeft),
+                                                                   (~/ComponentState/Clicked, ~/UseInGame_UnitInfoPanel_TurnPageLeft),
+                                                                   (~/ComponentState/Highlighted, ~/UseInGame_UnitInfoPanel_TurnPageLeft),
+                                                                   (~/ComponentState/Toggled, ~/UseInGame_UnitInfoPanel_TurnPageLeft)]),
+        ("UseInGame_UnitInfoPanel_DefaultVehicle",            MAP [(~/ComponentState/Normal, ~/UseInGame_UnitInfoPanel_DefaultVehicle)] ),
+        ("UseInGame_UnitInfoPanel_DefaultHelico",             MAP [(~/ComponentState/Normal, ~/UseInGame_UnitInfoPanel_DefaultHelico)] ),
+        ("UseInGame_UnitInfoPanel_DefaultInfantry",          MAP [(~/ComponentState/Normal, ~/UseInGame_UnitInfoPanel_DefaultInfantry)] ),
+
         ("UseInGame_Transport_ATGM",                          MAP [(~/ComponentState/Normal, ~/UseInGame_Transport_ATGM)] ),
         ("UseInGame_Transport_LAAD",                          MAP [(~/ComponentState/Normal, ~/UseInGame_Transport_LAAD)] ),
         ("UseInGame_Transport_COMMAND",                       MAP [(~/ComponentState/Normal, ~/UseInGame_Transport_COMMAND)] ),
@@ -397,7 +409,6 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("UseInGame_Chrono_Full",                                        MAP [(~/ComponentState/Normal, ~/UseInGame_Chrono_Full)]),
         ("UseInGame_Evacuation",                                         MAP [(~/ComponentState/Normal, ~/UseInGame_Evacuation)]),
 
-        ("UseInGame_Surrend",                                            MAP [(~/ComponentState/Normal, ~/UseInGame_Surrend)]),
         ("UseInGame_Barre_Moral",                                        MAP [(~/ComponentState/Normal, ~/UseInGame_Barre_Moral)]),
         ("UseInGame_Feedback_Oil",                                       MAP [(~/ComponentState/Normal, ~/UseInGame_Feedback_Oil)]),
         ("UseInGame_Feedback_Bullets",                                   MAP [(~/ComponentState/Normal, ~/UseInGame_Feedback_Bullets)]),
@@ -420,52 +431,6 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("UseInGame_District",                                           MAP [(~/ComponentState/Normal, ~/UseInGame_District)]),
         ("UseInGame_Empty_Supply",                                       MAP [(~/ComponentState/Normal, ~/UseInGame_Empty_Supply)]),
 
-        ("UseInGame_SurrenderAnimation_0",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_0)]),
-        ("UseInGame_SurrenderAnimation_1",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_1)]),
-        ("UseInGame_SurrenderAnimation_2",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_2)]),
-        ("UseInGame_SurrenderAnimation_3",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_3)]),
-        ("UseInGame_SurrenderAnimation_4",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_4)]),
-        ("UseInGame_SurrenderAnimation_5",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_5)]),
-        ("UseInGame_SurrenderAnimation_6",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_6)]),
-        ("UseInGame_SurrenderAnimation_7",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_7)]),
-        ("UseInGame_SurrenderAnimation_8",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_8)]),
-        ("UseInGame_SurrenderAnimation_9",                               MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_9)]),
-        ("UseInGame_SurrenderAnimation_10",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_10)]),
-        ("UseInGame_SurrenderAnimation_11",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_11)]),
-        ("UseInGame_SurrenderAnimation_12",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_12)]),
-        ("UseInGame_SurrenderAnimation_13",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_13)]),
-        ("UseInGame_SurrenderAnimation_14",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_14)]),
-        ("UseInGame_SurrenderAnimation_15",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_15)]),
-        ("UseInGame_SurrenderAnimation_16",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_16)]),
-        ("UseInGame_SurrenderAnimation_17",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_17)]),
-        ("UseInGame_SurrenderAnimation_18",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_18)]),
-        ("UseInGame_SurrenderAnimation_19",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_19)]),
-        ("UseInGame_SurrenderAnimation_20",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_20)]),
-        ("UseInGame_SurrenderAnimation_21",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_21)]),
-        ("UseInGame_SurrenderAnimation_22",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_22)]),
-        ("UseInGame_SurrenderAnimation_23",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_23)]),
-        ("UseInGame_SurrenderAnimation_24",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_24)]),
-        ("UseInGame_SurrenderAnimation_25",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_25)]),
-        ("UseInGame_SurrenderAnimation_26",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_26)]),
-        ("UseInGame_SurrenderAnimation_27",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_27)]),
-        ("UseInGame_SurrenderAnimation_28",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_28)]),
-        ("UseInGame_SurrenderAnimation_29",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_29)]),
-        ("UseInGame_SurrenderAnimation_30",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_30)]),
-        ("UseInGame_SurrenderAnimation_31",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_31)]),
-        ("UseInGame_SurrenderAnimation_32",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_32)]),
-        ("UseInGame_SurrenderAnimation_33",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_33)]),
-        ("UseInGame_SurrenderAnimation_34",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_34)]),
-        ("UseInGame_SurrenderAnimation_35",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_35)]),
-        ("UseInGame_SurrenderAnimation_36",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_36)]),
-        ("UseInGame_SurrenderAnimation_37",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_37)]),
-        ("UseInGame_SurrenderAnimation_38",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_38)]),
-        ("UseInGame_SurrenderAnimation_39",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_39)]),
-        ("UseInGame_SurrenderAnimation_40",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_40)]),
-        ("UseInGame_SurrenderAnimation_41",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_41)]),
-        ("UseInGame_SurrenderAnimation_42",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_42)]),
-        ("UseInGame_SurrenderAnimation_43",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_43)]),
-        ("UseInGame_SurrenderAnimation_44",                              MAP [(~/ComponentState/Normal, ~/UseInGame_SurrenderAnimation_44)]),
-
         //-------------------------------------------------------------------------------------
 
         ("TextureMapTaille1v1",                              MAP [(~/ComponentState/Normal, ~/TextureMapTaille_1v1)]),
@@ -481,6 +446,14 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         // Ces autres TFS doivent aller dans CommonTextures.ndf et doivent etre declaree avec un TUIResourceTexture_Common
         ("Icon_CommandArea",                    MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/Icones/Sector_200t.png' ))]),
         ("Texture_Icon_CommandAreaResize",      MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName = 'GameData:/Assets/2D/Interface/UseInGame/Area/Command_resize.png' ))]),
+
+        //-------------------------------------------------------------------------------------
+        //Tutorials
+        ("UseInGame_TutorialsIcons_SizeX12_MouseLeftClick",              MAP [(~/ComponentState/Normal, ~/UseInGame_TutorialsIcons_SizeX12_MouseLeftClick)] ),
+        ("UseInGame_TutorialsIcons_SizeX12_MouseRightClick",             MAP [(~/ComponentState/Normal, ~/UseInGame_TutorialsIcons_SizeX12_MouseRightClick)] ),
+        ("UseInGame_TutorialsIcons_SizeX12_MouseMiddle",                 MAP [(~/ComponentState/Normal, ~/UseInGame_TutorialsIcons_SizeX12_MouseMiddle)] ),
+        ("UseInGame_TutorialsIcons_SizeX12_MouseScrollWheel",            MAP [(~/ComponentState/Normal, ~/UseInGame_TutorialsIcons_SizeX12_MouseScrollWheel)] ),
+        ("UseInGame_TutorialsIcons_SizeX12_MouseLeftClickDragAndDrop",   MAP [(~/ComponentState/Normal, ~/UseInGame_TutorialsIcons_SizeX12_MouseLeftClickDragAndDrop)] ),
     ]
 )
 
@@ -568,6 +541,14 @@ UseInGame_UnitInfoPanel_fond_panel2 is TUIResourceTexture_Common(FileName = "Gam
 UseInGame_UnitInfoPanel_foreground_panel is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/UnitInfos/foreground.png")
 
 UseInGame_WeaponSelection_Info       is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/info.png")
+
+UseInGame_UnitInfoPanel_TurnPageRight is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/UnitInfos/turn_page_right.png" )
+UseInGame_UnitInfoPanel_TurnPageLeft is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/UnitInfos/turn_page_left.png" )
+
+UseInGame_UnitInfoPanel_DefaultVehicle is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/UnitInfos/veh_default.png" )
+UseInGame_UnitInfoPanel_DefaultHelico is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/UnitInfos/hel_default.png" )
+UseInGame_UnitInfoPanel_DefaultInfantry is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/UnitInfos/infantry_default.png" )
+
 
 // -------------------------------------------------------------------------------
 // Textures de transport
@@ -690,8 +671,6 @@ UseInGame_Feedback_Repair                 is TUIResourceTexture_InGame(FileName 
 UseInGame_Feedback_Repair_Refill          is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/repair_feedback_refill.png")
 UseInGame_Feedback_Oil                    is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/oil_feedback.png")
 
-UseInGame_Surrend    is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00037.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-
 UseInGame_Riposte          is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/riposte.png")
 UseInGame_EfficientShot    is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/efficientshot2.png")
 UseInGame_MaxRangeShot     is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/maxrangeshot.png")
@@ -699,52 +678,6 @@ UseInGame_MaxRangeShot     is TUIResourceTexture_InGame(FileName = "GameData:/As
 UseInGame_Evacuation is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/evac_feedback.png")
 
 UseInGame_District is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/Icone_Quartier.png")
-
-UseInGame_SurrenderAnimation_0  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00000.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_1  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00001.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_2  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00002.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_3  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00003.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_4  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00004.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_5  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00005.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_6  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00006.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_7  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00007.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_8  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00008.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_9  is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00009.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_10 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00010.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_11 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00011.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_12 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00012.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_13 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00013.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_14 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00014.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_15 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00015.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_16 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00016.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_17 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00017.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_18 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00018.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_19 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00019.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_20 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00020.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_21 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00021.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_22 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00022.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_23 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00023.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_24 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00024.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_25 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00025.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_26 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00026.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_27 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00027.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_28 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00028.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_29 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00029.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_30 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00030.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_31 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00031.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_32 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00032.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_33 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00033.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_34 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00034.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_35 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00035.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_36 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00036.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_37 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00037.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_38 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00038.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_39 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00039.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_40 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00040.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_41 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00041.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_42 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00042.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_43 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00043.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
-UseInGame_SurrenderAnimation_44 is TUIResourceTexture_InGameNoGen(FileName = "GameData:/Assets/2D/Interface/UseInGame/LabelIcons/animation_flag/anim_flag_00044.png" SynchroneTextureSourceCarac = $/M3D/Divers/TSCARGBTextureForInterface2DCompressedSpecificInGameAnimation)
 
 // -------------------------------------------------------------------------------
 // Scenarios breakthrough
@@ -767,3 +700,13 @@ TextureComplexiteCampagne is TUIResourceTexture_Common(FileName = 'GameData:/Ass
 // WARNING ORDER
 //-------------------------------------------------------------------------------------
 Texture_feuilleMission is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseOutGame/Missions/feuille01.png')
+
+
+//-------------------------------------------------------------------------------------
+// tutorials
+//-------------------------------------------------------------------------------------
+UseInGame_TutorialsIcons_SizeX12_MouseLeftClick              is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/TutorialsIcons/SizeX12/MouseLeftClick.png")
+UseInGame_TutorialsIcons_SizeX12_MouseRightClick             is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/TutorialsIcons/SizeX12/MouseRightClick.png")
+UseInGame_TutorialsIcons_SizeX12_MouseMiddle                 is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/TutorialsIcons/SizeX12/MouseMiddle.png")
+UseInGame_TutorialsIcons_SizeX12_MouseScrollWheel            is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/TutorialsIcons/SizeX12/MouseScrollWheel.png")
+UseInGame_TutorialsIcons_SizeX12_MouseLeftClickDragAndDrop   is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseInGame/TutorialsIcons/SizeX12/MouseLeftClickDragAndDrop.png")

@@ -8,7 +8,6 @@ ETerrainType is TBaseClass
 
     EauPeuProfonde        is 0x00000002
     EauProfonde           is 0x00000004
-    StrategicAccelerateur is 0x00000008
     Bloqueur              is 0x00000020
     PetitBatiment         is 0x00000080
     Batiment              is 0x00000100
@@ -17,7 +16,9 @@ ETerrainType is TBaseClass
 
     Rocher                is 0x00000800
     Ruin                  is 0x00001000
-    StrategicRalentisseur is 0x00020000
+    StrategicForest       is 0x00002000
+    StrategicPlain        is 0x00004000
+    StrategicSemiUrban    is 0x00008000
     LightSmoke            is 0x00080000
     MediumSmoke           is 0x00100000
     HeavySmoke            is 0x00200000

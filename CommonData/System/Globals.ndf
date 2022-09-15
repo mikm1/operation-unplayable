@@ -5,10 +5,6 @@
 // debug only :
 // pas d'IA ni aucune des mesh du jeu.
 NoIA                   is false
-// Aucun level build chargé : ni LBH ni set et donc aucune des mesh associées.
-NoLevelBuild           is false
-// Aucun chargement de proxy.
-NoProxy                is false
 
 //-----------------------------------------------------------------------------
 // differentes constantes utilisees un peu partout.
@@ -149,10 +145,6 @@ PrimitiveType_TESSELATION_4 is 7
 MiscStrConstante is TBaseClass
 (
 //-----------------------------------------------------------------------------
-// Map Name of Base Building one
-    BaseBuildingUnitLevelBuildDirectory is 'GameData:/Scenery/BaseBuilding/'
-    BaseBuildingMapDirectory is 'Flat_Base'
-
 // Map Name of FX Bank
     FXBankMapDirectory is 'Flat_FxBank'
 
@@ -287,14 +279,6 @@ ShaderVertexFetchMode is TBaseClass
 (
     Hardware     is 0
     Programmable is 1
-)
-
-//-----------------------------------------------------------------------------
-// LevelBuildHierarchy Content Tag (doit matcher LevelBuildBaseConst.h)
-LevelBuildHierarchyTag is TBaseClass
-(
-    NoBaseBuilding      is 0
-    BaseBuildingOnly    is 1
 )
 
 //-----------------------------------------------------------------------------

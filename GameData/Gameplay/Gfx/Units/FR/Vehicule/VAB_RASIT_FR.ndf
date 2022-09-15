@@ -1,4 +1,4 @@
-export ModelFile_VAB_RASIT_FR is 'GameData:/Assets/3D/Units/RFA/APC/TPZ_Fuchs_RASIT/TPZ_Fuchs_RASIT.Ase2NdfBin'
+export ModelFile_VAB_RASIT_FR is 'GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT/VAB_RASIT.Ase2NdfBin'
 
 Modele_VAB_RASIT_FR is TResourceMultiMaterialMeshWithLod
 (
@@ -8,12 +8,12 @@ Modele_VAB_RASIT_FR is TResourceMultiMaterialMeshWithLod
 
 Modele_VAB_RASIT_FR_MID is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/RFA/APC/TPZ_Fuchs_RASIT/TPZ_Fuchs_RASIT.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT_MID/VAB_RASIT_MID.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 
 Modele_VAB_RASIT_FR_LOW is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/RFA/APC/TPZ_Fuchs_RASIT/TPZ_Fuchs_RASIT.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/FR/Vehicule/LODS/VAB_RASIT_LOW.Ase2NdfBin'
     CivMask =  CivMask/Common
 )

@@ -114,8 +114,11 @@ is TMacroActionDescriptor_CorridorAttack_Specific
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TCoordinationSettingHolder(CoordinationType = ESupportingStatus/NeedSupport),
+
         TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [~/Pool_Main_Attack]
             TaggedPoolModelList = [(["AttackMain"], [~/Pool_Main_Attack]),] PrioritizeCorridorsForTaggedPoolModels = true LaunchASAP_RatioMin = 0.01),
+        TMacroActionProductionSettingHolder(DifficultyList = [IADifficulty/Facile] ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [~/Pool_Main_Attack_Easy] TaggedPoolModelList = [(["AttackMain"], [~/Pool_Main_Attack_Easy]),] PrioritizeCorridorsForTaggedPoolModels = true LaunchASAP_RatioMin = 0.01),
+
         TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 1.2 RatioPourAttaquerPerduAChaqueTick = 0.00084 CompterLesUnitesEnZoneExtendedDansLaMenace = true), // Perte de 0.1 de ratio toutes les 2 minutes
         TMacroActionLifetimeSettingHolder(MinimumResourceForLaunch = <MinimumResourceForLaunch>),
         TCorridorPlacementSettingHolder(StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1 ActiveComportementEnBoutDeCouloir = true),
@@ -455,6 +458,49 @@ export Pool_Objective_Attack is TPoolModel
     + ~/Infantry_Fallback_Attack
 )
 //-------------------------------------------------------------------------
+export Pool_Main_Attack_Easy is TPoolModel
+(
+    Budget = ~/Budget_Default_Attack
+    ModelList = [
+        TPoolElement(
+            DescriptorId = GUID:{c51b237f-b62a-42ea-a3b5-e3c92496276b}
+            Required = false
+            IndexPriorityOverPrice = true
+            Nb = 1
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Char_Standard",
+                "Char",
+                "Vehicule_Appui",
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{85714d9f-7b4d-44ad-9c78-896d67eece24}
+            Required = false
+            IndexPriorityOverPrice = true
+            Nb = 1
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Char_Reco",
+                "Vehicule_Reco",
+                "Infanterie_Reco",
+                "Infanterie_Standard",
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{c06e4fd1-70d7-499d-90d2-86e3d559cf80}
+            Required = false
+            IndexPriorityOverPrice = false
+            Nb = 1
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Infanterie_Spec_Attaque",
+                "Infanterie_Standard",
+            ]
+        ),
+    ]
+)
+//-------------------------------------------------------------------------
 export Pool_Main_Attack is TPoolModel
 (
     Budget = ~/Budget_Main_Attack
@@ -735,7 +781,6 @@ export Pool_Default_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Helo_Gunship",
-                "Helo",
             ]
         ),
     ]
@@ -1290,7 +1335,6 @@ export Pool_Combined_Attack_1 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Helo_Gunship",
-                "Helo",
             ]
         ),
 
@@ -1379,7 +1423,6 @@ export Pool_Combined_Attack_2 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Helo_Gunship",
-                "Helo",
             ]
         ),
     ]
@@ -1479,7 +1522,6 @@ export Pool_Combined_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Helo_Gunship",
-                "Helo",
             ]
         ),
     ]

@@ -151,6 +151,30 @@ export AllImpactSoundHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
+        (   TFxWeaponType_BombMatra250Kg , MAP
+            [
+                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_BombMatra400Kg , MAP
+            [
+                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
         (   TFxWeaponType_BombeBLG66 , MAP
             [
                 ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Cluster_sol() ),
@@ -165,13 +189,13 @@ export AllImpactSoundHappenings is TImpactHappening
         ),
         (   TFxWeaponType_BombeBLU100Mk83 , MAP
             [
-                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk84_sol() ),
                 ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
                 ( EImpactSurface/Air           , nil ),
-                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
@@ -187,15 +211,27 @@ export AllImpactSoundHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
-        (   TFxWeaponType_BombeGBU10 , MAP
+        (   TFxWeaponType_BombeFAB500 , MAP
             [
                 ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk_sol() ),
                 ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
                 ( EImpactSurface/Air           , nil ),
-                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_BombeGBU10 , MAP
+            [
+                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
@@ -213,13 +249,13 @@ export AllImpactSoundHappenings is TImpactHappening
         ),
         (   TFxWeaponType_BombeGBU24 , MAP
             [
-                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk84_sol() ),
                 ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
                 ( EImpactSurface/Air           , nil ),
-                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
@@ -309,19 +345,19 @@ export AllImpactSoundHappenings is TImpactHappening
         ),
         (   TFxWeaponType_BombeMk83 , MAP
             [
-                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk84_sol() ),
                 ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
                 ( EImpactSurface/Air           , nil ),
-                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk_sol() ),
-                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Mk84_sol() ),
+                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Mk84_sol() ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
         (   TFxWeaponType_BombeMk84 , MAP
             [
-                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk_sol() ),
+                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Mk84_sol() ),
                 ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
                 ( EImpactSurface/Air           , nil ),
                 ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Mk84_sol() ),
@@ -1336,6 +1372,30 @@ export AllImpactSoundHappenings is TImpactHappening
                 ( EImpactSurface/Vehicle       , nil ),
                 ( EImpactSurface/FlyingVehicle , nil ),
                 ( EImpactSurface/Missile       , nil ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_Roquette110Mm130Mm , MAP
+            [
+                ( EImpactSurface/Ground        , SoundHappening_ImpactArtillerie_lourdeSol() ),
+                ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , SoundHappening_ImpactArtillerie_lourdeSol() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_ImpactArtillerie_lourdeSol() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_ImpactArtillerie_lourdeSol() ),
+                ( EImpactSurface/Missile       , SoundHappening_ImpactArtillerie_lourdeSol() ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_Roquette110Mm130MmCluster , MAP
+            [
+                ( EImpactSurface/Ground        , SoundHappening_FULDA_Bombe_Cluster_sol() ),
+                ( EImpactSurface/Water         , SoundHappening_FULDA_Bombe_Cluster_sol() ),
+                ( EImpactSurface/Air           , SoundHappening_ImpactCanon_petitSol() ),
+                ( EImpactSurface/Wall          , SoundHappening_FULDA_Bombe_Cluster_sol() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_FULDA_Bombe_Cluster_sol() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_FULDA_Bombe_Cluster_sol() ),
+                ( EImpactSurface/Missile       , SoundHappening_FULDA_Bombe_Cluster_sol() ),
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),

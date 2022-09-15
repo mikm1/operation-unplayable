@@ -309,6 +309,7 @@ template BUCKSpecificMouseWidgetAttackMainComponentDescriptor
                     TextToken = "TC_ARMOR"
                     TextAlignment = UIText_Right
                     TextColor = "VividRed"
+                    TextStyle = 'MouseWidget/Ennemy_Info'
                 ),
                 AttackModule_TextElement
                 (
@@ -316,6 +317,7 @@ template BUCKSpecificMouseWidgetAttackMainComponentDescriptor
                     TextAlignment = UIText_Right
                     TextColor = "VividRed"
                     TextSize = "16"
+                    TextStyle = 'MouseWidget/Ennemy_Info'
                 ),
                 AttackModule_TextElement
                 (

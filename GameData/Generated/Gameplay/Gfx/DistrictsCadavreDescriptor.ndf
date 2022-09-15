@@ -86,7 +86,6 @@ export Descriptor_UnitCadavre_Quartier_Gros is TEntityDescriptor(
                 CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
                 CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
                 FadingDuration = 6
-                DamageRatio = 1.
                 DeathExplosionAmmo = nil
                 SecondaryDeathExplosionAmmo = nil
                 InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
@@ -96,6 +95,103 @@ export Descriptor_UnitCadavre_Quartier_Gros is TEntityDescriptor(
                 ]
             ),
             $/GFX/Everything/Descriptor_District_Quartier_Gros/ApparenceModel,
+
+    ]
+)
+export Descriptor_UnitCadavre_Quartier_HLM is TEntityDescriptor(
+    DescriptorId       = GUID:{a1a45187-7e48-479b-a8e3-89bfc42d5a39}
+    ClassNameForDebug  = 'CadavreQuartier_HLM'
+    ModulesDescriptors =
+    [
+        // TypeUnit
+            TModuleSelector
+            (
+                Default            = TTypeUnitModuleDescriptor
+                (
+                    TypeUnitValue                    = ETypeUnit/Undef
+                )
+                Selection = [ ~/NilDescriptorIfCadavre ]
+            ),
+
+        // Tags
+            TTagsModuleDescriptor
+            (
+                TagSet = [
+                    "Standard",
+                ]
+            ),
+
+        // Flags
+            TFlagsModuleDescriptor
+            (
+                InitialFlagSet =
+                [
+                    Flag_Detectable,
+                    Flag_Selectionnable,
+                    Flag_Batiment,
+                    Flag_Highlightable,
+                    Flag_Target,
+                    Flag_Blessable,
+                ]
+            ),
+
+        // Position
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = True
+                PorteurMustBeVisible       = True
+                ClampInWorld               = False
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // Debug
+            ~/DebugModuleDescriptor,
+
+        // IAStrat
+            TModuleSelector
+            (
+                Default        = TIAStratModuleDescriptor
+                (
+                    DatabaseId = 2
+                    GameplayBehavior = EGameplayBehavior/Nothing
+                )
+                Selection      = [~/NilDescriptorIfCadavre]
+            ),
+
+        // Cadavre
+            TCadavreModuleDescriptor
+            (
+                ExplodeAtEnd = False
+                KillAsVehicule = False
+                KillAsInfanterie = False
+                KillAsHelico = False
+                KillAsAirplane = False
+                KillAsBatiment = True
+                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu_Batiment
+                DisappearanceDuration = $/GFX/Everything/CadavreFadeDurationApresFeu_Batiment
+                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
+                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
+                FadingDuration = 6
+                DeathExplosionAmmo = nil
+                SecondaryDeathExplosionAmmo = nil
+                InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
+                ModuleDescriptorsToSteal =
+                [
+                   $/GFX/Everything/Descriptor_District_Quartier_HLM/ApparenceModel,
+                ]
+            ),
+            $/GFX/Everything/Descriptor_District_Quartier_HLM/ApparenceModel,
 
     ]
 )
@@ -184,7 +280,6 @@ export Descriptor_UnitCadavre_Quartier_Moyen is TEntityDescriptor(
                 CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
                 CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
                 FadingDuration = 6
-                DamageRatio = 1.
                 DeathExplosionAmmo = nil
                 SecondaryDeathExplosionAmmo = nil
                 InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
@@ -282,7 +377,6 @@ export Descriptor_UnitCadavre_Quartier_Petit is TEntityDescriptor(
                 CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
                 CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
                 FadingDuration = 6
-                DamageRatio = 1.
                 DeathExplosionAmmo = nil
                 SecondaryDeathExplosionAmmo = nil
                 InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode

@@ -679,62 +679,47 @@ template SwitchTeamButton
 
 //-------------------------------------------------------------------------------------
 
-LobbyReadyTexture is BUCKTextureDescriptor
+template LobbyReadyButton
+[
+    ElementName : string,
+    TextureToken : string,
+    HintToken : string
+] is BUCKButtonDescriptor
 (
-    ElementName = "ReadyTexture"
+    ElementName = <ElementName>
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [0.0, 1.0]
         MagnifiableWidthHeight = [24.0, 0.0]
     )
 
-    TextureFrame =  TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [14.0, 14.0]
-        AlignementToFather = [0.5, 0.5]
-        AlignementToAnchor = [0.5, 0.5]
-    )
-
-    TextureToken = "player_ready"
-    TextureColorToken = "Blanc220"
-
     Components =
     [
-        BUCKSpecificHintableArea
+        BUCKTextureDescriptor
         (
-            HintTitleToken = "READY_SLOT"
-            DicoToken = ~/LocalisationConstantes/dico_interface_outgame
-        )
-    ]
-)
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+            )
 
-//-------------------------------------------------------------------------------------
+            TextureFrame =  TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = [14.0, 14.0]
+                AlignementToFather = [0.5, 0.5]
+                AlignementToAnchor = [0.5, 0.5]
+            )
 
-LobbyNotReadyTexture is BUCKTextureDescriptor
-(
-    ElementName = "NotReadyTexture"
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        RelativeWidthHeight = [0.0, 1.0]
-        MagnifiableWidthHeight = [24.0, 0.0]
-    )
+            TextureToken = <TextureToken>
+            TextureColorToken = "Blanc220"
 
-    TextureFrame =  TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [14.0, 14.0]
-        AlignementToFather = [0.5, 0.5]
-        AlignementToAnchor = [0.5, 0.5]
-    )
-
-    TextureToken = "player_not_ready"
-    TextureColorToken = "Blanc220"
-
-    Components =
-    [
-        BUCKSpecificHintableArea
-        (
-            HintTitleToken = "NRDY_SLOT"
-            DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+            Components =
+            [
+                BUCKSpecificHintableArea
+                (
+                    HintTitleToken = <HintToken>
+                    DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+                )
+            ]
         )
     ]
 )
@@ -768,11 +753,21 @@ LigneDuBas is BUCKListDescriptor
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = ~/LobbyReadyTexture
+            ComponentDescriptor = LobbyReadyButton
+            (
+                ElementName = "ReadyButton"
+                TextureToken = "player_ready"
+                HintToken = "READY_SLOT"
+            )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = ~/LobbyNotReadyTexture
+            ComponentDescriptor = LobbyReadyButton
+            (
+                ElementName = "NotReadyButton"
+                TextureToken = "player_not_ready"
+                HintToken = "NRDY_SLOT"
+            )
         ),
     ]
 )

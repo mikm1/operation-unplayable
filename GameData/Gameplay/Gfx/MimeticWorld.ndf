@@ -1,4 +1,4 @@
-MimeticWorld is TMimeticWorldDescriptor
+unnamed TMimeticWorldDescriptor
 (
     World = $/M3D/Scene/DefaultWorld
     Happenings = MAP[

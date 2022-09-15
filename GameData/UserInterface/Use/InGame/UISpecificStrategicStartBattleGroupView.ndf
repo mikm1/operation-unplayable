@@ -5,12 +5,11 @@ private PawnSlotButtonRadioButtonManager is TBUCKRadioButtonManager()
 //------------------------------------------------------------------------------
 template PawnSlot
 [
-    NameSuffix : string,
     TextColor : string = "Strategic/StartBattle/Text"
 ]
 is BUCKListDescriptor
 (
-    ElementName = "PawnSlotContent_" + <NameSuffix>
+    ElementName = "PawnSlotContent"
 
     ComponentFrame = TUIFramePropertyRTTI
     (
@@ -28,7 +27,7 @@ is BUCKListDescriptor
         (
             ComponentDescriptor = BUCKButtonDescriptor
             (
-                ElementName = "PawnSlotButton_" + <NameSuffix>
+                ElementName = "PawnSlotButton"
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
@@ -65,7 +64,7 @@ is BUCKListDescriptor
 
                 ]
             )
-    )
+        )
     ]
 )
 
@@ -79,41 +78,20 @@ template BUCKSpecificStrategicStartBattleGroupMainComponentDescriptor
     UnitListAxis : int = ~/ListAxis/Horizontal,
     UnitListHasBackground : bool = true,
 ]
-is BUCKListDescriptor
+is BUCKContainerDescriptor
 (
-    ElementName = "PawnList"
-
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 0.0]
     )
 
-    Axis = ~/ListAxis/Vertical
-
     HasBackground = false
-    BackgroundBlockColorToken =  "AppleGreen" //"GrayMineShaft80"
+    BackgroundBlockColorToken =  "AppleGreen"
+    FitStyle = ~/ContainerFitStyle/FitToContentVertically
 
-    Elements =
+    Components =
     [
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = PawnSlot(NameSuffix = "HQ" TextColor = "GrisClair")
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKRackDescriptor
-            (
-                ElementName = "PawnSlotRack"
-
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [1.0, 0.0]
-                )
-
-                Axis = ~/ListAxis/Vertical
-                BladeDescriptor = PawnSlot(NameSuffix = "Pawn" )
-            )
-        ),
+        PawnSlot(TextColor = "GrisClair")
     ]
 )
 

@@ -8,13 +8,13 @@ Modele_Mirage_5_F_clu_FR is TResourceMultiMaterialMeshWithLod
 
 Modele_Mirage_5_F_clu_FR_MID is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/FR/Avion/Mirage_5_F/Mirage_5_F_bomb.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/FR/Avion/Mirage_5_F_MID/Mirage_5_F_bomb_MID.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 
 Modele_Mirage_5_F_clu_FR_LOW is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/FR/Avion/Mirage_5_F/Mirage_5_F_bomb.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/FR/Avion/LODS/Mirage_5_F_bomb_LOW.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 

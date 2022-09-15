@@ -1,6 +1,8 @@
 private largeurPanelInfo is 440
 private UnitInfoPanelGameScale is 0.9
 private UnitInfoPanelShowRoomScale is 1.0
+private SingleWeaponColumnWidth is 144.0
+private WeaponsColumnTotalWidth is 441.0
 
 //-------------------------------------------------------------------------------------
 
@@ -556,125 +558,13 @@ is BUCKListDescriptor
     ElementName = "WeaponLinesContainer"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, 530.0]
+        MagnifiableWidthHeight = [0.0, 500.0]
     )
 
     Axis = ~/ListAxis/Horizontal
-
-    HasBorder = true
-    BordersToDraw = ~/TBorderSide/Top
-    BorderLineColorToken = 'MarronPanel_noir'
-    BorderThicknessToken = '2'
+    InterItemMargin = TRTTILength( Magnifiable = (WeaponsColumnTotalWidth - (3.0 * SingleWeaponColumnWidth)) div 2.0 )
 
     // envoie en code : BUCKSpecificUnitInfoSingleWeaponPanelMainComponentDescriptor
-
-    // Infos text centered
-    ForegroundComponents =
-        [
-           BUCKListDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [1.0, 0.0] //1.0 0.0
-                )
-
-                Axis = ~/ListAxis/Vertical
-                Elements =
-                [
-                    BUCKListElementDescriptor
-                    (
-                        ComponentDescriptor = BUCKContainerDescriptor
-                        (
-                            ComponentFrame = TUIFramePropertyRTTI
-                            (
-                                RelativeWidthHeight = [1.0, 0.0] //1.0 0.0
-                                MagnifiableWidthHeight = [0.0, 128.0]
-                            )
-                        )
-                    ),
-                    BUCKListElementDescriptor
-                                        (
-                                            ComponentDescriptor = TextExplicatif
-                                            (
-                                                ElementName = "Penetration"
-                                                TextToken = 'pi_des'
-                                                Scale = 0.0
-                                            )
-                                        ),
-                                        {BUCKListElementDescriptor
-                                        (
-                                            ComponentDescriptor = BUCKContainerDescriptor
-                                            (
-                                                ComponentFrame = TUIFramePropertyRTTI
-                                                (
-                                                    RelativeWidthHeight = [1.0, 0.0]
-                                                    MagnifiableWidthHeight = [0.0, 36.0]
-                                                )
-                                            )
-                                        ),
-                                        BUCKListElementDescriptor
-                                        (
-                                            ComponentDescriptor = TextExplicatif
-                                            (
-                                                ElementName = "Range"
-                                                TextToken = 'pi_rng'
-                                                Scale = <Scale>
-                                            )
-                                        ),
-                                        BUCKListElementDescriptor
-                                        (
-                                            ComponentDescriptor = BUCKContainerDescriptor
-                                            (
-                                                ComponentFrame = TUIFramePropertyRTTI
-                                                (
-                                                    RelativeWidthHeight = [1.0, 0.0]
-                                                    MagnifiableWidthHeight = [0.0, 104.0]
-                                                )
-                                            )
-                                        ),
-                                        BUCKListElementDescriptor
-                                        (
-                                            ComponentDescriptor = TextExplicatif
-                                            (
-                                                ElementName = "Degat"
-                                                TextToken = 'pi_des'
-                                                Scale = <Scale>
-                                            )
-                                        ),
-                                        BUCKListElementDescriptor
-                                        (
-                                            ComponentDescriptor = BUCKContainerDescriptor
-                                            (
-                                                ComponentFrame = TUIFramePropertyRTTI
-                                                (
-                                                    RelativeWidthHeight = [1.0, 0.0]
-                                                    MagnifiableWidthHeight = [0.0, 70.0]
-                                                )
-                                            )
-                                        ),
-                                        BUCKListElementDescriptor
-                                        (
-                                            ComponentDescriptor = TextExplicatif
-                                            (
-                                                ElementName = "Attribut"
-                                                TextToken = 'pi_vi'
-                                                Scale = <Scale>
-                                            )
-                                        ),
-                                         BUCKListElementDescriptor
-                                        (
-                                            ComponentDescriptor = BUCKContainerDescriptor
-                                            (
-                                                ComponentFrame = TUIFramePropertyRTTI
-                                                (
-                                                    RelativeWidthHeight = [1.0, 0.0]
-                                                    MagnifiableWidthHeight = [0.0, 70.0+17.0] //+34 pour WeaponReload
-                                                )
-                                            )
-                                        ),}
-                ]
-            )
-        ]
 )
 
 //-------------------------------------------------------------------------------------
@@ -1294,6 +1184,7 @@ is BUCKContainerDescriptor
                     ExtendWeight = 1.0
                     ComponentDescriptor = BUCKTextDescriptor
                     (
+                        ElementName = <ElementName> + "Title"
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [1.0, 1.0]
@@ -1892,8 +1783,7 @@ is TUISpecificUnitInfoPanelViewDescriptor
     MainComponentContainerUniqueName = <MainComponentContainerUniqueName>
 
     NbWeaponsToShow = 8
-    FirstWeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale IsFirstElement = true)
-    WeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale IsFirstElement = false)
+    WeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale)
 
     VehiculeToken = "UIP_VEHIC"
     WeakTopToken = "UIP_RFWK"
@@ -1930,6 +1820,7 @@ is TUISpecificUnitInfoPanelViewDescriptor
         ("AttributeSupply",           UnitInfoPanelAttribute(ElementName = "AttributeSupply" Token = "UIPA_SUPLY" ValueToken = "UIP_VAL" HintToken = "HIP_SUPP" Scale = Scale)),
         ("AttributeFuel",             UnitInfoPanelAttribute(ElementName = "AttributeFuel" Token = "UIPA_FUEL" ValueToken = "UIP_FUEL" HintToken = "HIP_fuel" Scale = Scale)),
         ("AttributeAutonomy",         UnitInfoPanelAttribute(ElementName = "AttributeAutonomy" Token = "UIPA_AUTO" ValueToken = "RANGE_KM" HintToken = "HIP_auton" Scale = Scale)),
+        ("AttributeAmphibious",       UnitInfoPanelAttribute(ElementName = "AttributeAmphibious" Token = "UIPA_AMPH" ValueToken = "UIP_VAL" HintToken = "HIP_amph" Scale = Scale)),
 
         ("AttributeMaxDamages",       UnitInfoPanelAttribute(ElementName = "AttributeMaxDamages" Token = "UIPA_MXDMG" ValueToken = "UIP_VAL" HintToken = "HIP_MXDMG" Scale = Scale)),
         ("AttributeECM",              UnitInfoPanelAttribute(ElementName = "AttributeECM" Token = "UIPA_ECM" ValueToken = "UIP_PCT" HintToken = "HIP_ECM" Scale = Scale)),
@@ -1996,6 +1887,8 @@ is TUISpecificUnitInfoPanelViewDescriptor
     ]
 )
 
+// Note : 'AttributeCategory' and 'AttributeProductionYear' are hidden (see IsTransparent = true), and are only used to get empty cells in the final result
+
 listeAffichageInfoUnit_default is
 [
     "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
@@ -2013,14 +1906,14 @@ listeAffichageInfoUnit_VehiculeTransport is
 listeAffichageInfoUnit_Infanterie is
 [
     "AttributeStrength","AttributeOptics","AttributeStealth",
-    "AttributeShowInfluence","AttributeSpeed"
+    "AttributeShowInfluence","AttributeSpeed", "AttributeCategory",
 ]
 
 listeAffichageInfoUnit_supply is
 [
     "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
-    "AttributeSupply","AttributeSpeed",  "AttributeRoadSpeed",
-    "AttributeShowInfluence"
+    "AttributeAmphibious","AttributeSpeed",  "AttributeRoadSpeed",
+    "AttributeShowInfluence", "AttributeSupply", "AttributeCategory",
 ]
 
 listeAffichageInfoUnit_AA is

@@ -1,6 +1,5 @@
 // Terrains autorisés pour la construction de défenses
 export AllowedTerrainsTypeForDefense is ETerrainType/Default
-    | ETerrainType/StrategicRalentisseur
     | ETerrainType/ForetLegere
 
 // Les TDefensePlacementConstraintDescriptor réutilisables

@@ -107,7 +107,7 @@ export ForetLegere is TGameplayTerrain
     SpeedModifierInfantry = 0.8
     SpeedModifierTrack = 0.3 //0.6
     SpeedModifierWheel = 0.15 //0.3
-    StealthBonus = 2.75
+    StealthBonus = 2.50
     //~~~~~~~~
 
     DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
@@ -443,7 +443,7 @@ export Bloqueur is TGameplayTerrain
     WorldLayerActiveMask = 3
     AuthorizeNearGroundFlying = true
 )
-export StrategicRalentisseur is TGameplayTerrain
+export StrategicForest is TGameplayTerrain
 (
     BloqueAmphibie = false
     BloqueAtterrissage = false
@@ -459,7 +459,7 @@ export StrategicRalentisseur is TGameplayTerrain
     ImpactVision1 = false
     InflammabilityProbability = 0.1
     LocalizationToken = 'TER_CEREAL'
-    Name = 'StrategicRalentisseur'
+    Name = 'StrategicForest'
     ObstructInsideAirSight = false
     ObstructInsideInfantrySight = false
     ObstructInsideVehicleSight = false
@@ -472,7 +472,73 @@ export StrategicRalentisseur is TGameplayTerrain
     //~~~~~~~~
     SpeedModifierBoats = 0
     DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
-    SDBMask = ~/NAMask_Terrain/StrategicRalentisseur
+    SDBMask = ~/NAMask_Terrain/StrategicForest
+    WorldLayerActiveMask = 255
+    AuthorizeNearGroundFlying = true
+)
+export StrategicPlain is TGameplayTerrain
+(
+    BloqueAmphibie = false
+    BloqueAtterrissage = false
+    BloqueFoW = false
+    BloqueInfanterie = false
+    BloqueVehicule = false
+    BloqueVision = false
+    CriticalEffectProbability = 0
+    DebugColor = rgba[255, 255, 25, 255]
+    DissimulationModifierGroundAir = 0
+    DissimulationModifierGroundGround = 0
+    HeightInMeters = 0
+    ImpactVision1 = false
+    InflammabilityProbability = 0.1
+    LocalizationToken = 'TER_CEREAL'
+    Name = 'StrategicPlain'
+    ObstructInsideAirSight = false
+    ObstructInsideInfantrySight = false
+    ObstructInsideVehicleSight = false
+    SpeedModifierAllTerrainWheel = 0.8
+    SpeedModifierHalfTrack = 0.8
+    SpeedModifierInfantry = 1
+    SpeedModifierTrack = 0.9
+    SpeedModifierWheel = 0.7
+    StealthBonus = 1
+    //~~~~~~~~
+    SpeedModifierBoats = 0
+    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
+    SDBMask = ~/NAMask_Terrain/StrategicPlain
+    WorldLayerActiveMask = 255
+    AuthorizeNearGroundFlying = true
+)
+export StrategicSemiUrban is TGameplayTerrain
+(
+    BloqueAmphibie = false
+    BloqueAtterrissage = false
+    BloqueFoW = false
+    BloqueInfanterie = false
+    BloqueVehicule = false
+    BloqueVision = false
+    CriticalEffectProbability = 0
+    DebugColor = rgba[255, 255, 25, 255]
+    DissimulationModifierGroundAir = 0
+    DissimulationModifierGroundGround = 0
+    HeightInMeters = 0
+    ImpactVision1 = false
+    InflammabilityProbability = 0.1
+    LocalizationToken = 'TER_CEREAL'
+    Name = 'StrategicSemiUrban'
+    ObstructInsideAirSight = false
+    ObstructInsideInfantrySight = false
+    ObstructInsideVehicleSight = false
+    SpeedModifierAllTerrainWheel = 0.8
+    SpeedModifierHalfTrack = 0.8
+    SpeedModifierInfantry = 1
+    SpeedModifierTrack = 0.9
+    SpeedModifierWheel = 0.7
+    StealthBonus = 1
+    //~~~~~~~~
+    SpeedModifierBoats = 0
+    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
+    SDBMask = ~/NAMask_Terrain/StrategicSemiUrban
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
 )
@@ -500,8 +566,8 @@ export EauPeuProfonde is TGameplayTerrain
     SpeedModifierAllTerrainWheel = 1
     SpeedModifierHalfTrack = 1
     SpeedModifierInfantry = 0.8
-    SpeedModifierTrack = 1
-    SpeedModifierWheel = 1
+    SpeedModifierTrack = 0.3
+    SpeedModifierWheel = 0.2
     StealthBonus = 1
     //~~~~~~~~
     SpeedModifierBoats = 0.3
@@ -561,39 +627,6 @@ export Urbain is TGameplayTerrain
     SpeedModifierBoats = 0
     DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     SDBMask = ~/NAMask_Terrain/Urbain
-    WorldLayerActiveMask = 255
-    AuthorizeNearGroundFlying = true
-)
-export StrategicAccelerateur is TGameplayTerrain
-(
-    BloqueAmphibie = false
-    BloqueAtterrissage = false
-    BloqueFoW = false
-    BloqueInfanterie = false
-    BloqueVehicule = false
-    BloqueVision = false
-    CriticalEffectProbability = 0
-    DebugColor = rgba[0, 0, 0, 255]
-    DissimulationModifierGroundAir = 0
-    DissimulationModifierGroundGround = 0
-    HeightInMeters = 0
-    ImpactVision1 = false
-    InflammabilityProbability = 0
-    LocalizationToken = 'TER_PORT'
-    Name = 'StrategicAccelerateur'
-    ObstructInsideAirSight = false
-    ObstructInsideInfantrySight = false
-    ObstructInsideVehicleSight = false
-    SpeedModifierAllTerrainWheel = 1
-    SpeedModifierHalfTrack = 1
-    SpeedModifierInfantry = 1
-    SpeedModifierTrack = 1
-    SpeedModifierWheel = 1
-    StealthBonus = 1
-    //~~~~~~~~
-    SpeedModifierBoats = 0.3
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
-    SDBMask = ~/NAMask_Terrain/StrategicAccelerateur
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
 )
@@ -751,9 +784,9 @@ export EauProfonde is TGameplayTerrain
     ObstructInsideVehicleSight = false
     SpeedModifierAllTerrainWheel = 1
     SpeedModifierHalfTrack = 1
-    SpeedModifierInfantry = 1
-    SpeedModifierTrack = 1
-    SpeedModifierWheel = 1
+    SpeedModifierInfantry = 0.8
+    SpeedModifierTrack = 0.3
+    SpeedModifierWheel = 0.2
     StealthBonus = 1
     //~~~~~~~~
     SpeedModifierBoats = 1

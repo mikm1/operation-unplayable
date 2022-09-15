@@ -3,6 +3,8 @@ WargameUnitNames is TModernWarfareUnitNamesDico
     NationToDicoToken = MAP[
         ("FR", "NAMES_FR"),
         ("BEL", "NAMES_FR"),
+        ("NL", "NAMES_NL"),
+        ("LUX", "NAMES_LUX"),
         ("UK", "NAMES_UK"),
         ("GER", "NAMES_GER"),
         ("RFA", "NAMES_GER"),

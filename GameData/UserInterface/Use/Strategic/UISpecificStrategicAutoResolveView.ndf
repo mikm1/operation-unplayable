@@ -1470,7 +1470,7 @@ UISpecificStrategicAutoResolveViewDescriptor is TUISpecificStrategicAutoResolveV
     [
         ( ~/ETerrainType/Default, "TER_DEF" ), // obligatoire, fallback si on ne trouve pas le terrain
         ( ~/ETerrainType/Urbain, "TERR_06T" ),
-        ( ~/ETerrainType/StrategicRalentisseur, "terr_rout" ),
+        ( ~/ETerrainType/StrategicPlain, "terr_rout" ),
     ]
 
     DefaultVictoryTokens = MAP

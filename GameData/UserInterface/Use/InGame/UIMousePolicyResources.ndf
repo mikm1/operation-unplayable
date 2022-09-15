@@ -468,7 +468,6 @@ is TUIMouseWidgetResource
 
 template Template_HardwareMouseWidgetResource_WithBUCK
 [
-    HardwareMouseCursorAnimation : TMouseCursorAnimation = ~/MouseCursorAnimationDefault,
     BUCKDescriptor : TBUCKContainerDescriptor = nil,
     PointerFollowingProperties : TPointerFollowingPropertiesRTTI = nil,
     CursorMap =
@@ -600,7 +599,7 @@ is TUIMouseWidgetResource
 
 template Template_HardwareMouseWidgetResourcePlayerMission
 [
-    HardwareMouseCursorAnimation = $/UI/Components/MouseCursorAnimationDefault,
+    HardwareMouseCursorAnimation = ~/MouseCursorAnimationDefault,
     RelativeTextPlacement = [0.5, 1.5],
     PlayerMissionType = ~/EPlayerMissionRequestType_Unkown
 ]
@@ -1001,7 +1000,7 @@ template Template_SoftwareMouseWidgetResource_Targeting
 [
     RelativeTargetPointerPlacement  = [0.5, 0.5],
     SoftwareCursorTextureName       = "",
-    HardwareMouseCursorAnimation    = $/UI/Components/MouseCursorAnimationPointerSelectionRed,
+    HardwareMouseCursorAnimation    = ~/MouseCursorAnimationPointerSelectionRed,
 ]
 is TUIMouseWidgetResource
 (

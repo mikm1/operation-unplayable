@@ -1,4 +1,4 @@
-export ModelFile_Leopard_2A3_RFA is 'GameData:/Assets/3D/Units/RFA/Char/Leopard_2A4/Leopard_2A4.Ase2NdfBin'
+export ModelFile_Leopard_2A3_RFA is 'GameData:/Assets/3D/Units/RFA/Char/Leopard_2A3/Leopard_2A4.Ase2NdfBin'
 
 Modele_Leopard_2A3_RFA is TResourceMultiMaterialMeshWithLod
 (
@@ -8,13 +8,13 @@ Modele_Leopard_2A3_RFA is TResourceMultiMaterialMeshWithLod
 
 Modele_Leopard_2A3_RFA_MID is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/RFA/Char/Leopard_2A4/Leopard_2A4.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/RFA/Char/Leopard_2A3/Leopard_2A4.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 
 Modele_Leopard_2A3_RFA_LOW is TResourceMultiMaterialMeshWithLod
 (
-    FileName = 'GameData:/Assets/3D/Units/RFA/Char/Leopard_2A4/Leopard_2A4.Ase2NdfBin'
+    FileName = 'GameData:/Assets/3D/Units/RFA/Char/Leopard_2A3/Leopard_2A4.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 //-------------------------------------------------------------------------------------

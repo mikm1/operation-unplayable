@@ -21,8 +21,6 @@ template template_UnitLevelBuildViewDescriptor
 
     MaxRange = $/GraphicOption/LevelBuild_Low,
 
-    LevelBuildHierarchyTag : int = LevelBuildHierarchyTag/NoBaseBuilding,
-
     UseAutoBatcher : bool,
 
     StickersHandler = nil
@@ -38,7 +36,6 @@ template template_UnitLevelBuildViewDescriptor
     World               = $/M3D/Scene/DefaultWorld
     WorldFloorProxy     = $/M3D/Scene/WorldFloorForOnlyGround
 
-    LevelBuildHierarchyTag  = <LevelBuildHierarchyTag>
     MaskDestroyed = SDMask_Destroy
     Modes = [ModeHighComplete, ModeMidComplete, ModeLowComplete]
     KeepGeometryMask = 4  // on garde que le LOW en mémoire.
@@ -59,14 +56,12 @@ template template_UnitLevelBuildViewDescriptor
 
 export DefaultUnitLevelBuildViewDescriptor is template_UnitLevelBuildViewDescriptor
 (
-    LevelBuildHierarchyTag = LevelBuildHierarchyTag/BaseBuildingOnly
     AdditionalMode = SDMode_Sticker + SDMode_StickerDynamic
     UseAutoBatcher = false
 )
 
 export DefenseUnitLevelBuildViewDescriptor is template_UnitLevelBuildViewDescriptor
 (
-    LevelBuildHierarchyTag = LevelBuildHierarchyTag/BaseBuildingOnly
     MaxRange = $/GraphicOption/LevelBuild_Infinite
     StickersHandler = $/GFX/StickerProxy/DynamicStickersHandlerProxy
     AdditionalMode = SDMode_Sticker + SDMode_StickerDynamic
@@ -78,18 +73,4 @@ export MapBuildingUnitLevelBuildViewDescriptor is template_UnitLevelBuildViewDes
     MaxRange = $/GraphicOption/LevelBuild_Infinite
     AdditionalMode = SDMode_Sticker + SDMode_StickerDynamic + SDMode_FXModel
     UseAutoBatcher = true
-)
-
-
-//------------------------------------------------------------------------------
-UnitLevelBuildViewPolylineInstanceManager is TUnitLevelBuildViewPolylineInstanceManager
-(
-    UnitLevelBuildViewDescriptor    = ~/DefenseUnitLevelBuildViewDescriptor
-    MultiRenderTypeMaterialPack     = $/M3D/Shader/MultiRenderTypeMaterialPack_Default
-    MainCamera                      = $/M3D/Camera/CameraPrincipale
-    World                           = $/M3D/Scene/DefaultWorld
-    SceneryDescriptorNamesToIgnore =
-    [
-        "Creux_tranchee_BaseBuilding"
-    ]
 )

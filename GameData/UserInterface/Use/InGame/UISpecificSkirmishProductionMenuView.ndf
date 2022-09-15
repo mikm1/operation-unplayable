@@ -705,6 +705,8 @@ SkirmishProductionMenuCategoryButton is BUCKSpecificButton
     RoundedCorner = true
     BackgroundBlockColorToken  = ""
 
+
+
     TextColorToken = "ButtonHUD/Text2"
     TextSizeToken = '22'
     ButtonRelativeWidthHeight = [0.0, 0.0]
@@ -797,7 +799,7 @@ SkirmishProductionMenuCombatGroupButton is BUCKSpecificButton
     TextColorToken = "ButtonHUD/Text2"
     TextSizeToken = '16'
     ButtonRelativeWidthHeight = [0.0, 0.0]
-    ButtonMagnifiableWidthHeight = [84.0, 30.0]
+    ButtonMagnifiableWidthHeight = [84.0*2, 30.0]
 
     IsTogglable = true
     RadioButtonManager = ~/SkirmishProductionMenuCombatGroupButtonRadioButtonManager

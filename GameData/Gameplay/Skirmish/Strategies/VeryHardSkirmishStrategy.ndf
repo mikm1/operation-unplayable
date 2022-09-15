@@ -158,8 +158,9 @@ export VHard_Phase_Command is TSequenceGeneratorDescriptor
         ~/Supply_Skirmish,
         ~/Reco,
 
-        ~/Attack_Filler,
+        ~/CaptureAllZoneObjectif,
 
+        ~/Attack_Filler,
         //------------------------------
         // Défenses prioritaires
         //------------------------------
@@ -167,8 +168,11 @@ export VHard_Phase_Command is TSequenceGeneratorDescriptor
         ~/Defense_Static_Adaptive, // Canon AT - Chasseur de char - ATInf - HMG - Flamer // 85
         ~/Defense_Static_AA,
 
+        ~/Defense_Dynamic_Adaptive,
+        ~/Defense_Dynamic_Adaptive,
+        ~/Defense_Dynamic_Adaptive,
+
         //Cet mission lance les objectifs restant
-        ~/CaptureAllZoneObjectif,
         ~/Defense_Objectif,
 
         //------------------------------

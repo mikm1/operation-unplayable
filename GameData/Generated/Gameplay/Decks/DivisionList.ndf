@@ -16,5 +16,7 @@ private DivisionList is TDeckDivisionList
         ~/Descriptor_Deck_Division_RFA_5_Panzer_multi,
         ~/Descriptor_Deck_Division_RDA_KdA_Bezirk_Erfurt_multi,
         ~/Descriptor_Deck_Division_RFA_TerrKdo_Sud_multi,
+        ~/Descriptor_Deck_Division_UK_1st_Armoured_multi,
+        ~/Descriptor_Deck_Division_FR_5e_Blindee_multi,
     ]
 )

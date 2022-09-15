@@ -92,6 +92,12 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             IgnoreDirectOrder = false
         ),
 
+        TOrderEvaluatorPlayerMission(
+            OrderToken = "AISupply"
+            IgnoreDefaultOrder = true
+            IgnoreDirectOrder = false
+        ),
+
         TOrderEvaluatorUseCapacite(
             OrderToken = "UseCapacite"
             IgnoreDefaultOrder = false
