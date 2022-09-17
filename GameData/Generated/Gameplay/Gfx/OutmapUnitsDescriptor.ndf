@@ -1,10 +1,10 @@
 // Ne pas éditer, ce fichier est auto-généré !
 
 
-export Descriptor_Unit_test is TEntityDescriptor
-(
-    DescriptorId        = GUID:{44177471-2e57-4f73-954c-a5ec9bac80cc}
-    ClassNameForDebug   = 'Unit_test'
+//export Descriptor_Unit_test is TEntityDescriptor
+//(
+    //DescriptorId        = GUID:{44177471-2e57-4f73-954c-a5ec9bac80cc}
+    {ClassNameForDebug   = 'Unit_test'
     ModulesDescriptors = [
         // TypeUnit
             TModuleSelector
@@ -162,3 +162,4 @@ export Descriptor_Unit_test is TEntityDescriptor
 
     ]
 )
+}

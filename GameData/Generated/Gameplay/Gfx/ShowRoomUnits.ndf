@@ -4249,7 +4249,7 @@ export Descriptor_ShowRoomUnit_AeroRifles_US is TEntityDescriptor
                                         (4,[0,]),
                                         (5,[0,]),
                                         (6,[0,]),
-                                        (7,[0,]),
+                                        (7,[0,3,]),
                                         (8,[0,2,]),
                                       ]
         ),
@@ -23189,10 +23189,10 @@ export Descriptor_ShowRoomUnit_LRRP_US is TEntityDescriptor
         (
             InitialSoldiersToTurretIndexMap = MAP[
                                         (0,[1,]),
-                                        (1,[1,]),
+                                        (1,[0,]),
                                         (2,[0,]),
                                         (3,[0,]),
-                                        (4,[0,]),
+                                        (4,[0,3,]),
                                         (5,[0,2,]),
                                       ]
         ),
@@ -35877,7 +35877,7 @@ export Descriptor_ShowRoomUnit_Rifles_CMD_US is TEntityDescriptor
                                         (0,[0,1,]),
                                         (1,[0,]),
                                         (2,[0,]),
-                                        (3,[0,]),
+                                        (3,[0,2,]),
                                       ]
         ),
 
@@ -36620,7 +36620,7 @@ export Descriptor_ShowRoomUnit_Rifles_half_AT4_US is TEntityDescriptor
                                         (1,[0,]),
                                         (2,[0,]),
                                         (3,[0,]),
-                                        (4,[0,]),
+                                        (4,[0,3]),
                                         (5,[0,2,]),
                                       ]
         ),
@@ -36742,7 +36742,7 @@ export Descriptor_ShowRoomUnit_Rifles_half_Dragon_US is TEntityDescriptor
                                         (1,[0,]),
                                         (2,[0,]),
                                         (3,[0,]),
-                                        (4,[0,]),
+                                        (4,[0,3,]),
                                         (5,[0,2,]),
                                       ]
         ),
@@ -36831,7 +36831,7 @@ export Descriptor_ShowRoomUnit_Rifles_half_LAW_US is TEntityDescriptor
             (
                 Default        = TInfantrySquadModuleDescriptor
                 (
-                    NbSoldatInGroupeCombat = 5
+                    NbSoldatInGroupeCombat = 6
                     SquadDataDescriptor = ~/SoldierSquadDataDescriptor
                     InfantryMimeticName = 'Rifles_half_LAW_US'
                     InfantryAlternativeName = 'Rifles_half_LAW_US'
@@ -36864,7 +36864,8 @@ export Descriptor_ShowRoomUnit_Rifles_half_LAW_US is TEntityDescriptor
                                         (1,[1,]),
                                         (2,[0,]),
                                         (3,[0,]),
-                                        (4,[0,2,]),
+                                        (4,[0,3,]),
+                                        (5,[0,2,]),
                                       ]
         ),
 
@@ -39039,7 +39040,7 @@ export Descriptor_ShowRoomUnit_Cav_Scout_US is TEntityDescriptor
         (
             InitialSoldiersToTurretIndexMap = MAP[
                                         (0,[0,1]),
-                                        (1,[0,]),
+                                        (1,[0,2]),
                                       ]
         ),
 
