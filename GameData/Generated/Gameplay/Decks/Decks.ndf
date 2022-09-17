@@ -3114,7 +3114,7 @@ export Descriptor_Deck_SOV_79_Gds_Tank_multi_test_challenge_pack is TDeckDescrip
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MotRifles_Metis_SOV
             Transport = ~/Descriptor_Unit_BMP_1P_SOV
-        ),}
+        ),
         TDeckPackDescription
         (
             ExperienceLevel = 2

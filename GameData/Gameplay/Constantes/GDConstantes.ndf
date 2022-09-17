@@ -12,8 +12,6 @@ CountingRule_Average is 2
 CountingRule_Min is 3
 CountingRule_Max is 4
 
-optics_multiplier is 1.5 //MM
-
 // GhostModule.h
 EShowGhostOverSpecificTerrainConditionFilterType is TBaseClass
 (
@@ -673,7 +671,7 @@ WargameConstantes is TWargameTunableConstante
         (1.0, 'Value_1'),
         (1.5, 'Value_2'),
         (2.0, 'Value_4'),
-        (2.5, 'Value_6'),
+        (2.5, 'Value_5'),
         (3.0, 'Value_6'),
     ]
 
@@ -687,18 +685,12 @@ WargameConstantes is TWargameTunableConstante
  
     PaliersDOptique = MAP
     [
-        {(40, 'Value_1'),
-        (60, 'Value_2'),
-        (80, 'Value_3'),
-        (120, 'Value_4'),
-        (170, 'Value_5'),
-        (220, 'Value_6'),}
-        (optics_multiplier * 40, 'Value_1'),
-        (optics_multiplier * 60, 'Value_2'),
-        (optics_multiplier * 80, 'Value_3'),
-        (optics_multiplier * 120, 'Value_4'),
-        (optics_multiplier * 170, 'Value_5'),
-        (optics_multiplier * 220, 'Value_6'),
+        (60, 'Value_1'),
+        (90, 'Value_2'),
+        (120, 'Value_3'),
+        (180, 'Value_4'),
+        (255, 'Value_5'),
+        (330, 'Value_6'),
     ]
 
     PaliersDeResilience = MAP

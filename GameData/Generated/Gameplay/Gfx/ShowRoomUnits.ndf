@@ -11549,7 +11549,7 @@ export Descriptor_ShowRoomUnit_Engineers_CMD_SOV is TEntityDescriptor
                                         (0,[0,]),
                                         (1,[0,]),
                                         (2,[0,]),
-                                        (3,[0,1,]),
+                                        (3,[1,]),
                                       ]
         ),
 
@@ -21552,7 +21552,7 @@ export Descriptor_ShowRoomUnit_HvyScout_SOV is TEntityDescriptor
                                         (3,[0,]),
                                         (4,[0,]),
                                         (5,[0,]),
-                                        (6,[0,]),
+                                        (6,[2,]),
                                       ]
         ),
 
@@ -33269,10 +33269,10 @@ export Descriptor_ShowRoomUnit_MotRifles_SOV is TEntityDescriptor
                                         (0,[1,]),
                                         (1,[0,]),
                                         (2,[0,]),
-                                        (3,[0,]),
+                                        (3,[0,3]),
                                         (4,[0,]),
                                         (5,[0,]),
-                                        (6,[0,2,]),
+                                        (6,[2,]),
                                       ]
         ),
 
@@ -38441,7 +38441,7 @@ export Descriptor_ShowRoomUnit_Scout_LRRP_SOV is TEntityDescriptor
                                         (2,[0,]),
                                         (3,[0,]),
                                         (4,[0,]),
-                                        (5,[0,]),
+                                        (5,[0,3,]),
                                         (6,[0,2,]),
                                       ]
         ),

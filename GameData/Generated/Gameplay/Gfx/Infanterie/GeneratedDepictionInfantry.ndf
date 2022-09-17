@@ -3485,6 +3485,7 @@ Gfx_HvyScout_SOV is TemplateInfantryDepictionSquad
 AllWeaponAlternatives_HvyScout_SOV is [
   AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_AK74 ),
   AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_RPK ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_RPG7V ),
 ]
 AllWeaponSubDepiction_HvyScout_SOV is TemplateAllSubWeaponDepiction
 (
@@ -3499,6 +3500,11 @@ AllWeaponSubDepiction_HvyScout_SOV is TemplateAllSubWeaponDepiction
     (
       FireEffectTag = ["FireEffect_SAW_RPK_74_5_56mm"]
       WeaponShootDataPropertyName = "WeaponShootData_0_2"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_RocketInf_RPG7"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_3"
     ),
   ]
 )
@@ -3521,14 +3527,14 @@ TacticDepiction_HvyScout_SOV_Soldier is TemplateInfantryDepictionFactoryTactic
   Surrogates = TacticDepiction_HvyScout_SOV_Surrogates
   Alternatives = TacticDepiction_HvyScout_SOV_Alternatives
   SubDepictions = [AllWeaponSubDepiction_HvyScout_SOV, AllWeaponSubDepictionBackpack_HvyScout_SOV]
-  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2') ] )]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2'), ('bazooka', 'MeshAlternative_3') ] )]
 )
 TacticDepiction_HvyScout_SOV_Ghost is TemplateInfantryDepictionFactoryGhost
 (
   Surrogates = TacticDepiction_HvyScout_SOV_Surrogates
   Alternatives = TacticDepiction_HvyScout_SOV_Alternatives
 )
-// *****************************[ HvyScout_SOV ]*********************************
+// *****************************[ Scout_2man_SOV ]*********************************
 Gfx_Scout_2man_SOV is TemplateInfantryDepictionSquad
 (
   SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_SOVIET
@@ -4968,6 +4974,7 @@ AllWeaponAlternatives_MotRifles_SOV is [
   AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_AK74 ),
   AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_RPK ),
   AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_RPG7V ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_4'] ModelFile = ModelFile_RPG18 ),
 ]
 AllWeaponSubDepiction_MotRifles_SOV is TemplateAllSubWeaponDepiction
 (
@@ -4987,6 +4994,11 @@ AllWeaponSubDepiction_MotRifles_SOV is TemplateAllSubWeaponDepiction
     (
       FireEffectTag = ["FireEffect_RocketInf_RPG7VL"]
       WeaponShootDataPropertyName = "WeaponShootData_0_3"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_RocketInf_RPG18_64mm"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_4"
     ),
   ]
 )
@@ -7044,6 +7056,7 @@ AllWeaponAlternatives_Scout_LRRP_SOV is [
   AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_AS_Val ),
   AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_VSS_Vintorez ),
   AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_RPG27 ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_4'] ModelFile = ModelFile_RPG27 ),
 ]
 AllWeaponSubDepiction_Scout_LRRP_SOV is TemplateAllSubWeaponDepiction
 (
@@ -7063,6 +7076,11 @@ AllWeaponSubDepiction_Scout_LRRP_SOV is TemplateAllSubWeaponDepiction
     (
       FireEffectTag = ["FireEffect_RocketInf_RPG27_105mm"]
       WeaponShootDataPropertyName = "WeaponShootData_0_3"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_RocketInf_RPG27_105mm"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_4"
     ),
   ]
 )
