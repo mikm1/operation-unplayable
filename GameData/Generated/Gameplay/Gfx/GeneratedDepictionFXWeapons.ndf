@@ -6306,7 +6306,7 @@ template FXFiring_12  [ Action ] is FXWeaponFiringHappeningSingle
 (
     Action          = <Action>
     Power           = EFXPower/Moyen
-    WaitBetweenShot = 2.0
+    WaitBetweenShot = 0.5
 )
 template FXFiring_13  [ Action ] is FXWeaponFiringHappeningInfinite
 (
@@ -6523,7 +6523,7 @@ template FXProjectile_17  [ Action ] is FXWeaponProjectileHappeningSingle
     FluidFriction   = 0.0
     DirectFire      = False
     Power           = EFXPower/Moyen
-    WaitBetweenShot = 2.0
+    WaitBetweenShot = 0.5
 )
 template FXProjectile_18  [ Action ] is FXWeaponProjectileHappeningInfinite
 (

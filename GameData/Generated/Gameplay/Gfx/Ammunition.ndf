@@ -26668,8 +26668,8 @@ export Ammo_DCA_2_canons_2A38M_30mm is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
-    FlightTimeForSpeed                    = 0.85
-    DistanceForSpeed                      = 5000.0 * Metre
+    FlightTimeForSpeed                    = 1.5
+    DistanceForSpeed                      = 15000.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_DCA
 )
 export Ammo_DCA_2_canons_HS_831_30mm is TAmmunitionDescriptor
