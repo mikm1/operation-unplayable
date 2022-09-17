@@ -5994,7 +5994,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Rifles_CMD_US
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_M113A3_US]
+                        AvailableTransportList = [~/Descriptor_Unit_M113A3_US, ~/Descriptor_Unit_M2A2_Bradley_IFV_US]
                         NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
                     ),
