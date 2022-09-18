@@ -53066,7 +53066,7 @@ export Ammo_RocketArt_M21OF_122mm is TAmmunitionDescriptor
     Level                             = 3
     Arme                              = TDamageTypeRTTI(Family="howz" Index=1)
     ProjectileType                    = EProjectileType/Artillerie
-    FxWeaponType                      = ~/TFxWeaponType_RoquetteM26M270227Mm
+    FxWeaponType                      = ~/TFxWeaponType_Artillerie2A18122Mm
     FxPower                           = EFXPower/Moyen
     Puissance                         = 200.0
     TempsEntreDeuxTirs                = 0.5
