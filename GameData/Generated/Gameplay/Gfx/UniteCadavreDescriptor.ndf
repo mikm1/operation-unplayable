@@ -44074,6 +44074,94 @@ Descriptor_UnitCadavre_Ural_4320_SOV is TEntityDescriptor
 
     ]
 )
+Descriptor_UnitCadavre_Ural_4320_art_SOV is TEntityDescriptor
+(
+    DescriptorId       = GUID:{44e3170d-be33-4a30-999c-e3f8ca201fb1}
+    ClassNameForDebug  = 'Unit_CadavreUral_4320_art_SOV'
+    ModulesDescriptors = [
+        // TypeUnit
+            TTypeUnitModuleDescriptor
+            (
+                TypeUnitValue                    = ETypeUnit/Support
+                Nationalite                      = ENationalite/Axis
+                MotherCountry                    = 'SOV'
+                AcknowUnitType                   = ~/TAcknowUnitType_Logistic
+                TypeUnitFormation                = 'Supply'
+            ),
+
+        // Tags
+            TTagsModuleDescriptor
+            (
+            ),
+
+        // Flags
+            TFlagsModuleDescriptor
+            (
+                InitialFlagSet =
+                [
+                    Flag_Detectable,
+                    Flag_LdDetectable,
+                ]
+            ),
+
+        // Position
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((30) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // Cadavre
+            TCadavreModuleDescriptor
+            (
+                ExplodeAtEnd = True
+                KillAsVehicule = True
+                KillAsInfanterie = False
+                KillAsHelico = False
+                KillAsAirplane = False
+                KillAsBatiment = False
+                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+                DisappearanceDuration = 0.0
+                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum
+                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum
+                FadingDuration = 1
+                DeathExplosionAmmo = ~/Ammo_Mort_Unite_forte
+                SecondaryDeathExplosionAmmo = nil
+                InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
+                ModuleDescriptorsToSteal =
+                [
+                   $/GFX/Everything/Descriptor_Unit_Ural_4320_art_SOV/ApparenceModel,
+                   $/GFX/Everything/Descriptor_Unit_Ural_4320_art_SOV/LandMovement,
+                   $/GFX/Everything/Descriptor_Unit_Ural_4320_art_SOV/GenericMovement,
+                   $/GFX/Everything/Descriptor_Unit_Ural_4320_art_SOV/FacingInfos,
+                ]
+            ),
+            $/GFX/Everything/Descriptor_Unit_Ural_4320_art_SOV/ApparenceModel,
+            $/GFX/Everything/Descriptor_Unit_Ural_4320_art_SOV/LandMovement,
+            $/GFX/Everything/Descriptor_Unit_Ural_4320_art_SOV/GenericMovement,
+            $/GFX/Everything/Descriptor_Unit_Ural_4320_art_SOV/FacingInfos,
+
+        // PackSignaux
+            ~/PackSignauxModuleDescriptor,
+
+        // Debug
+            ~/DebugModuleDescriptor,
+
+    ]
+)
 Descriptor_UnitCadavre_VAB_CMD_FR is TEntityDescriptor
 (
     DescriptorId       = GUID:{90657013-ca1f-4c08-b835-9eceb1127aae}

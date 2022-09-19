@@ -494,6 +494,7 @@ export ShowRoomEquivalenceManager is TShowRoomEquivalenceManager
         ( ~/Descriptor_Unit_Unimog_trans_RFA, ~/Descriptor_ShowRoomUnit_Unimog_trans_RFA ),
         ( ~/Descriptor_Unit_Ural_4320_DDR, ~/Descriptor_ShowRoomUnit_Ural_4320_DDR ),
         ( ~/Descriptor_Unit_Ural_4320_SOV, ~/Descriptor_ShowRoomUnit_Ural_4320_SOV ),
+        ( ~/Descriptor_Unit_Ural_4320_art_SOV, ~/Descriptor_ShowRoomUnit_Ural_4320_art_SOV ),
         ( ~/Descriptor_Unit_VAB_CMD_FR, ~/Descriptor_ShowRoomUnit_VAB_CMD_FR ),
         ( ~/Descriptor_Unit_VAB_FR, ~/Descriptor_ShowRoomUnit_VAB_FR ),
         ( ~/Descriptor_Unit_VAB_HOT_FR, ~/Descriptor_ShowRoomUnit_VAB_HOT_FR ),

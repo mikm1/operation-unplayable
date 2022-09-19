@@ -16714,8 +16714,111 @@ export Ammo_Canon_AP_2A18_122mm is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = True
     PiercingWeapon                    = True
-    FlightTimeForSpeed                    = 1.4
-    DistanceForSpeed                      = 20000.0 * Metre
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
+    DamageTypeEvolutionOverRangeDescriptor  = nil
+)
+export Ammo_Canon_HE_2A18_122mm is TAmmunitionDescriptor
+(
+    DescriptorId                      = GUID:{ebd10193-db8a-4c84-8cb0-8551209b2c09}
+    Name                              = 'DFAMNSIWHC'
+    TypeName                          = 'NA'
+    TypeCategoryName                  = 'FIQMEQMUTK'
+    Caliber                           = 'NFWPEQRTDW'
+    WeaponDescriptionToken            = 'YDWRGQLHYI'
+    TraitsToken                       = [ 'MOTION', 'HE', ]
+    WeaponCursorType                  = Weapon_Cursor_Canon
+    MinMaxCategory                    = MinMax_CanonAP
+    Level                             = 3
+    Arme                              = TDamageTypeRTTI(Family="he" Index=1)
+    ProjectileType                    = EProjectileType/Obus
+    FxWeaponType                      = ~/TFxWeaponType_Artillerie2A18122Mm
+    FxPower                           = EFXPower/Moyen
+    Puissance                         = 100.0
+    TempsEntreDeuxTirs                = 1.0
+    TempsEntreDeuxTirs_Min             = -1.0
+    TempsEntreDeuxTirs_Max             = -1.0
+    TempsEntreDeuxFx                  = 1.0
+    PorteeMaximale                    = ((20000) * Metre)
+    PorteeMinimaleTBA                 = ((0) * Metre)
+    PorteeMaximaleTBA                 = ((0) * Metre)
+    PorteeMinimaleHA                  = ((0) * Metre)
+    PorteeMaximaleHA                  = ((0) * Metre)
+    PorteeMinimale                    = ((100) * Metre)
+    AltitudeAPorteeMinimale           = ((30.0) * Metre)
+    AltitudeAPorteeMaximale           = ((60.0) * Metre)
+    AffecteParNombre                  = False
+    AngleDispersion                   = 0.0
+    DispersionAtMaxRange              = ((25) * Metre)
+    DispersionWithoutSorting          = True
+    CorrectedShotAimtimeMultiplier    = 1.0
+    RadiusSplashPhysicalDamages       = ((244) * Metre)
+    PhysicalDamages                   = 2.318
+    RadiusSplashSuppressDamages       = ((488) * Metre)
+    SuppressDamages                   = 122.0
+    RayonPinned                       = ((400) * Metre)
+    AllowSuppressDamageWhenNoImpact                = False
+    DisplaySalveAccuracy              = False
+    TirIndirect                       = False
+    TirReflexe                        = True
+    InterdireTirReflexe               = False
+    FX_vitesse_de_depart              = 0.0
+    FX_acceleration_max               = 0.0
+    FX_tir_sans_physic                = False
+    FX_frottement                     = 0.0
+    TempsAnimation                    = 0.0
+    NoiseDissimulationMalus           = 2.2
+    ShotsBeforeMaxNoise               = 1
+    TargetsDistricts                  = True
+        // DiceHitRollRule
+    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
+    (
+         DescriptorId          = GUID:{d961718f-c0dc-43f2-851f-3df976d81bb3}
+         BaseCriticModifier = 100
+         BaseEffectModifier = 0
+         BaseHitValueModifiers =
+         [
+             (EBaseHitValueModifier/Base, 0.0),
+             (EBaseHitValueModifier/Idling, 30),
+             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/SuccessfulShots, 0.0),
+             (EBaseHitValueModifier/Targeted, 0.0),
+         ]
+         HitModifierList       =
+         [
+             EDiceHitModifier/Precision,
+             EDiceHitModifier/DistanceToTarget,
+             EDiceHitModifier/SuccesiveShots,
+             EDiceHitModifier/Suppress,
+         ]
+    )
+
+    TempsDeVisee                      = aim_time_multiplier * 3.0
+    TempsEntreDeuxSalves              = 10.0
+    TempsEntreDeuxSalves_Min           = -1.0
+    TempsEntreDeuxSalves_Max           = -1.0
+    NbTirParSalves                    = 1
+    SupplyCost                        = 122
+    NbSalvosShootOnPosition           = 1
+    CanShootOnPosition                = True
+    CanShootWhileMoving               = True
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 1
+    MissileDescriptor                 = nil
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_2A18_AP"
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = ~/Descriptor_Fire_Incendie
+    FireTriggeringProbability         = 0.3
+    TargetUnitCenter                  = True
+    CanHarmInfantry                   = True
+    CanHarmVehicles                   = True
+    CanHarmHelicopters                = True
+    CanHarmAirplanes                  = True
+    CanHarmGuidedMissiles             = True
+    IsHarmlessForAllies               = True
+    PiercingWeapon                    = False
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Canon_AP_2A60_120mm is TAmmunitionDescriptor
@@ -18107,7 +18210,7 @@ export Ammo_Canon_AP_D22_152mm is TAmmunitionDescriptor
          [
              (EBaseHitValueModifier/Base, 0.0),
              (EBaseHitValueModifier/Idling, 30),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Moving, 0.0),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -18121,14 +18224,14 @@ export Ammo_Canon_AP_D22_152mm is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
     SupplyCost                        = 130
     NbSalvosShootOnPosition           = 1
     CanShootOnPosition                = False
-    CanShootWhileMoving               = True
+    CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
     AffichageMunitionParSalve         = 1
     MissileDescriptor                 = nil
@@ -18143,8 +18246,110 @@ export Ammo_Canon_AP_D22_152mm is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = True
     PiercingWeapon                    = True
-    FlightTimeForSpeed                    = 1.4
-    DistanceForSpeed                      = 20000.0 * Metre
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
+    DamageTypeEvolutionOverRangeDescriptor  = nil
+)
+export Ammo_Canon_HE_D22_152mm is TAmmunitionDescriptor
+(
+    DescriptorId                      = GUID:{4eec100c-9569-46e4-bf38-adbab79665d7}
+    Name                              = 'SPHGQFYPVE'
+    TypeName                          = 'NA'
+    TypeCategoryName                  = 'FIQMEQMUTK'
+    Caliber                           = 'CMEFIPVBYI'
+    WeaponDescriptionToken            = 'YDWRGQLHYI'
+    TraitsToken                       = [ 'MOTION', 'HE', ]
+    WeaponCursorType                  = Weapon_Cursor_Canon
+    MinMaxCategory                    = MinMax_CanonAP
+    Level                             = 3
+    Arme                              = TDamageTypeRTTI(Family="he" Index=1)
+    ProjectileType                    = EProjectileType/Obus
+    FxWeaponType                      = ~/TFxWeaponType_ArtillerieM185155Mm
+    FxPower                           = EFXPower/Moyen
+    Puissance                         = 100.0
+    TempsEntreDeuxTirs                = 1.0
+    TempsEntreDeuxTirs_Min             = -1.0
+    TempsEntreDeuxTirs_Max             = -1.0
+    TempsEntreDeuxFx                  = 1.0
+    PorteeMaximale                    = ((20000) * Metre)
+    PorteeMinimaleTBA                 = ((0) * Metre)
+    PorteeMaximaleTBA                 = ((0) * Metre)
+    PorteeMinimaleHA                  = ((0) * Metre)
+    PorteeMaximaleHA                  = ((0) * Metre)
+    PorteeMinimale                    = ((100) * Metre)
+    AltitudeAPorteeMinimale           = ((25.0) * Metre)
+    AltitudeAPorteeMaximale           = ((50.0) * Metre)
+    AffecteParNombre                  = False
+    AngleDispersion                   = 0.0
+    DispersionAtMaxRange              = ((25) * Metre)
+    DispersionWithoutSorting          = True
+    CorrectedShotAimtimeMultiplier    = 1.0
+    RadiusSplashPhysicalDamages       = ((304) * Metre)
+    PhysicalDamages                   = 4.104
+    RadiusSplashSuppressDamages       = ((608) * Metre)
+    SuppressDamages                   = 160.0
+    RayonPinned                       = ((400) * Metre)
+    AllowSuppressDamageWhenNoImpact                = False
+    DisplaySalveAccuracy              = False
+    TirIndirect                       = False
+    TirReflexe                        = True
+    InterdireTirReflexe               = False
+    FX_vitesse_de_depart              = 0.0
+    FX_acceleration_max               = 0.0
+    FX_tir_sans_physic                = False
+    FX_frottement                     = 0.0
+    TempsAnimation                    = 0.0
+    NoiseDissimulationMalus           = 2.2
+    ShotsBeforeMaxNoise               = 2
+    TargetsDistricts                  = True
+        // DiceHitRollRule
+    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
+    (
+         DescriptorId          = GUID:{8a7dcd96-85d4-4fa6-9504-ea654f8cde7e}
+         BaseCriticModifier = 100
+         BaseEffectModifier = 0
+         BaseHitValueModifiers =
+         [
+             (EBaseHitValueModifier/Base, 0.0),
+             (EBaseHitValueModifier/Idling, 30),
+             (EBaseHitValueModifier/Moving, 0.0),
+             (EBaseHitValueModifier/SuccessfulShots, 0.0),
+             (EBaseHitValueModifier/Targeted, 0.0),
+         ]
+         HitModifierList       =
+         [
+             EDiceHitModifier/Precision,
+             EDiceHitModifier/DistanceToTarget,
+             EDiceHitModifier/SuccesiveShots,
+             EDiceHitModifier/Suppress,
+         ]
+    )
+
+    TempsDeVisee                      = aim_time_multiplier * 3.0
+    TempsEntreDeuxSalves              = 15.0
+    TempsEntreDeuxSalves_Min           = -1.0
+    TempsEntreDeuxSalves_Max           = -1.0
+    NbTirParSalves                    = 1
+    SupplyCost                        = 130
+    NbSalvosShootOnPosition           = 1
+    CanShootOnPosition                = True
+    CanShootWhileMoving               = False
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 1
+    MissileDescriptor                 = nil
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_D22_AP"
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = nil
+    TargetUnitCenter                  = True
+    CanHarmInfantry                   = True
+    CanHarmVehicles                   = True
+    CanHarmHelicopters                = True
+    CanHarmAirplanes                  = True
+    CanHarmGuidedMissiles             = True
+    IsHarmlessForAllies               = True
+    PiercingWeapon                    = False
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Canon_AP_D30_122mm is TAmmunitionDescriptor
@@ -18223,11 +18428,11 @@ export Ammo_Canon_AP_D30_122mm is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = aim_time_multiplier * 3.0
-    TempsEntreDeuxSalves              = 6.0
+    TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 1
-    SupplyCost                        = 90
+    SupplyCost                        = 122
     NbSalvosShootOnPosition           = 1
     CanShootOnPosition                = False
     CanShootWhileMoving               = False
@@ -18246,8 +18451,111 @@ export Ammo_Canon_AP_D30_122mm is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = True
     PiercingWeapon                    = True
-    FlightTimeForSpeed                    = 1.4
-    DistanceForSpeed                      = 20000.0 * Metre
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6500.0 * Metre
+    DamageTypeEvolutionOverRangeDescriptor  = nil
+)
+export Ammo_Canon_HE_D30_122mm is TAmmunitionDescriptor
+(
+    DescriptorId                      = GUID:{f318a64e-3d79-45d2-bb3c-c7d5f95747a6}
+    Name                              = 'WRJHZRMFRI'
+    TypeName                          = 'NA'
+    TypeCategoryName                  = 'FIQMEQMUTK'
+    Caliber                           = 'NFWPEQRTDW'
+    WeaponDescriptionToken            = 'YDWRGQLHYI'
+    TraitsToken                       = [ 'MOTION', 'HE', ]
+    WeaponCursorType                  = Weapon_Cursor_Canon
+    MinMaxCategory                    = MinMax_CanonAP
+    Level                             = 3
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=10)
+    ProjectileType                    = EProjectileType/Obus
+    FxWeaponType                      = ~/TFxWeaponType_ArtillerieM185155Mm
+    FxPower                           = EFXPower/Moyen
+    Puissance                         = 100.0
+    TempsEntreDeuxTirs                = 1.0
+    TempsEntreDeuxTirs_Min             = -1.0
+    TempsEntreDeuxTirs_Max             = -1.0
+    TempsEntreDeuxFx                  = 1.0
+    PorteeMaximale                    = ((20000) * Metre)
+    PorteeMinimaleTBA                 = ((0) * Metre)
+    PorteeMaximaleTBA                 = ((0) * Metre)
+    PorteeMinimaleHA                  = ((0) * Metre)
+    PorteeMaximaleHA                  = ((0) * Metre)
+    PorteeMinimale                    = ((100) * Metre)
+    AltitudeAPorteeMinimale           = ((30.0) * Metre)
+    AltitudeAPorteeMaximale           = ((60.0) * Metre)
+    AffecteParNombre                  = False
+    AngleDispersion                   = 0.0
+    DispersionAtMaxRange              = ((25) * Metre)
+    DispersionWithoutSorting          = True
+    CorrectedShotAimtimeMultiplier    = 1.0
+    RadiusSplashPhysicalDamages       = ((1) * Metre)
+    PhysicalDamages                   = med_HEAT_damage
+    RadiusSplashSuppressDamages       = ((1) * Metre)
+    SuppressDamages                   = 1.0
+    RayonPinned                       = ((400) * Metre)
+    AllowSuppressDamageWhenNoImpact                = False
+    DisplaySalveAccuracy              = False
+    TirIndirect                       = False
+    TirReflexe                        = True
+    InterdireTirReflexe               = False
+    FX_vitesse_de_depart              = 0.0
+    FX_acceleration_max               = 0.0
+    FX_tir_sans_physic                = False
+    FX_frottement                     = 0.0
+    TempsAnimation                    = 0.0
+    NoiseDissimulationMalus           = 2.2
+    ShotsBeforeMaxNoise               = 2
+    TargetsDistricts                  = True
+        // DiceHitRollRule
+    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
+    (
+         DescriptorId          = GUID:{8a96b2cc-89ac-4bb8-9ff0-9bb0052289d3}
+         BaseCriticModifier = 100
+         BaseEffectModifier = 0
+         BaseHitValueModifiers =
+         [
+             (EBaseHitValueModifier/Base, 0.0),
+             (EBaseHitValueModifier/Idling, 30),
+             (EBaseHitValueModifier/Moving, 0),
+             (EBaseHitValueModifier/SuccessfulShots, 0.0),
+             (EBaseHitValueModifier/Targeted, 0.0),
+         ]
+         HitModifierList       =
+         [
+             EDiceHitModifier/Precision,
+             EDiceHitModifier/DistanceToTarget,
+             EDiceHitModifier/SuccesiveShots,
+             EDiceHitModifier/Suppress,
+         ]
+    )
+
+    TempsDeVisee                      = aim_time_multiplier * 3.0
+    TempsEntreDeuxSalves              = 10.0
+    TempsEntreDeuxSalves_Min           = -1.0
+    TempsEntreDeuxSalves_Max           = -1.0
+    NbTirParSalves                    = 1
+    SupplyCost                        = 122
+    NbSalvosShootOnPosition           = 1
+    CanShootOnPosition                = True
+    CanShootWhileMoving               = False
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 1
+    MissileDescriptor                 = nil
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_2A18_AP"
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = ~/Descriptor_Fire_Incendie
+    FireTriggeringProbability         = 0.3
+    TargetUnitCenter                  = True
+    CanHarmInfantry                   = True
+    CanHarmVehicles                   = True
+    CanHarmHelicopters                = True
+    CanHarmAirplanes                  = True
+    CanHarmGuidedMissiles             = True
+    IsHarmlessForAllies               = True
+    PiercingWeapon                    = False
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6500.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Canon_AP_HB60_HEAT is TAmmunitionDescriptor
@@ -34542,7 +34850,7 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm is TAmmunitionDescriptor
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((6000) * Metre)
+    PorteeMinimale                    = ((22800) * Metre)
     AltitudeAPorteeMinimale           = ((200.0) * Metre)
     AltitudeAPorteeMaximale           = ((10000.0) * Metre)
     AffecteParNombre                  = False
@@ -34553,9 +34861,9 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm is TAmmunitionDescriptor
     CorrectedShotDispersionMultiplier = 0.7
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((244) * Metre)
-    PhysicalDamages                   = 1.83
+    PhysicalDamages                   = 2.318
     RadiusSplashSuppressDamages       = ((488) * Metre)
-    SuppressDamages                   = 81.0
+    SuppressDamages                   = 122.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -34568,13 +34876,13 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm is TAmmunitionDescriptor
     FX_frottement                     = 0.0
     TempsAnimation                    = 0.0
     NoiseDissimulationMalus           = 2.0
-    ShotsBeforeMaxNoise               = 2
+    ShotsBeforeMaxNoise               = 1
     TargetsDistricts                  = False
         // DiceHitRollRule
     HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
     (
          DescriptorId          = GUID:{363cfc88-6229-408d-9ff5-72528bae5692}
-         BaseCriticModifier = 25
+         BaseCriticModifier = 100
          BaseEffectModifier = 0
          BaseHitValueModifiers =
          [
@@ -34594,16 +34902,16 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = 40.0
-    TempsEntreDeuxSalves              = 20.0
+    TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 6
-    SupplyCost                        = 732
-    NbSalvosShootOnPosition           = 1
+    NbTirParSalves                    = 1
+    SupplyCost                        = 122
+    NbSalvosShootOnPosition           = 6
     CanShootOnPosition                = True
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 6
+    AffichageMunitionParSalve         = 1
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_2A18"
     SmokeDescriptor                   = nil
@@ -34617,8 +34925,8 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
-    FlightTimeForSpeed                    = 25.0
-    DistanceForSpeed                      = 154000.0 * Metre
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Howz_Canon_2A18_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
@@ -34629,7 +34937,7 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
     TypeCategoryName                  = 'KKZDHFFCTH'
     Caliber                           = 'BZLFXSXAFE'
     WeaponDescriptionToken            = 'RDHZLCYGPG'
-    TraitsToken                       = [ 'STAT', 'HE', 'IND', ]
+    TraitsToken                       = [ 'STAT', 'IND', ]
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_MLRS
     Level                             = 3
@@ -34647,7 +34955,7 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((6000) * Metre)
+    PorteeMinimale                    = ((22800) * Metre)
     AltitudeAPorteeMinimale           = ((200.0) * Metre)
     AltitudeAPorteeMaximale           = ((10000.0) * Metre)
     AffecteParNombre                  = False
@@ -34699,16 +35007,16 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = 40.0
-    TempsEntreDeuxSalves              = 20.0
+    TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 6
-    SupplyCost                        = 60
-    NbSalvosShootOnPosition           = 1
+    NbTirParSalves                    = 1
+    SupplyCost                        = 122
+    NbSalvosShootOnPosition           = 6
     CanShootOnPosition                = True
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 6
+    AffichageMunitionParSalve         = 1
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_2A18"
     SmokeDescriptor                   = ~/Descriptor_Smoke_Fumi120mm
@@ -34722,8 +35030,8 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
-    FlightTimeForSpeed                    = 25.0
-    DistanceForSpeed                      = 154000.0 * Metre
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Howz_Canon_2A18_Howitzer_122mm_TOWED is TAmmunitionDescriptor
@@ -34747,12 +35055,12 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm_TOWED is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 5.0
-    PorteeMaximale                    = ((39903) * Metre)
+    PorteeMaximale                    = ((154000) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((6000) * Metre)
+    PorteeMinimale                    = ((22800) * Metre)
     AltitudeAPorteeMinimale           = ((200.0) * Metre)
     AltitudeAPorteeMaximale           = ((10000.0) * Metre)
     AffecteParNombre                  = False
@@ -34804,16 +35112,16 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm_TOWED is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = 40.0
-    TempsEntreDeuxSalves              = 25.0
+    TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 6
-    SupplyCost                        = 732
-    NbSalvosShootOnPosition           = 1
+    NbTirParSalves                    = 1
+    SupplyCost                        = 122
+    NbSalvosShootOnPosition           = 6
     CanShootOnPosition                = True
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 6
+    AffichageMunitionParSalve         = 1
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_2A18"
     SmokeDescriptor                   = nil
@@ -34828,7 +35136,7 @@ export Ammo_Howz_Canon_2A18_Howitzer_122mm_TOWED is TAmmunitionDescriptor
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     FlightTimeForSpeed                    = 25.0
-    DistanceForSpeed                      = 48000.0 * Metre
+    DistanceForSpeed                      = 154000.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Howz_Canon_2A44_Howitzer_203mm_late is TAmmunitionDescriptor
@@ -35585,12 +35893,12 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 5.0
-    PorteeMaximale                    = ((185000) * Metre)
+    PorteeMaximale                    = ((174000) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((6000) * Metre)
+    PorteeMinimale                    = ((27600) * Metre)
     AltitudeAPorteeMinimale           = ((300.0) * Metre)
     AltitudeAPorteeMaximale           = ((15000.0) * Metre)
     AffecteParNombre                  = False
@@ -35601,9 +35909,9 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late is TAmmunitionDescriptor
     CorrectedShotDispersionMultiplier = 0.7
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((304) * Metre)
-    PhysicalDamages                   = 2.28
+    PhysicalDamages                   = 4.104
     RadiusSplashSuppressDamages       = ((608) * Metre)
-    SuppressDamages                   = 100.0
+    SuppressDamages                   = 160.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -35616,7 +35924,7 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late is TAmmunitionDescriptor
     FX_frottement                     = 0.0
     TempsAnimation                    = 0.0
     NoiseDissimulationMalus           = 2.0
-    ShotsBeforeMaxNoise               = 2
+    ShotsBeforeMaxNoise               = 1
     TargetsDistricts                  = False
         // DiceHitRollRule
     HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
@@ -35642,16 +35950,16 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = 40.0
-    TempsEntreDeuxSalves              = 20.0
+    TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 4
-    SupplyCost                        = 608
-    NbSalvosShootOnPosition           = 1
+    NbTirParSalves                    = 1
+    SupplyCost                        = 152
+    NbSalvosShootOnPosition           = 4
     CanShootOnPosition                = True
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 4
+    AffichageMunitionParSalve         = 1
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_D22"
     SmokeDescriptor                   = nil
@@ -35665,8 +35973,8 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
-    FlightTimeForSpeed                    = 25.0
-    DistanceForSpeed                      = 185000.0 * Metre
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Howz_Canon_D22_Howitzer_152mm_late_SMOKE is TAmmunitionDescriptor
@@ -35690,12 +35998,12 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late_SMOKE is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 5.0
-    PorteeMaximale                    = ((185000) * Metre)
+    PorteeMaximale                    = ((174000) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((6000) * Metre)
+    PorteeMinimale                    = ((27600) * Metre)
     AltitudeAPorteeMinimale           = ((300.0) * Metre)
     AltitudeAPorteeMaximale           = ((15000.0) * Metre)
     AffecteParNombre                  = False
@@ -35747,16 +36055,16 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late_SMOKE is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = 40.0
-    TempsEntreDeuxSalves              = 20.0
+    TempsEntreDeuxSalves              = 15.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 4
-    SupplyCost                        = 40
-    NbSalvosShootOnPosition           = 1
+    NbTirParSalves                    = 1
+    SupplyCost                        = 152
+    NbSalvosShootOnPosition           = 4
     CanShootOnPosition                = True
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 4
+    AffichageMunitionParSalve         = 1
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_D22"
     SmokeDescriptor                   = ~/Descriptor_Smoke_Fumi152mm
@@ -35770,8 +36078,8 @@ export Ammo_Howz_Canon_D22_Howitzer_152mm_late_SMOKE is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
-    FlightTimeForSpeed                    = 25.0
-    DistanceForSpeed                      = 185000.0 * Metre
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Howz_Canon_D30_Howitzer_122mm is TAmmunitionDescriptor
@@ -35795,12 +36103,12 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 3.0
-    PorteeMaximale                    = ((50006) * Metre * 3.5)
+    PorteeMaximale                    = ((153000) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((6000) * Metre  * 3.5)
+    PorteeMinimale                    = ((22800) * Metre)
     AltitudeAPorteeMinimale           = ((300.0) * Metre)
     AltitudeAPorteeMaximale           = ((15000.0) * Metre)
     AffecteParNombre                  = False
@@ -35811,9 +36119,9 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm is TAmmunitionDescriptor
     CorrectedShotDispersionMultiplier = 0.7
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((244) * Metre)
-    PhysicalDamages                   = 1.83
+    PhysicalDamages                   = 2.318
     RadiusSplashSuppressDamages       = ((488) * Metre)
-    SuppressDamages                   = 81.0
+    SuppressDamages                   = 122.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
     DisplaySalveAccuracy              = True
@@ -35852,16 +36160,16 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = 40.0
-    TempsEntreDeuxSalves              = 15.0
+    TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 6
-    SupplyCost                        = 732
-    NbSalvosShootOnPosition           = 1
+    NbTirParSalves                    = 1
+    SupplyCost                        = 122
+    NbSalvosShootOnPosition           = 6
     CanShootOnPosition                = True
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 6
+    AffichageMunitionParSalve         = 1
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_fh_70"
     SmokeDescriptor                   = nil
@@ -35875,8 +36183,8 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
-    FlightTimeForSpeed                    = 25.0
-    DistanceForSpeed                      = 50006.0 * Metre
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Howz_Canon_D30_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
@@ -35887,7 +36195,7 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
     TypeCategoryName                  = 'KKZDHFFCTH'
     Caliber                           = 'BZLFXSXAFE'
     WeaponDescriptionToken            = 'RDHZLCYGPG'
-    TraitsToken                       = [ 'STAT', 'HE', 'IND', ]
+    TraitsToken                       = [ 'STAT', 'IND', ]
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_MLRS
     Level                             = 3
@@ -35900,12 +36208,12 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 3.0
-    PorteeMaximale                    = ((50006) * Metre * 3.5)
+    PorteeMaximale                    = ((153000) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((6000) * Metre  * 3.5)
+    PorteeMinimale                    = ((22800) * Metre)
     AltitudeAPorteeMinimale           = ((300.0) * Metre)
     AltitudeAPorteeMaximale           = ((15000.0) * Metre)
     AffecteParNombre                  = False
@@ -35957,16 +36265,16 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
     )
 
     TempsDeVisee                      = 40.0
-    TempsEntreDeuxSalves              = 15.0
+    TempsEntreDeuxSalves              = 10.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 6
-    SupplyCost                        = 60
-    NbSalvosShootOnPosition           = 1
+    NbTirParSalves                    = 1
+    SupplyCost                        = 122
+    NbSalvosShootOnPosition           = 6
     CanShootOnPosition                = True
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 6
+    AffichageMunitionParSalve         = 1
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_fh_70"
     SmokeDescriptor                   = ~/Descriptor_Smoke_Fumi152mm
@@ -35980,8 +36288,8 @@ export Ammo_Howz_Canon_D30_Howitzer_122mm_SMOKE is TAmmunitionDescriptor
     CanHarmGuidedMissiles             = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
-    FlightTimeForSpeed                    = 25.0
-    DistanceForSpeed                      = 50006.0 * Metre
+    FlightTimeForSpeed                    = 1.0
+    DistanceForSpeed                      = 6650.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 export Ammo_Howz_Canon_FH70_Howitzer_155mm is TAmmunitionDescriptor
@@ -53816,7 +54124,7 @@ export Ammo_RocketArt_thermobaric_220mm_x30 is TAmmunitionDescriptor
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((2000) * Metre)
+    PorteeMinimale                    = ((4000) * Metre)
     AltitudeAPorteeMinimale           = ((50.0) * Metre)
     AltitudeAPorteeMaximale           = ((800.0) * Metre)
     AffecteParNombre                  = False

@@ -2358,6 +2358,11 @@ Gfx_Ural_4320_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Alternatives = Alternatives_Ural_4320_SOV
     Selector = Selector_Ural_4320_SOV
 )
+Gfx_Ural_4320_art_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_Ural_4320_art_SOV
+    Selector = Selector_Ural_4320_art_SOV
+)
 Gfx_VAB_CMD_FR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
     Alternatives = Alternatives_VAB_CMD_FR

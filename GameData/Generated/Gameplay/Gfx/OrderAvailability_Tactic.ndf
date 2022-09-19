@@ -10407,6 +10407,25 @@ export Descriptor_OrderAvailability_Ural_4320_SOV is [
     "AIStop",
     "AISupply",
 ]
+export Descriptor_OrderAvailability_Ural_4320_art_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Spread",
+    "Reverse",
+    "SupplyUnit",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
+    "AIStop",
+    "AISupply",
+]
 export Descriptor_OrderAvailability_VAB_CMD_FR is [
     "Stop",
     "Move",

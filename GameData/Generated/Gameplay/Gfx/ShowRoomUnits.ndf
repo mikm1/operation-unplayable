@@ -44420,6 +44420,77 @@ export Descriptor_ShowRoomUnit_Ural_4320_SOV is TEntityDescriptor
 
     ]
 )
+export Descriptor_ShowRoomUnit_Ural_4320_art_SOV is TEntityDescriptor
+(
+    DescriptorId        = GUID:{f09cdd29-9d97-40f5-b6c6-7de46cb29bf1}
+    ClassNameForDebug   = "ShowRoomUnit_Ural_4320_art_SOV"
+    ModulesDescriptors = [
+        // TypeUnit
+            TModuleSelector
+            (
+                Default            = TTypeUnitModuleDescriptor
+                (
+                    TypeUnitValue                    = ETypeUnit/Support
+                    Nationalite                      = ENationalite/Axis
+                    MotherCountry                    = 'SOV'
+                    AcknowUnitType                   = ~/TAcknowUnitType_Logistic
+                    TypeUnitFormation                = 'Supply'
+                )
+                Selection = [
+                    NilDescriptorIfCadavre,
+                ]
+            ),
+
+        // Position
+        (
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((30) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            )
+        ),
+
+        // ApparenceModel
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject                     = True
+            Depiction                          = ~/Gfx_Ural_4320_art_SOV_Showroom_Autogen
+            GameplayBBoxBoneName               = 'chassis'
+        ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // EffectApplier
+            ~/EffectApplierModuleSelector,
+
+        // Experience
+            TExperienceModuleDescriptor
+            (
+                ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple
+                CanWinExperience = False
+                ExperienceGainBySecond = ~/ExperienceGainBySecond
+                ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+            ),
+
+        // CameraShowroom
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'Vehicule'
+        ),
+
+    ]
+)
 export Descriptor_ShowRoomUnit_VAB_CMD_FR is TEntityDescriptor
 (
     DescriptorId        = GUID:{57b2dd74-b904-4828-b5d6-1f9b64ca78d9}

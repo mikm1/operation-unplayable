@@ -4885,8 +4885,8 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_2S3M_Akatsiya_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
-                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.0]
+                        NumberOfUnitInPack = 2
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.5, 0.0]
                     ),
                     TDeckUniteRule
                     (
@@ -4974,8 +4974,8 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Howz_D30_122mm_SOV
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_MTLB_transp_SOV]
-                        NumberOfUnitInPack = 8
+                        AvailableTransportList = [~/Descriptor_Unit_Ural_4320_art_SOV]
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.5, 0.25]
                     ),
                     TDeckUniteRule
@@ -5062,7 +5062,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mortier_2S12_120mm_SOV
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_MTLB_transp_SOV, ~/Descriptor_Unit_UAZ_469_SOV]
+                        AvailableTransportList = [~/Descriptor_Unit_MTLB_transp_SOV, ~/Descriptor_Unit_GAZ_66_SOV]
                         NumberOfUnitInPack = 8
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.5, 0.25]
                     ),
@@ -5311,6 +5311,11 @@ private DivisionRules is TDeckDivisionRules
                     TDeckTransportRule
                     (
                         TransportDescriptor = ~/Descriptor_Unit_BRM_1_SOV
+                        MaxNumber = 1000
+                    ),
+                    TDeckTransportRule
+                    (
+                        TransportDescriptor = ~/Descriptor_Unit_Ural_4320_art_SOV
                         MaxNumber = 1000
                     ),
                 ]

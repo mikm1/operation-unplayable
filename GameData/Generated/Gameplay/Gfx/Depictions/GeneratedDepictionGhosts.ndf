@@ -1751,6 +1751,11 @@ GhostDepiction_Ural_4320_SOV is GhostVehicleDepictionTemplate
     Selector = Selector_Ural_4320_SOV
     Alternatives = Alternatives_Ural_4320_SOV
 )
+GhostDepiction_Ural_4320_art_SOV is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_Ural_4320_art_SOV
+    Alternatives = Alternatives_Ural_4320_art_SOV
+)
 GhostDepiction_VAB_CMD_FR is GhostVehicleDepictionTemplate
 (
     Selector = Selector_VAB_CMD_FR
