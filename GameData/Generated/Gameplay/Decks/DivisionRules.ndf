@@ -5062,7 +5062,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mortier_2S12_120mm_SOV
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_MTLB_transp_SOV, ~/Descriptor_Unit_GAZ_66_SOV]
+                        AvailableTransportList = [~/Descriptor_Unit_GAZ_66_art_SOV]
                         NumberOfUnitInPack = 8
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.5, 0.25]
                     ),
@@ -5256,6 +5256,11 @@ private DivisionRules is TDeckDivisionRules
                     TDeckTransportRule
                     (
                         TransportDescriptor = ~/Descriptor_Unit_GAZ_66_SOV
+                        MaxNumber = 1000
+                    ),
+                    TDeckTransportRule
+                    (
+                        TransportDescriptor = ~/Descriptor_Unit_GAZ_66_art_SOV
                         MaxNumber = 1000
                     ),
                     TDeckTransportRule
@@ -5828,7 +5833,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_M106A2_HOWZ_US
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
                     ),
                     TDeckUniteRule

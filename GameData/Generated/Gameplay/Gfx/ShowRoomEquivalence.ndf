@@ -195,6 +195,7 @@ export ShowRoomEquivalenceManager is TShowRoomEquivalenceManager
         ( ~/Descriptor_Unit_GAZ_66B_SOV, ~/Descriptor_ShowRoomUnit_GAZ_66B_SOV ),
         ( ~/Descriptor_Unit_GAZ_66B_ZU_SOV, ~/Descriptor_ShowRoomUnit_GAZ_66B_ZU_SOV ),
         ( ~/Descriptor_Unit_GAZ_66_SOV, ~/Descriptor_ShowRoomUnit_GAZ_66_SOV ),
+        ( ~/Descriptor_Unit_GAZ_66_art_SOV, ~/Descriptor_ShowRoomUnit_GAZ_66_art_SOV ),
         ( ~/Descriptor_Unit_Gendarmerie_FR, ~/Descriptor_ShowRoomUnit_Gendarmerie_FR ),
         ( ~/Descriptor_Unit_Gepard_1A2_RFA, ~/Descriptor_ShowRoomUnit_Gepard_1A2_RFA ),
         ( ~/Descriptor_Unit_GreenBerets_CMD_US, ~/Descriptor_ShowRoomUnit_GreenBerets_CMD_US ),

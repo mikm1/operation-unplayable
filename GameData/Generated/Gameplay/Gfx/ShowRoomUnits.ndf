@@ -17437,6 +17437,77 @@ export Descriptor_ShowRoomUnit_GAZ_66_SOV is TEntityDescriptor
 
     ]
 )
+export Descriptor_ShowRoomUnit_GAZ_66_art_SOV is TEntityDescriptor
+(
+    DescriptorId        = GUID:{76d2cd16-6728-47f0-a34a-01cfa40fd238}
+    ClassNameForDebug   = "ShowRoomUnit_GAZ_66_art_SOV"
+    ModulesDescriptors = [
+        // TypeUnit
+            TModuleSelector
+            (
+                Default            = TTypeUnitModuleDescriptor
+                (
+                    TypeUnitValue                    = ETypeUnit/Vehicle
+                    Nationalite                      = ENationalite/Axis
+                    MotherCountry                    = 'SOV'
+                    AcknowUnitType                   = ~/TAcknowUnitType_Transport
+                    TypeUnitFormation                = 'Char'
+                )
+                Selection = [
+                    NilDescriptorIfCadavre,
+                ]
+            ),
+
+        // Position
+        (
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((30) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            )
+        ),
+
+        // ApparenceModel
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject                     = True
+            Depiction                          = ~/Gfx_GAZ_66_art_SOV_Showroom_Autogen
+            GameplayBBoxBoneName               = 'chassis'
+        ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // EffectApplier
+            ~/EffectApplierModuleSelector,
+
+        // Experience
+            TExperienceModuleDescriptor
+            (
+                ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple
+                CanWinExperience = True
+                ExperienceGainBySecond = ~/ExperienceGainBySecond
+                ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+            ),
+
+        // CameraShowroom
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'Vehicule'
+        ),
+
+    ]
+)
 export Descriptor_ShowRoomUnit_Gendarmerie_FR is TEntityDescriptor
 (
     DescriptorId        = GUID:{d4c871a2-2345-437f-af81-29bc6f0dab38}

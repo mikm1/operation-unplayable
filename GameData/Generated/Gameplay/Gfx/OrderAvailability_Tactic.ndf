@@ -4141,6 +4141,25 @@ export Descriptor_OrderAvailability_GAZ_66_SOV is [
     "LoadUnit",
     "AIStop",
 ]
+export Descriptor_OrderAvailability_GAZ_66_art_SOV is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Spread",
+    "Reverse",
+    "SupplyUnit",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadIntoTransport",
+    "Load",
+    "LoadUnit",
+    "AIStop",
+    "AISupply",
+]
 export Descriptor_OrderAvailability_Gendarmerie_FR is [
     "Stop",
     "Move",

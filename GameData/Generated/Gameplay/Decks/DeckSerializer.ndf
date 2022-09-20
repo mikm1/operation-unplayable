@@ -1631,5 +1631,7 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Unit_MANPAD_Stinger_crew_US, 4006),
         (Descriptor_Unit_Cav_Scout_US, 4007),
         (Descriptor_Unit_Ural_4320_art_SOV, 4008),
+        (Descriptor_Unit_GAZ_66_art_SOV, 4009),
+
     ]
 )

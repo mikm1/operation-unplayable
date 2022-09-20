@@ -17235,6 +17235,96 @@ Descriptor_UnitCadavre_GAZ_66_SOV is TEntityDescriptor
 
     ]
 )
+Descriptor_UnitCadavre_GAZ_66_art_SOV is TEntityDescriptor
+(
+    DescriptorId       = GUID:{bf4cfc27-ed36-4f21-970f-1bb943fd1398}
+    ClassNameForDebug  = 'Unit_CadavreGAZ_66_art_SOV'
+    ModulesDescriptors = [
+        // TypeUnit
+            TTypeUnitModuleDescriptor
+            (
+                TypeUnitValue                    = ETypeUnit/Vehicle
+                Nationalite                      = ENationalite/Axis
+                MotherCountry                    = 'SOV'
+                AcknowUnitType                   = ~/TAcknowUnitType_Transport
+                TypeUnitFormation                = 'Char'
+            ),
+
+        // Tags
+            TTagsModuleDescriptor
+            (
+            ),
+
+        // Flags
+            TFlagsModuleDescriptor
+            (
+                InitialFlagSet =
+                [
+                    Flag_Detectable,
+                    Flag_LdDetectable,
+                ]
+            ),
+
+        // Position
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((30) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+
+        // LinkTeam
+            ~/LinkTeamModuleDescriptor,
+
+        // Cadavre
+            TCadavreModuleDescriptor
+            (
+                ExplodeAtEnd = True
+                KillAsVehicule = True
+                KillAsInfanterie = False
+                KillAsHelico = False
+                KillAsAirplane = False
+                KillAsBatiment = False
+                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+                DisappearanceDuration = 0.0
+                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum
+                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum
+                FadingDuration = 1
+                DeathExplosionAmmo = ~/Ammo_Mort_Unite_faible
+                SecondaryDeathExplosionAmmo = nil
+                InvulnerablePeriod = $/GFX/Everything/CadavreInvulnerablePeriode
+                ModuleDescriptorsToSteal =
+                [
+                   $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/ApparenceModel,
+                   $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/LandMovement,
+                   $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/GenericMovement,
+                   $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/FacingInfos,
+                   $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/Transporter,
+                ]
+            ),
+            $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/ApparenceModel,
+            $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/LandMovement,
+            $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/GenericMovement,
+            $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/FacingInfos,
+            $/GFX/Everything/Descriptor_Unit_GAZ_66_art_SOV/Transporter,
+
+        // PackSignaux
+            ~/PackSignauxModuleDescriptor,
+
+        // Debug
+            ~/DebugModuleDescriptor,
+
+    ]
+)
 Descriptor_UnitCadavre_Gendarmerie_FR is TEntityDescriptor
 (
     DescriptorId       = GUID:{e431215b-a07e-4f14-9738-63ccd4537d30}
