@@ -1,6 +1,98 @@
 // Ne pas éditer, ce fichier est auto-généré !
 
 
+export DamageLevelsPackDescriptor_GroundUnits_Autoloaded_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{ad2813b0-adfc-4365-bbc2-cb73e1b6a27a}
+    DamageLevelsDescriptors = [
+        DamageLevelDescriptor_GroundUnits_Autoloaded_packSupp_palier_1 is TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{00ac70d7-ec41-4582-8cb6-794986e7fb91}
+            Value = 0
+            LocalizationToken = "mrl_4"
+            MoralModifier = 99
+            HitRollModifier = 0
+            TextColor = RGBA[208,191,166,255]
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+                ~/UnitEffect_GroundUnit_Cohesion_High,
+            ]
+            NameForDebug = "GroundUnits_packSupp_palier_1"
+        ),
+        DamageLevelDescriptor_GroundUnits_Autoloaded_packSupp_palier_2 is TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{02bd2d23-881f-4ff1-84b6-dd417a27ce74}
+            Value = 0.1
+            LocalizationToken = "mrl_4"
+            MoralModifier = 99
+            HitRollModifier = 0
+            TextColor = RGBA[127,255,150,255]
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            EffectsPacks = [
+                ~/UnitEffect_GroundUnit_Cohesion_High,
+            ]
+            NameForDebug = "GroundUnits_packSupp_palier_2"
+        ),
+        DamageLevelDescriptor_GroundUnits_Autoloaded_packSupp_palier_3 is TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{9da86c7f-2999-4d48-b6ea-89649cb40c63}
+            Value = 0.25
+            LocalizationToken = "mrl_3"
+            MoralModifier = 99
+            HitRollModifier = -25
+            TextColor = RGBA[255,225,125,255]
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            EffectsPacks = [
+                ~/UnitEffect_GroundUnit_Cohesion_Normal,
+            ]
+            NameForDebug = "GroundUnits_packSupp_palier_3"
+        ),
+        DamageLevelDescriptor_GroundUnits_Autoloaded_packSupp_palier_4 is TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{8398d7e4-32ba-4d8d-b4a9-c8d7a2d32511}
+            Value = 0.5
+            LocalizationToken = "mrl_2"
+            MoralModifier = 99
+            HitRollModifier = -45
+            TextColor = RGBA[255,255,0,255]
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            EffectsPacks = [
+                ~/UnitEffect_GroundUnit_Cohesion_Mediocre,
+            ]
+            NameForDebug = "GroundUnits_packSupp_palier_4"
+        ),
+        DamageLevelDescriptor_GroundUnits_Autoloaded_packSupp_palier_5 is TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{9e9be9c9-677a-43f9-b457-e89eef6cd8bc}
+            Value = 0.75
+            LocalizationToken = "mrl_1"
+            MoralModifier = 99
+            HitRollModifier = -70
+            TextColor = RGBA[255,100,0,255]
+            AnimationType = ESoldierSuppressStatus/Pinned
+            EffectsPacks = [
+                ~/UnitEffect_GroundUnit_Cohesion_Low,
+            ]
+            NameForDebug = "GroundUnits_packSupp_palier_5"
+        ),
+        DamageLevelDescriptor_GroundUnits_Autoloaded_packSupp_palier_6 is TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{ace36551-ca0d-4b37-b1dd-8a2e376032ab}
+            Value = 0.8
+            LocalizationToken = "mrl_1"
+            HitRollModifier = -70
+            TextColor = RGBA[255,84,84,255]
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+                ~/UnitEffect_GroundUnit_Cohesion_Low,
+                ~/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
+            ]
+            NameForDebug = "GroundUnits_packSupp_palier_6"
+        ),
+    ]
+    NameForDebug = "GroundUnits_packSupp"
+)
 export DamageLevelsPackDescriptor_Airplanes_packSupp is TDamageLevelsPackDescriptor
 (
     DescriptorId = GUID:{96f0b695-5a0c-44c2-a260-373c33976cd1}

@@ -48,6 +48,53 @@ export ExperienceLevelsPackDescriptor_Exemple_XP is TExperienceLevelsPackDescrip
     ]
     NameForDebug = "Exemple_XP"
 )
+export ExperienceLevelsPackDescriptor_Autoloaded is TExperienceLevelsPackDescriptor
+(
+    DescriptorId = GUID:{926129a1-cebc-40d1-8bbe-468ece59e081}
+    ExperienceLevelsDescriptors = [
+        ExperienceLevelDescriptor_Autoloaded_0 is TExperienceLevelDescriptor
+        (
+            DescriptorId = GUID:{9d5dd25d-1a05-4b88-83e0-4bab6c7ea401}
+            LocalizationToken = "EXPLEVEL0"
+            ThresholdAdditionalValue = 0.0
+            ThresholdPriceMultiplier = 0.0
+            IconsByNationality = [
+            ]
+            NameForDebug = "Exemple_XP_niveau_0"
+        ),
+        ExperienceLevelDescriptor_Autoloaded_1 is TExperienceLevelDescriptor
+        (
+            DescriptorId = GUID:{e29a1b14-18ae-47e9-91a2-e62b5bc94139}
+            LocalizationToken = "EXPLEVEL1"
+            ThresholdAdditionalValue = 0.0
+            ThresholdPriceMultiplier = 2.0
+            IconsByNationality = [
+            ]
+            NameForDebug = "Exemple_XP_niveau_1"
+        ),
+        ExperienceLevelDescriptor_Autoloaded_2 is TExperienceLevelDescriptor
+        (
+            DescriptorId = GUID:{12f21641-ae19-4ac9-abca-cef0b5387b37}
+            LocalizationToken = "EXPLEVEL2"
+            ThresholdAdditionalValue = 0.0
+            ThresholdPriceMultiplier = 4.0
+            IconsByNationality = [
+            ]
+            NameForDebug = "Exemple_XP_niveau_2"
+        ),
+        ExperienceLevelDescriptor_Autoloaded_3 is TExperienceLevelDescriptor
+        (
+            DescriptorId = GUID:{400245fe-30fb-497d-8ebf-cd841d599070}
+            LocalizationToken = "EXPLEVEL3"
+            ThresholdAdditionalValue = 0.0
+            ThresholdPriceMultiplier = 6.0
+            IconsByNationality = [
+            ]
+            NameForDebug = "Exemple_XP_niveau_3"
+        ),
+    ]
+    NameForDebug = "Exemple_XP"
+)
 export ExperienceLevelsPackDescriptor_Experience_Avion is TExperienceLevelsPackDescriptor
 (
     DescriptorId = GUID:{09d2b759-e29e-4cae-b126-264c621c9378}
