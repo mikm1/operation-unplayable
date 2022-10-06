@@ -181,9 +181,9 @@ MatrixCostName_FR_11e_Para_multi is MAP
    ( EDefaultFactories/at,          [1, 2, 3, 3, 3] ),//5;12   =AA
    ( EDefaultFactories/dca,         [0,] ),//0...DEPREC
    ( EDefaultFactories/art,         [0,] ),//0...DEPREC
-   ( EDefaultFactories/Helis,       [1, 1, 1, 1, 2, 3, 3, 3] ),// 8;15
+   ( EDefaultFactories/Helis,       [1, 1, 1, 1, 2, 3] ),// 6;9
    ( EDefaultFactories/air,         [1, 1, 1, 1, 2, 3, 3, 3] ),// 8;15
-   ( EDefaultFactories/defense,     [0,] ),//55 cases 104 pts...Coef 1,89
+   ( EDefaultFactories/defense,     [0,] ),//53 cases 95 pts...Coef 1,79
 ]
 
 //--------------------- Mixed NATO -----------------------------------------
@@ -240,14 +240,14 @@ MatrixCostName_SOV_35_AirAslt_Brig_multi is MAP
    ( EDefaultFactories/Logistic,    [1, 1, 2, 3, 3, 3] ),//6;13
    ( EDefaultFactories/reco,        [1, 1, 1, 2, 3, 3, 3] ),//7;14
    ( EDefaultFactories/infanterie,  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ),//10;10
-   ( EDefaultFactories/tank,        [1, 1, 2, 3, 3, 3] ),//6;13
+   ( EDefaultFactories/tank,        [1, 1, 2, 2, 3, 3] ),//6;12
    ( EDefaultFactories/support,     [1, 1, 2, 3, 3, 3] ),//6;13   =ART
    ( EDefaultFactories/at,          [1, 1, 2, 3, 3, 3] ),//6;13   =AA
    ( EDefaultFactories/dca,         [0,] ),//0...DEPREC
    ( EDefaultFactories/art,         [0,] ),//0...DEPREC
-   ( EDefaultFactories/Helis,       [1, 1, 1, 2, 3, 3, 3] ),//7;14
+   ( EDefaultFactories/Helis,       [1, 1, 1, 1, 2, 3, 3, 3] ),//8;15
    ( EDefaultFactories/air,         [1, 1, 1, 2, 3, 3, 3] ),//7;14
-   ( EDefaultFactories/defense,     [0, 0, 0, 0] ),//55 cases 104 pts coef 1,89
+   ( EDefaultFactories/defense,     [0, 0, 0, 0] ),//56 cases 104 pts coef 1,85
 ]
 //--------------------- RDA -----------------------------------------
 

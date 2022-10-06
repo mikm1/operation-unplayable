@@ -19,6 +19,8 @@ StrategicIAStratConstantes is TIAStratStrategicConstantesDescriptor
 
     NumberMaxOfProductionPerTurn = 3
 
+    MaxFatigueToBeSelectedForStrategicBattle = 4
+
     //(ZoneStatus, APRemaining, Distance) s'il existe au moins une unitÃ©e ennemi dans un rayon de Distance garder au moins AP
     //Distance à chaque point du pathfind à l'origine du point
     //A ordonner du plus proche au plus loin

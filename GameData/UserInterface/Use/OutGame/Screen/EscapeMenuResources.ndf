@@ -1,5 +1,7 @@
-EscapeMenuSpaceBetweenButtons is 12
-EscapeMenuButtonWidth is 225
+EscapeMenuSpaceBetweenButtons is 12.0
+EscapeMenuButtonWidth is 225.0
+
+// -------------------------------------------------------------------------------------------------
 
 private EscapePanelContinueButton is ConfirmButton
 (
@@ -10,7 +12,7 @@ private EscapePanelContinueButton is ConfirmButton
     HintBodyToken = "OES_CNTINB"
     HintExtendedToken = "OES_CNTINE"
 
-    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35]
+    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35.0]
     TextTypefaceToken = "UISecondFont"
     TextStyle = 'TextStyleEcranMoniteur'
     TextColorToken = 'loginBlanc'
@@ -24,7 +26,6 @@ private EscapePanelContinueButton is ConfirmButton
 )
 
 // -------------------------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------------------------
 
 private EscapePanelRestartButton is ConfirmButton
 (
@@ -35,7 +36,7 @@ private EscapePanelRestartButton is ConfirmButton
     HintBodyToken = "OES_RSTRTB"
     HintExtendedToken = "OES_RSTRTE"
 
-    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35]
+    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35.0]
     TextTypefaceToken = "UISecondFont"
     TextStyle = 'TextStyleEcranMoniteur'
     TextColorToken = 'loginBlanc'
@@ -46,7 +47,6 @@ private EscapePanelRestartButton is ConfirmButton
     BorderThicknessToken = '3'
 )
 
-// -------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------
 
 private EscapePanelHelpButton is ConfirmButton
@@ -58,7 +58,7 @@ private EscapePanelHelpButton is ConfirmButton
     HintBodyToken = "OES_HELPB"
     HintExtendedToken = "OES_HELPE"
 
-    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35]
+    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35.0]
     TextTypefaceToken = "UISecondFont"
     TextStyle = 'TextStyleEcranMoniteur'
     TextColorToken = 'loginBlanc'
@@ -69,7 +69,6 @@ private EscapePanelHelpButton is ConfirmButton
     BorderThicknessToken = '3'
 )
 
-// -------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------
 
 private EscapePanelSaveButton is ConfirmButton
@@ -82,7 +81,7 @@ private EscapePanelSaveButton is ConfirmButton
     HintExtendedToken = "OES_SAVEE"
 
 
-    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35]
+    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35.0]
     TextTypefaceToken = "UISecondFont"
     TextStyle = 'TextStyleEcranMoniteur'
     TextColorToken = 'loginBlanc'
@@ -91,7 +90,6 @@ private EscapePanelSaveButton is ConfirmButton
     BackgroundBlockColorToken = 'loginBoutonBackground_vert'
     TextSizeToken = '24'
     BorderThicknessToken = '3'
-
 
     Components = [
         BUCKTextDescriptor
@@ -123,7 +121,6 @@ private EscapePanelSaveButton is ConfirmButton
 )
 
 // -------------------------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------------------------
 
 private EscapePanelLoadButton is ConfirmButton
 (
@@ -134,7 +131,7 @@ private EscapePanelLoadButton is ConfirmButton
     HintBodyToken = "OES_LOADB"
     HintExtendedToken = "OES_LOADE"
 
-    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35]
+    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35.0]
     TextTypefaceToken = "UISecondFont"
     TextStyle = 'TextStyleEcranMoniteur'
     TextColorToken = 'loginBlanc'
@@ -145,7 +142,6 @@ private EscapePanelLoadButton is ConfirmButton
     BorderThicknessToken = '3'
 )
 
-// -------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------
 
 private EscapePanelOptionsButton is ConfirmButton
@@ -157,7 +153,7 @@ private EscapePanelOptionsButton is ConfirmButton
     HintBodyToken = "OES_OPTNSB"
     HintExtendedToken = "OES_OPTNSE"
 
-    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35]
+    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35.0]
     TextTypefaceToken = "UISecondFont"
     TextStyle = 'TextStyleEcranMoniteur'
     TextColorToken = 'loginBlanc'
@@ -168,7 +164,6 @@ private EscapePanelOptionsButton is ConfirmButton
     BorderThicknessToken = '3'
 )
 
-// -------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------
 
 private EscapePanelTutorialGuideButton is ConfirmButton
@@ -181,7 +176,7 @@ private EscapePanelTutorialGuideButton is ConfirmButton
     HintBodyToken = "OES_GUIDB"
     HintExtendedToken = "OES_GUIDE"
 
-    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35]
+    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35.0]
     TextTypefaceToken = "UISecondFont"
     TextStyle = 'TextStyleEcranMoniteur'
     TextColorToken = 'loginBlanc'
@@ -191,6 +186,9 @@ private EscapePanelTutorialGuideButton is ConfirmButton
     TextSizeToken = '24'
     BorderThicknessToken = '3'
 )
+
+// -------------------------------------------------------------------------------------------------
+
 private BoutonLancementManual is ConfirmButton
 (
     ElementName = "lancementManual"
@@ -201,17 +199,17 @@ private BoutonLancementManual is ConfirmButton
     HintBodyToken = "OES_GUIDB"
     HintExtendedToken = "OES_GUIDE"
 
-    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35]
+    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35.0]
     TextTypefaceToken = "UISecondFont"
     TextStyle = 'TextStyleEcranMoniteur'
     TextColorToken = 'loginBlanc'
-    BorderLineColorToken = 'VertLogin'
+    BorderLineColorToken = 'Vert2Login'
     HasBackground = true
-    BackgroundBlockColorToken = 'loginBoutonBackground_vert'
+    BackgroundBlockColorToken = 'loginBoutonBackground_vert2'
     TextSizeToken = '24'
     BorderThicknessToken = '3'
 )
-// -------------------------------------------------------------------------------------------------
+
 // -------------------------------------------------------------------------------------------------
 
 private EscapePanelSurrenderOrQuitButton is ConfirmButton
@@ -223,11 +221,10 @@ private EscapePanelSurrenderOrQuitButton is ConfirmButton
     HintTitleToken = "OES_EXITT"
     HintBodyToken = "OES_EXITB"
     HintExtendedToken = "OES_EXITE"
-    //HintDico = ~/LocalisationConstantes/dico_interface_outgame
 
     ButtonAlignementToFather = [0.5, 0.0]
     ButtonAlignementToAnchor = [0.5, 0.0]
-    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35]
+    ButtonMagnifiableWidthHeight = [EscapeMenuButtonWidth, 35.0]
     TextTypefaceToken = "UISecondFont"
     TextStyle = 'TextStyleEcranMoniteur_cyan'
     TextColorToken = 'loginBlanc'
@@ -238,32 +235,33 @@ private EscapePanelSurrenderOrQuitButton is ConfirmButton
     BorderThicknessToken = '3'
 )
 
-
-
 // -------------------------------------------------------------------------------------------------
 
 private MagnifiableEscapeMenuWidth is 400.0
 
 fullEscapeMenu is BUCKContainerDescriptor
 (
+    ElementName = "fullEscapeMenu"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1,1]
-        )
-    //HasBackground = true
-    BackgroundBlockColorToken = 'Vert'
+        RelativeWidthHeight = [1.0, 1.0]
+    )
+
     Components =
     [
-    EscapeMenuDescriptor,
-    AnimatedLancementTutorial
+        ~/EscapeMenuDescriptor,
+        ~/AnimatedLancementTutorial,
     ]
 )
+
+// -------------------------------------------------------------------------------------------------
 
 private EscapeMenuDescriptor is BUCKListDescriptor
 (
     ElementName = "EscapeMenuMainList"
 
-    ComponentFrame = TUIFramePropertyRTTI(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
         AlignementToFather = [ 0.5, 0.5 ]
         AlignementToAnchor = [ 0.5, 0.5 ]
     )
@@ -278,10 +276,10 @@ private EscapeMenuDescriptor is BUCKListDescriptor
 
     Elements =
     [
-    BUCKListElementDescriptor
+        BUCKListElementDescriptor
         (
-                ComponentDescriptor = BoutonLancementManual
-                ),
+            ComponentDescriptor = BoutonLancementManual
+        ),
     ]
 
     BackgroundComponents =
@@ -293,7 +291,7 @@ private EscapeMenuDescriptor is BUCKListDescriptor
                 MagnifiableWidthHeight = [904.0, 732.0]
                 AlignementToAnchor = [0.5, 0.5]
                 AlignementToFather = [0.5, 0.5]
-                )
+            )
             TextureToken = 'Outgame_modale_fond'
             TextureDrawer = 'MonochromeMonitorEffect'
         )
@@ -320,25 +318,27 @@ private EscapeMenuDescriptor is BUCKListDescriptor
 AnimatedLancementTutorial is BUCKTranslationAnimatedContainerDescriptor
 (
     ButtonNameForTrigger = 'lancementManual'
+
     FramePropertyBeforeAnimation = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [1,1]
+        MagnifiableWidthHeight = [1.0, 1.0]
         AlignementToAnchor = [0.0, 1.0]
         AlignementToFather = [0.0, 0.0]
-        MagnifiableOffset = [-2000,0]
-        )
+        MagnifiableOffset = [-2000.0, 0.0]
+    )
+
     AnimationTotalDuration = 0.20
     FramePropertyAfterAnimation = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1,1]
+        RelativeWidthHeight = [1.0, 1.0]
         AlignementToAnchor = [0.0, 1.0]
         AlignementToFather = [0.0, 1.0]
         MagnifiableOffset = [0.0, 0.0]
-        )
+    )
+
     Components =
     [
-    ~/AllManuelContainer
-
+        ~/AllManuelContainer
     ]
 )
 

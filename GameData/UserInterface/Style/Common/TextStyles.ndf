@@ -31,6 +31,17 @@ TextStyleEcranMoniteur_cyan is TTextStyleRTTI
     StrokeHardness = 1
     AllowSmallFont = true
 )
+TextStyleEcranMoniteur_jaune is TTextStyleRTTI
+(
+    ColorBottom = [222,   211,   92, 255]
+    ColorUp     = [255, 255, 255, 255]
+    ColorStroke = [230,215,56, 65]
+    Stroke = true
+    FontSize = 1
+    StrokeSize = 0.2
+    StrokeHardness = 1
+    AllowSmallFont = true
+)
 TextStyleEcranMoniteur_solo is TTextStyleRTTI
 (
     ColorBottom = [188, 217, 202, 255]

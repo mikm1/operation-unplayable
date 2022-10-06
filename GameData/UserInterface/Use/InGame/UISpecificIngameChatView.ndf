@@ -1,15 +1,14 @@
 //----------------------------------------------------------------------
 
-DropDownWidth is 380
+DropDownWidth is 380.0
 ChatClearAllButtonWidth is ChatButtonStandardWidth + 50.0
-ChatPanelWidth is 350 //3 * ChatButtonStandardWidth + DropDownWidth + 2 * ChatButtonChangeFontSizeWidth + ChatClearAllButtonWidth
+ChatPanelWidth is 350.0 //3 * ChatButtonStandardWidth + DropDownWidth + 2 * ChatButtonChangeFontSizeWidth + ChatClearAllButtonWidth
 ChatPanelTotalHeight is ChatLogHeight + ChatEditableTextHeight + ChatButtonAndDropDownHeight
 ChatLogHeight is 198.0
 ChatEditableTextHeight is 25.0
 ChatButtonAndDropDownHeight is 25.0
 ChatButtonStandardWidth is 50.0
 ChatButtonChangeFontSizeWidth is 42.0
-//-------------------------------------------------------------------------------------
 
 //----------------------------------------------------------------------
 
@@ -47,9 +46,8 @@ ChatButtonSelectAll is BoutonFulda
     HintTitleToken = "HCT_ALLBUT"
     HintBodyToken = "HCT_ALLBUB"
     HintExtendedToken = "HCT_ALLBUE"
-
-
 )
+
 ChatButtonSelectAlly is BoutonFulda
 (
     ComponentFrame = TUIFramePropertyRTTI
@@ -66,8 +64,6 @@ ChatButtonSelectAlly is BoutonFulda
     HintBodyToken = "HCT_ALYBUB"
     HintExtendedToken = "HCT_ALYBUE"
 )
-
-
 
 ChatButtonSelectContacts is BoutonFulda
 (
@@ -313,7 +309,9 @@ ChatBarComponent is BUCKContainerDescriptor
         LigneBoutonAqui,
     ]
 )
+
 //-------------------------------------------------------------------------------------
+
 LigneBoutonAqui is BUCKListDescriptor
 (
     ElementName = 'ChatBarButtonList'
@@ -378,6 +376,8 @@ LigneBoutonAqui is BUCKListDescriptor
     ]
 )
 
+//-------------------------------------------------------------------------------------
+
 LigneBoutonOptions is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI(
@@ -413,6 +413,7 @@ LigneBoutonOptions is BUCKListDescriptor
         ),
     ]
 )
+
 //----------------------------------------------------------------------
 
 FlarePanelChatContainer is BUCKContainerDescriptor
@@ -420,18 +421,13 @@ FlarePanelChatContainer is BUCKContainerDescriptor
     UniqueName = "UICommonFlarePanelViewMainContainer"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableOffset = [-10,0]
-        AlignementToFather = [1, 0.0]
-        AlignementToAnchor = [1, 0.0]
+        MagnifiableOffset = [-150.0, 0.0]
+        AlignementToFather = [1.0, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
 
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContent
-
-    //HasBackground = true
-    BackgroundBlockColorToken = "Orange"
-
-    // envoie UICommonFlarePanelViewMainComponent
 )
 
 //----------------------------------------------------------------------

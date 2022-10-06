@@ -24,6 +24,11 @@ private EasyStrategyList is
     ~/EasyStrategy,
 ]
 
+private HardStrategyList is
+[
+    ~/HardStrategy,
+]
+
 private VeryHardStrategyList is
 [
     ~/VeryHardStrategy,

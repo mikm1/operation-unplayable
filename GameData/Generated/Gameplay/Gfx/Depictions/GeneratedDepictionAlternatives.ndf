@@ -51,6 +51,16 @@ Alternatives_81mm_mortar_UK is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_81mm_mortar_UK_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_81mm_mortar_UK_LOW ),
 ]
+Alternatives_AML_60_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_AML_60_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_AML_60_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_AML_60_FR_LOW DisabledOperators = [ 'tourelle4' ] ),
+]
+Alternatives_AML_90_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_AML_90_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_AML_90_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_AML_90_FR_LOW DisabledOperators = [ 'tourelle4' ] ),
+]
 Alternatives_AMX_10_HOT_FR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_AMX_10_HOT_FR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_AMX_10_HOT_FR_MID ),
@@ -201,6 +211,11 @@ Alternatives_ATteam_Milan_1_UK is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_ATteam_Milan_1_UK_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_ATteam_Milan_1_UK_LOW ),
 ]
+Alternatives_ATteam_Milan_1_para_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_ATteam_Milan_1_para_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_ATteam_Milan_1_para_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_ATteam_Milan_1_para_FR_LOW ),
+]
 Alternatives_ATteam_Milan_2_FR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_ATteam_Milan_2_FR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_ATteam_Milan_2_FR_MID ),
@@ -215,6 +230,11 @@ Alternatives_ATteam_Milan_2_UK is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_ATteam_Milan_2_UK ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_ATteam_Milan_2_UK_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_ATteam_Milan_2_UK_LOW ),
+]
+Alternatives_ATteam_Milan_2_para_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_ATteam_Milan_2_para_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_ATteam_Milan_2_para_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_ATteam_Milan_2_para_FR_LOW ),
 ]
 Alternatives_ATteam_Milan_2_para_RFA is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_ATteam_Milan_2_para_RFA ),
@@ -501,6 +521,11 @@ Alternatives_Challenger_1_Mk1_UK is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Challenger_1_Mk1_UK_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Challenger_1_Mk1_UK_LOW DisabledOperators = [ 'tourelle2' ] ),
 ]
+Alternatives_DCA_53T2_20mm_Para_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_DCA_53T2_20mm_Para_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_DCA_53T2_20mm_Para_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_DCA_53T2_20mm_Para_FR_LOW ),
+]
 Alternatives_DCA_FK20_2_20mm_RFA is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_DCA_FK20_2_20mm_RFA ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_DCA_FK20_2_20mm_RFA_MID ),
@@ -531,6 +556,11 @@ Alternatives_DCA_M167_Vulcan_20mm_US is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_DCA_M167_Vulcan_20mm_US_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_DCA_M167_Vulcan_20mm_US_LOW ),
 ]
+Alternatives_DCA_Rapier_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_DCA_Rapier_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_DCA_Rapier_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_DCA_Rapier_UK_LOW ),
+]
 Alternatives_DCA_ZU_23_2_DDR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_DCA_ZU_23_2_DDR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_DCA_ZU_23_2_DDR_MID ),
@@ -540,6 +570,11 @@ Alternatives_DCA_ZU_23_2_SOV is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_DCA_ZU_23_2_SOV ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_DCA_ZU_23_2_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_DCA_ZU_23_2_SOV_LOW ),
+]
+Alternatives_ERC_90_Sagaie_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_ERC_90_Sagaie_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_ERC_90_Sagaie_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_ERC_90_Sagaie_FR_LOW DisabledOperators = [ 'tourelle2', 'tourelle4' ] ),
 ]
 Alternatives_FH70_155mm_RFA is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_FH70_155mm_RFA ),
@@ -655,6 +690,21 @@ Alternatives_FV721_Fox_UK is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_FV721_Fox_UK ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_FV721_Fox_UK_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_FV721_Fox_UK_LOW DisabledOperators = [ 'tourelle4' ] ),
+]
+Alternatives_Faun_Kraka_20mm_RFA is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Faun_Kraka_20mm_RFA ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Faun_Kraka_20mm_RFA_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Faun_Kraka_20mm_RFA_LOW ),
+]
+Alternatives_Faun_Kraka_Log_RFA is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Faun_Kraka_Log_RFA ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Faun_Kraka_Log_RFA_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Faun_Kraka_Log_RFA_LOW ),
+]
+Alternatives_Faun_Kraka_TOW_RFA is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Faun_Kraka_TOW_RFA ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Faun_Kraka_TOW_RFA_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Faun_Kraka_TOW_RFA_LOW ),
 ]
 Alternatives_Faun_kraka_RFA is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Faun_kraka_RFA ),
@@ -851,6 +901,16 @@ Alternatives_Howz_D30_122mm_VDV_SOV is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Howz_D30_122mm_VDV_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Howz_D30_122mm_VDV_SOV_LOW ),
 ]
+Alternatives_Howz_L118_105mm_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Howz_L118_105mm_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Howz_L118_105mm_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Howz_L118_105mm_UK_LOW ),
+]
+Alternatives_Howz_M101_105mm_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Howz_M101_105mm_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Howz_M101_105mm_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Howz_M101_105mm_FR_LOW ),
+]
 Alternatives_Howz_M101_105mm_RFA is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Howz_M101_105mm_RFA ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Howz_M101_105mm_RFA_MID ),
@@ -910,6 +970,11 @@ Alternatives_LandRover_CMD_UK is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_LandRover_CMD_UK ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_LandRover_CMD_UK_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_LandRover_CMD_UK_LOW ),
+]
+Alternatives_LandRover_MILAN_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_LandRover_MILAN_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_LandRover_MILAN_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_LandRover_MILAN_UK_LOW ),
 ]
 Alternatives_LandRover_UK is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_LandRover_UK ),
@@ -990,6 +1055,11 @@ Alternatives_M106A2_HOWZ_US is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_M106A2_HOWZ_US ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_M106A2_HOWZ_US_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_M106A2_HOWZ_US_LOW DisabledOperators = [ 'tourelle1' ] ),
+]
+Alternatives_M107A2_175mm_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_M107A2_175mm_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_M107A2_175mm_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_M107A2_175mm_UK_LOW ),
 ]
 Alternatives_M109A2_HOWZ_US is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_M109A2_HOWZ_US ),
@@ -1391,6 +1461,11 @@ Alternatives_Mortier_MORT61_120mm_FR is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Mortier_MORT61_120mm_FR_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Mortier_MORT61_120mm_FR_LOW ),
 ]
+Alternatives_Mortier_MORT61_120mm_para_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Mortier_MORT61_120mm_para_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Mortier_MORT61_120mm_para_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Mortier_MORT61_120mm_para_FR_LOW ),
+]
 Alternatives_Mortier_PM43_120mm_DDR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Mortier_PM43_120mm_DDR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Mortier_PM43_120mm_DDR_MID ),
@@ -1400,6 +1475,16 @@ Alternatives_Mortier_Tampella_120mm_RFA is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Mortier_Tampella_120mm_RFA ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Mortier_Tampella_120mm_RFA_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Mortier_Tampella_120mm_RFA_LOW ),
+]
+Alternatives_OT_62_TOPAS_JOD_POL is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_OT_62_TOPAS_JOD_POL ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_OT_62_TOPAS_JOD_POL_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_OT_62_TOPAS_JOD_POL_LOW ),
+]
+Alternatives_OT_62_TOPAS_SPG9_POL is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_OT_62_TOPAS_SPG9_POL ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_OT_62_TOPAS_SPG9_POL_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_OT_62_TOPAS_SPG9_POL_LOW DisabledOperators = [ 'tourelle1', 'tourelle3' ] ),
 ]
 Alternatives_Osa_9K33M3_DDR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Osa_9K33M3_DDR ),
@@ -1426,6 +1511,11 @@ Alternatives_PT76B_tank_DDR is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_PT76B_tank_DDR_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_PT76B_tank_DDR_LOW DisabledOperators = [ 'tourelle4' ] ),
 ]
+Alternatives_RCL_L6_Wombat_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_RCL_L6_Wombat_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_RCL_L6_Wombat_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_RCL_L6_Wombat_UK_LOW ),
+]
 Alternatives_Roland_2_FR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Roland_2_FR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Roland_2_FR_MID ),
@@ -1440,6 +1530,11 @@ Alternatives_SPW_152K_DDR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_SPW_152K_DDR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_SPW_152K_DDR_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_SPW_152K_DDR_LOW DisabledOperators = [ 'tourelle1' ] ),
+]
+Alternatives_Saxon_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Saxon_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Saxon_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Saxon_UK_LOW DisabledOperators = [ 'tourelle1', 'tourelle4' ] ),
 ]
 Alternatives_T34_85M_DDR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_T34_85M_DDR ),
@@ -1491,10 +1586,20 @@ Alternatives_T62M_SOV is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_T62M_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_T62M_SOV_LOW ),
 ]
+Alternatives_T64BV_CMD_SOV is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_T64BV_CMD_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_T64BV_CMD_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_T64BV_CMD_SOV_LOW DisabledOperators = [ 'tourelle2' ] ),
+]
 Alternatives_T64BV_SOV is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_T64BV_SOV ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_T64BV_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_T64BV_SOV_LOW DisabledOperators = [ 'tourelle2' ] ),
+]
+Alternatives_T64B_SOV is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_T64B_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_T64B_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_T64B_SOV_LOW DisabledOperators = [ 'tourelle2' ] ),
 ]
 Alternatives_T72B_DDR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_T72B_DDR ),
@@ -1801,15 +1906,50 @@ Alternatives_VBL_MILAN_FR is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VBL_MILAN_FR_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VBL_MILAN_FR_LOW ),
 ]
+Alternatives_VBL_PC_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VBL_PC_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VBL_PC_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VBL_PC_FR_LOW ),
+]
 Alternatives_VBL_Reco_FR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VBL_Reco_FR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VBL_Reco_FR_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VBL_Reco_FR_LOW ),
 ]
+Alternatives_VLRA_20mm_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VLRA_20mm_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VLRA_20mm_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VLRA_20mm_FR_LOW ),
+]
 Alternatives_VLRA_HMG_FR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VLRA_HMG_FR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VLRA_HMG_FR_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VLRA_HMG_FR_LOW DisabledOperators = [ 'tourelle1' ] ),
+]
+Alternatives_VLRA_MILAN_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VLRA_MILAN_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VLRA_MILAN_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VLRA_MILAN_FR_LOW ),
+]
+Alternatives_VLRA_Mistral_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VLRA_Mistral_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VLRA_Mistral_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VLRA_Mistral_FR_LOW ),
+]
+Alternatives_VLRA_Mortier81_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VLRA_Mortier81_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VLRA_Mortier81_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VLRA_Mortier81_FR_LOW DisabledOperators = [ 'tourelle1' ] ),
+]
+Alternatives_VLRA_supply_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VLRA_supply_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VLRA_supply_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VLRA_supply_FR_LOW ),
+]
+Alternatives_VLRA_trans_FR is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VLRA_trans_FR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_VLRA_trans_FR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_VLRA_trans_FR_LOW ),
 ]
 Alternatives_VLTT_P4_FR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_VLTT_P4_FR ),
@@ -1850,6 +1990,11 @@ Alternatives_Wiesel_TOW_RFA is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_Wiesel_TOW_RFA ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_Wiesel_TOW_RFA_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_Wiesel_TOW_RFA_LOW DisabledOperators = [ 'tourelle1' ] ),
+]
+Alternatives_ZSU_23_Shilka_Afghan_SOV is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = Modele_ZSU_23_Shilka_Afghan_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = Modele_ZSU_23_Shilka_Afghan_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = Modele_ZSU_23_Shilka_Afghan_SOV_LOW ),
 ]
 Alternatives_ZSU_23_Shilka_DDR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = Modele_ZSU_23_Shilka_DDR ),

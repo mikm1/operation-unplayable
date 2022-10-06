@@ -296,6 +296,11 @@ GhostDepiction_F4F_Phantom_II_RKT2_RFA is GhostAerialDepictionTemplate
     Alternatives = Alternatives_F4F_Phantom_II_RKT2_RFA
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_F4_Phantom_AA_F3 is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_F4_Phantom_AA_F3
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_F4_Wild_Weasel_US is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_F4_Wild_Weasel_US
@@ -336,6 +341,11 @@ GhostDepiction_Gazelle_HOT_FR is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Gazelle_HOT_FR
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Gazelle_Mistral_FR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Gazelle_Mistral_FR
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Gazelle_SNEB_UK is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Gazelle_SNEB_UK
@@ -361,9 +371,24 @@ GhostDepiction_Harrier_CLU_UK is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Harrier_CLU_UK
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Harrier_HE1_UK is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Harrier_HE1_UK
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Harrier_HE2_UK is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Harrier_HE2_UK
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Harrier_RKT1_UK is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Harrier_RKT1_UK
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Harrier_RKT2_UK is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Harrier_RKT2_UK
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_Harrier_UK is GhostAerialDepictionTemplate
@@ -376,6 +401,16 @@ GhostDepiction_Jaguar_ATGM_FR is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Jaguar_ATGM_FR
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Jaguar_CLU_UK is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Jaguar_CLU_UK
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Jaguar_HE1_UK is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Jaguar_HE1_UK
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Jaguar_HE2_UK is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Jaguar_HE2_UK
@@ -386,14 +421,34 @@ GhostDepiction_Jaguar_HE_FR is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Jaguar_HE_FR
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Jaguar_RKT_FR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Jaguar_RKT_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Jaguar_RKT_UK is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Jaguar_RKT_UK
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Jaguar_SEAD2_FR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Jaguar_SEAD2_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Jaguar_SEAD_FR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Jaguar_SEAD_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Jaguar_clu_FR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Jaguar_clu_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Jaguar_nplm_FR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Jaguar_nplm_FR
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_Ka_50_AA_SOV is GhostAerialDepictionTemplate
@@ -646,6 +701,16 @@ GhostDepiction_Mi_8TV_SOV is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Mi_8TV_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_8TV_UPK_DDR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Mi_8TV_UPK_DDR
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_8TV_non_arme_SOV is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Mi_8TV_non_arme_SOV
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_8TV_s57_16_SOV is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Mi_8TV_s57_16_SOV
@@ -676,6 +741,11 @@ GhostDepiction_Mi_8T_DDR is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Mi_8T_DDR
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_8T_non_arme_DDR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Mi_8T_non_arme_DDR
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_8_supply_DDR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Mi_8_supply_DDR
@@ -691,6 +761,11 @@ GhostDepiction_Mirage_2000_C_FR is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Mirage_2000_C_FR
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Mirage_5_F_FR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Mirage_5_F_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Mirage_5_F_clu_FR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Mirage_5_F_clu_FR
@@ -699,6 +774,11 @@ GhostDepiction_Mirage_5_F_clu_FR is GhostAerialDepictionTemplate
 GhostDepiction_Mirage_5_F_nplm_FR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Mirage_5_F_nplm_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Mirage_F1_CT_FR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Mirage_F1_CT_FR
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_Mirage_F1_C_FR is GhostAerialDepictionTemplate
@@ -739,6 +819,16 @@ GhostDepiction_OH58_CS_US is GhostAerialDepictionTemplate
 GhostDepiction_Puma_FR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Puma_FR
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Puma_PC_FR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Puma_PC_FR
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Puma_Pirate_FR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Puma_Pirate_FR
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_Puma_UK is GhostAerialDepictionTemplate

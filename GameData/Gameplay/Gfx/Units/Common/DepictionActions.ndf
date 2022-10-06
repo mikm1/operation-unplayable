@@ -947,17 +947,14 @@ private Flare_Happening is TCompositeHappening
             (
                 LocalVariables =
                 [
-                    parIntensite        is TPinnableValue ( ExpectedType : float    InitialValue = 1      ),
-                    parTaille           is TPinnableValue ( ExpectedType : float    InitialValue = 1      ),
                     parInitialSpeed     is TPinnableValue ( ExpectedType : float3   InitialValue = [0,0,0]),
-                    parTimeBetweenFlare is TPinnableValue ( ExpectedType : float    InitialValue = 0.5    ),
-                    parSweepAngle       is TPinnableValue ( ExpectedType : float    InitialValue = 0      ),
+                    parTimeBetweenFlare is TPinnableValue ( ExpectedType : float    InitialValue = 0.5),
+                    parLateralSpeed     is TPinnableValue ( ExpectedType : float    InitialValue = 5000),
                 ]
-                NamedParams = MAP[  ('parIntensite',        parIntensite),
-                                    ('parTaille',           parTaille),
-                                    ('parInitialSpeed',     parInitialSpeed),
-                                    ('parSweepAngle',       parSweepAngle),
-                                    ('parTimeBetweenFlare', parTimeBetweenFlare),]
+                NamedParams = MAP[
+                            ('parInitialSpeed'      , parInitialSpeed),
+                            ('parTimeBetweenFlare'  , parTimeBetweenFlare),
+                            ('parLateralSpeed'      , parLateralSpeed),]
                 Action = $/GFX/GameFx/Fx_Flare
             )
 

@@ -249,6 +249,7 @@ export Pool_AA_Defense is TPoolModel
             TagsPriority = [
                 "Canon_AA_Standard",
                 "Canon_AA_Porte",
+                "Helo_AA",
             ]
             +~/ProductionFallback
         ),
@@ -373,10 +374,10 @@ export Pool_Defense_Objectif is TPoolModel
             Required = false
             Nb = 1
             IndexPriorityOverPrice = true
+            PriceComparisonMethod = EPriceComparatorType/Cheapest
             TagsPriority = [
                 "Vehicule_Appui",
                 "Canon_AT_Standard",
-                "Char_Standard",
                 "Infanterie_Spec_Defense",
                 "Char"
             ]
@@ -386,10 +387,10 @@ export Pool_Defense_Objectif is TPoolModel
             Required = false
             Nb = 1
             IndexPriorityOverPrice = true
+            PriceComparisonMethod = EPriceComparatorType/Cheapest
             TagsPriority = [
-                "Infanterie_CMD",
-                "Infanterie_Spec_Defense",
-                "Infanterie_Standard",
+                "Infanterie_Reco",
+                "Vehicule_Reco",
             ]
         ),
         TPoolElement(
@@ -401,6 +402,7 @@ export Pool_Defense_Objectif is TPoolModel
             TagsPriority = [
                 "Canon_AA_Standard",
                 "Canon_AA_Porte",
+                "Helo_AA",
             ]
         ),
     ]

@@ -4,6 +4,7 @@ private CubeActionWargameButtonSpacing is [1, 1]
 private CubeActionWargameWidth is 383 // (CubeActionWargameButtonDims[0] + CubeActionWargameButtonSpacing[0]) * nombre de colonnes
 private CubeActionWargameTitleHeight is 30
 private CubeActionWargameContentHeight is 130 // (CubeActionWargameButtonDims[1] + CubeActionWargameButtonSpacing[1]) * nombre de lignes
+private CubeActionWargameSubActionPanel is 125
 
 //-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- //
 //                   Cube Action                        //
@@ -405,33 +406,33 @@ private PanelCubeAction_Orders is BUCKListDescriptor
                 Elements =
                 [
                     // Title // ORDERS
-                    BUCKListElementDescriptor
-                    (
-                        ComponentDescriptor = BUCKTextDescriptor
-                        (
-                            ComponentFrame = TUIFramePropertyRTTI
-                            (
-                                MagnifiableWidthHeight = [0.0, 25.0]
-                            )
+                    {BUCKListElementDescriptor
+                                        (
+                                            ComponentDescriptor = BUCKTextDescriptor
+                                            (
+                                                ComponentFrame = TUIFramePropertyRTTI
+                                                (
+                                                    MagnifiableWidthHeight = [0.0, 25.0]
+                                                )
 
-                            TextPadding = TRTTILength4(Magnifiable = [6.0, 0.0, 6.0, 0.0])
+                                                TextPadding = TRTTILength4(Magnifiable = [6.0, 0.0, 6.0, 0.0])
 
-                            ParagraphStyle = ~/paragraphStyleTextLeftAlign
+                                                ParagraphStyle = ~/paragraphStyleTextLeftAlign
 
-                            TextStyle = "Default"
+                                                TextStyle = "Default"
 
-                            HorizontalFitStyle = ~/FitStyle/FitToContent
-                            VerticalFitStyle = ~/FitStyle/UserDefined
+                                                HorizontalFitStyle = ~/FitStyle/FitToContent
+                                                VerticalFitStyle = ~/FitStyle/UserDefined
 
-                            TextColor       = "BlancEquipe"
-                            TextSize        = "16"
-                            TextToken       = "CA_TITLE"
-                            TextDico        = ~/LocalisationConstantes/dico_interface_ingame
+                                                TextColor       = "BlancEquipe"
+                                                TextSize        = "16"
+                                                TextToken       = "CA_TITLE"
+                                                TextDico        = ~/LocalisationConstantes/dico_interface_ingame
 
-                            TypefaceToken   = "UIMainFont"
+                                                TypefaceToken   = "UIMainFont"
 
-                        )
-                    ),
+                                            )
+                                        ),}
 
                     // Unit comparator selector
                     BUCKListElementDescriptor
@@ -467,9 +468,9 @@ private PanelCubeAction_Orders is BUCKListDescriptor
             (
                 ElementName = "StandardOrderCubeActionGrid"
 
-                FirstElementMargin = TRTTILength2( Magnifiable = [10.0, 0.0] )
-                InterElementMargin = TRTTILength2( Magnifiable = [7.0, 7.0] )
-                LastElementMargin  = TRTTILength2( Magnifiable = [10.0, 0.0] )
+                FirstElementMargin = TRTTILength2( Magnifiable = [5.0, 0.0] )
+                InterElementMargin = TRTTILength2( Magnifiable = [11.0, 0.0] )
+                LastElementMargin  = TRTTILength2( Magnifiable = [7.0, 0.0] )
 
                 GridElements = MAP
                 [
@@ -495,9 +496,147 @@ private PanelCubeAction_Orders is BUCKListDescriptor
 
     BackgroundComponents =
     [
-        PanelRoundedCorner()
+        PanelRoundedCorner
+        (
+            Components =
+            [
+                BUCKListDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        AlignementToFather = [0.5, 1.0]
+                        AlignementToAnchor = [0.5, 1.0]
+                        RelativeWidthHeight = [0,1]
+                    )
+
+                    InterItemMargin = TRTTILength( Magnifiable = 3.0 )
+                    LastMargin = TRTTILength( Magnifiable = 0.0 )
+                    Axis = ~/ListAxis/Horizontal
+                    Elements =
+                    [
+
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = PanelRoundedCorner
+                        (
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [0.0, 1.0]
+                                MagnifiableWidthHeight = [CubeActionWargameSubActionPanel,0]
+                            )
+                            Components =
+                            [
+                                BUCKTextDescriptor
+                                (
+                                    ComponentFrame = TUIFramePropertyRTTI
+                                    (
+                                        MagnifiableWidthHeight = [CubeActionWargameSubActionPanel , 25.0]
+                                    )
+
+                                    TextPadding = TRTTILength4(Magnifiable = [6.0, 0.0, 6.0, 0.0])
+
+                                    ParagraphStyle = ~/paragraphStyleTextCenter
+
+                                    TextStyle = "Default"
+
+                                    HorizontalFitStyle = ~/FitStyle/UserDefined
+                                    VerticalFitStyle = ~/FitStyle/UserDefined
+
+                                    TextColor       = "BlancEquipe"
+                                    TextSize        = "16"
+                                    TextToken       = "CA_mvt"
+                                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
+
+                                    TypefaceToken   = "UIMainFont"
+                                )
+                            ]
+                        )
+                    ),
+
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = PanelRoundedCorner
+                        (
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [0.0, 1.0]
+                                MagnifiableWidthHeight = [CubeActionWargameSubActionPanel,0]
+                            )
+                            Components =
+                            [
+                                BUCKTextDescriptor
+                                (
+                                    ComponentFrame = TUIFramePropertyRTTI
+                                    (
+                                        MagnifiableWidthHeight = [CubeActionWargameSubActionPanel , 25.0]
+                                    )
+
+                                    TextPadding = TRTTILength4(Magnifiable = [6.0, 0.0, 6.0, 0.0])
+
+                                    ParagraphStyle = ~/paragraphStyleTextCenter
+
+                                    TextStyle = "Default"
+
+                                    HorizontalFitStyle = ~/FitStyle/UserDefined
+                                    VerticalFitStyle = ~/FitStyle/UserDefined
+
+                                    TextColor       = "BlancEquipe"
+                                    TextSize        = "16"
+                                    TextToken       = "CA_cbt"
+                                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
+
+                                    TypefaceToken   = "UIMainFont"
+                                )
+                            ]
+                        )
+                    ),
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = PanelRoundedCorner
+                        (
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [0.0, 1.0]
+                                MagnifiableWidthHeight = [CubeActionWargameSubActionPanel,0]
+                            )
+                            Components =
+                            [
+                                BUCKTextDescriptor
+                                (
+                                    ComponentFrame = TUIFramePropertyRTTI
+                                    (
+                                        MagnifiableWidthHeight = [CubeActionWargameSubActionPanel , 25.0]
+                                    )
+
+                                    TextPadding = TRTTILength4(Magnifiable = [6.0, 0.0, 6.0, 0.0])
+
+                                    ParagraphStyle = ~/paragraphStyleTextCenter
+
+                                    TextStyle = "Default"
+
+                                    HorizontalFitStyle = ~/FitStyle/UserDefined
+                                    VerticalFitStyle = ~/FitStyle/UserDefined
+
+                                    TextColor       = "BlancEquipe"
+                                    TextSize        = "16"
+                                    TextToken       = "CA_spe"
+                                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
+
+                                    TypefaceToken   = "UIMainFont"
+                                )
+                            ]
+                        )
+                    ),
+
+                    ]
+                )
+            ]
+        ),
+
     ]
 )
+
+
 
 private PanelCubeAction_SmartOrders is BUCKListDescriptor
 (
@@ -576,9 +715,9 @@ private PanelCubeAction_SmartOrders is BUCKListDescriptor
             (
                 ElementName = "SmartOrderCubeActionGrid"
 
-                FirstElementMargin = TRTTILength2( Magnifiable = [10.0, 0.0] )
-                InterElementMargin = TRTTILength2( Magnifiable = [7.0, 7.0] )
-                LastElementMargin  = TRTTILength2( Magnifiable = [10.0, 0.0] )
+                FirstElementMargin = TRTTILength2( Magnifiable = [5.0, 0.0] )
+                InterElementMargin = TRTTILength2( Magnifiable = [11.0, 0.0] )
+                LastElementMargin  = TRTTILength2( Magnifiable = [7.0, 0.0] )
 
 
                 GridElements = MAP

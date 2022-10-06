@@ -6398,6 +6398,160 @@ export Descriptor_Missile_AGM_AGM65B_Maverick is TEntityDescriptor
 
     ]
 )
+export Descriptor_Missile_AGM_AGM65D_Maverick is TEntityDescriptor
+(
+    DescriptorId       = GUID:{d8d516cf-87c3-4373-a457-f19529e4730a}
+    ClassNameForDebug  = 'Missile_AGM_AGM65D_Maverick'
+    ModulesDescriptors = [
+        // TypeUnit
+            TTypeUnitModuleDescriptor
+            (
+                TypeUnitValue                    = ETypeUnit/Undef
+            ),
+
+        // Tags
+            TTagsModuleDescriptor
+            (
+                TagSet = [
+                    "MISSILE",
+                    "MISSILE_AGM_AGM65D_Maverick",
+                ]
+            ),
+
+        // Flags
+            TFlagsModuleDescriptor
+            (
+                InitialFlagSet =
+                [
+                    Flag_Detectable,
+                    Flag_VehiculeVolant,
+                    Flag_ProjectileFlying,
+                    Flag_Blessable,
+                    Flag_Target,
+                ]
+            ),
+
+        // Position
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = True
+                PorteurMustBeVisible       = True
+                ClampInWorld               = False
+                ClampOutMap                = True
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+
+        // LinkTeam
+        ~/TemplateLinkTeam,
+
+        // ApparenceModel
+        ApparenceModel is
+            TApparenceModelModuleDescriptor
+            (
+                Depiction  = Template_DescriptorMissileBase
+                (
+                    ProjectileModelFile = ModelFile_Missile_Maverick
+                    Actions = MAP[
+                        ( ["fx_propulsion_on"], template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_AGM_gros )),
+                    ]
+                )
+            ),
+
+        // GuidedMissile
+            TGuidedMissileModuleDescriptor
+            (
+                ArmingDistance    = ((0) * Metre)
+                ImpactReveal_TimeBeforeImpact = 0.0
+                ImpactReveal_TimeOfReveal     = 0.0
+                ImpactReveal_Radius           = 0.0
+            ),
+
+        // GuidedMissileMovement
+            TGuidedMissileMovementModuleDescriptor
+            (
+                DefaultConfig = TGuidedMissileMovementConfigDescriptor
+                (
+                    MaxSpeed        = 8000.0 * Metre
+                    MaxAcceleration = 4000.0 * Metre
+                    AutoGyr         = 0.6981317007977318
+                )
+                UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
+                (
+                    MaxSpeed        = 8000.0 * Metre
+                    MaxAcceleration = 4000.0 * Metre
+                    AutoGyr         = 1.7453292519943295
+                )
+                AscendantPhaseConfig = nil
+                RecedingPhaseConfig = nil
+                CruiseAltitude = 0.0 * Metre
+                TimeMaxBetweenRandomMoveWhenUncontrollable = 2
+                TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
+                TimeBetweenChaosUpdates = 0.1
+                RangeChaos = 800
+                AngleMaxForRandomMouvUncontrollable = 6.0
+                RotationSpeedWhenUncontrollable = 30
+                TempsDemiTour = 0.1
+            ),
+
+        // Damage
+            TModuleSelector
+            (
+                Default        = TDamageModuleDescriptor
+                (
+                    CommonDamageDescriptor = TDamageDescriptor
+                    (
+                        SuppressDamagesRegenRatio = ~/Missile_SuppressDamagesRegenRatioList
+                        SuppressDamagesRegenRatioOutOfRange = ~/Missile_SuppressDamagesRegenRatioOutOfRange
+                        StunDamagesRegen = ~/Missile_StunDamagesRegen
+                        StunFreezesUnits = False
+                        BlindageProperties = TBlindageProperties
+                        (
+                            ArmorDescriptorFront = ArmorDescriptor_Vehicule_1
+                            ArmorDescriptorSides = ArmorDescriptor_Vehicule_1
+                            ArmorDescriptorRear = ArmorDescriptor_Vehicule_1
+                            ArmorDescriptorTop = ArmorDescriptor_Vehicule_1
+                        )
+                        MaxSuppressionDamages = ~/Missile_MaxSuppressionDamages
+                        MaxStunDamages = ~/Missile_MaxStunDamages
+                    )
+                    MaxDamages = 2.0
+                    HitRollSize = 0.0
+                    HitRollECM = 0.0
+                    MaxHPForHUD = 2
+                    AutoOrientation = False
+                    IsTargetableAsBoat = False
+                    IsTargetableOutsideCenter = False
+                    SkipCadavreCreation  = False
+                    UseDamageMultiplierForFirePower = False
+                    UseTopArmorAgainstFire = False
+                    PhysicalDamageLevelsPack = nil
+                    SuppressDamageLevelsPack = nil
+                    StunDamageLevelsPack = nil
+                )
+                Selection = [ ~/NilDescriptorIfCadavre ]
+            ),
+
+        // Dangerousness
+             TDangerousnessModuleDescriptor
+             (
+                 Dangerousness  = 200.0
+             ),
+
+        // PackSignaux
+            ~/PackSignauxModuleDescriptor,
+
+        // TargetData
+        ~/TargetDataModuleDescriptor,
+
+    ]
+)
 export Descriptor_Missile_AGM_AGM88_HARM is TEntityDescriptor
 (
     DescriptorId       = GUID:{b927400f-1217-400c-b9a9-53c894909908}
@@ -15946,6 +16100,160 @@ export Descriptor_Missile_ATGM_9K115_Metis_M is TEntityDescriptor
 
     ]
 )
+export Descriptor_Missile_Bomb_GBU_12_x1 is TEntityDescriptor
+(
+    DescriptorId       = GUID:{3ef37c4c-9318-415d-814d-8117ecb39160}
+    ClassNameForDebug  = 'Missile_Bomb_GBU_12_x1'
+    ModulesDescriptors = [
+        // TypeUnit
+            TTypeUnitModuleDescriptor
+            (
+                TypeUnitValue                    = ETypeUnit/Undef
+            ),
+
+        // Tags
+            TTagsModuleDescriptor
+            (
+                TagSet = [
+                    "MISSILE",
+                    "MISSILE_Bomb_GBU_12_x1",
+                ]
+            ),
+
+        // Flags
+            TFlagsModuleDescriptor
+            (
+                InitialFlagSet =
+                [
+                    Flag_Detectable,
+                    Flag_VehiculeVolant,
+                    Flag_ProjectileFlying,
+                    Flag_Blessable,
+                    Flag_Target,
+                ]
+            ),
+
+        // Position
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = True
+                PorteurMustBeVisible       = True
+                ClampInWorld               = False
+                ClampOutMap                = True
+                HasNearlyNullBBox          = False
+                GfxDescriptorPorteur       = ~/GfxPorteurUnite
+                Radius                     = ((5) * Metre)
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+
+        // LinkTeam
+        ~/TemplateLinkTeam,
+
+        // ApparenceModel
+        ApparenceModel is
+            TApparenceModelModuleDescriptor
+            (
+                Depiction  = Template_DescriptorMissileBase
+                (
+                    ProjectileModelFile = ModelFile_Missile_HOT
+                    Actions = MAP[
+                        ( ["fx_propulsion_on"], template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_generation2 )),
+                    ]
+                )
+            ),
+
+        // GuidedMissile
+            TGuidedMissileModuleDescriptor
+            (
+                ArmingDistance    = ((0) * Metre)
+                ImpactReveal_TimeBeforeImpact = 0.0
+                ImpactReveal_TimeOfReveal     = 0.0
+                ImpactReveal_Radius           = 0.0
+            ),
+
+        // GuidedMissileMovement
+            TGuidedMissileMovementModuleDescriptor
+            (
+                DefaultConfig = TGuidedMissileMovementConfigDescriptor
+                (
+                    MaxSpeed        = 1500.0 * Metre
+                    MaxAcceleration = 2000.0 * Metre
+                    AutoGyr         = 0.08726646259971647
+                )
+                UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
+                (
+                    MaxSpeed        = 1500.0 * Metre
+                    MaxAcceleration = 2000.0 * Metre
+                    AutoGyr         = 0.08726646259971647
+                )
+                AscendantPhaseConfig = nil
+                RecedingPhaseConfig = nil
+                CruiseAltitude = 0.0 * Metre
+                TimeMaxBetweenRandomMoveWhenUncontrollable = 2
+                TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
+                TimeBetweenChaosUpdates = 0.5
+                RangeChaos = 600
+                AngleMaxForRandomMouvUncontrollable = 1.0
+                RotationSpeedWhenUncontrollable = 5
+                TempsDemiTour = 0.1
+            ),
+
+        // Damage
+            TModuleSelector
+            (
+                Default        = TDamageModuleDescriptor
+                (
+                    CommonDamageDescriptor = TDamageDescriptor
+                    (
+                        SuppressDamagesRegenRatio = ~/Missile_SuppressDamagesRegenRatioList
+                        SuppressDamagesRegenRatioOutOfRange = ~/Missile_SuppressDamagesRegenRatioOutOfRange
+                        StunDamagesRegen = ~/Missile_StunDamagesRegen
+                        StunFreezesUnits = False
+                        BlindageProperties = TBlindageProperties
+                        (
+                            ArmorDescriptorFront = ArmorDescriptor_Vehicule_1
+                            ArmorDescriptorSides = ArmorDescriptor_Vehicule_1
+                            ArmorDescriptorRear = ArmorDescriptor_Vehicule_1
+                            ArmorDescriptorTop = ArmorDescriptor_Vehicule_1
+                        )
+                        MaxSuppressionDamages = ~/Missile_MaxSuppressionDamages
+                        MaxStunDamages = ~/Missile_MaxStunDamages
+                    )
+                    MaxDamages = 2.0
+                    HitRollSize = 0.0
+                    HitRollECM = 0.0
+                    MaxHPForHUD = 2
+                    AutoOrientation = False
+                    IsTargetableAsBoat = False
+                    IsTargetableOutsideCenter = False
+                    SkipCadavreCreation  = False
+                    UseDamageMultiplierForFirePower = False
+                    UseTopArmorAgainstFire = False
+                    PhysicalDamageLevelsPack = nil
+                    SuppressDamageLevelsPack = nil
+                    StunDamageLevelsPack = nil
+                )
+                Selection = [ ~/NilDescriptorIfCadavre ]
+            ),
+
+        // Dangerousness
+             TDangerousnessModuleDescriptor
+             (
+                 Dangerousness  = 200.0
+             ),
+
+        // PackSignaux
+            ~/PackSignauxModuleDescriptor,
+
+        // TargetData
+        ~/TargetDataModuleDescriptor,
+
+    ]
+)
 export Descriptor_Missile_FakeRoquette_S_24 is TEntityDescriptor
 (
     DescriptorId       = GUID:{b3da3a3d-6a00-48d4-86b5-8e0af2b57685}
@@ -16007,7 +16315,7 @@ export Descriptor_Missile_FakeRoquette_S_24 is TEntityDescriptor
                 (
                     ProjectileModelFile = ModelFile_Missile_S_24_240mm
                     Actions = MAP[
-                        ( ["fx_propulsion_on"], template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_petit )),
+                        ( ["fx_propulsion_on"], template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_moyen )),
                         ( ["fx_propulsion_off"], template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_arret_missile_AA_moyen )),
                     ]
                 )

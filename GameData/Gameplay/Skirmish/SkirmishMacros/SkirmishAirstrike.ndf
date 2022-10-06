@@ -126,7 +126,7 @@ export Pool_Airstrike_Offense is TPoolModel
         TagsPriority = [
             "Avion_Bombardier",
             "Avion_Chasseur_Bombardier",
-            "Avion_Assaut",
+            "Avion_Napalm",
         ]
     ),
     ]

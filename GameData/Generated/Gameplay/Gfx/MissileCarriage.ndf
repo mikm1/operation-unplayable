@@ -443,6 +443,35 @@ export MissileCarriage_ATteam_Milan_1_UK_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
+// ATteam_Milan_1_para_FR : ['ATGM MILAN']
+export MissileCarriage_ATteam_Milan_1_para_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_ATteam_Milan_1_para_FR
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_ATteam_Milan_1_para_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_ATteam_Milan_1_para_FR
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
 // ATteam_Milan_2_FR : ['ATGM MILAN 2']
 export MissileCarriage_ATteam_Milan_2_FR is TMissileCarriageConnoisseur
 (
@@ -519,6 +548,35 @@ export MissileCarriage_ATteam_Milan_2_UK is TMissileCarriageConnoisseur
 export MissileCarriage_ATteam_Milan_2_UK_Showroom is TMissileCarriageConnoisseur
 (
     MeshDescriptor = Modele_ATteam_Milan_2_UK
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+// ATteam_Milan_2_para_FR : ['ATGM MILAN 2']
+export MissileCarriage_ATteam_Milan_2_para_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_ATteam_Milan_2_para_FR
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_ATteam_Milan_2_para_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_ATteam_Milan_2_para_FR
     PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
     WeaponInfos = 
     [
@@ -1313,6 +1371,35 @@ export MissileCarriage_DCA_Javelin_LML_UK_Showroom is TMissileCarriageConnoisseu
         ),
     ]
 )
+// DCA_Rapier_UK : ['SAM RAPIER x4']
+export MissileCarriage_DCA_Rapier_UK is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_DCA_Rapier_UK
+    PylonSet = DepictionPylonSet_Vehicle_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_DCA_Rapier_UK_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_DCA_Rapier_UK
+    PylonSet = DepictionPylonSet_Vehicle_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 1
+        ),
+    ]
+)
 // FV102_Striker_BEL : ['ATGM Swingfire x5']
 export MissileCarriage_FV102_Striker_BEL is TMissileCarriageConnoisseur
 (
@@ -1429,6 +1516,35 @@ export MissileCarriage_FV438_Swingfire_UK_Showroom is TMissileCarriageConnoisseu
         ),
     ]
 )
+// Faun_Kraka_TOW_RFA : ['ATGM BGM71C ITOW']
+export MissileCarriage_Faun_Kraka_TOW_RFA is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Faun_Kraka_TOW_RFA
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 5
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_Faun_Kraka_TOW_RFA_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Faun_Kraka_TOW_RFA
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 5
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
 // Iltis_MILAN_RFA : ['ATGM MILAN']
 export MissileCarriage_Iltis_MILAN_RFA is TMissileCarriageConnoisseur
 (
@@ -1511,6 +1627,35 @@ export MissileCarriage_Jaguar_2_RFA_Showroom is TMissileCarriageConnoisseur
         TMissileCarriageWeaponInfo
         (
             Count = 12
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+// LandRover_MILAN_UK : ['ATGM MILAN 2']
+export MissileCarriage_LandRover_MILAN_UK is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_LandRover_MILAN_UK
+    PylonSet = DepictionPylonSet_Vehicle_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_LandRover_MILAN_UK_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_LandRover_MILAN_UK
+    PylonSet = DepictionPylonSet_Vehicle_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
             MissileType = eAGM
             WeaponIndex = 1
         ),
@@ -2299,6 +2444,35 @@ export MissileCarriage_T62M_SOV_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
+// T64BV_CMD_SOV : ['ATGM 9M128 Agona']
+export MissileCarriage_T64BV_CMD_SOV is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_T64BV_CMD_SOV
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_T64BV_CMD_SOV_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_T64BV_CMD_SOV
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
 // T64BV_SOV : ['ATGM 9M128 Agona']
 export MissileCarriage_T64BV_SOV is TMissileCarriageConnoisseur
 (
@@ -2317,6 +2491,35 @@ export MissileCarriage_T64BV_SOV is TMissileCarriageConnoisseur
 export MissileCarriage_T64BV_SOV_Showroom is TMissileCarriageConnoisseur
 (
     MeshDescriptor = Modele_T64BV_SOV
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+// T64B_SOV : ['ATGM 9M112 1 Kobra']
+export MissileCarriage_T64B_SOV is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_T64B_SOV
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 6
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_T64B_SOV_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_T64B_SOV
     PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
     WeaponInfos = 
     [
@@ -2759,6 +2962,64 @@ export MissileCarriage_VBL_MILAN_FR_Showroom is TMissileCarriageConnoisseur
         (
             Count = 4
             MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+// VLRA_MILAN_FR : ['ATGM MILAN 2']
+export MissileCarriage_VLRA_MILAN_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_VLRA_MILAN_FR
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 8
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_VLRA_MILAN_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_VLRA_MILAN_FR
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 8
+            MissileType = eAGM
+            WeaponIndex = 1
+        ),
+    ]
+)
+// VLRA_Mistral_FR : ['SAM Mistral']
+export MissileCarriage_VLRA_Mistral_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_VLRA_Mistral_FR
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 12
+            MissileType = eAAM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_VLRA_Mistral_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_VLRA_Mistral_FR
+    PylonSet = DepictionPylonSet_ATGM( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 12
+            MissileType = eAAM
             WeaponIndex = 1
         ),
     ]
@@ -3291,6 +3552,35 @@ export MissileCarriage_Gazelle_HOT_FR_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
+// Gazelle_Mistral_FR : ['Mistral Celtic x4']
+export MissileCarriage_Gazelle_Mistral_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Gazelle_Mistral_FR
+    PylonSet = DepictionPylonSet_Helico_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 1
+        ),
+    ]
+)
+export MissileCarriage_Gazelle_Mistral_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Gazelle_Mistral_FR
+    PylonSet = DepictionPylonSet_Helico_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 1
+        ),
+    ]
+)
 // Gazelle_SNEB_UK : ['RocketAir SNEB 68mm x12']
 export MissileCarriage_Gazelle_SNEB_UK is TMissileCarriageConnoisseur
 (
@@ -3581,20 +3871,13 @@ export MissileCarriage_Mi_24D_s8_AT_DDR_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
-// Mi_24K_reco_SOV : ['RocketAir B8 80mm x10'] ['RocketAir B8 80mm x10']
+// Mi_24K_reco_SOV : ['RocketAir B8 80mm x10']
 export MissileCarriage_Mi_24K_reco_SOV is TMissileCarriageConnoisseur
 (
     MeshDescriptor = Modele_Mi_24K_reco_SOV
     PylonSet = DepictionPylonSet_Helico_SOV( CastShadow = False )
     WeaponInfos = 
     [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 40
-            MissileType = eAGM
-            MountingType = eMountingPod
-            WeaponIndex = 2
-        ),
         TMissileCarriageWeaponInfo
         (
             Count = 40
@@ -3610,13 +3893,6 @@ export MissileCarriage_Mi_24K_reco_SOV_Showroom is TMissileCarriageConnoisseur
     PylonSet = DepictionPylonSet_Helico_SOV( CastShadow = True )
     WeaponInfos = 
     [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 40
-            MissileType = eAGM
-            MountingType = eMountingPod
-            WeaponIndex = 2
-        ),
         TMissileCarriageWeaponInfo
         (
             Count = 40
@@ -4179,6 +4455,37 @@ export MissileCarriage_Mi_8TV_SOV_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
+// Mi_8TV_UPK_DDR : ['RocketAir S5 57mm x8']
+export MissileCarriage_Mi_8TV_UPK_DDR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Mi_8TV_UPK_DDR
+    PylonSet = DepictionPylonSet_Helico_SOV( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 40
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Mi_8TV_UPK_DDR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Mi_8TV_UPK_DDR
+    PylonSet = DepictionPylonSet_Helico_SOV( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 40
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
+        ),
+    ]
+)
 // Mi_8TV_s57_16_SOV : ['RocketAir S5 57mm x8'] ['RocketAir S5 57mm x8'] ['RocketAir S5 57mm x8']
 export MissileCarriage_Mi_8TV_s57_16_SOV is TMissileCarriageConnoisseur
 (
@@ -4536,7 +4843,7 @@ export MissileCarriage_OH58_CS_US_Showroom is TMissileCarriageConnoisseur
     ]
 )
 
-// A10_Thunderbolt_II_ATGM_US : ['AGM AGM65B Maverick'] ['AA AIM9M Sidewinder']
+// A10_Thunderbolt_II_ATGM_US : ['AGM AGM65D Maverick'] ['AA AIM9M Sidewinder']
 export MissileCarriage_A10_Thunderbolt_II_ATGM_US is TMissileCarriageConnoisseur
 (
     MeshDescriptor = Modele_A10_Thunderbolt_II_ATGM_US
@@ -4756,7 +5063,7 @@ export MissileCarriage_Alpha_Jet_A_nplm_RFA_Showroom is TMissileCarriageConnoiss
         ),
     ]
 )
-// Alpha_Jet_A_rkt_RFA : ['RocketAir SNEB 68mm x38']
+// Alpha_Jet_A_rkt_RFA : ['RocketAir SNEB 68mm x18'] ['RocketAir SNEB 68mm x18']
 export MissileCarriage_Alpha_Jet_A_rkt_RFA is TMissileCarriageConnoisseur
 (
     MeshDescriptor = Modele_Alpha_Jet_A_rkt_RFA
@@ -4765,10 +5072,17 @@ export MissileCarriage_Alpha_Jet_A_rkt_RFA is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 76
+            Count = 36
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
         ),
     ]
 )
@@ -4780,10 +5094,17 @@ export MissileCarriage_Alpha_Jet_A_rkt_RFA_Showroom is TMissileCarriageConnoisse
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 76
+            Count = 36
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
         ),
     ]
 )
@@ -5276,7 +5597,7 @@ export MissileCarriage_F16E_AA_US_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
-// F16E_AGM_US : ['AGM AGM65B Maverick'] ['AA AIM9M Sidewinder']
+// F16E_AGM_US : ['AGM AGM65D Maverick'] ['AA AIM9M Sidewinder']
 export MissileCarriage_F16E_AGM_US is TMissileCarriageConnoisseur
 (
     MeshDescriptor = Modele_F16E_AGM_US
@@ -5863,6 +6184,47 @@ export MissileCarriage_F4F_Phantom_II_RKT2_RFA_Showroom is TMissileCarriageConno
         ),
     ]
 )
+// F4_Phantom_AA_F3 : ['AA Skyflash'] ['AA AIM9L Sidewinder']
+export MissileCarriage_F4_Phantom_AA_F3 is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_F4_Phantom_AA_F3
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_F4_Phantom_AA_F3_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_F4_Phantom_AA_F3
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
 // F4_Wild_Weasel_US : ['AGM AGM45 Shrike'] ['AA AIM9J Sidewinder']
 export MissileCarriage_F4_Wild_Weasel_US is TMissileCarriageConnoisseur
 (
@@ -5978,7 +6340,7 @@ export MissileCarriage_G91_R3_Gina_NPL_RFA_Showroom is TMissileCarriageConnoisse
         ),
     ]
 )
-// G91_R3_Gina_RKT_RFA : ['RocketAir SNEB 68mm x38']
+// G91_R3_Gina_RKT_RFA : ['RocketAir SNEB 68mm x18'] ['RocketAir SNEB 68mm x18']
 export MissileCarriage_G91_R3_Gina_RKT_RFA is TMissileCarriageConnoisseur
 (
     MeshDescriptor = Modele_G91_R3_Gina_RKT_RFA
@@ -5987,10 +6349,17 @@ export MissileCarriage_G91_R3_Gina_RKT_RFA is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 76
+            Count = 36
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
         ),
     ]
 )
@@ -6002,10 +6371,17 @@ export MissileCarriage_G91_R3_Gina_RKT_RFA_Showroom is TMissileCarriageConnoisse
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 76
+            Count = 36
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
         ),
     ]
 )
@@ -6052,6 +6428,49 @@ export MissileCarriage_Harrier_CLU_UK_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
+// Harrier_HE1_UK : ['Bomb Mk83 450kg x2'] ['AA AIM9L Sidewinder']
+export MissileCarriage_Harrier_HE1_UK is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Harrier_HE1_UK
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Harrier_HE1_UK_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Harrier_HE1_UK
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
 // Harrier_HE2_UK : ['Bomb Mk18 RET 513kg x4']
 export MissileCarriage_Harrier_HE2_UK is TMissileCarriageConnoisseur
 (
@@ -6080,6 +6499,94 @@ export MissileCarriage_Harrier_HE2_UK_Showroom is TMissileCarriageConnoisseur
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
+        ),
+    ]
+)
+// Harrier_RKT1_UK : ['RocketAir SNEB 68mm x18'] ['AA AIM9L Sidewinder']
+export MissileCarriage_Harrier_RKT1_UK is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Harrier_RKT1_UK
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Harrier_RKT1_UK_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Harrier_RKT1_UK
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+// Harrier_RKT2_UK : ['RocketAir SNEB 68mm x18'] ['RocketAir SNEB 68mm x18']
+export MissileCarriage_Harrier_RKT2_UK is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Harrier_RKT2_UK
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Harrier_RKT2_UK_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Harrier_RKT2_UK
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
         ),
     ]
 )
@@ -6138,6 +6645,92 @@ export MissileCarriage_Jaguar_ATGM_FR_Showroom is TMissileCarriageConnoisseur
             Count = 2
             MissileType = eAGM
             WeaponIndex = 2
+        ),
+    ]
+)
+// Jaguar_CLU_UK : ['Bomb BL755 cluster 264kg x4'] ['AA AIM9L Sidewinder']
+export MissileCarriage_Jaguar_CLU_UK is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_CLU_UK
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Jaguar_CLU_UK_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_CLU_UK
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+// Jaguar_HE1_UK : ['Bomb Mk82 250kg x8'] ['AA AIM9L Sidewinder']
+export MissileCarriage_Jaguar_HE1_UK is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_HE1_UK
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 8
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Jaguar_HE1_UK_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_HE1_UK
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 8
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
         ),
     ]
 )
@@ -6227,6 +6820,51 @@ export MissileCarriage_Jaguar_HE_FR_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
+// Jaguar_RKT_FR : ['RocketAir SNEB 68mm x18'] ['RocketAir SNEB 68mm x18']
+export MissileCarriage_Jaguar_RKT_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_RKT_FR
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Jaguar_RKT_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_RKT_FR
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 36
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
+        ),
+    ]
+)
 // Jaguar_RKT_UK : ['RocketAir Hydra 70mm x19'] ['AA AIM9L Sidewinder']
 export MissileCarriage_Jaguar_RKT_UK is TMissileCarriageConnoisseur
 (
@@ -6270,6 +6908,49 @@ export MissileCarriage_Jaguar_RKT_UK_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
+// Jaguar_SEAD2_FR : ['AGM ARMAT'] ['RocketAir SNEB 68mm x18']
+export MissileCarriage_Jaguar_SEAD2_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_SEAD2_FR
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 1
+            MissileType = eAGM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 72
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Jaguar_SEAD2_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_SEAD2_FR
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 1
+            MissileType = eAGM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 72
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
+        ),
+    ]
+)
 // Jaguar_SEAD_FR : ['AGM AS37 Martel']
 export MissileCarriage_Jaguar_SEAD_FR is TMissileCarriageConnoisseur
 (
@@ -6296,6 +6977,92 @@ export MissileCarriage_Jaguar_SEAD_FR_Showroom is TMissileCarriageConnoisseur
             Count = 1
             MissileType = eAGM
             WeaponIndex = 2
+        ),
+    ]
+)
+// Jaguar_clu_FR : ['Bomb BLG66 Belouga cluster 305kg x4'] ['AA R550 Magic II']
+export MissileCarriage_Jaguar_clu_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_clu_FR
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Jaguar_clu_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_clu_FR
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+// Jaguar_nplm_FR : ['Bomb Bidons Speciaux Napalm x4'] ['AA R550 Magic II']
+export MissileCarriage_Jaguar_nplm_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_nplm_FR
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Jaguar_nplm_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Jaguar_nplm_FR
+    PylonSet = DepictionPylonSet_Airplane_Default( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
         ),
     ]
 )
@@ -6837,7 +7604,7 @@ export MissileCarriage_MiG_27M_napalm_SOV_Showroom is TMissileCarriageConnoisseu
         ),
     ]
 )
-// MiG_27M_rkt_SOV : ['RocketAir B8 80mm x40']
+// MiG_27M_rkt_SOV : ['RocketAir B8 80mm x10'] ['RocketAir B8 80mm x10']
 export MissileCarriage_MiG_27M_rkt_SOV is TMissileCarriageConnoisseur
 (
     MeshDescriptor = Modele_MiG_27M_rkt_SOV
@@ -6846,7 +7613,14 @@ export MissileCarriage_MiG_27M_rkt_SOV is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 40
+            Count = 20
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 20
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 3
@@ -6861,7 +7635,14 @@ export MissileCarriage_MiG_27M_rkt_SOV_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 40
+            Count = 20
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 20
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 3
@@ -7049,6 +7830,49 @@ export MissileCarriage_Mirage_2000_C_FR_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
+// Mirage_5_F_FR : ['Bomb Matra 250kg x10'] ['AA R550 Magic II']
+export MissileCarriage_Mirage_5_F_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Mirage_5_F_FR
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 10
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Mirage_5_F_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Mirage_5_F_FR
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 10
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
 // Mirage_5_F_clu_FR : ['Bomb BLG66 Belouga cluster 305kg x4']
 export MissileCarriage_Mirage_5_F_clu_FR is TMissileCarriageConnoisseur
 (
@@ -7108,6 +7932,49 @@ export MissileCarriage_Mirage_5_F_nplm_FR_Showroom is TMissileCarriageConnoisseu
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
+        ),
+    ]
+)
+// Mirage_F1_CT_FR : ['Bomb BGL 400 x2'] ['AA R550 Magic II']
+export MissileCarriage_Mirage_F1_CT_FR is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Mirage_F1_CT_FR
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = False )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+export MissileCarriage_Mirage_F1_CT_FR_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = Modele_Mirage_F1_CT_FR
+    PylonSet = DepictionPylonSet_Airplane_FR( CastShadow = True )
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
         ),
     ]
 )
@@ -7320,7 +8187,7 @@ export MissileCarriage_Su_22_DDR_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
-// Su_22_RKT_DDR : ['RocketAir S24 240mm x4']
+// Su_22_RKT_DDR : ['FakeRoquette S_24']
 export MissileCarriage_Su_22_RKT_DDR is TMissileCarriageConnoisseur
 (
     MeshDescriptor = Modele_Su_22_RKT_DDR
@@ -7331,7 +8198,6 @@ export MissileCarriage_Su_22_RKT_DDR is TMissileCarriageConnoisseur
         (
             Count = 4
             MissileType = eAGM
-            MountingType = eMountingPod
             WeaponIndex = 2
         ),
     ]
@@ -7346,7 +8212,6 @@ export MissileCarriage_Su_22_RKT_DDR_Showroom is TMissileCarriageConnoisseur
         (
             Count = 4
             MissileType = eAGM
-            MountingType = eMountingPod
             WeaponIndex = 2
         ),
     ]

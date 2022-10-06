@@ -360,9 +360,9 @@ private ReplayPanel is BUCKContainerDescriptor
                             VerticalAlignment = UIText_VerticalCenter
                         )
 
-                        HintTitleToken = "HRP_HDHUDT"
-                        HintBodyToken = "HRP_HDHUDB"
-                        HintExtendedToken = "HRP_HDHUDE"
+                        HintTitleToken = "HRP_HDPNT"
+                        HintBodyToken = "HRP_HDPNB"
+                        HintExtendedToken = "HRP_HDPNE"
                         HintDico = ~/LocalisationConstantes/dico_interface_ingame
                     )
                 ),

@@ -15,28 +15,25 @@ export VeryHardStrategy is TIAGeneralStrategy
         VHard_Transition_StartToPhaseCommand,
         VHard_Transition_StartToGeneric,
         VHard_Transition_DeployToCommandPhase,
+        VHard_Transition_CommandPhaseToLastHope,
     ]
 )
 
 //-------------------------------------------------------------------------
 //---------------------------- CONDITIONS ---------------------------------
 //-------------------------------------------------------------------------
-export VHard_Condition_GotoLowCost is TSequenceCondition_Compare
+export VHard_Condition_GotoGeneric is TSequenceCondition_True
 (
-    Value1 = [TSequenceConditionValues_RessourcesPointsSharedInTeam]
-    Operator = Less
-    AddToValue2 = 501
-    ResourceType = ~/Resource_CommandPoints
-)
-//-------------------------------------------------------------------------
-export VHard_Condition_GotoGeneric is TSequenceCondition_Not
-(
-    Condition = ~/VHard_Condition_GotoLowCost
 )
 //-------------------------------------------------------------------------
 export VHard_Condition_CommandPhase is TSequenceCondition_Phase
 (
     PhaseType = CommandPhase
+)
+//-------------------------------------------------------------------------
+export VHard_Condition_OpponentWinning is TSequenceCondition_OpponentWinning
+(
+    RatioValue = 0.7
 )
 //-------------------------------------------------------------------------
 //--------------------------- TRANSITIONS ---------------------------------
@@ -59,6 +56,13 @@ export VHard_Transition_DeployToCommandPhase is TIAGeneralStrategyTransition
     Origine = VHard_Phase_Deploiement
     Condition = VHard_Condition_CommandPhase
     Destination = VHard_Phase_Command
+)
+//-------------------------------------------------------------------------
+export VHard_Transition_CommandPhaseToLastHope is TIAGeneralStrategyTransition
+(
+    Origine = VHard_Phase_Command
+    Condition = VHard_Condition_OpponentWinning
+    Destination = VHard_Phase_LastHope
 )
 
 //-------------------------------------------------------------------------
@@ -99,6 +103,7 @@ export VHard_Phase_Deploiement is TSequenceGeneratorDescriptor
         //------------------------------
         // Grosse attaque
         ~/Attack_Main,              // Plusieurs tanks pour un budget donné // 200 => un cmd pas cher, une reco pas cher, et le reste de tanks pour fill le budget en random.
+        ~/Attack_Helo,
         ~/Artillery_Support,        // Artillerie pas chère                 //  80
 
         // Reste du front
@@ -170,7 +175,86 @@ export VHard_Phase_Command is TSequenceGeneratorDescriptor
 
         ~/Defense_Dynamic_Adaptive,
         ~/Defense_Dynamic_Adaptive,
-        ~/Defense_Dynamic_Adaptive,
+
+        //Cet mission lance les objectifs restant
+        ~/Defense_Objectif,
+
+        //------------------------------
+        // Attaques principales
+        //------------------------------
+        ~/Attack_Main,              // Plusieurs tanks pour un budget donné // 200
+        ~/Attack_Helo,
+        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+
+        ~/Attack_Adaptive,  // Faire du code pour adapater le budget en fonction de l'income
+        ~/Attack_Adaptive,
+
+        ~/Airstrike_Offense,
+        ~/Airstrike_Defense,
+
+        ~/SuperCommander,
+
+
+        //Low prio mais peut servir si on n'a pas de zone dans nos couloirs
+        ~/CaptureOneObjectifForAlliance,
+
+        ~/Attack_Helo,
+
+        //------------------------------
+        // Défenses Avions Arti
+        //------------------------------
+        ~/Airstrike_Assault,
+        ~/Defense_Static_AA,
+        ~/Artillery_TriggerHappy_1for2Corridors,
+
+        ~/Defense_Static_Adaptive,
+        ~/Defense_Static_Adaptive,
+
+        ~/AirReco,
+        ~/Airstrike_Offense,
+        ~/Airstrike_Defense,
+
+        ~/Artillery_Sniper,
+        ~/Artillery_Expensive,
+
+        ~/Supply_Skirmish_Allied,
+
+    ] + ~/Airstrike_Arti_Shuffle // On sort les défenses d'ici pour les mettre plus haut dans la prio
+
+    //------------------------------
+    // Scaling
+    //------------------------------
+    ScalingGeneratorList = ~/VeryHardScaling
+)
+
+//-------------------------------------------------------------------------
+export VHard_Phase_LastHope is TSequenceGeneratorDescriptor
+(
+    NbMacroActionAllowedToProduceSimultaneous = 3
+    GeneratorList =
+    [
+        // Même chose que la phase de déploiement mais avec les Défenses
+        // prioritaires sur les attaques. L'idée est de lancer ses attaques dès
+        // le début, mais de renforcer les backlines avant de récupérer de nos pertes
+        // Capture de zones
+        ~/Attack_Objectives,
+
+        //------------------------------
+        // Support & Supply
+        //------------------------------
+        ~/Support_Transports,
+
+        ~/Supply_Skirmish,
+        ~/Reco,
+
+        ~/CaptureAllZoneObjectif,
+
+        ~/Attack_Filler,
+        //------------------------------
+        // Défenses prioritaires
+        //------------------------------
+        // Statiques pour tenir le terrain
+        ~/Defense_Static_AA,
 
         //Cet mission lance les objectifs restant
         ~/Defense_Objectif,
@@ -202,9 +286,6 @@ export VHard_Phase_Command is TSequenceGeneratorDescriptor
         ~/Defense_Static_AA,
         ~/Artillery_TriggerHappy_1for2Corridors,
 
-        ~/Defense_Static_Adaptive,
-        ~/Defense_Static_Adaptive,
-
         ~/AirReco,
         ~/Airstrike_Offense,
         ~/Airstrike_Defense,
@@ -219,7 +300,7 @@ export VHard_Phase_Command is TSequenceGeneratorDescriptor
     //------------------------------
     // Scaling
     //------------------------------
-    ScalingGeneratorList = ~/VeryHardScaling
+    ScalingGeneratorList = ~/VeryHardScaling_Attack
 )
 
 VeryHardScaling is
@@ -228,6 +309,7 @@ VeryHardScaling is
     ~/Attack_Objectives,
 
     ~/Attack_Main_Autogen,
+    ~/Attack_Helo_Autogen,
     ~/Attack_Adaptive_Autogen,
     ~/Attack_Adaptive_Autogen,
     ~/Attack_Adaptive_Autogen,
@@ -235,6 +317,24 @@ VeryHardScaling is
     ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
+
+    ~/Airstrike_Assault_Autogen,
+    ~/Airstrike_Offense_Autogen,
+    ~/Airstrike_Defense_Autogen,
+
+    ~/Artillery_TriggerHappy_Autogen,
+]
+
+VeryHardScaling_Attack is
+[
+    ~/Reco,
+    ~/Attack_Objectives,
+
+    ~/Attack_Main_Autogen,
+    ~/Attack_Helo_Autogen,
+    ~/Attack_Adaptive_Autogen,
+    ~/Attack_Adaptive_Autogen,
+    ~/Attack_Adaptive_Autogen,
 
     ~/Airstrike_Assault_Autogen,
     ~/Airstrike_Offense_Autogen,

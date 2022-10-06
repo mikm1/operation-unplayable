@@ -1,5 +1,5 @@
 // largeur maximum autorisée pour le hint
-private HintInGameMaxMagnifiableWidth is 324.0
+private HintInGameMaxMagnifiableWidth is 430.0
 
 // -------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------
@@ -14,10 +14,6 @@ private HintInGameTitleTextBUCKComponent is BUCKContainerDescriptor
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContent
-    HasBorder = true
-            BorderLineColorToken = 'BlancEquipe'
-            BorderThicknessToken = '2'
-            BordersToDraw = ~/TBorderSide/Bottom
 
     Components =
     [
@@ -43,27 +39,28 @@ private HintInGameTitleTextBUCKComponent is BUCKContainerDescriptor
 
             TextStyle = "Default"
 
-            HorizontalFitStyle = ~/FitStyle/MaxBetweenUserDefinedAndContent
-            TextPadding = TRTTILength4 (Magnifiable = [15,7,15,7])
-            TypefaceToken = "Liberator"
+            HorizontalFitStyle = ~/FitStyle/MinBetweenUserDefinedAndContent
+            TextPadding = TRTTILength4 (Magnifiable = [15,7+8,15,0])
+            TypefaceToken = "Eurostyle_Heavy"
             BigLineAction = ~/BigLineAction/MultiLine
 
             UniformDrawer = $/UserInterface/UIUniformDrawer
 
             TextDico = ~/LocalisationConstantes/dico_interface_ingame
-            TextSize = "14"
+            TextSize = "17"
             TextColor = "BlancEquipe" //"Hint/InGame/Title"
 
-            Components =
-            [
-            PanelRoundedCorner
-        (
-            BackgroundBlockColorToken = 'H2_bleu_2'
-            //BorderLineColorToken = 'MarronPanel_noir'
-            RoundedVertexes = [false, false,true,false]
-            Radius = 10
-        ),
+            {Components =
+                        [
+                        PanelRoundedCorner
+                    (
+                        BackgroundBlockColorToken = 'H2_bleu_2'
+                        //BorderLineColorToken = 'MarronPanel_noir'
+                        RoundedVertexes = [false, false,true,false]
+                        Radius = 10
+                    ),
             ]
+            }
         )
     ]
 
@@ -101,21 +98,21 @@ private HintInGameBodyTextBUCKComponent is BUCKContainerDescriptor
                 VerticalAlignment = UIText_Up
                 BigWordAction     = ~/BigWordAction/BigWordNewLine
                 Balanced          = false
-                InterLine         = 0.3
+                InterLine         = 0.5
             )
 
             TextStyle = "Default"
             TextPadding = TRTTILength4 (Magnifiable = [15,10,15,10])
             HorizontalFitStyle = ~/FitStyle/MinBetweenUserDefinedAndContent
 
-            TypefaceToken = "Eurostyle"
+            TypefaceToken = "Eurostyle_Medium"
             BigLineAction = ~/BigLineAction/MultiLine
 
             UniformDrawer = $/UserInterface/UIUniformDrawer
 
             TextDico = ~/LocalisationConstantes/dico_interface_ingame
-            TextSize = "12"
-            TextColor = "Blanc" //"Hint/InGame/Body"
+            TextSize = "13"
+            TextColor = "BlancEquipe" //"Hint/InGame/Body"
         )
     ]
 )
@@ -166,7 +163,7 @@ private HintInGameSeparatorTextBUCKComponent is BUCKContainerDescriptor
             TextDico = ~/LocalisationConstantes/dico_interface_outgame
             TextToken = "HINT_EX_SP"
             TextSize = "14"
-            TextColor = "BlancEquipe" //"Hint/InGame/Separator"
+            TextColor = "Blanc" //"Hint/InGame/Separator"
         )
     ]
 )
@@ -181,7 +178,7 @@ private HintInGameExtendedTextBUCKComponent is BUCKContainerDescriptor
     (
         MagnifiableWidthHeight = [0.0, 0.0]
     )
-    HasBorder = true
+    HasBorder = false
             BorderLineColorToken = 'BlancEquipe'
             BorderThicknessToken = '1'
             BordersToDraw = ~/TBorderSide/Top
@@ -205,14 +202,14 @@ private HintInGameExtendedTextBUCKComponent is BUCKContainerDescriptor
                 VerticalAlignment = UIText_Up
                 BigWordAction     = ~/BigWordAction/BigWordNewLine
                 Balanced          = false
-                InterLine         = 0.3
+                InterLine         = 0.6
             )
 
             TextStyle = "Default"
             TextPadding = TRTTILength4 (Magnifiable = [15,10,15,15])
             HorizontalFitStyle = ~/FitStyle/MinBetweenUserDefinedAndContent
 
-            TypefaceToken = "Eurostyle"
+            TypefaceToken = "Eurostyle_Italic"
             BigLineAction = ~/BigLineAction/MultiLine
 
             UniformDrawer = $/UserInterface/UIUniformDrawer
@@ -253,24 +250,28 @@ private HintInGameBUCKComponent is HintBUCKComponent
 
     ListBackgroundComponents =
     [
-        BUCKContainerDescriptor
-        (
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                RelativeWidthHeight = [1.0, 0.0]
-                MagnifiableWidthHeight = [0.0, 24.0]
-                MagnifiableOffset = [0.0, 0.0]
-                AlignementToFather = [0.0, 0.0]
-                AlignementToAnchor = [0.0, 0.0]
-            )
-        ),
+
         PanelRoundedCorner
         (
-            BackgroundBlockColorToken = "H2_bleu_2_hint"
+            BackgroundBlockColorToken = "hint_fond_meilleureLecture"
             //BorderLineColorToken = "MarronPanel_noir"
-            Radius = 10
-            RoundedVertexes = [false, false, true,true]
-        )
+            Radius = 5
+            RoundedVertexes = [true, true, true,true]
+        ),
+        {BUCKTextureDescriptor
+                        (
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1,1]
+                                AlignementToAnchor = [0.0, 0.0]
+                                AlignementToFather = [0.0, 0.0]
+                                )
+                            TextureToken = 'Hint_fond_texture'
+                            TextureDrawer = 'ColorMultiply_Additive'
+                            TextureFrame   = TUIFramePropertyRTTI( MagnifiableWidthHeight = [1400.0, 1980.0] )
+                            ClipTextureToComponent = true
+                        )}
+
     ]
 
     ListForegroundComponents = []

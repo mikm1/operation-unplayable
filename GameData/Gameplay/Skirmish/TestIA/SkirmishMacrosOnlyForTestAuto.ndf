@@ -190,6 +190,7 @@ export Artillery_OnlyTestAuto is TMacroActionDescriptor_Artillery_Specific
                 (["Vehicule_Logistique"], 100.0),
                 (["Vehicule"], 100.0),
                 (["Char"], 100.0),
+                (["Helo"], 100.0),
             ]
         ),
 

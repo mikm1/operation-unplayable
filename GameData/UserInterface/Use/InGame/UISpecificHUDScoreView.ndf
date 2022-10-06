@@ -742,7 +742,6 @@ private MainScorePanelComponent is BUCKListDescriptor
     ElementName = "MainScorePanelComponent"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        //MagnifiableWidthHeight = [0.0, 50.0]
         MagnifiableOffset = [-10,0]
     )
     FirstMargin = TRTTILength ( Magnifiable = 5)

@@ -1,4 +1,4 @@
-export ModelFile_HMGteam_MG3_FJ_RFA is 'GameData:/Assets/3D/Units/US/Canon/M2HB/M2HB.Ase2NdfBin'
+export ModelFile_HMGteam_MG3_FJ_RFA is 'GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/MG3.Ase2NdfBin'
 
 Modele_HMGteam_MG3_FJ_RFA is TResourceMultiMaterialMeshWithLod
 (
@@ -8,13 +8,13 @@ Modele_HMGteam_MG3_FJ_RFA is TResourceMultiMaterialMeshWithLod
 
 Modele_HMGteam_MG3_FJ_RFA_MID is TResourceMultiMaterialMeshWithLod
 (
-    FileName     = 'GameData:/Assets/3D/Units/US/Canon/M2HB/M2HB.Ase2NdfBin'
+    FileName     = 'GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/MG3.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 
 Modele_HMGteam_MG3_FJ_RFA_LOW is TResourceMultiMaterialMeshWithLod
 (
-    FileName     = 'GameData:/Assets/3D/Units/US/Canon/M2HB/M2HB.Ase2NdfBin'
+    FileName     = 'GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/MG3.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
 

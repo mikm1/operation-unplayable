@@ -35,8 +35,8 @@ BUCKSpecificMiniMapInfoMainComponentDescriptor is BUCKListDescriptor
                 ]
             )
         ),
-
     ]
+
 )
 
 UISpecificMiniMapInfoViewDescriptor is TUISpecificMiniMapInfoViewDescriptor

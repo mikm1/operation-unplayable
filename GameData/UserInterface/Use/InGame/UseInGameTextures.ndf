@@ -167,6 +167,9 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("icone_scorePoints",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/scorePoints.png' )), ] ),
         ("icone_moralePoints",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/moralePoints.png' )), ] ),
 
+        ("LDHint_cercle_contour",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/LDHint/cercle_contour.png' )), ] ),
+        ("LDHint_cercle_fond",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/LDHint/cercle_fond.png' )), ] ),
+
         ("icone_bullets",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/bullets2.png' )), ] ),
         ("icone_bullets_refill",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/bullets2_refill.png' )), ] ),
         ("icone_commander",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/commander.png' )), ] ),

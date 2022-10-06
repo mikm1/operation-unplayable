@@ -39,34 +39,6 @@ template DeckListButton
     LeftClickSound = <LeftClickSound>
 )
 
-private DeckListPanelEditButton is DeckListButton
-(
-    ElementName = 'EditButton'
-    TextToken = 'AB_DCKEDIT'
-
-    HintableAreaElementName = 'HintableAreaEditButton'
-    HintTitleToken = "ODL_EDITBT"
-    HintBodyToken = "ODL_EDITBB"
-    HintExtendedToken = "ODL_EDITBE"
-    HintDico = ~/LocalisationConstantes/dico_interface_outgame
-
-    LeftClickSound = SoundEvent_EditDeck
-)
-
-private DeckListPanelViewButton is DeckListButton
-(
-    ElementName = 'ViewButton'
-    TextToken = 'AB_DCKVIEW'
-
-    HintableAreaElementName = 'HintableAreaViewButton'
-    HintTitleToken = "ODL_VIEWBT"
-    HintBodyToken = "ODL_VIEWBB"
-    HintExtendedToken = "ODL_VIEWBE"
-    HintDico = ~/LocalisationConstantes/dico_interface_outgame
-
-    LeftClickSound = SoundEvent_ViewDeck
-)
-
 private DeckListPanelRenameButton is DeckListButton
 (
     ElementName = 'RenameButton'
@@ -152,7 +124,7 @@ template ModalButtonGris
     LeftClickSound = <LeftClickSound>
 )
 
-private DeckListPanelImportButton is ModalButtonGris
+{private DeckListPanelImportButton is ModalButtonGris
 (
     ElementName = "ImportButton"
     TextToken = "AB_DCKIMPO"
@@ -162,9 +134,99 @@ private DeckListPanelImportButton is ModalButtonGris
     HintExtendedToken = "ODL_IMPOBE"
     HintDico = ~/LocalisationConstantes/dico_interface_outgame
     LeftClickSound = SoundEvent_OpenImportDeckModal
+)}
+
+private DeckListPanelImportButton is ConfirmButton
+(
+    ElementName = 'ImportButton'
+    TextToken = 'AB_DCKIMPO'
+    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
+    ButtonMagnifiableWidthHeight = [175.0, 34.0]
+    TextTypefaceToken = "Liberator"
+    //TextStyle = 'TextStyleEcranMoniteur_gris'
+    TextColorToken = 'boutonFiltre'
+    BorderLineColorToken = 'boutonFiltre'
+    HasBackground = false
+    BackgroundBlockColorToken = 'loginBoutonBackground_cyan'
+    TextSizeToken = '26'
+    BorderThicknessToken = '3'
+
+    HintTitleToken = "ODL_IMPOBT"
+    HintBodyToken = "ODL_IMPOBB"
+    HintExtendedToken = "ODL_IMPOBE"
+    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    LeftClickSound = SoundEvent_OpenImportDeckModal
 )
 
-private DeckListPanelCreateButton is ModalButtonGris
+{private DeckListPanelEditButton is DeckListButton
+(
+    ElementName = 'EditButton'
+    TextToken = 'AB_DCKEDIT'
+
+    HintableAreaElementName = 'HintableAreaEditButton'
+    HintTitleToken = "ODL_EDITBT"
+    HintBodyToken = "ODL_EDITBB"
+    HintExtendedToken = "ODL_EDITBE"
+    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+
+    LeftClickSound = SoundEvent_EditDeck
+)}
+private DeckListPanelEditButton is ConfirmButton
+(
+    ElementName = 'EditButton'
+    TextToken = 'AB_DCKEDIT'
+    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
+    ButtonMagnifiableWidthHeight = [175.0, 34.0]
+    TextTypefaceToken = "Liberator"
+    //TextStyle = 'TextStyleEcranMoniteur_gris'
+    TextColorToken = 'boutonFiltre'
+    BorderLineColorToken = 'boutonFiltre'
+    HasBackground = false
+    BackgroundBlockColorToken = 'loginBoutonBackground_cyan'
+    TextSizeToken = '26'
+    BorderThicknessToken = '3'
+
+    HintTitleToken = "ODL_EDITBT"
+    HintBodyToken = "ODL_EDITBB"
+    HintExtendedToken = "ODL_EDITBE"
+    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    LeftClickSound = SoundEvent_EditDeck
+)
+{private DeckListPanelViewButton is DeckListButton
+(
+    ElementName = 'ViewButton'
+    TextToken = 'AB_DCKVIEW'
+
+    HintableAreaElementName = 'HintableAreaViewButton'
+    HintTitleToken = "ODL_VIEWBT"
+    HintBodyToken = "ODL_VIEWBB"
+    HintExtendedToken = "ODL_VIEWBE"
+    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+
+    LeftClickSound = SoundEvent_ViewDeck
+)}
+private DeckListPanelViewButton is ConfirmButton
+(
+    ElementName = 'ViewButton'
+    TextToken = 'AB_DCKVIEW'
+    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
+    ButtonMagnifiableWidthHeight = [175.0, 34.0]
+    TextTypefaceToken = "Liberator"
+    //TextStyle = 'TextStyleEcranMoniteur_gris'
+    TextColorToken = 'boutonFiltre'
+    BorderLineColorToken = 'boutonFiltre'
+    HasBackground = false
+    BackgroundBlockColorToken = 'loginBoutonBackground_cyan'
+    TextSizeToken = '26'
+    BorderThicknessToken = '3'
+
+    HintTitleToken = "ODL_VIEWBT"
+    HintBodyToken = "ODL_VIEWBB"
+    HintExtendedToken = "ODL_VIEWBE"
+    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    LeftClickSound = SoundEvent_ViewDeck
+)
+{private DeckListPanelCreateButton is ModalButtonGris
 (
     ElementName = "CreateButton"
     TextToken = "NV_CREATE"
@@ -174,7 +236,34 @@ private DeckListPanelCreateButton is ModalButtonGris
     HintExtendedToken = "ODL_CREABE"
     HintDico = ~/LocalisationConstantes/dico_interface_outgame
     LeftClickSound = SoundEvent_OpenCreateDeckModal
+)}
+
+// BattlegroupListe
+private DeckListPanelCreateButton is ConfirmButton
+(
+    ElementName = 'CreateButton'
+    TextToken = 'NV_CREATE'
+    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ENTER ) )
+    ButtonMagnifiableWidthHeight = [175.0, 34.0]
+    TextTypefaceToken = "Liberator"
+    //TextStyle = 'TextStyleEcranMoniteur_cyan'
+    TextColorToken = 'blanc_contour'
+    BorderLineColorToken = 'boutonFiltre'
+    HasBackground = true
+    BackgroundBlockColorToken = 'Vert_bouton'
+    TextSizeToken = '26'
+    BorderThicknessToken = '3'
+    BigLineAction = ~/BigLineAction/ResizeFont
+    TextPadding = TRTTILength4( Magnifiable = [5.0, 0.0, 5.0, 0.0] )
+
+    HintTitleToken = "ODL_CREABT"
+    HintBodyToken = "ODL_CREABB"
+    HintExtendedToken = "ODL_CREABE"
+    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    LeftClickSound = SoundEvent_OpenCreateDeckModal
 )
+
+
 
 private DeckListPanelSelectButton is ConfirmButton
 (
@@ -202,12 +291,13 @@ private DeckListPanelSelectButton is ConfirmButton
     LeftClickSound = SoundEvent_SelectDeck
 )
 
-private DeckListBackButton is ConfirmButton
+{private DeckListBackButton is ConfirmButton
 (
     ElementName = 'BackButton'
     TextToken = 'BTN_CLOSE'
     Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
 
+    ButtonMagnifiableOffset = [790,10]
     ButtonMagnifiableWidthHeight = ~/DeckListButtonsDims2
     TextColorToken = 'Gris_boutonAction'
     TextSizeToken = '18'
@@ -217,6 +307,41 @@ private DeckListBackButton is ConfirmButton
     IsTogglable = true
     CannotDeselect = true
     LeftClickSound = SoundEvent_CloseDeckList
+)}
+
+
+DeckListBackButton is BUCKButtonDescriptor
+(
+    ElementName = "BackButton"
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [25.0, 25.0]
+        AlignementToAnchor = [0.0, 0.0]
+        AlignementToFather = [0.0, 0.0]
+        MagnifiableOffset = [825,22]
+    )
+
+    IsTogglable = true
+    DefaultToggleValue = false
+    RadioButtonManager =  nil
+    CannotDeselect = false
+    ForceEvents = false
+    LeftClickSound = SoundEvent_CloseDeckList
+
+    Components =
+    [
+        BUCKTextureDescriptor
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = [20.0, 20.0]
+            )
+            TextureToken = 'showRoomTexture_minimize'
+            TextureColorToken = 'MarronPanel_noir_toggled2'
+            Rotation = -90
+        ),
+    ]
 )
 
 //-------------------------------------------------------------------------------------
@@ -381,30 +506,71 @@ template TextListe
 [
     TextToken : string,
 ]
-is BUCKTextDescriptor
+is
+BUCKContainerDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1.0, 1.0]
-        AlignementToAnchor = [0.5, 0.0]
-        AlignementToFather = [0.5, 0.0]
+        MagnifiableWidthHeight= [86, 20]
+        MagnifiableOffset = [0,50]
     )
+    Components =
+    [
+        BUCKPerspectiveWarpOffscreenContainerDescriptor
+        (
 
-    HorizontalFitStyle = ~/FitStyle/UserDefined
-    VerticalFitStyle = ~/FitStyle/UserDefined
-    ParagraphStyle = TParagraphStyleRTTI
-    (
-        VerticalAlignment = ~/UIText_VerticalCenter
-        Alignment = UIText_Center
-    )
+            DistortTextureDrawer = $/UserInterface/UIDistortTextureDrawer
+            PointerEventsToAllow = ~/EAllowablePointerEventType/Move
 
-    TextStyle = 'Default'
-    TypefaceToken = "Eurostyle"
-    TextSize = '12'
-    TextColor = 'gris_load'
-    TextToken = <TextToken>
-    TextDico = ~/LocalisationConstantes/dico_interface_outgame
+            MagnifiableTopLeftOffset = [0, 0]
+            MagnifiableTopRightOffset = [-27, -61]
+            MagnifiableBottomLeftOffset = [15.0, -10.0]
+            MagnifiableBottomRightOffset = [-12,-68]
+
+            ComponentFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1,1] )
+
+
+            Components =
+            [
+            BUCKTextDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [85.0, 20.0]
+                    AlignementToAnchor = [0.0, 0.0]
+                    AlignementToFather = [0.0, 0.0]
+                )
+
+
+                HasBorder = true
+                BorderLineColorToken = 'gris_ligne_battlegroup'
+                BorderThicknessToken = '1'
+                BordersToDraw = ~/TBorderSide/Top
+
+
+                HorizontalFitStyle = ~/FitStyle/UserDefined
+                VerticalFitStyle = ~/FitStyle/UserDefined
+                ParagraphStyle = TParagraphStyleRTTI
+                (
+                    VerticalAlignment = ~/UIText_Up
+                    Alignment = UIText_Left
+                )
+
+                TextPadding = TRTTILength4 (Magnifiable = [20,5,0,0])
+                TextStyle = 'Default'
+                TypefaceToken = "Eurostyle"
+                TextSize = '12'
+                TextColor = 'gris_load'
+                TextToken = <TextToken>
+                TextDico = ~/LocalisationConstantes/dico_interface_outgame
+
+
+            )
+            ]
+        )
+    ]
 )
+
 
 //-------------------------------------------------------------------------------------
 
@@ -413,10 +579,10 @@ DeckListScrollbarWidth is 10.0
 DeckListListWidth is 580.0
 
 DeckListColonne_Alliance is 68.0
-DeckListColonne_Flag is 60.0
+DeckListColonne_Flag is 60.0 + 5
 DeckListColonne_Division is 55.0
 DeckListColonne_Power is 50.0
-DeckListColonne_Type is 50.0
+DeckListColonne_Type is 60.0
 
 BattlegroupsBriefMultiListTitle is BUCKListDescriptor
 (
@@ -444,14 +610,13 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                     RelativeWidthHeight = [0.0, 1.0]
                     MagnifiableWidthHeight = [DeckListColonne_Division, 0.0]
                 )
-                ShowCheckbox = true
+                ShowCheckbox = false
                 CheckBoxBorderLineColorToken = 'gris_load'
                 SortingType = ~/MultiListSorting/Integer
-                HidePointerEvents = true
+                HidePointerEvents = false
                 Components =
                 [
-                    // Title Text
-                    TextListe( TextToken = '' ),
+                    TextListe( TextToken = 'DLS_DIVIS' ),
                     BUCKSpecificHintableArea
                     (
                         DicoToken = ~/LocalisationConstantes/dico_interface_outgame
@@ -474,16 +639,18 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                 )
 
                 SortingType = ~/MultiListSorting/Integer
-                ShowCheckbox = true
+                ShowCheckbox = false
                 CheckBoxBorderLineColorToken = 'gris_load'
                 HidePointerEvents = true
                 Components =
                 [
+                    TextListe( TextToken = 'DB_FLAG' ),
                     BUCKSpecificHintableArea
                     (
                         DicoToken = ~/LocalisationConstantes/dico_interface_outgame
                         HintBodyToken = "div_counB"
                     )
+
                 ]
             )
         ),
@@ -498,7 +665,7 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                     RelativeWidthHeight = [0.0, 1.0]
                     MagnifiableWidthHeight = [DeckListColonne_Alliance, 0.0]
                 )
-                ShowCheckbox = true
+                ShowCheckbox = false
 
                 CheckBoxBorderLineColorToken = 'gris_load'
                 SortingType = ~/MultiListSorting/Integer
@@ -506,6 +673,7 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                 HidePointerEvents = true
                 Components =
                 [
+                    TextListe( TextToken = 'DB_ALLIA' ),
                     BUCKSpecificHintableArea
                     (
                         DicoToken = ~/LocalisationConstantes/dico_interface_outgame
@@ -533,7 +701,7 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                 HidePointerEvents = true
                 Components =
                 [
-                    TextListe ( TextToken = 'DB_NAME' ),
+                    TextListe( TextToken = 'DB_RATE' ),
                     BUCKSpecificHintableArea
                     (
                         DicoToken = ~/LocalisationConstantes/dico_interface_outgame
@@ -555,22 +723,20 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                     RelativeWidthHeight = [0.0, 1.0]
                     MagnifiableWidthHeight = [DeckListColonne_Power, 0.0]
                 )
-                ShowCheckbox = true
+                ShowCheckbox = false
                 CheckBoxBorderLineColorToken = 'gris_load'
                 SortingType = ~/MultiListSorting/String
                 HidePointerEvents = true
                 Components =
-                [
-                    // Title Text
-                    TextListe( TextToken = '' ),
-
-                    BUCKSpecificHintableArea
-                    (
-                        DicoToken = ~/LocalisationConstantes/dico_interface_outgame
-                        HintBodyToken = "div_rateB"
-                        HintExtendedToken = "div_rateE"
-                    )
-                ]
+                                       [
+                                           TextListe( TextToken = 'DB_UTYPE' ),
+                                           BUCKSpecificHintableArea
+                                           (
+                                               DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+                                               HintBodyToken = "div_rateB"
+                                               HintExtendedToken = "div_rateE"
+                                           )
+                                       ]
             )
         ),
         // Unit Type
@@ -585,22 +751,20 @@ BattlegroupsBriefMultiListTitle is BUCKListDescriptor
                     RelativeWidthHeight = [0.0, 1.0]
                     MagnifiableWidthHeight = [DeckListColonne_Type, 0.0]
                 )
-                ShowCheckbox = true
+                ShowCheckbox = false
                 CheckBoxBorderLineColorToken = 'gris_load'
                 SortingType = ~/MultiListSorting/Integer
                 HidePointerEvents = true
                 Components =
-                [
-                    // Title Text
-                    TextListe( TextToken = '' ),
-
-                    BUCKSpecificHintableArea
-                    (
-                        DicoToken = ~/LocalisationConstantes/dico_interface_outgame
-                        HintBodyToken = "div_typeB"
-                        HintExtendedToken = "div_typeE"
-                    )
-                ]
+                                        [
+                                            TextListe( TextToken = 'DB_NAME' ),
+                                            BUCKSpecificHintableArea
+                                            (
+                                                DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+                                                HintBodyToken = "div_typeB"
+                                                HintExtendedToken = "div_typeE"
+                                            )
+                                        ]
             )
         )
     ]
@@ -1009,11 +1173,16 @@ private BoutonsAction is BUCKListDescriptor
     Elements =
     [
         BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelCreateButton ),
+        BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelEditButton ),
+        BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelViewButton ),
         BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelImportButton ),
-        BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListBackButton ),
+
     ]
 )
 
+{BUCKListElementDescriptor( ComponentDescriptor = ~/SoloLaunchButton ),
+                        BUCKListElementDescriptor( ComponentDescriptor = MenuActionButtonSeparator()),
+                        BUCKListElementDescriptor( ComponentDescriptor = ~/SoloQuitButton ),}
 //--------------------------------------------------------
 
 private BoutonsDeck is BUCKListDescriptor
@@ -1031,8 +1200,7 @@ private BoutonsDeck is BUCKListDescriptor
 
     Elements =
     [
-        BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelEditButton ),
-        BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelViewButton ),
+
         BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelRenameButton ),
         BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelRemoveButton ),
         BUCKListElementDescriptor( ComponentDescriptor = ~/DeckListPanelCopyButton ),
@@ -1110,7 +1278,7 @@ EcranDeckAnimated is WindowFrame
                     TextColor = "gris_load"
                     TextSize = "32"
                 ),
-
+                DeckListBackButton,
                 BUCKCheckBoxListDescriptor
                 (
                     ElementName = "FiltersList"
@@ -1185,15 +1353,19 @@ EcranDeckAnimated is WindowFrame
                                 ),
                                 BUCKListElementDescriptor
                                 (
-                                    ComponentDescriptor = BoutonsDeck
+                                    ComponentDescriptor = BoutonsAction
                                 ),
                                 BUCKListElementDescriptor
                                 (
-                                    ComponentDescriptor = BoutonsAction
+                                    ComponentDescriptor = BoutonsDeck
                                 ),
+
                             ]
+
+
                         ),
                     ]
+
                 ),
             ]
         )

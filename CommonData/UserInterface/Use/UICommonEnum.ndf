@@ -156,9 +156,10 @@ ContainerFitStyle is TBaseClass
 //Maintenir synchro avec UICommonModalManager.h
 ModalPriority is TBaseClass
 (
-    Low         is 0
-    Normal      is 1
-    High        is 2
+    LDHint      is 0
+    Low         is 1
+    Normal      is 2
+    High        is 3
 )
 
 //Maintenir synchro aveec UIAnimFactor.h

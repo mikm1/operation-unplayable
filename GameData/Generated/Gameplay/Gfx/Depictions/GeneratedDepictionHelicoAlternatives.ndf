@@ -355,6 +355,12 @@ Alternatives_F4F_Phantom_II_RKT2_RFA is
     DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_F4F_Phantom_II_RKT2_RFA_MID ),
     DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_F4F_Phantom_II_RKT2_RFA_LOW ),
 ]
+Alternatives_F4_Phantom_AA_F3 is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F4_Phantom_AA_F3 ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_F4_Phantom_AA_F3_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_F4_Phantom_AA_F3_LOW ),
+]
 Alternatives_F4_Wild_Weasel_US is 
 [
     DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_F4_Wild_Weasel_US ),
@@ -403,6 +409,12 @@ Alternatives_Gazelle_HOT_FR is
     DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Gazelle_HOT_FR_MID ),
     DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Gazelle_HOT_FR_LOW ),
 ]
+Alternatives_Gazelle_Mistral_FR is 
+[
+    DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Gazelle_Mistral_FR ),
+    DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Gazelle_Mistral_FR_MID ),
+    DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Gazelle_Mistral_FR_LOW ),
+]
 Alternatives_Gazelle_SNEB_UK is 
 [
     DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Gazelle_SNEB_UK ),
@@ -433,11 +445,29 @@ Alternatives_Harrier_CLU_UK is
     DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Harrier_CLU_UK_MID ),
     DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Harrier_CLU_UK_LOW ),
 ]
+Alternatives_Harrier_HE1_UK is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Harrier_HE1_UK ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Harrier_HE1_UK_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Harrier_HE1_UK_LOW ),
+]
 Alternatives_Harrier_HE2_UK is 
 [
     DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Harrier_HE2_UK ),
     DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Harrier_HE2_UK_MID ),
     DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Harrier_HE2_UK_LOW ),
+]
+Alternatives_Harrier_RKT1_UK is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Harrier_RKT1_UK ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Harrier_RKT1_UK_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Harrier_RKT1_UK_LOW ),
+]
+Alternatives_Harrier_RKT2_UK is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Harrier_RKT2_UK ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Harrier_RKT2_UK_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Harrier_RKT2_UK_LOW ),
 ]
 Alternatives_Harrier_UK is 
 [
@@ -451,6 +481,18 @@ Alternatives_Jaguar_ATGM_FR is
     DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_ATGM_FR_MID ),
     DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_ATGM_FR_LOW ),
 ]
+Alternatives_Jaguar_CLU_UK is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Jaguar_CLU_UK ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_CLU_UK_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_CLU_UK_LOW ),
+]
+Alternatives_Jaguar_HE1_UK is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Jaguar_HE1_UK ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_HE1_UK_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_HE1_UK_LOW ),
+]
 Alternatives_Jaguar_HE2_UK is 
 [
     DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Jaguar_HE2_UK ),
@@ -463,17 +505,41 @@ Alternatives_Jaguar_HE_FR is
     DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_HE_FR_MID ),
     DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_HE_FR_LOW ),
 ]
+Alternatives_Jaguar_RKT_FR is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Jaguar_RKT_FR ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_RKT_FR_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_RKT_FR_LOW ),
+]
 Alternatives_Jaguar_RKT_UK is 
 [
     DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Jaguar_RKT_UK ),
     DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_RKT_UK_MID ),
     DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_RKT_UK_LOW ),
 ]
+Alternatives_Jaguar_SEAD2_FR is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Jaguar_SEAD2_FR ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_SEAD2_FR_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_SEAD2_FR_LOW ),
+]
 Alternatives_Jaguar_SEAD_FR is 
 [
     DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Jaguar_SEAD_FR ),
     DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_SEAD_FR_MID ),
     DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_SEAD_FR_LOW ),
+]
+Alternatives_Jaguar_clu_FR is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Jaguar_clu_FR ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_clu_FR_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_clu_FR_LOW ),
+]
+Alternatives_Jaguar_nplm_FR is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Jaguar_nplm_FR ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Jaguar_nplm_FR_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Jaguar_nplm_FR_LOW ),
 ]
 Alternatives_Ka_50_AA_SOV is 
 [
@@ -775,6 +841,18 @@ Alternatives_Mi_8TV_SOV is
     DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Mi_8TV_SOV_MID ),
     DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Mi_8TV_SOV_LOW ),
 ]
+Alternatives_Mi_8TV_UPK_DDR is 
+[
+    DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_8TV_UPK_DDR ),
+    DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Mi_8TV_UPK_DDR_MID ),
+    DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Mi_8TV_UPK_DDR_LOW ),
+]
+Alternatives_Mi_8TV_non_arme_SOV is 
+[
+    DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_8TV_non_arme_SOV ),
+    DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Mi_8TV_non_arme_SOV_MID ),
+    DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Mi_8TV_non_arme_SOV_LOW ),
+]
 Alternatives_Mi_8TV_s57_16_SOV is 
 [
     DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_8TV_s57_16_SOV ),
@@ -811,6 +889,12 @@ Alternatives_Mi_8T_DDR is
     DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Mi_8T_DDR_MID ),
     DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Mi_8T_DDR_LOW ),
 ]
+Alternatives_Mi_8T_non_arme_DDR is 
+[
+    DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_8T_non_arme_DDR ),
+    DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Mi_8T_non_arme_DDR_MID ),
+    DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Mi_8T_non_arme_DDR_LOW ),
+]
 Alternatives_Mi_8_supply_DDR is 
 [
     DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Mi_8_supply_DDR ),
@@ -829,6 +913,12 @@ Alternatives_Mirage_2000_C_FR is
     DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Mirage_2000_C_FR_MID ),
     DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Mirage_2000_C_FR_LOW ),
 ]
+Alternatives_Mirage_5_F_FR is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Mirage_5_F_FR ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Mirage_5_F_FR_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Mirage_5_F_FR_LOW ),
+]
 Alternatives_Mirage_5_F_clu_FR is 
 [
     DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Mirage_5_F_clu_FR ),
@@ -840,6 +930,12 @@ Alternatives_Mirage_5_F_nplm_FR is
     DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Mirage_5_F_nplm_FR ),
     DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Mirage_5_F_nplm_FR_MID ),
     DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Mirage_5_F_nplm_FR_LOW ),
+]
+Alternatives_Mirage_F1_CT_FR is 
+[
+    DepictionDescriptor_LOD_AirplaneHigh( MeshDescriptor = Modele_Mirage_F1_CT_FR ),
+    DepictionDescriptor_LOD_AirplaneMid( MeshDescriptor = Modele_Mirage_F1_CT_FR_MID ),
+    DepictionDescriptor_LOD_AirplaneLow( MeshDescriptor = Modele_Mirage_F1_CT_FR_LOW ),
 ]
 Alternatives_Mirage_F1_C_FR is 
 [
@@ -888,6 +984,18 @@ Alternatives_Puma_FR is
     DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Puma_FR ),
     DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Puma_FR_MID ),
     DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Puma_FR_LOW ),
+]
+Alternatives_Puma_PC_FR is 
+[
+    DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Puma_PC_FR ),
+    DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Puma_PC_FR_MID ),
+    DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Puma_PC_FR_LOW ),
+]
+Alternatives_Puma_Pirate_FR is 
+[
+    DepictionDescriptor_LOD_HelicoHigh( MeshDescriptor = Modele_Puma_Pirate_FR ),
+    DepictionDescriptor_LOD_HelicoMid( MeshDescriptor = Modele_Puma_Pirate_FR_MID ),
+    DepictionDescriptor_LOD_HelicoLow( MeshDescriptor = Modele_Puma_Pirate_FR_LOW ),
 ]
 Alternatives_Puma_UK is 
 [

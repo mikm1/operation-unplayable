@@ -15,10 +15,6 @@ template template_UnitLevelBuildViewDescriptor
     ModeMid  = SDMode_Mid,
     ModeHigh = SDMode_High,
 
-    RangeHighDisabled : TEugBBoolean = nil,
-    RangeMidDisabled  : TEugBBoolean = nil,
-    RangeLowDisabled  : TEugBBoolean = nil,
-
     MaxRange = $/GraphicOption/LevelBuild_Low,
 
     UseAutoBatcher : bool,
@@ -43,15 +39,11 @@ template template_UnitLevelBuildViewDescriptor
     MinRange = $/GraphicOption/LevelBuild_Low
     MaxRange = <MaxRange>
     LodMultiplier = $/GraphicOption/LodRangeMultiplier
-    RangesDisabled = [<RangeHighDisabled>, <RangeMidDisabled>, <RangeLowDisabled>]
     UseAutoBatcher = <UseAutoBatcher>
-    MediumModelSize = OneMeterInGameUnits * 15
     JobPriority = 500
-    QuantizationRange = [100000, 100000, 100000]
     ImposteurSystemProxy = $/M3D/Shader/ImposteurSystemProxy
     StickersHandler = <StickersHandler>
     Operators = [ ~/BuildingDamageRatioOperator, DepictionOperator_Shader_TeamColor, TCosmeticOccupiedOperatorDesc(), DepictionOperator_Shader_Selection ]
-    DamageRatioPrecision = 0.01
 )
 
 export DefaultUnitLevelBuildViewDescriptor is template_UnitLevelBuildViewDescriptor

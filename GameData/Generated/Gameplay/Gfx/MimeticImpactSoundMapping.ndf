@@ -1447,6 +1447,18 @@ export AllImpactSoundHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
+        (   TFxWeaponType_RoquetteM261HydrasLight , MAP
+            [
+                ( EImpactSurface/Ground        , SoundHappening_ImpactRoquette_petitSol() ),
+                ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , SoundHappening_ImpactRoquette_petitBatiment() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_ImpactRoquette_petitVehicule() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_ImpactRoquette_petitVehicule() ),
+                ( EImpactSurface/Missile       , SoundHappening_ImpactRoquette_petitVehicule() ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
         (   TFxWeaponType_RoquetteM26M270227Mm , MAP
             [
                 ( EImpactSurface/Ground        , SoundHappening_ImpactArtillerie_lourdeSol() ),
@@ -1519,7 +1531,31 @@ export AllImpactSoundHappenings is TImpactHappening
                 ( EImpactSurface/Ricochet      , nil ),
             ]
         ),
+        (   TFxWeaponType_RoquetteS5Light , MAP
+            [
+                ( EImpactSurface/Ground        , SoundHappening_ImpactRoquette_petitSol() ),
+                ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , SoundHappening_ImpactRoquette_petitBatiment() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_ImpactRoquette_petitVehicule() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_ImpactRoquette_petitVehicule() ),
+                ( EImpactSurface/Missile       , SoundHappening_ImpactRoquette_petitVehicule() ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
         (   TFxWeaponType_RoquetteSNEB , MAP
+            [
+                ( EImpactSurface/Ground        , SoundHappening_ImpactRoquette_petitSol() ),
+                ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),
+                ( EImpactSurface/Air           , nil ),
+                ( EImpactSurface/Wall          , SoundHappening_ImpactRoquette_petitBatiment() ),
+                ( EImpactSurface/Vehicle       , SoundHappening_ImpactRoquette_petitVehicule() ),
+                ( EImpactSurface/FlyingVehicle , SoundHappening_ImpactRoquette_petitVehicule() ),
+                ( EImpactSurface/Missile       , SoundHappening_ImpactRoquette_petitVehicule() ),
+                ( EImpactSurface/Ricochet      , nil ),
+            ]
+        ),
+        (   TFxWeaponType_RoquetteSNEBLight , MAP
             [
                 ( EImpactSurface/Ground        , SoundHappening_ImpactRoquette_petitSol() ),
                 ( EImpactSurface/Water         , SoundHappening_Impact_HE_Gros_Eau() ),

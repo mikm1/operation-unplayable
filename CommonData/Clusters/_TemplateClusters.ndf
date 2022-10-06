@@ -530,24 +530,15 @@ template TemplateClusterLoadDirectoryNDF_And_Files_ForNoEditor
 template TemplateClusterScenarioLoop
 [
     ClusterLoadKey = MiscStrConstante/MapLoadType_Std,
-    ClustersToRun = [],
     MapTypeMask = MapTypeMask/All,
 ] is TClusterRunAllScenarioLoop
 (
-   MapTypeMask = <MapTypeMask>
-   ClusterMap = TClusterWithSubClusterList
-   (
-      SubClusterList=
-      [
-          ClusterMap is TClusterMapChooser
-          (
-            DefaultMapId = $/TestOption/DefaultMapId
-            ClusterLoadKey = <ClusterLoadKey>
-          ),
-      ]
-      +
-      <ClustersToRun>
-   )
+    MapTypeMask = <MapTypeMask>
+    ClusterMap = TClusterMapChooser
+    (
+        DefaultMapId = $/TestOption/DefaultMapId
+        ClusterLoadKey = <ClusterLoadKey>
+    )
 )
 //-----------------------------------------------------------------------------
 //*****************************************************************************

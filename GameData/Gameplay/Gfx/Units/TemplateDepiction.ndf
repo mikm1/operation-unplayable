@@ -451,6 +451,7 @@ is TTimelyReceiverFactoryCarrier
     (
         Scaler = CommonIdentityScaler
         Selector = <Selector>
+        Operators = [ DepictionOperator_ShadowPointCloudProvider ]
         DepictionAlternatives = <Alternatives>
         SubDepictions = <SubDepictions>
         SubDepictionGenerators = <SubDepictionGenerators>
@@ -475,7 +476,7 @@ is TDepictionTemplate
     SubDepictionGenerators = <SubDepictionGenerators>
 )
 
-template ShowroomDepictionTemplate
+template ShowroomAerialDepictionTemplate
 [
     MeshDescriptor,
     Operators = [],
@@ -487,7 +488,7 @@ is TTimelyReceiverFactoryCarrier
     DepictionTemplate = ShowroomDepictionTemplateInternal
     (
         MeshDescriptor = <MeshDescriptor>
-        Operators = <Operators>
+        Operators = <Operators> + [ DepictionOperator_ShadowPointCloudProvider ]
         SubDepictions = <SubDepictions>
         SubDepictionGenerators = <SubDepictionGenerators>
     )
@@ -569,7 +570,7 @@ is TSubDepiction
             TCosmeticTowedUnitPivotOperatorDesc
             (
                 OperatorId = 'TowedUnit'
-                WorldFloorProxy = $/M3D/Scene/WorldFloorForOnlyGround
+                WorldFloorProxy = $/M3D/Scene/WorldFloorForIAProxy
                 InitialPoses = <InitialPoses>
             ),
             DepictionOperator_Propulsion_Wheels_TowedCanon,

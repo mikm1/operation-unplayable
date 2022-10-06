@@ -3601,6 +3601,93 @@ is TSoundHappening
     Volume = 1
 )
 
+template SoundHappening_FULDA_Bren_L4A4_Firing
+[
+]
+is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L4A4_Bren_mitrailleuse_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L4A4_Bren_mitrailleuse_2.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L4A4_Bren_mitrailleuse_3.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L4A4_Bren_mitrailleuse_4.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L4A4_Bren_mitrailleuse_5.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L4A4_Bren_mitrailleuse_6.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L4A4_Bren_mitrailleuse_7.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/MMG/L4A4_Bren_mitrailleuse_8.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+
 template SoundHappening_FULDA_CARL_GUSTAV_Firing
 [
 ]

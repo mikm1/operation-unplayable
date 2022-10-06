@@ -728,6 +728,8 @@ private template PawnCategoryPower
     ContentExtendWeight : float,
     ShowDetails : bool,
 
+    LastMargin = TRTTILength(Magnifiable = 0.0),
+
     TextSize : string,
 ]
 is BUCKListDescriptor
@@ -743,12 +745,9 @@ is BUCKListDescriptor
     )
 
     Axis = ~/ListAxis/Horizontal
-    HasBorder = false
-    BorderLineColorToken = 'SD2_LigneBleuGris'
-    BorderThicknessToken = '1'
-    BordersToDraw = ~/TBorderSide/Bottom
-
     BreadthComputationMode = (<ContentExtendWeight> == 0.0 ? ~/BreadthComputationMode/ComputeBreadthFromLargestChild : ~/BreadthComputationMode/ComputeBreadthFromFrameProperty)
+
+    LastMargin = <LastMargin>
 
     Elements =
     [
@@ -1028,18 +1027,12 @@ is BUCKListDescriptor
 private AffichageDuBlindage is BUCKListDescriptor
 (
     ElementName = 'AffichageDuBlindage'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        //AlignementToFather = [0.0, 0.5]
-    )
+    ComponentFrame = TUIFramePropertyRTTI()
 
     Axis = ~/ListAxis/Horizontal
     //BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestBetweenFatherAndChildren
     HasBorder = true
-    //FirstMargin = TRTTILength( Magnifiable = 8.0 )
-    //InterItemMargin = TRTTILength ( Magnifiable = 3.0 )
-    //LastMargin = TRTTILength( Magnifiable = 4.0 )
     BorderLineColorToken = 'MarronPanel_noir'
     BorderThicknessToken = '2'
 
@@ -1049,7 +1042,6 @@ private AffichageDuBlindage is BUCKListDescriptor
         (
             ComponentDescriptor = WeaponDamageTypeAttribute
             (
-                //RelativeWidthHeight = [0.25, 1.0]
                 MagnifiableWidth = 110.0
                 Magnifiable_barre = 60.0
                 AlignementToFather = [0.0 ,0.0]
@@ -1130,7 +1122,7 @@ private AffichageDuBlindage is BUCKListDescriptor
                 Token = 'UIP_PLATTP'
                 ValueToken = "UIPW_MILLI"
                 HintToken = "HIP_PLAT"
-                HasBorder = false
+                HasBorder = true
                 BackgroundBlockColorTokenFondJauge = 'MarronPanel_Tresfonce'
             )
         ),
@@ -1789,6 +1781,9 @@ is TUISpecificUnitInfoPanelViewDescriptor
     WeakTopToken = "UIP_RFWK"
     StrongTopToken = "UIP_RFST"
 
+    YesValueToken = "UIP_YES"
+    NoValueToken = "UIP_NO"
+
     BlindageToToken = MAP
     [
         ("infanterie_1", "UIP_INF1"),
@@ -1831,13 +1826,14 @@ is TUISpecificUnitInfoPanelViewDescriptor
         ("AttributeAgility",          UnitInfoPanelAttribute(ElementName = "AttributeAgility" Token = "UIP_AGIL" ValueToken = "UIP_VAL" HintToken = "HIP_AGIL" Scale = Scale)),
         ("AttributeCategory",         UnitInfoPanelAttribute(IsTransparent = true ElementName = "AttributeCategory" Token = "UIPA_CAT" Scale = Scale DicoToken = ~/LocalisationConstantes/dico_interface_outgame )),
 
-        ("AttributeShowInfluence",    UnitInfoPanelAttribute(ElementName = "AttributeShowInfluence" Token = "UIP_SHINF" ValueToken = "UIP_VAL" HintToken = "HIP_SHINF" Scale = Scale)),
+        ("AttributeAdvanceDeployment",UnitInfoPanelAttribute(ElementName = "AttributeAdvanceDeployment" Token = "UIP_DPDST" ValueToken = "UIPW_METER" HintToken = "HIP_DPDST" Scale = Scale)),
+
     ]
 
-    // branché sur la colonne Info_Panel_Configuration_Token des unités
+    // Branché sur la colonne Info_Panel_Configuration_Token des unités
     AttributeTypeConfiguration = MAP
     [
-        ("Default", listeAffichageInfoUnit_default),
+        ("Default", listeAffichageInfoUnit_Default),
 
         ("avion", listeAffichageInfoUnit_Air),
 
@@ -1845,12 +1841,13 @@ is TUISpecificUnitInfoPanelViewDescriptor
 
         ("Infantry",listeAffichageInfoUnit_Infanterie),
 
+        ("VehiculeSupplier", listeAffichageInfoUnit_Supply),
 
-        ("Vehicule", ["AttributeSpeed",  "AttributeRoadSpeed", "AttributeStealth", "AttributeOptics", "AttributeAirOptics"]),
+        ("HelicoDefault", listeAffichageInfoUnit_HelicoDefault),
 
-        ("VehiculeSupplier", listeAffichageInfoUnit_supply),
+        ("HelicoTransporter", listeAffichageInfoUnit_HelicoTransport),
 
-        ("VehiculeTransporterSupplier", ["AttributeSpeed",  "AttributeRoadSpeed", "AttributeStealth", "AttributeOptics", "AttributeAirOptics", "AttributeTransportSize", "AttributeSupply", ]),
+        ("HelicoSupplier", listeAffichageInfoUnit_HelicoSupply),
     ]
 
     DivisionEmblemDescriptor = BUCKTextureDescriptor
@@ -1889,43 +1886,61 @@ is TUISpecificUnitInfoPanelViewDescriptor
 
 // Note : 'AttributeCategory' and 'AttributeProductionYear' are hidden (see IsTransparent = true), and are only used to get empty cells in the final result
 
-listeAffichageInfoUnit_default is
+//Penser à répliquer les modifications dans listeAffichageInfoUnit_HelicoDefault ci-dessous
+listeAffichageInfoUnit_Default is
 [
     "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
-    "AttributeCategory","AttributeSpeed",  "AttributeRoadSpeed",
-    "AttributeShowInfluence",
+    "AttributeAmphibious","AttributeSpeed",  "AttributeRoadSpeed",
+    "AttributeAdvanceDeployment", "AttributeProductionYear","AttributeCategory",
 ]
 
+//Penser à répliquer les modifications dans listeAffichageInfoUnit_HelicoTransport ci-dessous
 listeAffichageInfoUnit_VehiculeTransport is
 [
     "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
-    "AttributeTransportSize","AttributeSpeed",  "AttributeRoadSpeed",
-    "AttributeShowInfluence",
+    "AttributeAmphibious","AttributeSpeed",  "AttributeRoadSpeed",
+    "AttributeAdvanceDeployment","AttributeTransportSize", "AttributeProductionYear",
 ]
 
 listeAffichageInfoUnit_Infanterie is
 [
     "AttributeStrength","AttributeOptics","AttributeStealth",
-    "AttributeShowInfluence","AttributeSpeed", "AttributeCategory",
+    "AttributeAdvanceDeployment","AttributeSpeed", "AttributeCategory",
 ]
 
-listeAffichageInfoUnit_supply is
+//Penser à répliquer les modifications dans listeAffichageInfoUnit_HelicoSupply ci-dessous
+listeAffichageInfoUnit_Supply is
 [
     "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
-    "AttributeAmphibious","AttributeSpeed",  "AttributeRoadSpeed",
-    "AttributeShowInfluence", "AttributeSupply", "AttributeCategory",
-]
-
-listeAffichageInfoUnit_AA is
-[
-    "AttributeMaxDamages","AttributeAirOptics", "AttributeStealth",
-    "AttributeCategory","AttributeSpeed",  "AttributeRoadSpeed",
-    "AttributeShowInfluence",
+    "AttributeAmphibious","AttributeAdvanceDeployment", "AttributeSupply",
 ]
 
 listeAffichageInfoUnit_Air is
 [
     "AttributeMaxDamages", "AttributeAirOptics", "AttributeECM", ,
     "AttributeAgility","AttributeTravelDuration", "AttributeSpeed",
-    "AttributeFuelMoveDuration", "AttributeFuel", "AttributeShowInfluence",
+    "AttributeFuelMoveDuration", "AttributeFuel", "AttributeProductionYear",
+]
+
+
+//Pour les hélicos, c'est comme pour les unités terrestres sauf qu'on remplace AttributeAmphibious par AttributeECM
+
+listeAffichageInfoUnit_HelicoDefault is
+[
+    "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
+    "AttributeECM","AttributeSpeed", "AttributeAdvanceDeployment",
+]
+
+listeAffichageInfoUnit_HelicoTransport is
+[
+    "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
+    "AttributeECM","AttributeSpeed","AttributeAdvanceDeployment",
+    "AttributeTransportSize", "AttributeCategory", "AttributeProductionYear",
+]
+
+listeAffichageInfoUnit_HelicoSupply is
+[
+    "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
+    "AttributeECM","AttributeSpeed","AttributeAdvanceDeployment", 
+    "AttributeSupply", "AttributeCategory", "AttributeProductionYear",
 ]

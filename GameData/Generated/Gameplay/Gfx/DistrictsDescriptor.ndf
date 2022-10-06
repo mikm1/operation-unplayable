@@ -247,7 +247,7 @@ export Descriptor_District_Quartier_HLM is TEntityDescriptor(
             (
                 Default        = TDistrictUnitsContainerModuleDescriptor
                 (
-                    NbSlots                         = 50
+                    NbSlots                         = 12
                     AllowedTagSet                   = [
                         "Inf_quartier_ok",
                     ]

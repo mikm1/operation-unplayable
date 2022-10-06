@@ -375,15 +375,17 @@ OnTargetUnitDestroyed_ShowScoreOnDeadUnit is TUIFeedbackDispatchedMessageDescrip
         UILayer = $/UserInterface/UILayer_Labels
         Camera = $/M3D/Camera/CameraPrincipale
 
-        TextTypeface = $/M3D/Typefaces/Typeface3D_Default
+        TextTypeface = $/M3D/Typefaces/Typeface_Sixth
 
         TextStyle = TTextStyleRTTI
         (
             FontSize    = 18
-            ColorUp     = [96, 96, 96, 255]
-            ColorBottom = [160, 160, 160, 255]
-            ColorStroke = [  0,   0,   0, 128]
+            ColorUp     = [255, 180, 0, 255]
+            ColorBottom = [128, 20, 20, 255]
+            ColorStroke = [  0,   0,   0, 255]
             Stroke      = true
+            StrokeSize = 0.40
+    StrokeHardness = 0.30
         )
 
         ParagraphStyle = TParagraphStyleRTTI
@@ -395,8 +397,8 @@ OnTargetUnitDestroyed_ShowScoreOnDeadUnit is TUIFeedbackDispatchedMessageDescrip
         )
 
         TotalTime = 2.5
-        FadeInTime = 0.0
-        FadeOutTime = 0.0
+        FadeInTime = 0.3
+        FadeOutTime = 0.9
         InitialOffset = 0.0
         FinalOffset = 100.0
 

@@ -95,10 +95,6 @@ SDMode_LevelDesign          is 0x1
 // mode dans la DB de bluff Area
 SDMode_Zone                 is 0x1
 
-// combiné
-SDMode_BakingHigh is SDMode_Sticker + SDMode_High_Baked + SDMode_OnlyBaked + SDMode_StickerDynamic + SDMode_StaticGeometry
-SDMode_BakingLow  is SDMode_Low + SDMode_Sticker + SDMode_OnlyBaked + SDMode_StickerDynamic + SDMode_StaticGeometry
-
 // mask scenery descriptor.
 // /!\ Doit matcher avec Eugen::LevelBuild::State::Type dans LevelBuildHierarchyStates.h /!\
 SDMask_Destroy              is 2
@@ -355,8 +351,7 @@ CommandName is TBaseClass
     OptionsProfileApplyConfigToLiveUnits  is "OptionsProfile::ApplyConfigToLiveUnits"
     OptionsProfileSelection  is "OptionsProfile::Selection"
 
-    LockCamera                  is "Camera::Stop"
-    UnlockCamera                is "Camera::Unlock"
+    ResetCameraMoverTactic      is "CameraMoverManager::ResetCameraMoverTactic"
     UnloadCameraPaths           is "CameraPaths::Unload"
 
     WindowFormReloadOption   is "WindowForm::ReloadOption"

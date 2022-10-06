@@ -151,27 +151,27 @@ export CubeAction_Menu_Ordres_avions is TCubeActionMenuDescriptor
     CubeActionContent            = MAP
     [
         (
-            0,
-            [
-                ~/CubeAction_Order_Attack,
-            ]
-        ),
-        (
-            2,
+            1,
             [
                 ~/CubeAction_Order_ShootOnPosition,
             ]
         ),
         (
-            4,
+            2,
             [
                 ~/CubeAction_Order_Evacuate,
             ]
         ),
         (
-            8,
+            3,
             [
                 ~/CubeAction_Order_Move,
+            ]
+        ),
+        (
+            4,
+            [
+                ~/CubeAction_Order_Attack,
             ]
         ),
         (
@@ -191,47 +191,47 @@ export CubeAction_Menu_Ordres_helicos is TCubeActionMenuDescriptor
         (
             0,
             [
-                ~/CubeAction_Order_Attack,
+                ~/CubeAction_Order_Stop,
             ]
         ),
         (
             1,
             [
-                ~/CubeAction_Order_Stop,
+                ~/CubeAction_Order_ShootOnPosition,
             ]
         ),
         (
             2,
             [
-                ~/CubeAction_Order_ShootOnPosition,
-            ]
-        ),
-        (
-            4,
-            [
-                ~/CubeAction_Order_Land,
-            ]
-        ),
-        (
-            5,
-            [
                 ~/CubeAction_Order_ChangeAltitude,
             ]
         ),
         (
-            8,
+            3,
             [
                 ~/CubeAction_Order_Move,
             ]
         ),
         (
-            9,
+            4,
+            [
+                ~/CubeAction_Order_Attack,
+            ]
+        ),
+        (
+            5,
             [
                 ~/CubeAction_Order_UnloadAtPosition,
             ]
         ),
         (
-            10,
+            6,
+            [
+                ~/CubeAction_Order_Land,
+            ]
+        ),
+        (
+            8,
             [
                 ~/CubeAction_Order_UnloadFromTransport,
             ]
@@ -265,37 +265,31 @@ export CubeAction_Menu_Ordres_infs_simplifie is TCubeActionMenuDescriptor
         (
             0,
             [
-                ~/CubeAction_Order_Attack,
+                ~/CubeAction_Order_Stop,
             ]
         ),
         (
             1,
             [
-                ~/CubeAction_Order_Stop,
-            ]
-        ),
-        (
-            2,
-            [
                 ~/CubeAction_Order_ShootOnPosition,
             ]
         ),
         (
-            6,
-            [
-                ~/CubeAction_Order_ShootOnPositionSmoke,
-            ]
-        ),
-        (
-            7,
-            [
-                ~/CubeAction_Functionality_RiposteStance,
-            ]
-        ),
-        (
-            8,
+            3,
             [
                 ~/CubeAction_Order_Move,
+            ]
+        ),
+        (
+            4,
+            [
+                ~/CubeAction_Order_Attack,
+            ]
+        ),
+        (
+            10,
+            [
+                ~/CubeAction_Functionality_RiposteStance,
             ]
         ),
         (
@@ -687,61 +681,110 @@ export CubeAction_Menu_Ordres_transports_NonArme is TCubeActionMenuDescriptor
         (
             0,
             [
-                ~/CubeAction_Order_Attack,
+                ~/CubeAction_Order_Stop,
             ]
         ),
         (
             1,
             [
-                ~/CubeAction_Order_Stop,
+                ~/CubeAction_Order_ShootOnPosition,
             ]
         ),
         (
             2,
             [
-                ~/CubeAction_Order_ShootOnPosition,
+                ~/CubeAction_Order_ShootOnPositionSmoke,
+                ~/CubeAction_Order_ShootDefensiveSmoke,
             ]
         ),
         (
             3,
             [
-                ~/CubeAction_Order_FastMoveAndAttack,
+                ~/CubeAction_Order_Move,
             ]
         ),
         (
             4,
             [
-                ~/CubeAction_Order_QuickMove,
+                ~/CubeAction_Order_Attack,
             ]
         ),
         (
             5,
             [
-                ~/CubeAction_Order_Reverse,
+                ~/CubeAction_Order_UnloadAtPosition,
+            ]
+        ),
+        (
+            6,
+            [
+                ~/CubeAction_Order_QuickMove,
+            ]
+        ),
+        (
+            7,
+            [
+                ~/CubeAction_Order_FastMoveAndAttack,
             ]
         ),
         (
             8,
             [
-                ~/CubeAction_Order_Move,
+                ~/CubeAction_Order_UnloadFromTransport,
             ]
         ),
         (
             9,
             [
-                ~/CubeAction_Order_UnloadAtPosition,
+                ~/CubeAction_Order_Reverse,
             ]
         ),
         (
             10,
             [
-                ~/CubeAction_Order_UnloadFromTransport,
+                ~/CubeAction_Functionality_RiposteStance,
             ]
         ),
         (
             11,
             [
                 ~/CubeAction_Order_Sell,
+            ]
+        ),
+        (
+            12,
+            [
+                ~/CubeAction_Order_AIAttack,
+            ]
+        ),
+        (
+            13,
+            [
+                ~/CubeAction_Order_AIDefend,
+            ]
+        ),
+        (
+            14,
+            [
+                ~/CubeAction_Order_AIManageArtillery_Focus,
+            ]
+        ),
+        (
+            15,
+            [
+                ~/CubeAction_Order_AIManageArtillery_CounterBattery,
+            ]
+        ),
+        (
+            16,
+            [
+                ~/CubeAction_Order_AIManageArtillery_Auto,
+            ]
+        ),
+        (
+            17,
+            [
+                ~/CubeAction_Order_AIAirplaneAutoManage,
             ]
         ),
     ]
@@ -755,68 +798,68 @@ export CubeAction_Menu_Ordres_unites is TCubeActionMenuDescriptor
         (
             0,
             [
-                ~/CubeAction_Order_Attack,
+                ~/CubeAction_Order_Stop,
             ]
         ),
         (
             1,
             [
-                ~/CubeAction_Order_Stop,
-            ]
-        ),
-        (
-            2,
-            [
                 ~/CubeAction_Order_ShootOnPosition,
             ]
         ),
         (
-            3,
-            [
-                ~/CubeAction_Order_FastMoveAndAttack,
-            ]
-        ),
-        (
-            4,
-            [
-                ~/CubeAction_Order_QuickMove,
-            ]
-        ),
-        (
-            5,
-            [
-                ~/CubeAction_Order_Reverse,
-            ]
-        ),
-        (
-            6,
+            2,
             [
                 ~/CubeAction_Order_ShootOnPositionSmoke,
                 ~/CubeAction_Order_ShootDefensiveSmoke,
             ]
         ),
         (
-            7,
-            [
-                ~/CubeAction_Functionality_RiposteStance,
-            ]
-        ),
-        (
-            8,
+            3,
             [
                 ~/CubeAction_Order_Move,
             ]
         ),
         (
-            9,
+            4,
+            [
+                ~/CubeAction_Order_Attack,
+            ]
+        ),
+        (
+            5,
             [
                 ~/CubeAction_Order_UnloadAtPosition,
             ]
         ),
         (
-            10,
+            6,
+            [
+                ~/CubeAction_Order_QuickMove,
+            ]
+        ),
+        (
+            7,
+            [
+                ~/CubeAction_Order_FastMoveAndAttack,
+            ]
+        ),
+        (
+            8,
             [
                 ~/CubeAction_Order_UnloadFromTransport,
+            ]
+        ),
+        (
+            9,
+            [
+                ~/CubeAction_Order_Reverse,
+            ]
+        ),
+        (
+            10,
+            [
+                ~/CubeAction_Functionality_RiposteStance,
             ]
         ),
         (
@@ -872,43 +915,73 @@ export CubeAction_Menu_Ordres_vehiculeSol_supply is TCubeActionMenuDescriptor
         (
             0,
             [
-                ~/CubeAction_Order_Attack,
+                ~/CubeAction_Order_Stop,
             ]
         ),
         (
             1,
             [
-                ~/CubeAction_Order_Stop,
+                ~/CubeAction_Order_ShootOnPosition,
             ]
         ),
         (
             2,
             [
-                ~/CubeAction_Order_ShootOnPosition,
+                ~/CubeAction_Order_ShootOnPositionSmoke,
             ]
         ),
         (
             3,
             [
-                ~/CubeAction_Order_FastMoveAndAttack,
+                ~/CubeAction_Order_Move,
             ]
         ),
         (
             4,
             [
-                ~/CubeAction_Order_QuickMove,
+                ~/CubeAction_Order_Attack,
             ]
         ),
         (
             5,
             [
-                ~/CubeAction_Order_Reverse,
+                ~/CubeAction_Order_UnloadAtPosition,
+            ]
+        ),
+        (
+            6,
+            [
+                ~/CubeAction_Order_QuickMove,
+            ]
+        ),
+        (
+            7,
+            [
+                ~/CubeAction_Order_FastMoveAndAttack,
             ]
         ),
         (
             8,
             [
-                ~/CubeAction_Order_Move,
+                ~/CubeAction_Order_UnloadFromTransport,
+            ]
+        ),
+        (
+            9,
+            [
+                ~/CubeAction_Order_Reverse,
+            ]
+        ),
+        (
+            10,
+            [
+                ~/CubeAction_Functionality_RiposteStance,
+            ]
+        ),
+        (
+            11,
+            [
+                ~/CubeAction_Order_Sell,
             ]
         ),
         (

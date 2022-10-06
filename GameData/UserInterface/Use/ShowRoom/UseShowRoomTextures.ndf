@@ -109,5 +109,10 @@ ShowRoomTexture_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
                                                             (~/ComponentState/Toggled, TUIResourceTexture_Common( FileName = "GameData:/Assets/2D/Interface/ShowRoom/maximize.png" )),
                                                             (~/ComponentState/ToggleHighlighted, TUIResourceTexture_Common( FileName = "GameData:/Assets/2D/Interface/ShowRoom/maximize.png" )),
                                                         ]),
+        ("showRoomTexture_maximize",                MAP [
+                                                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName = "GameData:/Assets/2D/Interface/ShowRoom/maximize.png" )),
+                                                            (~/ComponentState/Toggled, TUIResourceTexture_Common( FileName = "GameData:/Assets/2D/Interface/ShowRoom/minimize.png" )),
+                                                            (~/ComponentState/ToggleHighlighted, TUIResourceTexture_Common( FileName = "GameData:/Assets/2D/Interface/ShowRoom/minimize.png" )),
+                                                        ]),
     ]
 )

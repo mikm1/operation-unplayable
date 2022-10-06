@@ -248,6 +248,44 @@ export Attack_Adaptive is Template_Attack_Corridor
     RatioMinimumPourAttaquer = 1.0
 )
 //-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+private template Template_Attack_Helo
+[
+    MinimumResourceForLaunch:int = 0,
+    RatioMinimumPourAttaquer:float = 1.0,
+]
+is TMacroActionDescriptor_CorridorAttack_Specific
+(
+        ParametresDeMission =
+    ~/Default_Attack_Settings
+    + ~/Blitzkrieg_Attack_Settings
+    + ~/AvoidFillerCorridors_Attack_Settings
+    +
+    [
+        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
+        TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible]
+        PoolModelList = [
+            Pool_Attack_Helo,
+        ]
+        LaunchASAP_RatioMin = 0.01),
+        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = <RatioMinimumPourAttaquer> CompterLesUnitesEnZoneExtendedDansLaMenace = true UtiliserMenaceLaPlusProcheAuLieuDeLaPlusFaible = true),
+        TMacroActionLifetimeSettingHolder(MinimumResourceForLaunch = <MinimumResourceForLaunch>),
+        TCorridorPlacementSettingHolder(StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1 ActiveComportementEnBoutDeCouloir = true),
+    ]
+)
+//-------------------------------------------------------------------------
+export Attack_Helo is Template_Attack_Helo
+(
+)
+
+//-------------------------------------------------------------------------
+export Attack_Helo_Autogen is Template_Attack_Helo
+(
+    MinimumResourceForLaunch = ~/MinimumResourceForLaunch_Stage_1
+)
+
+//-------------------------------------------------------------------------
 export Attack_Adaptive_Autogen is Template_Attack_Corridor
 (
     MinimumResourceForLaunch = ~/MinimumResourceForLaunch_Stage_1
@@ -259,6 +297,7 @@ export Attack_Adaptive_Autogen is Template_Attack_Corridor
 Budget_Objective_Attack is 300
 Budget_Main_Attack is 400
 Budget_Default_Attack is 200
+Budget_Attack_Helo is 250
 Budget_Infantry_Attack is 160
 Budget_Tank_Attack is 200
 Budget_Combined_Attack is 200
@@ -430,6 +469,7 @@ export Pool_Objective_Attack is TPoolModel
             TagsPriority = [
                 "Char_Reco",
                 "Vehicule_Reco",
+                "Helo_Reco",
             ]
         ),
         TPoolElement(
@@ -485,6 +525,7 @@ export Pool_Main_Attack_Easy is TPoolModel
                 "Vehicule_Reco",
                 "Infanterie_Reco",
                 "Infanterie_Standard",
+                "Helo_Reco",
             ]
         ),
         TPoolElement(
@@ -528,6 +569,7 @@ export Pool_Main_Attack is TPoolModel
                 "Vehicule_Reco",
                 "Infanterie_Reco",
                 "Infanterie_Standard",
+                "Helo_Reco",
             ]
         ),
         TPoolElement(
@@ -603,7 +645,8 @@ export Pool_Default_Attack_1 is TPoolModel
             TagsPriority = [
                 "Char_Reco",
                 "Vehicule_Reco",
-                "Infanterie_Reco"
+                "Infanterie_Reco",
+                "Helo_Reco",
             ]
         ),
         TPoolElement(
@@ -678,6 +721,7 @@ export Pool_Default_Attack_2 is TPoolModel
             TagsPriority = [
                 "Char_Reco",
                 "Vehicule_Reco",
+                "Helo_Reco",
             ]
         ),
         TPoolElement(
@@ -781,6 +825,8 @@ export Pool_Default_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Helo_Gunship",
+                "Helo_AT",
+                "Helo_Transport_Arme",
             ]
         ),
     ]
@@ -887,6 +933,7 @@ export Pool_Tank_Attack_2 is TPoolModel
                 "Vehicule_Reco",
                 "Infanterie_Reco",
                 "Infanterie_Standard",
+                "Helo_Reco",
             ]
         ),
         TPoolElement(
@@ -1335,6 +1382,8 @@ export Pool_Combined_Attack_1 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Helo_Gunship",
+                "Helo_AT",
+                "Helo_Transport_Arme",
             ]
         ),
 
@@ -1389,6 +1438,7 @@ export Pool_Combined_Attack_2 is TPoolModel
                 "Vehicule_Reco",
                 "Infanterie_Reco",
                 "Char_Reco",
+                "Helo_Reco",
             ]
         ),
         TPoolElement(
@@ -1423,6 +1473,8 @@ export Pool_Combined_Attack_2 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Helo_Gunship",
+                "Helo_AT",
+                "Helo_Transport_Arme",
             ]
         ),
     ]
@@ -1465,6 +1517,7 @@ export Pool_Combined_Attack_3 is TPoolModel
                 "Char_Reco",
                 "Vehicule_Reco",
                 "Infanterie_Reco",
+                "Helo_Reco",
             ]
         ),
         TPoolElement(
@@ -1522,9 +1575,47 @@ export Pool_Combined_Attack_3 is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Helo_Gunship",
+                "Helo_AT",
+                "Helo_Transport_Arme",
             ]
         ),
     ]
     + ~/Vehicule_Fallback_Attack
 )
+
+
+//-------------------------------------------------------------------------
+export Pool_Attack_Helo is TPoolModel
+(
+    Budget = ~/Budget_Attack_Helo
+    ModelList = [
+        TPoolElement(
+            DescriptorId = GUID:{28210a0b-5cfa-4d5e-a95e-8c92ceb462ab}
+            Required = false
+            IndexPriorityOverPrice = true
+            Nb = 1
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Helo_Gunship",
+                "Helo_AT",
+                "Helo_Transport_Arme",
+                "Helo",
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{1a1142b1-2873-4a2b-9929-74c65b749d89}
+            Required = false
+            IndexPriorityOverPrice = true
+            Nb = 1
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Helo_Gunship",
+                "Helo_AT",
+                "Helo_Transport_Arme",
+                "Helo",
+            ]
+        ),
+    ]
+)
+
 //-------------------------------------------------------------------------

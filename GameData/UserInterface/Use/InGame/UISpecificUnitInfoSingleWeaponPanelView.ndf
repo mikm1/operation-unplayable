@@ -18,9 +18,9 @@ DamageTypeComponentConfigurations is
     TDamageComponentConfiguration
     (
         DamageType = "he_autocanon"
-        Button = "HEButton"
-        AmmoText = "WeaponHEAmmoText"
-        CalibreText = "WeaponHECalibreText"
+        Button = "HEAutoCanonButton"
+        AmmoText = "WeaponHEAutoCanonAmmoText"
+        CalibreText = "WeaponHEAutoCanonCalibreText"
     ),
     TDamageComponentConfiguration
     (
@@ -1201,26 +1201,27 @@ is TUISpecificUnitInfoSingleWeaponPanelViewDescriptor
     DamageTypeConfiguration = MAP
     [
         //("APButton",      ["WeaponAP", "WeaponDamage", "WeaponSuppress", "WeaponAreaOfEffect", "", "WeaponAccuracy", "WeaponRange", "", "WeaponRateOfFire", "WeaponTraverseSpeed"]),
-        ("APButton",        listeAffichage),
-        ("HOWZAPButton",    listeAffichage),
-        ("APHEButton",      listeAffichage),
-        ("HEButton",        listeAffichage),
-        ("APCRButton",      listeAffichage),
-        ("HEATButton",      listeAffichage),
-        ("HESAPButton",     listeAffichage),
-        ("BulletButton",    listeAffichage),
-        ("BulletAAButton",  listeAffichage),
-        ("BulletDCAButton", listeAffichage),
-        ("RocketHEButton",  listeAffichage),
-        ("RocketAPButton",  listeAffichage),
-        ("RocketFragButton",listeAffichage),
-        ("BombButton",      listeAffichage),
-        ("ClusterAPButton", listeAffichage),
-        ("ClusterHEButton", listeAffichage),
-        ("APMissileButton", listeAffichage),
-        ("FlameButton",     listeAffichage),
-        ("NapalmButton",    listeAffichage),
-        ("SmokeButton",     listeAffichage),
+        ("APButton",            listeAffichage),
+        ("HOWZAPButton",        listeAffichage),
+        ("APHEButton",          listeAffichage),
+        ("HEButton",            listeAffichage),
+        ("HEAutoCanonButton",   listeAffichage),
+        ("APCRButton",          listeAffichage),
+        ("HEATButton",          listeAffichage),
+        ("HESAPButton",         listeAffichage),
+        ("BulletButton",        listeAffichage),
+        ("BulletAAButton",      listeAffichage),
+        ("BulletDCAButton",     listeAffichage),
+        ("RocketHEButton",      listeAffichage),
+        ("RocketAPButton",      listeAffichage),
+        ("RocketFragButton",    listeAffichage),
+        ("BombButton",          listeAffichage),
+        ("ClusterAPButton",     listeAffichage),
+        ("ClusterHEButton",     listeAffichage),
+        ("APMissileButton",     listeAffichage),
+        ("FlameButton",         listeAffichage),
+        ("NapalmButton",        listeAffichage),
+        ("SmokeButton",         listeAffichage),
         ("MissileHEButton",     listeAffichage),
     ]
 

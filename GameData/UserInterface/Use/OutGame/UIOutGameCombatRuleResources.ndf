@@ -60,7 +60,7 @@ CombatRuleResources is TUIOutGameCombatRuleResources
         //CombatRule/Destruction,
         TUICombatRuleResource
         (
-            Name = 'CMBRL_DEST'
+            Name = 'GRL_DESTT'
             HintBody = 'HCR_DEST'
             GameRoomListIconComponent = CombatRuleDecorationComponent
             (
@@ -75,7 +75,7 @@ CombatRuleResources is TUIOutGameCombatRuleResources
         //CombatRule/ConquestGameMode,
         TUICombatRuleResource
         (
-            Name = 'CMBRL_CTF'
+            Name = 'GRL_CONQT'
             HintBody = 'HCR_CTF'
             GameRoomListIconComponent = CombatRuleDecorationComponent
             (

@@ -16,6 +16,10 @@ Playlist_Outgame is
     TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Resolution.wav" ),
     TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Synchronicity.wav" ),
     TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Through-The-Night.wav" ),
+    TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Floating_Consciousness.wav" ),
+    TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Dimensional-Pulse.wav" ),
+    TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Peace_Within.wav" ),
+    TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Things_Are_Stranger.wav" ),
 ]
 
 
@@ -37,6 +41,9 @@ Playlist_Ingame is
     TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Third-Degree.wav" ),
     TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Synchronicity.wav" ),
     TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Global-Lockdown.wav" ),
+    TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Dawn_On_Glendale.wav" ),
+    TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Things_Are_Stranger.wav" ),
+    TSoundStream( FileName = "GameData:/Assets/Sons/PerpetualMusic/Midnight_Runaway.wav" ),
 ]
 
 Perpetual_Music is TPerpetualMusic

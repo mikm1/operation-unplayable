@@ -38,10 +38,15 @@ template AvatarInDropDownDescriptor
 
 private AvatarAndTextDropDownDescriptor is BUCKContainerDescriptor
 (
+    ElementName = "AvatarAndTextDropDownDescriptor"
+
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1.0, 1.0]
+        RelativeWidthHeight = [1.0, 0.0]
     )
+
+    FitStyle = ~/ContainerFitStyle/FitToContentVertically
+
     Components =
     [
         BUCKSpecificDropdownDescriptor

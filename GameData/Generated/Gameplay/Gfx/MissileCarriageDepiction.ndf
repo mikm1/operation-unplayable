@@ -399,6 +399,24 @@ SubGenerators_Showroom_ATteam_Milan_1_UK is TMissileCarriageSubDepictionGenerato
         CastShadow = True
     )
 )
+SubGenerators_ATteam_Milan_1_para_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_ATteam_Milan_1_para_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_ATteam_Milan_1_para_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_ATteam_Milan_1_para_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_ATteam_Milan_2_FR is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_ATteam_Milan_2_FR
@@ -447,6 +465,24 @@ SubGenerators_ATteam_Milan_2_UK is TMissileCarriageSubDepictionGenerator
 SubGenerators_Showroom_ATteam_Milan_2_UK is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_ATteam_Milan_2_UK
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_ATteam_Milan_2_para_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_ATteam_Milan_2_para_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_ATteam_Milan_2_para_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_ATteam_Milan_2_para_FR
     Missiles = []
     Pylons = DepictionPylonSet_ATGM
     (
@@ -1739,6 +1775,163 @@ SubGenerators_Showroom_DCA_Javelin_LML_UK is TMissileCarriageSubDepictionGenerat
         CastShadow = True
     )
 )
+SubGenerators_DCA_Rapier_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_DCA_Rapier_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Rapier
+            )
+            MissileIndex = 1
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Rapier
+            )
+            MissileIndex = 2
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Rapier
+            )
+            MissileIndex = 3
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Rapier
+            )
+            MissileIndex = 4
+            WeaponIndex = 1
+        ),
+    ]
+    Pylons = DepictionPylonSet_Vehicle_Default
+    (
+        CastShadow = True
+    )
+)
+SubGeneratorsTowed_DCA_Rapier_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_DCA_Rapier_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileTowed
+            (
+                MissileNumber = 0
+                ProjectileModelFile = ModelFile_Missile_Rapier
+                TowedUnit = "DCA_Rapier_UK"
+            )
+            MissileIndex = 1
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileTowed
+            (
+                MissileNumber = 1
+                ProjectileModelFile = ModelFile_Missile_Rapier
+                TowedUnit = "DCA_Rapier_UK"
+            )
+            MissileIndex = 2
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileTowed
+            (
+                MissileNumber = 2
+                ProjectileModelFile = ModelFile_Missile_Rapier
+                TowedUnit = "DCA_Rapier_UK"
+            )
+            MissileIndex = 3
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileTowed
+            (
+                MissileNumber = 3
+                ProjectileModelFile = ModelFile_Missile_Rapier
+                TowedUnit = "DCA_Rapier_UK"
+            )
+            MissileIndex = 4
+            WeaponIndex = 1
+        ),
+    ]
+    Pylons = DepictionPylonSet_Vehicle_Default
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_DCA_Rapier_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_DCA_Rapier_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Rapier
+            )
+            MissileIndex = 1
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Rapier
+            )
+            MissileIndex = 2
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Rapier
+            )
+            MissileIndex = 3
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Rapier
+            )
+            MissileIndex = 4
+            WeaponIndex = 1
+        ),
+    ]
+    Pylons = DepictionPylonSet_Vehicle_Default
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_FV102_Striker_BEL is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_FV102_Striker_BEL
@@ -1811,6 +2004,24 @@ SubGenerators_Showroom_FV438_Swingfire_UK is TMissileCarriageSubDepictionGenerat
         CastShadow = True
     )
 )
+SubGenerators_Faun_Kraka_TOW_RFA is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Faun_Kraka_TOW_RFA
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_Faun_Kraka_TOW_RFA is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Faun_Kraka_TOW_RFA
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_Iltis_MILAN_RFA is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Iltis_MILAN_RFA
@@ -1861,6 +2072,24 @@ SubGenerators_Showroom_Jaguar_2_RFA is TMissileCarriageSubDepictionGenerator
     MissileCarriageConnoisseur = MissileCarriage_Jaguar_2_RFA
     Missiles = []
     Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_LandRover_MILAN_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_LandRover_MILAN_UK
+    Missiles = []
+    Pylons = DepictionPylonSet_Vehicle_Default
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_LandRover_MILAN_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_LandRover_MILAN_UK
+    Missiles = []
+    Pylons = DepictionPylonSet_Vehicle_Default
     (
         CastShadow = True
     )
@@ -2435,6 +2664,24 @@ SubGenerators_Showroom_T62M_SOV is TMissileCarriageSubDepictionGenerator
         CastShadow = True
     )
 )
+SubGenerators_T64BV_CMD_SOV is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_T64BV_CMD_SOV
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_T64BV_CMD_SOV is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_T64BV_CMD_SOV
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_T64BV_SOV is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_T64BV_SOV
@@ -2447,6 +2694,24 @@ SubGenerators_T64BV_SOV is TMissileCarriageSubDepictionGenerator
 SubGenerators_Showroom_T64BV_SOV is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_T64BV_SOV
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_T64B_SOV is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_T64B_SOV
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_T64B_SOV is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_T64B_SOV
     Missiles = []
     Pylons = DepictionPylonSet_ATGM
     (
@@ -3109,6 +3374,42 @@ SubGenerators_Showroom_VBL_MILAN_FR is TMissileCarriageSubDepictionGenerator
     MissileCarriageConnoisseur = MissileCarriage_VBL_MILAN_FR
     Missiles = []
     Pylons = DepictionPylonSet_Vehicle_Default
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_VLRA_MILAN_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_VLRA_MILAN_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_VLRA_MILAN_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_VLRA_MILAN_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_VLRA_Mistral_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_VLRA_Mistral_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_VLRA_Mistral_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_VLRA_Mistral_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_ATGM
     (
         CastShadow = True
     )
@@ -3956,6 +4257,24 @@ SubGenerators_Showroom_Gazelle_HOT_FR is TMissileCarriageSubDepictionGenerator
         CastShadow = True
     )
 )
+SubGenerators_Gazelle_Mistral_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Gazelle_Mistral_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_Helico_Default
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_Gazelle_Mistral_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Gazelle_Mistral_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_Helico_Default
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_Gazelle_SNEB_UK is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Gazelle_SNEB_UK
@@ -4682,6 +5001,24 @@ SubGenerators_Mi_8TV_SOV is TMissileCarriageSubDepictionGenerator
 SubGenerators_Showroom_Mi_8TV_SOV is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Mi_8TV_SOV
+    Missiles = []
+    Pylons = DepictionPylonSet_Helico_SOV
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Mi_8TV_UPK_DDR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Mi_8TV_UPK_DDR
+    Missiles = []
+    Pylons = DepictionPylonSet_Helico_SOV
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Showroom_Mi_8TV_UPK_DDR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Mi_8TV_UPK_DDR
     Missiles = []
     Pylons = DepictionPylonSet_Helico_SOV
     (
@@ -9439,6 +9776,188 @@ SubGenerators_Showroom_F4F_Phantom_II_RKT2_RFA is TMissileCarriageSubDepictionGe
         CastShadow = True
     )
 )
+SubGenerators_F4_Phantom_AA_F3 is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_F4_Phantom_AA_F3
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Skyflash
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Skyflash
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Skyflash
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Skyflash
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 3
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 4
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_F4_Phantom_AA_F3 is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_F4_Phantom_AA_F3
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Skyflash
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Skyflash
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Skyflash
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Skyflash
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 3
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 4
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_F4_Wild_Weasel_US is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_F4_Wild_Weasel_US
@@ -9925,6 +10444,108 @@ SubGenerators_Showroom_Harrier_CLU_UK is TMissileCarriageSubDepictionGenerator
         CastShadow = True
     )
 )
+SubGenerators_Harrier_HE1_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Harrier_HE1_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_83
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_83
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Harrier_HE1_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Harrier_HE1_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_83
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_83
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_Harrier_HE2_UK is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Harrier_HE2_UK
@@ -10023,6 +10644,86 @@ SubGenerators_Showroom_Harrier_HE2_UK is TMissileCarriageSubDepictionGenerator
         ),
     ]
     Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Harrier_RKT1_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Harrier_RKT1_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Harrier_RKT1_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Harrier_RKT1_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Harrier_RKT2_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Harrier_RKT2_UK
+    Missiles = []
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Harrier_RKT2_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Harrier_RKT2_UK
+    Missiles = []
+    Pylons = DepictionPylonSet_Airplane_FR
     (
         CastShadow = True
     )
@@ -10184,6 +10885,370 @@ SubGenerators_Showroom_Jaguar_ATGM_FR is TMissileCarriageSubDepictionGenerator
             )
             MissileIndex = 2
             WeaponIndex = 2
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Jaguar_CLU_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_CLU_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_BL755_Cluster
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_BL755_Cluster
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_BL755_Cluster
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_BL755_Cluster
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Jaguar_CLU_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_CLU_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_BL755_Cluster
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_BL755_Cluster
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_BL755_Cluster
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_BL755_Cluster
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Jaguar_HE1_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_HE1_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 6
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 7
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Jaguar_HE1_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_HE1_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_82
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_SideWinder
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
         ),
     ]
     Pylons = DepictionPylonSet_Airplane_Default
@@ -10475,6 +11540,24 @@ SubGenerators_Showroom_Jaguar_HE_FR is TMissileCarriageSubDepictionGenerator
         CastShadow = True
     )
 )
+SubGenerators_Jaguar_RKT_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_RKT_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Jaguar_RKT_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_RKT_FR
+    Missiles = []
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_Jaguar_RKT_UK is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Jaguar_RKT_UK
@@ -10537,6 +11620,48 @@ SubGenerators_Showroom_Jaguar_RKT_UK is TMissileCarriageSubDepictionGenerator
         CastShadow = True
     )
 )
+SubGenerators_Jaguar_SEAD2_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_SEAD2_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_AS37_Martel
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Jaguar_SEAD2_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_SEAD2_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_AS37_Martel
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_Jaguar_SEAD_FR is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Jaguar_SEAD_FR
@@ -10572,6 +11697,290 @@ SubGenerators_Showroom_Jaguar_SEAD_FR is TMissileCarriageSubDepictionGenerator
             )
             MissileIndex = 1
             WeaponIndex = 2
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Jaguar_clu_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_clu_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_BLG_66_Belouga
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_BLG_66_Belouga
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_BLG_66_Belouga
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_BLG_66_Belouga
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Jaguar_clu_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_clu_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_BLG_66_Belouga
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_BLG_66_Belouga
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_BLG_66_Belouga
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_BLG_66_Belouga
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Jaguar_nplm_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_nplm_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_77
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_77
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_77
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Mk_77
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_Default
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Jaguar_nplm_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Jaguar_nplm_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_77
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_77
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_77
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Mk_77
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
         ),
     ]
     Pylons = DepictionPylonSet_Airplane_Default
@@ -12935,6 +14344,268 @@ SubGenerators_Showroom_Mirage_2000_C_FR is TMissileCarriageSubDepictionGenerator
         CastShadow = True
     )
 )
+SubGenerators_Mirage_5_F_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Mirage_5_F_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 6
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 7
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 8
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 9
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 9
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 10
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Mirage_5_F_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Mirage_5_F_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 9
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Bomb_Matra_250Kg
+            )
+            MissileIndex = 10
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = True
+    )
+)
 SubGenerators_Mirage_5_F_clu_FR is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Mirage_5_F_clu_FR
@@ -13132,6 +14803,108 @@ SubGenerators_Showroom_Mirage_5_F_nplm_FR is TMissileCarriageSubDepictionGenerat
             )
             MissileIndex = 4
             WeaponIndex = 2
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = True
+    )
+)
+SubGenerators_Mirage_F1_CT_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Mirage_F1_CT_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_GBU_10_Paveway_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_GBU_10_Paveway_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = DepictionPylonSet_Airplane_FR
+    (
+        CastShadow = False
+    )
+)
+SubGenerators_Showroom_Mirage_F1_CT_FR is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Mirage_F1_CT_FR
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_GBU_10_Paveway_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_GBU_10_Paveway_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 1
+            WeaponIndex = 3
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_Matra_R550_Magic_II
+            )
+            MissileIndex = 2
+            WeaponIndex = 3
         ),
     ]
     Pylons = DepictionPylonSet_Airplane_FR
@@ -13632,7 +15405,53 @@ SubGenerators_Showroom_Su_22_DDR is TMissileCarriageSubDepictionGenerator
 SubGenerators_Su_22_RKT_DDR is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Su_22_RKT_DDR
-    Missiles = []
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_S_24_240mm
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_S_24_240mm
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_S_24_240mm
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelFile = ModelFile_Missile_S_24_240mm
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+    ]
     Pylons = DepictionPylonSet_Airplane_SOV
     (
         CastShadow = False
@@ -13641,7 +15460,45 @@ SubGenerators_Su_22_RKT_DDR is TMissileCarriageSubDepictionGenerator
 SubGenerators_Showroom_Su_22_RKT_DDR is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Su_22_RKT_DDR
-    Missiles = []
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_S_24_240mm
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_S_24_240mm
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_S_24_240mm
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelFile = ModelFile_Missile_S_24_240mm
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+    ]
     Pylons = DepictionPylonSet_Airplane_SOV
     (
         CastShadow = True

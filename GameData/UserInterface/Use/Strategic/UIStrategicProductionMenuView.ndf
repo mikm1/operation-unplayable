@@ -384,60 +384,29 @@ private StrategicProductionMenuUnitListScrollingContainer is BUCKSpecificScrolli
 
 template PawnFullPowerSummary
 [
-    ElementName : string,
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        RelativeWidthHeight = [1.0, 0.0]
-    ),
-    HasBackground : bool = true,
     ValueColor : string,
-    BackgroundBlockColorToken: string = 'SD2_Gris90',
     ShowDetails : bool  = False,
     ShowIcons : bool  = True,
     TextSize : string = "22",
     ContentExtendWeight : float = 1.0
 ]
-is BUCKListDescriptor
+is PawnCategoryPower
 (
+    Category = "Full"
+    TextColor = <ValueColor>
+    ValueColor = 'Strategic/PawnPower/AssaultTop'
+    TextureToken = 'UseStrategic_SelectionPanel_Assault'
+    ShowTexture = <ShowIcons>
+    HintTitleToken = 'ST_VCMT'
+    HintBodyToken = 'ST_VCMB'
 
-    ElementName = <ElementName>
+    Quality_HintExtendedToken = 'pip_quaMe'
 
-    ComponentFrame = <ComponentFrame>
+    ContentExtendWeight = <ContentExtendWeight>
 
-    HasBackground = <HasBackground>
-    BackgroundBlockColorToken = <BackgroundBlockColorToken>
-    Axis = ~/ListAxis/Horizontal
-    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
-    ChildFitToContent = true
-
-    FirstMargin = TRTTILength(Magnifiable = 10.0)
-    InterItemMargin = TRTTILength(Magnifiable = (<ShowIcons> ? 0.0 : 5.0))
+    ShowDetails = <ShowDetails>
+    TextSize = <TextSize>
     LastMargin = TRTTILength(Magnifiable = 10.0)
-
-    Elements =
-    [
-        BUCKListElementDescriptor
-        (
-            ExtendWeight = <ContentExtendWeight>
-            ComponentDescriptor = PawnCategoryPower
-            (
-                Category = "Full"
-                TextColor = <ValueColor>
-                ValueColor = 'Strategic/PawnPower/AssaultTop'
-                TextureToken = 'UseStrategic_SelectionPanel_Assault'
-                ShowTexture = <ShowIcons>
-                HintTitleToken = 'ST_VCMT'
-                HintBodyToken = 'ST_VCMB'
-
-                Quality_HintExtendedToken = 'pip_quaMe'
-
-                ContentExtendWeight = <ContentExtendWeight>
-
-                ShowDetails = <ShowDetails>
-                TextSize = <TextSize>
-            )
-        )
-    ]
 )
 
 // -------------------------------------------------------------------------------------------------
@@ -446,9 +415,7 @@ private StrategicProductionBattalionRack is BUCKRackDescriptor
 (
     ElementName = "BattalionRack"
 
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-    )
+    ComponentFrame = TUIFramePropertyRTTI()
 
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
@@ -541,19 +508,26 @@ private StrategicProductionBattalionRack is BUCKRackDescriptor
                     ),
                     BUCKListElementDescriptor
                     (
-                        ComponentDescriptor = PawnFullPowerSummary
+                        MinSize = TRTTILength(Magnifiable = 65.0)
+                        ComponentDescriptor = DisplayAttackAndDefenseValueForPawn
                         (
-                            ElementName = 'DataTabularContainer'
-                            ComponentFrame = TUIFramePropertyRTTI
-                            (
-                                RelativeWidthHeight = [0.0, 1.0]
-                            )
-
-                            ContentExtendWeight = 0.0
-
-                            ValueColor = 'SD2_Gris80'
-                            HasBackground = false
-                            ShowIcons = false
+                            ElementName = "PowerValue"
+                            TextureColorTokenForIcone = "SM_Noir"
+                            TextureToken = "UseStrategic_SelectionPanel_Attack"
+                            TextColor = "SM_paleSilver"
+                            TextToken = "AttStre"
+                        )
+                    ),
+                    BUCKListElementDescriptor
+                    (
+                        MinSize = TRTTILength(Magnifiable = 65.0)
+                        ComponentDescriptor = DisplayAttackAndDefenseValueForPawn
+                        (
+                            ElementName = "ShieldValue"
+                            TextureColorTokenForIcone = "BlancEquipe"
+                            TextureToken = "UseStrategic_SelectionPanel_Defense"
+                            TextColor = "SM_paleSilver"
+                            TextToken = "DefStre"
                         )
                     ),
                     BUCKListElementDescriptor

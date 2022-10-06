@@ -38,6 +38,8 @@ private WeaponType is BUCKTextDescriptor
 
 private WeaponPanelContentList is BUCKListDescriptor
 (
+    ElementName = 'WeaponPanelContentList'
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 0.0]
@@ -100,6 +102,8 @@ template WeaponInformation
 ]
 is BUCKListDescriptor
 (
+    ElementName = 'WeaponInformation'
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 0.0]
@@ -467,6 +471,8 @@ template WeaponPanelAmmunitionsButtonsContainer
 ]
 is BUCKContainerDescriptor
 (
+    ElementName = 'WeaponPanelAmmunitionsButtonsContainer'
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight    = [1.0, 0.0]
@@ -533,6 +539,12 @@ is BUCKContainerDescriptor
                 BUCKListElementDescriptor
                 (
                     ComponentDescriptor = WeaponPanelHEButton(IsSelection = <IsSelection>)
+                ),
+
+                // HE autocanon
+                BUCKListElementDescriptor
+                (
+                    ComponentDescriptor = WeaponPanelHEAutoCanonButton(IsSelection = <IsSelection>)
                 ),
 
                 // Bullet
@@ -965,6 +977,7 @@ template WeaponPanelHESAPButton
     HintExtendedToken = ""
     IsSelection = <IsSelection>
 )
+
 // -------------------------------------------------------------------------------------------------
 // WeaponPanelHEButton
 // -------------------------------------------------------------------------------------------------
@@ -985,6 +998,28 @@ template WeaponPanelHEButton
     HintExtendedToken = ""
     IsSelection = <IsSelection>
 )
+
+// -------------------------------------------------------------------------------------------------
+// WeaponPanelHEAutoCanonButton
+// -------------------------------------------------------------------------------------------------
+
+// HE auto canon Button
+template WeaponPanelHEAutoCanonButton
+[
+    IsSelection : bool = true,
+] is WeaponPanelButton
+(
+    ElementName = 'HEAutoCanonButton'
+    ElementNameText = 'WeaponHEAutoCanonAmmoText'
+    ElementNameCalibre = 'WeaponHEAutoCanonCalibreText'
+    BackgroundBlockColorToken = "WeaponButton/HEButton"
+    TextToken = "AMMOB_HE"
+    HintTitleToken = <IsSelection>  ? "HWP_ACTT"  : "HIP_AFINFT"
+    HintBodyToken = <IsSelection>  ? "HWP_ACT"   : "HIP_AFINF"
+    HintExtendedToken = ""
+    IsSelection = <IsSelection>
+)
+
 
 // -------------------------------------------------------------------------------------------------
 // WeaponPanelAPCRButton
@@ -1318,4 +1353,7 @@ UISpecificUnitSelectionWeaponPanelViewDescriptor is TUISpecificUnitSelectionWeap
     DamageTypeToModifyForSupply = "he" // Voir WeaponPanelHEButton en mode supply
 
     WeaponNameAndAmountToken = "UIPW_NUM"
+
+    UnknownValueToken = "UK_VAL"
+    UnknownValueDicoToken = ~/LocalisationConstantes/dico_interface_ingame
 )

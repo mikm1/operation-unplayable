@@ -121,6 +121,7 @@ export Pool_Reco_Skirmish is TPoolModel
         TagsPriority = [
             "Infanterie_Reco",
             "Vehicule_Reco",
+            "Helo_Reco",
         ]
     ),
     ]

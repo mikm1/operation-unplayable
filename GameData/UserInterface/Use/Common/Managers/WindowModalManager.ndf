@@ -557,12 +557,36 @@ private ModalBlurEffect is TModalLayerEffect
 )
 
 //---------------------------------------------------------------------------------
+// LDHintBlurEffect
+//---------------------------------------------------------------------------------
+
+private LDHintBlurEffect is TModalLayerEffect
+(
+    LayerStatus = $/M3D/Scene/ActiveBlurEventForModalWindow
+    LayerFactor = $/M3D/Scene/BlurForModalWindowFactor
+    Anim = TUIAnimFactorRTTI
+    (
+        AnimDuration = 0.2
+    )
+)
+
+//---------------------------------------------------------------------------------
 // ModalManager
 //---------------------------------------------------------------------------------
 
 ModalManager is TModalManager
 (
     Layers = MAP [
+        (~/ModalPriority/LDHint,    TModalLayerProperties
+                                    (
+                                        ForegroundLayer = $/UserInterface/UILayer_2DInterfaceLDHint
+                                        BackgroundLayer = $/UserInterface/UILayer_2DInterfaceBlur_InGame
+                                        LayerEffects =
+                                        [
+                                            ~/LDHintBlurEffect,
+                                        ]
+                                    )
+        ),
         (~/ModalPriority/Low,       TModalLayerProperties
                                     (
                                         ForegroundLayer = $/UserInterface/UILayer_2DInterfaceAboveBlur_OutGame

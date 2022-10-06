@@ -14,7 +14,6 @@ is BUCKListDescriptor
     (
         RelativeWidthHeight = [1.0, 0.0]
         MagnifiableWidthHeight = [-36.0, 0.0]
-        MagnifiableOffset = [0,23]
         AlignementToAnchor = [0.5, 0.0]
         AlignementToFather = [0.5, 0.0]
     )
@@ -22,6 +21,7 @@ is BUCKListDescriptor
     Axis = ~/ListAxis/Vertical
     FirstMargin = TRTTILength( Magnifiable = 7.0 )
     LastMargin = TRTTILength( Magnifiable = 9.0 )
+
     Elements =
     [
         BUCKListElementDescriptor
@@ -43,6 +43,7 @@ is BUCKListDescriptor
             ExtendWeight = 1.0
             ComponentDescriptor = BUCKSpecificScrollingContainerDescriptor
             (
+                ExternalScrollbar = true
                 HasVerticalScrollbar = true
                 VerticalScrollbarComponentFrame = TUIFramePropertyRTTI
                 (
@@ -53,19 +54,26 @@ is BUCKListDescriptor
 
                 Components =
                 [
-                    BUCKListDescriptor
+                    BUCKTreeViewDescriptor
                     (
-                        ElementName = "LinesContainer"
+                        ElementName = "OOBTreeView"
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [1.0, 0.0]
                         )
 
-                        Axis = ~/ListAxis/Vertical
-                        FirstMargin = TRTTILength( Magnifiable = 3.0 )
-                        InterItemMargin = TRTTILength( Magnifiable = <Interspacing> )
-                        LastMargin = TRTTILength( Magnifiable = <Interspacing> )
-                    )
+                        LineMainComponentExtendWeight = 1.0
+                        TreeViewLineComponentDescriptor = BUCKContainerDescriptor
+                        (
+                            ElementName = "LineMainComponent"
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                            )
+
+                            FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                        )
+                    ),
                 ]
             )
         ),
@@ -73,6 +81,7 @@ is BUCKListDescriptor
 )
 
 // ----------------------------------------------------------
+CompanyRadioButtonManager is TBUCKRadioButtonManager()
 
 template UISpecificStrategicBattleOrderSubPanelViewDescriptor
 [
@@ -80,11 +89,12 @@ template UISpecificStrategicBattleOrderSubPanelViewDescriptor
 ]
 is TUISpecificStrategicBattleOrderSubPanelViewDescriptor
 (
-    TitleLineViewDescriptor =           UISpecificStrategicBattleOrderPanelTitleLineViewDescriptor( TitleTextDico = ~/LocalisationConstantes/dico_unites )
-    CompanyTitleLineViewDescriptor =    UISpecificStrategicBattleOrderPanelTitleLineViewDescriptor( TitleTextDico = ~/LocalisationConstantes/dico_packs )
-    DefaultLineViewDescriptor =         UISpecificStrategicBattleOrderPanelDefaultLineViewDescriptor( TitleTextDico = ~/LocalisationConstantes/dico_unites )
-    CompanyLineViewDescriptor =         UISpecificStrategicBattleOrderPanelDefaultLineViewDescriptor( TitleTextDico = ~/LocalisationConstantes/dico_packs )
-    SectionLineViewDescriptor =         ~/UISpecificStrategicBattleOrderPanelSectionLineViewDescriptor
-
     MainComponentDescriptor = BUCKSpecificStrategicBattleOrderSubPanelMainComponentDescriptor( Interspacing = <Interspacing> )
+
+    HeaderLineViewDescriptor    = UISpecificStrategicBattleOrderPanelTitleLineViewDescriptor( TitleTextDico = ~/LocalisationConstantes/dico_unites )
+    CorpsLineViewDescriptor     = UISpecificStrategicBattleOrderPanelDefaultLineViewDescriptor( TitleTextDico = ~/LocalisationConstantes/dico_packs )
+    PawnLineViewDescriptor      = UISpecificStrategicBattleOrderPanelDefaultLineViewDescriptor( TitleTextDico = ~/LocalisationConstantes/dico_packs )
+    CompanyLineViewDescriptor   = UISpecificStrategicBattleOrderPanelCompanyLineViewDescriptor( RadioButtonManager = ~/CompanyRadioButtonManager )
+
+    CompanyRadioButtonManager = ~/CompanyRadioButtonManager
 )

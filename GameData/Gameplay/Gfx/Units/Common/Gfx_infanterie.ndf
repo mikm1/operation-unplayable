@@ -88,9 +88,11 @@ export ModelFile_MANPAD_FIM43   is 'GameData:/Assets/3D/Units/Ammo/Armes/USA/FIM
 //------------------------------------ARMES UK----------------------------------
 //------------------------------------------------------------------------------
 export ModelFile_Javelin            is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/Javelin.Ase2NdfBin'
+export ModelFile_MANPAD_Blowpipe    is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/Javelin.Ase2NdfBin'
 export ModelFile_Javelin_LML        is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/Javelin.Ase2NdfBin'
 export ModelFile_L1A1_SLR           is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L1A1_SLR.Ase2NdfBin'
 export ModelFile_L2A3               is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L2A3.Ase2NdfBin'
+export ModelFile_L7A2               is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/MAG_L7A2.fbx'
 export ModelFile_L85A1              is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L85A1.fbx'
 export ModelFile_L86A1_LSW          is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L86A1_LSW.Ase2NdfBin'
 export ModelFile_LAW_80             is 'GameData:/Assets/3D/Units/Ammo/Armes/UK/LAW_80.Ase2NdfBin'
@@ -331,6 +333,15 @@ export ModelFile_Spetsnaz_CMD_SOV_05 is SOV_VDV_Sniper
 export ModelFile_Spetsnaz_CMD_SOV_06 is SOV_VDV_spe
 export ModelFile_Spetsnaz_CMD_SOV_LOW is SOV_VDV_1_LOW
 
+
+//Spetsnaz_FireSupport_SOV
+export ModelFile_Spetsnaz_FireSupport_SOV is SOV_VDV_1
+export ModelFile_Spetsnaz_FireSupport_SOV_02 is SOV_VDV_2
+export ModelFile_Spetsnaz_FireSupport_SOV_03 is SOV_VDV_NCO
+export ModelFile_Spetsnaz_FireSupport_SOV_04 is SOV_VDV_Officer
+export ModelFile_Spetsnaz_FireSupport_SOV_05 is SOV_VDV_Sniper
+export ModelFile_Spetsnaz_FireSupport_SOV_06 is SOV_VDV_spe
+export ModelFile_Spetsnaz_FireSupport_SOV_LOW is SOV_VDV_1_LOW
 
 //Spetsnaz_SOV
 export ModelFile_Spetsnaz_SOV is SOV_VDV_1
@@ -2448,13 +2459,41 @@ export ModelFile_Territorial_UK is     UK_Territorial_1
 export ModelFile_Territorial_UK_02 is  UK_Territorial_2
 export ModelFile_Territorial_UK_LOW is UK_Territorial_1
 
-
 //-------------------------------------------------------------------------------
 //-----------------------------------SOLDATS BEL---------------------------------
 //-------------------------------------------------------------------------------
 BEL_Chasseur_1 is 'GameData:/Assets/3D/Units/BEL/Infanterie/Belgian_Chasseurs/Chasseurs_1.Ase2NdfBin'
 BEL_Chasseur_2 is 'GameData:/Assets/3D/Units/BEL/Infanterie/Belgian_Chasseurs/Chasseurs_2.Ase2NdfBin'
 BEL_Chasseur_NCO is 'GameData:/Assets/3D/Units/BEL/Infanterie/Belgian_Chasseurs/Chasseurs_NCO.Ase2NdfBin'
+
+BEL_ESR_1 is 'GameData:/Assets/3D/Units/BEL/Infanterie/ESR/ESR_1.Ase2NdfBin'
+BEL_ESR_2 is 'GameData:/Assets/3D/Units/BEL/Infanterie/ESR/ESR_2.Ase2NdfBin'
+
+BEL_Linie_1 is 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_1.Ase2NdfBin'
+BEL_Linie_2 is 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_2.Ase2NdfBin'
+BEL_Linie_NCO is 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_NCO.Ase2NdfBin'
+BEL_Linie_Officer is 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_Officer.Ase2NdfBin'
+BEL_Linie_spe is 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_spe.Ase2NdfBin'
+
+BEL_Lux_1 is 'GameData:/Assets/3D/Units/BEL/Infanterie/Lux/Lux_1.Ase2NdfBin'
+BEL_Lux_2 is 'GameData:/Assets/3D/Units/BEL/Infanterie/Lux/Lux_2.Ase2NdfBin'
+BEL_Lux_NCO is 'GameData:/Assets/3D/Units/BEL/Infanterie/Lux/Lux_NCO.Ase2NdfBin'
+BEL_Lux_Officer is 'GameData:/Assets/3D/Units/BEL/Infanterie/Lux/Lux_Officer.Ase2NdfBin'
+
+BEL_MP_1 is 'GameData:/Assets/3D/Units/BEL/Infanterie/MP/MP.Ase2NdfBin'
+BEL_MP_Para is 'GameData:/Assets/3D/Units/BEL/Infanterie/MP/ParaMP.Ase2NdfBin'
+
+BEL_Para_1 is 'GameData:/Assets/3D/Units/BEL/Infanterie/Para/Para_1.Ase2NdfBin'
+BEL_Para_2 is 'GameData:/Assets/3D/Units/BEL/Infanterie/Para/Para_2.Ase2NdfBin'
+BEL_Para_NCO is 'GameData:/Assets/3D/Units/BEL/Infanterie/Para/Para_NCO.Ase2NdfBin'
+BEL_Para_Officer is 'GameData:/Assets/3D/Units/BEL/Infanterie/Para/Para_Officer.Ase2NdfBin'
+BEL_Para_spe is 'GameData:/Assets/3D/Units/BEL/Infanterie/Para/Para_spe.Ase2NdfBin'
+
+BEL_ParaCmdo_1 is 'GameData:/Assets/3D/Units/BEL/Infanterie/ParaCmdo/ParaCmdo_1.Ase2NdfBin'
+BEL_ParaCmdo_2 is 'GameData:/Assets/3D/Units/BEL/Infanterie/ParaCmdo/ParaCmdo_2.Ase2NdfBin'
+BEL_ParaCmdo_NCO is 'GameData:/Assets/3D/Units/BEL/Infanterie/ParaCmdo/ParaCmdo_NCO.Ase2NdfBin'
+BEL_ParaCmdo_Officer is 'GameData:/Assets/3D/Units/BEL/Infanterie/ParaCmdo/ParaCmdo_Officer.Ase2NdfBin'
+BEL_ParaCmdo_spe is 'GameData:/Assets/3D/Units/BEL/Infanterie/ParaCmdo/ParaCmdo_spe.Ase2NdfBin'
 //-------------------------------------------------------------------------------
 //Scout_BEL
 export ModelFile_Scout_BEL is BEL_Chasseur_1
@@ -2465,4 +2504,48 @@ export ModelFile_Scout_BEL_05 is BEL_Chasseur_NCO
 export ModelFile_Scout_BEL_06 is BEL_Chasseur_1
 export ModelFile_Scout_BEL_LOW is BEL_Chasseur_1
 
+//-------------------------------------------------------------------------------
+//-----------------------------------SOLDATS POL---------------------------------
+//-------------------------------------------------------------------------------
+POL_Komandosi_1 is 'GameData:/Assets/3D/Units/POL/Infanterie/Komandosi/Komandosi_1.Ase2NdfBin'
+POL_Komandosi_2 is 'GameData:/Assets/3D/Units/POL/Infanterie/Komandosi/Komandosi_2.Ase2NdfBin'
+POL_Komandosi_NCO is 'GameData:/Assets/3D/Units/POL/Infanterie/Komandosi/Komandosi_NCO.Ase2NdfBin'
+POL_Komandosi_Officer is 'GameData:/Assets/3D/Units/POL/Infanterie/Komandosi/Komandosi_Officer.Ase2NdfBin'
+POL_Komandosi_spe is 'GameData:/Assets/3D/Units/POL/Infanterie/Komandosi/Komandosi_spe.Ase2NdfBin'
 
+POL_Niebieskie_1 is 'GameData:/Assets/3D/Units/POL/Infanterie/Niebieskie/Niebieskie_1.Ase2NdfBin'
+POL_Niebieskie_2 is 'GameData:/Assets/3D/Units/POL/Infanterie/Niebieskie/Niebieskie_2.Ase2NdfBin'
+POL_Niebieskie_NCO is 'GameData:/Assets/3D/Units/POL/Infanterie/Niebieskie/Niebieskie_NCO.Ase2NdfBin'
+POL_Niebieskie_Officer is 'GameData:/Assets/3D/Units/POL/Infanterie/Niebieskie/Niebieskie_Officer.Ase2NdfBin'
+POL_Niebieskie_spe is 'GameData:/Assets/3D/Units/POL/Infanterie/Niebieskie/Niebieskie_spe.Ase2NdfBin'
+
+POL_Piechota_1 is 'GameData:/Assets/3D/Units/POL/Infanterie/Piechota/Piechota_1.Ase2NdfBin'
+POL_Piechota_2 is 'GameData:/Assets/3D/Units/POL/Infanterie/Piechota/Piechota_2.Ase2NdfBin'
+POL_Piechota_NCO is 'GameData:/Assets/3D/Units/POL/Infanterie/Piechota/Piechota_NCO.Ase2NdfBin'
+POL_Piechota_Officer is 'GameData:/Assets/3D/Units/POL/Infanterie/Piechota/Piechota_Officer.Ase2NdfBin'
+
+POL_Spado_1 is 'GameData:/Assets/3D/Units/POL/Infanterie/Spado/Spado_1.Ase2NdfBin'
+POL_Spado_2 is 'GameData:/Assets/3D/Units/POL/Infanterie/Spado/Spado_2.Ase2NdfBin'
+POL_Spado_NCO is 'GameData:/Assets/3D/Units/POL/Infanterie/Spado/Spado_NCO.Ase2NdfBin'
+POL_Spado_Officer is 'GameData:/Assets/3D/Units/POL/Infanterie/Spado/Spado_Officer.Ase2NdfBin'
+POL_Spado_spe is 'GameData:/Assets/3D/Units/POL/Infanterie/Spado/Spado_spe.Ase2NdfBin'
+
+POL_WCW_1 is 'GameData:/Assets/3D/Units/POL/Infanterie/WCW/WCW_1.Ase2NdfBin'
+POL_WCW_2 is 'GameData:/Assets/3D/Units/POL/Infanterie/WCW/WCW_2.Ase2NdfBin'
+
+//-------------------------------------------------------------------------------
+//-----------------------------------SOLDATS NL----------------------------------
+//-------------------------------------------------------------------------------
+NL_Commando_1 is 'GameData:/Assets/3D/Units/NL/Infanterie/Commando/Commando_1.Ase2NdfBin'
+NL_Commando_2 is 'GameData:/Assets/3D/Units/NL/Infanterie/Commando/Commando_2.Ase2NdfBin'
+NL_Commando_NCO is 'GameData:/Assets/3D/Units/NL/Infanterie/Commando/Commando_NCO.Ase2NdfBin'
+NL_Infanterie_1 is 'GameData:/Assets/3D/Units/NL/Infanterie/Infanterie/Infanterie_1.Ase2NdfBin'
+NL_Infanterie_2 is 'GameData:/Assets/3D/Units/NL/Infanterie/Infanterie/Infanterie_NCO.Ase2NdfBin'
+NL_Infanterie_NCO is 'GameData:/Assets/3D/Units/NL/Infanterie/Infanterie/Infanterie_NCO.Ase2NdfBin'
+NL_Infanterie_Officer is 'GameData:/Assets/3D/Units/NL/Infanterie/Infanterie/Infanterie_Officer.Ase2NdfBin'
+NL_KMAR_1 is 'GameData:/Assets/3D/Units/NL/Infanterie/KMAR/KMAR_1.Ase2NdfBin'
+NL_KMAR_2 is 'GameData:/Assets/3D/Units/NL/Infanterie/KMAR/KMAR_2.Ase2NdfBin'
+NL_MarinierCmdo_1 is 'GameData:/Assets/3D/Units/NL/Infanterie/MarinierCmdo/MarinierCmdo_1.Ase2NdfBin'
+NL_MarinierCmdo_NCO is 'GameData:/Assets/3D/Units/NL/Infanterie/MarinierCmdo/MarinierCmdo_NCO.Ase2NdfBin'
+NL_Natres_1 is 'GameData:/Assets/3D/Units/NL/Infanterie/Natres/Natres_1.Ase2NdfBin'
+NL_Natres_2 is 'GameData:/Assets/3D/Units/NL/Infanterie/Natres/Natres_2.Ase2NdfBin'

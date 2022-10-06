@@ -133,7 +133,7 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     //Defense Position
     OrderedDefensePointTypeToUnitTag =
     [
-        (EDefensePointType/NearCover, ["Helo", "Helo_Gunship"]),
+        (EDefensePointType/NearCover, ["Helo"]),
         (EDefensePointType/Hidden, ["InfmapCommander"]),
         (EDefensePointType/HardCover | EDefensePointType/GunnerNest | EDefensePointType/Trench, ["Infanterie", "Canon_AT", "ChasseurDeChar", "Canon_AA", "Char", "Infanterie_Reco", "Vehicule_Reco"]),
     ]
@@ -295,7 +295,7 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     ProbabilityDropSmokeOnCrawl = 1.0
 
     //Override du safePath
-    AlwaysIgnoreSafePathTags = ["Char", "ChasseurDeChar", "Helo", "Helo_Gunship"]
+    AlwaysIgnoreSafePathTags = ["Char", "ChasseurDeChar", "Helo_AT", "Helo_Gunship"]
 
     //Smart Order Custom Zone Filler
     ZoneFillerType = TCircleZoneFiller(Radius = 3)//TSquareZoneFiller(Size = 3)//
@@ -334,8 +334,17 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
         (IADifficulty/Facile, (1.0, 1.5)),
         (IADifficulty/Normal, (0.8, 1.25)),
         (IADifficulty/Difficile, (0.8, 1.25)),
-        (IADifficulty/TresDifficile, (0.65, 1.1)),     // On prend plus de rique a partir de very hard
+        (IADifficulty/TresDifficile, (0.65, 1.1)),     // On prend plus de risque a partir de very hard
         (IADifficulty/PlusDifficile, (0.65, 1.1)),
+    ]
+
+    MinimumScoreRatioForStayInCommandZonePerIADifficulty = MAP
+    [
+        (IADifficulty/AnyDifficulty, 1.0),
+        (IADifficulty/Normal, 0.8),
+        (IADifficulty/Difficile, 0.8),
+        (IADifficulty/TresDifficile, 0.7),     // On prend plus de risque a partir de very hard
+        (IADifficulty/PlusDifficile, 0.7),
     ]
 
     ProductionCapturableRadiusCheckMultiplier = 3.0
@@ -388,12 +397,14 @@ AirstrikeConstantes is TIAStratAirstrikeConstantes
     OpportunisticSingleTargetAirstrikeSettings = [
         (["Avion_Assaut"], 3),
         (["Avion_AT"], 3),
+        (["Avion_Chasseur"], 3),
         (["Avion_Chasseur_Bombardier"], 1),
         (["Avion_SEAD"], 3)
     ]
     OpportunisticTargetInGroupAirstrikeSettings = [
         (["Avion_Bombardier"], 3),
         (["Avion_Chasseur_Bombardier"], 1),
+        (["Avion_Napalm"], 3),
     ]
     TargetPowerForOpportunisticSingleTargetAirStrike = 50
     TargetPowerForOpportunisticTargetInGroupAirStrike = 75
@@ -405,6 +416,7 @@ AirstrikeConstantes is TIAStratAirstrikeConstantes
     StrikeLimitations = [
         ("Avion_AT", ["Char", "ChasseurDeChar", "Vehicule_Appui", "Vehicule_CMD", "Vehicule_Reco", "Artillerie"]),
         ("Avion_SEAD", ["Canon_AA"]),
+        ("Avion_Napalm", ["Infanterie"]),
     ]
 
     AirplaneWaitForDecisionTime = 5
@@ -433,6 +445,7 @@ ArtilleryStrikeConstantes is TIAStratArtilleryStrikeConstantes
         (["Infanterie"], 1.0),
         (["Vehicule"], 0.3),
         (["Char"], 1.0),
+        (["Helo"], 0.5),
     ]
 
     ArtilleryRangeRatioPosition = 0.30
@@ -502,8 +515,10 @@ export DefaultWargameTransport is
     ]
     ,
     [
-        ("Vehicule_Transport_Arme", Transport_Attacker),
-        ("Vehicule_Transport", Transport_Prioritary),
+        ("Vehicule_Transport_Arme", False),
+        ("Vehicule_Transport", True),
+        ("Helo_Transport", True),
+        ("Helo_Transport_Arme", False),
     ]
 )
 //--------------------------------------------------------------------------------------//

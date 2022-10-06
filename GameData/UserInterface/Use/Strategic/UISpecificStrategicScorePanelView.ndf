@@ -116,8 +116,6 @@ private AffichageAxeAllies is BUCKListDescriptor
 
 //-------------------------------------------------------------------------------------
 
-CampsRadioButtonManager is TBUCKRadioButtonManager()
-
 template BoutonDesCamps
 [
     ElementName : string,
@@ -137,7 +135,7 @@ is BUCKButtonDescriptor
 
     IsTogglable = true
     CannotDeselect = true
-    RadioButtonManager = CampsRadioButtonManager
+    RadioButtonManager = PawnLossesTeamButtonManager
 
     HasBorder = false
     BorderThicknessToken = "1"

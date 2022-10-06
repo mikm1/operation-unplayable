@@ -317,6 +317,19 @@ BattlegroupsButton is BUCKButtonDescriptor
                     TextColor = "gris_load"
                     TextSize = "32"
                 ),
+                BUCKTextureDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        AlignementToFather = [1, 0.0]
+                        AlignementToAnchor = [1, 0.0]
+                        MagnifiableOffset = [-65.0, 73.0]
+                        MagnifiableWidthHeight = [20.0, 20.0]
+                    )
+                    TextureToken = 'showRoomTexture_maximize'
+                    TextureColorToken = 'MarronPanel_noir_toggled2'
+                    Rotation = -90
+                ),
             ]
         )
     ]

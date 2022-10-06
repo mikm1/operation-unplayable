@@ -735,19 +735,18 @@ EndgameTVScreenDisplay is BUCKContainerDescriptor
 
     Components =
     [
-        BUCKTextureDescriptor
-        (
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                MagnifiableWidthHeight = [539.0*0.77 , 559*0.77]
-                AlignementToAnchor = [0.0, 0.0]
-                AlignementToFather = [0.0, 0.0]
-                MagnifiableOffset = [-20, 5]
-            )
-            TextureToken = 'EndGame_ForegroundEcranXP'
-            TextureColorToken = 'Blanc_multi'
-            TextureDrawer = 'MonochromeMonitorEffect'
-        ),
+        {BUCKTextureDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        MagnifiableWidthHeight = [539.0*0.77 , 559*0.77]
+                        AlignementToAnchor = [0.0, 0.0]
+                        AlignementToFather = [0.0, 0.0]
+                        MagnifiableOffset = [-20, -28]
+                    )
+                    TextureToken = 'EndGame_ForegroundEcranXP'
+                    TextureDrawer = 'MonochromeMonitorEffect'
+                ),}
         BUCKPerspectiveWarpOffscreenContainerDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
@@ -766,18 +765,7 @@ EndgameTVScreenDisplay is BUCKContainerDescriptor
                 EndgameTabButtons
             ]
         ),
-        BUCKTextureDescriptor
-        (
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                MagnifiableWidthHeight = [539.0*0.77 , 559*0.77]
-                AlignementToAnchor = [0.0, 0.0]
-                AlignementToFather = [0.0, 0.0]
-                MagnifiableOffset = [-20, 5]
-            )
-            TextureToken = 'EndGame_ForegroundEcranXP'
-            TextureDrawer = 'ColorMultiply_Additive'
-        )
+
 
     ]
 )
@@ -832,6 +820,46 @@ private EndgameTabButtons is BUCKListDescriptor
                 TextToken = "ENDBPR"
             )
         ),
+        // Navigation buttons
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = EndgameTabButton
+            (
+                ElementName = 'RematchButton'
+                TextToken = 'BTN_NEXT'
+                BackgroundBlockColorToken = "loginBoutonBackground_highlightedCyan"
+                TextStyle = "TextStyleEcranMoniteur_cyan"
+                TextColorToken = "loginBlanc"
+                BorderLineColorToken = "Cyan"
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = EndgameTabButton
+            (
+                ElementName = 'SaveReplayButton'
+                TextToken = 'AB_SAVER'
+                BackgroundBlockColorToken = "loginBoutonBackground_highlightedCyan"
+                TextStyle = "TextStyleEcranMoniteur_cyan"
+                TextColorToken = "loginBlanc"
+                BorderLineColorToken = "Cyan"
+            )
+        ),
+        //------------------------------------------------------
+        // Exit button
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = EndgameTabButton
+            (
+                ElementName = 'ExitButton'
+                TextToken = 'AB_QUITGAM'
+                Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
+                BackgroundBlockColorToken = "loginBoutonBackground_highlightedCyan"
+                TextStyle = "TextStyleEcranMoniteur_cyan"
+                TextColorToken = "loginBlanc"
+                BorderLineColorToken = "Cyan"
+            )
+        )
     ]
 )
 
@@ -843,6 +871,12 @@ template EndgameTabButton
 [
     ElementName : string = '',
     TextToken : string = '',
+    Mapping : TEugBMutablePBaseClass = nil,
+    TextStyle : string = "TextStyleEcranMoniteur",
+    TextColorToken : string = "loginBlanc",
+    BorderLineColorToken : string = "VertLogin",
+    BackgroundBlockColorToken : string = "loginBoutonBackground_vert",
+
 ] is ConfirmButton
 (
     ElementName = <ElementName>
@@ -853,15 +887,21 @@ template EndgameTabButton
     IsTogglable = true
     RadioButtonManager = EndgameRadioButtonManager
 
-    ButtonMagnifiableWidthHeight = [300.0, 50.0]
+    ButtonMagnifiableWidthHeight = [300.0, 35.0]
     TextTypefaceToken = "UISecondFont"
-    TextStyle = "TextStyleEcranMoniteur_cyan"
-    TextColorToken = "loginBlanc"
-    BorderLineColorToken = "VertLogin"
+    TextStyle = <TextStyle>
+    TextColorToken = <TextColorToken>
+    BorderLineColorToken = <BorderLineColorToken>
+    BackgroundBlockColorToken = <BackgroundBlockColorToken>
     HasBackground = true
-    BackgroundBlockColorToken = "loginBoutonBackground_vert"
+
     TextSizeToken = "28"
     BorderThicknessToken = "3"
+
+    LeftClickSound = ClickSound_Add_Card
+    HoverSound = ClickSound_Change_Selector
+
+    Mapping = <Mapping>
 )
 
 //-------------------------------------------------------------------------------------
@@ -1582,7 +1622,7 @@ EngamePanelTab is BUCKContainerDescriptor
         TacticalEndgameTabsContainer,
 
         // Buttons
-        TacticalEndgameButtonsArea,
+        //TacticalEndgameButtonsArea,
     ]
 )
 
@@ -2570,19 +2610,19 @@ ScoreByTeamTitle is BUCKContainerDescriptor
         BUCKTextDescriptor
         (
             ElementName = "ScoreByTeamTitleName"
-            TextToken = "EG_SBTE"
+            TextToken = "TWOVALFORM"
             ComponentFrame = TUIFramePropertyRTTI
             (
                 RelativeWidthHeight = [0.0, 1.0]
-                AlignementToFather = [0.05, 0.5]
-                AlignementToAnchor = [0.05, 0.5]
+                AlignementToFather = [0.0, 0.5]
+                AlignementToAnchor = [0.0, 0.5]
             )
 
             TextStyle = "Default"
 
             ParagraphStyle = TParagraphStyleRTTI
             (
-                Alignment = UIText_Center
+                Alignment = UIText_Left
                 VerticalAlignment = UIText_VerticalCenter
                 InterLine = 0
             )
@@ -2591,6 +2631,7 @@ ScoreByTeamTitle is BUCKContainerDescriptor
             TextDico = ~/LocalisationConstantes/dico_interface_outgame
             TextSize = TacticalEndgameTitleFontSize
             TextColor = "ListeExcel/Cartouche"
+            TextPadding = TRTTILength4(Magnifiable = [10.0, 0.0, 0.0, 0.0])
         ),
         BUCKTextDescriptor
         (
@@ -2686,11 +2727,18 @@ UISpecificTacticalEndGameViewDescriptor is TUISpecificTacticalEndGameViewDescrip
         (EAllegiance/Pacte, "playerHelper/Pact_line"),
     ]
 
-    AllegianceDico = ~/LocalisationConstantes/dico_interface_outgame
-    AllegianceTokens = MAP
+    ForceDico = ~/LocalisationConstantes/dico_interface_outgame
+    ForceTokens = MAP
     [
-        (EAllegiance/Otan, "NATO"),
-        (EAllegiance/Pacte, "PACT"),
+        (EAllegiance/Otan, "BLUFOR"),
+        (EAllegiance/Pacte, "REDFOR"),
+    ]
+
+    NationaliteDico = ~/LocalisationConstantes/dico_interface_outgame
+    NationaliteTokens = MAP
+    [
+        (ENationalite/OTAN, "NATO"),
+        (ENationalite/PACT, "PACT"),
     ]
 
     IADico = ~/LocalisationConstantes/dico_interface_outgame
@@ -2756,6 +2804,7 @@ UISpecificTacticalEndGameViewDescriptor is TUISpecificTacticalEndGameViewDescrip
         (~/EGameEndingCondition/ObjectivePointCaptured, "EG_objCW"),
         (~/EGameEndingCondition/AllZonesControled,      "EG_objW"),
         (~/EGameEndingCondition/ArmyDestroyed,          "EG_armyW"),
+        (~/EGameEndingCondition/NoMoreZone,             "EG_nozoneW"),
         (~/EGameEndingCondition/Time,                   "EG_endTim"),
     ]
     LossTokenByGameEndingCondition = MAP
@@ -2767,6 +2816,7 @@ UISpecificTacticalEndGameViewDescriptor is TUISpecificTacticalEndGameViewDescrip
         (~/EGameEndingCondition/ObjectivePointCaptured, "EG_objCL"),
         (~/EGameEndingCondition/AllZonesControled,      "EG_objL"),
         (~/EGameEndingCondition/ArmyDestroyed,          "EG_armyL"),
+        (~/EGameEndingCondition/NoMoreZone,             "EG_nozoneL"),
         (~/EGameEndingCondition/Time,                   "EG_endTim"),
     ]
     VictoryTokens = MAP

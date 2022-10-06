@@ -2,13 +2,13 @@ HintManagementProperties is TUIHintManagementProperties
 (
     AppearAfterDuration = 1.0
     DisapearAfterDuration = 0.4
-    ExtendAfterDuration = 1.0
+    ExtendAfterDuration = 0.01
 
     PointerFollowingProperties = TPointerFollowingPropertiesRTTI
     (
-        MagnifiableOffset = [40.0, 0.0]
+        MagnifiableOffset = [25.0, 0.0]
         HorizontalPlacement = HorizontalPlacement/Right
-        VerticalPlacement = VerticalPlacement/Up
+        VerticalPlacement = VerticalPlacement/Down
         OutOfBorderHorizontalAction = OutOfBorderAction/SwitchPlacement
         OutOfBorderVerticalAction = OutOfBorderAction/SwitchPlacement
     )

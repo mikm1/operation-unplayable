@@ -55,6 +55,7 @@ export Generic_ArtilleryStrikeSettingHolder is TArtilleryStrikeSettingHolder(
         (["Vehicule"], 0.5),
         (["Char"], 0.3),
         (["Char_SuperCMD"], 0.5),
+        (["Helo"], 0.5),
     ]
 )
 //-------------------------------------------------------------------------
@@ -78,6 +79,7 @@ export GentBTAtk_ArtilleryStrikeSettingHolder is TArtilleryStrikeSettingHolder(
         (["Vehicule"], 0.5),
         (["Char"], 0.3),
         (["Char_SuperCMD"], 0.5),
+        (["Helo"], 0.5),
     ]
 )
 
@@ -118,6 +120,7 @@ export Artillery_Sniper is TMacroActionDescriptor_Artillery_Specific
                 (["Vehicule"], 0.3),
                 (["Char"], 0.5),
                 (["Char_SuperCMD"], 1.0),
+                (["Helo"], 0.5),
             ]
         ),
         TArtilleryDeployOnRoadSettingHolder(),
@@ -182,6 +185,7 @@ export Artillery_Support is TMacroActionDescriptor_Artillery_Specific
                 (["Vehicule_Logistique"], 0.5),
                 (["Vehicule"], 1.0),
                 (["Char"], 0.5),
+                (["Helo"], 0.5),
             ]
         ),
 
@@ -218,6 +222,7 @@ export GenBTAtk_Artillery_Support is TMacroActionDescriptor_Artillery_Specific
                 (["Vehicule_Logistique"], 0.5),
                 (["Vehicule"], 1.0),
                 (["Char"], 0.5),
+                (["Helo"], 0.5),
             ]
         ),
 
@@ -270,6 +275,7 @@ export ArtilleryExpensiveStrikeSettingHolder is TArtilleryStrikeSettingHolder(
         (["Vehicule_Logistique"], 0.5),
         (["Vehicule"], 0.5),
         (["Char"], 0.5),
+        (["Helo"], 0.5),
     ]
 )
 //-------------------------------------------------------------------------
@@ -287,6 +293,7 @@ export VHard_ArtilleryExpensiveStrikeSettingHolder is TArtilleryStrikeSettingHol
         (["Vehicule_Logistique"], 0.5),
         (["Vehicule"], 0.5),
         (["Char"], 0.5),
+        (["Helo"], 0.5),
     ]
 )
 //-------------------------------------------------------------------------
@@ -308,6 +315,7 @@ export GenBTAtk_ArtilleryExpensiveStrikeSettingHolder is TArtilleryStrikeSetting
         (["Vehicule_Logistique"], 0.5),
         (["Vehicule"], 0.5),
         (["Char"], 0.5),
+        (["Helo"], 0.5),
     ]
 )
 //-------------------------------------------------------------------------
@@ -343,6 +351,7 @@ export GenBTDef_Artillery_FrontLane is TMacroActionDescriptor_Artillery_Specific
                 (["Vehicule_Logistique"], 0.5),
                 (["Vehicule"], 1.5),
                 (["Char"], 1.0),
+                (["Helo"], 0.5),
             ]
         ),
         TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Artillery_Support] DistanceToOptimumStartDuringDeployment = 3000*Metre),

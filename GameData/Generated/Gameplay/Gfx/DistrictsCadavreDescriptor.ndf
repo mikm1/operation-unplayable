@@ -82,7 +82,6 @@ export Descriptor_UnitCadavre_Quartier_Gros is TEntityDescriptor(
                 KillAsAirplane = False
                 KillAsBatiment = True
                 CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu_Batiment
-                DisappearanceDuration = $/GFX/Everything/CadavreFadeDurationApresFeu_Batiment
                 CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
                 CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
                 FadingDuration = 6
@@ -179,7 +178,6 @@ export Descriptor_UnitCadavre_Quartier_HLM is TEntityDescriptor(
                 KillAsAirplane = False
                 KillAsBatiment = True
                 CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu_Batiment
-                DisappearanceDuration = $/GFX/Everything/CadavreFadeDurationApresFeu_Batiment
                 CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
                 CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
                 FadingDuration = 6
@@ -276,7 +274,6 @@ export Descriptor_UnitCadavre_Quartier_Moyen is TEntityDescriptor(
                 KillAsAirplane = False
                 KillAsBatiment = True
                 CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu_Batiment
-                DisappearanceDuration = $/GFX/Everything/CadavreFadeDurationApresFeu_Batiment
                 CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
                 CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
                 FadingDuration = 6
@@ -373,7 +370,6 @@ export Descriptor_UnitCadavre_Quartier_Petit is TEntityDescriptor(
                 KillAsAirplane = False
                 KillAsBatiment = True
                 CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu_Batiment
-                DisappearanceDuration = $/GFX/Everything/CadavreFadeDurationApresFeu_Batiment
                 CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
                 CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
                 FadingDuration = 6

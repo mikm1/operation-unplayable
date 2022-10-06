@@ -510,27 +510,30 @@ AffichageLigneAttaqueDefense is BUCKListDescriptor
         BUCKListElementDescriptor
         (
             ComponentDescriptor = ~/AffichageDesValeursCombatAttaque
-
         ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = ~/AffichageDesValeursCombatDefense
-
         ),
     ]
 )
 
+//-------------------------------------------------------------------------------------
+
 AffichageDesValeursCombatAttaque is BUCKListDescriptor
 (
     ElementName = "AttackPanel"
-    ComponentFrame = TUIFramePropertyRTTI ()
+    ComponentFrame = TUIFramePropertyRTTI()
+
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
     Axis = ~/ListAxis/Horizontal
+
     HasBackground = true
     BackgroundBlockColorToken = 'SM_Noir'
-    FirstMargin = TRTTILength (Magnifiable = 5)
-    //InterItemMargin = TRTTILength ( Magnifiable = 5)
-    LastMargin = TRTTILength (Magnifiable = 5)
+
+    FirstMargin = TRTTILength(Magnifiable = 5.0)
+    LastMargin = TRTTILength(Magnifiable = 5.0)
+
     Elements =
     [
         BUCKListElementDescriptor
@@ -544,10 +547,11 @@ AffichageDesValeursCombatAttaque is BUCKListDescriptor
                     AlignementToFather = [0.0, 0.0]
                 )
                 TextureFrame = TUIFramePropertyRTTI
-                    ( RelativeWidthHeight = [0.7, 0.7]
-                        AlignementToAnchor = [0.5, 0.5]
-                        AlignementToFather = [0.5, 0.5]
-                        )
+                (
+                    RelativeWidthHeight = [0.7, 0.7]
+                    AlignementToAnchor = [0.5, 0.5]
+                    AlignementToFather = [0.5, 0.5]
+                )
                 TextureToken = 'UseStrategic_SelectionPanel_Attack'
                 TextureColorToken = 'BlancEquipe'
             )
@@ -565,6 +569,8 @@ AffichageDesValeursCombatAttaque is BUCKListDescriptor
     ]
 )
 
+//-------------------------------------------------------------------------------------
+
 AffichageDesValeursCombatDefense is BUCKListDescriptor
 (
     ElementName = "DefensePanel"
@@ -574,8 +580,8 @@ AffichageDesValeursCombatDefense is BUCKListDescriptor
 
     HasBackground = true
     BackgroundBlockColorToken = 'BlancEquipe'
-    FirstMargin = TRTTILength (Magnifiable = 5)
-    LastMargin = TRTTILength (Magnifiable = 5)
+    FirstMargin = TRTTILength(Magnifiable = 5.0)
+    LastMargin = TRTTILength(Magnifiable = 5.0)
 
     Elements =
     [
@@ -604,6 +610,7 @@ AffichageDesValeursCombatDefense is BUCKListDescriptor
         ),
     ]
 )
+
 //-------------------------------------------------------------------------------------
 
 private PanelInfosBataille is BUCKListDescriptor
@@ -656,6 +663,7 @@ BUCKSpecificStrategicStartBattleMainComponentDescriptor is BUCKTranslationAnimat
     TriggerWhenSetVisible = true
     AnimationTotalDuration = 0.10
     UseRewind = true
+
     FramePropertyAfterAnimation = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
@@ -678,7 +686,7 @@ PanelAide is PanelRoundedCorner
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [600,140]
+        MagnifiableWidthHeight = [600.0, 140.0]
         AlignementToAnchor = [0.5, 0.0]
         AlignementToFather = [0.5, 0.0]
         MagnifiableOffset = [0,150]
@@ -687,37 +695,31 @@ PanelAide is PanelRoundedCorner
     BackgroundBlockColorToken = 'SM_RifleGreen_75'
     BorderLineColorToken = 'SM_Grullo'
 
-
     Components =
-
     [
         BUCKListDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
+                RelativeWidthHeight = [1.0, 0.0]
                 AlignementToFather = [0.5, 0.0]
                 AlignementToAnchor = [0.5, 0.0]
-                RelativeWidthHeight = [1,0]
+            )
 
-                )
+            Axis = ~/ListAxis/Vertical
             FirstMargin = TRTTILength (Magnifiable = 10)
             InterItemMargin = TRTTILength( Magnifiable = 6.0 )
 
-            Axis = ~/ListAxis/Vertical
             Elements =
-
             [
                 BUCKListElementDescriptor
                 (
                     ComponentDescriptor = BUCKTextDescriptor
                     (
-
-
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            RelativeWidthHeight = [1,0]
-                            MagnifiableWidthHeight = [0,20]
-
+                            RelativeWidthHeight = [1.0, 0.0]
+                            MagnifiableWidthHeight = [0.0, 20.0]
                         )
 
                         ParagraphStyle = paragraphStyleTextCenter
@@ -736,20 +738,17 @@ PanelAide is PanelRoundedCorner
 
                         TextColor = "SM_Grullo"
                         TextSize = "24"
-                        )
-                    ),
+                    )
+                ),
                 BUCKListElementDescriptor
                 (
                     ComponentDescriptor = BUCKTextDescriptor
                     (
-
-
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            MagnifiableWidthHeight = [400,0]
+                            MagnifiableWidthHeight = [400.0, 0.0]
                             AlignementToFather = [0.5, 0.0]
                             AlignementToAnchor = [0.5, 0.0]
-
                         )
 
                         ParagraphStyle = CenteredParagraphStyle
@@ -781,6 +780,8 @@ PanelAide is PanelRoundedCorner
     ]
 )
 
+//------------------------------------------------------------------------------
+
 private StartBattleHeader is PanelRoundedCorner
 (
     ElementName = "StartBattleHeader"
@@ -789,6 +790,7 @@ private StartBattleHeader is PanelRoundedCorner
     (
         RelativeWidthHeight = [1.0, 0.0]
     )
+
     FitStyle = ~/ContainerFitStyle/FitToContentVertically
     RoundedVertexes = [false, true, true, false]
 
@@ -797,7 +799,6 @@ private StartBattleHeader is PanelRoundedCorner
 
     Components =
     [
-
         BUCKListDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
@@ -808,6 +809,7 @@ private StartBattleHeader is PanelRoundedCorner
             Axis = ~/ListAxis/Vertical
             FirstMargin = TRTTILength (Magnifiable = 10.0)
             LastMargin = TRTTILength (Magnifiable = 10.0)
+
             Elements =
             [
                 BUCKListElementDescriptor
@@ -831,16 +833,17 @@ private StartBattleListeDesPionsEngaged is BUCKListDescriptor
     ElementName = "StartBattleListeDesPionsEngaged"
 
     UniqueName = 'spotLightPanelStartBattlePionEngaged'
-    SpotlightComponent = SpotlightDescriptor()
-    SpotlightLayer = $/UserInterface/UILayer_2DInterfaceDropDown_OutGame
 
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [SelectionPanelWidth, 0.0]
     )
-    //HasBackground = true
-    BackgroundBlockColorToken = 'H2_bleu_2'
+
     Axis = ~/ListAxis/Vertical
+
+    SpotlightComponent = SpotlightDescriptor()
+    SpotlightLayer = $/UserInterface/UILayer_2DInterfaceDropDown_OutGame
+
     Elements =
     [
         BUCKListElementDescriptor
@@ -1016,8 +1019,8 @@ is BUCKListElementDescriptor
     (
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = (<ParentAxis> == ~/ListAxis/Horizontal ?  [0.0, 0.0] : [0.0, 30.0])
             RelativeWidthHeight = (<ParentAxis> == ~/ListAxis/Horizontal ?  [1.0, 1.0] : [1.0, 0.0])
+            MagnifiableWidthHeight = (<ParentAxis> == ~/ListAxis/Horizontal ?  [0.0, 0.0] : [0.0, 30.0])
         )
 
         Components =
@@ -1105,6 +1108,7 @@ is BUCKListDescriptor
         AlignementToFather = [Alignement, 0.0]
         AlignementToAnchor = [Alignement, 0.0]
     )
+
     ChildFitToContent = true
     Axis = <Axis>
     HasBackground = <HasBackground>

@@ -38,6 +38,7 @@ export Stop_AuthorizedTags is [
 
 export Supply_AuthorizedTags is [
     "Vehicule_Logistique",
+    "Helo_Logistique",
 ]
 
 
@@ -46,6 +47,7 @@ export Supply_AuthorizedTags is [
 export Attack_ExcludedTags is [
     "Artillerie",
     "Vehicule_Logistique",
+    "Helo_Logistique",
     "Avion",
     "Vehicule_Transport",
 ]
@@ -53,6 +55,7 @@ export Attack_ExcludedTags is [
 export Hold_ExcludedTags is [
     "Artillerie",
     "Vehicule_Logistique",
+    "Helo_Logistique",
     "Avion",
     "Vehicule_Transport",
 ]

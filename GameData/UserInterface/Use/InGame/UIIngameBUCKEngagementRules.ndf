@@ -8,7 +8,7 @@ template EngagementButtonDescriptor
     LineBorderColor : string = "ButtonHUD/Border",
     BorderColor : string = "ButtonHUD/BigBorder",
     TextColor : string = "ButtonHUD/Text2",
-    TextSize : string = "11",
+    TextSize : string = "16",
     TextToken : string = "HUD_UNKN",
     HintTitleToken : string = "HUD_UNKN",
     HintBodyToken : string = "HUD_UNKN",
@@ -20,7 +20,7 @@ template EngagementButtonDescriptor
     CannotDeselect = true,
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [60.0, 0.0]
+        MagnifiableWidthHeight = [120.0, 0.0]
         RelativeWidthHeight = [0.0, 1.0]
     )
 ] is TCommonInGameCubeActionButtonDescriptor
@@ -106,6 +106,68 @@ template EngagementButtonDescriptor
             HintExtendedToken = <HintExtendedToken>
         ),
     ]
+)
+
+template IconeTitreRoe
+[
+    TextureToken : string,
+    HintTitleToken : string,
+    HintBodyToken : string
+] is BUCKTextureDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [22.0, 22.0]
+        AlignementToAnchor = [0.0, 0.5]
+        AlignementToFather = [0.0, 0.5]
+    )
+    TextureToken = <TextureToken>
+    Components =
+    [
+        BUCKSpecificHintableArea
+        (
+            HintTitleToken = <HintTitleToken>
+            HintBodyToken = <HintBodyToken>
+            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+        )
+    ]
+)
+template TextTitreRoE
+[
+    TextToken : string,
+    HintBodyToken : string,
+    HintTitleToken : string
+] is BUCKTextDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [140,0]
+        AlignementToAnchor = [0.0, 0.5]
+        AlignementToFather = [0.0, 0.5]
+    )
+
+    ParagraphStyle = ~/paragraphStyleTextLeftAlign
+
+    TextStyle = "Default"
+    TextPadding = TRTTILength4 (Magnifiable = [5,0,0,0])
+    HorizontalFitStyle = ~/FitStyle/UserDefined
+    VerticalFitStyle = ~/FitStyle/FitToContent
+
+    BigLineAction = ~/BigLineAction/MultiLine
+    TextColor       = "BlancEquipe"
+    TextSize        = "16"
+    TextToken       = <TextToken>
+    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
+
+    TypefaceToken   = "UIMainFont"
+
+    Hint = BUCKSpecificHintableArea
+    (
+        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+        HintTitleToken = <HintTitleToken>
+        HintBodyToken = <HintBodyToken>
+        HintExtendedToken = ''
+    )
 )
 
 // BOUTON POUR HIDE
@@ -199,7 +261,7 @@ orderConfigAdvanceElement is BUCKListElementDescriptor
 
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = [0.0, 25.0]
+            MagnifiableWidthHeight = [0.0, 30.0]
             RelativeWidthHeight = [0.0, 0.0]
         )
 
@@ -207,66 +269,31 @@ orderConfigAdvanceElement is BUCKListElementDescriptor
         InterItemMargin = TRTTILength( Magnifiable = 1.0)
         LastMargin = TRTTILength( Magnifiable = 6.0)
 
+        HasBackground = true
+        BackgroundBlockColorToken = 'TypeC'
+
         Axis = ~/ListAxis/Horizontal
         Elements =
         [
             BUCKListElementDescriptor
             (
-                ComponentDescriptor = BUCKTextureDescriptor
+                ComponentDescriptor = IconeTitreRoe
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [22.0, 22.0]
-                        AlignementToAnchor = [0.0, 0.0]
-                        AlignementToFather = [0.0, 0.0]
-                    )
                     TextureToken = 'ROE_advance'
-                    Components =
-                    [
-                        BUCKSpecificHintableArea
-                        (
-                            HintTitleToken = 'ROE_adht'
-                            HintBodyToken = 'ROE_adhb'
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-                    ]
+                    HintTitleToken = 'ROE_adht'
+                    HintBodyToken = 'ROE_adhb'
                 )
             ),
             // Title // ADVANCE
             BUCKListElementDescriptor
             (
-                ExtendWeight = 1.0
-                ComponentDescriptor = BUCKTextDescriptor
+                ComponentDescriptor = TextTitreRoE
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        RelativeWidthHeight = [0.0, 0.0]
-                        AlignementToAnchor = [0.0, 0.5]
-                        AlignementToFather = [0.0, 0.5]
-                    )
-
-                    ParagraphStyle = ~/paragraphStyleTextLeftAlign
-
-                    TextStyle = "Default"
-
-                    HorizontalFitStyle = ~/FitStyle/FitToParent
-                    VerticalFitStyle = ~/FitStyle/FitToContent
-
-                    TextColor       = "SD2_Blanc184"
-                    TextSize        = "11"
                     TextToken       = "ER_ADV"
-                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
-
-                    TypefaceToken   = "UIMainFont"
-
-                    Hint = BUCKSpecificHintableArea
-                    (
-                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        HintTitleToken = 'ROE_adht'
-                        HintBodyToken = 'ROE_adhb'
-                        HintExtendedToken = ''
-                    )
+                    HintTitleToken = 'ROE_adht'
+                    HintBodyToken = 'ROE_adhb'
                 )
+
             ),
             // Hunt
             BUCKListElementDescriptor
@@ -294,10 +321,16 @@ orderConfigAdvanceElement is BUCKListElementDescriptor
 
                 )
             ),
+            BUCKListElementDescriptor
+            (
+                ExtendWeight = 1.0
+                ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI())
+            ),
 
         ]
     )
 )
+
 
 // Use Road
 private useRoadButtonManager is TBUCKRadioButtonManager()
@@ -309,7 +342,7 @@ orderConfigUseRoadElement is BUCKListElementDescriptor
 
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = [0.0, 25.0]
+            MagnifiableWidthHeight = [0.0, 30.0]
             RelativeWidthHeight = [0.0, 0.0]
         )
 
@@ -317,66 +350,30 @@ orderConfigUseRoadElement is BUCKListElementDescriptor
         InterItemMargin = TRTTILength( Magnifiable = 1.0)
         LastMargin = TRTTILength( Magnifiable = 6.0)
 
+        HasBackground = true
+        BackgroundBlockColorToken = 'TypeC'
+
         Axis = ~/ListAxis/Horizontal
         Elements =
         [
             BUCKListElementDescriptor
             (
-                ComponentDescriptor = BUCKTextureDescriptor
+                ComponentDescriptor = IconeTitreRoe
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [22.0, 22.0]
-                        AlignementToAnchor = [0.0, 0.0]
-                        AlignementToFather = [0.0, 0.0]
-                    )
                     TextureToken = 'ROE_pathfind'
-                    Components =
-                    [
-                        BUCKSpecificHintableArea
-                        (
-                            HintTitleToken = 'ROE_movht'
-                            HintBodyToken = 'ROE_movhb'
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-                    ]
+                    HintTitleToken = 'ROE_movht'
+                    HintBodyToken = 'ROE_movhb'
                 )
             ),
             // Title // Use Road
             BUCKListElementDescriptor
             (
-                ExtendWeight = 1.0
-                ComponentDescriptor = BUCKTextDescriptor
-                (
-                    ComponentFrame = TUIFramePropertyRTTI
+                    ComponentDescriptor = TextTitreRoE
                     (
-                        RelativeWidthHeight = [0.0, 0.0]
-                        AlignementToAnchor = [0.0, 0.5]
-                        AlignementToFather = [0.0, 0.5]
-                    )
-
-                    ParagraphStyle = ~/paragraphStyleTextLeftAlign
-
-                    TextStyle = "Default"
-
-                    HorizontalFitStyle = ~/FitStyle/FitToParent
-                    VerticalFitStyle = ~/FitStyle/FitToContent
-
-                    TextColor       = "SD2_Blanc184"
-                    TextSize        = "11"
-                    TextToken       = "ER_UR"
-                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
-
-                    TypefaceToken   = "UIMainFont"
-
-                    Hint = BUCKSpecificHintableArea
-                    (
-                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                        TextToken       = "ER_UR"
                         HintTitleToken = 'ROE_movht'
                         HintBodyToken = 'ROE_movhb'
-                        HintExtendedToken = ''
                     )
-                )
             ),
             // fast
             BUCKListElementDescriptor
@@ -403,6 +400,11 @@ orderConfigUseRoadElement is BUCKListElementDescriptor
                     HintExtendedToken = "HNT_URSHE"
                 )
             ),
+            BUCKListElementDescriptor
+            (
+                ExtendWeight = 1.0
+                ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI())
+            ),
         ]
     )
 )
@@ -417,7 +419,7 @@ orderConfigSmartMoveElement is BUCKListElementDescriptor
 
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = [0.0, 25.0]
+            MagnifiableWidthHeight = [0.0, 30.0]
             RelativeWidthHeight = [0.0, 0.0]
         )
 
@@ -425,67 +427,32 @@ orderConfigSmartMoveElement is BUCKListElementDescriptor
         InterItemMargin = TRTTILength( Magnifiable = 1.0)
         LastMargin = TRTTILength( Magnifiable = 6.0)
 
+        HasBackground = true
+        BackgroundBlockColorToken = 'TypeC'
+
         Axis = ~/ListAxis/Horizontal
         Elements =
         [
             BUCKListElementDescriptor
             (
-                ComponentDescriptor = BUCKTextureDescriptor
+                ComponentDescriptor = IconeTitreRoe
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [22.0, 22.0]
-                        AlignementToAnchor = [0.0, 0.0]
-                        AlignementToFather = [0.0, 0.0]
-                    )
                     TextureToken = 'ROE_foot'
-                    Components =
-                    [
-                        BUCKSpecificHintableArea
-                        (
-                            HintTitleToken = 'ROE_foot'
-                            HintBodyToken = 'ROE_footb'
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-                    ]
+                    HintTitleToken = 'ROE_foot'
+                    HintBodyToken = 'ROE_footb'
                 )
             ),
-            // Title //SmartMove
+            // Title // smart move pour inf
             BUCKListElementDescriptor
             (
-                ExtendWeight = 1.0
-                ComponentDescriptor = BUCKTextDescriptor
-                (
-                    ComponentFrame = TUIFramePropertyRTTI
+                    ComponentDescriptor = TextTitreRoE
                     (
-                        RelativeWidthHeight = [0.0, 0.0]
-                        AlignementToAnchor = [0.0, 0.5]
-                        AlignementToFather = [0.0, 0.5]
-                    )
-
-                    ParagraphStyle = ~/paragraphStyleTextLeftAlign
-
-                    TextStyle = "Default"
-
-                    HorizontalFitStyle = ~/FitStyle/FitToParent
-                    VerticalFitStyle = ~/FitStyle/FitToContent
-
-                    TextColor       = "SD2_Blanc184"
-                    TextSize        = "11"
-                    TextToken       = "ER_SM"
-                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
-
-                    TypefaceToken   = "UIMainFont"
-
-                    Hint = BUCKSpecificHintableArea
-                    (
-                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                        TextToken       = "ER_SM"
                         HintTitleToken = 'ROE_foot'
                         HintBodyToken = 'ROE_footb'
-                        HintExtendedToken = ''
                     )
-                )
             ),
+
             // cover
             BUCKListElementDescriptor
             (
@@ -513,6 +480,11 @@ orderConfigSmartMoveElement is BUCKListElementDescriptor
                     HintExtendedToken = "HNT_SMSHE"
                 )
             ),
+            BUCKListElementDescriptor
+            (
+                ExtendWeight = 1.0
+                ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI())
+            ),
         ]
     )
 )
@@ -527,72 +499,39 @@ orderConfigIdleBehaviorElement is BUCKListElementDescriptor
 
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = [0.0, 25.0]
+            MagnifiableWidthHeight = [0.0, 30.0]
             RelativeWidthHeight = [0.0, 0.0]
         )
 
         FirstMargin = TRTTILength (Magnifiable = 10.0)
         InterItemMargin = TRTTILength( Magnifiable = 1.0)
         LastMargin = TRTTILength( Magnifiable = 6.0)
-
+        HasBackground = true
+        BackgroundBlockColorToken = 'TypeC'
         Axis = ~/ListAxis/Horizontal
         Elements =
         [
             BUCKListElementDescriptor
             (
-                ComponentDescriptor = BUCKTextureDescriptor
+                ComponentDescriptor = IconeTitreRoe
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [22.0, 22.0]
-                    )
                     TextureToken = 'ROE_idle'
-                    Components =
-                    [
-                        BUCKSpecificHintableArea
-                        (
-                            HintTitleToken = 'ROE_idle'
-                            HintBodyToken = 'ROE_idleb'
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-                    ]
+                    HintTitleToken = 'ROE_idle'
+                    HintBodyToken = 'ROE_idleb'
                 )
             ),
             // Title //IdleBehavior
             BUCKListElementDescriptor
             (
-                ExtendWeight = 1.0
-                ComponentDescriptor = BUCKTextDescriptor
-                (
-                    ComponentFrame = TUIFramePropertyRTTI
+                    ComponentDescriptor = TextTitreRoE
                     (
-                        RelativeWidthHeight = [0.0, 0.0]
-                        AlignementToAnchor = [0.0, 0.5]
-                        AlignementToFather = [0.0, 0.5]
-                    )
-
-                    ParagraphStyle = ~/paragraphStyleTextLeftAlign
-
-                    TextStyle = "Default"
-
-                    HorizontalFitStyle = ~/FitStyle/FitToParent
-                    VerticalFitStyle = ~/FitStyle/FitToContent
-
-                    TextColor       = "SD2_Blanc184"
-                    TextSize        = "11"
-                    TextToken       = "ER_ID"
-                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
-
-                    TypefaceToken   = "UIMainFont"
-
-                    Hint = BUCKSpecificHintableArea
-                    (
+                        TextToken       = "ER_ID"
                         HintTitleToken = 'ROE_idle'
                         HintBodyToken = 'ROE_idleb'
-                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     )
-                )
             ),
+
+
             // Cover
             BUCKListElementDescriptor
             (
@@ -630,6 +569,11 @@ orderConfigIdleBehaviorElement is BUCKListElementDescriptor
                     HintExtendedToken = "HNT_AIDEF"
                 )
             ),
+            BUCKListElementDescriptor
+            (
+                ExtendWeight = 1.0
+                ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI())
+            ),
         ]
     )
 )
@@ -644,7 +588,7 @@ orderConfigUnarmedVehiculeBehaviorElement is BUCKListElementDescriptor
 
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = [0.0, 25.0]
+            MagnifiableWidthHeight = [0.0, 30.0]
             RelativeWidthHeight = [0.0, 0.0]
         )
 
@@ -652,65 +596,33 @@ orderConfigUnarmedVehiculeBehaviorElement is BUCKListElementDescriptor
         InterItemMargin = TRTTILength( Magnifiable = 1.0)
         LastMargin = TRTTILength( Magnifiable = 6.0)
 
+        HasBackground = true
+        BackgroundBlockColorToken = 'TypeC'
+
         Axis = ~/ListAxis/Horizontal
         Elements =
         [
             BUCKListElementDescriptor
             (
-                ComponentDescriptor = BUCKTextureDescriptor
+                ComponentDescriptor = IconeTitreRoe
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [22.0, 22.0]
-                        AlignementToAnchor = [0.0, 0.0]
-                        AlignementToFather = [0.0, 0.0]
-                    )
                     TextureToken = 'ROE_unarmed'
-                    Components =
-                    [
-                        BUCKSpecificHintableArea
-                        (
-                            HintTitleToken = 'ROE_peace'
-                            HintBodyToken = 'ROE_peaceb'
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-                    ]
+                    HintTitleToken = 'ROE_peace'
+                    HintBodyToken = 'ROE_peaceb'
                 )
             ),
-            // Title //IdleBehavior
+            // Title // IdleBehavior
             BUCKListElementDescriptor
             (
-                ExtendWeight = 1.0
-                ComponentDescriptor = BUCKTextDescriptor
-                (
-                    ComponentFrame = TUIFramePropertyRTTI
+                    ComponentDescriptor = TextTitreRoE
                     (
-                        RelativeWidthHeight = [0.0, 0.0]
-                        AlignementToAnchor = [0.0, 0.5]
-                        AlignementToFather = [0.0, 0.5]
-                    )
-
-                    ParagraphStyle = ~/paragraphStyleTextLeftAlign
-
-                    TextStyle = "Default"
-
-                    HorizontalFitStyle = ~/FitStyle/FitToParent
-                    VerticalFitStyle = ~/FitStyle/FitToContent
-
-                    TextColor       = "SD2_Blanc184"
-                    TextSize        = "11"
-                    TextToken       = "ER_UV"
-                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
-
-                    TypefaceToken   = "UIMainFont"
-                    Hint            =   BUCKSpecificHintableArea
-                    (
+                        TextToken       = "ER_UV"
                         HintTitleToken = 'ROE_peace'
                         HintBodyToken = 'ROE_peaceb'
-                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     )
-                )
             ),
+
+
             // Hold Fire
             BUCKListElementDescriptor
             (
@@ -734,6 +646,11 @@ orderConfigUnarmedVehiculeBehaviorElement is BUCKListElementDescriptor
                     HintBodyToken = "ROE_phf"
                 )
             ),
+            BUCKListElementDescriptor
+            (
+                ExtendWeight = 1.0
+                ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI())
+            ),
         ]
     )
 )
@@ -748,7 +665,7 @@ orderConfigMissilesBehaviorElement is BUCKListElementDescriptor
 
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = [0.0, 25.0]
+            MagnifiableWidthHeight = [0.0, 30.0]
             RelativeWidthHeight = [0.0, 0.0]
         )
 
@@ -756,65 +673,32 @@ orderConfigMissilesBehaviorElement is BUCKListElementDescriptor
         InterItemMargin = TRTTILength( Magnifiable = 1.0)
         LastMargin = TRTTILength( Magnifiable = 6.0)
 
+        HasBackground = true
+        BackgroundBlockColorToken = 'TypeC'
+
         Axis = ~/ListAxis/Horizontal
         Elements =
         [
             BUCKListElementDescriptor
             (
-                ComponentDescriptor = BUCKTextureDescriptor
+                ComponentDescriptor = IconeTitreRoe
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [22.0, 22.0]
-                        AlignementToAnchor = [0.0, 0.0]
-                        AlignementToFather = [0.0, 0.0]
-                    )
                     TextureToken = 'ROE_atgm'
-                    Components =
-                    [
-                        BUCKSpecificHintableArea
-                        (
-                            HintTitleToken = 'ROE_miss'
-                            HintBodyToken = 'ROE_missb'
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-                    ]
+                    HintTitleToken = 'ROE_miss'
+                    HintBodyToken = 'ROE_missb'
                 )
             ),
-            // Title //IdleBehavior
+            // Title
             BUCKListElementDescriptor
             (
-                ExtendWeight = 1.0
-                ComponentDescriptor = BUCKTextDescriptor
-                (
-                    ComponentFrame = TUIFramePropertyRTTI
+                    ComponentDescriptor = TextTitreRoE
                     (
-                        RelativeWidthHeight = [0.0, 0.0]
-                        AlignementToAnchor = [0.0, 0.5]
-                        AlignementToFather = [0.0, 0.5]
-                    )
-
-                    ParagraphStyle = ~/paragraphStyleTextLeftAlign
-
-                    TextStyle = "Default"
-
-                    HorizontalFitStyle = ~/FitStyle/FitToParent
-                    VerticalFitStyle = ~/FitStyle/FitToContent
-
-                    TextColor       = "SD2_Blanc184"
-                    TextSize        = "11"
-                    TextToken       = "ER_GM"
-                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
-
-                    TypefaceToken   = "UIMainFont"
-                    Hint = BUCKSpecificHintableArea
-                    (
+                        TextToken       = "ER_GM"
                         HintTitleToken = 'ROE_miss'
                         HintBodyToken = 'ROE_missb'
-                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     )
-                )
             ),
+
             // Hold Fire
             BUCKListElementDescriptor
             (
@@ -822,9 +706,10 @@ orderConfigMissilesBehaviorElement is BUCKListElementDescriptor
                 (
                     ElementName = "EngagementMissilesBehavior_NeverLooktAtTransport"
                     RadioButtonManager = ~/MissilesBehaviorButtonManager
-                    TextToken       = "ER_GMHT"
+                    TextToken       = "ER_UVHF"
                     HintBodyToken = "ROE_mhh"
                     TextColor = 'Gold'
+
                 )
             ),
             // LookAtNonEmptyTransport
@@ -836,6 +721,7 @@ orderConfigMissilesBehaviorElement is BUCKListElementDescriptor
                     RadioButtonManager = ~/MissilesBehaviorButtonManager
                     TextToken       = "ER_GMTT"
                     HintBodyToken = "ROE_mnef"
+
                 )
             ),
             // LookAtAllTransport
@@ -845,9 +731,15 @@ orderConfigMissilesBehaviorElement is BUCKListElementDescriptor
                 (
                     ElementName = "EngagementMissilesBehavior_LookAtAllTransport"
                     RadioButtonManager = ~/MissilesBehaviorButtonManager
-                    TextToken       = "ER_GMAT"
+                    TextToken       = "ER_UVFW"
                     HintBodyToken = "ROE_mhf"
+
                 )
+            ),
+            BUCKListElementDescriptor
+            (
+                ExtendWeight = 1.0
+                ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI())
             ),
         ]
     )
@@ -863,7 +755,7 @@ orderConfigAutoResaleElement is BUCKListElementDescriptor
 
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = [0.0, 25.0]
+            MagnifiableWidthHeight = [0.0, 30.0]
             RelativeWidthHeight = [0.0, 0.0]
         )
 
@@ -871,65 +763,32 @@ orderConfigAutoResaleElement is BUCKListElementDescriptor
         InterItemMargin = TRTTILength( Magnifiable = 1.0)
         LastMargin = TRTTILength( Magnifiable = 6.0)
 
+        HasBackground = true
+        BackgroundBlockColorToken = 'TypeC'
+
         Axis = ~/ListAxis/Horizontal
         Elements =
         [
             BUCKListElementDescriptor
             (
-                ComponentDescriptor = BUCKTextureDescriptor
+                ComponentDescriptor = IconeTitreRoe
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [22.0, 22.0]
-                        AlignementToAnchor = [0.0, 0.0]
-                        AlignementToFather = [0.0, 0.0]
-                    )
                     TextureToken = 'ROE_sell'
-                    Components =
-                    [
-                        BUCKSpecificHintableArea
-                        (
-                            HintTitleToken = 'ROE_sell'
-                            HintBodyToken = 'ROE_sellb'
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-                    ]
+                    HintTitleToken = 'ROE_sell'
+                    HintBodyToken = 'ROE_sellb'
                 )
             ),
-            // Title
+            // Title // Use Road
             BUCKListElementDescriptor
             (
-                ExtendWeight = 1.0
-                ComponentDescriptor = BUCKTextDescriptor
-                (
-                    ComponentFrame = TUIFramePropertyRTTI
+                    ComponentDescriptor = TextTitreRoE
                     (
-                        RelativeWidthHeight = [0.0, 0.0]
-                        AlignementToAnchor = [0.0, 0.5]
-                        AlignementToFather = [0.0, 0.5]
-                    )
-
-                    ParagraphStyle = ~/paragraphStyleTextLeftAlign
-
-                    TextStyle = "Default"
-
-                    HorizontalFitStyle = ~/FitStyle/FitToParent
-                    VerticalFitStyle = ~/FitStyle/FitToContent
-
-                    TextColor       = "SD2_Blanc184"
-                    TextSize        = "11"
-                    TextToken       = "ER_AR"
-                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
-
-                    TypefaceToken   = "UIMainFont"
-                    Hint = BUCKSpecificHintableArea
-                    (
+                        TextToken       = "ER_AR"
                         HintTitleToken = 'ROE_sell'
                         HintBodyToken = 'ROE_sellb'
-                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     )
-                )
             ),
+
             // true
             BUCKListElementDescriptor
             (
@@ -955,6 +814,11 @@ orderConfigAutoResaleElement is BUCKListElementDescriptor
                     HintExtendedToken = "HNT_ARNE"
                 )
             ),
+            BUCKListElementDescriptor
+            (
+                ExtendWeight = 1.0
+                ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI())
+            ),
         ]
     )
 )
@@ -969,7 +833,7 @@ orderConfigOutrangedShotReactionElement is BUCKListElementDescriptor
 
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = [0.0, 25.0]
+            MagnifiableWidthHeight = [0.0, 30.0]
             RelativeWidthHeight = [0.0, 0.0]
         )
 
@@ -977,68 +841,32 @@ orderConfigOutrangedShotReactionElement is BUCKListElementDescriptor
         InterItemMargin = TRTTILength( Magnifiable = 1.0)
         LastMargin = TRTTILength( Magnifiable = 6.0)
 
+        HasBackground = true
+        BackgroundBlockColorToken = 'TypeC'
+
         Axis = ~/ListAxis/Horizontal
         Elements =
         [
             BUCKListElementDescriptor
             (
-                ComponentDescriptor = BUCKTextureDescriptor
+                ComponentDescriptor = IconeTitreRoe
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [22.0, 22.0]
-                        AlignementToAnchor = [0.0, 0.0]
-                        AlignementToFather = [0.0, 0.0]
-                    )
                     TextureToken = 'ROE_outranged'
-                    Components =
-                    [
-                        BUCKSpecificHintableArea
-                        (
-                            HintTitleToken = 'ROE_outrt'
-                            HintBodyToken = 'ROE_outrb'
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-                    ]
+                    HintTitleToken = 'ROE_outrt'
+                    HintBodyToken = 'ROE_outrb'
                 )
             ),
-            // Title // Outranged Shot Reaction
+            // Title // Use Road
             BUCKListElementDescriptor
             (
-                ExtendWeight = 1.0
-                ComponentDescriptor = BUCKTextDescriptor
-                (
-                    ComponentFrame = TUIFramePropertyRTTI
+                    ComponentDescriptor = TextTitreRoE
                     (
-                        RelativeWidthHeight = [0.0, 0.0]
-                        AlignementToAnchor = [0.0, 0.5]
-                        AlignementToFather = [0.0, 0.5]
+                        TextToken       = "ER_OS"
+                        HintTitleToken = 'ROE_outrt'
+                        HintBodyToken = 'ROE_outrb'
                     )
-
-                    ParagraphStyle = ~/paragraphStyleTextLeftAlign
-
-                    TextStyle = "Default"
-
-                    HorizontalFitStyle = ~/FitStyle/FitToParent
-                    VerticalFitStyle = ~/FitStyle/FitToContent
-
-                    TextColor       = "SD2_Blanc184"
-                    TextSize        = "11"
-                    TextToken       = "ER_OS"
-                    TextDico        = ~/LocalisationConstantes/dico_interface_ingame
-
-                    TypefaceToken   = "UIMainFont"
-                    Components =
-                    [
-                        BUCKSpecificHintableArea
-                        (
-                            HintTitleToken = 'ROE_outrt'
-                            HintBodyToken = 'ROE_outrb'
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-                    ]
-                )
             ),
+
             // Defensive
             BUCKListElementDescriptor
             (
@@ -1094,6 +922,11 @@ orderConfigOutrangedShotReactionElement is BUCKListElementDescriptor
                     CannotDeselect = false
                 )
             ),
+            BUCKListElementDescriptor
+            (
+                ExtendWeight = 1.0
+                ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI())
+            ),
 
         ]
     )
@@ -1106,7 +939,7 @@ EngagementRulesPanel is BUCKListDescriptor
     ElementName = 'EngagementRulesPanel'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [~/EngagementPanelWidth, 0.0]
+        MagnifiableWidthHeight = [670, 0.0]
     )
     HidePointerEvents = true
     Axis = ~/ListAxis/Vertical
@@ -1190,7 +1023,7 @@ EngagementRulesPanel is BUCKListDescriptor
                 BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
 
                 FirstMargin = TRTTILength( Magnifiable = 5.0)
-                InterItemMargin = TRTTILength( Magnifiable = 1.0)
+                InterItemMargin = TRTTILength( Magnifiable = 5.0)
                 LastMargin = TRTTILength( Magnifiable = 10.0)
 
                 Elements =
@@ -1210,7 +1043,7 @@ EngagementRulesPanel is BUCKListDescriptor
                         (
                             ComponentFrame = TUIFramePropertyRTTI
                             (
-                                MagnifiableWidthHeight = [0.0, 15.0]
+                                MagnifiableWidthHeight = [0.0, 5.0]
                             )
                         )
                     ),
@@ -1238,7 +1071,7 @@ EngagmentButtonSave is BUCKListDescriptor
     (
         AlignementToFather = [0.5, 0.0]
         AlignementToAnchor = [0.5, 0.0]
-        MagnifiableWidthHeight = [0.0, 23.0]
+        MagnifiableWidthHeight = [0.0, 40.0]
     )
 
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
@@ -1256,7 +1089,7 @@ EngagmentButtonSave is BUCKListDescriptor
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    MagnifiableWidthHeight = [150.0, 25.0]
+                    MagnifiableWidthHeight = [150.0, 40.0]
                 )
 
                 Mapping = $/KeyboardOption/Mapping_EngagmentRules_SaveAndApply
@@ -1276,7 +1109,7 @@ EngagmentButtonSave is BUCKListDescriptor
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    MagnifiableWidthHeight = [150.0, 25.0]
+                    MagnifiableWidthHeight = [150.0, 40.0]
                 )
 
                 Mapping = $/KeyboardOption/Mapping_EngagmentRules_SaveAsDefault

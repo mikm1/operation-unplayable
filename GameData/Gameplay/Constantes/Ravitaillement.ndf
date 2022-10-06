@@ -35,7 +35,7 @@ export StandardSupply is TSupplyDescriptor
     // Point de munition ravitaillés par seconde
     AmmunitionSupplyBySecond = 100
     // Cout du ravitaillement de munition par seconde
-    AmmunitionSupplyCostBySecond = 10
+    //AmmunitionSupplyCostBySecond = 10
 
     // Points de "critique" réparés par seconde
     CriticsSupplyBySecond = 10
@@ -81,7 +81,7 @@ export ShortSupply is TSupplyDescriptor
     // Point de munition ravitaillés par seconde
     AmmunitionSupplyBySecond = 100
     // Cout du ravitaillement de munition par seconde
-    AmmunitionSupplyCostBySecond = 10
+    //AmmunitionSupplyCostBySecond = 10
 
     // Points de "critique" réparés par seconde
     CriticsSupplyBySecond = 10

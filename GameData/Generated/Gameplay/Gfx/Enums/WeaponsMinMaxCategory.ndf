@@ -12,15 +12,15 @@ export MinMax_FLAME is 5
 export MinMax_DCA is 6
 export MinMax_BOMB is 7
 export MinMax_EXPLOSIF is 8
-export MinMax_Fusil_assaut is 9
+export MinMax_inf_MMG is 9
 export MinMax_Gatling is 10
 export MinMax_smoke is 11
 export MinMax_Grenade is 12
-export MinMax_MMG is 13
+export MinMax_HMG_inf is 13
 export MinMax_MLRS is 14
 export MinMax_Mortier is 15
-export MinMax_Cluster is 16
-export MinMax_inf_MMG is 17
+export MinMax_MMG is 16
+export MinMax_Cluster is 17
 export MinMax_LAW is 18
 export MinMax_Roquette_AS is 19
 
@@ -41,15 +41,15 @@ export MinMaxCategory_Enum is TWeaponMinMaxCategory
         "DCA",
         "BOMB",
         "EXPLOSIF",
-        "Fusil_assaut",
+        "inf_MMG",
         "Gatling",
         "smoke",
         "Grenade",
-        "MMG",
+        "HMG_inf",
         "MLRS",
         "Mortier",
+        "MMG",
         "Cluster",
-        "inf_MMG",
         "LAW",
         "Roquette_AS",
         "AAM",

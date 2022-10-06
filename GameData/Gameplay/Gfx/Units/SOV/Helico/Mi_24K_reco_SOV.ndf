@@ -17,3 +17,9 @@ Modele_Mi_24K_reco_SOV_LOW is TResourceMultiMaterialMeshWithLod
     FileName = 'GameData:/Assets/3D/Units/URSS/Helico/LODS/Mi_24K_LOW.Ase2NdfBin'
     CivMask =  CivMask/Common
 )
+
+Modele_Mi_24K_reco_SOV_Tourelle_02 is TResourceMultiMaterialMeshWithLod
+(
+    FileName = ModelFile_Mi_8TV_UPK_DDR_Tourelle_02
+    CivMask =  CivMask/Common
+)
